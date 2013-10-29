@@ -22,6 +22,7 @@
 #include "DIDTemplateToLuaStruct.h"
 #include "configparser.h"
 #include "constants.h"
+#include "flags.h"
 
 
 using namespace std;
@@ -186,12 +187,14 @@ void JoinCaptureThread(deque<CaptureNetPacket> & capture_net_packet_deque, deque
 	}
 }
 
-int main()
+int main(int argc, char * argv[])
 {
 #ifndef __linux
 	SetConsoleCtrlHandler((PHANDLER_ROUTINE)Event_Routine,true);
 #else
 #endif
+	
+	google::ParseCommandLineFlags(&argc, &argv, true);
 
 	log4cxx::LogString pattern_layout("%d [%t] %-5p - %m (%F:%L)%n");
 	log4cxx::RollingFileAppender * rf_appender = new log4cxx::RollingFileAppender(log4cxx::LayoutPtr(new log4cxx::PatternLayout(pattern_layout)),"app.log",false);
@@ -206,7 +209,7 @@ int main()
 
 	//int adapter_id = get_network_adapter();
 	//assert(adapter_id >= 0);
-	ConfigParser config_parser(cons::CONFIG_FILE);
+	ConfigParser config_parser(FLAGS_CONFIG_FILE_PATH);
 	config_parser.Parse();
 
 	zmq::context_t context(1);

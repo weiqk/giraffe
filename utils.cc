@@ -4,6 +4,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include "constants.h"
 
 /*get flag name based on the flag number*/
 const char* Utils::tcp_flag_to_str( unsigned char flag )

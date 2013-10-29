@@ -8,7 +8,10 @@
 class ConfigParser
 {
 public:
-	ConfigParser(const char * config_file):config_file_(config_file){};
+	ConfigParser(const std::string & config_file)
+	{
+		config_file_ = config_file;
+	};
 	~ConfigParser(){};
 	inline deque<XML_ListeningItem> & get_listeningitems()
 	{

@@ -538,9 +538,9 @@ void ShuntNetPacket::RunThreadFunc()
 				item.market_id = market_id_;
 				item.header = *header;
 				//unsigned char * data_buf = (unsigned char*)malloc(sizeof(CAP_PACK_BUF_SIZE));
-				unsigned char *data_buf = new unsigned char[cons::CAP_PACK_BUF_SIZE];
+				unsigned char *data_buf = new unsigned char[FLAGS_CAP_PACK_BUF_SIZE];
 				assert(NULL != data_buf);
-				memset(data_buf,0,cons::CAP_PACK_BUF_SIZE);
+				memset(data_buf,0,FLAGS_CAP_PACK_BUF_SIZE);
 				memcpy(data_buf, pkt_data, header->caplen);
 				item.data = data_buf;
 				zmq::socket_t * psock = iter->second;

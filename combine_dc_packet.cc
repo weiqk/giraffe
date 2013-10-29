@@ -1,6 +1,7 @@
 #include "combine_dc_packet.h"
 #include "datacollect.h"
 #include "constants.h"
+#include "flags.h"
 
 using namespace log4cxx;
 
@@ -86,7 +87,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 			memcpy(dc_header_ + dc_header_last_inner_len_ , temp_pdch, sizeof(DC_HEAD)-dc_header_last_inner_len_);
 			if(IsDCHeader(dc_header_))
 			{
-				recombined_header_bufsize = PCAPTOPARSE_BUF_SIZE;
+				recombined_header_bufsize = FLAGS_RECOMBINED_HEADER_BUFFER_SIZE;
 				if(temp_len < recombined_header_bufsize)
 				{
 					memset(recombined_header_buf_ , 0 , recombined_header_bufsize);
@@ -168,7 +169,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 
 						if(temp_len > 0 && temp_len < sizeof(DC_HEAD))
 						{
-							memset(dc_header_, 0 ,cons::DC_HEAD_LEN);
+							memset(dc_header_, 0 ,FLAGS_DC_HEAD_LEN);
 							memcpy(dc_header_,temp_pdch,temp_len);
 							dc_header_last_inner_len_ += temp_len;
 							packet_len = 0;
@@ -243,7 +244,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 
 				if(temp_len > 0 && temp_len < sizeof(DC_HEAD))
 				{
-					memset(dc_header_, 0 ,sizeof(cons::DC_HEAD_LEN));
+					memset(dc_header_, 0 ,sizeof(FLAGS_DC_HEAD_LEN));
 					memcpy(dc_header_,temp_pdch,temp_len);
 					dc_header_last_inner_len_ += temp_len;
 					temp_len = 0;
@@ -372,8 +373,8 @@ void CombineDCPacket::RunThreadFunc()
 				    last_temp_len_ = 0;
 				    case2_tag_ = 0;
 				    last_tcp_seq_ = 0;
-				    memset(dc_header_, 0, cons::DC_HEAD_LEN);
-				    memset(recombined_header_buf_, 0 ,PCAPTOPARSE_BUF_SIZE);
+				    memset(dc_header_, 0, FLAGS_DC_HEAD_LEN);
+				    memset(recombined_header_buf_, 0 , FLAGS_RECOMBINED_HEADER_BUFFER_SIZE);
 				}
 				else if (cons::NORMAL == thread_tag)
 				{

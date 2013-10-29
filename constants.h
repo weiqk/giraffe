@@ -6,15 +6,6 @@
 
 namespace cons
 {
-    const char CONFIG_FILE[10] = "conf.xml";
-    const unsigned long DELTA_DISCONNECT_TIME_USEC = 10000000;//10s 
-    const int BUFFERSIZE = 1024;
-    const int DC_HEAD_LEN = 10;
-    const int CAP_PACK_BUF_SIZE = 5120;
-    const int ZMQ_RCVHWM_SIZE = 1024*1024;
-    const int ZMQ_SNDHWM_SIZE = 1024*1024;
-
-
     //市场定义
     const unsigned short MKT_SH = 0x4853;	//'HS'		// 上海证券交易所
     const unsigned short MKT_SZ = 0x5A53;	//'ZS'		// 深圳证券交易所

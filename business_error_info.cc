@@ -66,10 +66,12 @@ void BusinessErrorInfo::RunThreadFunc()
 		msg.rebuild();
 		sock_recv_->recv(&msg);
 		//std::cout<<"c++:"<<(char *)(msg.data())<<std::endl;
-		SplitString((char *)(msg.data()), ":");
-		std::string uri("http://10.15.63.121/Control/input.php");
-		DispatchToWebServer(uri);
-		//LOG4CXX_ERROR(logger_business_error_, (char*)(msg.data()));
+		
+		//SplitString((char *)(msg.data()), ":");
+		//std::string uri("http://10.15.63.121/Control/input.php");
+		//DispatchToWebServer(uri);
+		
+		LOG4CXX_ERROR(logger_business_error_, (char*)(msg.data()));
 	}	
 }
 

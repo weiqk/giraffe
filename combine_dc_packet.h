@@ -4,6 +4,7 @@
 #include "basethread.h"
 #include "zmq.hpp"
 #include "constants.h"
+#include "flags.h"
 
 class CombineDCPacket:public BaseThread
 {
@@ -19,8 +20,8 @@ public:
 		case2_tag_  = false;
 		dc_header_last_inner_len_ = 0;
 		last_tcp_seq_ = 0;
-		dc_header_ = new unsigned char [cons::DC_HEAD_LEN];
-		recombined_header_buf_ = new unsigned char [PCAPTOPARSE_BUF_SIZE];
+		dc_header_ = new unsigned char [FLAGS_DC_HEAD_LEN];
+		recombined_header_buf_ = new unsigned char [FLAGS_RECOMBINED_HEADER_BUFFER_SIZE];
 	};
 	~CombineDCPacket()
 	{

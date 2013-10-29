@@ -1,5 +1,5 @@
-#ifndef MONITOR_PROTOCOL_H_
-#define MONITOR_PROTOCOL_H_
+#ifndef MONITOR_STRUCTS_H_
+#define MONITOR_STRUCTS_H_ 
 
 #include <pthread.h>
 #include <iostream>
@@ -7,20 +7,18 @@
 #include "zmq.hpp"
 #include "pcap/pcap.h"
 #include "log4cpp/Category.hh"
-#include "constants.h"
 #include "mword.h"
+#include "flags.h"
 
 using namespace std;
 
-const int PCAPTOPARSE_BUF_SIZE = 2048;
-const int COMBINED_PACKET_ITEM_SIZE = 409600;
-const int LUA_RECV_BUF_SIZE = 1048576;
-
 #pragma pack(push,1)
+
+const int COMBINING_PACKETS_BUFFER_SIZE = 409600;
 
 typedef struct CombinedPacketItem
 {
-	char data[COMBINED_PACKET_ITEM_SIZE];
+	char data[COMBINING_PACKETS_BUFFER_SIZE];
 }CombinedPacketItem;
 
 typedef struct TcpDisorderSetItem
@@ -157,7 +155,6 @@ typedef struct PacketItem
 typedef struct CapNetPacketItem
 {
 	struct pcap_pkthdr header;
-	//unsigned char data[PCAPTOPARSE_BUF_SIZE];
 	unsigned char *data;
 }CapNetPacketItem;
 
