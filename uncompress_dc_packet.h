@@ -23,7 +23,6 @@
 #include "data.h"
 #include "structs.h"
 #include "datacollect.h"
-#include "flags.h"
 #include "utils.h"
 #include "basethread.h"
 #include "extract_dc.h"
@@ -112,6 +111,7 @@ private:
 	zmq::socket_t *sock_send_to_log_;
 	XML_ListeningItem listening_item_;
 	ExtractDC extractDC_;
+	unsigned short market_id_;
 	int count_rc_;
 	static log4cxx::LoggerPtr logger_;
 };

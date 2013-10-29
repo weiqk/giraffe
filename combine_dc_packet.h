@@ -3,6 +3,7 @@
 #include <log4cxx/logger.h>
 #include "basethread.h"
 #include "zmq.hpp"
+#include "constants.h"
 
 class CombineDCPacket:public BaseThread
 {
@@ -18,7 +19,7 @@ public:
 		case2_tag_  = false;
 		dc_header_last_inner_len_ = 0;
 		last_tcp_seq_ = 0;
-		dc_header_ = new unsigned char [DC_HEAD_LEN];
+		dc_header_ = new unsigned char [cons::DC_HEAD_LEN];
 		recombined_header_buf_ = new unsigned char [PCAPTOPARSE_BUF_SIZE];
 	};
 	~CombineDCPacket()
@@ -55,11 +56,11 @@ private:
 	zmq::socket_t * sock_recv_;
 	zmq::socket_t * sock_send_;
     PacketItem packet_item_;
-    int dc_header_last_inner_len_;
-    int long_pack_tag_;
-    int last_pack_len_;
-    int last_temp_len_;
-    bool case2_tag_;
+    size_t dc_header_last_inner_len_;
+    size_t long_pack_tag_;
+    size_t last_pack_len_;
+    size_t last_temp_len_;
+    size_t case2_tag_;
     unsigned long last_tcp_seq_;
     unsigned char *dc_header_;
     unsigned char *recombined_header_buf_;

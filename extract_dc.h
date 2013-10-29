@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "crc16.h"
-#include "flags.h"
+#include "typedef.h"
 #include "structs.h"
 #include "data.h"
 #include "datacollect.h"

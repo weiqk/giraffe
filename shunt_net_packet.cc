@@ -1,6 +1,6 @@
 #include "shunt_net_packet.h"
 #include <map>
-#include "flags.h"
+#include "constants.h"
 #include "utils.h"
 #include <sys/time.h>
 #include <netinet/in.h>
@@ -276,22 +276,22 @@ void ShuntNetPacket::WriteDidConfFile(const char * file_name, vector<DidStruct> 
 
 bool ShuntNetPacket::IsTcpConnection(unsigned char flags, int &tcpconntag, int &tcpconnstatus)
 {
-	if(SYN == flags)
+	if(cons::SYN == flags)
 	{
 		tcpconntag = 1;
 		tcpconnstatus = 0;
 	}
 	if(1 == tcpconntag)
 	{
-		if(SYN == flags)
+		if(cons::SYN == flags)
 		{
 			tcpconnstatus |= 0x1;
 		}
-		else if(SYNACK == flags)
+		else if(cons::SYNACK == flags)
 		{
 			tcpconnstatus |= 0x2;
 		}
-		else if(ACK == flags)
+		else if(cons::ACK == flags)
 		{
 			tcpconnstatus |= 0x4;
 			tcpconntag = 0;
@@ -316,7 +316,7 @@ bool ShuntNetPacket::IsTcpConnection(unsigned char flags, int &tcpconntag, int &
 
 bool ShuntNetPacket::IsTcpDisConnection(unsigned char flags)
 {
-	if(FINACK == flags)
+	if(cons::FINACK == flags)
 	{
 		return true;
 	}
@@ -364,7 +364,7 @@ void ShuntNetPacket::PreHandleADisconnection()
 				{
 					//has a disconnection, send reset tag
 					PacketItem item;
-                    item.thread_tag = RESET;
+                    item.thread_tag = cons::RESET;
                     item.port_tag = 0;
                     item.data = NULL;
                     DispatchData(it->first, &item, sizeof(item));
@@ -439,8 +439,8 @@ void ShuntNetPacket::RunThreadFunc()
 		sprintf(key_ip_src,"%d.%d.%d.%d:%d",ih->saddr.byte1,ih->saddr.byte2,ih->saddr.byte3,ih->saddr.byte4,ntohs(tcph->source));
 		sprintf(key_ip_dst,"%d.%d.%d.%d:%d",ih->daddr.byte1,ih->daddr.byte2,ih->daddr.byte3,ih->daddr.byte4,ntohs(tcph->dest));
 
-		if(TCP == ih->protocol)
-		{//1.脜脨露脧tcp脕卢陆脫脳麓脤卢潞脥露脧驴陋脳麓脤卢
+		if(cons::TCP == ih->protocol)
+		{//1.鑴滆劏闇茶劎tcp鑴曞崲闄嗚劔鑴抽簱鑴ゅ崲娼炶劌闇茶劎椹撮檵鑴抽簱鑴ゅ崲
 			if(IsTcpConnection(tcph->flags, tcpconntag, tcpconnstatus))
 			{
 				//cout<<"A new connection was been built! The ip and port is:"<<key_ip_src<<endl;
@@ -484,8 +484,9 @@ void ShuntNetPacket::RunThreadFunc()
                     {
                         zmq::socket_t * sock =iter_map->second;
                         PacketItem item;
-                        item.thread_tag = RESET;
+                        item.thread_tag = cons::RESET;
                         item.port_tag = 0;
+						item.market_id = 0;
                         item.data = NULL;
                         DispatchData(sock, &item, sizeof(item));
                         sock_deque->push_back(sock);
@@ -502,8 +503,9 @@ void ShuntNetPacket::RunThreadFunc()
 					{
 						zmq::socket_t * sock =iter_map->second;
 						PacketItem item;
-						item.thread_tag = RESET;
+						item.thread_tag = cons::RESET;
 						item.port_tag = 0;
+						item.market_id = 0;
 						item.data = NULL;
 						DispatchData(sock, &item, sizeof(item));
 						sock_deque->push_back(sock);
@@ -531,13 +533,14 @@ void ShuntNetPacket::RunThreadFunc()
 				//count_pack += 1;
 				/*cout<<"key_ip_dst:"<<key_ip_dst<<endl;*/
 				PacketItem item;
-				item.thread_tag = NORMAL;
+				item.thread_tag = cons::NORMAL;
 				item.port_tag = port;
+				item.market_id = market_id_;
 				item.header = *header;
 				//unsigned char * data_buf = (unsigned char*)malloc(sizeof(CAP_PACK_BUF_SIZE));
-				unsigned char *data_buf = new unsigned char[CAP_PACK_BUF_SIZE];
+				unsigned char *data_buf = new unsigned char[cons::CAP_PACK_BUF_SIZE];
 				assert(NULL != data_buf);
-				memset(data_buf,0,CAP_PACK_BUF_SIZE);
+				memset(data_buf,0,cons::CAP_PACK_BUF_SIZE);
 				memcpy(data_buf, pkt_data, header->caplen);
 				item.data = data_buf;
 				zmq::socket_t * psock = iter->second;
@@ -562,7 +565,7 @@ void ShuntNetPacket::RunThreadFunc()
 								<< pdch->m_nLen/sizeof(DC_DSDID));
 					
 					map<int, std::string> & did_filepath_map = listening_item->get_did_filepath_map();
-					for(int i=0;i<pdch->m_nLen/sizeof(DC_DSDID);i++)
+					for(unsigned int i=0;i<pdch->m_nLen/sizeof(DC_DSDID);i++)
 					{
 						DidStruct did_struct;
 						map<int, std::string>::iterator iter = did_filepath_map.find(pdsdid->m_dwDid);
@@ -580,6 +583,12 @@ void ShuntNetPacket::RunThreadFunc()
 					char did_conf_file[64] = {0};
 					sprintf(did_conf_file, "%d_did_config.xml", port);
 					WriteDidConfFile(did_conf_file, did_structs);
+				}
+				else if(DC_TAG == pdch->m_cTag && DCT_LOGIN	== pdch->m_cTag)
+				{
+					LOG4CXX_INFO(logger_, "dc login");
+					DC_LOGIN *plogin = (DC_LOGIN *)(pdch + 1);
+					market_id_ = plogin->m_wMarket;	
 				}
 			}
 		}

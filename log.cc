@@ -3,7 +3,6 @@
 #include <log4cxx/basicconfigurator.h>
 #include <log4cxx/patternlayout.h>
 #include "log.h"
-#include "flags.h"
 
 using namespace log4cxx;
 

@@ -1,6 +1,6 @@
 #include "capture_net_packet.h"
 #include "structs.h"
-#include "flags.h"
+
 
 using namespace log4cxx;
 
@@ -147,7 +147,7 @@ void CaptureNetPacket::PacketHandler(unsigned char *param, const struct pcap_pkt
 	CapNetPacketItem item;
 	item.header = *header;
 	unsigned char *pdata;
-	if(CAP_PACK_BUF_SIZE < header->caplen)
+	if(cons::CAP_PACK_BUF_SIZE < header->caplen)
 	{
 		pdata = new unsigned char[header->caplen];
 		memset(pdata, 0, header->caplen);
@@ -155,8 +155,8 @@ void CaptureNetPacket::PacketHandler(unsigned char *param, const struct pcap_pkt
 	}
 	else
 	{
-		pdata = new unsigned char[CAP_PACK_BUF_SIZE];
-		memset(pdata, 0, CAP_PACK_BUF_SIZE);
+		pdata = new unsigned char[cons::CAP_PACK_BUF_SIZE];
+		memset(pdata, 0, cons::CAP_PACK_BUF_SIZE);
 		//LOG4CXX_INFO(logger_, "cap buffer len:" << CAP_PACK_BUF_SIZE);
 	}
 	memcpy(pdata,pkt_data,header->caplen);

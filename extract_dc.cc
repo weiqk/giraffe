@@ -838,7 +838,7 @@ DWORD ExtractDC::GetDefaultHKSpread(DWORD dwPrice)
 		{2500,	9995000},
 	};
 	DWORD dwRet = 0;
-	for(int i=0;i<sizeof(spread)/sizeof(spread[0]);i++)
+	for(unsigned int i=0;i<sizeof(spread)/sizeof(spread[0]);i++)
 	{
 		if(dwPrice<spread[i].m_dwPrice)
 		{

@@ -15,7 +15,7 @@
 #include "log4cpp/BasicLayout.hh"
 #include "log4cpp/Priority.hh"
 #include "log4cpp/PatternLayout.hh"
-#include "flags.h"
+#include "constants.h"
 #include "structs.h"
 #include "basethread.h"
 //#include "zhelpers.hpp"

@@ -1,7 +1,7 @@
 #ifndef _STKDATACPS_H_INCLUDE
 #define _STKDATACPS_H_INCLUDE
 
-#include "flags.h"
+#include "typedef.h"
 #include "structs.h"
 #include "bitstream.h"
 

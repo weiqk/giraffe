@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "decrypt.h"
-#include "flags.h"
+#include "typedef.h"
 #include "aes/aes.h"
 
 

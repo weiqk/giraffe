@@ -2,7 +2,7 @@
 #define _BITSTREAM_H_INCLUDE
 
 #include "mword.h"
-#include "flags.h"
+#include "typedef.h"
 
 using namespace std;
 

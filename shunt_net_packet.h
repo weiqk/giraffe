@@ -101,6 +101,7 @@ private:
 	zmq::context_t *context_;
 	zmq::socket_t *sock_;
 	XML_ListeningItem listening_item_;
+	unsigned short market_id_;
 	//deque<Parse *> parse_deque_;
 	deque<CombineDCPacket *> combine_dc_deque_;
 	deque<UncompressDCPacket *> uncompress_dc_deque_;

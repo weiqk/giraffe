@@ -313,10 +313,10 @@ local C = ffi.C
 local ffi_cast = ffi.cast 
 local str_format = string.format
 
-function FormatReturnError(dc_type,ret_error)
+function FormatReturnError(market_id, dc_type, ret_error)
 	local ret_str
 	if(ret_error ~= nil) then
-		ret_str = str_format("%s:%s\0", dc_type,ret_error)
+		ret_str = str_format("%d:%s:%s\0", market_id, dc_type, ret_error)
 	else
 		ret_str = nil
 	end
@@ -362,10 +362,10 @@ function InitZMQ(pattern, action, addr)
 	sock_addr = addr
 	if action == "connect" then
 		assert(sock:connect(sock_addr))		
-		print"connect"
+		--print"connect"
 	elseif action == "bind" then
 		assert(sock:bind(sock_addr));
-		print"bind"
+		--print"bind"
 	end
 end
 
@@ -384,21 +384,18 @@ function init(did_template_id)
 	table.insert(did_template_id_table,req_id)	
 end
 
-function test_process(dctype, num, pdcdata)
+function process_basic_type(market_id, dctype, num, pdcdata)
 	local stk 
 	local dc_type
 	local ret_error
 	local ret_str 
-
 	if dctype == C.DCT_STKSTATIC then
 		stk = ffi_cast("STK_STATIC *", pdcdata)
 		dc_type = "static"
 		for i=1,num do
-			--print(stk.id)
 			ret_error = handle_stk_static(stk)			
-			ret_str = FormatReturnError(dc_type, ret_error)
-			--test
-			ret_str = "stk-static\0"
+			ret_str = FormatReturnError(market_id, dc_type, ret_error)
+			--ret_str = "stk-static\0"
 			if ret_str ~= nil then 
 				SendErrorMsg(ret_str)		
 			end
@@ -409,8 +406,8 @@ function test_process(dctype, num, pdcdata)
 		dc_type = "dyna"
 		for i=1,num do
 			ret_error = handle_stk_dyna(stk)
-			ret_str = FormatReturnError(dc_type, ret_error)
-			ret_str = "stk-stkdyna\0"
+			ret_str = FormatReturnError(market_id, dc_type, ret_error)
+			--ret_str = "stk-stkdyna\0"
 			if ret_str ~= nil then
 				SendErrorMsg(ret_str)
 			end
@@ -421,8 +418,8 @@ function test_process(dctype, num, pdcdata)
 		dc_type = "szl2_order_stat"
 		for i=1,num do
 			ret_error = handle_szl2_order_stat(stk) 
-			ret_str = FormatReturnError(dc_type, ret_error)
-			ret_str = "shl2-order-stat\0"
+			ret_str = FormatReturnError(market_id, dc_type, ret_error)
+			--ret_str = "shl2-order-stat\0"
 			if ret_str ~= nil then
 				SendErrorMsg(ret_str)
 			end
@@ -433,8 +430,8 @@ function test_process(dctype, num, pdcdata)
 		dc_type = "szl2_trade_five\0"
 		for i=1,num do
 			ret_error = handle_szl2_trade_five(stk)
-			ret_str	= FormatReturnError(dc_type, ret_error)
-			ret_str = dc_type
+			ret_str	= FormatReturnError(market_id, dc_type, ret_error)
+			--ret_str = dc_type
 			if ret_str ~= nil then
 				SendErrorMsg(ret_str)
 			end
@@ -445,7 +442,7 @@ function test_process(dctype, num, pdcdata)
 		dc_type = "szl2_order_five\0"
 		for i=1,num do
 			ret_error = handle_szl2_order_five(stk)
-			ret_str = FormatReturnError(dc_type, ret_error)
+			ret_str = FormatReturnError(market_id, dc_type, ret_error)
 			ret_str = dc_type
 			if ret_str ~= nil then
 				SendErrorMsg(ret_str)
@@ -457,8 +454,8 @@ function test_process(dctype, num, pdcdata)
 		dc_type = "shl2_mmpex"
 		for i=1,num do
 			ret_error = handle_shl2_mmpex(stk)
-			ret_str = FormatReturnError(dc_type, ret_error)
-			ret_str = "shl2-mmpex\0"
+			ret_str = FormatReturnError(market_id, dc_type, ret_error)
+			--ret_str = "shl2-mmpex\0"
 			if ret_str ~= nil then
 				SendErrorMsg(ret_str)
 			end
@@ -469,7 +466,7 @@ function test_process(dctype, num, pdcdata)
 	end
 end
 
-function test_process_did(template_id, num, pdcdata)
+function process_did_type(market_id, template_id, num, pdcdata)
 	local ret_error
 	local ret_str 
 	local pdata
@@ -480,8 +477,8 @@ function test_process_did(template_id, num, pdcdata)
 		template_type = "t_buy_sell_info"
 		for i=1,num do
 			ret_error = handle_t_buy_sell_info(pdata)
-            ret_str = FormatReturnError(template_type, ret_error)
-            ret_str = "t_buy_sell_info\0"
+            ret_str = FormatReturnError(market_id, template_type, ret_error)
+            --ret_str = "t_buy_sell_info\0"
             if ret_str ~= nil then
                 SendErrorMsg(ret_str)
             end
@@ -492,8 +489,8 @@ function test_process_did(template_id, num, pdcdata)
         template_type = "t_buy_sell_tick_info"
         for i=1,num do
             ret_error = handle_t_buy_sell_tick_info(pdata)
-            ret_str = FormatReturnError(template_type, ret_error)
-            ret_str = "t_buy_sell_tick_info\0"
+            ret_str = FormatReturnError(market_id, template_type, ret_error)
+            --ret_str = "t_buy_sell_tick_info\0"
             if ret_str ~= nil then
                 SendErrorMsg(ret_str)
             end
@@ -504,8 +501,8 @@ function test_process_did(template_id, num, pdcdata)
         template_type = "t_iopv_info"
         for i=1,num do
             ret_error = handle_t_iopv_info(pdata)
-            ret_str = FormatReturnError(template_type, ret_error)
-            ret_str = "t_iopv_info\0"
+            ret_str = FormatReturnError(market_id, template_type, ret_error)
+            --ret_str = "t_iopv_info\0"
             if ret_str ~= nil then
                 SendErrorMsg(ret_str)
             end
@@ -516,8 +513,8 @@ function test_process_did(template_id, num, pdcdata)
         template_type = "t_cbt_market"
         for i=1,num do
             ret_error = handle_t_cbt_market(pdata)
-            ret_str = FormatReturnError(template_type, ret_error)
-            ret_str = "t_cbt_market\0"
+            ret_str = FormatReturnError(market_id, template_type, ret_error)
+            --ret_str = "t_cbt_market\0"
             if ret_str ~= nil then
                 SendErrorMsg(ret_str)
             end
@@ -528,8 +525,8 @@ function test_process_did(template_id, num, pdcdata)
         template_type = "t_etf_info"
         for i=1,num do
             ret_error = handle_t_etf_info(pdata)
-            ret_str = FormatReturnError(template_type, ret_error)
-            ret_str = "t_etf_info\0"
+            ret_str = FormatReturnError(market_id, template_type, ret_error)
+            --ret_str = "t_etf_info\0"
             if ret_str ~= nil then
                 SendErrorMsg(ret_str)
             end
@@ -540,8 +537,8 @@ function test_process_did(template_id, num, pdcdata)
         template_type = "t_mmp_info"
         for i=1,num do
             ret_error = handle_t_mmp_info(pdata)
-            ret_str = FormatReturnError(template_type, ret_error)
-            ret_str = "t_mmp_info\0"
+            ret_str = FormatReturnError(market_id, template_type, ret_error)
+            --ret_str = "t_mmp_info\0"
             if ret_str ~= nil then
                 SendErrorMsg(ret_str)
             end
@@ -552,7 +549,7 @@ function test_process_did(template_id, num, pdcdata)
 	end
 end
 
-function process_general(intype, num, pdata)
+function process_general_type(intype, num, pdata)
 	local stk
 	local ret_error
 	local ret_str 
@@ -564,24 +561,24 @@ function process_general(intype, num, pdata)
 				if(stk.m_cType == 1) then
 					dc_type = "ge staticex equity\0"
 					ret_error = handle_equity(stk.Spec.m_equitySpec)
-					ret_str = FormatReturnError(dc_type,ret_error)	
-					ret_str = dc_type
+					ret_str = FormatReturnError(market_id, dc_type,ret_error)	
+					--ret_str = dc_type
 					if ret_str ~= nil then
 						SendErrorMsg(ret_str)
 					end
 				elseif(stk.m_cType == 2) then
 					dc_type = "ge staticex fund\0"
 					ret_error = handle_fund(stk.Spec.m_fundSpec)
-					ret_str = FormatReturnError(dc_type, ret_error)
-					ret_str = dc_type 
+					ret_str = FormatReturnError(market_id, dc_type, ret_error)
+					--ret_str = dc_type 
 					if ret_str ~= nil then
 						SendErrorMsg(ret_str)
 					end
 				elseif(stk.m_cType == 3) then
 					dc_type = "ge staticex warrant\0"
 					ret_error = handle_fund(stk.Spec.m_warrantSpec)
-                    ret_str = FormatReturnError(dc_type, ret_error)
-                    ret_str = dc_type 
+                    ret_str = FormatReturnError(market_id, dc_type, ret_error)
+                    --ret_str = dc_type 
                     if ret_str ~= nil then
                         SendErrorMsg(ret_str)
                     end
@@ -592,8 +589,8 @@ function process_general(intype, num, pdata)
 				elseif(stk.m_cType == 4) then
 					dc_type = "ge staticex bond\0"
                     ret_error = handle_fund(stk.Spec.m_bondSpec)
-                    ret_str = FormatReturnError(dc_type, ret_error)
-                    ret_str = dc_type 
+                    ret_str = FormatReturnError(market_id, dc_type, ret_error)
+                    --ret_str = dc_type 
                     if ret_str ~= nil then
                         SendErrorMsg(ret_str)
                     end
@@ -606,24 +603,24 @@ function process_general(intype, num, pdata)
 				elseif(stk.m_cType == 5) then
 					dc_type = "ge staticex Cnvt\0"
 					ret_error = handle_fund(stk.Spec.m_CnvtSpec)
-                    ret_str = FormatReturnError(dc_type, ret_error)
-                    ret_str = dc_type
+                    ret_str = FormatReturnError(market_id, dc_type, ret_error)
+                    --ret_str = dc_type
                     if ret_str ~= nil then
                         SendErrorMsg(ret_str)
                     end
 				elseif(stk.m_cType == 6) then
 					dc_type = "ge staticex future\0"
 					ret_error = handle_future(stk.Spec.m_futureSpec)
-					ret_str = FormatReturnError(dc_type,ret_error)
-					ret_str = dc_type
+					ret_str = FormatReturnError(market_id, dc_type,ret_error)
+					--ret_str = dc_type
 					if ret_str ~= nil then
                         SendErrorMsg(ret_str)
                     end
 				elseif(stk.m_cType == 7) then
               	    dc_type = "ge staticex trust\0"
                     ret_error = handle_future(stk.Spec.m_trustSpec)
-                    ret_str = FormatReturnError(dc_type,ret_error)
-                    ret_str = dc_type
+                    ret_str = FormatReturnError(market_id, dc_type,ret_error)
+                    --ret_str = dc_type
                     if ret_str ~= nil then
                         SendErrorMsg(ret_str)
                     end
@@ -635,8 +632,8 @@ function process_general(intype, num, pdata)
 				stk = ffi_cast("STK_HKDYNA *",data)
 				dc_type = "ge stk hkdyna\0"
 				ret_error = handle_hkdyna(stk)
-				ret_str = FormatReturnError(dc_type, ret_error)
-				ret_str = dc_type 
+				ret_str = FormatReturnError(market_id, dc_type, ret_error)
+				--ret_str = dc_type 
 				if ret_str ~= nil then
 					SendErrorMsg(ret_str)
 				end
@@ -665,7 +662,7 @@ function process_shl2_queue(dctype, pdcdata)
 		stk = ffi_cast("SHL2_Queue *", pdcdata)
 		local ret_error = handle_shl2_mmp(stk)
 		dc_type = "shl2_queue"
-		local ret_str = FormatReturnError(dc_type, ret_error)
+		local ret_str = FormatReturnError(market_id, dc_type, ret_error)
 	end
 	return ret_str
 end

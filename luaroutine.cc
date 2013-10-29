@@ -1,5 +1,4 @@
 #include "luaroutine.h"
-#include "flags.h"
 #include <sys/time.h>
 #include <netinet/in.h>
 #include <unistd.h>
@@ -127,17 +126,18 @@ struct STK_STATIC * LuaRoutine::GetStkByID(int stk_id)
 //	strcpy(monitor_msg->error_info, value);
 //}
 
-void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_general_intype, int stk_num, int struct_size, int did_template_id)
+void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_general_intype, int stk_num, int did_template_id)
 {
 	assert(NULL != pdcdata);
 	//did
 	if(DCT_DID == dc_type)
 	{
-		lua_getglobal(lua_state_, "test_process_did");
+		lua_getglobal(lua_state_, "process_did_type");
+		lua_pushinteger(lua_state_, market_id_);
 		lua_pushinteger(lua_state_, did_template_id);
 		lua_pushinteger(lua_state_, stk_num);
 		lua_pushlightuserdata(lua_state_, pdcdata);
-		if(lua_pcall(lua_state_, 3, 0, 0) != 0)
+		if(lua_pcall(lua_state_, 4, 0, 0) != 0)
 		{
 			LOG4CXX_ERROR(logger_, lua_tostring(lua_state_,-1));
 			lua_pop(lua_state_,-1);
@@ -185,11 +185,12 @@ void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_gener
 		//	}
 		//}
 		LOG4CXX_INFO(logger_, "dc_type:" << dc_type);
-        lua_getglobal(lua_state_, "test_process");
+        lua_getglobal(lua_state_, "process_basic_type");
+		lua_pushinteger(lua_state_, market_id_);
         lua_pushinteger(lua_state_, dc_type);
         lua_pushinteger(lua_state_, stk_num);
         lua_pushlightuserdata(lua_state_, pdcdata);
-        if(lua_pcall(lua_state_,3,0,0) != 0)
+        if(lua_pcall(lua_state_,4,0,0) != 0)
         {
             string s = lua_tostring(lua_state_,-1);
 			LOG4CXX_ERROR(logger_, s);
@@ -208,11 +209,12 @@ void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_gener
 		{
 			LOG4CXX_INFO(logger_, "intype is 5");
 		}
-		lua_getglobal(lua_state_, "process_general");
+		lua_getglobal(lua_state_, "process_general_type");
+		lua_pushinteger(lua_state_, market_id_);
 		lua_pushinteger(lua_state_, dc_general_intype);
 		lua_pushinteger(lua_state_, stk_num);
 		lua_pushlightuserdata(lua_state_, pdata);
-		if(lua_pcall(lua_state_, 3, 0, 0) != 0)
+		if(lua_pcall(lua_state_, 4, 0, 0) != 0)
 		{
 			string s = lua_tostring(lua_state_,-1);
 			LOG4CXX_ERROR(logger_, s);
@@ -294,9 +296,10 @@ void LuaRoutine::RunThreadFunc()
 		sock_->recv(&msg_rcv);
 		Lua_ZMQ_MSG_Item *msg_item = (Lua_ZMQ_MSG_Item*)(msg_rcv.data());
 		stk_static_ = msg_item->stk_static;
+		market_id_ = msg_item->market_id;
 		//free(msg_item->pdcdata);
 		//msg_item->pdcdata = NULL;
-		DispatchToLua(msg_item->pdcdata, msg_item->dc_type, msg_item->dc_general_intype, msg_item->stk_num, msg_item->struct_size, msg_item->did_template_id);
+		DispatchToLua(msg_item->pdcdata, msg_item->dc_type, msg_item->dc_general_intype, msg_item->stk_num, msg_item->did_template_id);
 		//DispatchToLua(pdata, DCT_STKSTATIC, 0, 2000, sizeof(stk_static), 0);
 	}
 }

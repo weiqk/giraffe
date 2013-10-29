@@ -10,37 +10,37 @@ const char* Utils::tcp_flag_to_str( unsigned char flag )
 {
 	switch((unsigned short)flag)
 	{
-	case FIN:
+	case cons::FIN:
 		return "[FIN]";
 		break;
-	case SYN:
+	case cons::SYN:
 		return "[SYN]";
 		break;
-	case RST:
+	case cons::RST:
 		return "[RST]";
 		break;
-	case PSH:
+	case cons::PSH:
 		return "[PSH]";
 		break;
-	case ACK:
+	case cons::ACK:
 		return "[ACK]";
 		break;
-	case FINACK:
+	case cons::FINACK:
 		return "[FIN,ACK]";
 		break;
-	case SYNACK:
+	case cons::SYNACK:
 		return "[SYN,ACK]";
 		break;
-	case RSTACK:
+	case cons::RSTACK:
 		return "[RST,ACK]";
 		break;
-	case PSHACK:
+	case cons::PSHACK:
 		return "[PSH,ACK]";
 		break;
-	case FINPSHACK:
+	case cons::FINPSHACK:
 		return "[FIN,PSH,ACK]";
 		break;
-	case URG:
+	case cons::URG:
 		return "[URG]";
 		break;
 	default:
@@ -67,7 +67,7 @@ unsigned int Utils::UINT24to32(unsigned short low,unsigned char high)
     return low + (high<<16);
 }
 
-char * Utils::DCTypeToString(int dc_type)
+const char * Utils::DCTypeToString(int dc_type)
 {
 	switch(dc_type)
 	{
@@ -138,7 +138,7 @@ char * Utils::DCTypeToString(int dc_type)
 	}
 }
 
-char *Utils::DCGeneral_IntypeToString(int dc_general_intype)
+const char * Utils::DCGeneral_IntypeToString(int dc_general_intype)
 {
 	switch(dc_general_intype)
 	{

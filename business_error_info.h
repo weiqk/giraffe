@@ -6,7 +6,25 @@
 #include <log4cxx/dailyrollingfileappender.h>
 #include <log4cxx/basicconfigurator.h>
 #include <log4cxx/patternlayout.h>
+#include <curl/curl.h>
 #include "basethread.h"
+
+class HttpReturnContent
+{
+public:
+	HttpReturnContent():pstr_(NULL),len_(0){};
+	~HttpReturnContent()
+	{
+		if(NULL != pstr_)
+		{
+			delete [] pstr_;
+			pstr_ = NULL;
+		}
+	};
+	char *pstr_;
+	int len_;
+private:
+};
 
 class BusinessErrorInfo: public BaseThread
 {
@@ -39,7 +57,11 @@ public:
 private:
 	void InitZMQ();
 	void InitLog();
-	void WriteToLog(const std::string str);
+	void InitCurl();
+	void WriteToLog(const std::string &str);
+	static size_t RecvDataCallback(void *ptr, size_t size, size_t nmemb, HttpReturnContent *);
+	void SplitString(char *str, const char * separator);
+	void DispatchToWebServer(std::string &uri);
 
 	zmq::context_t *context_;
 	zmq::socket_t *sock_recv_;
@@ -47,6 +69,13 @@ private:
 	log4cxx::LoggerPtr logger_business_error_;
 	log4cxx::PatternLayoutPtr pattern_layout_;
 	log4cxx::DailyRollingFileAppenderPtr appender_;
+	CURL * curl_;
+	CURLcode curl_res_code_;
+	std::string market_id_;
+	std::string dc_type_;
+	std::string error_id_;
+	std::string type_id_;	
+	HttpReturnContent http_ret_content_;
 };
 
 #endif

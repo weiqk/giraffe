@@ -13,7 +13,6 @@
 #include <assert.h>
 #include <zlib.h>
 #include <set>
-#include "flags.h"
 
 using namespace log4cxx;
 
@@ -203,11 +202,9 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
     }
 	else if(DCT_XML == pdch->m_cType)//no need to listening dct_xml data
 	{
-		LOG4CXX(logger_, "recv DCT_XML");	
 	}
 	else if(DCT_RAWDATA == pdch->m_cType)//no need to listening raw data
 	{
-		LOG4CXX(logger_, "recv DCT_RAWDATA");	
 	}
     else if(DCT_SHL2_MMPEx == pdch->m_cType)
     {
@@ -387,7 +384,7 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 			LOG4CXX_ERROR(logger_, "diduncompress read config error");
 		}
 		diducp.Initialize();
-		LOG4CXX_INFO(logger_, "pdch->m_nLen:" << pdch->m_nLen);
+		//LOG4CXX_INFO(logger_, "pdch->m_nLen:" << pdch->m_nLen);
 		if( 1 == diducp.DisassemblePack(pdch,data_buf))
 		{
 			LOG4CXX_INFO(logger_, "uncompress did success!");
@@ -414,6 +411,7 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 	if(NULL != pdcdata)
 	{
 		Lua_ZMQ_MSG_Item msg_item;
+		msg_item.market_id = market_id_;
 		msg_item.dc_type = pdch->m_cType;
 		msg_item.pack_len = pdch->m_nLen+10; 
 		msg_item.dc_general_intype = dc_general_intype;
@@ -464,16 +462,16 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 	{
 		if(0 != dc_general_intype)
 		{
-			info.dctype = Utils::DCGeneral_IntypeToString(dc_general_intype);
+			info.dctype = const_cast<char *>(Utils::DCGeneral_IntypeToString(dc_general_intype));
 		}
 		else
 		{
-			info.dctype = Utils::DCTypeToString(pdch->m_cType);
+			info.dctype = const_cast<char *>(Utils::DCTypeToString(pdch->m_cType));
 		}
 	}
 	else
 	{
-		info.dctype = Utils::DCTypeToString(pdch->m_cType);
+		info.dctype = const_cast<char *>(Utils::DCTypeToString(pdch->m_cType));
 	}
 	info.seqtag = pdch->m_nSeq.Get();
 	DispatchData(sock_send_to_log_, &info, sizeof(info));
@@ -631,7 +629,7 @@ void UncompressDCPacket::RunThreadFunc()
 				bool ret = sock_recv_->recv(&msg_rcv);
 				assert(true == ret);
                 packet_item_ptr = static_cast<PacketItem *>(msg_rcv.data());
-
+				market_id_ = packet_item_ptr->market_id;
 				header = &(packet_item_ptr->header);
 				pkt_data = packet_item_ptr->data;
 				if(NULL == pkt_data) break;	

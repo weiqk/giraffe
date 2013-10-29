@@ -7,7 +7,7 @@
 #include "zmq.hpp"
 #include "pcap/pcap.h"
 #include "log4cpp/Category.hh"
-#include "flags.h"
+#include "constants.h"
 #include "mword.h"
 
 using namespace std;
@@ -147,6 +147,7 @@ typedef struct PacketItem
 {
 	int thread_tag;
     int port_tag;
+	unsigned short market_id;
     //long long seqtag;
     struct pcap_pkthdr header;
     unsigned char *data;
@@ -162,6 +163,7 @@ typedef struct CapNetPacketItem
 
 typedef struct Lua_ZMQ_MSG_Item
 {
+	unsigned short market_id;
 	int dc_type;
 	int dc_general_intype;
 	int stk_num;

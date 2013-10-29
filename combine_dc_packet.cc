@@ -1,6 +1,6 @@
 #include "combine_dc_packet.h"
 #include "datacollect.h"
-#include "flags.h"
+#include "constants.h"
 
 using namespace log4cxx;
 
@@ -73,11 +73,11 @@ void CombineDCPacket::DispatchData(zmq::socket_t * sock, void * data, int size)
 void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base_addr, int pre_dch_offset, int dc_len)
 {
 	//count_combine_pack += dc_len;
-	unsigned int temp_len = dc_len;
+	size_t temp_len = dc_len;
 	unsigned char *temp_pdch = (unsigned char *)(pkt_base_addr + pre_dch_offset);
 	DC_HEAD *temp_dch_item = (DC_HEAD *)temp_pdch;
-	unsigned int packet_len = 0;
-	unsigned int recombined_header_bufsize = 0;
+	size_t packet_len = 0;
+	size_t recombined_header_bufsize = 0;
 	while(temp_len > 0)
 	{
 		//combine dc_header and judge whether the combined dc_header is the real dc_header
@@ -168,7 +168,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 
 						if(temp_len > 0 && temp_len < sizeof(DC_HEAD))
 						{
-							memset(dc_header_, 0 ,DC_HEAD_LEN);
+							memset(dc_header_, 0 ,cons::DC_HEAD_LEN);
 							memcpy(dc_header_,temp_pdch,temp_len);
 							dc_header_last_inner_len_ += temp_len;
 							packet_len = 0;
@@ -243,7 +243,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 
 				if(temp_len > 0 && temp_len < sizeof(DC_HEAD))
 				{
-					memset(dc_header_, 0 ,sizeof(DC_HEAD_LEN));
+					memset(dc_header_, 0 ,sizeof(cons::DC_HEAD_LEN));
 					memcpy(dc_header_,temp_pdch,temp_len);
 					dc_header_last_inner_len_ += temp_len;
 					temp_len = 0;
@@ -342,7 +342,7 @@ void CombineDCPacket::RunThreadFunc()
 				thread_tag = pw_item_ptr->thread_tag;
 				header = &(pw_item_ptr->header);
 				pkt_data = pw_item_ptr->data;
-				if (RESET == thread_tag)
+				if (cons::RESET == thread_tag)
 				{
 					header = NULL;
 					pkt_data = NULL;
@@ -372,10 +372,10 @@ void CombineDCPacket::RunThreadFunc()
 				    last_temp_len_ = 0;
 				    case2_tag_ = 0;
 				    last_tcp_seq_ = 0;
-				    memset(dc_header_, 0, DC_HEAD_LEN);
+				    memset(dc_header_, 0, cons::DC_HEAD_LEN);
 				    memset(recombined_header_buf_, 0 ,PCAPTOPARSE_BUF_SIZE);
 				}
-				else if (NORMAL == thread_tag)
+				else if (cons::NORMAL == thread_tag)
 				{
 					ih = (ip_head *)(pkt_data + 14); //14 bytes is the length of ethernet header
 					iph_len = (ih->ver_ihl & 0xf) * 4;//20bytes
@@ -385,7 +385,7 @@ void CombineDCPacket::RunThreadFunc()
 					pre_dch_offset = 14 + head_len;
 					switch(ih->protocol)
 					{
-					case TCP:
+					case cons::TCP:
 						pdch = (DC_HEAD*)((u_char*)pkt_data + pre_dch_offset);//tcph_len is
 						tcp_data_len = ntohs(ih->tlen) - head_len;//must use ih->tlen, because sometime it will have supplement package.
 						tcp_current_seq = ntohl(tcph->seq);
@@ -498,7 +498,7 @@ void CombineDCPacket::RunThreadFunc()
 							 //}
 						}
 						break;
-					case UDP:
+					case cons::UDP:
 						break;
 					default:
 						break;

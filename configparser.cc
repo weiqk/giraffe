@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <iostream>
 #include "configparser.h"
-#include "flags.h"
+#include "constants.h"
 
 using namespace std;
 using namespace log4cxx;
@@ -30,7 +30,7 @@ void ConfigParser::Parse()
 	xml2cfg config;
 	deque<XML_ZMQ> *log_zmqdeque = xml_log_.get_zmqdeque();
 	deque<XML_ZMQ> *business_errinfo_zmqdeque = xml_business_errinfo_.get_zmqdeque();
-	config.open(CONFIG_FILE);
+	config.open(cons::CONFIG_FILE);
 	xmlNodePtr root_node = xmlNewNode(NULL,BAD_CAST"listening");
 
 	xmlNodeSetPtr log_nodeset = config.locate(NULL,"/listening/log");

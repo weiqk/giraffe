@@ -21,7 +21,7 @@
 #include "business_error_info.h"
 #include "DIDTemplateToLuaStruct.h"
 #include "configparser.h"
-#include "flags.h"
+#include "constants.h"
 
 
 using namespace std;
@@ -206,7 +206,7 @@ int main()
 
 	//int adapter_id = get_network_adapter();
 	//assert(adapter_id >= 0);
-	ConfigParser config_parser(CONFIG_FILE);
+	ConfigParser config_parser(cons::CONFIG_FILE);
 	config_parser.Parse();
 
 	zmq::context_t context(1);

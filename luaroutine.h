@@ -50,7 +50,7 @@ private:
 	void InitLua();
 	void InitZMQ();
 	//Lua_ZMQ_MSG_Item Test();
-	void DispatchToLua(unsigned char * pdcdata, int dc_type, int dc_general_intype,int stk_num, int struct_size, int did_template_id);
+	void DispatchToLua(unsigned char * pdcdata, int dc_type, int dc_general_intype, int stk_num, int did_template_id);
 	//void DispatchToMonitor(int stk_id, const char * value);
 	struct STK_STATIC* GetStkByID(const int stk_id);
 	zmq::context_t *context_;
@@ -60,6 +60,7 @@ private:
 	std::string lua_zmqsocketaddr_;
 	XML_ListeningItem listening_item_;
 	lua_State * lua_state_;
+	unsigned short market_id_;
 	//MonitorFileMap * monitor_mapping_file_;
 	STK_STATIC* stk_static_;
 	static log4cxx::LoggerPtr logger_;
