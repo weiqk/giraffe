@@ -173,7 +173,7 @@ void Utils::WriteIntoFile(const char *file_name, const char *mode, const void* d
 	FILE * fp = fopen(file_name, mode);
 	if(NULL != fp)
 	{
-		fwrite(data, 1, length + 1, fp);
+		fwrite(data, 1, length, fp);
 		fclose(fp);
 	}
 	else
