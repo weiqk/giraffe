@@ -271,7 +271,7 @@ void ShuntNetPacket::WriteDidConfFile(const char * file_name, vector<DidStruct> 
 {
 	char file_content[2048] = {0};
 	CreateDidConfContent(did_structs, file_content);
-	Utils::WriteIntoFile(file_name, "wb, ccs=UTF-8", file_content, strlen(file_content));
+	Utils::WriteIntoFile(file_name, "wb", file_content, strlen(file_content));
 }
 
 bool ShuntNetPacket::IsTcpConnection(unsigned char flags, int &tcpconntag, int &tcpconnstatus)
