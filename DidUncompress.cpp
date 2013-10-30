@@ -522,16 +522,16 @@ int DidUncompress::DisassemblePack(DC_HEAD* pPack,DataBuffer& buf)
 		if(pPack->m_cTag == DC_TAG && (pPack->m_wAttrib & DC_CPS_MASK) == DC_XMLCID_CPS)
 		{
 			int did = pDidHead->GetDid();
-			LOG4CXX_INFO(logger_, "did:" << did);
+			//LOG4CXX_INFO(logger_, "did:" << did);
 			int num = pDidHead->GetRecNum();
-			LOG4CXX_INFO(logger_, "did num:" << num);
+			//LOG4CXX_INFO(logger_, "did num:" << num);
 			//pDidHead->
 			DC_DIDCompress* pDidCompress = (DC_DIDCompress*)((char*)pDidHead + iDidHeadLen);
 			len = pDidCompress->GetUnComLen();
-			LOG4CXX_INFO(logger_, "len:" << len);
+			//LOG4CXX_INFO(logger_, "len:" << len);
 			int iCompressHeadLen = pDidCompress->GetLen();
 			int iCompressLen = pHead->m_nLen - iDidHeadLen - iCompressHeadLen;
-			LOG4CXX_INFO(logger_, "did icompresslen:" << iCompressLen);
+			//LOG4CXX_INFO(logger_, "did icompresslen:" << iCompressLen);
 			char* pData = (char*)pDidCompress+iCompressHeadLen;
 
 			if(!m_mapDidFile.count(did))
@@ -622,7 +622,7 @@ int DidUncompress::DisassemblePack(DC_HEAD* pPack,DataBuffer& buf)
 						return -1;
 					int finish_uncompress_len = it->second.pUnCompress->FinishUnCompressedData();
 					
-					LOG4CXX_INFO(logger_, "finish uncompress len:" << finish_uncompress_len);
+					//LOG4CXX_INFO(logger_, "finish uncompress len:" << finish_uncompress_len);
 					if(finish_uncompress_len != len)
 						return -1;
 					return 1;
