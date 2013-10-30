@@ -110,7 +110,10 @@ public:
 
 public:
 	DidUncompress(string & path);
+	DidUncompress(void);
 	~DidUncompress(void);
+	void SetConfigPath(string & path);  
+	void SetStaticDay(unsigned int date);
 	int ReadConfig();
 	void Initialize();
 	//int Uncompress(char* source_data, int source_size, int num, int did, char* des_data, int des_size );
@@ -125,6 +128,7 @@ private:
 
 private:
 	string configFilePath;
+	unsigned int staticDay;
 	map<int, TDidInfo> m_mapDidFile;
 	map<int,TStructForGetBmData> m_mapStructForBmData;
 	static log4cxx::LoggerPtr logger_;

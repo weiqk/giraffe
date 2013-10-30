@@ -28,6 +28,7 @@
 #include "extract_dc.h"
 #include "dzh_time_t.h"
 #include "xml_class_set.h"
+#include "DidUncompress.h"
 #include <csignal>
 
 using namespace std;
@@ -50,6 +51,7 @@ public:
         pStkDyna = NULL;
         pStkMMPEx = NULL;
 		count_rc_ = 0;
+		did_init_tag_= 0;
     };
 	~UncompressDCPacket()
 	{
@@ -114,6 +116,8 @@ private:
 	unsigned short market_id_;
 	int count_rc_;
 	static log4cxx::LoggerPtr logger_;
+	int did_init_tag_;
+	DidUncompress did_uncompress_;	
 };
 
 #endif

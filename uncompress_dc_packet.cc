@@ -125,7 +125,24 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
     {
 		//initial the did related files
 		extractDC_.set_static_before_dyna_tag(true);	
+
         DC_STKSTATIC_MY* p = (DC_STKSTATIC_MY*)(pdch+1);
+
+		//initial the did uncompression 
+		did_uncompress_.SetStaticDay(p->m_nDay);	
+		int port = listening_item_.get_port();
+		char temp_file[64];
+		sprintf(temp_file,"%d_did_config.xml",port);
+		std::string did_config_file(temp_file);
+		did_uncompress_.SetConfigPath(did_config_file);
+		if( -1 == did_uncompress_.ReadConfig() )
+		{	
+			LOG4CXX_ERROR(logger_, "diduncompress read config error");
+		}
+		did_uncompress_.Initialize();
+
+		LOG4CXX_INFO(logger_, "did uncompress init");
+
         if (0 == pdch->m_wAttrib)
         {
 			stknum = p->m_nNum;
@@ -374,18 +391,8 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 	}
 	else if(DCT_DID == pdch->m_cType)
 	{
-		int port = listening_item_.get_port();
-		char temp_file[64];
-		sprintf(temp_file,"%d_did_config.xml",port);
-		std::string did_config_file(temp_file);
-		DidUncompress diducp(did_config_file);
-		if( -1 == diducp.ReadConfig() )
-		{	
-			LOG4CXX_ERROR(logger_, "diduncompress read config error");
-		}
-		diducp.Initialize();
 		//LOG4CXX_INFO(logger_, "pdch->m_nLen:" << pdch->m_nLen);
-		if( 1 == diducp.DisassemblePack(pdch,data_buf))
+		if( 1 == did_uncompress_.DisassemblePack(pdch,data_buf))
 		{
 			LOG4CXX_INFO(logger_, "uncompress did success!");
 			DC_DIDHead *did_head = (DC_DIDHead *)(pdch+1);

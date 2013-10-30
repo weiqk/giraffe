@@ -139,9 +139,20 @@ int DataBuffer::GetLen()
 	return len;
 }
 
+DidUncompress::DidUncompress(void)
+{
+	configFilePath = "";
+	staticDay = 0;
+	if(!m_mapDidFile.empty())
+		m_mapDidFile.clear();
+	if(!m_mapStructForBmData.empty())
+		m_mapStructForBmData.clear();
+}
+
 DidUncompress::DidUncompress(string& path)
 {
 	configFilePath = path;
+	staticDay = 0;
 	if(!m_mapDidFile.empty())
 		m_mapDidFile.clear();
 	if(!m_mapStructForBmData.empty())
@@ -176,6 +187,16 @@ DidUncompress::~DidUncompress(void)
 		}
 		m_mapStructForBmData.clear();
 	}
+}
+
+void DidUncompress::SetConfigPath(string & path)
+{
+	configFilePath = path;
+}
+
+void DidUncompress::SetStaticDay(unsigned int date)
+{
+	staticDay = date;
 }
 
 int DidUncompress::ReadConfig()
@@ -355,7 +376,7 @@ void DidUncompress::Initialize()
 													it->first,
 													cid,
 													lastcmp,
-													0,
+													staticDay,
 													GetBmData,
 													SetBmData,
 													(char*)pCompressUserArg))
@@ -379,7 +400,8 @@ void DidUncompress::Initialize()
 			if(!it->second.pUnCompress->Initialize(	it->second.pDidStruct,
 													it->first,
 													cid,
-													lastcmp))
+													lastcmp,
+													staticDay))
 			{
 				CDidStructApi::DestoryDidStructObj(it->second.pDidStruct);
 				it->second.pDidStruct = NULL;
@@ -500,12 +522,16 @@ int DidUncompress::DisassemblePack(DC_HEAD* pPack,DataBuffer& buf)
 		if(pPack->m_cTag == DC_TAG && (pPack->m_wAttrib & DC_CPS_MASK) == DC_XMLCID_CPS)
 		{
 			int did = pDidHead->GetDid();
+			LOG4CXX_INFO(logger_, "did:" << did);
 			int num = pDidHead->GetRecNum();
+			LOG4CXX_INFO(logger_, "did num:" << num);
 			//pDidHead->
 			DC_DIDCompress* pDidCompress = (DC_DIDCompress*)((char*)pDidHead + iDidHeadLen);
 			len = pDidCompress->GetUnComLen();
+			LOG4CXX_INFO(logger_, "len:" << len);
 			int iCompressHeadLen = pDidCompress->GetLen();
 			int iCompressLen = pHead->m_nLen - iDidHeadLen - iCompressHeadLen;
+			LOG4CXX_INFO(logger_, "did icompresslen:" << iCompressLen);
 			char* pData = (char*)pDidCompress+iCompressHeadLen;
 
 			if(!m_mapDidFile.count(did))
@@ -522,7 +548,7 @@ int DidUncompress::DisassemblePack(DC_HEAD* pPack,DataBuffer& buf)
 				if(!puc->Initialize(	it->second.pDidStruct,
 										did,
 										pDidCompress->m_bCid,
-										0
+										staticDay	
 									)
 				)
 				{
@@ -594,10 +620,10 @@ int DidUncompress::DisassemblePack(DC_HEAD* pPack,DataBuffer& buf)
 					it->second.pUnCompress->SetUnCompressOutputBuffer(buf.GetData(),len);
 					if(it->second.pUnCompress->UnCompressData(pData,iCompressLen,num) == -1)
 						return -1;
-					int temp_finish_uncompress_len = it->second.pUnCompress->FinishUnCompressedData();
+					int finish_uncompress_len = it->second.pUnCompress->FinishUnCompressedData();
 					
-					LOG4CXX_INFO(logger_, "finish uncompress len:" << temp_finish_uncompress_len);
-					if(it->second.pUnCompress->FinishUnCompressedData() != len)
+					LOG4CXX_INFO(logger_, "finish uncompress len:" << finish_uncompress_len);
+					if(finish_uncompress_len != len)
 						return -1;
 					return 1;
 				}
@@ -802,7 +828,7 @@ int DidUncompress::UpdateDSData(TDidInfo* pDidFile,char* pTemplateData,int len)
 												pDidFile->did,
 												cid,
 												lastcmp,
-												0,
+												staticDay,
 												GetBmData,
 												SetBmData,
 												(char*)pCompressUserArg))
@@ -822,7 +848,8 @@ int DidUncompress::UpdateDSData(TDidInfo* pDidFile,char* pTemplateData,int len)
 		if(!pDidFile->pUnCompress->Initialize(	pDidFile->pDidStruct,
 												pDidFile->did,
 												cid,
-												lastcmp))
+												lastcmp,
+												staticDay))
 		{
 			CDidStructApi::DestoryDidStructObj(pDidFile->pDidStruct);
 			pDidFile->pDidStruct = NULL;
