@@ -16,7 +16,7 @@ class xml2cfg
 {
 public:
 	xml2cfg():
-	  docptr_(NULL), xmlobjptr_(NULL),xmlctxptr_(NULL),xmlrootctxptr_(NULL),rootnode_(NULL)
+	  docptr_(NULL), xmlobjptr_(NULL),xmlctxptr_(NULL),xmlrootctxptr_(NULL)//,rootnode_(NULL)
 	  {
 	  }
 
@@ -118,7 +118,7 @@ private:
 	xmlDocPtr 				docptr_;
 	xmlXPathObjectPtr		xmlobjptr_;
 	xmlXPathContextPtr		xmlctxptr_, xmlrootctxptr_;
-	xmlNodePtr				rootnode_;
+	//xmlNodePtr				rootnode_;
 };
 
 #endif //__GW_UTILIY_XML_to_CONFIG_HEADER__

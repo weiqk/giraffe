@@ -439,7 +439,7 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 
 	tcph = (tcp_head *) ((unsigned char*)ih + iph_len);
 	tcph_len = 4*((tcph->dataoffset)>>4&0x0f);
-    iproto = "TCP";
+    iproto = const_cast<char *>("TCP");
    		/* convert from network byte order to host byte order */
 	sport = ntohs( tcph->source );
 	dport = ntohs( tcph->dest );

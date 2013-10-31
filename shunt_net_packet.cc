@@ -32,6 +32,8 @@ pthread_once_t pthread_once_shunt = PTHREAD_ONCE_INIT;
 //}
 //
 
+
+
 void CreateThreadKey()
 {
 	pthread_key_create(&pthread_key_shunt, NULL);
@@ -440,7 +442,7 @@ void ShuntNetPacket::RunThreadFunc()
 		sprintf(key_ip_dst,"%d.%d.%d.%d:%d",ih->daddr.byte1,ih->daddr.byte2,ih->daddr.byte3,ih->daddr.byte4,ntohs(tcph->dest));
 
 		if(cons::TCP == ih->protocol)
-		{//1.鑴滆劏闇茶劎tcp鑴曞崲闄嗚劔鑴抽簱鑴ゅ崲娼炶劌闇茶劎椹撮檵鑴抽簱鑴ゅ崲
+		{
 			if(IsTcpConnection(tcph->flags, tcpconntag, tcpconnstatus))
 			{
 				//cout<<"A new connection was been built! The ip and port is:"<<key_ip_src<<endl;

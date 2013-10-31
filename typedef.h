@@ -3,8 +3,6 @@
 
 #include <time.h>
 #include <iostream>
-#include <log4cxx/rollingfileappender.h>
-
 
 typedef long long            int64;
 typedef int                  BOOL;

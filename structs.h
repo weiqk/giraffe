@@ -14,13 +14,6 @@ using namespace std;
 
 #pragma pack(push,1)
 
-const int COMBINING_PACKETS_BUFFER_SIZE = 409600;
-
-typedef struct CombinedPacketItem
-{
-	char data[COMBINING_PACKETS_BUFFER_SIZE];
-}CombinedPacketItem;
-
 typedef struct TcpDisorderSetItem
 {
 	unsigned long tcp_seq;

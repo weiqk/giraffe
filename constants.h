@@ -61,27 +61,25 @@ namespace cons
         ESP = 'E',//ETF
         ZSP = 'Z',//处于退市整理期的证券
     };
+	enum Lv4protocol
+	{
+		TCP = 6,
+		UDP = 17
+	};
 
-
-    enum Lv4protocol
-    {
-        TCP = 6,
-        UDP = 17
-    };
-
-    enum IpFlags
-    {
-        FIN = 0x01,
-        SYN = 0x02,
-        RST = 0x04,
-        PSH = 0x08,
-        ACK = 0x10,
-        FINACK = 0x11,
-        SYNACK = 0x12,
-        RSTACK = 0x14,
-        PSHACK = 0x18,
-        FINPSHACK = 0x19,
-        URG = 0x20
-    };
+	enum IpFlags
+	{
+		FIN = 0x01,
+		SYN = 0x02,
+		RST = 0x04,
+		PSH = 0x08,
+		ACK = 0x10,
+		FINACK = 0x11,
+		SYNACK = 0x12,
+		RSTACK = 0x14,
+		PSHACK = 0x18,
+		FINPSHACK = 0x19,
+		URG = 0x20
+	};
 }
 #endif // MONITOR_CONSTANTS_H_
