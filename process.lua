@@ -1,7 +1,7 @@
 require("os")
 --local path =  os.getenv("PWD")
 --local lualib_path = path..'/lualib/'
-
+require("logging.file")
 require("base_type")
 require("logic_process")
 
@@ -9,6 +9,11 @@ local zmq = require("zmq")
 
 local ffi = require("ffi")
 
+local trade_time = {"0:00-4:00","5:00-23:59"}
+local SLEEP_TIME = 3
+local hour_mins = {}
+
+local logger = logging.file("lua_%s.log", "%Y-%m-%d")
 --io.write("this is lua script\n")
 
 ffi.cdef [[
@@ -19,6 +24,8 @@ static const int  SHL2_MMP_SIZE=5;
 int printf(const char *fmt, ...);
 
 typedef unsigned int time_t;
+
+typedef __int64 int64;
 
 enum DC_GENERAL_INTYPE
 {
@@ -351,29 +358,88 @@ end
 
 local ctx
 local sock
+local sock_addr
 local sock_pattern
+local sock_action
 function InitZMQ(pattern, action, addr)
-	ctx = zmq.init()
+	--ctx = zmq.init()
 	sock_pattern = GetZMQPattern(pattern)	
 	assert(sock_pattern)
-	sock = assert(ctx:socket(sock_pattern))
 	sock_addr = addr
-	if action == "connect" then
-		assert(sock:connect(sock_addr))		
-		--print"connect"
-	elseif action == "bind" then
-		assert(sock:bind(sock_addr));
-		--print"bind"
+	sock_action = action
+	--sock = assert(ctx:socket(sock_pattern))
+	--sock_addr = addr
+	--if action == "connect" then
+	--	assert(sock:connect(sock_addr))		
+	--elseif action == "bind" then
+	--	assert(sock:bind(sock_addr))
+	--end
+	InitTradeTime()
+end
+
+function InitTradeTime()
+	for k,v in ipairs(trade_time) do
+		for x in string.gmatch(v,"%d+") do
+	        hour_mins[#hour_mins+1] = tonumber(x)
+		end                                                                 end
+end
+
+function IsTradeTime()
+	local now = os.date("*t")
+	local now_time = os.time()
+	for i=1,table.maxn(hour_mins),4 do
+		local ptime = os.time({year=now.year,month=now.month,day=now.day,hour=hour_mins[i],min=hour_mins[i+1],sec=0})
+		local ntime = os.time({year=now.year,month=now.month,day=now.day,hour=hour_mins[i+2],min=hour_mins[i+3],sec=0})   
+		if (now_time >= ptime and now_time <= ntime) then 
+			return true
+		end
+	end
+	return false
+end
+
+local last_pack_count = -1
+local pack_count = 0
+function ObserverOvertime(market_id)
+	--zmq.sleep(SLEEP_TIME)
+	logger:info("recv overtime from c++")
+	if(IsTradeTime()) then
+		if(last_pack_count ~= pack_count) then
+			last_pack_count = pack_count
+		else
+			local ret_error = str_format("%d:%d:%s:%s", 0, 1, "not recv data in trading time", "not recv data in trading time for a while")
+			local ret_str = FormatReturnError(market_id, "others", ret_error)
+			if ret_str ~= nil then 
+				SendErrorMsg(ret_str)		
+			else
+				logger:error("ObserverOvertime ret_str is nil")
+			end
+		end
+	else
+		logger:info("not trading time")
 	end
 end
 
 function SendErrorMsg(error_msg)
-	--print(error_msg)
-	local msg = zmq.zmq_msg_t.init()	
-	msg:set_data(error_msg)
-	--print(type(buf))
-	--local s = ffi.string(msg:data())
-	sock:send_msg(msg)
+	ctx = zmq.init()
+	sock = assert(ctx:socket(sock_pattern))
+	if sock_action == "connect" then
+		assert(sock:connect(sock_addr))		
+	elseif sock_action == "bind" then
+		assert(sock:bind(sock_addr));
+	end
+
+	--local time = os.time()
+	local date = os.date()
+	local msg = zmq.zmq_msg_t.init_data(error_msg)	
+	local send,err = sock:send_msg(msg)
+	if send then
+		logger:info(date..":send to c++")
+	else
+		logger:error("send error:",err)
+	end
+	
+	sock:close()
+	ctx:term()
 end
 
 local did_template_id_table = {}
@@ -385,15 +451,18 @@ end
 function process_basic_type(market_id, dctype, num, pdcdata)
 	local stk 
 	local dc_type
+	local ret_short_error
 	local ret_error
 	local ret_str 
+	pack_count = pack_count + 1
 	if dctype == C.DCT_STKSTATIC then
 		stk = ffi_cast("STK_STATIC *", pdcdata)
 		dc_type = "static"
+		logger:info(dc_type)
 		for i=1,num do
 			ret_error = handle_stk_static(stk)			
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
-			--ret_str = "stk-static\0"
+			--ret_str = "00001:static:0:1:static_error:xxxxxxx\0"
 			if ret_str ~= nil then 
 				SendErrorMsg(ret_str)		
 			end
@@ -402,6 +471,7 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 	elseif dctype == C.DCT_STKDYNA then
 		stk = ffi_cast("STK_DYNA *", pdcdata)
 		dc_type = "dyna"
+		logger:info(dc_type)
 		for i=1,num do
 			ret_error = handle_stk_dyna(stk)
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
@@ -470,6 +540,8 @@ function process_did_type(market_id, template_id, num, pdcdata)
 	local pdata
 	local template_type 
 	local template = require(template_id)
+	pack_count = pack_count + 1
+	logger:info("did")
 	if template_id == 100000 then
 		pdata = ffi_cast("T_BUY_SELL_INFO *", pdcdata)
 		template_type = "t_buy_sell_info"
@@ -551,6 +623,8 @@ function process_general_type(intype, num, pdata)
 	local stk
 	local ret_error
 	local ret_str 
+	pack_count = pack_count + 1
+	logger:info("general")
 		for i=1, num do
 			if(intype == C.GE_STATIC_EX) then
 				stk = ffi_cast("STK_STATICEx *" ,pdata)
@@ -656,6 +730,7 @@ end
 --TODO FIX
 function process_shl2_queue(dctype, pdcdata)
 	local stk
+	pack_count = pack_count + 1
 	if dctype == C.DCT_SHL2_QUEUE then
 		stk = ffi_cast("SHL2_Queue *", pdcdata)
 		local ret_error = handle_shl2_mmp(stk)

@@ -7,6 +7,7 @@
 #include "xml_class_set.h"
 //#include "MonitorFileMap.h"
 #include "datacollect.h"
+#include <pthread.h>
 
 #ifdef __linux
     #include <luajit-2.0/lua.hpp>
@@ -14,6 +15,11 @@
     #include <lua.hpp>
 #endif
 
+typedef struct 
+{
+	lua_State * lua_state;	
+	unsigned short market_id;
+}ChildThreadArg;
 
 class LuaRoutine:public BaseThread
 {
@@ -47,6 +53,7 @@ public:
 	void RunThreadFunc();
 protected:
 private:
+	static void * ChildThreadFunc(void *arg);
 	void InitLua();
 	void InitZMQ();
 	//Lua_ZMQ_MSG_Item Test();
@@ -64,6 +71,8 @@ private:
 	//MonitorFileMap * monitor_mapping_file_;
 	STK_STATIC* stk_static_;
 	static log4cxx::LoggerPtr logger_;
+	pthread_t tid_;
+	ChildThreadArg child_thread_arg_;
 };
 
 #endif

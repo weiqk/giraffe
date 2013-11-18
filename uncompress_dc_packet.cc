@@ -612,9 +612,9 @@ void UncompressDCPacket::RunThreadFunc()
 	DC_HEAD *pdch;
 	
     unsigned int countnum_UncompressDCPacket = 0;
-    long int timebase_UncompressDCPacket = 0;
-    long int timelive_UncompressDCPacket = 0;
-    int timetag_UncompressDCPacket = 0;
+    //long int timebase_UncompressDCPacket = 0;
+    //long int timelive_UncompressDCPacket = 0;
+    //int timetag_UncompressDCPacket = 0;
 
 	ip_head *ih = NULL;
 	tcp_head *tcph = NULL;

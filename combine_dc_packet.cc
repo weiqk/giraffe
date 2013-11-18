@@ -209,7 +209,6 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 			//cout<<"case2 templen:"<<temp_len<<" packet_len:"<<packet_len<<endl<<flush;
 			//LOG4CXX_INFO(logger_, "case2 templen:" << temp_len << " packet_len:" << packet_len);
 
-			//鹿媒脗脣碌么脝麓掳眉禄鹿脙禄脥锚鲁脡拢卢碌芦脢脟脠麓脢脮碌陆脪禄脨漏脝盲脣没掳眉碌脛脟茅驴枚隆拢拢篓卤脠陆脧脡脵录没拢隆卤脠脠莽脭脷脝麓dc_static鹿媒鲁脤脰脨脠麓脢脮碌陆dc_dsdata掳眉拢漏
 			/*if(0 != packet_len && last_pack_len_ > 0 && packet_len > temp_len && DC_TAG == temp_dch_item->m_cTag && IsDCType(temp_dch_item->m_cType))
 			{
 			temp_len = 0;
@@ -390,6 +389,8 @@ void CombineDCPacket::RunThreadFunc()
 						pdch = (DC_HEAD*)((u_char*)pkt_data + pre_dch_offset);//tcph_len is
 						tcp_data_len = ntohs(ih->tlen) - head_len;//must use ih->tlen, because sometime it will have supplement package.
 						tcp_current_seq = ntohl(tcph->seq);
+						LOG4CXX_INFO(logger_, "tcp current seq:" << tcp_current_seq);
+						LOG4CXX_INFO(logger_, "tcp data len:" << tcp_data_len);
 						if(tcp_data_len > 0)
 						{
 							//if(pdch->m_cType == DCT_STKSTATIC)

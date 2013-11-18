@@ -14,6 +14,8 @@ const char load_file[] = "process.lua";
 unsigned long count_pack = 0;
 struct itimerval tick;  
 
+//多线程互斥这里有问题
+
 void PrintCountInfo(int signo)
 {
     switch(signo)
@@ -28,11 +30,34 @@ void PrintCountInfo(int signo)
     return ;
 }
 
-
 void LuaRoutine::Init()
 {
 	InitZMQ();
 	InitLua();
+}
+void * LuaRoutine::ChildThreadFunc(void *arg)
+{
+	ChildThreadArg* item = (ChildThreadArg*)arg;
+	lua_State * state = item->lua_state;
+	while(true)
+	{
+		sleep(FLAGS_ROLL_OVERTIME);
+		lua_getglobal(state, "ObserverOvertime");
+		lua_pushinteger(state, item->market_id);
+
+		LOG4CXX_INFO(logger_, "ObserverOvertime send to lua");
+		if(lua_pcall(state, 1, 0, 0) != 0)
+		{
+			LOG4CXX_ERROR(logger_, lua_tostring(state, -1)); 
+			lua_pop(state,-1);
+			lua_close(state);
+		}
+		else
+		{
+			lua_pop(state, -1);	
+		}
+	}
+	return 0;	
 }
 
 void LuaRoutine::InitLua()
@@ -75,6 +100,31 @@ void LuaRoutine::InitLua()
 			lua_pop(lua_state_, -1);
 		}
 	}
+	//init ObserverOvertime
+	LOG4CXX_INFO(logger_, "before ObserverOvertime");
+	//lua_getglobal(lua_state_, "ObserverOvertime");
+	//lua_pushinteger(lua_state_, market_id_);
+
+	//if(lua_pcall(lua_state_, 1, 0, 0) != 0)
+	//{
+	//	string s = lua_tostring(lua_state_,-1);
+	//	lua_pop(lua_state_,-1);
+	//	lua_close(lua_state_);
+	//}
+	//else
+	//{
+	//	lua_pop(lua_state_, -1);	
+	//}
+	child_thread_arg_.lua_state = lua_state_;
+	child_thread_arg_.market_id = market_id_;	
+	int err;	
+	err = pthread_create(&tid_, NULL, ChildThreadFunc,(void*)&child_thread_arg_);
+	if (err!=0) 
+	{
+		printf("exit\n");
+		LOG4CXX_ERROR(logger_, "luarout create child thread error");
+	}
+	LOG4CXX_INFO(logger_, "after ObserverOvertime");
 }
 
 void LuaRoutine::InitZMQ()

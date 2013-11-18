@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312" ?>
+ <DidStruct>
+	 <did id="100000" file="/home/yison/projects/new_zz/did/asclient/100000.xml" whole="1" compress="1" /> 
+	 <did id="100001" file="/home/yison/projects/new_zz/did/asclient/100001.xml" whole="1" compress="1" /> 
+</DidStruct>
