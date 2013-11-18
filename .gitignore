@@ -11,4 +11,5 @@ core
 core.*
 monitor
 log
+*.log.*
 print.txt
