@@ -46,6 +46,7 @@ void CaptureNetPacket::InitZMQ()
 
 void CaptureNetPacket::RunThreadFunc()
 {
+	LOG4CXX_INFO(logger_, "cap thread start");
     pcap_if_t * alldevs ;
     char *errbuf= new char[PCAP_ERRBUF_SIZE];
     int len=10240;

@@ -15,11 +15,11 @@
     #include <lua.hpp>
 #endif
 
-typedef struct 
-{
-	lua_State * lua_state;	
-	unsigned short market_id;
-}ChildThreadArg;
+//typedef struct 
+//{
+//	lua_State * lua_state;	
+//	unsigned short market_id;
+//}ChildThreadArg;
 
 class LuaRoutine:public BaseThread
 {
@@ -29,6 +29,7 @@ public:
 		lua_state_ = NULL;
 		sock_ = NULL;
 		stk_static_ = NULL;
+		market_id_ = 0;
 		//monitor_mapping_file_ = new MonitorFileMap("FX_191111.dat",MonitorFileMap::BUILD);
 	}
 	~LuaRoutine()
@@ -53,7 +54,7 @@ public:
 	void RunThreadFunc();
 protected:
 private:
-	static void * ChildThreadFunc(void *arg);
+	//static void * ChildThreadFunc(void *arg);
 	void InitLua();
 	void InitZMQ();
 	//Lua_ZMQ_MSG_Item Test();
@@ -71,8 +72,8 @@ private:
 	//MonitorFileMap * monitor_mapping_file_;
 	STK_STATIC* stk_static_;
 	static log4cxx::LoggerPtr logger_;
-	pthread_t tid_;
-	ChildThreadArg child_thread_arg_;
+	//pthread_t tid_;
+	//ChildThreadArg child_thread_arg_;
 };
 
 #endif

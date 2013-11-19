@@ -18,6 +18,9 @@ public:
 	ShuntNetPacket(zmq::context_t *context,XML_ListeningItem &listening_item):context_(context),listening_item_(listening_item),curent_pool_size_(0)
 	{
 		sock_ = NULL;
+		lua_routine_ = NULL;
+		combine_dc_packet_ = NULL;
+		uncompress_dc_packet_ = NULL;
 	}
 	virtual ~ShuntNetPacket()
 	{
@@ -85,10 +88,13 @@ public:
 		zmqitems_ex_.push_back(item);
 	}
 	void AddToZMQDequeEx(int index);
-	void RunLuaRoutineThread(int index);
 	void RunParseThread(int index);
-	void RunCombineDCPacketThread(int index);
-	void RunUncompressDCPacketThread(int index);
+	void InitLuaRoutineThread(int index);
+	void RunLuaRoutineThread();
+	void InitCombineDCPacketThread(int index);
+	void RunCombineDCPacketThread();
+	void InitUncompressDCPacketThread(int index);
+	void RunUncompressDCPacketThread();
 	bool IncreasePool(int pool_sizse=kPoolSize);
 	void DispatchData(zmq::socket_t * sock, void * data, int size);
 	bool IsTcpDisConnection(unsigned char flags);
@@ -100,6 +106,9 @@ public:
 private:
 	zmq::context_t *context_;
 	zmq::socket_t *sock_;
+	LuaRoutine* lua_routine_;
+	CombineDCPacket* combine_dc_packet_;
+	UncompressDCPacket* uncompress_dc_packet_;
 	XML_ListeningItem listening_item_;
 	unsigned short market_id_;
 	//deque<Parse *> parse_deque_;

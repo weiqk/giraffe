@@ -320,7 +320,12 @@ void CombineDCPacket::RunThreadFunc()
 	int pre_dch_offset = 0;
 	unsigned long tcp_expect_seq = 0;
 	unsigned long tcp_current_seq = 0;
+	unsigned long tcp_last_current_seq = 0;
 	unsigned long tcp_data_len = 0 ;
+	unsigned char *temp_buffer_abnormal = new unsigned char[FLAGS_CAP_PACK_BUF_SIZE];
+	struct pcap_pkthdr temp_header_abnormal;
+	int temp_data_size_abnormal = 0;
+	int abnormal_tag = 0;
 	int disorder_tag = 0;
 	set<TcpDisorderSetItem> tcp_disorder_set;
 
@@ -357,8 +362,10 @@ void CombineDCPacket::RunThreadFunc()
 					pre_dch_offset = 0;
 					tcp_expect_seq = 0;
 					tcp_current_seq = 0;
+					tcp_last_current_seq = 0;
 					tcp_data_len = 0 ;
 					disorder_tag = 0;
+					abnormal_tag = 0;
 
 					//reset unfinished dc package
 					//if(NULL != packet_item_.data) {
@@ -389,6 +396,7 @@ void CombineDCPacket::RunThreadFunc()
 						pdch = (DC_HEAD*)((u_char*)pkt_data + pre_dch_offset);//tcph_len is
 						tcp_data_len = ntohs(ih->tlen) - head_len;//must use ih->tlen, because sometime it will have supplement package.
 						tcp_current_seq = ntohl(tcph->seq);
+						LOG4CXX_INFO(logger_, "tcp exprect seq:" << tcp_expect_seq);
 						LOG4CXX_INFO(logger_, "tcp current seq:" << tcp_current_seq);
 						LOG4CXX_INFO(logger_, "tcp data len:" << tcp_data_len);
 						if(tcp_data_len > 0)
@@ -397,35 +405,94 @@ void CombineDCPacket::RunThreadFunc()
 						 		//DownloadData((unsigned char *)pdch, tcp_data_len);
 							if(!disorder_tag)
 							{
-								if(tcp_expect_seq == 0 || tcp_expect_seq == tcp_current_seq)
+								if(tcp_last_current_seq != 0 && tcp_last_current_seq == tcp_current_seq)
 								{
-									//cout<<"tcp seq:"<<tcp_current_seq<<" tcp_data_len:"<<tcp_data_len<<endl<<flush;
-									//cout<<"tcp_data_len:"<<tcp_data_len<<endl;
-								 	Combine(*header,pkt_data,pre_dch_offset,tcp_data_len);
 									tcp_expect_seq = tcp_current_seq + tcp_data_len;
-								}
-								else if(tcp_expect_seq > tcp_current_seq)
-								{
-									//cout<<"tcp_expect_seq > tcp_current_seq"<<endl;
+									abnormal_tag = 1;
+									temp_header_abnormal = *header;	
+									memcpy(temp_buffer_abnormal, pkt_data + pre_dch_offset, tcp_data_len);
+									temp_data_size_abnormal = tcp_data_len;
+									LOG4CXX_INFO(logger_, "abnormal: tcp_last_current_seq == tcp_current_seq");
 									break;
 								}
-								else
+								if(abnormal_tag == 0)
 								{
-									count_disorder++;
-									//cout<<"disorder! NO:"<<count_disorder<<" current_seq:"<<tcp_current_seq<<endl;
-									LOG4CXX_INFO(logger_, "disorder! NO:" << count_disorder\
-												 << " current_seq:" << tcp_current_seq);
-									disorder_tag = 1;
-									unsigned char *pktdata = (unsigned char *)malloc(header->caplen);
-									assert(NULL != pktdata);
-									memcpy(pktdata, (unsigned char *)pkt_data, header->caplen);
-									TcpDisorderSetItem item;
-									item.tcp_seq = tcp_current_seq;
-									item.pre_dch_offset = pre_dch_offset;
-									item.tcp_data_len = tcp_data_len;
-									item.timestamp = header->ts;
-									item.pktdata = pktdata;
-									tcp_disorder_set.insert(item);
+									if(tcp_expect_seq == 0 || tcp_expect_seq == tcp_current_seq)
+									{
+										//cout<<"tcp seq:"<<tcp_current_seq<<" tcp_data_len:"<<tcp_data_len<<endl<<flush;
+										//cout<<"tcp_data_len:"<<tcp_data_len<<endl;
+										Combine(*header,pkt_data,pre_dch_offset,tcp_data_len);
+										tcp_expect_seq = tcp_current_seq + tcp_data_len;
+										tcp_last_current_seq = tcp_current_seq;
+									}
+									else if(tcp_expect_seq > tcp_current_seq)
+									{
+										tcp_last_current_seq = tcp_current_seq;
+										//cout<<"tcp_expect_seq > tcp_current_seq"<<endl;
+										LOG4CXX_INFO(logger_, "tcp_expect_seq > tcp_current_seq");
+										break;
+									}
+									else
+									{
+										tcp_last_current_seq = tcp_current_seq;
+										count_disorder++;
+										//cout<<"disorder! NO:"<<count_disorder<<" current_seq:"<<tcp_current_seq<<endl;
+										LOG4CXX_INFO(logger_, "disorder! NO:" << count_disorder\
+													 << " current_seq:" << tcp_current_seq);
+										disorder_tag = 1;
+										unsigned char *pktdata = (unsigned char *)malloc(header->caplen);
+										assert(NULL != pktdata);
+										memcpy(pktdata, (unsigned char *)pkt_data, header->caplen);
+										TcpDisorderSetItem item;
+										item.tcp_seq = tcp_current_seq;
+										item.pre_dch_offset = pre_dch_offset;
+										item.tcp_data_len = tcp_data_len;
+										item.timestamp = header->ts;
+										item.pktdata = pktdata;
+										tcp_disorder_set.insert(item);
+									}
+									
+								}
+								else//abnormal == 1
+								{
+									abnormal_tag = 0;
+									if(tcp_expect_seq == 0 || tcp_expect_seq == tcp_current_seq)
+									{
+										//cout<<"tcp seq:"<<tcp_current_seq<<" tcp_data_len:"<<tcp_data_len<<endl<<flush;
+										//cout<<"tcp_data_len:"<<tcp_data_len<<endl;
+										Combine(temp_header_abnormal, temp_buffer_abnormal, 0, temp_data_size_abnormal);
+
+										Combine(*header,pkt_data,pre_dch_offset,tcp_data_len);
+										tcp_expect_seq = tcp_current_seq + tcp_data_len;
+										tcp_last_current_seq = tcp_current_seq;
+									}
+									else if(tcp_expect_seq > tcp_current_seq)
+									{
+										tcp_last_current_seq = tcp_current_seq;
+										//cout<<"tcp_expect_seq > tcp_current_seq"<<endl;
+										LOG4CXX_INFO(logger_, "tcp_expect_seq > tcp_current_seq");
+										break;
+									}
+									else
+									{
+										tcp_last_current_seq = tcp_current_seq;
+										count_disorder++;
+										//cout<<"disorder! NO:"<<count_disorder<<" current_seq:"<<tcp_current_seq<<endl;
+										LOG4CXX_INFO(logger_, "disorder! NO:" << count_disorder\
+													 << " current_seq:" << tcp_current_seq);
+										disorder_tag = 1;
+										unsigned char *pktdata = (unsigned char *)malloc(header->caplen);
+										assert(NULL != pktdata);
+										memcpy(pktdata, (unsigned char *)pkt_data, header->caplen);
+										TcpDisorderSetItem item;
+										item.tcp_seq = tcp_current_seq;
+										item.pre_dch_offset = pre_dch_offset;
+										item.tcp_data_len = tcp_data_len;
+										item.timestamp = header->ts;
+										item.pktdata = pktdata;
+										tcp_disorder_set.insert(item);
+									}
+									
 								}
 							}
 							else//disorder

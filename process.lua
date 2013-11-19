@@ -10,7 +10,7 @@ local zmq = require("zmq")
 local ffi = require("ffi")
 
 local trade_time = {"0:00-4:00","5:00-23:59"}
-local SLEEP_TIME = 3
+--local SLEEP_TIME = 3
 local hour_mins = {}
 
 local logger = logging.file("lua_%s.log", "%Y-%m-%d")

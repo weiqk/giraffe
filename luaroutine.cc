@@ -16,49 +16,49 @@ struct itimerval tick;
 
 //多线程互斥这里有问题
 
-void PrintCountInfo(int signo)
-{
-    switch(signo)
-    {
-        case SIGALRM:
-            //cout<<"pack count:"<<count_pack<<endl;
-            count_pack= 0;
-            break;
-        default:
-            break;
-    }
-    return ;
-}
+//void PrintCountInfo(int signo)
+//{
+//    switch(signo)
+//    {
+//        case SIGALRM:
+//            //cout<<"pack count:"<<count_pack<<endl;
+//            count_pack= 0;
+//            break;
+//        default:
+//            break;
+//    }
+//    return ;
+//}
 
 void LuaRoutine::Init()
 {
 	InitZMQ();
 	InitLua();
 }
-void * LuaRoutine::ChildThreadFunc(void *arg)
-{
-	ChildThreadArg* item = (ChildThreadArg*)arg;
-	lua_State * state = item->lua_state;
-	while(true)
-	{
-		sleep(FLAGS_ROLL_OVERTIME);
-		lua_getglobal(state, "ObserverOvertime");
-		lua_pushinteger(state, item->market_id);
-
-		LOG4CXX_INFO(logger_, "ObserverOvertime send to lua");
-		if(lua_pcall(state, 1, 0, 0) != 0)
-		{
-			LOG4CXX_ERROR(logger_, lua_tostring(state, -1)); 
-			lua_pop(state,-1);
-			lua_close(state);
-		}
-		else
-		{
-			lua_pop(state, -1);	
-		}
-	}
-	return 0;	
-}
+//void * LuaRoutine::ChildThreadFunc(void *arg)
+//{
+//	ChildThreadArg* item = (ChildThreadArg*)arg;
+//	lua_State * state = item->lua_state;
+//	while(true)
+//	{
+//		sleep(FLAGS_ROLL_OVERTIME);
+//		lua_getglobal(state, "ObserverOvertime");
+//		lua_pushinteger(state, item->market_id);
+//
+//		LOG4CXX_INFO(logger_, "ObserverOvertime send to lua");
+//		if(lua_pcall(state, 1, 0, 0) != 0)
+//		{
+//			LOG4CXX_ERROR(logger_, lua_tostring(state, -1)); 
+//			lua_pop(state,-1);
+//			lua_close(state);
+//		}
+//		else
+//		{
+//			lua_pop(state, -1);	
+//		}
+//	}
+//	return 0;	
+//}
 
 void LuaRoutine::InitLua()
 {
@@ -101,7 +101,7 @@ void LuaRoutine::InitLua()
 		}
 	}
 	//init ObserverOvertime
-	LOG4CXX_INFO(logger_, "before ObserverOvertime");
+	//LOG4CXX_INFO(logger_, "before ObserverOvertime");
 	//lua_getglobal(lua_state_, "ObserverOvertime");
 	//lua_pushinteger(lua_state_, market_id_);
 
@@ -115,16 +115,17 @@ void LuaRoutine::InitLua()
 	//{
 	//	lua_pop(lua_state_, -1);	
 	//}
-	child_thread_arg_.lua_state = lua_state_;
-	child_thread_arg_.market_id = market_id_;	
-	int err;	
-	err = pthread_create(&tid_, NULL, ChildThreadFunc,(void*)&child_thread_arg_);
-	if (err!=0) 
-	{
-		printf("exit\n");
-		LOG4CXX_ERROR(logger_, "luarout create child thread error");
-	}
-	LOG4CXX_INFO(logger_, "after ObserverOvertime");
+	
+	//child_thread_arg_.lua_state = lua_state_;
+	//child_thread_arg_.market_id = market_id_;	
+	//int err;	
+	//err = pthread_create(&tid_, NULL, ChildThreadFunc,(void*)&child_thread_arg_);
+	//if (err!=0) 
+	//{
+	//	printf("exit\n");
+	//	LOG4CXX_ERROR(logger_, "luarout create child thread error");
+	//}
+	//LOG4CXX_INFO(logger_, "after ObserverOvertime");
 }
 
 void LuaRoutine::InitZMQ()
@@ -340,16 +341,55 @@ void LuaRoutine::RunThreadFunc()
     //setitimer(ITIMER_REAL,&tick,NULL);
 
 	zmq::message_t msg_rcv(sizeof(Lua_ZMQ_MSG_Item));
+	zmq::pollitem_t items[] = {*sock_, 0, ZMQ_POLLIN, 0};
 	while(true)
 	{
-		msg_rcv.rebuild();
-		sock_->recv(&msg_rcv);
-		Lua_ZMQ_MSG_Item *msg_item = (Lua_ZMQ_MSG_Item*)(msg_rcv.data());
-		stk_static_ = msg_item->stk_static;
-		market_id_ = msg_item->market_id;
-		//free(msg_item->pdcdata);
-		//msg_item->pdcdata = NULL;
-		DispatchToLua(msg_item->pdcdata, msg_item->dc_type, msg_item->dc_general_intype, msg_item->stk_num, msg_item->did_template_id);
-		//DispatchToLua(pdata, DCT_STKSTATIC, 0, 2000, sizeof(stk_static), 0);
+			if(NULL == sock_)
+				continue;
+			int rc = zmq::poll(&items[0], 1, FLAGS_ROLL_OVERTIME * 1000);
+			if(rc > 0)
+			{
+				if(items[0].revents & ZMQ_POLLIN)
+				{
+					msg_rcv.rebuild();
+					sock_->recv(&msg_rcv);
+					Lua_ZMQ_MSG_Item *msg_item = (Lua_ZMQ_MSG_Item*)(msg_rcv.data());
+					stk_static_ = msg_item->stk_static;
+					market_id_ = msg_item->market_id;
+					//free(msg_item->pdcdata);
+					//msg_item->pdcdata = NULL;
+					DispatchToLua(msg_item->pdcdata, msg_item->dc_type, msg_item->dc_general_intype, msg_item->stk_num, msg_item->did_template_id);
+					//DispatchToLua(pdata, DCT_STKSTATIC, 0, 2000, sizeof(stk_static), 0);
+				}
+			}
+			else if (rc == 0)//timeout
+			{
+				sleep(FLAGS_ROLL_OVERTIME);
+				lua_getglobal(lua_state_, "ObserverOvertime");
+				if(market_id_ != 0)
+				{
+					lua_pushinteger(lua_state_, market_id_);
+				}
+				else
+				{
+					lua_pushinteger(lua_state_, 1);
+				}
+
+				LOG4CXX_INFO(logger_, "ObserverOvertime send to lua");
+				if(lua_pcall(lua_state_, 1, 0, 0) != 0)
+				{
+					LOG4CXX_ERROR(logger_, lua_tostring(lua_state_, -1)); 
+					lua_pop(lua_state_,-1);
+					lua_close(lua_state_);
+				}
+				else
+				{
+					lua_pop(lua_state_, -1);	
+				}
+			}
+			else
+			{
+				LOG4CXX_ERROR(logger_, "lua zmq poll fail");
+			}
 	}
 }

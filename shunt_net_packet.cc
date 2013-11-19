@@ -90,38 +90,47 @@ void ShuntNetPacket::AddToZMQDequeEx(int index)
 	sock_ex_deque_.push_back(sock);
 }
 
-void ShuntNetPacket::RunLuaRoutineThread(int index)
+void ShuntNetPacket::InitLuaRoutineThread(int index)
 {
 	//init lua routine zmq property from config file
-	LuaRoutine* lua_routine = new LuaRoutine(context_,listening_item_);
+	lua_routine_ = new LuaRoutine(context_,listening_item_);
 	deque<XML_ZMQ>* lua_routine_zmq_deque = listening_item_.get_lua_routine()->get_zmqdeque();
 	for(deque<XML_ZMQ>::iterator iter = lua_routine_zmq_deque->begin();iter!=lua_routine_zmq_deque->end();iter++)
 	{
 		ZMQItem lua_routine_zmq_item;
-		lua_routine_zmq_item.zmqpattern = (*iter).get_zmqpattern();
-		lua_routine_zmq_item.zmqsocketaction = (*iter).get_zmqsocketaction();
+		lua_routine_zmq_item.zmqpattern = iter->get_zmqpattern();
+		lua_routine_zmq_item.zmqsocketaction = iter->get_zmqsocketaction();
 		//TO FIX 33333
-		if("tcp://127.0.0.1:33333" == (*iter).get_zmqsocketaddr())
+		if("tcp://127.0.0.1:33333" == iter->get_zmqsocketaddr())
 		{
-			lua_routine_zmq_item.zmqsocketaddr = (*iter).get_zmqsocketaddr();
+			lua_routine_zmq_item.zmqsocketaddr = iter->get_zmqsocketaddr();
 		}
 		else
 		{
 			char buf[16];
 			memset(buf,0,sizeof(buf));
 			sprintf(buf,"%d",index);
-			lua_routine_zmq_item.zmqsocketaddr = (*iter).get_zmqsocketaddr() + buf;
+			lua_routine_zmq_item.zmqsocketaddr = iter->get_zmqsocketaddr() + buf;
 		}
-		lua_routine->AddZMQItem(lua_routine_zmq_item);
+		lua_routine_->AddZMQItem(lua_routine_zmq_item);
 	}
-	lua_routine->Init();
-	lua_routine->Start();
-	lua_routine_deque_.push_back(lua_routine);
+	lua_routine_->Init();
+	lua_routine_deque_.push_back(lua_routine_);
 }
 
-void ShuntNetPacket::RunCombineDCPacketThread(int index)
+void ShuntNetPacket::RunLuaRoutineThread()
 {
-	CombineDCPacket* combine_dc_packet= new CombineDCPacket(context_);
+	//lua_routine_->Start();
+	deque<LuaRoutine*>::iterator it;
+	for(it=lua_routine_deque_.begin();it!=lua_routine_deque_.end();++it)
+	{
+		(*it)->Start();	
+	}
+}
+
+void ShuntNetPacket::InitCombineDCPacketThread(int index)
+{
+	combine_dc_packet_ = new CombineDCPacket(context_);
 	deque<XML_ZMQ>* combine_dc_zmq_deque = listening_item_.get_combine_dc_packet()->get_zmqdeque();
 	for(deque<XML_ZMQ>::iterator iter = combine_dc_zmq_deque->begin();iter!=combine_dc_zmq_deque->end();iter++)
 	{
@@ -132,16 +141,24 @@ void ShuntNetPacket::RunCombineDCPacketThread(int index)
 		memset(buf,0,sizeof(buf));
 		sprintf(buf,"%d",index);
 		combine_dc_zmq_item.zmqsocketaddr = (*iter).get_zmqsocketaddr() + buf;
-		combine_dc_packet->AddZMQItem(combine_dc_zmq_item);
+		combine_dc_packet_->AddZMQItem(combine_dc_zmq_item);
 	}
-	combine_dc_packet->Init();
-	combine_dc_packet->Start();
-	combine_dc_deque_.push_back(combine_dc_packet);
+	combine_dc_packet_->Init();
+	combine_dc_deque_.push_back(combine_dc_packet_);
 }
 
-void ShuntNetPacket::RunUncompressDCPacketThread(int index)
+void ShuntNetPacket::RunCombineDCPacketThread()
 {
-	UncompressDCPacket* uncompress_dc_packet= new UncompressDCPacket(context_ , listening_item_);
+	deque<CombineDCPacket*>::iterator it;
+	for(it=combine_dc_deque_.begin();it!=combine_dc_deque_.end();++it)
+	{
+		(*it)->Start();	
+	}
+}
+
+void ShuntNetPacket::InitUncompressDCPacketThread(int index)
+{
+	uncompress_dc_packet_ = new UncompressDCPacket(context_ , listening_item_);
 	deque<XML_ZMQ>* uncompress_dc_zmq_deque = listening_item_.get_uncompress_dc_packet()->get_zmqdeque();
 	for(deque<XML_ZMQ>::iterator iter = uncompress_dc_zmq_deque->begin();iter!=uncompress_dc_zmq_deque->end();iter++)
 	{
@@ -159,11 +176,19 @@ void ShuntNetPacket::RunUncompressDCPacketThread(int index)
 			sprintf(buf,"%d",index);
 			uncompress_dc_zmq_item.zmqsocketaddr = (*iter).get_zmqsocketaddr() + buf;
 		}
-		uncompress_dc_packet->AddZMQItem(uncompress_dc_zmq_item);
+		uncompress_dc_packet_->AddZMQItem(uncompress_dc_zmq_item);
 	}
-	uncompress_dc_packet->Init();
-	uncompress_dc_packet->Start();
-	uncompress_dc_deque_.push_back(uncompress_dc_packet);
+	uncompress_dc_packet_->Init();
+	uncompress_dc_deque_.push_back(uncompress_dc_packet_);
+}
+
+void ShuntNetPacket::RunUncompressDCPacketThread()
+{
+	deque<UncompressDCPacket*>::iterator it;
+	for(it=uncompress_dc_deque_.begin();it!=uncompress_dc_deque_.end();++it)
+	{
+		(*it)->Start();	
+	}
 }
 
 // void ShuntNetPacket::RunParseThread(int index)
@@ -226,16 +251,22 @@ bool ShuntNetPacket::IncreasePool(int pool_size)
 #else
 		Utils::SleepUsec(10000);
 #endif
-		RunLuaRoutineThread(i);
+		//RunLuaRoutineThread(i);
+		InitLuaRoutineThread(i);
 		//RunParseThread(i);
-		RunCombineDCPacketThread(i);
+		InitCombineDCPacketThread(i);
+		//RunCombineDCPacketThread(i);
 #ifndef __linux
 		Sleep(100);
 #else
 		Utils::SleepUsec(10000);
 #endif
-		RunUncompressDCPacketThread(i);
+		//RunUncompressDCPacketThread(i);
+		InitUncompressDCPacketThread(i);
 	}
+	RunLuaRoutineThread();
+	RunCombineDCPacketThread();
+	RunUncompressDCPacketThread();
 	curent_pool_size_ += pool_size;
 	return true;
 }
