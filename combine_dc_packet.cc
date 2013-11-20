@@ -325,6 +325,7 @@ void CombineDCPacket::RunThreadFunc()
 	unsigned char *temp_buffer_abnormal = new unsigned char[FLAGS_CAP_PACK_BUF_SIZE];
 	struct pcap_pkthdr temp_header_abnormal;
 	int temp_data_size_abnormal = 0;
+	int temp_pre_dch_offset_abnormal = 0;
 	int abnormal_tag = 0;
 	int disorder_tag = 0;
 	set<TcpDisorderSetItem> tcp_disorder_set;
@@ -410,7 +411,18 @@ void CombineDCPacket::RunThreadFunc()
 									tcp_expect_seq = tcp_current_seq + tcp_data_len;
 									abnormal_tag = 1;
 									temp_header_abnormal = *header;	
-									memcpy(temp_buffer_abnormal, pkt_data + pre_dch_offset, tcp_data_len);
+									if(pre_dch_offset + tcp_data_len <= (unsigned int)FLAGS_CAP_PACK_BUF_SIZE)
+									{
+										memcpy(temp_buffer_abnormal, pkt_data , pre_dch_offset + tcp_data_len);
+									}
+									else
+									{
+										LOG4CXX_ERROR(logger_, "CombineDCPacket:overflow:pre_dch_offset=" << pre_dch_offset<< " tcp_data_len:" << tcp_data_len);
+										delete [] temp_buffer_abnormal;
+										temp_buffer_abnormal = new unsigned char[pre_dch_offset + tcp_data_len];
+										memcpy(temp_buffer_abnormal, pkt_data , pre_dch_offset + tcp_data_len);
+									}
+									temp_pre_dch_offset_abnormal = pre_dch_offset;
 									temp_data_size_abnormal = tcp_data_len;
 									LOG4CXX_INFO(logger_, "abnormal: tcp_last_current_seq == tcp_current_seq");
 									break;
@@ -460,7 +472,7 @@ void CombineDCPacket::RunThreadFunc()
 									{
 										//cout<<"tcp seq:"<<tcp_current_seq<<" tcp_data_len:"<<tcp_data_len<<endl<<flush;
 										//cout<<"tcp_data_len:"<<tcp_data_len<<endl;
-										Combine(temp_header_abnormal, temp_buffer_abnormal, 0, temp_data_size_abnormal);
+										Combine(temp_header_abnormal, temp_buffer_abnormal, temp_pre_dch_offset_abnormal, temp_data_size_abnormal);
 
 										Combine(*header,pkt_data,pre_dch_offset,tcp_data_len);
 										tcp_expect_seq = tcp_current_seq + tcp_data_len;
