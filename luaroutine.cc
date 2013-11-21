@@ -364,7 +364,7 @@ void LuaRoutine::RunThreadFunc()
 			}
 			else if (rc == 0)//timeout
 			{
-				sleep(FLAGS_ROLL_OVERTIME);
+				//sleep(FLAGS_ROLL_OVERTIME);
 				lua_getglobal(lua_state_, "ObserverOvertime");
 				if(market_id_ != 0)
 				{
