@@ -28,6 +28,7 @@ public:
 	{
 		lua_state_ = NULL;
 		sock_ = NULL;
+		sock_business_error_ = NULL;
 		stk_static_ = NULL;
 		market_id_ = 0;
 		//monitor_mapping_file_ = new MonitorFileMap("FX_191111.dat",MonitorFileMap::BUILD);
@@ -43,6 +44,11 @@ public:
 		{
 			delete sock_;
 			sock_ = NULL;
+		}
+		if(NULL != sock_business_error_)
+		{
+			delete sock_business_error_;
+			sock_business_error_ = NULL;
 		}
 		//if(NULL != monitor_mapping_file_)
 		//{
@@ -63,9 +69,10 @@ private:
 	struct STK_STATIC* GetStkByID(const int stk_id);
 	zmq::context_t *context_;
 	zmq::socket_t *sock_;
-	int lua_zmqpattern_;
-	std::string lua_zmqsocketaction_;
-	std::string lua_zmqsocketaddr_;
+	zmq::socket_t *sock_business_error_;
+	//int lua_zmqpattern_;
+	//std::string lua_zmqsocketaction_;
+	//std::string lua_zmqsocketaddr_;
 	XML_ListeningItem listening_item_;
 	lua_State * lua_state_;
 	unsigned short market_id_;

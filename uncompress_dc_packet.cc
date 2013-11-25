@@ -394,7 +394,7 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 		//LOG4CXX_INFO(logger_, "pdch->m_nLen:" << pdch->m_nLen);
 		if( 1 == did_uncompress_.DisassemblePack(pdch,data_buf))
 		{
-			LOG4CXX_INFO(logger_, "uncompress did success!");
+			//LOG4CXX_INFO(logger_, "uncompress did success!");
 			DC_DIDHead *did_head = (DC_DIDHead *)(pdch+1);
 			did_template_id = did_head->GetDid();
 			stknum = did_head->GetRecNum();
@@ -432,6 +432,7 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 		memcpy(buf,pdcdata,data_size);
 		msg_item.pdcdata = buf;
 		DispatchData(sock_send_to_lua_routine_, &msg_item, sizeof(msg_item));
+		//LOG4CXX_INFO(logger_, "uncompress:send to luaroutine.cc");
 	}
 
 	ih = (ip_head *)(pkt_data + 14); //14 bytes is the length of ethernet header

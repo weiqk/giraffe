@@ -356,17 +356,17 @@ function GetZMQPattern(pattern)
 	end
 end
 
-local ctx
-local sock
-local sock_addr
-local sock_pattern
-local sock_action
-function InitZMQ(pattern, action, addr)
+--local ctx
+--local sock
+--local sock_addr
+--local sock_pattern
+--local sock_action
+function InitZMQ()
 	--ctx = zmq.init()
-	sock_pattern = GetZMQPattern(pattern)	
-	assert(sock_pattern)
-	sock_addr = addr
-	sock_action = action
+	--sock_pattern = GetZMQPattern(pattern)	
+	--assert(sock_pattern)
+	--sock_addr = addr
+	--sock_action = action
 	--sock = assert(ctx:socket(sock_pattern))
 	--sock_addr = addr
 	--if action == "connect" then
@@ -381,7 +381,8 @@ function InitTradeTime()
 	for k,v in ipairs(trade_time) do
 		for x in string.gmatch(v,"%d+") do
 	        hour_mins[#hour_mins+1] = tonumber(x)
-		end                                                                 end
+		end                                             
+	end
 end
 
 function IsTradeTime()
@@ -400,7 +401,7 @@ end
 local last_pack_count = -1
 local pack_count = 0
 function ObserverOvertime(market_id)
-	--zmq.sleep(SLEEP_TIME)
+	local ret_table = {}
 	logger:info("recv overtime from c++")
 	if(IsTradeTime()) then
 		if(last_pack_count ~= pack_count) then
@@ -408,39 +409,41 @@ function ObserverOvertime(market_id)
 		else
 			local ret_error = str_format("%d:%d:%s:%s", 0, 1, "not recv data in trading time", "not recv data in trading time for a while")
 			local ret_str = FormatReturnError(market_id, "others", ret_error)
-			if ret_str ~= nil then 
-				SendErrorMsg(ret_str)		
-			else
-				logger:error("ObserverOvertime ret_str is nil")
-			end
+			--if ret_str ~= nil then 
+				--SendErrorMsg(ret_str)		
+			ret_table["x"] = ret_str
+			logger:info("return c++")
+			return ret_table	
 		end
 	else
 		logger:info("not trading time")
 	end
+	logger:info("ObserverOvertime ret_str is nil")
+	return nil
 end
 
-function SendErrorMsg(error_msg)
-	ctx = zmq.init()
-	sock = assert(ctx:socket(sock_pattern))
-	if sock_action == "connect" then
-		assert(sock:connect(sock_addr))		
-	elseif sock_action == "bind" then
-		assert(sock:bind(sock_addr));
-	end
-
-	--local time = os.time()
-	local date = os.date()
-	local msg = zmq.zmq_msg_t.init_data(error_msg)	
-	local send,err = sock:send_msg(msg)
-	if send then
-		logger:info(date..":send to c++")
-	else
-		logger:error("send error:",err)
-	end
-	
-	sock:close()
-	ctx:term()
-end
+--function SendErrorMsg(error_msg)
+--	--ctx = zmq.init()
+--	--sock = assert(ctx:socket(sock_pattern))
+--	--if sock_action == "connect" then
+--	--	assert(sock:connect(sock_addr))		
+--	--elseif sock_action == "bind" then
+--	--	assert(sock:bind(sock_addr));
+--	--end
+--
+--	--local time = os.time()
+--	local date = os.date()
+--	local msg = zmq.zmq_msg_t.init_data(error_msg)	
+--	local send,err = sock:send_msg(msg)
+--	if send then
+--		logger:info(date..":send to c++")
+--	else
+--		logger:error("send error:",err)
+--	end
+--	
+--	--sock:close()
+--	--ctx:term()
+--end
 
 local did_template_id_table = {}
 function init(did_template_id)
@@ -449,6 +452,7 @@ function init(did_template_id)
 end
 
 function process_basic_type(market_id, dctype, num, pdcdata)
+	local ret_table = {}
 	local stk 
 	local dc_type
 	local ret_short_error
@@ -464,10 +468,13 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
 			--ret_str = "00001:static:0:1:static_error:xxxxxxx\0"
 			if ret_str ~= nil then 
-				SendErrorMsg(ret_str)		
+				--SendErrorMsg(ret_str)		
+				ret_table[i] = ret_str
 			end
 			stk = stk + 1
 		end
+		logger:info("staic return to c++")
+		return ret_table
 	elseif dctype == C.DCT_STKDYNA then
 		stk = ffi_cast("STK_DYNA *", pdcdata)
 		dc_type = "dyna"
@@ -477,10 +484,12 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
 			--ret_str = "stk-stkdyna\0"
 			if ret_str ~= nil then
-				SendErrorMsg(ret_str)
+				--SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
 			end
 			stk = stk + 1
 		end
+		return ret_table
 	elseif dctype == C.DCT_SZL2_ORDER_STAT then
 		stk = ffi_cast("SZL2_ORDER_STAT *", pdcdata)
 		dc_type = "szl2_order_stat"
@@ -489,10 +498,12 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
 			--ret_str = "shl2-order-stat\0"
 			if ret_str ~= nil then
-				SendErrorMsg(ret_str)
+				--SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
 			end
 			stk = stk + 1
 		end
+		return ret_table
 	elseif dctype == C.DCT_SZL2_TRADE_FIVE then
 		stk = ffi_cast("SZL2_TRADE_FIVE*", pdcdata)
 		dc_type = "szl2_trade_five\0"
@@ -501,10 +512,12 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 			ret_str	= FormatReturnError(market_id, dc_type, ret_error)
 			--ret_str = dc_type
 			if ret_str ~= nil then
-				SendErrorMsg(ret_str)
+				--SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
 			end
 			stk = stk + 1
 		end
+		return ret_table
 	elseif dctype == C.DCT_SZL2_ORDER_FIVE then
 		stk = ffi_cast("SZL2_ORDER_FIVE*", pdcdata)
 		dc_type = "szl2_order_five\0"
@@ -513,10 +526,12 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
 			ret_str = dc_type
 			if ret_str ~= nil then
-				SendErrorMsg(ret_str)
+				--SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
 			end
 			stk = stk + 1
 		end
+		return ret_table
 	elseif dctype == C.DCT_SHL2_MMPEx then
 		stk = ffi_cast("SHL2_MMPEX *", pdcdata)
 		dc_type = "shl2_mmpex"
@@ -525,16 +540,20 @@ function process_basic_type(market_id, dctype, num, pdcdata)
 			ret_str = FormatReturnError(market_id, dc_type, ret_error)
 			--ret_str = "shl2-mmpex\0"
 			if ret_str ~= nil then
-				SendErrorMsg(ret_str)
+				--SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
 			end
 			stk = stk + 1
 		end
+		return ret_table
 	else
-		ret_str = nil
+		--ret_str = nil
+		return nil
 	end
 end
 
 function process_did_type(market_id, template_id, num, pdcdata)
+	local ret_table = {}
 	local ret_error
 	local ret_str 
 	local pdata
@@ -550,10 +569,12 @@ function process_did_type(market_id, template_id, num, pdcdata)
             ret_str = FormatReturnError(market_id, template_type, ret_error)
             --ret_str = "t_buy_sell_info\0"
             if ret_str ~= nil then
-                SendErrorMsg(ret_str)
+                --SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
             end
             pdata = pdata + 1		
 		end	
+		return ret_table
 	elseif template_id == 100001 then
 		pdata = ffi_cast("T_BUY_SELL_TICK_INFO *", pdcdata)
         template_type = "t_buy_sell_tick_info"
@@ -562,10 +583,12 @@ function process_did_type(market_id, template_id, num, pdcdata)
             ret_str = FormatReturnError(market_id, template_type, ret_error)
             --ret_str = "t_buy_sell_tick_info\0"
             if ret_str ~= nil then
-                SendErrorMsg(ret_str)
+                --SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
             end
             pdata = pdata + 1
         end
+		return ret_table
 	elseif template_id == 100002 then
         pdata = ffi_cast("T_IOPV_INFO *", pdcdata)
         template_type = "t_iopv_info"
@@ -574,10 +597,12 @@ function process_did_type(market_id, template_id, num, pdcdata)
             ret_str = FormatReturnError(market_id, template_type, ret_error)
             --ret_str = "t_iopv_info\0"
             if ret_str ~= nil then
-                SendErrorMsg(ret_str)
+                --SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
             end
             pdata = pdata + 1
         end
+		return ret_table
     elseif template_id == 100012 then
         pdata = ffi_cast("T_CBT_MARKET *", pdcdata)
         template_type = "t_cbt_market"
@@ -586,10 +611,12 @@ function process_did_type(market_id, template_id, num, pdcdata)
             ret_str = FormatReturnError(market_id, template_type, ret_error)
             --ret_str = "t_cbt_market\0"
             if ret_str ~= nil then
-                SendErrorMsg(ret_str)
+                --SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
             end
             pdata = pdata + 1
         end
+		return ret_table
     elseif template_id == 100030 then
         pdata = ffi_cast("T_ETF_INFO *", pdcdata)
         template_type = "t_etf_info"
@@ -598,10 +625,12 @@ function process_did_type(market_id, template_id, num, pdcdata)
             ret_str = FormatReturnError(market_id, template_type, ret_error)
             --ret_str = "t_etf_info\0"
             if ret_str ~= nil then
-                SendErrorMsg(ret_str)
+                --SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
             end
             pdata = pdata + 1
         end
+		return ret_table
     elseif template_id == 100032 then
         pdata = ffi_cast("T_MMP_INFO *", pdcdata)
         template_type = "t_mmp_info"
@@ -610,16 +639,20 @@ function process_did_type(market_id, template_id, num, pdcdata)
             ret_str = FormatReturnError(market_id, template_type, ret_error)
             --ret_str = "t_mmp_info\0"
             if ret_str ~= nil then
-                SendErrorMsg(ret_str)
+                --SendErrorMsg(ret_str)
+				ret_table[i] = ret_str
             end
             pdata = pdata + 1
         end
+		return ret_table
 	else
-		ret_str = nil	
+		--ret_str = nil	
+		return nil
 	end
 end
 
 function process_general_type(intype, num, pdata)
+	local ret_table = {}
 	local stk
 	local ret_error
 	local ret_str 
@@ -636,7 +669,8 @@ function process_general_type(intype, num, pdata)
 					ret_str = FormatReturnError(market_id, dc_type,ret_error)	
 					--ret_str = dc_type
 					if ret_str ~= nil then
-						SendErrorMsg(ret_str)
+						--SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
 					end
 				elseif(stk.m_cType == 2) then
 					dc_type = "ge staticex fund\0"
@@ -644,7 +678,8 @@ function process_general_type(intype, num, pdata)
 					ret_str = FormatReturnError(market_id, dc_type, ret_error)
 					--ret_str = dc_type 
 					if ret_str ~= nil then
-						SendErrorMsg(ret_str)
+						--SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
 					end
 				elseif(stk.m_cType == 3) then
 					dc_type = "ge staticex warrant\0"
@@ -652,7 +687,8 @@ function process_general_type(intype, num, pdata)
                     ret_str = FormatReturnError(market_id, dc_type, ret_error)
                     --ret_str = dc_type 
                     if ret_str ~= nil then
-                        SendErrorMsg(ret_str)
+                        --SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
                     end
 					--print("warrantSpec")
 					--print(stk.Spec.m_warrantSpec.m_cStyle)
@@ -664,7 +700,8 @@ function process_general_type(intype, num, pdata)
                     ret_str = FormatReturnError(market_id, dc_type, ret_error)
                     --ret_str = dc_type 
                     if ret_str ~= nil then
-                        SendErrorMsg(ret_str)
+                        --SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
                     end
 
 					--print("bondSpec")
@@ -678,7 +715,8 @@ function process_general_type(intype, num, pdata)
                     ret_str = FormatReturnError(market_id, dc_type, ret_error)
                     --ret_str = dc_type
                     if ret_str ~= nil then
-                        SendErrorMsg(ret_str)
+                        --SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
                     end
 				elseif(stk.m_cType == 6) then
 					dc_type = "ge staticex future\0"
@@ -686,7 +724,8 @@ function process_general_type(intype, num, pdata)
 					ret_str = FormatReturnError(market_id, dc_type,ret_error)
 					--ret_str = dc_type
 					if ret_str ~= nil then
-                        SendErrorMsg(ret_str)
+                        --SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
                     end
 				elseif(stk.m_cType == 7) then
               	    dc_type = "ge staticex trust\0"
@@ -694,7 +733,8 @@ function process_general_type(intype, num, pdata)
                     ret_str = FormatReturnError(market_id, dc_type,ret_error)
                     --ret_str = dc_type
                     if ret_str ~= nil then
-                        SendErrorMsg(ret_str)
+                        --SendErrorMsg(ret_str)
+						ret_table[i] = ret_str
                     end
 				else				 
 					ret_str = nil
@@ -707,7 +747,8 @@ function process_general_type(intype, num, pdata)
 				ret_str = FormatReturnError(market_id, dc_type, ret_error)
 				--ret_str = dc_type 
 				if ret_str ~= nil then
-					SendErrorMsg(ret_str)
+					--SendErrorMsg(ret_str)
+					ret_table[i] = ret_str
 				end
 				stk = stk + 1
 			elseif(intype == C.GE_IOPV) then
@@ -725,10 +766,12 @@ function process_general_type(intype, num, pdata)
 				ret_str = nil
 			end
 		end
+		return ret_table
 end
 
 --TODO FIX
 function process_shl2_queue(dctype, pdcdata)
+	local ret_table = {}
 	local stk
 	pack_count = pack_count + 1
 	if dctype == C.DCT_SHL2_QUEUE then

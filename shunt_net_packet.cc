@@ -101,7 +101,7 @@ void ShuntNetPacket::InitLuaRoutineThread(int index)
 		lua_routine_zmq_item.zmqpattern = iter->get_zmqpattern();
 		lua_routine_zmq_item.zmqsocketaction = iter->get_zmqsocketaction();
 		//TO FIX 33333
-		if("tcp://127.0.0.1:33333" == iter->get_zmqsocketaddr())
+		if("inproc://business_error" == iter->get_zmqsocketaddr())
 		{
 			lua_routine_zmq_item.zmqsocketaddr = iter->get_zmqsocketaddr();
 		}

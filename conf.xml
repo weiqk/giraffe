@@ -2,12 +2,12 @@
 <listening>
   <log>
     <zmqs>
-      <zmq zmqpattern="PULL" zmqsocketaction="bind" zmqsocketaddr="ipc://log"></zmq>
+      <zmq zmqpattern="PULL" zmqsocketaction="bind" zmqsocketaddr="inproc://log"></zmq>
     </zmqs>
   </log>
   <business_error_info>
 	<zmqs>
-		<zmq zmqpattern="PULL" zmqsocketaction="bind" zmqsocketaddr="tcp://*:33333"/>
+		<zmq zmqpattern="PULL" zmqsocketaction="bind" zmqsocketaddr="inproc://business_error" />
 		<zmq zmqpattern="PUSH" zmqsocketaction="connect" zmqsocketaddr="tcp://10.15.63.121:59910"/>
 	</zmqs>
   </business_error_info>
@@ -23,32 +23,32 @@
     </did_templates>
     <thread threadclass="CaptureNetPacket">
       <zmqs>
-        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="ipc://9268cap_to_shunt_net_packet" ></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="inproc://9268cap_to_shunt_net_packet" ></zmq>
       </zmqs>
     </thread>
     <thread threadclass="ShuntNetPacket">
       <zmqs>
-        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="ipc://9268cap_to_shunt_net_packet"></zmq>
-        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="ipc://9268shunt_to_combine_dc"></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="inproc://9268cap_to_shunt_net_packet"></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="inproc://9268shunt_to_combine_dc"></zmq>
       </zmqs>
     </thread>
     <thread threadclass="LuaRoutine">
       <zmqs>
-        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="ipc://9268uncompress_dc_to_lua"></zmq>
-		<zmq zmqpattern="PUSH" zmqsocketaction="connect" zmqsocketaddr="tcp://127.0.0.1:33333"/>
+        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="inproc://9268uncompress_dc_to_lua"></zmq>
+		<zmq zmqpattern="PUSH" zmqsocketaction="connect" zmqsocketaddr="inproc://business_error"/>
       </zmqs>
     </thread>
     <thread threadclass="CombineDCPacket">
       <zmqs>
-        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="ipc://9268shunt_to_combine_dc"></zmq>
-        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="ipc://9268combine_dc_to_uncompress_dc"></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="inproc://9268shunt_to_combine_dc"></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="bind" zmqsocketaddr="inproc://9268combine_dc_to_uncompress_dc"></zmq>
       </zmqs>
     </thread>
     <thread threadclass="UncompressDCPacket">
       <zmqs>
-        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="ipc://9268combine_dc_to_uncompress_dc"></zmq>
-        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="ipc://9268uncompress_dc_to_lua"></zmq>
-        <zmq zmqpattern="PUSH" zmqsocketaction="connect" zmqsocketaddr="ipc://log"></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="inproc://9268combine_dc_to_uncompress_dc"></zmq>
+        <zmq zmqpattern="PAIR" zmqsocketaction="connect" zmqsocketaddr="inproc://9268uncompress_dc_to_lua"></zmq>
+        <zmq zmqpattern="PUSH" zmqsocketaction="connect" zmqsocketaddr="inproc://log"></zmq>
       </zmqs>
     </thread>
 

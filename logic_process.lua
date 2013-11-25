@@ -29,13 +29,13 @@ function handle_stk_dyna(stk)
 end
 
 function handle_stk_static(stk)
-   if stk.last_close >= 0 then
-       error_type = ErrorID.system
-       error_level = ErrorRank.error
-       error_short_info = "static"
-       error_info = "last close >= 0"
-       return FormatErrorString(error_type, error_level, error_short_info,error_info)
-   end
+   --if stk.last_close >= 0 then
+   --    error_type = ErrorID.system
+   --    error_level = ErrorRank.error
+   --    error_short_info = "static"
+   --    error_info = "last close >= 0"
+   --    return FormatErrorString(error_type, error_level, error_short_info,error_info)
+   --end
    return nil
 end
 

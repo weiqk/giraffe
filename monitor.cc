@@ -229,6 +229,7 @@ int main(int argc, char * argv[])
 	JoinCaptureThread(cap_net_packet_deque, shunt_net_packet_deque);
 
 	pthread_exit(NULL);
+	LOG4CXX_INFO(logger, "exit");
 	context.close();
 
 	//////////////////////////////////////////////////////////////////////////////

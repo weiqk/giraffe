@@ -14,8 +14,6 @@ const char load_file[] = "process.lua";
 unsigned long count_pack = 0;
 struct itimerval tick;  
 
-//多线程互斥这里有问题
-
 //void PrintCountInfo(int signo)
 //{
 //    switch(signo)
@@ -68,11 +66,12 @@ void LuaRoutine::InitLua()
 	luaL_dofile(lua_state_ , load_file);
 	
 	lua_getglobal(lua_state_, "InitZMQ");
-	lua_pushinteger(lua_state_, lua_zmqpattern_);
-	lua_pushstring(lua_state_, lua_zmqsocketaction_.c_str());
-	lua_pushstring(lua_state_, lua_zmqsocketaddr_.c_str());
+	//lua_pushinteger(lua_state_, lua_zmqpattern_);
+	//lua_pushstring(lua_state_, lua_zmqsocketaction_.c_str());
+	//lua_pushstring(lua_state_, lua_zmqsocketaddr_.c_str());
+	//lua_pushlightuserdata(lua_state_, context_);
 
-	if(lua_pcall(lua_state_, 3, 0, 0) != 0)
+	if(lua_pcall(lua_state_, 0, 0, 0) != 0)
 	{
 		string s = lua_tostring(lua_state_,-1);
 		lua_pop(lua_state_,-1);
@@ -143,17 +142,16 @@ void LuaRoutine::InitZMQ()
     }
 
 	assert(-1 != this->zmqitems_[1].zmqpattern);
-	lua_zmqpattern_ = zmqitems_[1].zmqpattern;
+	sock_business_error_ = new zmq::socket_t(*context_, this->zmqitems_[1].zmqpattern);
 	
     if("bind" == this->zmqitems_[1].zmqsocketaction)
     {
-		lua_zmqsocketaction_ = "bind";
+        sock_business_error_->bind(this->zmqitems_[1].zmqsocketaddr.c_str());
     }
     else if("connect" == this->zmqitems_[1].zmqsocketaction)
     {
-		lua_zmqsocketaction_ = "connect";
+        sock_business_error_->connect(this->zmqitems_[1].zmqsocketaddr.c_str());
     }
-	lua_zmqsocketaddr_ = zmqitems_[1].zmqsocketaddr;
 }
 
 struct STK_STATIC * LuaRoutine::GetStkByID(int stk_id)
@@ -180,6 +178,7 @@ struct STK_STATIC * LuaRoutine::GetStkByID(int stk_id)
 void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_general_intype, int stk_num, int did_template_id)
 {
 	assert(NULL != pdcdata);
+	LOG4CXX_INFO(logger_, "dc_type:" << dc_type);
 	//did
 	if(DCT_DID == dc_type)
 	{
@@ -188,15 +187,32 @@ void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_gener
 		lua_pushinteger(lua_state_, did_template_id);
 		lua_pushinteger(lua_state_, stk_num);
 		lua_pushlightuserdata(lua_state_, pdcdata);
-		if(lua_pcall(lua_state_, 4, 0, 0) != 0)
+		if(lua_pcall(lua_state_, 4, 1, 0) != 0)
 		{
-			LOG4CXX_ERROR(logger_, lua_tostring(lua_state_,-1));
+			//LOG4CXX_ERROR(logger_, lua_tostring(lua_state_,-1));
 			lua_pop(lua_state_,-1);
-			lua_close(lua_state_);
+			//lua_close(lua_state_);
 		}
 		else
 		{
-			lua_pop(lua_state_,-1);
+			if(lua_istable(lua_state_, -1))
+			{
+				lua_pushnil(lua_state_);
+				while(0 != lua_next(lua_state_, -2))	
+				{
+					if(lua_isstring(lua_state_, -1))
+					{
+						LOG4CXX_INFO(logger_, "return string from lua:" << lua_tostring(lua_state_, -1));
+						//zmq to business;	
+						size_t len = lua_strlen(lua_state_, -1);
+						zmq::message_t msg(len);
+						memcpy(msg.data(), lua_tostring(lua_state_, -1), len);
+						sock_business_error_->send(msg);
+					}
+					lua_remove(lua_state_, -1);
+				}
+			}
+			lua_pop(lua_state_, -1);	
 		}		
 	}
 	//static || dyna || shl2-mmpex || szl2-order-stat || szl2-order-five || szl2-trade-five
@@ -235,22 +251,38 @@ void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_gener
 		//		lua_pop(lua_state_,-1);
 		//	}
 		//}
-		LOG4CXX_INFO(logger_, "dc_type:" << dc_type);
         lua_getglobal(lua_state_, "process_basic_type");
 		lua_pushinteger(lua_state_, market_id_);
         lua_pushinteger(lua_state_, dc_type);
         lua_pushinteger(lua_state_, stk_num);
         lua_pushlightuserdata(lua_state_, pdcdata);
-        if(lua_pcall(lua_state_,4,0,0) != 0)
+        if(lua_pcall(lua_state_,4,1,0) != 0)
         {
             string s = lua_tostring(lua_state_,-1);
 			LOG4CXX_ERROR(logger_, s);
             lua_pop(lua_state_,-1);
-            lua_close(lua_state_);
+            //lua_close(lua_state_);
         }
         else
         {
-            lua_pop(lua_state_,-1);
+			if(lua_istable(lua_state_, -1))
+			{
+				lua_pushnil(lua_state_);
+				while(0 != lua_next(lua_state_, -2))	
+				{
+					if(lua_isstring(lua_state_, -1))
+					{
+						LOG4CXX_INFO(logger_, "return string from lua:" << lua_tostring(lua_state_, -1));
+						//zmq to business;	
+						size_t len = lua_strlen(lua_state_, -1);
+						zmq::message_t msg(len);
+						memcpy(msg.data(), lua_tostring(lua_state_, -1), len);
+						sock_business_error_->send(msg);
+					}
+					lua_remove(lua_state_, -1);
+				}
+			}
+			lua_pop(lua_state_, -1);	
         }
 	}
 	else if(DCT_GENERAL == dc_type)
@@ -265,15 +297,34 @@ void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_gener
 		lua_pushinteger(lua_state_, dc_general_intype);
 		lua_pushinteger(lua_state_, stk_num);
 		lua_pushlightuserdata(lua_state_, pdata);
-		if(lua_pcall(lua_state_, 4, 0, 0) != 0)
+		if(lua_pcall(lua_state_, 4, 1, 0) != 0)
 		{
-			string s = lua_tostring(lua_state_,-1);
-			LOG4CXX_ERROR(logger_, s);
+			//string s = lua_tostring(lua_state_,-1);
+			//LOG4CXX_ERROR(logger_, s);
 			lua_pop(lua_state_,-1);
-			lua_close(lua_state_);
+			//lua_close(lua_state_);
 		}
 		else
-			lua_pop(lua_state_, -1);
+		{
+			if(lua_istable(lua_state_, -1))
+			{
+				lua_pushnil(lua_state_);
+				while(0 != lua_next(lua_state_, -2))	
+				{
+					if(lua_isstring(lua_state_, -1))
+					{
+						LOG4CXX_INFO(logger_, "return string from lua:" << lua_tostring(lua_state_, -1));
+						//zmq to business;	
+						size_t len = lua_strlen(lua_state_, -1);
+						zmq::message_t msg(len);
+						memcpy(msg.data(), lua_tostring(lua_state_, -1), len);
+						//sock_business_error_->send(msg);
+					}
+					lua_remove(lua_state_, -1);
+				}
+			}
+			lua_pop(lua_state_, -1);	
+		}
 			
 		//for(int i=0;i<stk_num;i++)
 		//{
@@ -345,12 +396,16 @@ void LuaRoutine::RunThreadFunc()
 	while(true)
 	{
 			if(NULL == sock_)
+			{
+				LOG4CXX_INFO(logger_, "sock_ == NULL");
 				continue;
+			}
 			int rc = zmq::poll(&items[0], 1, FLAGS_ROLL_OVERTIME * 1000);
 			if(rc > 0)
 			{
 				if(items[0].revents & ZMQ_POLLIN)
 				{
+					LOG4CXX_INFO(logger_, "LuaRoutine:recv from uncomress");
 					msg_rcv.rebuild();
 					sock_->recv(&msg_rcv);
 					Lua_ZMQ_MSG_Item *msg_item = (Lua_ZMQ_MSG_Item*)(msg_rcv.data());
@@ -376,14 +431,31 @@ void LuaRoutine::RunThreadFunc()
 				}
 
 				LOG4CXX_INFO(logger_, "ObserverOvertime send to lua");
-				if(lua_pcall(lua_state_, 1, 0, 0) != 0)
+				if(lua_pcall(lua_state_, 1, 1, 0) != 0)
 				{
-					LOG4CXX_ERROR(logger_, lua_tostring(lua_state_, -1)); 
+					//LOG4CXX_ERROR(logger_, lua_tostring(lua_state_, -1)); 
 					lua_pop(lua_state_,-1);
-					lua_close(lua_state_);
+					//lua_close(lua_state_);
 				}
 				else
 				{
+					if(lua_istable(lua_state_, -1))
+					{
+						lua_pushnil(lua_state_);
+						while(0 != lua_next(lua_state_, -2))	
+						{
+							if(lua_isstring(lua_state_, -1))
+							{
+								LOG4CXX_INFO(logger_, "return string from lua:" << lua_tostring(lua_state_, -1));
+								//zmq to business;	
+								size_t len = lua_strlen(lua_state_, -1);
+								zmq::message_t msg(len);
+								memcpy(msg.data(), lua_tostring(lua_state_, -1), len);
+								sock_business_error_->send(msg);
+							}
+							lua_remove(lua_state_, -1);
+						}
+					}
 					lua_pop(lua_state_, -1);	
 				}
 			}

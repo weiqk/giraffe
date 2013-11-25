@@ -99,7 +99,7 @@ void BusinessErrorInfo::RunThreadFunc()
 		//SplitString((char *)(msg.data()), ":");
 		//std::string uri("http://10.15.63.121/Control/input.php");
 		//DispatchToWebServer(uri);
-		LOG4CXX_INFO(logger_, "recv");
+		//LOG4CXX_INFO(logger_, "recv");
 		DispatchToWebServer(msg.data());
 		LOG4CXX_ERROR(logger_business_error_, (char*)(msg.data()));
 	}	
@@ -156,7 +156,7 @@ void BusinessErrorInfo::DispatchToWebServer(const void * data)
 	memcpy((char*)(&msg_buf[6]), msg_body.c_str(), body_len);
 	msg_buf[6 + body_len] = '\03';
 
-	LOG4CXX_INFO(logger_, "msg_body" <<msg_body);
+	LOG4CXX_INFO(logger_business_error_, "msg_body" <<msg_body);
 	//LOG4CXX_INFO(logger_, "msg:" << msg_buf);
 
 	zmq::message_t msg(total_len);
