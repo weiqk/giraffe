@@ -126,7 +126,7 @@ void RunCaptureThread(zmq::context_t &context, deque<CaptureNetPacket> & cap_net
 	int index = 0;
 	for(deque<XML_ListeningItem>::iterator item=listeningitem_deque.begin();item != listeningitem_deque.end();item++)
 	{
-		TransformDidTemplateToLua(*item);
+		//TransformDidTemplateToLua(*item);
 		CaptureNetPacket capture_net_packet(item->get_net_adapter(), item->get_filter(), &context);
 		ShuntNetPacket shunt_net_packet(&context, *item);
 

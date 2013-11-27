@@ -12,7 +12,7 @@
 	</zmqs>
   </business_error_info>
 
-  <listeningitem net_adapter="eth1" port="9268" filter="tcp and port 9268">
+  <listeningitem net_adapter="eth0" port="9268" filter="tcp and port 9268">
     <did_templates>
 		<did_template did_template_path="/home/yison/projects/new_zz/did/asclient/100000.xml" />
 		<did_template did_template_path="/home/yison/projects/new_zz/did/asclient/100001.xml" />
