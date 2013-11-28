@@ -14,25 +14,15 @@ const char load_file[] = "process.lua";
 unsigned long count_pack = 0;
 struct itimerval tick;  
 
-//void PrintCountInfo(int signo)
-//{
-//    switch(signo)
-//    {
-//        case SIGALRM:
-//            //cout<<"pack count:"<<count_pack<<endl;
-//            count_pack= 0;
-//            break;
-//        default:
-//            break;
-//    }
-//    return ;
-//}
-
+/**
+* @brief init luaroute thread
+*/
 void LuaRoutine::Init()
 {
 	InitZMQ();
 	InitLua();
 }
+
 //void * LuaRoutine::ChildThreadFunc(void *arg)
 //{
 //	ChildThreadArg* item = (ChildThreadArg*)arg;
@@ -58,6 +48,9 @@ void LuaRoutine::Init()
 //	return 0;	
 //}
 
+/**
+* @brief init lua related
+*/
 void LuaRoutine::InitLua()
 {
 	lua_state_ = luaL_newstate();
@@ -127,6 +120,9 @@ void LuaRoutine::InitLua()
 	//LOG4CXX_INFO(logger_, "after ObserverOvertime");
 }
 
+/**
+* @brief init zmq
+*/
 void LuaRoutine::InitZMQ()
 {
 	assert(-1 != this->zmqitems_[0].zmqpattern);
@@ -154,6 +150,13 @@ void LuaRoutine::InitZMQ()
     }
 }
 
+/**
+* @brief return pointer of stk_static by stk_id
+*
+* @param stk_id
+*
+* @return 
+*/
 struct STK_STATIC * LuaRoutine::GetStkByID(int stk_id)
 {
 	assert(NULL != stk_static_);
@@ -175,6 +178,15 @@ struct STK_STATIC * LuaRoutine::GetStkByID(int stk_id)
 //	strcpy(monitor_msg->error_info, value);
 //}
 
+/**
+* @brief dispatch data to lua script
+*
+* @param pdcdata
+* @param dc_type
+* @param dc_general_intype
+* @param stk_num
+* @param did_template_id
+*/
 void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_general_intype, int stk_num, int did_template_id)
 {
 	assert(NULL != pdcdata);
@@ -357,7 +369,9 @@ void LuaRoutine::DispatchToLua(unsigned char * pdcdata, int dc_type,int dc_gener
 	pdcdata = NULL;
 }
 
-
+/**
+* @brief thread running function
+*/
 void LuaRoutine::RunThreadFunc()
 {
 	//unsigned char * pdata = (unsigned char *)malloc(2000*sizeof(struct STK_STATIC));
@@ -382,15 +396,6 @@ void LuaRoutine::RunThreadFunc()
 	//	memcpy(p+i,(unsigned char *)&stk_static,sizeof(stk_static));	
 	//}
 	
-    //signal(SIGALRM, PrintCountInfo);
-    //tick.it_value.tv_sec = 10;
-    //tick.it_value.tv_usec = 0;
-
-    //tick.it_interval.tv_sec = 60;
-    //tick.it_interval.tv_usec = 0;
-
-    //setitimer(ITIMER_REAL,&tick,NULL);
-
 	zmq::message_t msg_rcv(sizeof(Lua_ZMQ_MSG_Item));
 	zmq::pollitem_t items[] = {*sock_, 0, ZMQ_POLLIN, 0};
 	while(true)
