@@ -6,7 +6,7 @@
 #include <log4cxx/dailyrollingfileappender.h>
 #include <log4cxx/basicconfigurator.h>
 #include <log4cxx/patternlayout.h>
-#include <curl/curl.h>
+//#include <curl/curl.h>
 #include "basethread.h"
 
 class HttpReturnContent
@@ -64,7 +64,7 @@ public:
 private:
 	void InitZMQ();
 	void InitLog();
-	void InitCurl();
+	//void InitCurl();
 	void WriteToLog(const std::string &str);
 	static size_t RecvDataCallback(void *ptr, size_t size, size_t nmemb, HttpReturnContent *);
 	void SplitString(char *str, const char * separator);
@@ -78,15 +78,15 @@ private:
 	log4cxx::LoggerPtr logger_business_error_;
 	log4cxx::PatternLayoutPtr pattern_layout_;
 	log4cxx::DailyRollingFileAppenderPtr appender_;
-	CURL * curl_;
-	CURLcode curl_res_code_;
+	//CURL * curl_;
+	//CURLcode curl_res_code_;
 	std::string market_id_;
 	std::string dc_type_;
 	std::string error_id_;
 	std::string error_rank_;	
 	std::string error_short_description_;
 	std::string error_description_;
-	HttpReturnContent http_ret_content_;
+	//HttpReturnContent http_ret_content_;
 };
 
 #endif

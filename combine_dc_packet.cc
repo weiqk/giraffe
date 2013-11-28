@@ -397,9 +397,9 @@ void CombineDCPacket::RunThreadFunc()
 						pdch = (DC_HEAD*)((u_char*)pkt_data + pre_dch_offset);//tcph_len is
 						tcp_data_len = ntohs(ih->tlen) - head_len;//must use ih->tlen, because sometime it will have supplement package.
 						tcp_current_seq = ntohl(tcph->seq);
-						//LOG4CXX_INFO(logger_, "tcp exprect seq:" << tcp_expect_seq);
-						//LOG4CXX_INFO(logger_, "tcp current seq:" << tcp_current_seq);
-						//LOG4CXX_INFO(logger_, "tcp data len:" << tcp_data_len);
+						LOG4CXX_INFO(logger_, "tcp exprect seq:" << tcp_expect_seq);
+						LOG4CXX_INFO(logger_, "tcp current seq:" << tcp_current_seq);
+						LOG4CXX_INFO(logger_, "tcp data len:" << tcp_data_len);
 						if(tcp_data_len > 0)
 						{
 							//if(pdch->m_cType == DCT_STKSTATIC)

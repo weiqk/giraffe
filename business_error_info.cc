@@ -27,7 +27,7 @@ void BusinessErrorInfo::Init()
 	LOG4CXX_INFO(logger_, "business thread: zmq has initialized!");
 	InitLog();
 	LOG4CXX_INFO(logger_, "business thread: log has initialized!");
-	InitCurl();
+	//InitCurl();
 	LOG4CXX_INFO(logger_, "business thead: curl has initialized!");
 }
 
@@ -78,15 +78,15 @@ void BusinessErrorInfo::InitLog()
 	logger_business_error_->setAdditivity(false);	
 }
 
-void BusinessErrorInfo::InitCurl()
-{
-	curl_ = curl_easy_init();
-	if(!curl_)
-	{
-		LOG4CXX_ERROR(logger_, "curl init error!");
-	}	
-}
-
+//void BusinessErrorInfo::InitCurl()
+//{
+//	curl_ = curl_easy_init();
+//	if(!curl_)
+//	{
+//		LOG4CXX_ERROR(logger_, "curl init error!");
+//	}	
+//}
+//
 void BusinessErrorInfo::RunThreadFunc()
 {
 	zmq::message_t msg;
@@ -164,27 +164,27 @@ void BusinessErrorInfo::DispatchToWebServer(const void * data)
 	sock_monitor_->send(msg);
 }
 
-size_t BusinessErrorInfo::RecvDataCallback(void *ptr, size_t size, size_t nmemb, HttpReturnContent *pret_content)
-{
-	int len = size * nmemb;
-	if(NULL == pret_content->pstr_)
-	{
-		pret_content->pstr_ = new char[len + 1];
-		pret_content->len_ = len + 1;
-	}
-	else
-	{
-		if(pret_content->len_ < len)
-		{
-			delete [] pret_content->pstr_;
-			pret_content->pstr_ = new char[len + 1];
-			pret_content->len_ = len + 1;
-		}
-	}
-	memcpy(pret_content->pstr_, (char *)ptr, len);
-	pret_content->pstr_[len] = '\0';
-	return len;
-}
+//size_t BusinessErrorInfo::RecvDataCallback(void *ptr, size_t size, size_t nmemb, HttpReturnContent *pret_content)
+//{
+//	int len = size * nmemb;
+//	if(NULL == pret_content->pstr_)
+//	{
+//		pret_content->pstr_ = new char[len + 1];
+//		pret_content->len_ = len + 1;
+//	}
+//	else
+//	{
+//		if(pret_content->len_ < len)
+//		{
+//			delete [] pret_content->pstr_;
+//			pret_content->pstr_ = new char[len + 1];
+//			pret_content->len_ = len + 1;
+//		}
+//	}
+//	memcpy(pret_content->pstr_, (char *)ptr, len);
+//	pret_content->pstr_[len] = '\0';
+//	return len;
+//}
 
 //void BusinessErrorInfo::DispatchToWebServer(std::string &uri)
 //{

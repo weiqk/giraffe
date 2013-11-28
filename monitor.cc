@@ -31,6 +31,13 @@ using namespace log4cxx::helpers;
 
 //extern map<string, int> logtagmap;
 
+/**
+* @brief windows:capture ctrl close event
+*
+* @param event_type
+*
+* @return 
+*/
 #ifndef __linux
 bool Event_Routine(DWORD event_type)
 {
@@ -83,6 +90,13 @@ bool Event_Routine(DWORD event_type)
 //		return inum;
 //}
 
+/**
+* @brief log thread:init zmq and start
+*
+* @param context
+* @param log
+* @param xml_log
+*/
 void RunLogThread(zmq::context_t &context, Log &log ,XML_Log & xml_log)
 {
 	deque<XML_ZMQ> * log_zmqdeque = xml_log.get_zmqdeque();
@@ -98,6 +112,13 @@ void RunLogThread(zmq::context_t &context, Log &log ,XML_Log & xml_log)
 	log.Start();
 }
 
+/**
+* @brief business_error_info thread:init zmq and start 
+*
+* @param context
+* @param business_errinfo
+* @param xml_business_errinfo
+*/
 void RunBusinessErrorInfoThread(zmq::context_t &context, BusinessErrorInfo &business_errinfo ,XML_Business_Error_Info & xml_business_errinfo)
 {
 	deque<XML_ZMQ> * business_errinfo_zmqdeque = xml_business_errinfo.get_zmqdeque();
@@ -114,12 +135,25 @@ void RunBusinessErrorInfoThread(zmq::context_t &context, BusinessErrorInfo &busi
 	business_errinfo.Start();
 }
 
+/**
+* @brief transform did template to lua template
+*
+* @param xml_listening_item
+*/
 void TransformDidTemplateToLua(XML_ListeningItem & xml_listening_item)
 {
 	DIDTemplateToLuaStruct did_to_lua;
 	did_to_lua.Transform(xml_listening_item);
 }
 
+/**
+* @brief capture thread:init zmq and start 
+*
+* @param context
+* @param cap_net_packet_deque
+* @param shunt_net_packet_deque
+* @param listeningitem_deque
+*/
 void RunCaptureThread(zmq::context_t &context, deque<CaptureNetPacket> & cap_net_packet_deque, deque<ShuntNetPacket> & shunt_net_packet_deque, deque<XML_ListeningItem> &listeningitem_deque)
 {
 	//create capture thread based on the config file
@@ -175,6 +209,12 @@ void RunCaptureThread(zmq::context_t &context, deque<CaptureNetPacket> & cap_net
 	}
 }
 
+/**
+* @brief join capture thread
+*
+* @param capture_net_packet_deque
+* @param shunt_net_packet_deque
+*/
 void JoinCaptureThread(deque<CaptureNetPacket> & capture_net_packet_deque, deque<ShuntNetPacket> & shunt_net_packet_deque)
 {
 	for(deque<CaptureNetPacket>::iterator iter=capture_net_packet_deque.begin();iter!=capture_net_packet_deque.end();iter++)
@@ -187,8 +227,17 @@ void JoinCaptureThread(deque<CaptureNetPacket> & capture_net_packet_deque, deque
 	}
 }
 
+/**
+* @brief main
+*
+* @param argc
+* @param argv[]
+*
+* @return 
+*/
 int main(int argc, char * argv[])
 {
+/** windows:exit program related*/
 #ifndef __linux
 	SetConsoleCtrlHandler((PHANDLER_ROUTINE)Event_Routine,true);
 #else
