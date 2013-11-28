@@ -1,3 +1,10 @@
+/**
+* @file shunt_net_packet.cc
+* @brief shunt net packet by connections
+* @author ly
+* @version 0.1.0
+* @date 2013-11-28
+*/
 #include "shunt_net_packet.h"
 #include <map>
 #include "constants.h"

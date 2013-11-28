@@ -1,3 +1,10 @@
+/**
+* @file combine_dc_packet.cc
+* @brief combine dc packet
+* @author ly
+* @version 0.1.0
+* @date 2013-11-28
+*/
 #include "combine_dc_packet.h"
 #include "datacollect.h"
 #include "constants.h"

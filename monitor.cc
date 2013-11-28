@@ -1,3 +1,10 @@
+/**
+* @file monitor.cc
+* @brief main function
+* @author ly
+* @version 0.1.0
+* @date 2013-11-28
+*/
 #ifdef _MSC_VER
 #define _CRT_SECURE_NO_WARNINGS
 #endif

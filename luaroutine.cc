@@ -1,3 +1,10 @@
+/**
+* @file luaroutine.cc
+* @brief send to lua script
+* @author ly
+* @version 0.1.0
+* @date 2013-11-28
+*/
 #include "luaroutine.h"
 #include <sys/time.h>
 #include <netinet/in.h>

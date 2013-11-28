@@ -1,3 +1,10 @@
+/**
+* @file capture_net_packet.cc
+* @brief capture net packet listened on some port using pcap
+* @author ly
+* @version 0.1.0
+* @date 2013-11-28
+*/
 #include "capture_net_packet.h"
 #include "structs.h"
 #include "flags.h"
