@@ -6,6 +6,13 @@ using namespace log4cxx;
 
 LoggerPtr CaptureNetPacket::logger_(Logger::getLogger("cap_net_pack"));
 
+/**
+* @brief dispatch data from capture thread to shunt thread
+*
+* @param sock
+* @param data
+* @param size
+*/
 void CaptureNetPacket::DispatchCapData(zmq::socket_t * sock, void * data, int size)
 {
 	assert(NULL != sock && NULL != data);
@@ -24,12 +31,18 @@ void CaptureNetPacket::DispatchCapData(zmq::socket_t * sock, void * data, int si
 	}
 }
 
+/**
+* @brief init capture net packet thread
+*/
 void CaptureNetPacket::Init()
 {
 	InitZMQ();
 	LOG4CXX_INFO(logger_, "cap inited");	
 }
 
+/**
+* @brief init zmq
+*/
 void CaptureNetPacket::InitZMQ()
 {
 	assert(-1 != this->zmqitems_[0].zmqpattern);
@@ -44,6 +57,9 @@ void CaptureNetPacket::InitZMQ()
     }
 }
 
+/**
+* @brief capture thread running function
+*/
 void CaptureNetPacket::RunThreadFunc()
 {
 	LOG4CXX_INFO(logger_, "cap thread start");
@@ -82,7 +98,7 @@ void CaptureNetPacket::RunThreadFunc()
 	}
 	else
 	{
-		/* Check the link layer. We support only Ethernet for simplicity. */
+		/** Check the link layer. We support only Ethernet for simplicity.*/
 		if(pcap_datalink(adhandle) != DLT_EN10MB)
 		{
 			//cout<<"This program works only on Ethernet networks!"<<endl;
@@ -101,7 +117,7 @@ void CaptureNetPacket::RunThreadFunc()
 		}
 	}
 
-	//compile the filter
+	/** compile the filter*/
 	if(pcap_compile(adhandle,&fcode,filter_.c_str(),1,netmask) < 0)
 	{
 		//cout<<"Unable to compile the packet filter. Check the syntax."<<endl;
@@ -110,7 +126,7 @@ void CaptureNetPacket::RunThreadFunc()
 		return ;
 	}
 
-	//set the filter
+	/** set the filter*/
 	if(pcap_setfilter(adhandle, &fcode)<0)
 	{
 		//cout<<"Error setting the filter!"<<endl;
@@ -142,6 +158,13 @@ void CaptureNetPacket::RunThreadFunc()
 	//pcap_dump_close(dumper);
 }
 
+/**
+* @brief pcap callback function
+*
+* @param param
+* @param header
+* @param pkt_data
+*/
 void CaptureNetPacket::PacketHandler(unsigned char *param, const struct pcap_pkthdr *header, const unsigned char *pkt_data)
 {
 	zmq::socket_t *sock = (zmq::socket_t *)param;
