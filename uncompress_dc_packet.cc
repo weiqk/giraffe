@@ -18,6 +18,16 @@ using namespace log4cxx;
 
 LoggerPtr UncompressDCPacket::logger_(Logger::getLogger("uncompress_dc_pack"));
 
+/**
+* @brief extract dc data packet
+*
+* @param pOrgHead
+* @param pHeadBuf
+* @param nBufSize
+* @param pwMarketBuf
+*
+* @return 
+*/
 BOOL UncompressDCPacket::ExtractDataPack(const DC_HEAD* pOrgHead,DC_HEAD* pHeadBuf,int nBufSize,WORD* pwMarketBuf)
 {
 	assert(NULL != pOrgHead && NULL != pHeadBuf);
@@ -72,6 +82,13 @@ BOOL UncompressDCPacket::ExtractDataPack(const DC_HEAD* pOrgHead,DC_HEAD* pHeadB
 	return nRet;
 }
 
+/**
+* @brief uncompress data packet
+*
+* @param timestamp
+* @param pkt_data
+* @param pre_dch_offset
+*/
 void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt_data, int pre_dch_offset)
 {
 	int extract_ret = 0;
@@ -441,11 +458,11 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 	tcph = (tcp_head *) ((unsigned char*)ih + iph_len);
 	tcph_len = 4*((tcph->dataoffset)>>4&0x0f);
     iproto = const_cast<char *>("TCP");
-   		/* convert from network byte order to host byte order */
+
 	sport = ntohs( tcph->source );
 	dport = ntohs( tcph->dest );
 	netflags = const_cast<char *>(Utils::tcp_flag_to_str(tcph->flags));
-	/* convert the timestamp to readable format */
+
 	local_tv_sec = timestamp.tv_sec;
 	ltime=localtime(&local_tv_sec);
 	memset(info.timestamp, 0, sizeof(info.timestamp));
@@ -519,6 +536,13 @@ void UncompressDCPacket::Uncompress(struct timeval timestamp, unsigned char *pkt
 }
 
 
+/**
+* @brief dispatch data to another thread
+*
+* @param sock
+* @param data
+* @param size
+*/
 void UncompressDCPacket::DispatchData(zmq::socket_t * sock, void *data, size_t size)
 {
 	assert(NULL != data && NULL != sock);
@@ -537,11 +561,17 @@ void UncompressDCPacket::DispatchData(zmq::socket_t * sock, void *data, size_t s
 }
 
 
+/**
+* @brief init UncompressDCPacket thread
+*/
 void UncompressDCPacket::Init()
 {
 	InitZMQ();
 }
 
+/**
+* @brief init zmq
+*/
 void UncompressDCPacket::InitZMQ()
 {
     sock_recv_ = new zmq::socket_t (*context_, this->zmqitems_[0].zmqpattern);
@@ -579,6 +609,12 @@ void UncompressDCPacket::InitZMQ()
     }
 }
 
+/**
+* @brief download raw data
+*
+* @param data
+* @param len
+*/
 void UncompressDCPacket::DownloadData(unsigned char * data, size_t len)
 {
 	size_t length = len + sizeof(size_t);
@@ -590,18 +626,13 @@ void UncompressDCPacket::DownloadData(unsigned char * data, size_t len)
 	buf = NULL;
 }
 
+/**
+* @brief thread running function
+*/
 void UncompressDCPacket::RunThreadFunc()
 {
 	pthread_detach(pthread_self());
 
-	//signal(SIGALRM, PrintCountInfo);
-	//tick.it_value.tv_sec = 10;
-	//tick.it_value.tv_usec = 0;
-
-	//tick.it_interval.tv_sec = 60;
-	//tick.it_interval.tv_usec = 0;
-
-	//setitimer(ITIMER_REAL,&tick,NULL);
 
     //zmq::pollitem_t items[] = {socket_UncompressDCPacket_rcv, 0, ZMQ_POLLIN, 0};
  
