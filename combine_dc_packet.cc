@@ -9,6 +9,9 @@ LoggerPtr CombineDCPacket::logger_(Logger::getLogger("combine_net_pack"));
 
 static const int MAX_PACKET_LEN = 409600;
 
+/**
+* @brief thread CombineDCPacket:init zmq
+*/
 void CombineDCPacket::Init()
 {
 	sock_recv_ = new zmq::socket_t (*context_, this->zmqitems_[0].zmqpattern);
@@ -34,6 +37,13 @@ void CombineDCPacket::Init()
 
 }
 
+/**
+* @brief if it is a dc_type
+*
+* @param dc_type
+*
+* @return 
+*/
 bool CombineDCPacket::IsDCType(int dc_type)
 {
 	if(dc_type < 0 || (dc_type > 28 && dc_type <100) || dc_type > 101)
@@ -44,6 +54,13 @@ bool CombineDCPacket::IsDCType(int dc_type)
 		return true;
 }
 
+/**
+* @brief if it is a dc_header 
+*
+* @param dc_header
+*
+* @return 
+*/
 bool CombineDCPacket::IsDCHeader(unsigned char * dc_header)
 {
 	DC_HEAD * dc_head = (DC_HEAD *)dc_header;
@@ -53,6 +70,13 @@ bool CombineDCPacket::IsDCHeader(unsigned char * dc_header)
 		return false;
 }
 
+/**
+* @brief dispatch data to another thread 
+*
+* @param sock
+* @param data
+* @param size
+*/
 void CombineDCPacket::DispatchData(zmq::socket_t * sock, void * data, int size)
 {
 	assert(NULL != sock && NULL != data);
@@ -71,6 +95,14 @@ void CombineDCPacket::DispatchData(zmq::socket_t * sock, void * data, int size)
 	}
 }
 
+/**
+* @brief combine dc package
+*
+* @param header
+* @param pkt_base_addr
+* @param pre_dch_offset
+* @param dc_len
+*/
 void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base_addr, int pre_dch_offset, int dc_len)
 {
 	//count_combine_pack += dc_len;
@@ -81,7 +113,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 	size_t recombined_header_bufsize = 0;
 	while(temp_len > 0)
 	{
-		//combine dc_header and judge whether the combined dc_header is the real dc_header
+		/**combine dc_header and judge whether the combined dc_header is the real dc_header */
 		if(0 !=dc_header_last_inner_len_ )
 		{
 			memcpy(dc_header_ + dc_header_last_inner_len_ , temp_pdch, sizeof(DC_HEAD)-dc_header_last_inner_len_);
@@ -134,7 +166,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 		else if( 1 != long_pack_tag_)
 			packet_len = 0;
 
-		//case 1
+		/** case1:a captured tcp packet has some dc packets*/
 		if(!case2_tag_ && temp_len >= packet_len && 0 != packet_len)
 		{
 			long_pack_tag_ = 0;
@@ -205,7 +237,7 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 		}
 	    if(0 != packet_len)
 		{
-			//case 2
+			/** case2:some tcp packets combine to a dc packet*/
 			//cout<<"case2 templen:"<<temp_len<<" packet_len:"<<packet_len<<endl<<flush;
 			//LOG4CXX_INFO(logger_, "case2 templen:" << temp_len << " packet_len:" << packet_len);
 
@@ -288,18 +320,12 @@ void CombineDCPacket::Combine(struct pcap_pkthdr header, unsigned char *pkt_base
 	}
 }
 
+/**
+* @brief thread running function
+*/
 void CombineDCPacket::RunThreadFunc()
 {
 	pthread_detach(pthread_self());
-
-	//signal(SIGALRM, PrintCountInfo);
-	//tick.it_value.tv_sec = 10;
-	//tick.it_value.tv_usec = 0;
-
-	//tick.it_interval.tv_sec = 60;
-	//tick.it_interval.tv_usec = 0;
-
-	//setitimer(ITIMER_REAL,&tick,NULL);
 
     //zmq::pollitem_t items[] = {socket_parse_rcv, 0, ZMQ_POLLIN, 0};
 
@@ -334,7 +360,7 @@ void CombineDCPacket::RunThreadFunc()
 
     while(true)
     {
-  //      int rc = zmq_poll(items, 1, 1000);//timeout = 1s
+      	//int rc = zmq_poll(items, 1, 1000);//timeout = 1s
 		//if(rc > 0)
 		//{
             //if(items[0].revents & ZMQ_POLLIN)
