@@ -11,6 +11,7 @@ using namespace log4cxx;
 
 LoggerPtr ShuntNetPacket::logger_(Logger::getLogger("shunt_net_pack"));
 
+/** the following used for inner thread params*/
 pthread_key_t pthread_key_shunt;
 pthread_once_t pthread_once_shunt = PTHREAD_ONCE_INIT;
 
@@ -32,13 +33,17 @@ pthread_once_t pthread_once_shunt = PTHREAD_ONCE_INIT;
 //}
 //
 
-
-
+/**
+* @brief create thread key
+*/
 void CreateThreadKey()
 {
 	pthread_key_create(&pthread_key_shunt, NULL);
 }
 
+/**
+* @brief init ShuntNetPacket thread:mainly init zmq
+*/
 void ShuntNetPacket::Init()
 {
 	sock_ = new zmq::socket_t (*context_, this->zmqitems_[0].zmqpattern);
@@ -56,9 +61,13 @@ void ShuntNetPacket::Init()
 	LOG4CXX_INFO(logger_, "complete the initialization of shunting part!");
 }
 
+/**
+* @brief init ShuntNetPacket zmq property from config file
+*
+* @param index
+*/
 void ShuntNetPacket::InitZMQEx(int index)
 {
-	//init ShuntNetPacket zmq property from config file
 	deque<XML_ZMQ> *zmq_deque = listening_item_.get_shunt_net_packet()->get_zmqdeque();
 	deque<XML_ZMQ>::iterator iter=zmq_deque->begin();
 	for(++iter;iter!=zmq_deque->end();iter++)
@@ -75,9 +84,13 @@ void ShuntNetPacket::InitZMQEx(int index)
 	}
 }
 
+/**
+* @brief init zmq and push back zmq deque 
+*
+* @param index
+*/
 void ShuntNetPacket::AddToZMQDequeEx(int index)
 {
-	//init cap socket
 	zmq::socket_t *sock = new zmq::socket_t (*context_,this->zmqitems_ex_[index].zmqpattern);
 	if("bind" == this->zmqitems_ex_[index].zmqsocketaction)
 	{
@@ -90,9 +103,13 @@ void ShuntNetPacket::AddToZMQDequeEx(int index)
 	sock_ex_deque_.push_back(sock);
 }
 
+/**
+* @brief init lua routine thread 
+*
+* @param index
+*/
 void ShuntNetPacket::InitLuaRoutineThread(int index)
 {
-	//init lua routine zmq property from config file
 	lua_routine_ = new LuaRoutine(context_,listening_item_);
 	deque<XML_ZMQ>* lua_routine_zmq_deque = listening_item_.get_lua_routine()->get_zmqdeque();
 	for(deque<XML_ZMQ>::iterator iter = lua_routine_zmq_deque->begin();iter!=lua_routine_zmq_deque->end();iter++)
@@ -100,7 +117,7 @@ void ShuntNetPacket::InitLuaRoutineThread(int index)
 		ZMQItem lua_routine_zmq_item;
 		lua_routine_zmq_item.zmqpattern = iter->get_zmqpattern();
 		lua_routine_zmq_item.zmqsocketaction = iter->get_zmqsocketaction();
-		//TO FIX 33333
+		/** Todo:config it*/
 		if("inproc://business_error" == iter->get_zmqsocketaddr())
 		{
 			lua_routine_zmq_item.zmqsocketaddr = iter->get_zmqsocketaddr();
@@ -118,6 +135,9 @@ void ShuntNetPacket::InitLuaRoutineThread(int index)
 	lua_routine_deque_.push_back(lua_routine_);
 }
 
+/**
+* @brief start luaroutine thread
+*/
 void ShuntNetPacket::RunLuaRoutineThread()
 {
 	//lua_routine_->Start();
@@ -128,6 +148,11 @@ void ShuntNetPacket::RunLuaRoutineThread()
 	}
 }
 
+/**
+* @brief init CombineDCPacket thread
+*
+* @param index
+*/
 void ShuntNetPacket::InitCombineDCPacketThread(int index)
 {
 	combine_dc_packet_ = new CombineDCPacket(context_);
@@ -147,6 +172,9 @@ void ShuntNetPacket::InitCombineDCPacketThread(int index)
 	combine_dc_deque_.push_back(combine_dc_packet_);
 }
 
+/**
+* @brief start CombineDCPacket thread
+*/
 void ShuntNetPacket::RunCombineDCPacketThread()
 {
 	deque<CombineDCPacket*>::iterator it;
@@ -156,6 +184,11 @@ void ShuntNetPacket::RunCombineDCPacketThread()
 	}
 }
 
+/**
+* @brief init UncompressDCPacket thread
+*
+* @param index
+*/
 void ShuntNetPacket::InitUncompressDCPacketThread(int index)
 {
 	uncompress_dc_packet_ = new UncompressDCPacket(context_ , listening_item_);
@@ -182,6 +215,9 @@ void ShuntNetPacket::InitUncompressDCPacketThread(int index)
 	uncompress_dc_deque_.push_back(uncompress_dc_packet_);
 }
 
+/**
+* @brief start UncompressDCPacket thread
+*/
 void ShuntNetPacket::RunUncompressDCPacketThread()
 {
 	deque<UncompressDCPacket*>::iterator it;
@@ -191,55 +227,34 @@ void ShuntNetPacket::RunUncompressDCPacketThread()
 	}
 }
 
-// void ShuntNetPacket::RunParseThread(int index)
-// {
-// 	//init parse zmq property from config file
-// 	Parse* parse = new Parse(context_ , listening_item_);
-// 	deque<XML_ZMQ>* parse_zmq_deque = listening_item_.get_parse()->get_zmqdeque();
-// 	for(deque<XML_ZMQ>::iterator iter = parse_zmq_deque->begin();iter!=parse_zmq_deque->end();iter++)
-// 	{
-// 		ZMQItem parse_zmq_item;
-// 		parse_zmq_item.zmqpattern =(*iter).get_zmqpattern();
-// 		parse_zmq_item.zmqsocketaction = (*iter).get_zmqsocketaction();
-// 		if("inproc://log" == (*iter).get_zmqsocketaddr())
-// 		{
-// 			parse_zmq_item.zmqsocketaddr = (*iter).get_zmqsocketaddr();
-// 		}
-// 		else
-// 		{
-// 			char buf[16];
-// 			memset(buf,0,sizeof(buf));
-// 			sprintf(buf,"%d",index);
-// 			parse_zmq_item.zmqsocketaddr = (*iter).get_zmqsocketaddr() + buf;
-// 		}
-// 		parse->AddZMQItem(parse_zmq_item);
-// 	}
-// 	parse->Init();
-// 	parse->Start();
-// 	parse_deque_.push_back(parse);
-// }
-
+/**
+* @brief set inner thread params
+*
+* @param value
+*/
 void set_inner_thread_params(const void * value)
 {
 	pthread_once(&pthread_once_shunt, CreateThreadKey);
 	pthread_setspecific(pthread_key_shunt, value);
 }
 
+/**
+* @brief get innet thread params
+*
+* @return 
+*/
 void * get_inner_thread_params()
 {
 	return pthread_getspecific(pthread_key_shunt);
 }
 
-//void ShuntNetPacket::ListenTcpConnection()
-//{
-//
-//}
-//
-//void ShuntNetPacket::ListenTcpDisconnction()
-//{
-//
-//}
-
+/**
+* @brief relarge thread pool:a simple pool has not management function 
+*
+* @param pool_size
+*
+* @return 
+*/
 bool ShuntNetPacket::IncreasePool(int pool_size)
 {
 	for(int i=curent_pool_size_;i<curent_pool_size_ + pool_size;i++)
@@ -271,6 +286,12 @@ bool ShuntNetPacket::IncreasePool(int pool_size)
 	return true;
 }
 
+/**
+* @brief create did configure file content 
+*
+* @param did_structs
+* @param out_str
+*/
 void ShuntNetPacket::CreateDidConfContent(vector<DidStruct> & did_structs, char * out_str)
 {
 	assert(NULL != out_str);
@@ -285,21 +306,12 @@ void ShuntNetPacket::CreateDidConfContent(vector<DidStruct> & did_structs, char 
 	strcat(out_str, "</DidStruct>\n");
 }
 
-//void WriteIntoFile(const char *file_name, const char *mode, const void* data , size_t length)
-//{
-//	FILE * fp = fopen(file_name, mode);
-//	if(NULL != fp)
-//	{
-//		fwrite(data, 1, length, fp);
-//		fclose(fp);
-//	}
-//	else
-//	{
-//		cout<<"open file error!"<<endl;
-//		assert(0);
-//	}
-//}
-
+/**
+* @brief write did configure file
+*
+* @param file_name
+* @param did_structs
+*/
 void ShuntNetPacket::WriteDidConfFile(const char * file_name, vector<DidStruct> &did_structs)
 {
 	char file_content[2048] = {0};
@@ -307,6 +319,15 @@ void ShuntNetPacket::WriteDidConfFile(const char * file_name, vector<DidStruct> 
 	Utils::WriteIntoFile(file_name, "wb", file_content, strlen(file_content));
 }
 
+/**
+* @brief if has a new connection through tcp
+*
+* @param flags
+* @param tcpconntag
+* @param tcpconnstatus
+*
+* @return 
+*/
 bool ShuntNetPacket::IsTcpConnection(unsigned char flags, int &tcpconntag, int &tcpconnstatus)
 {
 	if(cons::SYN == flags)
@@ -347,6 +368,13 @@ bool ShuntNetPacket::IsTcpConnection(unsigned char flags, int &tcpconntag, int &
 	return false;
 }
 
+/**
+* @brief if has a disconnection through tcp
+*
+* @param flags
+*
+* @return 
+*/
 bool ShuntNetPacket::IsTcpDisConnection(unsigned char flags)
 {
 	if(cons::FINACK == flags)
@@ -356,6 +384,13 @@ bool ShuntNetPacket::IsTcpDisConnection(unsigned char flags)
 	return false;
 }
 
+/**
+* @brief dispatch data to other threads
+*
+* @param sock
+* @param data
+* @param size
+*/
 void ShuntNetPacket::DispatchData(zmq::socket_t * sock, void * data, int size)
 {
 	assert(NULL != sock && NULL != data);
@@ -374,6 +409,9 @@ void ShuntNetPacket::DispatchData(zmq::socket_t * sock, void * data, int size)
 	}
 }
 
+/**
+* @brief if has a abnormal disconnection(like not receiving data), then send reset tag to other threads 
+*/
 void ShuntNetPacket::PreHandleADisconnection()
 {
 	if(sock_delta_time_map_.empty())
@@ -395,7 +433,7 @@ void ShuntNetPacket::PreHandleADisconnection()
 			{
 				if(tv.tv_sec*1000000+tv.tv_usec-it->second > 30000000) //30s
 				{
-					//has a disconnection, send reset tag
+					/** if has a abnormal disconnection , then send reset tag to other threads*/
 					PacketItem item;
                     item.thread_tag = cons::RESET;
                     item.port_tag = 0;
@@ -415,6 +453,9 @@ void ShuntNetPacket::PreHandleADisconnection()
 	}
 }
 
+/**
+* @brief thread running function
+*/
 void ShuntNetPacket::RunThreadFunc()
 {
 	struct pcap_pkthdr *header = NULL;
@@ -433,25 +474,13 @@ void ShuntNetPacket::RunThreadFunc()
 	deque<zmq::socket_t *> *sock_deque = &(this->sock_ex_deque_);
 	map<std::string,zmq::socket_t*>* sock_ex_map_ = &(this->sock_ex_map_);
 
-    //signal(SIGALRM, PrintCountInfo);
-    //tick.it_value.tv_sec = 10;
-    //tick.it_value.tv_usec = 0;
-
-    //tick.it_interval.tv_sec = 60;
-    //tick.it_interval.tv_usec = 0;
-
-    //setitimer(ITIMER_REAL,&tick,NULL);
-
-
-	//unsigned long pack_seq = 0;
-
 	int tcpconnstatus = 0;
 	int tcpconntag = 0;
 
 	zmq::message_t msg_rcv(sizeof(CapNetPacketItem));
 	while(true)
 	{
-		PreHandleADisconnection();
+		//PreHandleADisconnection();
 
 		msg_rcv.rebuild();
 		sock_->recv(&msg_rcv);
@@ -560,6 +589,8 @@ void ShuntNetPacket::RunThreadFunc()
 			tcp_data_len = ntohs(ih->tlen) - head_len;//must use ih->tlen, because sometime it will have supplement package.
 			tcp_current_seq = ntohl(tcph->seq);
 			//cout<<"cap:current_seq:"<<tcp_current_seq<<" data_len:"<<tcp_data_len<<endl;
+			/** parsing two direction data*/
+
 			//caishu  --> zhongzhuan
 			if((iter=sock_ex_map_->find(key_ip_dst)) != sock_ex_map_->end())
 			{
