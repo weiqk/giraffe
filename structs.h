@@ -1,3 +1,10 @@
+/**
+* @file structs.h
+* @brief structs set
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #ifndef MONITOR_STRUCTS_H_
 #define MONITOR_STRUCTS_H_ 
 
