@@ -26,7 +26,7 @@
 #include "capture_net_packet.h"
 #include "shunt_net_packet.h"
 #include "business_error_info.h"
-#include "DIDTemplateToLuaStruct.h"
+#include "did_template_to_lua_struct.h"
 #include "configparser.h"
 #include "constants.h"
 #include "flags.h"

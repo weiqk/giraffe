@@ -1,11 +1,11 @@
 /**
-* @file DIDTemplateToLuaStruct.cc
+* @file did_tempalte_to_lua_struct.cc
 * @brief transform did template to lua template
 * @author ly
 * @version 0.1.0
 * @date 2013-11-29
 */
-#include "DIDTemplateToLuaStruct.h"
+#include "did_template_to_lua_struct.h"
 #include "xml_class_set.h"
 #include "xml2cfg.h"
 #ifndef __linux

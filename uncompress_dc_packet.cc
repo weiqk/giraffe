@@ -10,7 +10,7 @@
 #include "DidUncompress.h"
 #include "public.h"
 #include "xml_class_set.h"
-#include "DIDTemplateToLuaStruct.h"
+#include "did_template_to_lua_struct.h"
 #ifdef __linux
     #include <luajit-2.0/lua.hpp>
 #else
