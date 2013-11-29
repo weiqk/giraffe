@@ -5,7 +5,7 @@
 <area shape="rect" id="node9" href="$combine__dc__packet_8h.html" title="combine_dc_packet.h" alt="" coords="1343,229,1491,256"/>
 <area shape="rect" id="node10" href="$combine__dc__packet_8cc.html" title="combine dc packet " alt="" coords="1735,304,1891,331"/>
 <area shape="rect" id="node20" href="$decrypt__simple_8h.html" title="decrypt_simple.h" alt="" coords="1618,155,1739,181"/>
-<area shape="rect" id="node29" href="$config__parser_8cc.html" title="config_parser.cc" alt="" coords="1967,80,2085,107"/>
+<area shape="rect" id="node29" href="$config__parser_8cc.html" title="parse xml config " alt="" coords="1967,80,2085,107"/>
 <area shape="rect" id="node30" href="$flags_8cc.html" title="configure constant " alt="" coords="2110,80,2177,107"/>
 <area shape="rect" id="node3" href="$basethread_8h.html" title="base thread class " alt="" coords="1037,155,1133,181"/>
 <area shape="rect" id="node13" href="$log_8h.html" title="log.h" alt="" coords="1268,229,1319,256"/>

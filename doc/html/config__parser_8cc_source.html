@@ -87,160 +87,161 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">config_parser.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="config__parser_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config__parser_8h.html">config_parser.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="flags_8h.html">flags.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>log4cxx;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;LoggerPtr <a class="code" href="classConfigParser.html#a0a831f94a627e262394d5c5d1df08550">ConfigParser::logger_</a>(Logger::getLogger(<span class="stringliteral">&quot;config_parser&quot;</span>));</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classConfigParser.html#a816fe0ac40a132f714cde0fb715b3a2c">   12</a></span>&#160;std::string <a class="code" href="classConfigParser.html#a816fe0ac40a132f714cde0fb715b3a2c">ConfigParser::SplitDidTemplateId</a>(std::string &amp;did_template_path)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> pre_pos;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef __linux</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span>    pre_pos = did_template_path.find_last_of(<span class="stringliteral">&quot;/\\&quot;</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#elif __linux</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span>    pre_pos = did_template_path.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">int</span> last_pos = did_template_path.find_last_not_of(<span class="stringliteral">&quot;.xml&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::string did_template_id = did_template_path.substr(pre_pos+1 , last_pos-pre_pos);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//cout&lt;&lt;did_template_id&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;did template id:&quot;</span> &lt;&lt; did_template_id);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    assert(!did_template_id.empty());</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> did_template_id;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">ConfigParser::Parse</a>()</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classxml2cfg.html">xml2cfg</a> config;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    deque&lt;XML_ZMQ&gt; *log_zmqdeque = xml_log_.get_zmqdeque();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    deque&lt;XML_ZMQ&gt; *business_errinfo_zmqdeque = xml_business_errinfo_.get_zmqdeque();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    config.<a class="code" href="classxml2cfg.html#ae0225375656548768f3f281f2fe9d850">open</a>(config_file_.c_str());</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    xmlNodePtr root_node = xmlNewNode(NULL,BAD_CAST<span class="stringliteral">&quot;listening&quot;</span>); </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    xmlNodeSetPtr log_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(NULL,<span class="stringliteral">&quot;/listening/log&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;log_nodeset-&gt;nodeNr;i++)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    { </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        xmlNodePtr log_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(log_nodeset,i);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        xmlNodeSetPtr log_zmq_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(log_node,<span class="stringliteral">&quot;zmqs/zmq&quot;</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;log_zmq_nodeset-&gt;nodeNr;i++)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            xmlNodePtr log_zmq_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(log_zmq_nodeset,i);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            std::string zmqpattern;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::string zmqsocketaction;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::string zmqsocketaddr;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(log_zmq_node,<span class="stringliteral">&quot;zmqpattern&quot;</span>,zmqpattern,NULL);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(log_zmq_node,<span class="stringliteral">&quot;zmqsocketaction&quot;</span>,zmqsocketaction,NULL);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(log_zmq_node,<span class="stringliteral">&quot;zmqsocketaddr&quot;</span>,zmqsocketaddr,NULL);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="classXML__ZMQ.html">XML_ZMQ</a> xml_zmq(zmqpattern,zmqsocketaction,zmqsocketaddr);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            log_zmqdeque-&gt;push_back(xml_zmq);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//business error info</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    xmlNodeSetPtr business_errinfo_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(NULL,<span class="stringliteral">&quot;/listening/business_error_info&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;business_errinfo_nodeset-&gt;nodeNr;i++)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        xmlNodePtr business_errinfo_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(business_errinfo_nodeset,i);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        xmlNodeSetPtr business_errinfo_zmq_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(business_errinfo_node,<span class="stringliteral">&quot;zmqs/zmq&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;business_errinfo_zmq_nodeset-&gt;nodeNr;i++)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            xmlNodePtr business_errinfo_zmq_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(business_errinfo_zmq_nodeset,i);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            std::string zmqpattern;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            std::string zmqsocketaction;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            std::string zmqsocketaddr;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(business_errinfo_zmq_node,<span class="stringliteral">&quot;zmqpattern&quot;</span>,zmqpattern,NULL);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(business_errinfo_zmq_node,<span class="stringliteral">&quot;zmqsocketaction&quot;</span>,zmqsocketaction,NULL);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(business_errinfo_zmq_node,<span class="stringliteral">&quot;zmqsocketaddr&quot;</span>,zmqsocketaddr,NULL);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="classXML__ZMQ.html">XML_ZMQ</a> xml_zmq(zmqpattern,zmqsocketaction,zmqsocketaddr);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            business_errinfo_zmqdeque-&gt;push_back(xml_zmq);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    xmlNodeSetPtr listeningitem_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(root_node,<span class="stringliteral">&quot;//listeningitem&quot;</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//cout&lt;&lt;listeningitem_nodeset-&gt;nodeNr&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;listening connection num is &quot;</span> &lt;&lt; listeningitem_nodeset-&gt;nodeNr );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;listeningitem_nodeset-&gt;nodeNr; i++)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        xmlNodePtr listeningitem_node =config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(listeningitem_nodeset,i);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::string net_adapter;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(listeningitem_node, <span class="stringliteral">&quot;net_adapter&quot;</span>, net_adapter, NULL);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> port = config.<a class="code" href="classxml2cfg.html#af85e4d59b40e05b5f66362fd41f0b6a4">get_prop_int</a>(listeningitem_node,<span class="stringliteral">&quot;port&quot;</span>,0);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        ports_.push_back(port);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::string filter;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(listeningitem_node,<span class="stringliteral">&quot;filter&quot;</span>,filter,NULL);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">//cout&lt;&lt;filter&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;filter:&quot;</span> &lt;&lt; filter);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> listening_item(net_adapter, port, filter);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        xmlNodeSetPtr didtemplate_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(listeningitem_node,<span class="stringliteral">&quot;did_templates/did_template&quot;</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(didtemplate_nodeset-&gt;nodeNr &gt; 0)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;didtemplate_nodeset-&gt;nodeNr;i++)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                xmlNodePtr didtemplate_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(didtemplate_nodeset,i);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                std::string did_template_path;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(didtemplate_node,<span class="stringliteral">&quot;did_template_path&quot;</span>,did_template_path,NULL);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                listening_item.<a class="code" href="classXML__ListeningItem.html#a3e0941b7344fb7029e0741a990fb6259">push_did_template_paths</a>(did_template_path);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                std::string did_template_id = SplitDidTemplateId(did_template_path);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                listening_item.<a class="code" href="classXML__ListeningItem.html#ae7257017c33edabef9b50b02ff616371">push_did_template_ids</a>(did_template_id);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                listening_item.<a class="code" href="classXML__ListeningItem.html#a47c19db48cc419dec0be0152f95e6884">insert_did_filepath_map</a>(std::pair&lt;int, std::string&gt;(atoi(did_template_id.c_str()), did_template_path));</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        xmlNodeSetPtr thread_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(listeningitem_node,<span class="stringliteral">&quot;thread&quot;</span>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">//cout&lt;&lt;&quot;thread_nodeset:&quot;&lt;&lt;thread_nodeset-&gt;nodeNr&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;thread_nodeset:&quot;</span> &lt;&lt; thread_nodeset-&gt;nodeNr);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;thread_nodeset-&gt;nodeNr;i++)</div>
+<a href="config__parser_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config__parser_8h.html">config_parser.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="flags_8h.html">flags.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>log4cxx;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;LoggerPtr <a class="code" href="classConfigParser.html#a0a831f94a627e262394d5c5d1df08550">ConfigParser::logger_</a>(Logger::getLogger(<span class="stringliteral">&quot;config_parser&quot;</span>));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classConfigParser.html#a816fe0ac40a132f714cde0fb715b3a2c">   26</a></span>&#160;std::string <a class="code" href="classConfigParser.html#a816fe0ac40a132f714cde0fb715b3a2c">ConfigParser::SplitDidTemplateId</a>(std::string &amp;did_template_path)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> pre_pos;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef __linux</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span>    pre_pos = did_template_path.find_last_of(<span class="stringliteral">&quot;/\\&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#elif __linux</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span>    pre_pos = did_template_path.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">int</span> last_pos = did_template_path.find_last_not_of(<span class="stringliteral">&quot;.xml&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string did_template_id = did_template_path.substr(pre_pos+1 , last_pos-pre_pos);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//cout&lt;&lt;did_template_id&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;did template id:&quot;</span> &lt;&lt; did_template_id);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    assert(!did_template_id.empty());</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> did_template_id;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">ConfigParser::Parse</a>()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classxml2cfg.html">xml2cfg</a> config;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    deque&lt;XML_ZMQ&gt; *log_zmqdeque = xml_log_.get_zmqdeque();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    deque&lt;XML_ZMQ&gt; *business_errinfo_zmqdeque = xml_business_errinfo_.get_zmqdeque();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    config.<a class="code" href="classxml2cfg.html#ae0225375656548768f3f281f2fe9d850">open</a>(config_file_.c_str());</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    xmlNodePtr root_node = xmlNewNode(NULL,BAD_CAST<span class="stringliteral">&quot;listening&quot;</span>); </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    xmlNodeSetPtr log_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(NULL,<span class="stringliteral">&quot;/listening/log&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;log_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    { </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        xmlNodePtr log_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(log_nodeset,i);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        xmlNodeSetPtr log_zmq_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(log_node,<span class="stringliteral">&quot;zmqs/zmq&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;log_zmq_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            xmlNodePtr log_zmq_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(log_zmq_nodeset,i);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            std::string zmqpattern;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            std::string zmqsocketaction;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            std::string zmqsocketaddr;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(log_zmq_node,<span class="stringliteral">&quot;zmqpattern&quot;</span>,zmqpattern,NULL);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(log_zmq_node,<span class="stringliteral">&quot;zmqsocketaction&quot;</span>,zmqsocketaction,NULL);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(log_zmq_node,<span class="stringliteral">&quot;zmqsocketaddr&quot;</span>,zmqsocketaddr,NULL);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="classXML__ZMQ.html">XML_ZMQ</a> xml_zmq(zmqpattern,zmqsocketaction,zmqsocketaddr);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            log_zmqdeque-&gt;push_back(xml_zmq);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//business error info</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    xmlNodeSetPtr business_errinfo_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(NULL,<span class="stringliteral">&quot;/listening/business_error_info&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;business_errinfo_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        xmlNodePtr business_errinfo_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(business_errinfo_nodeset,i);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        xmlNodeSetPtr business_errinfo_zmq_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(business_errinfo_node,<span class="stringliteral">&quot;zmqs/zmq&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;business_errinfo_zmq_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            xmlNodePtr business_errinfo_zmq_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(business_errinfo_zmq_nodeset,i);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            std::string zmqpattern;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            std::string zmqsocketaction;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            std::string zmqsocketaddr;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(business_errinfo_zmq_node,<span class="stringliteral">&quot;zmqpattern&quot;</span>,zmqpattern,NULL);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(business_errinfo_zmq_node,<span class="stringliteral">&quot;zmqsocketaction&quot;</span>,zmqsocketaction,NULL);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(business_errinfo_zmq_node,<span class="stringliteral">&quot;zmqsocketaddr&quot;</span>,zmqsocketaddr,NULL);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="classXML__ZMQ.html">XML_ZMQ</a> xml_zmq(zmqpattern,zmqsocketaction,zmqsocketaddr);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            business_errinfo_zmqdeque-&gt;push_back(xml_zmq);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    xmlNodeSetPtr listeningitem_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(root_node,<span class="stringliteral">&quot;//listeningitem&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//cout&lt;&lt;listeningitem_nodeset-&gt;nodeNr&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;listening connection num is &quot;</span> &lt;&lt; listeningitem_nodeset-&gt;nodeNr );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;listeningitem_nodeset-&gt;nodeNr; i++)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        xmlNodePtr listeningitem_node =config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(listeningitem_nodeset,i);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::string net_adapter;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(listeningitem_node, <span class="stringliteral">&quot;net_adapter&quot;</span>, net_adapter, NULL);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">int</span> port = config.<a class="code" href="classxml2cfg.html#af85e4d59b40e05b5f66362fd41f0b6a4">get_prop_int</a>(listeningitem_node,<span class="stringliteral">&quot;port&quot;</span>,0);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        ports_.push_back(port);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::string filter;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(listeningitem_node,<span class="stringliteral">&quot;filter&quot;</span>,filter,NULL);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">//cout&lt;&lt;filter&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;filter:&quot;</span> &lt;&lt; filter);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> listening_item(net_adapter, port, filter);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        xmlNodeSetPtr didtemplate_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(listeningitem_node,<span class="stringliteral">&quot;did_templates/did_template&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span>(didtemplate_nodeset-&gt;nodeNr &gt; 0)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            xmlNodePtr thread_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(thread_nodeset,i);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            std::string threadclass;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(thread_node,<span class="stringliteral">&quot;threadclass&quot;</span>,threadclass,NULL);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="comment">//cout&lt;&lt;threadclass&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;threadclass:&quot;</span> &lt;&lt; threadclass);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            deque&lt;XML_ZMQ&gt; *zmqdeque;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span>(<span class="stringliteral">&quot;CaptureNetPacket&quot;</span> == threadclass)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#a79f7889bbc43879e7af755ec3aa5707c">get_capture_net_packet</a>()-&gt;<a class="code" href="classXML__CaptureNetPacket.html#ab96ad0f0ff40a2c047b32fb18ac3df9c">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;didtemplate_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                xmlNodePtr didtemplate_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(didtemplate_nodeset,i);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                std::string did_template_path;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(didtemplate_node,<span class="stringliteral">&quot;did_template_path&quot;</span>,did_template_path,NULL);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                listening_item.<a class="code" href="classXML__ListeningItem.html#a3e0941b7344fb7029e0741a990fb6259">push_did_template_paths</a>(did_template_path);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                std::string did_template_id = SplitDidTemplateId(did_template_path);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                listening_item.<a class="code" href="classXML__ListeningItem.html#ae7257017c33edabef9b50b02ff616371">push_did_template_ids</a>(did_template_id);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                listening_item.<a class="code" href="classXML__ListeningItem.html#a47c19db48cc419dec0be0152f95e6884">insert_did_filepath_map</a>(std::pair&lt;int, std::string&gt;(atoi(did_template_id.c_str()), did_template_path));</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;ShuntNetPacket&quot;</span> == threadclass)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#a781e0da8f4a755dd62e03466cdbbc1e1">get_shunt_net_packet</a>()-&gt;<a class="code" href="classXML__ShuntNetPacket.html#ae9462bd29b2afc093f2d628116089097">get_zmqdeque</a>();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;CombineDCPacket&quot;</span> == threadclass)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#ad6385e126cdfd83a86187eb20e4c6f38">get_combine_dc_packet</a>()-&gt;<a class="code" href="classXML__CombineDCPacket.html#aa0477d4b4656344b1fae36eacc1b4d05">get_zmqdeque</a>();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;UncompressDCPacket&quot;</span> == threadclass)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#ab550b81c4fdbd6b6fd7913cfa04251be">get_uncompress_dc_packet</a>()-&gt;<a class="code" href="classXML__UncompressDCPacket.html#ad5428a09f10a1f06542860db905c5d0a">get_zmqdeque</a>();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;LuaRoutine&quot;</span> == threadclass)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#ac0822a8679eb8218824290bec8c7020a">get_lua_routine</a>()-&gt;<a class="code" href="classXML__Lua__Routine.html#ab0ee631139c9787356756200bfcd6c1d">get_zmqdeque</a>();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            xmlNodeSetPtr zmq_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(thread_node,<span class="stringliteral">&quot;zmqs/zmq&quot;</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="comment">//cout&lt;&lt;&quot;zmqnodeset:&quot;&lt;&lt;zmq_nodeset-&gt;nodeNr&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;zmqnodeset:&quot;</span> &lt;&lt; zmq_nodeset-&gt;nodeNr);    </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;zmq_nodeset-&gt;nodeNr;i++)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                xmlNodePtr zmq_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(zmq_nodeset,i);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                std::string zmqpattern;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                std::string zmqsocketaction;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                std::string zmqsocketaddr;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(zmq_node,<span class="stringliteral">&quot;zmqpattern&quot;</span>,zmqpattern,NULL);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(zmq_node,<span class="stringliteral">&quot;zmqsocketaction&quot;</span>,zmqsocketaction,NULL);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(zmq_node,<span class="stringliteral">&quot;zmqsocketaddr&quot;</span>,zmqsocketaddr,NULL);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="classXML__ZMQ.html">XML_ZMQ</a> zmq_item(zmqpattern,zmqsocketaction,zmqsocketaddr);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                zmqdeque-&gt;push_back(zmq_item);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        listeningitem_deque_.push_back(listening_item);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        xmlNodeSetPtr thread_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(listeningitem_node,<span class="stringliteral">&quot;thread&quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">//cout&lt;&lt;&quot;thread_nodeset:&quot;&lt;&lt;thread_nodeset-&gt;nodeNr&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;thread_nodeset:&quot;</span> &lt;&lt; thread_nodeset-&gt;nodeNr);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;thread_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            xmlNodePtr thread_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(thread_nodeset,i);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            std::string threadclass;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(thread_node,<span class="stringliteral">&quot;threadclass&quot;</span>,threadclass,NULL);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="comment">//cout&lt;&lt;threadclass&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;threadclass:&quot;</span> &lt;&lt; threadclass);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            deque&lt;XML_ZMQ&gt; *zmqdeque;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">if</span>(<span class="stringliteral">&quot;CaptureNetPacket&quot;</span> == threadclass)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#a79f7889bbc43879e7af755ec3aa5707c">get_capture_net_packet</a>()-&gt;<a class="code" href="classXML__CaptureNetPacket.html#ab96ad0f0ff40a2c047b32fb18ac3df9c">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;ShuntNetPacket&quot;</span> == threadclass)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#a781e0da8f4a755dd62e03466cdbbc1e1">get_shunt_net_packet</a>()-&gt;<a class="code" href="classXML__ShuntNetPacket.html#ae9462bd29b2afc093f2d628116089097">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;CombineDCPacket&quot;</span> == threadclass)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#ad6385e126cdfd83a86187eb20e4c6f38">get_combine_dc_packet</a>()-&gt;<a class="code" href="classXML__CombineDCPacket.html#aa0477d4b4656344b1fae36eacc1b4d05">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;UncompressDCPacket&quot;</span> == threadclass)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#ab550b81c4fdbd6b6fd7913cfa04251be">get_uncompress_dc_packet</a>()-&gt;<a class="code" href="classXML__UncompressDCPacket.html#ad5428a09f10a1f06542860db905c5d0a">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;LuaRoutine&quot;</span> == threadclass)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                zmqdeque = listening_item.<a class="code" href="classXML__ListeningItem.html#ac0822a8679eb8218824290bec8c7020a">get_lua_routine</a>()-&gt;<a class="code" href="classXML__Lua__Routine.html#ab0ee631139c9787356756200bfcd6c1d">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            xmlNodeSetPtr zmq_nodeset = config.<a class="code" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a>(thread_node,<span class="stringliteral">&quot;zmqs/zmq&quot;</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">//cout&lt;&lt;&quot;zmqnodeset:&quot;&lt;&lt;zmq_nodeset-&gt;nodeNr&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            LOG4CXX_INFO(logger_, <span class="stringliteral">&quot;zmqnodeset:&quot;</span> &lt;&lt; zmq_nodeset-&gt;nodeNr);    </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;zmq_nodeset-&gt;nodeNr;i++)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                xmlNodePtr zmq_node = config.<a class="code" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a>(zmq_nodeset,i);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                std::string zmqpattern;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                std::string zmqsocketaction;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                std::string zmqsocketaddr;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(zmq_node,<span class="stringliteral">&quot;zmqpattern&quot;</span>,zmqpattern,NULL);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(zmq_node,<span class="stringliteral">&quot;zmqsocketaction&quot;</span>,zmqsocketaction,NULL);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                config.<a class="code" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a>(zmq_node,<span class="stringliteral">&quot;zmqsocketaddr&quot;</span>,zmqsocketaddr,NULL);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <a class="code" href="classXML__ZMQ.html">XML_ZMQ</a> zmq_item(zmqpattern,zmqsocketaction,zmqsocketaddr);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                zmqdeque-&gt;push_back(zmq_item);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        listeningitem_deque_.push_back(listening_item);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="ttc" id="classxml2cfg_html_a4ebe0544aa900b2f646ba0de7a7a93f8"><div class="ttname"><a href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">xml2cfg::get_node</a></div><div class="ttdeci">xmlNodePtr get_node(xmlNodeSetPtr nodesetptr, int index)</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00073">xml2cfg.h:73</a></div></div>
 <div class="ttc" id="classXML__ZMQ_html"><div class="ttname"><a href="classXML__ZMQ.html">XML_ZMQ</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00017">xml_class_set.h:17</a></div></div>
 <div class="ttc" id="classXML__ShuntNetPacket_html_ae9462bd29b2afc093f2d628116089097"><div class="ttname"><a href="classXML__ShuntNetPacket.html#ae9462bd29b2afc093f2d628116089097">XML_ShuntNetPacket::get_zmqdeque</a></div><div class="ttdeci">deque&lt; XML_ZMQ &gt; * get_zmqdeque()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00100">xml_class_set.h:100</a></div></div>
@@ -252,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classXML__ListeningItem_html_a3e0941b7344fb7029e0741a990fb6259"><div class="ttname"><a href="classXML__ListeningItem.html#a3e0941b7344fb7029e0741a990fb6259">XML_ListeningItem::push_did_template_paths</a></div><div class="ttdeci">void push_did_template_paths(std::string &amp;did_template_path)</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00287">xml_class_set.h:287</a></div></div>
 <div class="ttc" id="classXML__Lua__Routine_html_ab0ee631139c9787356756200bfcd6c1d"><div class="ttname"><a href="classXML__Lua__Routine.html#ab0ee631139c9787356756200bfcd6c1d">XML_Lua_Routine::get_zmqdeque</a></div><div class="ttdeci">deque&lt; XML_ZMQ &gt; * get_zmqdeque()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00171">xml_class_set.h:171</a></div></div>
 <div class="ttc" id="classXML__ListeningItem_html_ab550b81c4fdbd6b6fd7913cfa04251be"><div class="ttname"><a href="classXML__ListeningItem.html#ab550b81c4fdbd6b6fd7913cfa04251be">XML_ListeningItem::get_uncompress_dc_packet</a></div><div class="ttdeci">XML_UncompressDCPacket * get_uncompress_dc_packet()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00275">xml_class_set.h:275</a></div></div>
-<div class="ttc" id="classConfigParser_html_a40c1a0aea2fce19bfe57d7eaafe81e15"><div class="ttname"><a href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">ConfigParser::Parse</a></div><div class="ttdeci">void Parse()</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8cc_source.html#l00028">config_parser.cc:28</a></div></div>
+<div class="ttc" id="classConfigParser_html_a40c1a0aea2fce19bfe57d7eaafe81e15"><div class="ttname"><a href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">ConfigParser::Parse</a></div><div class="ttdeci">void Parse()</div><div class="ttdoc">start parsing </div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8cc_source.html#l00045">config_parser.cc:45</a></div></div>
 <div class="ttc" id="classXML__ListeningItem_html_a79f7889bbc43879e7af755ec3aa5707c"><div class="ttname"><a href="classXML__ListeningItem.html#a79f7889bbc43879e7af755ec3aa5707c">XML_ListeningItem::get_capture_net_packet</a></div><div class="ttdeci">XML_CaptureNetPacket * get_capture_net_packet()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00259">xml_class_set.h:259</a></div></div>
 <div class="ttc" id="classXML__ListeningItem_html"><div class="ttname"><a href="classXML__ListeningItem.html">XML_ListeningItem</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00237">xml_class_set.h:237</a></div></div>
 <div class="ttc" id="classXML__ListeningItem_html_a47c19db48cc419dec0be0152f95e6884"><div class="ttname"><a href="classXML__ListeningItem.html#a47c19db48cc419dec0be0152f95e6884">XML_ListeningItem::insert_did_filepath_map</a></div><div class="ttdeci">void insert_did_filepath_map(std::pair&lt; int, std::string &gt; element)</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00291">xml_class_set.h:291</a></div></div>
@@ -262,7 +263,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="ttc" id="classXML__ListeningItem_html_ae7257017c33edabef9b50b02ff616371"><div class="ttname"><a href="classXML__ListeningItem.html#ae7257017c33edabef9b50b02ff616371">XML_ListeningItem::push_did_template_ids</a></div><div class="ttdeci">void push_did_template_ids(std::string did_template_id)</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00283">xml_class_set.h:283</a></div></div>
 <div class="ttc" id="classxml2cfg_html_af4a53cbb4b15823a071484560d71c2e7"><div class="ttname"><a href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">xml2cfg::get_prop_string</a></div><div class="ttdeci">int get_prop_string(const xmlNodePtr nodeptr, const char *propname, std::string &amp;output, const char *default_val)</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00088">xml2cfg.h:88</a></div></div>
 <div class="ttc" id="classXML__ListeningItem_html_ad6385e126cdfd83a86187eb20e4c6f38"><div class="ttname"><a href="classXML__ListeningItem.html#ad6385e126cdfd83a86187eb20e4c6f38">XML_ListeningItem::get_combine_dc_packet</a></div><div class="ttdeci">XML_CombineDCPacket * get_combine_dc_packet()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00271">xml_class_set.h:271</a></div></div>
-<div class="ttc" id="classConfigParser_html_a816fe0ac40a132f714cde0fb715b3a2c"><div class="ttname"><a href="classConfigParser.html#a816fe0ac40a132f714cde0fb715b3a2c">ConfigParser::SplitDidTemplateId</a></div><div class="ttdeci">std::string SplitDidTemplateId(std::string &amp;did_template_path)</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8cc_source.html#l00012">config_parser.cc:12</a></div></div>
+<div class="ttc" id="classConfigParser_html_a816fe0ac40a132f714cde0fb715b3a2c"><div class="ttname"><a href="classConfigParser.html#a816fe0ac40a132f714cde0fb715b3a2c">ConfigParser::SplitDidTemplateId</a></div><div class="ttdeci">std::string SplitDidTemplateId(std::string &amp;did_template_path)</div><div class="ttdoc">split did template id </div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8cc_source.html#l00026">config_parser.cc:26</a></div></div>
 <div class="ttc" id="classXML__UncompressDCPacket_html_ad5428a09f10a1f06542860db905c5d0a"><div class="ttname"><a href="classXML__UncompressDCPacket.html#ad5428a09f10a1f06542860db905c5d0a">XML_UncompressDCPacket::get_zmqdeque</a></div><div class="ttdeci">deque&lt; XML_ZMQ &gt; * get_zmqdeque()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00139">xml_class_set.h:139</a></div></div>
 <div class="ttc" id="classXML__CaptureNetPacket_html_ab96ad0f0ff40a2c047b32fb18ac3df9c"><div class="ttname"><a href="classXML__CaptureNetPacket.html#ab96ad0f0ff40a2c047b32fb18ac3df9c">XML_CaptureNetPacket::get_zmqdeque</a></div><div class="ttdeci">deque&lt; XML_ZMQ &gt; * get_zmqdeque()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00087">xml_class_set.h:87</a></div></div>
 <div class="ttc" id="classxml2cfg_html_af85e4d59b40e05b5f66362fd41f0b6a4"><div class="ttname"><a href="classxml2cfg.html#af85e4d59b40e05b5f66362fd41f0b6a4">xml2cfg::get_prop_int</a></div><div class="ttdeci">int get_prop_int(const xmlNodePtr nodeptr, const char *propname, int default_val)</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00078">xml2cfg.h:78</a></div></div>
@@ -270,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2013年 十一月 29日 星期五 15:39:47 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2013年 十一月 29日 星期五 16:05:14 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

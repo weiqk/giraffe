@@ -5,7 +5,7 @@
 <area shape="rect" id="node5" href="$classConfigParser.html#a3c03fab421d3e5cf1b59c5e645f0a0a9" title="ConfigParser::get_log_obj" alt="" coords="123,441,295,468"/>
 <area shape="rect" id="node6" href="$classConfigParser.html#a6c07437d991e0bad70bde7560c1f0d20" title="ConfigParser::get_ports" alt="" coords="129,492,289,519"/>
 <area shape="rect" id="node7" href="$monitor_8cc.html#a115ed0955aa677202b01fdf22866d76d" title="join capture thread " alt="" coords="143,543,275,569"/>
-<area shape="rect" id="node8" href="$classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="ConfigParser::Parse" alt="" coords="139,593,279,620"/>
+<area shape="rect" id="node8" href="$classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="start parsing " alt="" coords="139,593,279,620"/>
 <area shape="rect" id="node27" href="$monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="114,1175,305,1201"/>
 <area shape="rect" id="node36" href="$monitor_8cc.html#ac2c8f9a180f23882d061b33c1c683619" title="capture thread:init zmq and start " alt="" coords="143,1352,275,1379"/>
 <area shape="rect" id="node38" href="$monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="156,1251,263,1277"/>

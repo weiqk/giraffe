@@ -8,7 +8,7 @@
 <area shape="rect" id="node9" href="$luaroutine_8h.html" title="luaroutine.h" alt="" coords="922,88,1011,115"/>
 <area shape="rect" id="node11" href="$shunt__net__packet_8h.html" title="shunt_net_packet.h" alt="" coords="765,179,900,205"/>
 <area shape="rect" id="node13" href="$uncompress__dc__packet_8h.html" title="uncompress_dc_packet.h" alt="" coords="676,88,847,115"/>
-<area shape="rect" id="node3" href="$config__parser_8cc.html" title="config_parser.cc" alt="" coords="5,179,123,205"/>
+<area shape="rect" id="node3" href="$config__parser_8cc.html" title="parse xml config " alt="" coords="5,179,123,205"/>
 <area shape="rect" id="node10" href="$luaroutine_8cc.html" title="send to lua script " alt="" coords="925,179,1021,205"/>
 <area shape="rect" id="node12" href="$shunt__net__packet_8cc.html" title="shunt net packet by connections " alt="" coords="762,261,904,288"/>
 </map>
