@@ -1,3 +1,10 @@
+/**
+* @file DIDTemplateToLuaStruct.cc
+* @brief transform did template to lua template
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #include "DIDTemplateToLuaStruct.h"
 #include "xml_class_set.h"
 #include "xml2cfg.h"
@@ -12,29 +19,21 @@
 typedef std::map< std::string, int > map_typesize_t;
 map_typesize_t did_type_map;
 
+/**
+* @brief encapsulate strcat
+*
+* @param dest
+* @param val
+* @param pos
+*
+* @return 
+*/
 int cat_to( char *dest, const char *val, int pos )
 {
 	int _len = strlen( val );
 	strcat( dest + pos, val );
 	return pos + _len;
 }
-
-//void DIDTemplateToLuaStruct::AutoAddToDidTypeMap()
-//{
-//	did_type_map.insert( std::make_pair("repeat", 4) ); 
-//	did_type_map.insert( std::make_pair("char", 1) ); 
-//	did_type_map.insert( std::make_pair("int16", 2) ); 
-//	did_type_map.insert( std::make_pair("int32", 4) ); 
-//	did_type_map.insert( std::make_pair("int64", 8) ); 
-//	did_type_map.insert( std::make_pair("byte", 1) ); 
-//	did_type_map.insert( std::make_pair("uint16", 2) ); 
-//	did_type_map.insert( std::make_pair("uint24", 3) ); 
-//	did_type_map.insert( std::make_pair("uint32", 4) ); 
-//	did_type_map.insert( std::make_pair("uint64", 8) ); 
-//	did_type_map.insert( std::make_pair("pfloat", 8) ); 
-//	did_type_map.insert( std::make_pair("dzh_time_t", 8) ); 
-//	did_type_map.insert( std::make_pair("vfloat", 8) );
-//}
 
 //vector<std::string> & DIDTemplateToLuaStruct::GetPathFiles()
 //{
@@ -57,6 +56,11 @@ int cat_to( char *dest, const char *val, int pos )
 //	return did_template_files_;
 //}
 
+/**
+* @brief transform all the did template to lua template 
+*
+* @param listening_item
+*/
 void DIDTemplateToLuaStruct::Transform(XML_ListeningItem &listening_item)
 {
 	xml2cfg config;

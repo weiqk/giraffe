@@ -1,3 +1,10 @@
+/**
+* @file utils.cc
+* @brief some utils
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #include "utils.h"
 #include "datacollect.h"
 #include <sys/select.h>
@@ -6,7 +13,13 @@
 #include <unistd.h>
 #include "constants.h"
 
-/*get flag name based on the flag number*/
+/**
+* @brief get flag name based on the flag number
+*
+* @param flag
+*
+* @return 
+*/
 const char* Utils::tcp_flag_to_str( unsigned char flag )
 {
 	switch((unsigned short)flag)
@@ -50,7 +63,13 @@ const char* Utils::tcp_flag_to_str( unsigned char flag )
 	}
 }
 
-//be used for getting the value of type MWORD.
+/**
+* @brief be used for getting the value of type MWORD
+*
+* @param x
+*
+* @return 
+*/
 int64 Utils::ToMword(unsigned long x)
 {
     int i;
@@ -63,11 +82,26 @@ int64 Utils::ToMword(unsigned long x)
     return n;
 }
 
+/**
+* @brief trans UINT24 type to unsigned int
+*
+* @param low
+* @param high
+*
+* @return 
+*/
 unsigned int Utils::UINT24to32(unsigned short low,unsigned char high)
 {
     return low + (high<<16);
 }
 
+/**
+* @brief trans dc_type to string
+*
+* @param dc_type
+*
+* @return 
+*/
 const char * Utils::DCTypeToString(int dc_type)
 {
 	switch(dc_type)
@@ -139,6 +173,13 @@ const char * Utils::DCTypeToString(int dc_type)
 	}
 }
 
+/**
+* @brief trans dc_general intype to string
+*
+* @param dc_general_intype
+*
+* @return 
+*/
 const char * Utils::DCGeneral_IntypeToString(int dc_general_intype)
 {
 	switch(dc_general_intype)
@@ -160,6 +201,11 @@ const char * Utils::DCGeneral_IntypeToString(int dc_general_intype)
 	}
 }
 
+/**
+* @brief print thread id
+*
+* @param tid
+*/
 void Utils::Print_Thread_ID(pthread_t tid)
 {
 	size_t i;
@@ -168,6 +214,14 @@ void Utils::Print_Thread_ID(pthread_t tid)
 	printf("\n");
 }
 
+/**
+* @brief write into file
+*
+* @param file_name
+* @param mode
+* @param data
+* @param length
+*/
 void Utils::WriteIntoFile(const char *file_name, const char *mode, const void* data , size_t length)
 {
 	FILE * fp = fopen(file_name, mode);
@@ -183,6 +237,11 @@ void Utils::WriteIntoFile(const char *file_name, const char *mode, const void* d
 	}
 }
 
+/**
+* @brief sleep usecs
+*
+* @param usec
+*/
 void Utils::SleepUsec(const int usec)
 {
 	struct timeval tval;
@@ -191,6 +250,11 @@ void Utils::SleepUsec(const int usec)
 	select(0,NULL,NULL,NULL,&tval);
 }
 
+/**
+* @brief get current time
+*
+* @return 
+*/
 unsigned long Utils::GetCurrentTime()
 {
 	struct timeval tval;

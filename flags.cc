@@ -1,3 +1,10 @@
+/**
+* @file flags.cc
+* @brief configure constant
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #include "flags.h"
 
 DEFINE_string(CONFIG_FILE_PATH, "./conf.xml", "configure file path");
