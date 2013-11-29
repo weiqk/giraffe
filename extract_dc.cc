@@ -1,7 +1,27 @@
+/**
+* @file extract_dc.cc
+* @brief extract dc package
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #include "extract_dc.h"
 #include "l2compress.h"
 #include "generalcps.h"
 
+/**
+* @brief extract data
+*
+* @param dc_type
+* @param pbufsrc
+* @param bufsizesrc
+* @param pbufdes
+* @param bufsizedes
+* @param pStkDyna
+* @param pStkStatic
+*
+* @return 
+*/
 int ExtractDC::ExtractData(int dc_type, const unsigned char *pbufsrc, int bufsizesrc, unsigned char * pbufdes, int bufsizedes, STK_DYNA *pStkDyna, STK_STATIC *pStkStatic)
 {
  	int nRet = 0;
@@ -140,6 +160,16 @@ int ExtractDC::ExtractData(int dc_type, const unsigned char *pbufsrc, int bufsiz
 	return nRet;
 }
 
+/**
+* @brief extract static data
+*
+* @param pData
+* @param nDataLen
+* @param pStaticBuf
+* @param nBufSize
+*
+* @return 
+*/
 int ExtractDC::ExtractStaticData(const BYTE* pData,int nDataLen,STK_STATIC* pStaticBuf,int& nBufSize)
 {
 	int nRet = 0;
@@ -172,6 +202,18 @@ int ExtractDC::ExtractStaticData(const BYTE* pData,int nDataLen,STK_STATIC* pSta
 	return nRet;
 }
 
+/**
+* @brief extract dyna data
+*
+* @param pData
+* @param nDataLen
+* @param pDynaBuf
+* @param nBufSize
+* @param pStkDyna
+* @param pStkStatic
+*
+* @return 
+*/
 int ExtractDC::ExtractDynaData(const BYTE* pData,int nDataLen,STK_DYNA* pDynaBuf,int& nBufSize,STK_DYNA *pStkDyna,STK_STATIC *pStkStatic)
 {
  	int nRet = 0;
@@ -219,6 +261,15 @@ int ExtractDC::ExtractDynaData(const BYTE* pData,int nDataLen,STK_DYNA* pDynaBuf
 	return nRet;
 }
 
+/**
+* @brief extract static stream
+*
+* @param pStatic
+* @param wStockID
+* @param dwLastLabel
+*
+* @return 
+*/
 BOOL ExtractDC::ExtractStaticStream(STK_STATIC* pStatic,WORD& wStockID,DWORD& dwLastLabel)
 {
 	BOOL bRet = FALSE;
@@ -815,7 +866,6 @@ BOOL ExtractDC::ExtractStaticStream(STK_STATIC* pStatic,WORD& wStockID,DWORD& dw
 	return bRet;
  }
 
-
 DWORD ExtractDC::GetDefaultHKSpread(DWORD dwPrice)
 {
 	struct HKSPREAD
@@ -849,6 +899,14 @@ DWORD ExtractDC::GetDefaultHKSpread(DWORD dwPrice)
 	return dwRet;
 }
 
+/**
+* @brief get old dyna by id
+*
+* @param pStkDyna
+* @param index
+*
+* @return 
+*/
 const struct STK_DYNA* ExtractDC::GetOldDynaByID(STK_DYNA * pStkDyna,WORD index)
 {
 	if(static_tag == true)
@@ -859,6 +917,14 @@ const struct STK_DYNA* ExtractDC::GetOldDynaByID(STK_DYNA * pStkDyna,WORD index)
 		return NULL;
 }
 
+/**
+* @brief get index from static table 
+*
+* @param pStkStatic
+* @param index
+*
+* @return 
+*/
 const struct STK_STATIC* ExtractDC::GetStkByID(STK_STATIC * pStkStatic, WORD index)
 {
 	if(index <= stk_total_)
@@ -867,6 +933,16 @@ const struct STK_STATIC* ExtractDC::GetStkByID(STK_STATIC * pStkStatic, WORD ind
 		return NULL;
 }
 
+/**
+* @brief extract l2 mmpex
+*
+* @param pData
+* @param nDataLen
+* @param pMMPExBuf
+* @param nBufSize
+*
+* @return 
+*/
 int ExtractDC::ExpandL2MMPEx(const BYTE* pData,int nDataLen,SH_L2_MMPEX* pMMPExBuf,int& nBufSize)
 {
 	int nRet = 0;

@@ -1,3 +1,10 @@
+/**
+* @file business_error_info.cc
+* @brief recv business error info and send to webserver
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #include "business_error_info.h"
 #include <zmq.hpp>
 #include <iostream>
@@ -21,6 +28,9 @@ static const char MONITOR_MSG_RANK[FIX_TAG_LEN + 1] = "04";
 static const char MONITOR_MSG_SHORT_DESCRIPTION[FIX_TAG_LEN + 1] = "05";
 static const char MONITOR_MSG_DESCRIPTION[FIX_TAG_LEN + 1] = "06";
 
+/**
+* @brief init
+*/
 void BusinessErrorInfo::Init()
 {
 	InitZMQ();
@@ -31,6 +41,9 @@ void BusinessErrorInfo::Init()
 	LOG4CXX_INFO(logger_, "business thead: curl has initialized!");
 }
 
+/**
+* @brief init zmq
+*/
 void BusinessErrorInfo::InitZMQ()
 {
     sock_recv_ = new zmq::socket_t (*context_, this->zmqitems_[0].zmqpattern);
@@ -62,6 +75,9 @@ void BusinessErrorInfo::InitZMQ()
 	}
 }
 
+/**
+* @brief init business error log
+*/
 void BusinessErrorInfo::InitLog()
 {
 	log4cxx::LogString pattern_format("%d:%p:%m%n");
@@ -87,6 +103,10 @@ void BusinessErrorInfo::InitLog()
 //	}	
 //}
 //
+
+/**
+* @brief thread running function
+*/
 void BusinessErrorInfo::RunThreadFunc()
 {
 	zmq::message_t msg;
@@ -105,6 +125,12 @@ void BusinessErrorInfo::RunThreadFunc()
 	}	
 }
 
+/**
+* @brief split string
+*
+* @param str
+* @param separator
+*/
 void BusinessErrorInfo::SplitString(char * str, const char * separator)
 {
 	assert(NULL != str && NULL != separator);
@@ -123,6 +149,11 @@ void BusinessErrorInfo::SplitString(char * str, const char * separator)
 	error_description_ = str_vec[5];
 }
 
+/**
+* @brief dispatch data to webserver
+*
+* @param data
+*/
 void BusinessErrorInfo::DispatchToWebServer(const void * data)
 {
 	//std::string temp_str = "1:static:001:1:ha:haha";
