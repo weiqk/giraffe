@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: uncompress_dc_packet.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">uncompress_dc_packet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="uncompress__dc__packet_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MONITOR_UNCOMPRESS_DC_PACKET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MONITOR_UNCOMPRESS_DC_PACKET_H </span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef __linux</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;winsock2.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;log4cxx/logger.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef __linux</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &lt;luajit-2.0/lua.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &lt;lua.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data_8h.html">data.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="structs_8h.html">structs.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datacollect_8h.html">datacollect.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basethread_8h.html">basethread.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="extract__dc_8h.html">extract_dc.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dzh__time__t_8h.html">dzh_time_t.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xml__class__set_8h.html">xml_class_set.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DidUncompress_8h.html">DidUncompress.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;csignal&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="uncompress__dc__packet_8h.html#ae412704e9496e516840291c61d952d44">   36</a></span>&#160;<span class="preprocessor">#define EXTRACT_BUF (2*1024*2014)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="uncompress__dc__packet_8h.html#aa7d3f96762d8d6648f83e9dfa25db1bc">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DID_TEMPLATE_BUF (2*1024*1024)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUncompressDCPacket.html">UncompressDCPacket</a>:<span class="keyword">public</span> <a class="code" href="classBaseThread.html">BaseThread</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a202f5dc23d2a4bbab852b5497a3ef70f">   42</a></span>&#160;    <a class="code" href="classUncompressDCPacket.html#a202f5dc23d2a4bbab852b5497a3ef70f">UncompressDCPacket</a>(zmq::context_t * context, <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> &amp;listening_item):listening_item_(listening_item)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        context_ = context;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        sock_recv_ = NULL;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        sock_send_to_lua_routine_ = NULL;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        sock_send_to_log_ = NULL;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        nHqTotal = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        extractbuf = NULL;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        pStkStatic = NULL;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        pStkDyna = NULL;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        pStkMMPEx = NULL;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        count_rc_ = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        did_init_tag_= 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a89ccdf17da54c4542e0c2a0cccc37301">   56</a></span>&#160;    <a class="code" href="classUncompressDCPacket.html#a89ccdf17da54c4542e0c2a0cccc37301">~UncompressDCPacket</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span>(NULL != sock_recv_)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">delete</span> sock_recv_;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            sock_recv_ = NULL;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span>(NULL != sock_send_to_log_)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keyword">delete</span> sock_send_to_log_;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            sock_send_to_log_ = NULL;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(NULL != sock_send_to_lua_routine_)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">delete</span> sock_send_to_lua_routine_;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            sock_send_to_lua_routine_ = NULL;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(extractbuf != NULL)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">delete</span>[] extractbuf;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            extractbuf = NULL;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span>(pStkStatic != NULL)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">delete</span>[] pStkStatic;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            pStkStatic = NULL;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(pStkDyna != NULL)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">delete</span>[] pStkDyna;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            pStkDyna = NULL;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span>(pStkMMPEx != NULL)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keyword">delete</span>[] pStkMMPEx;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            pStkMMPEx = NULL;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> RunThreadFunc();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> Init();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//BOOL DecryptDataPack(DC_HEAD * pData);</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> ExtractDataPack(<span class="keyword">const</span> <a class="code" href="structDC__HEAD.html">DC_HEAD</a>* pOrgHead,<a class="code" href="structDC__HEAD.html">DC_HEAD</a>* pHeadBuf,<span class="keywordtype">int</span> nBufSize,<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>* pwMarketBuf=NULL);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> Uncompress(<span class="keyword">struct</span> timeval timestamp, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pkt_data, <span class="keywordtype">int</span> pre_dch_offset);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> DispatchData(zmq::socket_t * sock, <span class="keywordtype">void</span> *data, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> DownloadData(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * data, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#ab5f96c8bff94d8bcb33cfabcd52ee4b7">  101</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classUncompressDCPacket.html#ab5f96c8bff94d8bcb33cfabcd52ee4b7">nHqTotal</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a92691ef76d508857bdd8a78a52c1a71f">  102</a></span>&#160;    <span class="keywordtype">char</span>*  <a class="code" href="classUncompressDCPacket.html#a92691ef76d508857bdd8a78a52c1a71f">extractbuf</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#af5da86c73ee17bf6b78eb367df7f3786">  103</a></span>&#160;    <a class="code" href="structSTK__STATIC.html">STK_STATIC</a> *<a class="code" href="classUncompressDCPacket.html#af5da86c73ee17bf6b78eb367df7f3786">pStkStatic</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a1c290fe83ef7d499677a1e32ac94119b">  104</a></span>&#160;    <a class="code" href="structSTK__DYNA.html">STK_DYNA</a> *<a class="code" href="classUncompressDCPacket.html#a1c290fe83ef7d499677a1e32ac94119b">pStkDyna</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a4ab10e8548d3c946e238076249cc19ea">  105</a></span>&#160;    <a class="code" href="structSH__L2__MMPEX.html">SH_L2_MMPEX</a> *<a class="code" href="classUncompressDCPacket.html#a4ab10e8548d3c946e238076249cc19ea">pStkMMPEx</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> InitZMQ();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#afb1c031113001cc04c310405f9df359d">  110</a></span>&#160;    zmq::context_t *<a class="code" href="classUncompressDCPacket.html#afb1c031113001cc04c310405f9df359d">context_</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a826e5ff900821d95885870d65d12fb0a">  111</a></span>&#160;    zmq::socket_t *<a class="code" href="classUncompressDCPacket.html#a826e5ff900821d95885870d65d12fb0a">sock_recv_</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#aab896bf3d71d35bad434520532a726ba">  112</a></span>&#160;    zmq::socket_t *<a class="code" href="classUncompressDCPacket.html#aab896bf3d71d35bad434520532a726ba">sock_send_to_lua_routine_</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a5ce50cdc45f2ae071d6d6eb55e801e02">  113</a></span>&#160;    zmq::socket_t *<a class="code" href="classUncompressDCPacket.html#a5ce50cdc45f2ae071d6d6eb55e801e02">sock_send_to_log_</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a9cb189bff436dff5cc44cbbd87805a57">  114</a></span>&#160;    <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> <a class="code" href="classUncompressDCPacket.html#a9cb189bff436dff5cc44cbbd87805a57">listening_item_</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a4c8f74bf9e8faaeb4c4f8c33182e1d95">  115</a></span>&#160;    <a class="code" href="classExtractDC.html">ExtractDC</a> <a class="code" href="classUncompressDCPacket.html#a4c8f74bf9e8faaeb4c4f8c33182e1d95">extractDC_</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a391c90f3afd8080825c1ba01173ebf34">  116</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classUncompressDCPacket.html#a391c90f3afd8080825c1ba01173ebf34">market_id_</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a7404240d040c690e5112c71909db2151">  117</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classUncompressDCPacket.html#a7404240d040c690e5112c71909db2151">count_rc_</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a26e33224bdf9db2254df7a99f2893000">  118</a></span>&#160;    <span class="keyword">static</span> log4cxx::LoggerPtr <a class="code" href="classUncompressDCPacket.html#a26e33224bdf9db2254df7a99f2893000">logger_</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#afbe212cb48cf928a3a65b62626e9fd18">  119</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classUncompressDCPacket.html#afbe212cb48cf928a3a65b62626e9fd18">did_init_tag_</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classUncompressDCPacket.html#a8d7fc58594abcc536274167257bc9a22">  120</a></span>&#160;    <a class="code" href="classDidUncompress.html">DidUncompress</a> <a class="code" href="classUncompressDCPacket.html#a8d7fc58594abcc536274167257bc9a22">did_uncompress_</a>;  </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classUncompressDCPacket_html_afb1c031113001cc04c310405f9df359d"><div class="ttname"><a href="classUncompressDCPacket.html#afb1c031113001cc04c310405f9df359d">UncompressDCPacket::context_</a></div><div class="ttdeci">zmq::context_t * context_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00110">uncompress_dc_packet.h:110</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_afbe212cb48cf928a3a65b62626e9fd18"><div class="ttname"><a href="classUncompressDCPacket.html#afbe212cb48cf928a3a65b62626e9fd18">UncompressDCPacket::did_init_tag_</a></div><div class="ttdeci">int did_init_tag_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00119">uncompress_dc_packet.h:119</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a7404240d040c690e5112c71909db2151"><div class="ttname"><a href="classUncompressDCPacket.html#a7404240d040c690e5112c71909db2151">UncompressDCPacket::count_rc_</a></div><div class="ttdeci">int count_rc_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00117">uncompress_dc_packet.h:117</a></div></div>
+<div class="ttc" id="structDC__HEAD_html"><div class="ttname"><a href="structDC__HEAD.html">DC_HEAD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00700">datacollect.h:700</a></div></div>
+<div class="ttc" id="structs_8h_html"><div class="ttname"><a href="structs_8h.html">structs.h</a></div><div class="ttdoc">structs set </div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a8d7fc58594abcc536274167257bc9a22"><div class="ttname"><a href="classUncompressDCPacket.html#a8d7fc58594abcc536274167257bc9a22">UncompressDCPacket::did_uncompress_</a></div><div class="ttdeci">DidUncompress did_uncompress_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00120">uncompress_dc_packet.h:120</a></div></div>
+<div class="ttc" id="structSH__L2__MMPEX_html"><div class="ttname"><a href="structSH__L2__MMPEX.html">SH_L2_MMPEX</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00311">datacollect.h:311</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a202f5dc23d2a4bbab852b5497a3ef70f"><div class="ttname"><a href="classUncompressDCPacket.html#a202f5dc23d2a4bbab852b5497a3ef70f">UncompressDCPacket::UncompressDCPacket</a></div><div class="ttdeci">UncompressDCPacket(zmq::context_t *context, XML_ListeningItem &amp;listening_item)</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00042">uncompress_dc_packet.h:42</a></div></div>
+<div class="ttc" id="DidUncompress_8h_html"><div class="ttname"><a href="DidUncompress_8h.html">DidUncompress.h</a></div></div>
+<div class="ttc" id="data_8h_html"><div class="ttname"><a href="data_8h.html">data.h</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00039">ldgloble.h:39</a></div></div>
+<div class="ttc" id="extract__dc_8h_html"><div class="ttname"><a href="extract__dc_8h.html">extract_dc.h</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_aab896bf3d71d35bad434520532a726ba"><div class="ttname"><a href="classUncompressDCPacket.html#aab896bf3d71d35bad434520532a726ba">UncompressDCPacket::sock_send_to_lua_routine_</a></div><div class="ttdeci">zmq::socket_t * sock_send_to_lua_routine_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00112">uncompress_dc_packet.h:112</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a197942eefa7db30960ae396d68339b97"><div class="ttname"><a href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></div><div class="ttdeci">unsigned short WORD</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00024">dzh_time_t.h:24</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a26e33224bdf9db2254df7a99f2893000"><div class="ttname"><a href="classUncompressDCPacket.html#a26e33224bdf9db2254df7a99f2893000">UncompressDCPacket::logger_</a></div><div class="ttdeci">static log4cxx::LoggerPtr logger_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00118">uncompress_dc_packet.h:118</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a4ab10e8548d3c946e238076249cc19ea"><div class="ttname"><a href="classUncompressDCPacket.html#a4ab10e8548d3c946e238076249cc19ea">UncompressDCPacket::pStkMMPEx</a></div><div class="ttdeci">SH_L2_MMPEX * pStkMMPEx</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00105">uncompress_dc_packet.h:105</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a92691ef76d508857bdd8a78a52c1a71f"><div class="ttname"><a href="classUncompressDCPacket.html#a92691ef76d508857bdd8a78a52c1a71f">UncompressDCPacket::extractbuf</a></div><div class="ttdeci">char * extractbuf</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00102">uncompress_dc_packet.h:102</a></div></div>
+<div class="ttc" id="utils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_af5da86c73ee17bf6b78eb367df7f3786"><div class="ttname"><a href="classUncompressDCPacket.html#af5da86c73ee17bf6b78eb367df7f3786">UncompressDCPacket::pStkStatic</a></div><div class="ttdeci">STK_STATIC * pStkStatic</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00103">uncompress_dc_packet.h:103</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a1c290fe83ef7d499677a1e32ac94119b"><div class="ttname"><a href="classUncompressDCPacket.html#a1c290fe83ef7d499677a1e32ac94119b">UncompressDCPacket::pStkDyna</a></div><div class="ttdeci">STK_DYNA * pStkDyna</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00104">uncompress_dc_packet.h:104</a></div></div>
+<div class="ttc" id="xml__class__set_8h_html"><div class="ttname"><a href="xml__class__set_8h.html">xml_class_set.h</a></div><div class="ttdoc">xml parser class set </div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a9cb189bff436dff5cc44cbbd87805a57"><div class="ttname"><a href="classUncompressDCPacket.html#a9cb189bff436dff5cc44cbbd87805a57">UncompressDCPacket::listening_item_</a></div><div class="ttdeci">XML_ListeningItem listening_item_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00114">uncompress_dc_packet.h:114</a></div></div>
+<div class="ttc" id="classExtractDC_html"><div class="ttname"><a href="classExtractDC.html">ExtractDC</a></div><div class="ttdef"><b>Definition:</b> <a href="extract__dc_8h_source.html#l00377">extract_dc.h:377</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a5ce50cdc45f2ae071d6d6eb55e801e02"><div class="ttname"><a href="classUncompressDCPacket.html#a5ce50cdc45f2ae071d6d6eb55e801e02">UncompressDCPacket::sock_send_to_log_</a></div><div class="ttdeci">zmq::socket_t * sock_send_to_log_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00113">uncompress_dc_packet.h:113</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html"><div class="ttname"><a href="dzh__time__t_8h.html">dzh_time_t.h</a></div></div>
+<div class="ttc" id="datacollect_8h_html"><div class="ttname"><a href="datacollect_8h.html">datacollect.h</a></div></div>
+<div class="ttc" id="structSTK__STATIC_html"><div class="ttname"><a href="structSTK__STATIC.html">STK_STATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00096">datacollect.h:96</a></div></div>
+<div class="ttc" id="structSTK__DYNA_html"><div class="ttname"><a href="structSTK__DYNA.html">STK_DYNA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00264">datacollect.h:264</a></div></div>
+<div class="ttc" id="classXML__ListeningItem_html"><div class="ttname"><a href="classXML__ListeningItem.html">XML_ListeningItem</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00237">xml_class_set.h:237</a></div></div>
+<div class="ttc" id="classDidUncompress_html"><div class="ttname"><a href="classDidUncompress.html">DidUncompress</a></div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00064">DidUncompress.h:64</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a826e5ff900821d95885870d65d12fb0a"><div class="ttname"><a href="classUncompressDCPacket.html#a826e5ff900821d95885870d65d12fb0a">UncompressDCPacket::sock_recv_</a></div><div class="ttdeci">zmq::socket_t * sock_recv_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00111">uncompress_dc_packet.h:111</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_ab5f96c8bff94d8bcb33cfabcd52ee4b7"><div class="ttname"><a href="classUncompressDCPacket.html#ab5f96c8bff94d8bcb33cfabcd52ee4b7">UncompressDCPacket::nHqTotal</a></div><div class="ttdeci">int nHqTotal</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00101">uncompress_dc_packet.h:101</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a391c90f3afd8080825c1ba01173ebf34"><div class="ttname"><a href="classUncompressDCPacket.html#a391c90f3afd8080825c1ba01173ebf34">UncompressDCPacket::market_id_</a></div><div class="ttdeci">unsigned short market_id_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00116">uncompress_dc_packet.h:116</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a89ccdf17da54c4542e0c2a0cccc37301"><div class="ttname"><a href="classUncompressDCPacket.html#a89ccdf17da54c4542e0c2a0cccc37301">UncompressDCPacket::~UncompressDCPacket</a></div><div class="ttdeci">~UncompressDCPacket()</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00056">uncompress_dc_packet.h:56</a></div></div>
+<div class="ttc" id="basethread_8h_html"><div class="ttname"><a href="basethread_8h.html">basethread.h</a></div><div class="ttdoc">base thread class </div></div>
+<div class="ttc" id="classUncompressDCPacket_html_a4c8f74bf9e8faaeb4c4f8c33182e1d95"><div class="ttname"><a href="classUncompressDCPacket.html#a4c8f74bf9e8faaeb4c4f8c33182e1d95">UncompressDCPacket::extractDC_</a></div><div class="ttdeci">ExtractDC extractDC_</div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00115">uncompress_dc_packet.h:115</a></div></div>
+<div class="ttc" id="classBaseThread_html"><div class="ttname"><a href="classBaseThread.html">BaseThread</a></div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00065">basethread.h:65</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html"><div class="ttname"><a href="classUncompressDCPacket.html">UncompressDCPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00039">uncompress_dc_packet.h:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

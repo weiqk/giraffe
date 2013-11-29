@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: generalcps.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">generalcps.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="generalcps_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _GENERAL_COMPRESS_H_INCLUDE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _GENERAL_COMPRESS_H_INCLUDE</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datacollect_8h.html">datacollect.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bitstream_8h.html">bitstream.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="structSVRNetHead.html">SVRNetHead</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//压缩扩展静态</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="generalcps_8cpp.html#ab3c7f6a852370c92521950e641995005">CompressStaticEx</a>(<span class="keyword">const</span> <a class="code" href="structSTK__STATICEx.html">STK_STATICEx</a>* pStatic,<span class="keywordtype">int</span> nNum,<a class="code" href="classCBitStream.html">CBitStream</a>&amp; stream);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">int</span> <a class="code" href="generalcps_8cpp.html#af503e4e56a9ce3555e47fe22cc15ede4">ExpandStaticEx</a>(<a class="code" href="classCBitStream.html">CBitStream</a>&amp; stream,<a class="code" href="structSTK__STATICEx.html">STK_STATICEx</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);        <span class="comment">//nBufSize表示pBuf的个数,如果缓冲区不够，则返回-1，nBufSize带回需要的数量</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//压缩港股动态</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="generalcps_8cpp.html#ad221405eaa81a8b6ef07e71bc65ed650">CompressHKDyna</a>(<span class="keyword">const</span> <a class="code" href="structSTK__HKDYNA.html">STK_HKDYNA</a>* pHKDyna,<span class="keywordtype">int</span> nNum,<a class="code" href="classCBitStream.html">CBitStream</a>&amp; stream);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="generalcps_8cpp.html#a0ff0d77266fb772795d4b197dc2e0666">ExpandHKDyna</a>(<a class="code" href="classCBitStream.html">CBitStream</a>&amp; stream,<a class="code" href="structSTK__HKDYNA.html">STK_HKDYNA</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);                <span class="comment">//nBufSize表示pBuf的个数,如果缓冲区不够，则返回-1，nBufSize带回需要的数量</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//压缩通用数据</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structCPS__GENERAL__HEAD.html">CPS_GENERAL_HEAD</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html#a99389cfe57341c98fe6e8b4a88989393">   22</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>    <a class="code" href="structCPS__GENERAL__HEAD.html#a99389cfe57341c98fe6e8b4a88989393">m_wDataID</a>;          <span class="comment">//数据ID</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html#a658051d6762df446bb9d436b82734eeb">   23</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>    <a class="code" href="structCPS__GENERAL__HEAD.html#a658051d6762df446bb9d436b82734eeb">m_wMarket</a>;          <span class="comment">//市场</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html#aa8d8df2ddde4e703481c5739ec14d86d">   24</a></span>&#160;    <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>   <a class="code" href="structCPS__GENERAL__HEAD.html#aa8d8df2ddde4e703481c5739ec14d86d">m_dwDataAttr</a>;       <span class="comment">//数据属性</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html#acc90cdbacd27d43db131817391d3aa8d">   25</a></span>&#160;    <span class="keywordtype">short</span>   <a class="code" href="structCPS__GENERAL__HEAD.html#acc90cdbacd27d43db131817391d3aa8d">m_nDataSize</a>;        <span class="comment">//每个数据的长度,对于变长数据,表示每个数据的最大值(0表示没有最大值，任意长度)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html#a6dfcf10caddf02406d9186e1c3c3ef2e">   26</a></span>&#160;    <a class="code" href="structUINT24.html">UINT24</a>  <a class="code" href="structCPS__GENERAL__HEAD.html#a6dfcf10caddf02406d9186e1c3c3ef2e">m_nTotalLen</a>;        <span class="comment">//包含本数据头在内的数据总长度</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structCPS__GENERAL__HEAD.html#acf97a78f6e9e64f70eeba7bc89026701">   27</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>    <a class="code" href="structCPS__GENERAL__HEAD.html#acf97a78f6e9e64f70eeba7bc89026701">m_wNum</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> <a class="code" href="generalcps_8cpp.html#a0de5c23e0945251b1b86559af9cb65b8">CompressGeneralData</a>(<a class="code" href="structDC__GENERAL.html">DC_GENERAL</a>* pData,<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pBuf,<span class="keywordtype">int</span> nBufSize);     <span class="comment">//返回压缩数据长度，0表示不能压缩或压缩失败，-1表示缓冲区长度不够</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> <a class="code" href="generalcps_8cpp.html#a98fb2840ac34dfea6d01c9b35dd23836">ExpandGeneralData</a>(<span class="keyword">const</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pCpsData,<span class="keywordtype">int</span> nDataLen,<a class="code" href="structDC__GENERAL.html">DC_GENERAL</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);        <span class="comment">//nBufSize表示pBuf字节数，返回解压缩后的字节数，0表示失败，-1表示缓冲区不够,nBufSize带回需要的字节数</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif //_GENERAL_COMPRESS_H_INCLUDE</span></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html_a658051d6762df446bb9d436b82734eeb"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html#a658051d6762df446bb9d436b82734eeb">CPS_GENERAL_HEAD::m_wMarket</a></div><div class="ttdeci">WORD m_wMarket</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00023">generalcps.h:23</a></div></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html_a6dfcf10caddf02406d9186e1c3c3ef2e"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html#a6dfcf10caddf02406d9186e1c3c3ef2e">CPS_GENERAL_HEAD::m_nTotalLen</a></div><div class="ttdeci">UINT24 m_nTotalLen</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00026">generalcps.h:26</a></div></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html_aa8d8df2ddde4e703481c5739ec14d86d"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html#aa8d8df2ddde4e703481c5739ec14d86d">CPS_GENERAL_HEAD::m_dwDataAttr</a></div><div class="ttdeci">DWORD m_dwDataAttr</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00024">generalcps.h:24</a></div></div>
+<div class="ttc" id="generalcps_8cpp_html_a98fb2840ac34dfea6d01c9b35dd23836"><div class="ttname"><a href="generalcps_8cpp.html#a98fb2840ac34dfea6d01c9b35dd23836">ExpandGeneralData</a></div><div class="ttdeci">int ExpandGeneralData(const BYTE *pCpsData, int nDataLen, DC_GENERAL *pData, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8cpp_source.html#l00435">generalcps.cpp:435</a></div></div>
+<div class="ttc" id="structUINT24_html"><div class="ttname"><a href="structUINT24.html">UINT24</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00084">datacollect.h:84</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a197942eefa7db30960ae396d68339b97"><div class="ttname"><a href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></div><div class="ttdeci">unsigned short WORD</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00024">dzh_time_t.h:24</a></div></div>
+<div class="ttc" id="generalcps_8cpp_html_a0de5c23e0945251b1b86559af9cb65b8"><div class="ttname"><a href="generalcps_8cpp.html#a0de5c23e0945251b1b86559af9cb65b8">CompressGeneralData</a></div><div class="ttdeci">int CompressGeneralData(DC_GENERAL *pData, BYTE *pBuf, int nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8cpp_source.html#l00388">generalcps.cpp:388</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a798af1e30bc65f319c1a246cecf59e39"><div class="ttname"><a href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></div><div class="ttdeci">unsigned int DWORD</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00055">ldgloble.h:55</a></div></div>
+<div class="ttc" id="generalcps_8cpp_html_a0ff0d77266fb772795d4b197dc2e0666"><div class="ttname"><a href="generalcps_8cpp.html#a0ff0d77266fb772795d4b197dc2e0666">ExpandHKDyna</a></div><div class="ttdeci">int ExpandHKDyna(CBitStream &amp;stream, STK_HKDYNA *pBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8cpp_source.html#l00325">generalcps.cpp:325</a></div></div>
+<div class="ttc" id="generalcps_8cpp_html_ab3c7f6a852370c92521950e641995005"><div class="ttname"><a href="generalcps_8cpp.html#ab3c7f6a852370c92521950e641995005">CompressStaticEx</a></div><div class="ttdeci">int CompressStaticEx(const STK_STATICEx *pStatic, int nNum, CBitStream &amp;stream)</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8cpp_source.html#l00031">generalcps.cpp:31</a></div></div>
+<div class="ttc" id="datacollect_8h_html"><div class="ttname"><a href="datacollect_8h.html">datacollect.h</a></div></div>
+<div class="ttc" id="structSTK__HKDYNA_html"><div class="ttname"><a href="structSTK__HKDYNA.html">STK_HKDYNA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00285">datacollect.h:285</a></div></div>
+<div class="ttc" id="classCBitStream_html"><div class="ttname"><a href="classCBitStream.html">CBitStream</a></div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00042">bitstream.h:42</a></div></div>
+<div class="ttc" id="bitstream_8h_html"><div class="ttname"><a href="bitstream_8h.html">bitstream.h</a></div></div>
+<div class="ttc" id="structSTK__STATICEx_html"><div class="ttname"><a href="structSTK__STATICEx.html">STK_STATICEx</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00144">datacollect.h:144</a></div></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html_acf97a78f6e9e64f70eeba7bc89026701"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html#acf97a78f6e9e64f70eeba7bc89026701">CPS_GENERAL_HEAD::m_wNum</a></div><div class="ttdeci">WORD m_wNum</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00027">generalcps.h:27</a></div></div>
+<div class="ttc" id="dscomapi_8h_html_a4ae1dab0fb4b072a66584546209e7d58"><div class="ttname"><a href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></div><div class="ttdeci">unsigned char BYTE</div><div class="ttdef"><b>Definition:</b> <a href="dscomapi_8h_source.html#l00012">dscomapi.h:12</a></div></div>
+<div class="ttc" id="structDC__GENERAL_html"><div class="ttname"><a href="structDC__GENERAL.html">DC_GENERAL</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00941">datacollect.h:941</a></div></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html_acc90cdbacd27d43db131817391d3aa8d"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html#acc90cdbacd27d43db131817391d3aa8d">CPS_GENERAL_HEAD::m_nDataSize</a></div><div class="ttdeci">short m_nDataSize</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00025">generalcps.h:25</a></div></div>
+<div class="ttc" id="structSVRNetHead_html"><div class="ttname"><a href="structSVRNetHead.html">SVRNetHead</a></div><div class="ttdef"><b>Definition:</b> <a href="stkdatacps_8h_source.html#l00018">stkdatacps.h:18</a></div></div>
+<div class="ttc" id="generalcps_8cpp_html_ad221405eaa81a8b6ef07e71bc65ed650"><div class="ttname"><a href="generalcps_8cpp.html#ad221405eaa81a8b6ef07e71bc65ed650">CompressHKDyna</a></div><div class="ttdeci">int CompressHKDyna(const STK_HKDYNA *pHKDyna, int nNum, CBitStream &amp;stream)</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8cpp_source.html#l00278">generalcps.cpp:278</a></div></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html_a99389cfe57341c98fe6e8b4a88989393"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html#a99389cfe57341c98fe6e8b4a88989393">CPS_GENERAL_HEAD::m_wDataID</a></div><div class="ttdeci">WORD m_wDataID</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00022">generalcps.h:22</a></div></div>
+<div class="ttc" id="structCPS__GENERAL__HEAD_html"><div class="ttname"><a href="structCPS__GENERAL__HEAD.html">CPS_GENERAL_HEAD</a></div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8h_source.html#l00020">generalcps.h:20</a></div></div>
+<div class="ttc" id="generalcps_8cpp_html_af503e4e56a9ce3555e47fe22cc15ede4"><div class="ttname"><a href="generalcps_8cpp.html#af503e4e56a9ce3555e47fe22cc15ede4">ExpandStaticEx</a></div><div class="ttdeci">int ExpandStaticEx(CBitStream &amp;stream, STK_STATICEx *pBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="generalcps_8cpp_source.html#l00136">generalcps.cpp:136</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

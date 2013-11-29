@@ -1,0 +1,11 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classTiXmlBase.html" title="TiXmlBase" alt="" coords="6,107,93,133"/>
+<area shape="rect" id="node2" href="$classTiXmlAttribute.html" title="TiXmlAttribute" alt="" coords="142,81,247,108"/>
+<area shape="rect" id="node3" href="$classTiXmlNode.html" title="TiXmlNode" alt="" coords="151,132,238,159"/>
+<area shape="rect" id="node4" href="$classTiXmlComment.html" title="TiXmlComment" alt="" coords="301,5,414,32"/>
+<area shape="rect" id="node5" href="$classTiXmlDeclaration.html" title="TiXmlDeclaration" alt="" coords="296,56,419,83"/>
+<area shape="rect" id="node6" href="$classTiXmlDocument.html" title="TiXmlDocument" alt="" coords="299,107,415,133"/>
+<area shape="rect" id="node7" href="$classTiXmlElement.html" title="TiXmlElement" alt="" coords="305,157,409,184"/>
+<area shape="rect" id="node8" href="$classTiXmlText.html" title="TiXmlText" alt="" coords="316,208,399,235"/>
+<area shape="rect" id="node9" href="$classTiXmlUnknown.html" title="TiXmlUnknown" alt="" coords="302,259,413,285"/>
+</map>

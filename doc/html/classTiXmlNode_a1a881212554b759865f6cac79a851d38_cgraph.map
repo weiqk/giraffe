@@ -1,0 +1,9 @@
+<map id="TiXmlNode::LinkEndChild" name="TiXmlNode::LinkEndChild">
+<area shape="rect" id="node2" href="$classTiXmlNode.html#aa66f4ebcd175204a168ed7c2d7b43071" title="TiXmlNode::GetDocument" alt="" coords="227,19,403,45"/>
+<area shape="rect" id="node4" href="$classTiXmlDocument.html#a735c23e318597b920c94eae77fa206de" title="TiXmlDocument::SetError" alt="" coords="229,81,401,108"/>
+<area shape="rect" id="node8" href="$classTiXmlNode.html#a57b99d5c97d67a42b9752f5210a1ba5e" title="TiXmlNode::Type" alt="" coords="253,132,377,159"/>
+<area shape="rect" id="node3" href="$classTiXmlNode.html#a8a4cda4b15c29f64cff419309aebed08" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="453,5,624,32"/>
+<area shape="rect" id="node5" href="$structTiXmlCursor.html#a1e6fa622b59dafb71b6efe595105dcdd" title="TiXmlCursor::Clear" alt="" coords="471,56,606,83"/>
+<area shape="rect" id="node6" href="$classTiXmlParsingData.html#a56908a17d7d7a6b2e511e62cf1d40d05" title="TiXmlParsingData::Cursor" alt="" coords="451,107,626,133"/>
+<area shape="rect" id="node7" href="$classTiXmlParsingData.html#a65cee8ab77a36c605db08c84b4c30a7d" title="TiXmlParsingData::Stamp" alt="" coords="451,157,626,184"/>
+</map>

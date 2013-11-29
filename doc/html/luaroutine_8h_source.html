@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: luaroutine.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">luaroutine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="luaroutine_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MONITOR_LUA_ROUTINE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define MONITOR_LUA_ROUTINE_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;log4cxx/logger.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;zmq.hpp&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basethread_8h.html">basethread.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xml__class__set_8h.html">xml_class_set.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//#include &quot;MonitorFileMap.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datacollect_8h.html">datacollect.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __linux</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &lt;luajit-2.0/lua.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &lt;lua.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//typedef struct </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//  lua_State * lua_state;  </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//  unsigned short market_id;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//}ChildThreadArg;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classLuaRoutine.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLuaRoutine.html">LuaRoutine</a>:<span class="keyword">public</span> <a class="code" href="classBaseThread.html">BaseThread</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#a8feea7feef18687b3356a069e0b58dd2">   27</a></span>&#160;    <a class="code" href="classLuaRoutine.html#a8feea7feef18687b3356a069e0b58dd2">LuaRoutine</a>(zmq::context_t *context, <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> &amp; listening_item):<a class="code" href="classLuaRoutine.html#aff1d5467a5c1b01fcb9bf305a41ad932">context_</a>(context),<a class="code" href="classLuaRoutine.html#a4521c20680c6232d3ae18e61e59fefa8">listening_item_</a>(listening_item)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">lua_state_</a> = NULL;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">sock_</a> = NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">sock_business_error_</a> = NULL;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classLuaRoutine.html#a617f2d28f867e7aca41e7e48e3be3d34">stk_static_</a> = NULL;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classLuaRoutine.html#ae793262e1c798323b8ee2164cbf7379d">market_id_</a> = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">//monitor_mapping_file_ = new MonitorFileMap(&quot;FX_191111.dat&quot;,MonitorFileMap::BUILD);</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#a5042641dc3985cc8047d74c7436c82b1">   36</a></span>&#160;    <a class="code" href="classLuaRoutine.html#a5042641dc3985cc8047d74c7436c82b1">~LuaRoutine</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span>(NULL != <a class="code" href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">lua_state_</a>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            lua_close(<a class="code" href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">lua_state_</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">lua_state_</a> = NULL;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span>(NULL != <a class="code" href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">sock_</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">delete</span> <a class="code" href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">sock_</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">sock_</a> = NULL;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span>(NULL != <a class="code" href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">sock_business_error_</a>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keyword">delete</span> <a class="code" href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">sock_business_error_</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">sock_business_error_</a> = NULL;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//if(NULL != monitor_mapping_file_)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//{</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">//  delete monitor_mapping_file_;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//  monitor_mapping_file_ = NULL;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLuaRoutine.html#a9f3360ff3cc8db130240f4497180acc5">Init</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLuaRoutine.html#ac6dea338896f27c276c5ed1b0ddad4b8">RunThreadFunc</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//static void * ChildThreadFunc(void *arg);</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLuaRoutine.html#ad640a1b4bb73444c1cbb3551d76c5147">InitLua</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLuaRoutine.html#ad6eeb07cd32ce8c336568675b32eaac1">InitZMQ</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//Lua_ZMQ_MSG_Item Test();</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLuaRoutine.html#a43274e615289e57efbc95c70799a12fc">DispatchToLua</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * pdcdata, <span class="keywordtype">int</span> dc_type, <span class="keywordtype">int</span> dc_general_intype, <span class="keywordtype">int</span> stk_num, <span class="keywordtype">int</span> did_template_id);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//void DispatchToMonitor(int stk_id, const char * value);</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">struct </span><a class="code" href="structSTK__STATIC.html">STK_STATIC</a>* <a class="code" href="classLuaRoutine.html#aa4d0b45e6909888beb2e5c4c67317bea">GetStkByID</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> stk_id);</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#aff1d5467a5c1b01fcb9bf305a41ad932">   70</a></span>&#160;    zmq::context_t *<a class="code" href="classLuaRoutine.html#aff1d5467a5c1b01fcb9bf305a41ad932">context_</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">   71</a></span>&#160;    zmq::socket_t *<a class="code" href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">sock_</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">   72</a></span>&#160;    zmq::socket_t *<a class="code" href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">sock_business_error_</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//int lua_zmqpattern_;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//std::string lua_zmqsocketaction_;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//std::string lua_zmqsocketaddr_;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#a4521c20680c6232d3ae18e61e59fefa8">   76</a></span>&#160;    <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> <a class="code" href="classLuaRoutine.html#a4521c20680c6232d3ae18e61e59fefa8">listening_item_</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">   77</a></span>&#160;    lua_State * <a class="code" href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">lua_state_</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#ae793262e1c798323b8ee2164cbf7379d">   78</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classLuaRoutine.html#ae793262e1c798323b8ee2164cbf7379d">market_id_</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//MonitorFileMap * monitor_mapping_file_;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#a617f2d28f867e7aca41e7e48e3be3d34">   80</a></span>&#160;    <a class="code" href="structSTK__STATIC.html">STK_STATIC</a>* <a class="code" href="classLuaRoutine.html#a617f2d28f867e7aca41e7e48e3be3d34">stk_static_</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classLuaRoutine.html#aff174d4da6285b7b166a3f2779c3e895">   81</a></span>&#160;    <span class="keyword">static</span> log4cxx::LoggerPtr <a class="code" href="classLuaRoutine.html#aff174d4da6285b7b166a3f2779c3e895">logger_</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//pthread_t tid_;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//ChildThreadArg child_thread_arg_;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classLuaRoutine_html"><div class="ttname"><a href="classLuaRoutine.html">LuaRoutine</a></div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00024">luaroutine.h:24</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_a4521c20680c6232d3ae18e61e59fefa8"><div class="ttname"><a href="classLuaRoutine.html#a4521c20680c6232d3ae18e61e59fefa8">LuaRoutine::listening_item_</a></div><div class="ttdeci">XML_ListeningItem listening_item_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00076">luaroutine.h:76</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_a43274e615289e57efbc95c70799a12fc"><div class="ttname"><a href="classLuaRoutine.html#a43274e615289e57efbc95c70799a12fc">LuaRoutine::DispatchToLua</a></div><div class="ttdeci">void DispatchToLua(unsigned char *pdcdata, int dc_type, int dc_general_intype, int stk_num, int did_template_id)</div><div class="ttdoc">dispatch data to lua script </div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8cc_source.html#l00197">luaroutine.cc:197</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_aff1d5467a5c1b01fcb9bf305a41ad932"><div class="ttname"><a href="classLuaRoutine.html#aff1d5467a5c1b01fcb9bf305a41ad932">LuaRoutine::context_</a></div><div class="ttdeci">zmq::context_t * context_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00070">luaroutine.h:70</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_a1f4bfe8bc3a6ca32a8e25b5c15a37f2c"><div class="ttname"><a href="classLuaRoutine.html#a1f4bfe8bc3a6ca32a8e25b5c15a37f2c">LuaRoutine::sock_</a></div><div class="ttdeci">zmq::socket_t * sock_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00071">luaroutine.h:71</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_ac6dea338896f27c276c5ed1b0ddad4b8"><div class="ttname"><a href="classLuaRoutine.html#ac6dea338896f27c276c5ed1b0ddad4b8">LuaRoutine::RunThreadFunc</a></div><div class="ttdeci">void RunThreadFunc()</div><div class="ttdoc">thread running function </div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8cc_source.html#l00382">luaroutine.cc:382</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_a9f3360ff3cc8db130240f4497180acc5"><div class="ttname"><a href="classLuaRoutine.html#a9f3360ff3cc8db130240f4497180acc5">LuaRoutine::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">init luaroute thread </div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8cc_source.html#l00027">luaroutine.cc:27</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_aff174d4da6285b7b166a3f2779c3e895"><div class="ttname"><a href="classLuaRoutine.html#aff174d4da6285b7b166a3f2779c3e895">LuaRoutine::logger_</a></div><div class="ttdeci">static log4cxx::LoggerPtr logger_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00081">luaroutine.h:81</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_ad6eeb07cd32ce8c336568675b32eaac1"><div class="ttname"><a href="classLuaRoutine.html#ad6eeb07cd32ce8c336568675b32eaac1">LuaRoutine::InitZMQ</a></div><div class="ttdeci">void InitZMQ()</div><div class="ttdoc">init zmq </div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8cc_source.html#l00133">luaroutine.cc:133</a></div></div>
+<div class="ttc" id="xml__class__set_8h_html"><div class="ttname"><a href="xml__class__set_8h.html">xml_class_set.h</a></div><div class="ttdoc">xml parser class set </div></div>
+<div class="ttc" id="classLuaRoutine_html_a5042641dc3985cc8047d74c7436c82b1"><div class="ttname"><a href="classLuaRoutine.html#a5042641dc3985cc8047d74c7436c82b1">LuaRoutine::~LuaRoutine</a></div><div class="ttdeci">~LuaRoutine()</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00036">luaroutine.h:36</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_ae8ff943bd3557366967f56b7e5cadf71"><div class="ttname"><a href="classLuaRoutine.html#ae8ff943bd3557366967f56b7e5cadf71">LuaRoutine::sock_business_error_</a></div><div class="ttdeci">zmq::socket_t * sock_business_error_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00072">luaroutine.h:72</a></div></div>
+<div class="ttc" id="datacollect_8h_html"><div class="ttname"><a href="datacollect_8h.html">datacollect.h</a></div></div>
+<div class="ttc" id="structSTK__STATIC_html"><div class="ttname"><a href="structSTK__STATIC.html">STK_STATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00096">datacollect.h:96</a></div></div>
+<div class="ttc" id="classXML__ListeningItem_html"><div class="ttname"><a href="classXML__ListeningItem.html">XML_ListeningItem</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00237">xml_class_set.h:237</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_a617f2d28f867e7aca41e7e48e3be3d34"><div class="ttname"><a href="classLuaRoutine.html#a617f2d28f867e7aca41e7e48e3be3d34">LuaRoutine::stk_static_</a></div><div class="ttdeci">STK_STATIC * stk_static_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00080">luaroutine.h:80</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_ae793262e1c798323b8ee2164cbf7379d"><div class="ttname"><a href="classLuaRoutine.html#ae793262e1c798323b8ee2164cbf7379d">LuaRoutine::market_id_</a></div><div class="ttdeci">unsigned short market_id_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00078">luaroutine.h:78</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_ad640a1b4bb73444c1cbb3551d76c5147"><div class="ttname"><a href="classLuaRoutine.html#ad640a1b4bb73444c1cbb3551d76c5147">LuaRoutine::InitLua</a></div><div class="ttdeci">void InitLua()</div><div class="ttdoc">init lua related </div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8cc_source.html#l00061">luaroutine.cc:61</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_aa4d0b45e6909888beb2e5c4c67317bea"><div class="ttname"><a href="classLuaRoutine.html#aa4d0b45e6909888beb2e5c4c67317bea">LuaRoutine::GetStkByID</a></div><div class="ttdeci">struct STK_STATIC * GetStkByID(const int stk_id)</div><div class="ttdoc">return pointer of stk_static by stk_id </div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8cc_source.html#l00167">luaroutine.cc:167</a></div></div>
+<div class="ttc" id="basethread_8h_html"><div class="ttname"><a href="basethread_8h.html">basethread.h</a></div><div class="ttdoc">base thread class </div></div>
+<div class="ttc" id="classBaseThread_html"><div class="ttname"><a href="classBaseThread.html">BaseThread</a></div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00065">basethread.h:65</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_a8feea7feef18687b3356a069e0b58dd2"><div class="ttname"><a href="classLuaRoutine.html#a8feea7feef18687b3356a069e0b58dd2">LuaRoutine::LuaRoutine</a></div><div class="ttdeci">LuaRoutine(zmq::context_t *context, XML_ListeningItem &amp;listening_item)</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00027">luaroutine.h:27</a></div></div>
+<div class="ttc" id="classLuaRoutine_html_aebe1988c1c6113a7b48014f0175197b6"><div class="ttname"><a href="classLuaRoutine.html#aebe1988c1c6113a7b48014f0175197b6">LuaRoutine::lua_state_</a></div><div class="ttdeci">lua_State * lua_state_</div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00077">luaroutine.h:77</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

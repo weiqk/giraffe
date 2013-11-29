@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: LPServDataInfo结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structServDataInfo-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">LPServDataInfo结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="datacollect_8h_source.html">datacollect.h</a>&gt;</code></p>
+<div class="dynheader">
+LPServDataInfo 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structServDataInfo__coll__graph.png" border="0" usemap="#LPServDataInfo_coll__map" alt="Collaboration graph"/></div>
+<map name="LPServDataInfo_coll__map" id="LPServDataInfo_coll__map">
+<area shape="rect" id="node2" href="structUserType.html" title="{LPUserType\n|+ YYBID\l+ online_user_num\l|}" alt="" coords="5,199,136,291"/><area shape="rect" id="node3" href="structUserVer.html" title="{LPUserVer\n|+ ver\l+ build\l+ online_user_num\l|}" alt="" coords="161,192,292,299"/><area shape="rect" id="node4" href="structStatHqsInfo.html" title="{LPStatHqsInfo\n|+ market_code\l+ main_hqs_flag\l+ init_flag\l|}" alt="" coords="317,192,435,299"/><area shape="rect" id="node5" href="structStatSingleHqsInfo.html" title="{LPStatSingleHqsInfo\n|+ exist_flag\l+ hqs_ip\l+ m_wLastSeq\l+ fresh_time\l|}" alt="" coords="304,6,448,127"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a1081c9bdb04f933045d696cac10b9e1c"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a1081c9bdb04f933045d696cac10b9e1c">m_ucMonitorFlag</a></td></tr>
+<tr class="separator:a1081c9bdb04f933045d696cac10b9e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaccd87a29b2d67f54c7b153c416fdc7"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#abaccd87a29b2d67f54c7b153c416fdc7">m_ucZmFlag</a></td></tr>
+<tr class="separator:abaccd87a29b2d67f54c7b153c416fdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcde3aaa3d1a51561e9bcc7ebb3d568"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#afbcde3aaa3d1a51561e9bcc7ebb3d568">m_ucUserFlag</a></td></tr>
+<tr class="separator:afbcde3aaa3d1a51561e9bcc7ebb3d568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaeb0a6db7b9e3583b0964ee93618d43"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#aeaeb0a6db7b9e3583b0964ee93618d43">m_usZmProcessNum</a></td></tr>
+<tr class="separator:aeaeb0a6db7b9e3583b0964ee93618d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3add70d402d4e2c8f79685cbadde11"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a6f3add70d402d4e2c8f79685cbadde11">m_usUserProcessNum</a></td></tr>
+<tr class="separator:a6f3add70d402d4e2c8f79685cbadde11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001826dda41be240365b41061a1f449e"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a001826dda41be240365b41061a1f449e">m_usOnlienUserNum</a></td></tr>
+<tr class="separator:a001826dda41be240365b41061a1f449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65d543111d22beb7aae92bd6c4dde9d"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ac65d543111d22beb7aae92bd6c4dde9d">m_usMaxUserNum</a></td></tr>
+<tr class="separator:ac65d543111d22beb7aae92bd6c4dde9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4eb4dae020281cdfb9b5d7f52cca8b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a6a4eb4dae020281cdfb9b5d7f52cca8b">m_ucNfsFlag</a></td></tr>
+<tr class="separator:a6a4eb4dae020281cdfb9b5d7f52cca8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e110cd3c4db54a39aa87d533de8cb5a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a9e110cd3c4db54a39aa87d533de8cb5a">m_chZhdocData</a> [16]</td></tr>
+<tr class="separator:a9e110cd3c4db54a39aa87d533de8cb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a64c452bdfbb5c012894137e523884a"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a3a64c452bdfbb5c012894137e523884a">m_usZmCpu</a></td></tr>
+<tr class="separator:a3a64c452bdfbb5c012894137e523884a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d58bbf98c6731cc2759051f48fe41e"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#aa6d58bbf98c6731cc2759051f48fe41e">m_usUserCpu</a></td></tr>
+<tr class="separator:aa6d58bbf98c6731cc2759051f48fe41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6cc080865d4562cf67c6199cb5982f"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a5d6cc080865d4562cf67c6199cb5982f">m_usMemorySize</a></td></tr>
+<tr class="separator:a5d6cc080865d4562cf67c6199cb5982f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978dd6dfb7f1d1faf0288e9cc1834b23"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a978dd6dfb7f1d1faf0288e9cc1834b23">m_usSwapSize</a></td></tr>
+<tr class="separator:a978dd6dfb7f1d1faf0288e9cc1834b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1546a449e4d42b4900d272f24c3cc0"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ace1546a449e4d42b4900d272f24c3cc0">m_usUseSwapSize</a></td></tr>
+<tr class="separator:ace1546a449e4d42b4900d272f24c3cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff08620be167f4ba8a26675775834b2"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#aaff08620be167f4ba8a26675775834b2">m_usLicUserNum</a></td></tr>
+<tr class="separator:aaff08620be167f4ba8a26675775834b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359109318343bc520e7013817a99bb08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a359109318343bc520e7013817a99bb08">m_ulLicDate</a></td></tr>
+<tr class="separator:a359109318343bc520e7013817a99bb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74f00f8ec9fea40a233fca37587b7fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ad74f00f8ec9fea40a233fca37587b7fc">m_ulUserPort</a></td></tr>
+<tr class="separator:ad74f00f8ec9fea40a233fca37587b7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209f26d6fb3af51565c5e1f727c8b68c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a209f26d6fb3af51565c5e1f727c8b68c">m_ulDlPort</a></td></tr>
+<tr class="separator:a209f26d6fb3af51565c5e1f727c8b68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4447df52bfa1567cda8b3c6fef533c39"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a4447df52bfa1567cda8b3c6fef533c39">osname</a> [32]</td></tr>
+<tr class="separator:a4447df52bfa1567cda8b3c6fef533c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dff0dd953374d54cda3a0f368a6355"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ab0dff0dd953374d54cda3a0f368a6355">m_usCpuNum</a></td></tr>
+<tr class="separator:ab0dff0dd953374d54cda3a0f368a6355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c277926b996eeb5d72f5c87dfb624d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a5c277926b996eeb5d72f5c87dfb624d7">m_ulSysBootDate</a></td></tr>
+<tr class="separator:a5c277926b996eeb5d72f5c87dfb624d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb32a12668ce1229b0958824cc79a18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#abdb32a12668ce1229b0958824cc79a18">m_ulSysBootTime</a></td></tr>
+<tr class="separator:abdb32a12668ce1229b0958824cc79a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba9ccffa45d778ffe9b96cf2dcb18ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a2ba9ccffa45d778ffe9b96cf2dcb18ab">m_ulRunTime</a></td></tr>
+<tr class="separator:a2ba9ccffa45d778ffe9b96cf2dcb18ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e63b02eddaa8cd344602620ab3d744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ac9e63b02eddaa8cd344602620ab3d744">m_ulSysDate</a></td></tr>
+<tr class="separator:ac9e63b02eddaa8cd344602620ab3d744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30744846f7a2f398abe26547849a5614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a30744846f7a2f398abe26547849a5614">m_ulSysTime</a></td></tr>
+<tr class="separator:a30744846f7a2f398abe26547849a5614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38414661994be43b2912f2210ed49fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a38414661994be43b2912f2210ed49fb4">m_ulZmStartDate</a></td></tr>
+<tr class="separator:a38414661994be43b2912f2210ed49fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8a7d27377da62b73ce6a640d136475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a3c8a7d27377da62b73ce6a640d136475">m_ulZmStartTime</a></td></tr>
+<tr class="separator:a3c8a7d27377da62b73ce6a640d136475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1fe097cf7587e0c866bd4ab2a5b8c2"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a4e1fe097cf7587e0c866bd4ab2a5b8c2">m_nZmRunTime</a></td></tr>
+<tr class="separator:a4e1fe097cf7587e0c866bd4ab2a5b8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5906abbdbce7c706f85fe70edd0684e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a5906abbdbce7c706f85fe70edd0684e9">m_ulUserStartDate</a></td></tr>
+<tr class="separator:a5906abbdbce7c706f85fe70edd0684e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662fc9a67999361a0a038d77959b216e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a662fc9a67999361a0a038d77959b216e">m_ulUserStartTime</a></td></tr>
+<tr class="separator:a662fc9a67999361a0a038d77959b216e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3367ede86a35ec48a530a7a241b95b9e"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a3367ede86a35ec48a530a7a241b95b9e">m_nUserRunTime</a></td></tr>
+<tr class="separator:a3367ede86a35ec48a530a7a241b95b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0f4807f597a1567275fb5497ce7d09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a5e0f4807f597a1567275fb5497ce7d09">valid_user_type_num</a></td></tr>
+<tr class="separator:a5e0f4807f597a1567275fb5497ce7d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a3709132144782c9c7626c638b1938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUserType.html">UserType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ab5a3709132144782c9c7626c638b1938">mUserType</a> [10]</td></tr>
+<tr class="separator:ab5a3709132144782c9c7626c638b1938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c6d737833fe88f7ea31fd2c0cfc1b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a80c6d737833fe88f7ea31fd2c0cfc1b1">valid_user_ver_num</a></td></tr>
+<tr class="separator:a80c6d737833fe88f7ea31fd2c0cfc1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d426d2d994ca9732d4ea9a1e057951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUserVer.html">UserVer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a93d426d2d994ca9732d4ea9a1e057951">mUserVer</a> [20]</td></tr>
+<tr class="separator:a93d426d2d994ca9732d4ea9a1e057951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2418367946b4e5a402952b843c9d51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#a8b2418367946b4e5a402952b843c9d51">valid_market_num</a></td></tr>
+<tr class="separator:a8b2418367946b4e5a402952b843c9d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace34cda37a81766ebf4e9d0f91a9762a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structStatHqsInfo.html">StatHqsInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html#ace34cda37a81766ebf4e9d0f91a9762a">mStatHqsInfo</a> [10]</td></tr>
+<tr class="separator:ace34cda37a81766ebf4e9d0f91a9762a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01008">1008</a> 行定义.</p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a9e110cd3c4db54a39aa87d533de8cb5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char LPServDataInfo::m_chZhdocData[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01019">1019</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3367ede86a35ec48a530a7a241b95b9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t LPServDataInfo::m_nUserRunTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01045">1045</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e1fe097cf7587e0c866bd4ab2a5b8c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t LPServDataInfo::m_nZmRunTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01041">1041</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1081c9bdb04f933045d696cac10b9e1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char LPServDataInfo::m_ucMonitorFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01010">1010</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a4eb4dae020281cdfb9b5d7f52cca8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char LPServDataInfo::m_ucNfsFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01018">1018</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbcde3aaa3d1a51561e9bcc7ebb3d568"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char LPServDataInfo::m_ucUserFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01012">1012</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abaccd87a29b2d67f54c7b153c416fdc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char LPServDataInfo::m_ucZmFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01011">1011</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a209f26d6fb3af51565c5e1f727c8b68c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulDlPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01029">1029</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a359109318343bc520e7013817a99bb08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulLicDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01027">1027</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ba9ccffa45d778ffe9b96cf2dcb18ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulRunTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01035">1035</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c277926b996eeb5d72f5c87dfb624d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulSysBootDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01032">1032</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdb32a12668ce1229b0958824cc79a18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulSysBootTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01033">1033</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9e63b02eddaa8cd344602620ab3d744"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulSysDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01036">1036</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30744846f7a2f398abe26547849a5614"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulSysTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01037">1037</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad74f00f8ec9fea40a233fca37587b7fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulUserPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01028">1028</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5906abbdbce7c706f85fe70edd0684e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulUserStartDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01043">1043</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a662fc9a67999361a0a038d77959b216e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulUserStartTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01044">1044</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38414661994be43b2912f2210ed49fb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulZmStartDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01039">1039</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c8a7d27377da62b73ce6a640d136475"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> LPServDataInfo::m_ulZmStartTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01040">1040</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0dff0dd953374d54cda3a0f368a6355"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usCpuNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01031">1031</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaff08620be167f4ba8a26675775834b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usLicUserNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01026">1026</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac65d543111d22beb7aae92bd6c4dde9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usMaxUserNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01017">1017</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d6cc080865d4562cf67c6199cb5982f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usMemorySize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01022">1022</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a001826dda41be240365b41061a1f449e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usOnlienUserNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01016">1016</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a978dd6dfb7f1d1faf0288e9cc1834b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usSwapSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01023">1023</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6d58bbf98c6731cc2759051f48fe41e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usUserCpu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01021">1021</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f3add70d402d4e2c8f79685cbadde11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usUserProcessNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01015">1015</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace1546a449e4d42b4900d272f24c3cc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usUseSwapSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01024">1024</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a64c452bdfbb5c012894137e523884a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usZmCpu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01020">1020</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeaeb0a6db7b9e3583b0964ee93618d43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short LPServDataInfo::m_usZmProcessNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01014">1014</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace34cda37a81766ebf4e9d0f91a9762a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structStatHqsInfo.html">StatHqsInfo</a> LPServDataInfo::mStatHqsInfo[10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01054">1054</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5a3709132144782c9c7626c638b1938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structUserType.html">UserType</a> LPServDataInfo::mUserType[10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01048">1048</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93d426d2d994ca9732d4ea9a1e057951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structUserVer.html">UserVer</a> LPServDataInfo::mUserVer[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01051">1051</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4447df52bfa1567cda8b3c6fef533c39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char LPServDataInfo::osname[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01030">1030</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b2418367946b4e5a402952b843c9d51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LPServDataInfo::valid_market_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01053">1053</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e0f4807f597a1567275fb5497ce7d09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LPServDataInfo::valid_user_type_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01047">1047</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80c6d737833fe88f7ea31fd2c0cfc1b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LPServDataInfo::valid_user_ver_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01050">1050</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="datacollect_8h_source.html">datacollect.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:49 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

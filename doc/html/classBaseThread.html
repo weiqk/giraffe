@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: BaseThread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classBaseThread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">BaseThread类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="basethread_8h_source.html">basethread.h</a>&gt;</code></p>
+<div class="dynheader">
+类 BaseThread 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread__inherit__graph.png" border="0" usemap="#BaseThread_inherit__map" alt="Inheritance graph"/></div>
+<map name="BaseThread_inherit__map" id="BaseThread_inherit__map">
+<area shape="rect" id="node2" href="classBusinessErrorInfo.html" title="{BusinessErrorInfo\n|&#45; context_\l&#45; sock_recv_\l&#45; sock_monitor_\l&#45; logger_business_error_\l&#45; pattern_layout_\l&#45; appender_\l&#45; market_id_\l&#45; dc_type_\l&#45; error_id_\l&#45; error_rank_\l&#45; error_short_description_\l&#45; error_description_\l&#45; logger_\l|+ BusinessErrorInfo()\l+ ~BusinessErrorInfo()\l+ Init()\l+ RunThreadFunc()\l&#45; InitZMQ()\l&#45; InitLog()\l&#45; WriteToLog()\l&#45; SplitString()\l&#45; DispatchToWebServer()\l&#45; RecvDataCallback()\l}" alt="" coords="5,294,176,679"/><area shape="rect" id="node3" href="classCaptureNetPacket.html" title="{CaptureNetPacket\n|&#45; sock_\l&#45; adapter_id_\l&#45; filter_\l&#45; context_\l&#45; logger_\l|+ CaptureNetPacket()\l+ ~CaptureNetPacket()\l+ RunThreadFunc()\l+ Init()\l&#45; InitZMQ()\l&#45; DispatchCapData()\l&#45; PacketHandler()\l}" alt="" coords="201,375,359,599"/><area shape="rect" id="node4" href="classCombineDCPacket.html" title="{CombineDCPacket\n|&#45; context_\l&#45; sock_recv_\l&#45; sock_send_\l&#45; packet_item_\l&#45; dc_header_last_inner_len_\l&#45; long_pack_tag_\l&#45; last_pack_len_\l&#45; last_temp_len_\l&#45; case2_tag_\l&#45; last_tcp_seq_\l&#45; dc_header_\l&#45; recombined_header_buf_\l&#45; logger_\l|+ CombineDCPacket()\l+ ~CombineDCPacket()\l+ RunThreadFunc()\l+ Init()\l+ IsDCType()\l+ IsDCHeader()\l+ DispatchData()\l+ Combine()\l}" alt="" coords="384,309,568,665"/><area shape="rect" id="node5" href="classLog.html" title="{Log\n|&#45; context_\l&#45; ports_\l&#45; logger_\l|+ Log()\l+ ~Log()\l+ RunThreadFunc()\l}" alt="" coords="593,419,727,555"/><area shape="rect" id="node6" href="classLuaRoutine.html" title="{LuaRoutine\n|&#45; context_\l&#45; sock_\l&#45; sock_business_error_\l&#45; listening_item_\l&#45; lua_state_\l&#45; market_id_\l&#45; stk_static_\l&#45; logger_\l|+ LuaRoutine()\l+ ~LuaRoutine()\l+ Init()\l+ RunThreadFunc()\l&#45; InitLua()\l&#45; InitZMQ()\l&#45; DispatchToLua()\l&#45; GetStkByID()\l}" alt="" coords="752,345,909,628"/><area shape="rect" id="node7" href="classShuntNetPacket.html" title="{ShuntNetPacket\n|&#45; context_\l&#45; sock_\l&#45; lua_routine_\l&#45; combine_dc_packet_\l&#45; uncompress_dc_packet_\l&#45; listening_item_\l&#45; market_id_\l&#45; combine_dc_deque_\l&#45; uncompress_dc_deque_\l&#45; lua_routine_deque_\l&#45; sock_ex_deque_\l&#45; sock_ex_map_\l&#45; sock_delta_time_map_\l&#45; curent_pool_size_\l&#45; zmqitems_ex_\l&#45; logger_\l|+ ShuntNetPacket()\l+ ~ShuntNetPacket()\l+ Init()\l+ InitZMQEx()\l+ AddZMQItemEx()\l+ AddToZMQDequeEx()\l+ RunParseThread()\l+ InitLuaRoutineThread()\l+ RunLuaRoutineThread()\l+ InitCombineDCPacketThread()\l和 11 更多...\l}" alt="" coords="933,265,1147,709"/><area shape="rect" id="node8" href="classUncompressDCPacket.html" title="{UncompressDCPacket\n|+ nHqTotal\l+ extractbuf\l+ pStkStatic\l+ pStkDyna\l+ pStkMMPEx\l&#45; context_\l&#45; sock_recv_\l&#45; sock_send_to_lua_routine_\l&#45; sock_send_to_log_\l&#45; listening_item_\l&#45; extractDC_\l&#45; market_id_\l&#45; count_rc_\l&#45; did_init_tag_\l&#45; did_uncompress_\l&#45; logger_\l|+ UncompressDCPacket()\l+ ~UncompressDCPacket()\l+ RunThreadFunc()\l+ Init()\l+ ExtractDataPack()\l+ Uncompress()\l+ DispatchData()\l+ DownloadData()\l&#45; InitZMQ()\l}" alt="" coords="1171,279,1359,694"/></map>
+</div>
+<div class="dynheader">
+BaseThread 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread__coll__graph.png" border="0" usemap="#BaseThread_coll__map" alt="Collaboration graph"/></div>
+<map name="BaseThread_coll__map" id="BaseThread_coll__map">
+<area shape="rect" id="node2" href="classIThread.html" title="{IThread\n|&#45; tid_\l|+ IThread()\l+ ~IThread()\l+ Start()\l+ Join()\l+ Cancel()\l}" alt="" coords="25,264,119,400"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a630839d1785cdec46ed7a325d2745829"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a630839d1785cdec46ed7a325d2745829">BaseThread</a> ()</td></tr>
+<tr class="separator:a630839d1785cdec46ed7a325d2745829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8878ee7da76919b0adad936c3db52b24"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a8878ee7da76919b0adad936c3db52b24">~BaseThread</a> ()</td></tr>
+<tr class="separator:a8878ee7da76919b0adad936c3db52b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b523b2c3dec9c13b1271ed21e6cf5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c">Start</a> ()</td></tr>
+<tr class="separator:a24b523b2c3dec9c13b1271ed21e6cf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bc148706d1917e55fc67a2bf9c1808"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a97bc148706d1917e55fc67a2bf9c1808">Join</a> ()</td></tr>
+<tr class="separator:a97bc148706d1917e55fc67a2bf9c1808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2348dbcdd968be7d53e4e824c1ab8cea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a2348dbcdd968be7d53e4e824c1ab8cea">Cancel</a> ()</td></tr>
+<tr class="separator:a2348dbcdd968be7d53e4e824c1ab8cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc66810b0961581ba4618d3b3a1ff82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a3cc66810b0961581ba4618d3b3a1ff82">AddZMQItem</a> (<a class="el" href="structZMQItem.html">ZMQItem</a> zmqitem)</td></tr>
+<tr class="separator:a3cc66810b0961581ba4618d3b3a1ff82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52a1401d907ab355187808f2d20dc08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08">RunThreadFunc</a> ()=0</td></tr>
+<tr class="separator:aa52a1401d907ab355187808f2d20dc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ada6d2bc075a6cd16021ee1a1e297f8a6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structZMQItem.html">ZMQItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#ada6d2bc075a6cd16021ee1a1e297f8a6">zmqitems_</a></td></tr>
+<tr class="separator:ada6d2bc075a6cd16021ee1a1e297f8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a38a2780c44092f92286ed8286529002d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a38a2780c44092f92286ed8286529002d">Run</a> ()</td></tr>
+<tr class="separator:a38a2780c44092f92286ed8286529002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+静态 Private 成员函数</h2></td></tr>
+<tr class="memitem:a693161bcc8067757fd3e321b477117e9"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#a693161bcc8067757fd3e321b477117e9">ThreadFunc</a> (void *args)</td></tr>
+<tr class="separator:a693161bcc8067757fd3e321b477117e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ad57a83fc4a08ff4cdb8cf01dc7fb8526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIThread.html">IThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">ithread_</a></td></tr>
+<tr class="separator:ad57a83fc4a08ff4cdb8cf01dc7fb8526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00065">65</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a630839d1785cdec46ed7a325d2745829"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BaseThread::BaseThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00069">69</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8878ee7da76919b0adad936c3db52b24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual BaseThread::~BaseThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00070">70</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a3cc66810b0961581ba4618d3b3a1ff82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseThread::AddZMQItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structZMQItem.html">ZMQItem</a>&#160;</td>
+          <td class="paramname"><em>zmqitem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00083">83</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00068">zmqitems_</a>.</p>
+
+<p>参考自 <a class="el" href="monitor_8cc_source.html#l00129">RunBusinessErrorInfoThread()</a> , 以及 <a class="el" href="monitor_8cc_source.html#l00107">RunLogThread()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classBaseThread.html#ada6d2bc075a6cd16021ee1a1e297f8a6">zmqitems_</a>.push_back(zmqitem);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="ttc" id="classBaseThread_html_ada6d2bc075a6cd16021ee1a1e297f8a6"><div class="ttname"><a href="classBaseThread.html#ada6d2bc075a6cd16021ee1a1e297f8a6">BaseThread::zmqitems_</a></div><div class="ttdeci">vector&lt; ZMQItem &gt; zmqitems_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00068">basethread.h:68</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a3cc66810b0961581ba4618d3b3a1ff82_icgraph.png" border="0" usemap="#classBaseThread_a3cc66810b0961581ba4618d3b3a1ff82_icgraph" alt=""/></div>
+<map name="classBaseThread_a3cc66810b0961581ba4618d3b3a1ff82_icgraph" id="classBaseThread_a3cc66810b0961581ba4618d3b3a1ff82_icgraph">
+<area shape="rect" id="node2" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="233,5,423,32"/><area shape="rect" id="node4" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="275,56,381,83"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="472,31,523,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2348dbcdd968be7d53e4e824c1ab8cea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseThread::Cancel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00079">79</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00050">IThread::Cancel()</a> , 以及 <a class="el" href="basethread_8h_source.html#l00090">ithread_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">ithread_</a>.<a class="code" href="classIThread.html#a90f9e3f77a5c4fa3ef329f5019290fab">Cancel</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="ttc" id="classBaseThread_html_ad57a83fc4a08ff4cdb8cf01dc7fb8526"><div class="ttname"><a href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">BaseThread::ithread_</a></div><div class="ttdeci">IThread ithread_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00090">basethread.h:90</a></div></div>
+<div class="ttc" id="classIThread_html_a90f9e3f77a5c4fa3ef329f5019290fab"><div class="ttname"><a href="classIThread.html#a90f9e3f77a5c4fa3ef329f5019290fab">IThread::Cancel</a></div><div class="ttdeci">bool Cancel()</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00050">basethread.h:50</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a2348dbcdd968be7d53e4e824c1ab8cea_cgraph.png" border="0" usemap="#classBaseThread_a2348dbcdd968be7d53e4e824c1ab8cea_cgraph" alt=""/></div>
+<map name="classBaseThread_a2348dbcdd968be7d53e4e824c1ab8cea_cgraph" id="classBaseThread_a2348dbcdd968be7d53e4e824c1ab8cea_cgraph">
+<area shape="rect" id="node2" href="classIThread.html#a90f9e3f77a5c4fa3ef329f5019290fab" title="IThread::Cancel" alt="" coords="195,5,309,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a97bc148706d1917e55fc67a2bf9c1808"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseThread::Join </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00075">75</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00090">ithread_</a> , 以及 <a class="el" href="basethread_8h_source.html#l00039">IThread::Join()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">ithread_</a>.<a class="code" href="classIThread.html#a437e2a9f5d5e0b0449ab5b3cf598fb17">Join</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="ttc" id="classBaseThread_html_ad57a83fc4a08ff4cdb8cf01dc7fb8526"><div class="ttname"><a href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">BaseThread::ithread_</a></div><div class="ttdeci">IThread ithread_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00090">basethread.h:90</a></div></div>
+<div class="ttc" id="classIThread_html_a437e2a9f5d5e0b0449ab5b3cf598fb17"><div class="ttname"><a href="classIThread.html#a437e2a9f5d5e0b0449ab5b3cf598fb17">IThread::Join</a></div><div class="ttdeci">bool Join()</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00039">basethread.h:39</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a97bc148706d1917e55fc67a2bf9c1808_cgraph.png" border="0" usemap="#classBaseThread_a97bc148706d1917e55fc67a2bf9c1808_cgraph" alt=""/></div>
+<map name="classBaseThread_a97bc148706d1917e55fc67a2bf9c1808_cgraph" id="classBaseThread_a97bc148706d1917e55fc67a2bf9c1808_cgraph">
+<area shape="rect" id="node2" href="classIThread.html#a437e2a9f5d5e0b0449ab5b3cf598fb17" title="IThread::Join" alt="" coords="179,5,277,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a38a2780c44092f92286ed8286529002d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseThread::Run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00097">97</a> 行定义.</p>
+
+<p>参考 <a class="el" href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08">RunThreadFunc()</a>.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00091">ThreadFunc()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08">RunThreadFunc</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="ttc" id="classBaseThread_html_aa52a1401d907ab355187808f2d20dc08"><div class="ttname"><a href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08">BaseThread::RunThreadFunc</a></div><div class="ttdeci">virtual void RunThreadFunc()=0</div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a38a2780c44092f92286ed8286529002d_cgraph.png" border="0" usemap="#classBaseThread_a38a2780c44092f92286ed8286529002d_cgraph" alt=""/></div>
+<map name="classBaseThread_a38a2780c44092f92286ed8286529002d_cgraph" id="classBaseThread_a38a2780c44092f92286ed8286529002d_cgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08" title="BaseThread::RunThreadFunc" alt="" coords="179,5,373,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a38a2780c44092f92286ed8286529002d_icgraph.png" border="0" usemap="#classBaseThread_a38a2780c44092f92286ed8286529002d_icgraph" alt=""/></div>
+<map name="classBaseThread_a38a2780c44092f92286ed8286529002d_icgraph" id="classBaseThread_a38a2780c44092f92286ed8286529002d_icgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a693161bcc8067757fd3e321b477117e9" title="BaseThread::ThreadFunc" alt="" coords="179,31,349,57"/><area shape="rect" id="node3" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c" title="BaseThread::Start" alt="" coords="397,31,525,57"/><area shape="rect" id="node4" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="616,5,723,32"/><area shape="rect" id="node6" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="574,56,765,83"/><area shape="rect" id="node5" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="813,31,864,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa52a1401d907ab355187808f2d20dc08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void BaseThread::RunThreadFunc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classShuntNetPacket.html#ab49190ede64f1bf9e55a8b9006d493b3">ShuntNetPacket</a>, <a class="el" href="classUncompressDCPacket.html#ad06f98d936221b8f2c97bb8d0c3dfacf">UncompressDCPacket</a>, <a class="el" href="classBusinessErrorInfo.html#ae0d9a2a18ea4726f75f972b582a18e8a">BusinessErrorInfo</a>, <a class="el" href="classLuaRoutine.html#ac6dea338896f27c276c5ed1b0ddad4b8">LuaRoutine</a>, <a class="el" href="classCombineDCPacket.html#a7711cb69e1b1a788806cbfe347f74ced">CombineDCPacket</a>, <a class="el" href="classLog.html#a602f5b9115271d5d959ec254cd82f02e">Log</a> , 以及 <a class="el" href="classCaptureNetPacket.html#aed65b58151be2c09d7ecc3f134ab01cb">CaptureNetPacket</a> 内被实现.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00097">Run()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_aa52a1401d907ab355187808f2d20dc08_icgraph.png" border="0" usemap="#classBaseThread_aa52a1401d907ab355187808f2d20dc08_icgraph" alt=""/></div>
+<map name="classBaseThread_aa52a1401d907ab355187808f2d20dc08_icgraph" id="classBaseThread_aa52a1401d907ab355187808f2d20dc08_icgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a38a2780c44092f92286ed8286529002d" title="BaseThread::Run" alt="" coords="249,31,373,57"/><area shape="rect" id="node3" href="classBaseThread.html#a693161bcc8067757fd3e321b477117e9" title="BaseThread::ThreadFunc" alt="" coords="422,31,591,57"/><area shape="rect" id="node4" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c" title="BaseThread::Start" alt="" coords="640,31,768,57"/><area shape="rect" id="node5" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="859,5,965,32"/><area shape="rect" id="node7" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="817,56,1007,83"/><area shape="rect" id="node6" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="1056,31,1107,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a24b523b2c3dec9c13b1271ed21e6cf5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BaseThread::Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00071">71</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00090">ithread_</a>, <a class="el" href="basethread_8h_source.html#l00025">IThread::Start()</a> , 以及 <a class="el" href="basethread_8h_source.html#l00091">ThreadFunc()</a>.</p>
+
+<p>参考自 <a class="el" href="monitor_8cc_source.html#l00129">RunBusinessErrorInfoThread()</a> , 以及 <a class="el" href="monitor_8cc_source.html#l00107">RunLogThread()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">ithread_</a>.<a class="code" href="classIThread.html#a8b284208548f8285901c2e34e7ad5919">Start</a>(<a class="code" href="classBaseThread.html#a693161bcc8067757fd3e321b477117e9">ThreadFunc</a>,<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="ttc" id="classBaseThread_html_ad57a83fc4a08ff4cdb8cf01dc7fb8526"><div class="ttname"><a href="classBaseThread.html#ad57a83fc4a08ff4cdb8cf01dc7fb8526">BaseThread::ithread_</a></div><div class="ttdeci">IThread ithread_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00090">basethread.h:90</a></div></div>
+<div class="ttc" id="classBaseThread_html_a693161bcc8067757fd3e321b477117e9"><div class="ttname"><a href="classBaseThread.html#a693161bcc8067757fd3e321b477117e9">BaseThread::ThreadFunc</a></div><div class="ttdeci">static void * ThreadFunc(void *args)</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00091">basethread.h:91</a></div></div>
+<div class="ttc" id="classIThread_html_a8b284208548f8285901c2e34e7ad5919"><div class="ttname"><a href="classIThread.html#a8b284208548f8285901c2e34e7ad5919">IThread::Start</a></div><div class="ttdeci">bool Start(WorkThread workthread, BaseThread *basethread)</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00025">basethread.h:25</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_cgraph.png" border="0" usemap="#classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_cgraph" alt=""/></div>
+<map name="classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_cgraph" id="classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_cgraph">
+<area shape="rect" id="node2" href="classIThread.html#a8b284208548f8285901c2e34e7ad5919" title="IThread::Start" alt="" coords="215,5,318,32"/><area shape="rect" id="node3" href="classBaseThread.html#a693161bcc8067757fd3e321b477117e9" title="BaseThread::ThreadFunc" alt="" coords="182,56,351,83"/><area shape="rect" id="node4" href="classBaseThread.html#a38a2780c44092f92286ed8286529002d" title="BaseThread::Run" alt="" coords="401,56,525,83"/><area shape="rect" id="node5" href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08" title="BaseThread::RunThreadFunc" alt="" coords="574,56,767,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_icgraph.png" border="0" usemap="#classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_icgraph" alt=""/></div>
+<map name="classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_icgraph" id="classBaseThread_a24b523b2c3dec9c13b1271ed21e6cf5c_icgraph">
+<area shape="rect" id="node2" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="182,5,373,32"/><area shape="rect" id="node4" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="224,56,331,83"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="421,31,472,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a693161bcc8067757fd3e321b477117e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* BaseThread::ThreadFunc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00091">91</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00021">IThread::pbasethread_</a> , 以及 <a class="el" href="basethread_8h_source.html#l00097">Run()</a>.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00071">Start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classIThread.html">IThread</a> * ithread = <span class="keyword">static_cast&lt;</span><a class="code" href="classIThread.html">IThread</a> *<span class="keyword">&gt;</span>(args);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        ithread-&gt;<a class="code" href="classIThread.html#a548eab729aa20570564c0400c1b5e413">pbasethread_</a>-&gt;<a class="code" href="classBaseThread.html#a38a2780c44092f92286ed8286529002d">Run</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">void</span> *)0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="ttc" id="classIThread_html"><div class="ttname"><a href="classIThread.html">IThread</a></div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00018">basethread.h:18</a></div></div>
+<div class="ttc" id="classIThread_html_a548eab729aa20570564c0400c1b5e413"><div class="ttname"><a href="classIThread.html#a548eab729aa20570564c0400c1b5e413">IThread::pbasethread_</a></div><div class="ttdeci">BaseThread * pbasethread_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00021">basethread.h:21</a></div></div>
+<div class="ttc" id="classBaseThread_html_a38a2780c44092f92286ed8286529002d"><div class="ttname"><a href="classBaseThread.html#a38a2780c44092f92286ed8286529002d">BaseThread::Run</a></div><div class="ttdeci">void Run()</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00097">basethread.h:97</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a693161bcc8067757fd3e321b477117e9_cgraph.png" border="0" usemap="#classBaseThread_a693161bcc8067757fd3e321b477117e9_cgraph" alt=""/></div>
+<map name="classBaseThread_a693161bcc8067757fd3e321b477117e9_cgraph" id="classBaseThread_a693161bcc8067757fd3e321b477117e9_cgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a38a2780c44092f92286ed8286529002d" title="BaseThread::Run" alt="" coords="225,5,349,32"/><area shape="rect" id="node3" href="classBaseThread.html#aa52a1401d907ab355187808f2d20dc08" title="BaseThread::RunThreadFunc" alt="" coords="398,5,591,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBaseThread_a693161bcc8067757fd3e321b477117e9_icgraph.png" border="0" usemap="#classBaseThread_a693161bcc8067757fd3e321b477117e9_icgraph" alt=""/></div>
+<map name="classBaseThread_a693161bcc8067757fd3e321b477117e9_icgraph" id="classBaseThread_a693161bcc8067757fd3e321b477117e9_icgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c" title="BaseThread::Start" alt="" coords="224,31,352,57"/><area shape="rect" id="node3" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="401,5,591,32"/><area shape="rect" id="node5" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="443,56,549,83"/><area shape="rect" id="node4" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="640,31,691,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ad57a83fc4a08ff4cdb8cf01dc7fb8526"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIThread.html">IThread</a> BaseThread::ithread_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00090">90</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00079">Cancel()</a>, <a class="el" href="basethread_8h_source.html#l00075">Join()</a> , 以及 <a class="el" href="basethread_8h_source.html#l00071">Start()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada6d2bc075a6cd16021ee1a1e297f8a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structZMQItem.html">ZMQItem</a> &gt; BaseThread::zmqitems_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00068">68</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00083">AddZMQItem()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="basethread_8h_source.html">basethread.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

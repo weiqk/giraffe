@@ -1,0 +1,1378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: Exceptions</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">Exceptions</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1Exception.html">STEP::Exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base QuickFIX exception type.  <a href="structSTEP_1_1Exception.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1FieldNotFound.html">STEP::FieldNotFound</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field not found inside a message.  <a href="structSTEP_1_1FieldNotFound.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1FieldConvertError.html">STEP::FieldConvertError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to convert field into its native format.  <a href="structSTEP_1_1FieldConvertError.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1MessageParseError.html">STEP::MessageParseError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to parse message.  <a href="structSTEP_1_1MessageParseError.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1InvalidMessage.html">STEP::InvalidMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not a recognizable message.  <a href="structSTEP_1_1InvalidMessage.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1ConfigError.html">STEP::ConfigError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application is not configured correctly  <a href="structSTEP_1_1ConfigError.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1RuntimeError.html">STEP::RuntimeError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application encountered serious error during runtime  <a href="structSTEP_1_1RuntimeError.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1InvalidTagNumber.html">STEP::InvalidTagNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag number does not exist in specification.  <a href="structSTEP_1_1InvalidTagNumber.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1RequiredTagMissing.html">STEP::RequiredTagMissing</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required field is not in message.  <a href="structSTEP_1_1RequiredTagMissing.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1TagNotDefinedForMessage.html">STEP::TagNotDefinedForMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field does not belong to message.  <a href="structSTEP_1_1TagNotDefinedForMessage.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1NoTagValue.html">STEP::NoTagValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field exists in message without a value.  <a href="structSTEP_1_1NoTagValue.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1IncorrectTagValue.html">STEP::IncorrectTagValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field has a value that is out of range.  <a href="structSTEP_1_1IncorrectTagValue.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1IncorrectDataFormat.html">STEP::IncorrectDataFormat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field has a badly formatted value.  <a href="structSTEP_1_1IncorrectDataFormat.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1IncorrectMessageStructure.html">STEP::IncorrectMessageStructure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message is not structured correctly.  <a href="structSTEP_1_1IncorrectMessageStructure.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1DuplicateFieldNumber.html">STEP::DuplicateFieldNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field shows up twice in the message.  <a href="structSTEP_1_1DuplicateFieldNumber.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1InvalidMessageType.html">STEP::InvalidMessageType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not a known message type.  <a href="structSTEP_1_1InvalidMessageType.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1UnsupportedMessageType.html">STEP::UnsupportedMessageType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message type not supported by application.  <a href="structSTEP_1_1UnsupportedMessageType.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1UnsupportedVersion.html">STEP::UnsupportedVersion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version of FIX is not supported.  <a href="structSTEP_1_1UnsupportedVersion.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1TagOutOfOrder.html">STEP::TagOutOfOrder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag is not in the correct order.  <a href="structSTEP_1_1TagOutOfOrder.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1RepeatedTag.html">STEP::RepeatedTag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repeated tag not part of repeating group.  <a href="structSTEP_1_1RepeatedTag.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1RepeatingGroupCountMismatch.html">STEP::RepeatingGroupCountMismatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repeated group count not equal to actual count.  <a href="structSTEP_1_1RepeatingGroupCountMismatch.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1DoNotSend.html">STEP::DoNotSend</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates user does not want to send a message.  <a href="structSTEP_1_1DoNotSend.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1RejectLogon.html">STEP::RejectLogon</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">User wants to reject permission to logon.  <a href="structSTEP_1_1RejectLogon.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1IOException.html">STEP::IOException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO Error.  <a href="structSTEP_1_1IOException.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1SocketException.html">STEP::SocketException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket Error.  <a href="structSTEP_1_1SocketException.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTEP_1_1SocketRecvFailed.html">STEP::SocketRecvFailed</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket recv operation failed.  <a href="structSTEP_1_1SocketRecvFailed.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga0021029228fc03316d68b3b7c48acc3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;detail)</td></tr>
+<tr class="separator:ga0021029228fc03316d68b3b7c48acc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac78f9766a122cef6316946d3983fbcc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gac78f9766a122cef6316946d3983fbcc0">STEP::FieldNotFound::FieldNotFound</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gac78f9766a122cef6316946d3983fbcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga131be601cf4ebebb5cace0553c20b9c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga131be601cf4ebebb5cace0553c20b9c0">STEP::FieldConvertError::FieldConvertError</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga131be601cf4ebebb5cace0553c20b9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6eecf529b84d6551da272f00e5b44422"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga6eecf529b84d6551da272f00e5b44422">STEP::MessageParseError::MessageParseError</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga6eecf529b84d6551da272f00e5b44422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8782a298de385b60f4d198ec42c15636"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga8782a298de385b60f4d198ec42c15636">STEP::InvalidMessage::InvalidMessage</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga8782a298de385b60f4d198ec42c15636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga467474a291718f4ea1dccddbd86d4d83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga467474a291718f4ea1dccddbd86d4d83">STEP::ConfigError::ConfigError</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga467474a291718f4ea1dccddbd86d4d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0223b1c2368d3e70825689221ff04930"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga0223b1c2368d3e70825689221ff04930">STEP::RuntimeError::RuntimeError</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga0223b1c2368d3e70825689221ff04930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa07817d125abb0eea891c6176162ff49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaa07817d125abb0eea891c6176162ff49">STEP::InvalidTagNumber::InvalidTagNumber</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gaa07817d125abb0eea891c6176162ff49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf96ee3d6c5605fe845e2fe5a6c898d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaf96ee3d6c5605fe845e2fe5a6c898d13">STEP::RequiredTagMissing::RequiredTagMissing</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gaf96ee3d6c5605fe845e2fe5a6c898d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f84b4041c5c82f91a7379d181f8394"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga97f84b4041c5c82f91a7379d181f8394">STEP::TagNotDefinedForMessage::TagNotDefinedForMessage</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga97f84b4041c5c82f91a7379d181f8394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga954317668fd2cd6a31560e939546855a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga954317668fd2cd6a31560e939546855a">STEP::NoTagValue::NoTagValue</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga954317668fd2cd6a31560e939546855a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41b348f2393a47f3360bea4e0ce3c86e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga41b348f2393a47f3360bea4e0ce3c86e">STEP::IncorrectTagValue::IncorrectTagValue</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga41b348f2393a47f3360bea4e0ce3c86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdfab07adf38bcf32efc597ef4789787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gafdfab07adf38bcf32efc597ef4789787">STEP::IncorrectDataFormat::IncorrectDataFormat</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gafdfab07adf38bcf32efc597ef4789787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbdb560587fcb37008d1cfe46ac13982"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gacbdb560587fcb37008d1cfe46ac13982">STEP::IncorrectMessageStructure::IncorrectMessageStructure</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gacbdb560587fcb37008d1cfe46ac13982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab029b95d564b1dc1b1a27376c9518fa5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gab029b95d564b1dc1b1a27376c9518fa5">STEP::DuplicateFieldNumber::DuplicateFieldNumber</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gab029b95d564b1dc1b1a27376c9518fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad326e94892fae7839710238f5bf2e978"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gad326e94892fae7839710238f5bf2e978">STEP::InvalidMessageType::InvalidMessageType</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gad326e94892fae7839710238f5bf2e978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a9e131d87c99864a31f59d4c9d69c3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga9a9e131d87c99864a31f59d4c9d69c3b">STEP::UnsupportedMessageType::UnsupportedMessageType</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga9a9e131d87c99864a31f59d4c9d69c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf942818dc3833bbe6e5148aa7ff3d03d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaf942818dc3833bbe6e5148aa7ff3d03d">STEP::UnsupportedVersion::UnsupportedVersion</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gaf942818dc3833bbe6e5148aa7ff3d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4fe356d3e7254b3d1b800fcb3d79915"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaf4fe356d3e7254b3d1b800fcb3d79915">STEP::TagOutOfOrder::TagOutOfOrder</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gaf4fe356d3e7254b3d1b800fcb3d79915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12d837099a809cc14e45707c76864af3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga12d837099a809cc14e45707c76864af3">STEP::RepeatedTag::RepeatedTag</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga12d837099a809cc14e45707c76864af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e8f681a489e952804ed8010bc98387d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga9e8f681a489e952804ed8010bc98387d">STEP::RepeatingGroupCountMismatch::RepeatingGroupCountMismatch</a> (int f=0, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga9e8f681a489e952804ed8010bc98387d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1307487318a2e0f401e6e2b6c2f80264"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga1307487318a2e0f401e6e2b6c2f80264">STEP::DoNotSend::DoNotSend</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga1307487318a2e0f401e6e2b6c2f80264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacef0e4c356b51b5b4863b91e028a5dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaacef0e4c356b51b5b4863b91e028a5dd">STEP::RejectLogon::RejectLogon</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:gaacef0e4c356b51b5b4863b91e028a5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b545facdcd1bc662f09473d06089222"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga3b545facdcd1bc662f09473d06089222">STEP::IOException::IOException</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what=&quot;&quot;)</td></tr>
+<tr class="separator:ga3b545facdcd1bc662f09473d06089222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa03ae28ea6df2dc868aed799294413a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">STEP::SocketException::SocketException</a> ()</td></tr>
+<tr class="separator:gaa03ae28ea6df2dc868aed799294413a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d6ca180811ab0f7a39df62d0c468bc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga4d6ca180811ab0f7a39df62d0c468bc2">STEP::SocketException::SocketException</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what)</td></tr>
+<tr class="separator:ga4d6ca180811ab0f7a39df62d0c468bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab31b7f177ba622cb54f7d143307d47a3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">STEP::SocketException::errorToWhat</a> ()</td></tr>
+<tr class="separator:gab31b7f177ba622cb54f7d143307d47a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb7f62f4a1f18851420f24e95d861323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gadb7f62f4a1f18851420f24e95d861323">STEP::SocketRecvFailed::SocketRecvFailed</a> (int size)</td></tr>
+<tr class="separator:gadb7f62f4a1f18851420f24e95d861323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga296534a604051aea0f5abcb3d31e4358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga296534a604051aea0f5abcb3d31e4358">STEP::SocketRecvFailed::SocketRecvFailed</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;what)</td></tr>
+<tr class="separator:ga296534a604051aea0f5abcb3d31e4358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:gabc7928fdf47581a5ee2b3a97be6416b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">STEP::FieldNotFound::field</a></td></tr>
+<tr class="separator:gabc7928fdf47581a5ee2b3a97be6416b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9230ff203d66d65c2bb81fbeef30b502"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">STEP::InvalidTagNumber::field</a></td></tr>
+<tr class="separator:ga9230ff203d66d65c2bb81fbeef30b502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae11578f2c65302511a018d119e9bb9e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">STEP::RequiredTagMissing::field</a></td></tr>
+<tr class="separator:gae11578f2c65302511a018d119e9bb9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10508d592cd334285fc118d9ba427d3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">STEP::TagNotDefinedForMessage::field</a></td></tr>
+<tr class="separator:ga10508d592cd334285fc118d9ba427d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30ce4839fab0d1f84424a6ad2f82c0e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">STEP::NoTagValue::field</a></td></tr>
+<tr class="separator:ga30ce4839fab0d1f84424a6ad2f82c0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadff04b85107828865636619053b8ec2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">STEP::IncorrectTagValue::field</a></td></tr>
+<tr class="separator:gadff04b85107828865636619053b8ec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a61f0780fe8d3f4f1193d3e44ac98ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">STEP::IncorrectDataFormat::field</a></td></tr>
+<tr class="separator:ga0a61f0780fe8d3f4f1193d3e44ac98ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0576f63789a236cf114a5db05a78e0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">STEP::TagOutOfOrder::field</a></td></tr>
+<tr class="separator:gaf0576f63789a236cf114a5db05a78e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafd3014b73e071da95b140ce1f7052dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">STEP::RepeatedTag::field</a></td></tr>
+<tr class="separator:gaafd3014b73e071da95b140ce1f7052dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a29470ffa7dfdd0b8161cfca197c2d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">STEP::RepeatingGroupCountMismatch::field</a></td></tr>
+<tr class="separator:ga8a29470ffa7dfdd0b8161cfca197c2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ae747f9e43e196e5dd76825eb972c4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">STEP::SocketException::error</a></td></tr>
+<tr class="separator:ga3ae747f9e43e196e5dd76825eb972c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ga467474a291718f4ea1dccddbd86d4d83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::ConfigError::ConfigError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00055">55</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Configuration failed&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga1307487318a2e0f401e6e2b6c2f80264"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::DoNotSend::DoNotSend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00185">185</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Do Not Send Message&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gab029b95d564b1dc1b1a27376c9518fa5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::DuplicateFieldNumber::DuplicateFieldNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00130">130</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Duplicate field number&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gab31b7f177ba622cb54f7d143307d47a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string STEP::SocketException::errorToWhat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00213">213</a> 行定义.</p>
+
+<p>参考 <a class="el" href="Exceptions_8h_source.html#l00228">STEP::SocketException::error</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor"></span>    <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a> = WSAGetLastError();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">char</span> buffer[2048];</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    FormatMessage( FORMAT_MESSAGE_FROM_SYSTEM, NULL, <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a>,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                   MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                   buffer, 2048, NULL );</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> buffer;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span>    <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a> = errno;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">return</span> strerror( <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a> );</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="ttc" id="group__exceptions_html_ga3ae747f9e43e196e5dd76825eb972c4d"><div class="ttname"><a href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">STEP::SocketException::error</a></div><div class="ttdeci">int error</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00228">Exceptions.h:228</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga0021029228fc03316d68b3b7c48acc3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::Exception::Exception </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>detail</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00017">17</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : std::logic_error( detail.size() ? what + <span class="stringliteral">&quot;: &quot;</span> + detail : what )</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga131be601cf4ebebb5cace0553c20b9c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::FieldConvertError::FieldConvertError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00034">34</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Could not convert field&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gac78f9766a122cef6316946d3983fbcc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::FieldNotFound::FieldNotFound </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Field not found&quot;</span>, what ),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                 <a class="code" href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_gabc7928fdf47581a5ee2b3a97be6416b1"><div class="ttname"><a href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">STEP::FieldNotFound::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00028">Exceptions.h:28</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gafdfab07adf38bcf32efc597ef4789787"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::IncorrectDataFormat::IncorrectDataFormat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00114">114</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Incorrect data format for value&quot;</span>, what ),</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                 <a class="code" href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0a61f0780fe8d3f4f1193d3e44ac98ba"><div class="ttname"><a href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">STEP::IncorrectDataFormat::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00117">Exceptions.h:117</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gacbdb560587fcb37008d1cfe46ac13982"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::IncorrectMessageStructure::IncorrectMessageStructure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00123">123</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Incorrect message structure&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga41b348f2393a47f3360bea4e0ce3c86e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::IncorrectTagValue::IncorrectTagValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00105">105</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Value is incorrect (out of range) for this tag&quot;</span>, what ),</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                 <a class="code" href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_gadff04b85107828865636619053b8ec2c"><div class="ttname"><a href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">STEP::IncorrectTagValue::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00108">Exceptions.h:108</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga8782a298de385b60f4d198ec42c15636"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::InvalidMessage::InvalidMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00048">48</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Invalid message&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gad326e94892fae7839710238f5bf2e978"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::InvalidMessageType::InvalidMessageType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00137">137</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Invalid Message Type&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaa07817d125abb0eea891c6176162ff49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::InvalidTagNumber::InvalidTagNumber </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00069">69</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Invalid tag number&quot;</span>, what ),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                 <a class="code" href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga9230ff203d66d65c2bb81fbeef30b502"><div class="ttname"><a href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">STEP::InvalidTagNumber::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00072">Exceptions.h:72</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga3b545facdcd1bc662f09473d06089222"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::IOException::IOException </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00200">200</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;IO Error&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga6eecf529b84d6551da272f00e5b44422"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::MessageParseError::MessageParseError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00041">41</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Could not parse message&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga954317668fd2cd6a31560e939546855a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::NoTagValue::NoTagValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00096">96</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Tag specified without a value&quot;</span>, what ),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                 <a class="code" href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga30ce4839fab0d1f84424a6ad2f82c0e7"><div class="ttname"><a href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">STEP::NoTagValue::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00099">Exceptions.h:99</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaacef0e4c356b51b5b4863b91e028a5dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::RejectLogon::RejectLogon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00192">192</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Rejected Logon Attempt&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga12d837099a809cc14e45707c76864af3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::RepeatedTag::RepeatedTag </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00167">167</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Repeated tag not part of repeating group&quot;</span>, what ),</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                 <a class="code" href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_gaafd3014b73e071da95b140ce1f7052dc"><div class="ttname"><a href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">STEP::RepeatedTag::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00170">Exceptions.h:170</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga9e8f681a489e952804ed8010bc98387d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::RepeatingGroupCountMismatch::RepeatingGroupCountMismatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00176">176</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Repeating group count mismatch&quot;</span>, what ),</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                 <a class="code" href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga8a29470ffa7dfdd0b8161cfca197c2d0"><div class="ttname"><a href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">STEP::RepeatingGroupCountMismatch::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00179">Exceptions.h:179</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaf96ee3d6c5605fe845e2fe5a6c898d13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::RequiredTagMissing::RequiredTagMissing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00078">78</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Required tag missing&quot;</span>, what ),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                 <a class="code" href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+<div class="ttc" id="group__exceptions_html_gae11578f2c65302511a018d119e9bb9e6"><div class="ttname"><a href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">STEP::RequiredTagMissing::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00081">Exceptions.h:81</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga0223b1c2368d3e70825689221ff04930"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::RuntimeError::RuntimeError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00062">62</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Runtime error&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaa03ae28ea6df2dc868aed799294413a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::SocketException::SocketException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00207">207</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Socket Error&quot;</span>, <a class="code" href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">errorToWhat</a>() ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+<div class="ttc" id="group__exceptions_html_gab31b7f177ba622cb54f7d143307d47a3"><div class="ttname"><a href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">STEP::SocketException::errorToWhat</a></div><div class="ttdeci">std::string errorToWhat()</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00213">Exceptions.h:213</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga4d6ca180811ab0f7a39df62d0c468bc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::SocketException::SocketException </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00210">210</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Socket Error&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gadb7f62f4a1f18851420f24e95d861323"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::SocketRecvFailed::SocketRecvFailed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00235">235</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    : <a class="code" href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">SocketException</a>( size == 0 ? <span class="stringliteral">&quot;Connection reset by peer.&quot;</span> : size &lt; 0 ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;Success.&quot;</span> ) {}</div>
+<div class="ttc" id="group__exceptions_html_gaa03ae28ea6df2dc868aed799294413a3"><div class="ttname"><a href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">STEP::SocketException::SocketException</a></div><div class="ttdeci">SocketException()</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00207">Exceptions.h:207</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga296534a604051aea0f5abcb3d31e4358"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::SocketRecvFailed::SocketRecvFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00237">237</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    : <a class="code" href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">SocketException</a>( what ) {}</div>
+<div class="ttc" id="group__exceptions_html_gaa03ae28ea6df2dc868aed799294413a3"><div class="ttname"><a href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">STEP::SocketException::SocketException</a></div><div class="ttdeci">SocketException()</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00207">Exceptions.h:207</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga97f84b4041c5c82f91a7379d181f8394"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::TagNotDefinedForMessage::TagNotDefinedForMessage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00087">87</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Tag not defined for this message type&quot;</span>, what ),</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                 <a class="code" href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga10508d592cd334285fc118d9ba427d3c"><div class="ttname"><a href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">STEP::TagNotDefinedForMessage::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00090">Exceptions.h:90</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaf4fe356d3e7254b3d1b800fcb3d79915"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::TagOutOfOrder::TagOutOfOrder </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00158">158</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Tag specified out of required order&quot;</span>, what ),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                 <a class="code" href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">field</a>( f ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaf0576f63789a236cf114a5db05a78e0b"><div class="ttname"><a href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">STEP::TagOutOfOrder::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00161">Exceptions.h:161</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga9a9e131d87c99864a31f59d4c9d69c3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::UnsupportedMessageType::UnsupportedMessageType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00144">144</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Unsupported Message Type&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gaf942818dc3833bbe6e5148aa7ff3d03d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">STEP::UnsupportedVersion::UnsupportedVersion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>what</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00151">151</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    : <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="stringliteral">&quot;Unsupported Version&quot;</span>, what ) {}</div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ga3ae747f9e43e196e5dd76825eb972c4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::SocketException::error</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00228">228</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="Exceptions_8h_source.html#l00213">STEP::SocketException::errorToWhat()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabc7928fdf47581a5ee2b3a97be6416b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::FieldNotFound::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9230ff203d66d65c2bb81fbeef30b502"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::InvalidTagNumber::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae11578f2c65302511a018d119e9bb9e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::RequiredTagMissing::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga10508d592cd334285fc118d9ba427d3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::TagNotDefinedForMessage::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga30ce4839fab0d1f84424a6ad2f82c0e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::NoTagValue::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadff04b85107828865636619053b8ec2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::IncorrectTagValue::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0a61f0780fe8d3f4f1193d3e44ac98ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::IncorrectDataFormat::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf0576f63789a236cf114a5db05a78e0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::TagOutOfOrder::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaafd3014b73e071da95b140ce1f7052dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::RepeatedTag::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00170">170</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8a29470ffa7dfdd0b8161cfca197c2d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int STEP::RepeatingGroupCountMismatch::field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Exceptions_8h_source.html">Exceptions.h</a> 第 <a class="el" href="Exceptions_8h_source.html#l00179">179</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

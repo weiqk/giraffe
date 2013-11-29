@@ -1,0 +1,7 @@
+<map id="CBitStream::EncodeStringData" name="CBitStream::EncodeStringData">
+<area shape="rect" id="node2" href="$classCBitStream.html#aa0087f4250131949c3ef30cbdbead314" title="CBitStream::EncodeFindMatch" alt="" coords="259,5,461,32"/>
+<area shape="rect" id="node3" href="$classCBitStream.html#a01cf14dc4765ffe984f5078715dbe4c9" title="CBitStream::FindStringData" alt="" coords="267,56,453,83"/>
+<area shape="rect" id="node4" href="$structBITCODE.html#a01d527a5fa70d902dd1038322d22e984" title="BITCODE::IsOriginalData" alt="" coords="273,107,447,133"/>
+<area shape="rect" id="node5" href="$classCBitStream.html#a46d785c4e00db865b14f6fd49cd1d15f" title="CBitStream::Put" alt="" coords="510,183,629,209"/>
+<area shape="rect" id="node6" href="$classCBitStream.html#a6a04a84f2391d1f6a440917dc3f24026" title="CBitStream::PutString" alt="" coords="284,208,436,235"/>
+</map>

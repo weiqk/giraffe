@@ -1,0 +1,5 @@
+<map id="ExtractDC" name="ExtractDC">
+<area shape="rect" id="node2" href="$structCPS__STATIC__HEAD.html" title="{CPS_STATIC_HEAD\n|+ m_wMarket\l+ m_wNum\l+ m_cAttrib\l|}" alt="" coords="5,352,155,459"/>
+<area shape="rect" id="node3" href="$classCBitStream.html" title="{CBitStream\n|# m_pData\l# m_nBitSize\l# m_nCurPos\l# m_nSavedPos\l# m_nNumCode\l|+ CBitStream()\l+ CBitStream()\l+ SetBuffer()\l+ AttachToBuffer()\l+ GetBitLength()\l+ GetByteLength()\l+ GetCurPos()\l+ GetBitSize()\l+ Get()\l+ GetNoMove()\l和 18 更多...\l# EncodeFindMatch()\l# DecodeFindMatch()\l# FindOrgMData()\l# FindStringData()\l}" alt="" coords="180,235,327,576"/>
+<area shape="rect" id="node4" href="$structBITCODE.html" title="{BITCODE\n|+ m_wCodeBits\l+ m_nCodeLen\l+ m_nDataLen\l+ m_cCode\l+ m_dwCodeData\l+ m_dwDataBias\l|+ IsOriginalData()\l+ IsBitPos()\l}" alt="" coords="189,5,317,171"/>
+</map>

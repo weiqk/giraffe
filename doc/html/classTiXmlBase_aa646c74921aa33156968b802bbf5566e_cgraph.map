@@ -1,0 +1,9 @@
+<map id="TiXmlBase::ReadText" name="TiXmlBase::ReadText">
+<area shape="rect" id="node2" href="$classTiXmlBase.html#a5b0fde72d6f662ae1fd6303195d2159b" title="TiXmlBase::GetChar" alt="" coords="230,5,373,32"/>
+<area shape="rect" id="node5" href="$classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e" title="TiXmlBase::IsWhiteSpace" alt="" coords="445,81,621,108"/>
+<area shape="rect" id="node6" href="$classTiXmlBase.html#ac0c3d66d8a9e6996a1fa016275e16875" title="TiXmlBase::SkipWhiteSpace" alt="" coords="206,107,397,133"/>
+<area shape="rect" id="node7" href="$classTiXmlBase.html#a51631e6986179558b9e5850723ed165a" title="TiXmlBase::StringEqual" alt="" coords="221,157,382,184"/>
+<area shape="rect" id="node3" href="$classTiXmlBase.html#ac5c08bf3deffcda0bf8ce2958372b584" title="TiXmlBase::GetEntity" alt="" coords="459,5,608,32"/>
+<area shape="rect" id="node4" href="$classTiXmlBase.html#a07c765e3a7f979d343e646ea797b180b" title="TiXmlBase::ConvertUTF32ToUTF8" alt="" coords="670,5,898,32"/>
+<area shape="rect" id="node8" href="$classTiXmlBase.html#a799f17405a86a5c2029618e85f11a097" title="TiXmlBase::ToLower" alt="" coords="461,157,605,184"/>
+</map>

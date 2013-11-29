@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: bufelement结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structbufelement-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">bufelement结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="structs_8h_source.html">structs.h</a>&gt;</code></p>
+<div class="dynheader">
+bufelement 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structbufelement__coll__graph.png" border="0" usemap="#bufelement_coll__map" alt="Collaboration graph"/></div>
+<map name="bufelement_coll__map" id="bufelement_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a652c8b5828be0da9d241af99259f5557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a652c8b5828be0da9d241af99259f5557">port_tag</a></td></tr>
+<tr class="separator:a652c8b5828be0da9d241af99259f5557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22edd4348bf6064809b5f4d5f9d8b223"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a22edd4348bf6064809b5f4d5f9d8b223">timestamp</a> [16]</td></tr>
+<tr class="separator:a22edd4348bf6064809b5f4d5f9d8b223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9decb36c385de843452ba540b0ed6ee2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a9decb36c385de843452ba540b0ed6ee2">len</a></td></tr>
+<tr class="separator:a9decb36c385de843452ba540b0ed6ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ae6ba0a5cb503beedd9126a34ae44c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#ae1ae6ba0a5cb503beedd9126a34ae44c">iproto</a></td></tr>
+<tr class="separator:ae1ae6ba0a5cb503beedd9126a34ae44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e05e36a28c9d4d541cdaa1598920e43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a1e05e36a28c9d4d541cdaa1598920e43">saddrbyte1</a></td></tr>
+<tr class="separator:a1e05e36a28c9d4d541cdaa1598920e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68c4bf792298a01045ed0856e4452e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#af68c4bf792298a01045ed0856e4452e9">saddrbyte2</a></td></tr>
+<tr class="separator:af68c4bf792298a01045ed0856e4452e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15315a36d4429cc8d2687faeb9bdb87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#ab15315a36d4429cc8d2687faeb9bdb87">saddrbyte3</a></td></tr>
+<tr class="separator:ab15315a36d4429cc8d2687faeb9bdb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791156189f53dfc03b65833370cb3fa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a791156189f53dfc03b65833370cb3fa2">saddrbyte4</a></td></tr>
+<tr class="separator:a791156189f53dfc03b65833370cb3fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0731540824334163819d266af2d579e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a0731540824334163819d266af2d579e2">sport</a></td></tr>
+<tr class="separator:a0731540824334163819d266af2d579e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab358deec615a7174068c8bf45e5943a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#ab358deec615a7174068c8bf45e5943a7">daddrbyte1</a></td></tr>
+<tr class="separator:ab358deec615a7174068c8bf45e5943a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4c40e967d6ff615d8c419360394409"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a2d4c40e967d6ff615d8c419360394409">daddrbyte2</a></td></tr>
+<tr class="separator:a2d4c40e967d6ff615d8c419360394409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d07161b3b3099447e1c2f594213ffb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#ab4d07161b3b3099447e1c2f594213ffb">daddrbyte3</a></td></tr>
+<tr class="separator:ab4d07161b3b3099447e1c2f594213ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800bca6696385ee4f44e0b32bd306d7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a800bca6696385ee4f44e0b32bd306d7d">daddrbyte4</a></td></tr>
+<tr class="separator:a800bca6696385ee4f44e0b32bd306d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeac826153e80fe27ade2013613300c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#abeac826153e80fe27ade2013613300c5">dport</a></td></tr>
+<tr class="separator:abeac826153e80fe27ade2013613300c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef018f7bef55bd7e62df2184b071d588"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#aef018f7bef55bd7e62df2184b071d588">flags</a></td></tr>
+<tr class="separator:aef018f7bef55bd7e62df2184b071d588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb28a18bec111d3c6c8646ed8eccba9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#a9bb28a18bec111d3c6c8646ed8eccba9">dctype</a></td></tr>
+<tr class="separator:a9bb28a18bec111d3c6c8646ed8eccba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc76b09fd9bc404264a6cda5460e6201"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbufelement.html#abc76b09fd9bc404264a6cda5460e6201">seqtag</a></td></tr>
+<tr class="separator:abc76b09fd9bc404264a6cda5460e6201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00123">123</a> 行定义.</p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ab358deec615a7174068c8bf45e5943a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::daddrbyte1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00134">134</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d4c40e967d6ff615d8c419360394409"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::daddrbyte2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00135">135</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4d07161b3b3099447e1c2f594213ffb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::daddrbyte3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00136">136</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a800bca6696385ee4f44e0b32bd306d7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::daddrbyte4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00137">137</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bb28a18bec111d3c6c8646ed8eccba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* bufelement::dctype</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00140">140</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abeac826153e80fe27ade2013613300c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::dport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00138">138</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef018f7bef55bd7e62df2184b071d588"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* bufelement::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00139">139</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1ae6ba0a5cb503beedd9126a34ae44c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* bufelement::iproto</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00128">128</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9decb36c385de843452ba540b0ed6ee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00127">127</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a652c8b5828be0da9d241af99259f5557"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::port_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00125">125</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e05e36a28c9d4d541cdaa1598920e43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::saddrbyte1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00129">129</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af68c4bf792298a01045ed0856e4452e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::saddrbyte2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00130">130</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab15315a36d4429cc8d2687faeb9bdb87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::saddrbyte3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00131">131</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a791156189f53dfc03b65833370cb3fa2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::saddrbyte4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00132">132</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc76b09fd9bc404264a6cda5460e6201"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long bufelement::seqtag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00141">141</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0731540824334163819d266af2d579e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bufelement::sport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00133">133</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22edd4348bf6064809b5f4d5f9d8b223"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char bufelement::timestamp[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="structs_8h_source.html">structs.h</a> 第 <a class="el" href="structs_8h_source.html#l00126">126</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="log_8cc_source.html#l00023">Log::RunThreadFunc()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="structs_8h_source.html">structs.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

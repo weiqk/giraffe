@@ -1,3 +1,6 @@
+--lua communication layer with c++
+
+
 require("os")
 --local path =  os.getenv("PWD")
 --local lualib_path = path..'/lualib/'

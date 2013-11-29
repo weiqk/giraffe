@@ -1,0 +1,1066 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: TiXmlHandle类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classTiXmlHandle-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TiXmlHandle类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>&gt;</code></p>
+<div class="dynheader">
+TiXmlHandle 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle__coll__graph.png" border="0" usemap="#TiXmlHandle_coll__map" alt="Collaboration graph"/></div>
+<map name="TiXmlHandle_coll__map" id="TiXmlHandle_coll__map">
+<area shape="rect" id="node2" href="classTiXmlNode.html" title="{TiXmlNode\n|# type\l# value\l|+ ~TiXmlNode()\l+ Value()\l+ ValueTStr()\l+ SetValue()\l+ Clear()\l+ Parent()\l+ Parent()\l+ FirstChild()\l+ FirstChild()\l+ FirstChild()\l和 49 更多...\l# TiXmlNode()\l# CopyTo()\l# Identify()\l&#45; TiXmlNode()\l&#45; operator=()\l}" alt="" coords="77,715,192,1027"/><area shape="rect" id="node3" href="classTiXmlBase.html" title="{TiXmlBase\n|+ utf8ByteTable\l# userData\l# errorString\l&#45; condenseWhiteSpace\l|+ TiXmlBase()\l+ ~TiXmlBase()\l+ Print()\l+ Row()\l+ Column()\l+ SetUserData()\l+ GetUserData()\l+ GetUserData()\l+ Parse()\l+ SetCondenseWhiteSpace()\l+ IsWhiteSpaceCondensed()\l+ EncodeString()\l# SkipWhiteSpace()\l# IsWhiteSpace()\l# IsWhiteSpace()\l# ReadName()\l# ReadText()\l# GetEntity()\l# GetChar()\l# StringEqual()\l# IsAlpha()\l# IsAlphaNum()\l# ToLower()\l# ConvertUTF32ToUTF8()\l&#45; TiXmlBase()\l&#45; operator=()\l}" alt="" coords="39,176,231,664"/><area shape="rect" id="node4" href="structTiXmlCursor.html" title="{TiXmlCursor\n|+ row\l+ col\l|+ TiXmlCursor()\l+ Clear()\l}" alt="" coords="5,5,120,112"/><area shape="rect" id="node5" href="structTiXmlBase_1_1Entity.html" title="{TiXmlBase::Entity\n|+ str\l+ strLength\l+ chr\l|}" alt="" coords="144,5,272,112"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aba18fd7bdefb942ecdea4bf4b8e29ec8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *_node)</td></tr>
+<tr class="memdesc:aba18fd7bdefb942ecdea4bf4b8e29ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a handle from any node (at any depth of the tree.) This can be a null pointer.  <a href="#aba18fd7bdefb942ecdea4bf4b8e29ec8">更多...</a><br/></td></tr>
+<tr class="separator:aba18fd7bdefb942ecdea4bf4b8e29ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236d7855e1e56ccc7b980630c48c7fd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a236d7855e1e56ccc7b980630c48c7fd7">TiXmlHandle</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> &amp;ref)</td></tr>
+<tr class="memdesc:a236d7855e1e56ccc7b980630c48c7fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a236d7855e1e56ccc7b980630c48c7fd7">更多...</a><br/></td></tr>
+<tr class="separator:a236d7855e1e56ccc7b980630c48c7fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e5dcf6a87882674203157f29f8e4db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#ad8e5dcf6a87882674203157f29f8e4db">operator=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> &amp;ref)</td></tr>
+<tr class="separator:ad8e5dcf6a87882674203157f29f8e4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb1faaf88a700b40ca2c8d9aee21139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#acdb1faaf88a700b40ca2c8d9aee21139">FirstChild</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:acdb1faaf88a700b40ca2c8d9aee21139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a handle to the first child node.  <a href="#acdb1faaf88a700b40ca2c8d9aee21139">更多...</a><br/></td></tr>
+<tr class="separator:acdb1faaf88a700b40ca2c8d9aee21139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c61f64ae9365d89c264f289085541f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a8c61f64ae9365d89c264f289085541f8">FirstChild</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *value) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a8c61f64ae9365d89c264f289085541f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a handle to the first child node with the given name.  <a href="#a8c61f64ae9365d89c264f289085541f8">更多...</a><br/></td></tr>
+<tr class="separator:a8c61f64ae9365d89c264f289085541f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d1112e995e937e4dddb202d4113d4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a24d1112e995e937e4dddb202d4113d4a">FirstChildElement</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a24d1112e995e937e4dddb202d4113d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a handle to the first child element.  <a href="#a24d1112e995e937e4dddb202d4113d4a">更多...</a><br/></td></tr>
+<tr class="separator:a24d1112e995e937e4dddb202d4113d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0aea751320f5e430fac6f8fff3b8dd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#af0aea751320f5e430fac6f8fff3b8dd4">FirstChildElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *value) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:af0aea751320f5e430fac6f8fff3b8dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a handle to the first child element with the given name.  <a href="#af0aea751320f5e430fac6f8fff3b8dd4">更多...</a><br/></td></tr>
+<tr class="separator:af0aea751320f5e430fac6f8fff3b8dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072492b4be1acdb0db2d03cd8f71ccc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a072492b4be1acdb0db2d03cd8f71ccc4">Child</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *value, int index) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a072492b4be1acdb0db2d03cd8f71ccc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cf6a7d08a5da94a8924425ad0cd5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#af9cf6a7d08a5da94a8924425ad0cd5ac">Child</a> (int index) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:af9cf6a7d08a5da94a8924425ad0cd5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979a3f850984a176ee884e394c7eed2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a979a3f850984a176ee884e394c7eed2d">ChildElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *value, int index) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a979a3f850984a176ee884e394c7eed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8786475b9d1f1518492e3a46704c7ef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a8786475b9d1f1518492e3a46704c7ef0">ChildElement</a> (int index) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a8786475b9d1f1518492e3a46704c7ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af678e5088e83be67baf76f699756f2c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#af678e5088e83be67baf76f699756f2c3">ToNode</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:af678e5088e83be67baf76f699756f2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6e7ed383a5fe1e52b0c0004b457b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#abc6e7ed383a5fe1e52b0c0004b457b9e">ToElement</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:abc6e7ed383a5fe1e52b0c0004b457b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac53a652296203a5b5e13854d923586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlText.html">TiXmlText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a4ac53a652296203a5b5e13854d923586">ToText</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a4ac53a652296203a5b5e13854d923586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1381c17507a130767b1e23afc93b3674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a1381c17507a130767b1e23afc93b3674">ToUnknown</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a1381c17507a130767b1e23afc93b3674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44b723a8dc9af72838a303c079d0376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#ab44b723a8dc9af72838a303c079d0376">Node</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab44b723a8dc9af72838a303c079d0376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5fe8388a526289ea65e817a51e05e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#acb5fe8388a526289ea65e817a51e05e7">Element</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:acb5fe8388a526289ea65e817a51e05e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc739c8a18d160006f82572fc143d13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlText.html">TiXmlText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a9fc739c8a18d160006f82572fc143d13">Text</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a9fc739c8a18d160006f82572fc143d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49675b74357ba2aae124657a9a1ef465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#a49675b74357ba2aae124657a9a1ef465">Unknown</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a49675b74357ba2aae124657a9a1ef465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ac5429de14bb78b16288bac5bf33c6858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a></td></tr>
+<tr class="separator:ac5429de14bb78b16288bac5bf33c6858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> is a class that wraps a node pointer with null checks; this is an incredibly useful thing. Note that <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> is not part of the TinyXml DOM structure. It is a separate utility class.</p>
+<p>Take an example: </p>
+<pre class="fragment">&lt;Document&gt;
+    &lt;Element attributeA = "valueA"&gt;
+        &lt;Child attributeB = "value1" /&gt;
+        &lt;Child attributeB = "value2" /&gt;
+    &lt;/Element&gt;
+&lt;Document&gt;
+</pre><p>Assuming you want the value of "attributeB" in the 2nd "Child" element, it's very easy to write a <em>lot</em> of code that looks like:</p>
+<pre class="fragment">TiXmlElement* root = document.FirstChildElement( "Document" );
+if ( root )
+{
+    TiXmlElement* element = root-&gt;FirstChildElement( "Element" );
+    if ( element )
+    {
+        TiXmlElement* child = element-&gt;FirstChildElement( "Child" );
+        if ( child )
+        {
+            TiXmlElement* child2 = child-&gt;NextSiblingElement( "Child" );
+            if ( child2 )
+            {
+                // Finally do something useful.
+</pre><p>And that doesn't even cover "else" cases. <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> addresses the verbosity of such code. A <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> checks for null pointers so it is perfectly safe and correct to use:</p>
+<pre class="fragment">TiXmlHandle docHandle( &amp;document );
+TiXmlElement* child2 = docHandle.FirstChild( "Document" ).FirstChild( "Element" ).Child( "Child", 1 ).ToElement();
+if ( child2 )
+{
+    // do something useful
+</pre><p>Which is MUCH more concise and useful.</p>
+<p>It is also safe to copy handles - internally they are nothing more than node pointers. </p>
+<pre class="fragment">TiXmlHandle handleCopy = handle;
+</pre><p>What they should not be used for is iteration:</p>
+<pre class="fragment">int i=0; 
+while ( true )
+{
+    TiXmlElement* child = docHandle.FirstChild( "Document" ).FirstChild( "Element" ).Child( "Child", i ).ToElement();
+    if ( !child )
+        break;
+    // do something
+    ++i;
+}
+</pre><p>It seems reasonable, but it is in fact two embedded while loops. The Child method is a linear walk to find the element, so this code would iterate much more than it needs to. Instead, prefer:</p>
+<pre class="fragment">TiXmlElement* child = docHandle.FirstChild( "Document" ).FirstChild( "Element" ).FirstChild( "Child" ).ToElement();
+
+for( child; child; child=child-&gt;NextSiblingElement() )
+{
+    // do something
+}
+</pre> 
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01636">1636</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aba18fd7bdefb942ecdea4bf4b8e29ec8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlHandle::TiXmlHandle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td>
+          <td class="paramname"><em>_node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a handle from any node (at any depth of the tree.) This can be a null pointer. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01640">1640</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8cpp_source.html#l01684">Child()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01722">ChildElement()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01636">FirstChild()</a> , 以及 <a class="el" href="tinyxml_8cpp_source.html#l01660">FirstChildElement()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;{ this-&gt;<a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> = _node; }</div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_aba18fd7bdefb942ecdea4bf4b8e29ec8_icgraph.png" border="0" usemap="#classTiXmlHandle_aba18fd7bdefb942ecdea4bf4b8e29ec8_icgraph" alt=""/></div>
+<map name="classTiXmlHandle_aba18fd7bdefb942ecdea4bf4b8e29ec8_icgraph" id="classTiXmlHandle_aba18fd7bdefb942ecdea4bf4b8e29ec8_icgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#af9cf6a7d08a5da94a8924425ad0cd5ac" title="TiXmlHandle::Child" alt="" coords="273,5,407,32"/><area shape="rect" id="node3" href="classTiXmlHandle.html#a8786475b9d1f1518492e3a46704c7ef0" title="TiXmlHandle::ChildElement" alt="" coords="249,56,431,83"/><area shape="rect" id="node4" href="classTiXmlHandle.html#acdb1faaf88a700b40ca2c8d9aee21139" title="Return a handle to the first child node. " alt="" coords="259,107,421,133"/><area shape="rect" id="node5" href="classTiXmlHandle.html#a24d1112e995e937e4dddb202d4113d4a" title="Return a handle to the first child element. " alt="" coords="235,157,445,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a236d7855e1e56ccc7b980630c48c7fd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlHandle::TiXmlHandle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01642">1642</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01712">node</a>.</p>
+<div class="fragment"><div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;{ this-&gt;<a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> = ref.<a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>; }</div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a072492b4be1acdb0db2d03cd8f71ccc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::Child </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a handle to the "index" child with the given name. The first child is 0, the second 1, etc. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01703">1703</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l00634">TiXmlNode::NextSibling()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;{</div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;    {</div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;        <a class="code" href="classTiXmlNode.html">TiXmlNode</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">FirstChild</a>( value );</div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;        <span class="keywordflow">for</span> (   i=0;</div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;                child &amp;&amp; i&lt;count;</div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;                child = child-&gt;<a class="code" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e">NextSibling</a>( value ), ++i )</div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;        {</div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;            <span class="comment">// nothing</span></div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;        }</div>
+<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;    }</div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a44c8eee26bbe2d1b2762038df9dde2f0"><div class="ttname"><a href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">TiXmlNode::FirstChild</a></div><div class="ttdeci">const TiXmlNode * FirstChild() const </div><div class="ttdoc">The first child of this node. Will be null if there are no children. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00525">tinyxml.h:525</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html"><div class="ttname"><a href="classTiXmlNode.html">TiXmlNode</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00426">tinyxml.h:426</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_af854baeba384f5fe9859f5aee03b548e"><div class="ttname"><a href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e">TiXmlNode::NextSibling</a></div><div class="ttdeci">const TiXmlNode * NextSibling() const </div><div class="ttdoc">Navigate to a sibling node. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00634">tinyxml.h:634</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a072492b4be1acdb0db2d03cd8f71ccc4_cgraph.png" border="0" usemap="#classTiXmlHandle_a072492b4be1acdb0db2d03cd8f71ccc4_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a072492b4be1acdb0db2d03cd8f71ccc4_cgraph" id="classTiXmlHandle_a072492b4be1acdb0db2d03cd8f71ccc4_cgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="199,5,361,32"/><area shape="rect" id="node3" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="190,56,370,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af9cf6a7d08a5da94a8924425ad0cd5ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::Child </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a handle to the "index" child. The first child is 0, the second 1, etc. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01684">1684</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l00634">TiXmlNode::NextSibling()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;{</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;    {</div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;        <a class="code" href="classTiXmlNode.html">TiXmlNode</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">FirstChild</a>();</div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;        <span class="keywordflow">for</span> (   i=0;</div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;                child &amp;&amp; i&lt;count;</div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;                child = child-&gt;<a class="code" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e">NextSibling</a>(), ++i )</div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;        {</div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;            <span class="comment">// nothing</span></div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;        }</div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;    }</div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a44c8eee26bbe2d1b2762038df9dde2f0"><div class="ttname"><a href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">TiXmlNode::FirstChild</a></div><div class="ttdeci">const TiXmlNode * FirstChild() const </div><div class="ttdoc">The first child of this node. Will be null if there are no children. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00525">tinyxml.h:525</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html"><div class="ttname"><a href="classTiXmlNode.html">TiXmlNode</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00426">tinyxml.h:426</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_af854baeba384f5fe9859f5aee03b548e"><div class="ttname"><a href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e">TiXmlNode::NextSibling</a></div><div class="ttdeci">const TiXmlNode * NextSibling() const </div><div class="ttdoc">Navigate to a sibling node. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00634">tinyxml.h:634</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_af9cf6a7d08a5da94a8924425ad0cd5ac_cgraph.png" border="0" usemap="#classTiXmlHandle_af9cf6a7d08a5da94a8924425ad0cd5ac_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_af9cf6a7d08a5da94a8924425ad0cd5ac_cgraph" id="classTiXmlHandle_af9cf6a7d08a5da94a8924425ad0cd5ac_cgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="199,5,361,32"/><area shape="rect" id="node3" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="190,56,370,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a979a3f850984a176ee884e394c7eed2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::ChildElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a handle to the "index" child element with the given name. The first child element is 0, the second 1, etc. Note that only TiXmlElements are indexed: other types are not counted. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01741">1741</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8cpp_source.html#l00463">TiXmlNode::NextSiblingElement()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;{</div>
+<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;    {</div>
+<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;        <a class="code" href="classTiXmlElement.html">TiXmlElement</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>( value );</div>
+<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;        <span class="keywordflow">for</span> (   i=0;</div>
+<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;                child &amp;&amp; i&lt;count;</div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;                child = child-&gt;<a class="code" href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d">NextSiblingElement</a>( value ), ++i )</div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;        {</div>
+<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;            <span class="comment">// nothing</span></div>
+<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;        }</div>
+<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;    }</div>
+<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_ab1f8d8e70d88aea4c5efedfe00862d55"><div class="ttname"><a href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">TiXmlNode::FirstChildElement</a></div><div class="ttdeci">const TiXmlElement * FirstChildElement() const </div><div class="ttdoc">Convenience function to get through elements. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00433">tinyxml.cpp:433</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a7667217e269e0da01d1f82aee94d1a3d"><div class="ttname"><a href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d">TiXmlNode::NextSiblingElement</a></div><div class="ttdeci">const TiXmlElement * NextSiblingElement() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00463">tinyxml.cpp:463</a></div></div>
+<div class="ttc" id="classTiXmlElement_html"><div class="ttname"><a href="classTiXmlElement.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00946">tinyxml.h:946</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a979a3f850984a176ee884e394c7eed2d_cgraph.png" border="0" usemap="#classTiXmlHandle_a979a3f850984a176ee884e394c7eed2d_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a979a3f850984a176ee884e394c7eed2d_cgraph" id="classTiXmlHandle_a979a3f850984a176ee884e394c7eed2d_cgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d" title="TiXmlNode::NextSiblingElement" alt="" coords="237,31,448,57"/><area shape="rect" id="node5" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="253,81,433,108"/><area shape="rect" id="node3" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="496,5,659,32"/><area shape="rect" id="node4" href="classTiXmlNode.html#a72abed96dc9667ab9e0a2a275301bb1c" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="498,56,657,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8786475b9d1f1518492e3a46704c7ef0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::ChildElement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a handle to the "index" child element. The first child element is 0, the second 1, etc. Note that only TiXmlElements are indexed: other types are not counted. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01722">1722</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8cpp_source.html#l00463">TiXmlNode::NextSiblingElement()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;{</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;    {</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;        <a class="code" href="classTiXmlElement.html">TiXmlElement</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>();</div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;        <span class="keywordflow">for</span> (   i=0;</div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;                child &amp;&amp; i&lt;count;</div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;                child = child-&gt;<a class="code" href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d">NextSiblingElement</a>(), ++i )</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;        {</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;            <span class="comment">// nothing</span></div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;        }</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;    }</div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_ab1f8d8e70d88aea4c5efedfe00862d55"><div class="ttname"><a href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">TiXmlNode::FirstChildElement</a></div><div class="ttdeci">const TiXmlElement * FirstChildElement() const </div><div class="ttdoc">Convenience function to get through elements. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00433">tinyxml.cpp:433</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a7667217e269e0da01d1f82aee94d1a3d"><div class="ttname"><a href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d">TiXmlNode::NextSiblingElement</a></div><div class="ttdeci">const TiXmlElement * NextSiblingElement() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00463">tinyxml.cpp:463</a></div></div>
+<div class="ttc" id="classTiXmlElement_html"><div class="ttname"><a href="classTiXmlElement.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00946">tinyxml.h:946</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a8786475b9d1f1518492e3a46704c7ef0_cgraph.png" border="0" usemap="#classTiXmlHandle_a8786475b9d1f1518492e3a46704c7ef0_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a8786475b9d1f1518492e3a46704c7ef0_cgraph" id="classTiXmlHandle_a8786475b9d1f1518492e3a46704c7ef0_cgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d" title="TiXmlNode::NextSiblingElement" alt="" coords="237,31,448,57"/><area shape="rect" id="node5" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="253,81,433,108"/><area shape="rect" id="node3" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e" title="Navigate to a sibling node. " alt="" coords="496,5,659,32"/><area shape="rect" id="node4" href="classTiXmlNode.html#a72abed96dc9667ab9e0a2a275301bb1c" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="498,56,657,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acb5fe8388a526289ea65e817a51e05e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlElement.html">TiXmlElement</a>* TiXmlHandle::Element </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">弃用:</a></b></dt><dd>use ToElement. Return the handle as a <a class="el" href="classTiXmlElement.html">TiXmlElement</a>. This may return null. </dd></dl>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01701">1701</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01686">ToElement()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#abc6e7ed383a5fe1e52b0c0004b457b9e">ToElement</a>(); }</div>
+<div class="ttc" id="classTiXmlHandle_html_abc6e7ed383a5fe1e52b0c0004b457b9e"><div class="ttname"><a href="classTiXmlHandle.html#abc6e7ed383a5fe1e52b0c0004b457b9e">TiXmlHandle::ToElement</a></div><div class="ttdeci">TiXmlElement * ToElement() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01686">tinyxml.h:1686</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_acb5fe8388a526289ea65e817a51e05e7_cgraph.png" border="0" usemap="#classTiXmlHandle_acb5fe8388a526289ea65e817a51e05e7_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_acb5fe8388a526289ea65e817a51e05e7_cgraph" id="classTiXmlHandle_acb5fe8388a526289ea65e817a51e05e7_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#abc6e7ed383a5fe1e52b0c0004b457b9e" title="TiXmlHandle::ToElement" alt="" coords="208,5,376,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acdb1faaf88a700b40ca2c8d9aee21139"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::FirstChild </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a handle to the first child node. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01636">1636</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;{</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;    {</div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;        <a class="code" href="classTiXmlNode.html">TiXmlNode</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">FirstChild</a>();</div>
+<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;    }</div>
+<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a44c8eee26bbe2d1b2762038df9dde2f0"><div class="ttname"><a href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">TiXmlNode::FirstChild</a></div><div class="ttdeci">const TiXmlNode * FirstChild() const </div><div class="ttdoc">The first child of this node. Will be null if there are no children. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00525">tinyxml.h:525</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html"><div class="ttname"><a href="classTiXmlNode.html">TiXmlNode</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00426">tinyxml.h:426</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_acdb1faaf88a700b40ca2c8d9aee21139_cgraph.png" border="0" usemap="#classTiXmlHandle_acdb1faaf88a700b40ca2c8d9aee21139_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_acdb1faaf88a700b40ca2c8d9aee21139_cgraph" id="classTiXmlHandle_acdb1faaf88a700b40ca2c8d9aee21139_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="217,5,397,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c61f64ae9365d89c264f289085541f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::FirstChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a handle to the first child node with the given name. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01648">1648</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;{</div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;    {</div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;        <a class="code" href="classTiXmlNode.html">TiXmlNode</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">FirstChild</a>( value );</div>
+<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;    }</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a44c8eee26bbe2d1b2762038df9dde2f0"><div class="ttname"><a href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">TiXmlNode::FirstChild</a></div><div class="ttdeci">const TiXmlNode * FirstChild() const </div><div class="ttdoc">The first child of this node. Will be null if there are no children. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00525">tinyxml.h:525</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html"><div class="ttname"><a href="classTiXmlNode.html">TiXmlNode</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00426">tinyxml.h:426</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a8c61f64ae9365d89c264f289085541f8_cgraph.png" border="0" usemap="#classTiXmlHandle_a8c61f64ae9365d89c264f289085541f8_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a8c61f64ae9365d89c264f289085541f8_cgraph" id="classTiXmlHandle_a8c61f64ae9365d89c264f289085541f8_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="217,5,397,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a24d1112e995e937e4dddb202d4113d4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::FirstChildElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a handle to the first child element. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01660">1660</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;{</div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;    {</div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;        <a class="code" href="classTiXmlElement.html">TiXmlElement</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>();</div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;    }</div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_ab1f8d8e70d88aea4c5efedfe00862d55"><div class="ttname"><a href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">TiXmlNode::FirstChildElement</a></div><div class="ttdeci">const TiXmlElement * FirstChildElement() const </div><div class="ttdoc">Convenience function to get through elements. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00433">tinyxml.cpp:433</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlElement_html"><div class="ttname"><a href="classTiXmlElement.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00946">tinyxml.h:946</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a24d1112e995e937e4dddb202d4113d4a_cgraph.png" border="0" usemap="#classTiXmlHandle_a24d1112e995e937e4dddb202d4113d4a_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a24d1112e995e937e4dddb202d4113d4a_cgraph" id="classTiXmlHandle_a24d1112e995e937e4dddb202d4113d4a_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="265,5,445,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af0aea751320f5e430fac6f8fff3b8dd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::FirstChildElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a handle to the first child element with the given name. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01672">1672</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01640">TiXmlHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;{</div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> )</div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;    {</div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;        <a class="code" href="classTiXmlElement.html">TiXmlElement</a>* child = <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>( value );</div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;        <span class="keywordflow">if</span> ( child )</div>
+<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( child );</div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;    }</div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle</a>( 0 );</div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;}</div>
+<div class="ttc" id="classTiXmlHandle_html_aba18fd7bdefb942ecdea4bf4b8e29ec8"><div class="ttname"><a href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8">TiXmlHandle::TiXmlHandle</a></div><div class="ttdeci">TiXmlHandle(TiXmlNode *_node)</div><div class="ttdoc">Create a handle from any node (at any depth of the tree.) This can be a null pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01640">tinyxml.h:1640</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_ab1f8d8e70d88aea4c5efedfe00862d55"><div class="ttname"><a href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">TiXmlNode::FirstChildElement</a></div><div class="ttdeci">const TiXmlElement * FirstChildElement() const </div><div class="ttdoc">Convenience function to get through elements. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00433">tinyxml.cpp:433</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlElement_html"><div class="ttname"><a href="classTiXmlElement.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00946">tinyxml.h:946</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_af0aea751320f5e430fac6f8fff3b8dd4_cgraph.png" border="0" usemap="#classTiXmlHandle_af0aea751320f5e430fac6f8fff3b8dd4_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_af0aea751320f5e430fac6f8fff3b8dd4_cgraph" id="classTiXmlHandle_af0aea751320f5e430fac6f8fff3b8dd4_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer. " alt="" coords="265,5,445,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab44b723a8dc9af72838a303c079d0376"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlNode.html">TiXmlNode</a>* TiXmlHandle::Node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用:</a></b></dt><dd>use ToNode. Return the handle as a <a class="el" href="classTiXmlNode.html">TiXmlNode</a>. This may return null. </dd></dl>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01697">1697</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01683">ToNode()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#af678e5088e83be67baf76f699756f2c3">ToNode</a>(); } </div>
+<div class="ttc" id="classTiXmlHandle_html_af678e5088e83be67baf76f699756f2c3"><div class="ttname"><a href="classTiXmlHandle.html#af678e5088e83be67baf76f699756f2c3">TiXmlHandle::ToNode</a></div><div class="ttdeci">TiXmlNode * ToNode() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01683">tinyxml.h:1683</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_ab44b723a8dc9af72838a303c079d0376_cgraph.png" border="0" usemap="#classTiXmlHandle_ab44b723a8dc9af72838a303c079d0376_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_ab44b723a8dc9af72838a303c079d0376_cgraph" id="classTiXmlHandle_ab44b723a8dc9af72838a303c079d0376_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#af678e5088e83be67baf76f699756f2c3" title="TiXmlHandle::ToNode" alt="" coords="190,5,341,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8e5dcf6a87882674203157f29f8e4db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> TiXmlHandle::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlHandle.html">TiXmlHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01643">1643</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01712">node</a>.</p>
+<div class="fragment"><div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;{ this-&gt;<a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> = ref.<a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>; <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9fc739c8a18d160006f82572fc143d13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlText.html">TiXmlText</a>* TiXmlHandle::Text </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">弃用:</a></b></dt><dd>use <a class="el" href="classTiXmlHandle.html#a4ac53a652296203a5b5e13854d923586">ToText()</a> Return the handle as a <a class="el" href="classTiXmlText.html">TiXmlText</a>. This may return null. </dd></dl>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01705">1705</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01689">ToText()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#a4ac53a652296203a5b5e13854d923586">ToText</a>(); }</div>
+<div class="ttc" id="classTiXmlHandle_html_a4ac53a652296203a5b5e13854d923586"><div class="ttname"><a href="classTiXmlHandle.html#a4ac53a652296203a5b5e13854d923586">TiXmlHandle::ToText</a></div><div class="ttdeci">TiXmlText * ToText() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01689">tinyxml.h:1689</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a9fc739c8a18d160006f82572fc143d13_cgraph.png" border="0" usemap="#classTiXmlHandle_a9fc739c8a18d160006f82572fc143d13_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a9fc739c8a18d160006f82572fc143d13_cgraph" id="classTiXmlHandle_a9fc739c8a18d160006f82572fc143d13_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#a4ac53a652296203a5b5e13854d923586" title="TiXmlHandle::ToText" alt="" coords="184,5,331,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abc6e7ed383a5fe1e52b0c0004b457b9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlElement.html">TiXmlElement</a>* TiXmlHandle::ToElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the handle as a <a class="el" href="classTiXmlElement.html">TiXmlElement</a>. This may return null. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01686">1686</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8h_source.html#l01701">Element()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;{ <span class="keywordflow">return</span> ( ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> &amp;&amp; <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a72abed96dc9667ab9e0a2a275301bb1c">ToElement</a>() ) ? <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a72abed96dc9667ab9e0a2a275301bb1c">ToElement</a>() : 0 ); }</div>
+<div class="ttc" id="classTiXmlNode_html_a72abed96dc9667ab9e0a2a275301bb1c"><div class="ttname"><a href="classTiXmlNode.html#a72abed96dc9667ab9e0a2a275301bb1c">TiXmlNode::ToElement</a></div><div class="ttdeci">virtual const TiXmlElement * ToElement() const </div><div class="ttdoc">Cast to a more defined type. Will return null if not of the requested type. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00701">tinyxml.h:701</a></div></div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_abc6e7ed383a5fe1e52b0c0004b457b9e_icgraph.png" border="0" usemap="#classTiXmlHandle_abc6e7ed383a5fe1e52b0c0004b457b9e_icgraph" alt=""/></div>
+<map name="classTiXmlHandle_abc6e7ed383a5fe1e52b0c0004b457b9e_icgraph" id="classTiXmlHandle_abc6e7ed383a5fe1e52b0c0004b457b9e_icgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#acb5fe8388a526289ea65e817a51e05e7" title="TiXmlHandle::Element" alt="" coords="222,5,375,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af678e5088e83be67baf76f699756f2c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlNode.html">TiXmlNode</a>* TiXmlHandle::ToNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the handle as a <a class="el" href="classTiXmlNode.html">TiXmlNode</a>. This may return null. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01683">1683</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01712">node</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8h_source.html#l01697">Node()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>; } </div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_af678e5088e83be67baf76f699756f2c3_icgraph.png" border="0" usemap="#classTiXmlHandle_af678e5088e83be67baf76f699756f2c3_icgraph" alt=""/></div>
+<map name="classTiXmlHandle_af678e5088e83be67baf76f699756f2c3_icgraph" id="classTiXmlHandle_af678e5088e83be67baf76f699756f2c3_icgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#ab44b723a8dc9af72838a303c079d0376" title="TiXmlHandle::Node" alt="" coords="205,5,341,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ac53a652296203a5b5e13854d923586"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlText.html">TiXmlText</a>* TiXmlHandle::ToText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the handle as a <a class="el" href="classTiXmlText.html">TiXmlText</a>. This may return null. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01689">1689</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8h_source.html#l01705">Text()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;{ <span class="keywordflow">return</span> ( ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> &amp;&amp; <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a95a46a52c525992d6b4ee08beb14cd69">ToText</a>() ) ? <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#a95a46a52c525992d6b4ee08beb14cd69">ToText</a>() : 0 ); }</div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a95a46a52c525992d6b4ee08beb14cd69"><div class="ttname"><a href="classTiXmlNode.html#a95a46a52c525992d6b4ee08beb14cd69">TiXmlNode::ToText</a></div><div class="ttdeci">virtual const TiXmlText * ToText() const </div><div class="ttdoc">Cast to a more defined type. Will return null if not of the requested type. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00704">tinyxml.h:704</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a4ac53a652296203a5b5e13854d923586_icgraph.png" border="0" usemap="#classTiXmlHandle_a4ac53a652296203a5b5e13854d923586_icgraph" alt=""/></div>
+<map name="classTiXmlHandle_a4ac53a652296203a5b5e13854d923586_icgraph" id="classTiXmlHandle_a4ac53a652296203a5b5e13854d923586_icgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#a9fc739c8a18d160006f82572fc143d13" title="TiXmlHandle::Text" alt="" coords="200,5,331,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1381c17507a130767b1e23afc93b3674"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a>* TiXmlHandle::ToUnknown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the handle as a <a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a>. This may return null. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01692">1692</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8h_source.html#l01709">Unknown()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;{ <span class="keywordflow">return</span> ( ( <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a> &amp;&amp; <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#afd7205cf31d7a376929f8a36930627a2">ToUnknown</a>() ) ? <a class="code" href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">node</a>-&gt;<a class="code" href="classTiXmlNode.html#afd7205cf31d7a376929f8a36930627a2">ToUnknown</a>() : 0 ); }</div>
+<div class="ttc" id="classTiXmlHandle_html_ac5429de14bb78b16288bac5bf33c6858"><div class="ttname"><a href="classTiXmlHandle.html#ac5429de14bb78b16288bac5bf33c6858">TiXmlHandle::node</a></div><div class="ttdeci">TiXmlNode * node</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01712">tinyxml.h:1712</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_afd7205cf31d7a376929f8a36930627a2"><div class="ttname"><a href="classTiXmlNode.html#afd7205cf31d7a376929f8a36930627a2">TiXmlNode::ToUnknown</a></div><div class="ttdeci">virtual const TiXmlUnknown * ToUnknown() const </div><div class="ttdoc">Cast to a more defined type. Will return null if not of the requested type. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00703">tinyxml.h:703</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a1381c17507a130767b1e23afc93b3674_icgraph.png" border="0" usemap="#classTiXmlHandle_a1381c17507a130767b1e23afc93b3674_icgraph" alt=""/></div>
+<map name="classTiXmlHandle_a1381c17507a130767b1e23afc93b3674_icgraph" id="classTiXmlHandle_a1381c17507a130767b1e23afc93b3674_icgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#a49675b74357ba2aae124657a9a1ef465" title="TiXmlHandle::Unknown" alt="" coords="229,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a49675b74357ba2aae124657a9a1ef465"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a>* TiXmlHandle::Unknown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">弃用:</a></b></dt><dd>use <a class="el" href="classTiXmlHandle.html#a1381c17507a130767b1e23afc93b3674">ToUnknown()</a> Return the handle as a <a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a>. This may return null. </dd></dl>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01709">1709</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01692">ToUnknown()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlHandle.html#a1381c17507a130767b1e23afc93b3674">ToUnknown</a>(); }</div>
+<div class="ttc" id="classTiXmlHandle_html_a1381c17507a130767b1e23afc93b3674"><div class="ttname"><a href="classTiXmlHandle.html#a1381c17507a130767b1e23afc93b3674">TiXmlHandle::ToUnknown</a></div><div class="ttdeci">TiXmlUnknown * ToUnknown() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01692">tinyxml.h:1692</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlHandle_a49675b74357ba2aae124657a9a1ef465_cgraph.png" border="0" usemap="#classTiXmlHandle_a49675b74357ba2aae124657a9a1ef465_cgraph" alt=""/></div>
+<map name="classTiXmlHandle_a49675b74357ba2aae124657a9a1ef465_cgraph" id="classTiXmlHandle_a49675b74357ba2aae124657a9a1ef465_cgraph">
+<area shape="rect" id="node2" href="classTiXmlHandle.html#a1381c17507a130767b1e23afc93b3674" title="TiXmlHandle::ToUnknown" alt="" coords="214,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ac5429de14bb78b16288bac5bf33c6858"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlNode.html">TiXmlNode</a>* TiXmlHandle::node</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01712">1712</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8h_source.html#l01643">operator=()</a>, <a class="el" href="tinyxml_8h_source.html#l01642">TiXmlHandle()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01683">ToNode()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tinyxml_8h_source.html">tinyxml.h</a></li>
+<li><a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="DC_USERSTAT" name="DC_USERSTAT">
+<area shape="rect" id="node2" href="$structServDataInfo.html" title="{LPServDataInfo\n|+ m_ucMonitorFlag\l+ m_ucZmFlag\l+ m_ucUserFlag\l+ m_usZmProcessNum\l+ m_usUserProcessNum\l+ m_usOnlienUserNum\l+ m_usMaxUserNum\l+ m_ucNfsFlag\l+ m_chZhdocData\l+ m_usZmCpu\l和 24 更多...\l|}" alt="" coords="141,363,312,587"/>
+<area shape="rect" id="node3" href="$structUserType.html" title="{LPUserType\n|+ YYBID\l+ online_user_num\l|}" alt="" coords="5,199,136,291"/>
+<area shape="rect" id="node4" href="$structUserVer.html" title="{LPUserVer\n|+ ver\l+ build\l+ online_user_num\l|}" alt="" coords="161,192,292,299"/>
+<area shape="rect" id="node5" href="$structStatHqsInfo.html" title="{LPStatHqsInfo\n|+ market_code\l+ main_hqs_flag\l+ init_flag\l|}" alt="" coords="317,192,435,299"/>
+<area shape="rect" id="node6" href="$structStatSingleHqsInfo.html" title="{LPStatSingleHqsInfo\n|+ exist_flag\l+ hqs_ip\l+ m_wLastSeq\l+ fresh_time\l|}" alt="" coords="304,6,448,127"/>
+</map>

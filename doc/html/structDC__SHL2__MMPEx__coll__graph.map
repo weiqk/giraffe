@@ -1,0 +1,4 @@
+<map id="DC_SHL2_MMPEx" name="DC_SHL2_MMPEx">
+<area shape="rect" id="node2" href="$structSH__L2__MMPEX.html" title="{SH_L2_MMPEX\n|+ m_wStkID\l+ m_dwAvgBuyPrice\l+ m_dwAvgSellPrice\l+ m_dwBuyPrice\l+ m_dwBuyVol\l+ m_dwSellPrice\l+ m_dwSellVol\l|}" alt="" coords="5,323,149,488"/>
+<area shape="rect" id="node3" href="$structMWORD.html" title="{MWORD\n|+ m_nBase\l+ m_nMul\l|+ MWORD()\l+ MWORD()\l+ MWORD()\l+ operator INT64()\l+ GetValue()\l+ GetABSValue()\l+ operator&#45;=()\l+ operator&#45;=()\l+ operator+=()\l+ operator+=()\l和 30 更多...\l}" alt="" coords="13,6,141,245"/>
+</map>

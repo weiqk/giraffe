@@ -1,0 +1,2106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: datacollect.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">datacollect.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="mword_8h_source.html">mword.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+datacollect.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="datacollect_8h__incl.png" border="0" usemap="#datacollect_8h" alt=""/></div>
+<map name="datacollect_8h" id="datacollect_8h">
+<area shape="rect" id="node2" href="mword_8h.html" title="mword.h" alt="" coords="672,80,744,107"/><area shape="rect" id="node3" href="stdafx_8h.html" title="stdafx.h" alt="" coords="673,155,743,181"/><area shape="rect" id="node4" href="ldgloble_8h.html" title="ldgloble.h" alt="" coords="669,229,745,256"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="datacollect_8h__dep__incl.png" border="0" usemap="#datacollect_8hdep" alt=""/></div>
+<map name="datacollect_8hdep" id="datacollect_8hdep">
+<area shape="rect" id="node2" href="combine__dc__packet_8cc.html" title="combine dc packet " alt="" coords="5,80,160,107"/><area shape="rect" id="node3" href="data_8h.html" title="data.h" alt="" coords="185,80,243,107"/><area shape="rect" id="node4" href="extract__dc_8h.html" title="extract_dc.h" alt="" coords="163,155,257,181"/><area shape="rect" id="node6" href="generalcps_8cpp.html" title="generalcps.cpp" alt="" coords="445,229,555,256"/><area shape="rect" id="node7" href="uncompress__dc__packet_8h.html" title="uncompress_dc_packet.h" alt="" coords="452,304,623,331"/><area shape="rect" id="node12" href="ds__dat_8h.html" title="ds_dat.h" alt="" coords="697,80,769,107"/><area shape="rect" id="node17" href="l2compress_8h.html" title="l2compress.h" alt="" coords="338,80,437,107"/><area shape="rect" id="node18" href="l2compress_8cpp.html" title="l2compress.cpp" alt="" coords="333,155,448,181"/><area shape="rect" id="node19" href="generalcps_8h.html" title="generalcps.h" alt="" coords="472,155,568,181"/><area shape="rect" id="node20" href="luaroutine_8h.html" title="luaroutine.h" alt="" coords="835,80,924,107"/><area shape="rect" id="node22" href="utils_8cc.html" title="some utils " alt="" coords="949,80,1013,107"/><area shape="rect" id="node5" href="extract__dc_8cc.html" title="extract dc package " alt="" coords="299,229,400,256"/><area shape="rect" id="node11" href="uncompress__dc__packet_8cc.html" title="uncompress dc packet " alt="" coords="448,379,627,405"/><area shape="rect" id="node8" href="shunt__net__packet_8h.html" title="shunt_net_packet.h" alt="" coords="741,379,876,405"/><area shape="rect" id="node9" href="monitor_8cc.html" title="main function " alt="" coords="700,453,781,480"/><area shape="rect" id="node10" href="shunt__net__packet_8cc.html" title="shunt net packet by connections " alt="" coords="806,453,948,480"/><area shape="rect" id="node13" href="dscomapi_8h.html" title="dscomapi.h" alt="" coords="694,155,783,181"/><area shape="rect" id="node14" href="DidUncompress_8h.html" title="DidUncompress.h" alt="" coords="737,229,863,256"/><area shape="rect" id="node16" href="public_8cpp.html" title="public.cpp" alt="" coords="631,229,712,256"/><area shape="rect" id="node15" href="DidUncompress_8cpp.html" title="DidUncompress.cpp" alt="" coords="647,304,787,331"/><area shape="rect" id="node21" href="luaroutine_8cc.html" title="send to lua script " alt="" coords="939,155,1035,181"/></map>
+</div>
+</div>
+<p><a href="datacollect_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUINT24.html">UINT24</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTK__STATIC.html">STK_STATIC</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTK__STATICEx.html">STK_STATICEx</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structINDUSTRY__CLASIFY.html">INDUSTRY_CLASIFY</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTK__DYNA.html">STK_DYNA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTK__HKDYNA.html">STK_HKDYNA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSTK__HKDYNA_1_1HK__BROKER.html">STK_HKDYNA::HK_BROKER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSH__L2__MMPEX.html">SH_L2_MMPEX</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInOrder.html">InOrder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSH__L2__REPORT.html">SH_L2_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSH__L2__BIG__WD.html">SH_L2_BIG_WD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSH__L2__ACCU__WD.html">SH_L2_ACCU_WD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSZL2__ORDER__FIVE.html">SZL2_ORDER_FIVE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSZL2__TRADE__FIVE.html">SZL2_TRADE_FIVE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSZ__L2__ORDER__STAT.html">SZ_L2_ORDER_STAT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__DSCRC.html">DC_DSCRC</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__DSDID.html">DC_DSDID</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__DSLEN.html">DC_DSLEN</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__DSDATA.html">DC_DSDATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__DIDHead.html">DC_DIDHead</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__DIDCompress.html">DC_DIDCompress</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZLIB__HEAD.html">ZLIB_HEAD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__HEAD.html">DC_HEAD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__KEEPALIVE.html">DC_KEEPALIVE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__LOGIN.html">DC_LOGIN</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__REQPASS.html">DC_REQPASS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__USERPASS.html">DC_USERPASS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__READY.html">DC_READY</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__RESEND.html">DC_RESEND</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__STKSTATIC.html">DC_STKSTATIC</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__STKDYNA.html">DC_STKDYNA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__SHL2__MMPEx.html">DC_SHL2_MMPEx</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__SHL2__QUEUE.html">DC_SHL2_QUEUE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__SHL2__REPORT.html">DC_SHL2_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__SHL2__BIG__WD.html">DC_SHL2_BIG_WD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__SHL2__ACCU__WD.html">DC_SHL2_ACCU_WD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__SZL2__ORDER__STAT.html">DC_SZL2_ORDER_STAT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__XML.html">DC_XML</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__GENERAL.html">DC_GENERAL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatSingleHqsInfo.html">LPStatSingleHqsInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatHqsInfo.html">LPStatHqsInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUserType.html">LPUserType</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUserVer.html">LPUserVer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structServDataInfo.html">LPServDataInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__USERSTAT.html">DC_USERSTAT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDZH__AUT__GROUP.html">DZH_AUT_GROUP</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDZH__AUTHORIZE.html">DZH_AUTHORIZE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__RAWDATA.html">DC_RAWDATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDC__NEWS.html">DC_NEWS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac9c1d329af73af4b02d77a74d09164c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ac9c1d329af73af4b02d77a74d09164c0">SHL2_MMP_SIZE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ac9c1d329af73af4b02d77a74d09164c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a6a68bdb47aada7f86e332ae0034e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ab6a6a68bdb47aada7f86e332ae0034e7">QUEUE_TYPE_MASK</a>&#160;&#160;&#160;0xC0000000</td></tr>
+<tr class="separator:ab6a6a68bdb47aada7f86e332ae0034e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d127a9b8f75da9b307273ad6729d597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a4d127a9b8f75da9b307273ad6729d597">QUEUE_ORDER</a>&#160;&#160;&#160;0x0</td></tr>
+<tr class="separator:a4d127a9b8f75da9b307273ad6729d597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7613d9e566858f25e2811a81f43be3c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a7613d9e566858f25e2811a81f43be3c6">QUEUE_BUYPRICE</a>&#160;&#160;&#160;0x40000000</td></tr>
+<tr class="separator:a7613d9e566858f25e2811a81f43be3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88cf27f3fbe7c98759f73ca06b3ea27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ad88cf27f3fbe7c98759f73ca06b3ea27">QUEUE_SELLPRICE</a>&#160;&#160;&#160;0x80000000</td></tr>
+<tr class="separator:ad88cf27f3fbe7c98759f73ca06b3ea27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0912da69ea7a37625cde4e6c84a838d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a0912da69ea7a37625cde4e6c84a838d0">QUEUE_STOCKID</a>&#160;&#160;&#160;0xC0000000</td></tr>
+<tr class="separator:a0912da69ea7a37625cde4e6c84a838d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b016e5a69e4f75bcb83e2bf2813609"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a91b016e5a69e4f75bcb83e2bf2813609">QUEUE_ORDER_IN</a>&#160;&#160;&#160;0x20000000</td></tr>
+<tr class="separator:a91b016e5a69e4f75bcb83e2bf2813609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8732c21c96e2e1c5aa26deca8f162d8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a8732c21c96e2e1c5aa26deca8f162d8d">DC_PORT</a>&#160;&#160;&#160;9966</td></tr>
+<tr class="separator:a8732c21c96e2e1c5aa26deca8f162d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fcf4fbe822fb67c4b343befe4be74b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a58fcf4fbe822fb67c4b343befe4be74b">SIMPLE_ENCY_MASK</a>&#160;&#160;&#160;0x7C59ACDC</td></tr>
+<tr class="separator:a58fcf4fbe822fb67c4b343befe4be74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c958200751246902867611089f8bfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a82c958200751246902867611089f8bfe">DC_TAG</a>&#160;&#160;&#160;0x6C</td></tr>
+<tr class="separator:a82c958200751246902867611089f8bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198081b9ffec3b841a83c1341a3a62fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a198081b9ffec3b841a83c1341a3a62fd">DC_DUP</a>&#160;&#160;&#160;0x8000</td></tr>
+<tr class="separator:a198081b9ffec3b841a83c1341a3a62fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6188d14f2ced8566a90d3a9b0d5be054"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a6188d14f2ced8566a90d3a9b0d5be054">DCATTR_SHLEVEL2</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:a6188d14f2ced8566a90d3a9b0d5be054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da63b1de544be05138c38bb2c2e59eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a7da63b1de544be05138c38bb2c2e59eb">DCATTR_HKSEC</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a7da63b1de544be05138c38bb2c2e59eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833b6e8e0a28bb46229165d58ba894c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a833b6e8e0a28bb46229165d58ba894c0">DCATTR_VARTIME</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:a833b6e8e0a28bb46229165d58ba894c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7418825177e0a69d697c4087e70be9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a9c7418825177e0a69d697c4087e70be9">DCATTR_SZLEVEL2</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:a9c7418825177e0a69d697c4087e70be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfac44a023d3f88ce7b7833bb7dd001"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a6bfac44a023d3f88ce7b7833bb7dd001">DCATTR_INCODESTATIC</a>&#160;&#160;&#160;0x4000000</td></tr>
+<tr class="separator:a6bfac44a023d3f88ce7b7833bb7dd001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37acabd8728aaff8daee8314ba11a16b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a37acabd8728aaff8daee8314ba11a16b">DCATTR_NOSTATIC</a>&#160;&#160;&#160;0x8000000</td></tr>
+<tr class="separator:a37acabd8728aaff8daee8314ba11a16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551d5b1d2ecb8647e6acc836674e1e89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a551d5b1d2ecb8647e6acc836674e1e89">DCATTR_DIDSTATIC</a>&#160;&#160;&#160;0x10000000</td></tr>
+<tr class="separator:a551d5b1d2ecb8647e6acc836674e1e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ef6be7f0a3f451b661a734ac47104b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a27ef6be7f0a3f451b661a734ac47104b">DCATTR_DIDDAT</a>&#160;&#160;&#160;0x20000000</td></tr>
+<tr class="separator:a27ef6be7f0a3f451b661a734ac47104b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cf22de5e3dd407344c6fe16bdba58d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ae8cf22de5e3dd407344c6fe16bdba58d">DCATTR_FULLDATA</a>&#160;&#160;&#160;0x40000000</td></tr>
+<tr class="separator:ae8cf22de5e3dd407344c6fe16bdba58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972ed0b4ee4056c84950c40199dcaee2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a972ed0b4ee4056c84950c40199dcaee2">DCATTR_RAWSVR</a>&#160;&#160;&#160;0x80000000</td></tr>
+<tr class="separator:a972ed0b4ee4056c84950c40199dcaee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6639d91862f5af32587212761d0d6f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ae6639d91862f5af32587212761d0d6f1">DC_ADDSTK</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:ae6639d91862f5af32587212761d0d6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a08dbd7ffa52187bc6aefc99ff8df9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a50a08dbd7ffa52187bc6aefc99ff8df9">DC_LABEL_CHANGED</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a50a08dbd7ffa52187bc6aefc99ff8df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2477eea1265f9452fd80d043614e5380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a2477eea1265f9452fd80d043614e5380">DC_NAME_CHANGED</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:a2477eea1265f9452fd80d043614e5380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2860842dd1ad56f4e32bc2f08e66fe62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a2860842dd1ad56f4e32bc2f08e66fe62">DC_DATA_CHANGED</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:a2860842dd1ad56f4e32bc2f08e66fe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8b655e1b6c41e602446e7ada911cf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a3e8b655e1b6c41e602446e7ada911cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76043353920f3befe78f8b1644c29f83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a76043353920f3befe78f8b1644c29f83">GENERAL_VAR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a76043353920f3befe78f8b1644c29f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0442eed80e8bc07628b69788c4067a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aa0442eed80e8bc07628b69788c4067a5">GENERAL_ATTR_MASK</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:aa0442eed80e8bc07628b69788c4067a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa98cd1796d8704426a15713113b65cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aaa98cd1796d8704426a15713113b65cf">GENERAL_FLOAT</a>&#160;&#160;&#160;0x100</td></tr>
+<tr class="separator:aaa98cd1796d8704426a15713113b65cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739382338946966914623920177c5d3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a739382338946966914623920177c5d3e">GENERAL_DWORD</a>&#160;&#160;&#160;0x200</td></tr>
+<tr class="separator:a739382338946966914623920177c5d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2f1c3bb1dc2ab89428df4bba29fcf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a6d2f1c3bb1dc2ab89428df4bba29fcf8">GENERAL_CHAR</a>&#160;&#160;&#160;0x300</td></tr>
+<tr class="separator:a6d2f1c3bb1dc2ab89428df4bba29fcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94097c3405a69be3da84c775d287b74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ab94097c3405a69be3da84c775d287b74">GENERAL_TIMEFLOAT</a>&#160;&#160;&#160;0x400</td></tr>
+<tr class="separator:ab94097c3405a69be3da84c775d287b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea7fb03c9b98ea57479d5223876174f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a5ea7fb03c9b98ea57479d5223876174f">GENERAL_STRUCT</a>&#160;&#160;&#160;0x500</td></tr>
+<tr class="separator:a5ea7fb03c9b98ea57479d5223876174f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6653467fb2265c719f495d9773b879"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a5f6653467fb2265c719f495d9773b879">GENERAL_TYPE_MASK</a>&#160;&#160;&#160;0xF00</td></tr>
+<tr class="separator:a5f6653467fb2265c719f495d9773b879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad1901c878efa5d16c7c6d94af0f666"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#acad1901c878efa5d16c7c6d94af0f666">GENERAL_STATIC</a>&#160;&#160;&#160;0x1000</td></tr>
+<tr class="separator:acad1901c878efa5d16c7c6d94af0f666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183d24582d15230afcb8cefb778b74cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a183d24582d15230afcb8cefb778b74cf">GENERAL_WHOLE</a>&#160;&#160;&#160;0x10000000</td></tr>
+<tr class="separator:a183d24582d15230afcb8cefb778b74cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46cd3ef89a1714db5005647a96acb28e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a46cd3ef89a1714db5005647a96acb28e">GENERAL_INTR_SEND</a>&#160;&#160;&#160;0x20000000</td></tr>
+<tr class="separator:a46cd3ef89a1714db5005647a96acb28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f582eee2fbb9b2541a0b484301cac4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ac8f582eee2fbb9b2541a0b484301cac4">GENERAL_CONN_SEND</a>&#160;&#160;&#160;0x40000000</td></tr>
+<tr class="separator:ac8f582eee2fbb9b2541a0b484301cac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7923366a2c8b24e27c6f01f3495a07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a4d7923366a2c8b24e27c6f01f3495a07">GENERAL_DIR_SEND</a>&#160;&#160;&#160;0x80000000</td></tr>
+<tr class="separator:a4d7923366a2c8b24e27c6f01f3495a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adead3603f7d3a8236358b2d2eae928bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#adead3603f7d3a8236358b2d2eae928bb">GENERAL_FLOAT_FIX</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>|<a class="el" href="datacollect_8h.html#aaa98cd1796d8704426a15713113b65cf">GENERAL_FLOAT</a>)</td></tr>
+<tr class="separator:adead3603f7d3a8236358b2d2eae928bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423a65f13a3f3302ac2a39300263e214"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a423a65f13a3f3302ac2a39300263e214">GENERAL_FLOAT_VAR</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a76043353920f3befe78f8b1644c29f83">GENERAL_VAR</a>|<a class="el" href="datacollect_8h.html#ab94097c3405a69be3da84c775d287b74">GENERAL_TIMEFLOAT</a>)</td></tr>
+<tr class="separator:a423a65f13a3f3302ac2a39300263e214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87474e89f331beb969e32b981f5503e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a87474e89f331beb969e32b981f5503e6">GENERAL_STRING_VAR</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a76043353920f3befe78f8b1644c29f83">GENERAL_VAR</a>|<a class="el" href="datacollect_8h.html#a6d2f1c3bb1dc2ab89428df4bba29fcf8">GENERAL_CHAR</a>)</td></tr>
+<tr class="separator:a87474e89f331beb969e32b981f5503e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1acb621fe4531f523aafa782e34f313"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ae1acb621fe4531f523aafa782e34f313">GENERAL_STRING_FIX</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>|<a class="el" href="datacollect_8h.html#a6d2f1c3bb1dc2ab89428df4bba29fcf8">GENERAL_CHAR</a>)</td></tr>
+<tr class="separator:ae1acb621fe4531f523aafa782e34f313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e39321a2644f6028042b53f741dffab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a7e39321a2644f6028042b53f741dffab">GENERAL_STRUCT_FIX</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>|<a class="el" href="datacollect_8h.html#a5ea7fb03c9b98ea57479d5223876174f">GENERAL_STRUCT</a>)</td></tr>
+<tr class="separator:a7e39321a2644f6028042b53f741dffab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640a391df5dc70370df670434a0b01f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a640a391df5dc70370df670434a0b01f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18ae309a98a3081a9e4939a7dc31360"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ad18ae309a98a3081a9e4939a7dc31360">GE_IOPV</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ad18ae309a98a3081a9e4939a7dc31360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f386d2af89b62e029f286384aa662e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ad4f386d2af89b62e029f286384aa662e">GE_MATU_YLD</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ad4f386d2af89b62e029f286384aa662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f199cde75b91fd5b3b567deae8f287"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aa5f199cde75b91fd5b3b567deae8f287">GE_HKREL_TXT</a>&#160;&#160;&#160;1001</td></tr>
+<tr class="separator:aa5f199cde75b91fd5b3b567deae8f287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a110e23de0eb4fa3bd7a00c876959a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#af7a110e23de0eb4fa3bd7a00c876959a">GE_STATIC_EX</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>+1)</td></tr>
+<tr class="separator:af7a110e23de0eb4fa3bd7a00c876959a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4fac828a7a7329f099df7350d19b1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a1b4fac828a7a7329f099df7350d19b1a">GE_HKDYNA</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>+2)</td></tr>
+<tr class="separator:a1b4fac828a7a7329f099df7350d19b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af060dee5d70e58be54615368bfee3355"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#af060dee5d70e58be54615368bfee3355">GE_BLK_STK</a>&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>+3)</td></tr>
+<tr class="separator:af060dee5d70e58be54615368bfee3355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ef5db4078596f261c3269a12805402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a43ef5db4078596f261c3269a12805402">USERNAMELEN</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a43ef5db4078596f261c3269a12805402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f60e00c47b148ac594713885154170"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ad8f60e00c47b148ac594713885154170">USERPWDLEN</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ad8f60e00c47b148ac594713885154170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1ff34b749fa69804aab0d6620bd5b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ade1ff34b749fa69804aab0d6620bd5b4">DZH_AGTYPE_MASK</a>&#160;&#160;&#160;0xE000</td></tr>
+<tr class="separator:ade1ff34b749fa69804aab0d6620bd5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130dad276d0f5a3f795de1dcbb028060"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a130dad276d0f5a3f795de1dcbb028060">DZH_AGGROUP_MASK</a>&#160;&#160;&#160;0x1FFF</td></tr>
+<tr class="separator:a130dad276d0f5a3f795de1dcbb028060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffd1eb44425777db23fdde4646c973e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aeffd1eb44425777db23fdde4646c973e">DZH_AUT_GROUP_SIZE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:aeffd1eb44425777db23fdde4646c973e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab060708beb37a28ccd60a78777c5a5f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ab060708beb37a28ccd60a78777c5a5f4">RAW_INITDEL</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:ab060708beb37a28ccd60a78777c5a5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8558163a2139b9ccef4bf76afa296a6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a8558163a2139b9ccef4bf76afa296a6c">RAW_SVRUSE</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a8558163a2139b9ccef4bf76afa296a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5583eb3604fb38de738d9038317792d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ad5583eb3604fb38de738d9038317792d">RAW_BROADCAST</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:ad5583eb3604fb38de738d9038317792d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca3f833b31a8de92d302212ff709c9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#acca3f833b31a8de92d302212ff709c9b">RAW_SVRSAVE_BC</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:acca3f833b31a8de92d302212ff709c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1ae5c73816289baf3fc235d8cb3e52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a3a1ae5c73816289baf3fc235d8cb3e52">RAW_CLIENT_BC</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a3a1ae5c73816289baf3fc235d8cb3e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3ba0083d78d25c7beb4091357a9c3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a9c3ba0083d78d25c7beb4091357a9c3f">RAW_AUTHORIZE</a>&#160;&#160;&#160;0x4000</td></tr>
+<tr class="separator:a9c3ba0083d78d25c7beb4091357a9c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b1c068230d0c582039bdf25f9ac7ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ac8b1c068230d0c582039bdf25f9ac7ce">RAW_ZLIBCPS</a>&#160;&#160;&#160;0x8000</td></tr>
+<tr class="separator:ac8b1c068230d0c582039bdf25f9ac7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3460f990ad650ba80789983f541e20f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a3460f990ad650ba80789983f541e20f2">RAW_AES</a>&#160;&#160;&#160;0x10000</td></tr>
+<tr class="separator:a3460f990ad650ba80789983f541e20f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30e2ce7462fa33c567c9b5c3ae6814c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#af30e2ce7462fa33c567c9b5c3ae6814c">RAW_NOSAVE</a>&#160;&#160;&#160;0x20000</td></tr>
+<tr class="separator:af30e2ce7462fa33c567c9b5c3ae6814c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edd0286c0e427886ef69c3f7d3d0f87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a7edd0286c0e427886ef69c3f7d3d0f87">FIX_BJ</a>&#160;&#160;&#160;&quot;ZQ_QDBJ.txt&quot;</td></tr>
+<tr class="separator:a7edd0286c0e427886ef69c3f7d3d0f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da0b485c62b04d444a078b3874c9fd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a7da0b485c62b04d444a078b3874c9fd3">FIX_HQ</a>&#160;&#160;&#160;&quot;ZQ_CJHQ.txt&quot;</td></tr>
+<tr class="separator:a7da0b485c62b04d444a078b3874c9fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f52069a7e27b6db6009019db2ff462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a24f52069a7e27b6db6009019db2ff462">FIX_MX</a>&#160;&#160;&#160;&quot;ZQ_CJMX.txt&quot;</td></tr>
+<tr class="separator:a24f52069a7e27b6db6009019db2ff462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fc135f4e52c63685a18fbfd4dbdcbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ac1fc135f4e52c63685a18fbfd4dbdcbf">FIX_XX</a>&#160;&#160;&#160;&quot;ZQ_ZQXX.txt&quot;</td></tr>
+<tr class="separator:ac1fc135f4e52c63685a18fbfd4dbdcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef74e2ffd2054d42c08a9156a4f797b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a4ef74e2ffd2054d42c08a9156a4f797b">MK_VARTIME</a>&#160;&#160;&#160;&quot;MK_VT.txt&quot;</td></tr>
+<tr class="separator:a4ef74e2ffd2054d42c08a9156a4f797b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbdb8fa38ea1ea7f76182ab8db03389"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a0bbdb8fa38ea1ea7f76182ab8db03389">L2_STAT_FILE</a>&#160;&#160;&#160;&quot;L2STAT.ZIP&quot;</td></tr>
+<tr class="separator:a0bbdb8fa38ea1ea7f76182ab8db03389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfbc58abb0ac591aac9be2845a1f0ff3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#adfbc58abb0ac591aac9be2845a1f0ff3">L2_STAT_CPS</a>&#160;&#160;&#160;&quot;L2STAT.CPS&quot;</td></tr>
+<tr class="separator:adfbc58abb0ac591aac9be2845a1f0ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2920a4116f8412a73d8359b1a2d8eea3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a2920a4116f8412a73d8359b1a2d8eea3">RAW_POOL_FILE</a>&#160;&#160;&#160;&quot;PLSVC.XML&quot;</td></tr>
+<tr class="separator:a2920a4116f8412a73d8359b1a2d8eea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247a0be64fed1e77ddd3cbe000625da8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a247a0be64fed1e77ddd3cbe000625da8">RAW_PLANA_FILE</a>&#160;&#160;&#160;&quot;PLANA.XML&quot;</td></tr>
+<tr class="separator:a247a0be64fed1e77ddd3cbe000625da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f954cdd6f80ed4bc1e093e7b48ff6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ad5f954cdd6f80ed4bc1e093e7b48ff6a">C_SOH</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:ad5f954cdd6f80ed4bc1e093e7b48ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba6664366989b3daed08d410a763e0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aaba6664366989b3daed08d410a763e0f">C_LBL</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:aaba6664366989b3daed08d410a763e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1100dcc8b3472a9dfe556903346d1f6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a1100dcc8b3472a9dfe556903346d1f6d">C_ID</a>&#160;&#160;&#160;0x3</td></tr>
+<tr class="separator:a1100dcc8b3472a9dfe556903346d1f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac023fdfd4ee6a87d4b3ea0c2069537ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ac023fdfd4ee6a87d4b3ea0c2069537ba">C_ATR</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:ac023fdfd4ee6a87d4b3ea0c2069537ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ae9534a38b84559bf7dedb92d74eb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#af6ae9534a38b84559bf7dedb92d74eb5">C_TIM</a>&#160;&#160;&#160;0x5</td></tr>
+<tr class="separator:af6ae9534a38b84559bf7dedb92d74eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea055234ea3187e7dca1fb61ee779e15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aea055234ea3187e7dca1fb61ee779e15">C_DAT</a>&#160;&#160;&#160;0x6</td></tr>
+<tr class="separator:aea055234ea3187e7dca1fb61ee779e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa126b46b82c9b4ea5bf1a00cb71dd644"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aa126b46b82c9b4ea5bf1a00cb71dd644">C_ENCODE</a>&#160;&#160;&#160;0xF</td></tr>
+<tr class="separator:aa126b46b82c9b4ea5bf1a00cb71dd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13723e8108a2db57362dcb42bd9fe01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#af13723e8108a2db57362dcb42bd9fe01">GNL_SZSTK_STATAS</a>&#160;&#160;&#160;8901</td></tr>
+<tr class="separator:af13723e8108a2db57362dcb42bd9fe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf41cfeff01330560272974354e195b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aecf41cfeff01330560272974354e195b">GNL_STKNAME_ENG</a>&#160;&#160;&#160;107</td></tr>
+<tr class="separator:aecf41cfeff01330560272974354e195b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf1fbee1a1a28888b9718dd5ea6b332"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a4bf1fbee1a1a28888b9718dd5ea6b332">GNL_ISIN</a>&#160;&#160;&#160;48</td></tr>
+<tr class="separator:a4bf1fbee1a1a28888b9718dd5ea6b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d4c0026b44a12aaf5d8f8bd4c725f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a60d4c0026b44a12aaf5d8f8bd4c725f6">GNL_ROUND_LOT</a>&#160;&#160;&#160;561</td></tr>
+<tr class="separator:a60d4c0026b44a12aaf5d8f8bd4c725f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d3add303ffacd11687cf36021f1d12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#ab1d3add303ffacd11687cf36021f1d12">RAW_NOTIFY_FILE</a>&#160;&#160;&#160;&quot;NTFY.NTF&quot;</td></tr>
+<tr class="separator:ab1d3add303ffacd11687cf36021f1d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa41c31deb23cad1d77c844e94d3762d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aaa41c31deb23cad1d77c844e94d3762d">RAW_ADVERTISE</a>&#160;&#160;&#160;&quot;ADVT.ZIP&quot;</td></tr>
+<tr class="separator:aaa41c31deb23cad1d77c844e94d3762d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d443e319a4e6a6152c0c68b6149e23e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a0d443e319a4e6a6152c0c68b6149e23e">RAW_COMMAND_FILE</a>&#160;&#160;&#160;&quot;COMD.XML&quot;</td></tr>
+<tr class="separator:a0d443e319a4e6a6152c0c68b6149e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8e00d0d781bd7d5d2979142b5f12bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a0e8e00d0d781bd7d5d2979142b5f12bf">RAW_DFIX_DATA</a>&#160;&#160;&#160;&quot;DFIX.DAT&quot;</td></tr>
+<tr class="separator:a0e8e00d0d781bd7d5d2979142b5f12bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aeb75636b4cf40079d53793523ece2d99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#aeb75636b4cf40079d53793523ece2d99">DC_RECFULL_TYPE</a> { <a class="el" href="datacollect_8h.html#aeb75636b4cf40079d53793523ece2d99a38292d662839c7f01ab68739d2a912cb">DC_RECFULL_FLAG</a> = 0x80000000
+ }</td></tr>
+<tr class="separator:aeb75636b4cf40079d53793523ece2d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804a1e471c26183da571955646dc02c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6">DC_TYPE</a> { <br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5">DCT_NUL</a> = 0, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92">DCT_KEEPALIVE</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f">DCT_LOGIN</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e">DCT_REQPASS</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61">DCT_USERnPASS</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4">DCT_READY</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d">DCT_RESEND</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f">DCT_STKSTATIC</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c">DCT_STKDYNA</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684">DCT_SHL2_MMPEx</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba">DCT_SHL2_REPORT</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37">DCT_SHL2_BIG_WD</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630">DCT_SHL2_ACCU_WD</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822">DCT_HK_STATIC</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5">DCT_HK_DYNA</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5">DCT_XML</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe">DCT_SHL2_QUEUE</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464">DCT_GENERAL</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7">DCT_USERSTAT</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267">DCT_RAWDATA</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2">DCT_NEWS</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd">DCT_SZL2_ORDER_QUEUE</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5">DCT_SZL2_ORDER_STAT</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0">DCT_DSCRC</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f">DCT_DSDID</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a">DCT_DSDATA</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30">DCT_DID</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60">DCT_DIDSTATIC</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477">DCT_INCODESTATIC</a>, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c">DCT_SZL2_ORDER_FIVE</a> =100, 
+<a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca">DCT_SZL2_TRADE_FIVE</a> =101
+<br/>
+ }</td></tr>
+<tr class="separator:a804a1e471c26183da571955646dc02c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034dbd69671c7979a030803b6c493199"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199">DC_ENCY_TYPE</a> { <br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a38fdd26e6fe272bde3d6cb8a12796c7a">DC_NOENC</a> = 0, 
+<a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199acc7c5375c2cfdffb170e03219b3e88fe">DC_ENCY_SIMPLE</a>, 
+<a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199abe92786d2b79d186a47c461f2be7daf9">DC_ENCY_DES</a>, 
+<a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a509bb7a5a90b92c57d16b0786202b4bb">DC_ENCY_AES</a>, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a3e90f631993eb9ffcac2142ea3b0c1de">DC_ENCY_MASK</a> = 7
+<br/>
+ }</td></tr>
+<tr class="separator:a034dbd69671c7979a030803b6c493199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abde1b9c65b4232ed4bc330ee50453d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453d">DC_COMPRESS_TYPE</a> { <br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da89a586d911d94035b719f20b49fdce43">DC_NOCOMPRESS</a> = 0, 
+<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae428054f63acb39c7269eda5dca8a48d">DC_STD_CPS</a> = 0x8, 
+<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae1b88f613a356e4d8bd2479e2fb1e00b">DC_ZLIB_CPS</a> = 0x10, 
+<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da7a5aeeb44243db2873c8ff8a818a685c">DC_ZIP_CPS</a> = 0x18, 
+<br/>
+&#160;&#160;<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dac9e99aae046cbc92031bb3e295f86a23">DC_EXT_CPS</a> = 0x20, 
+<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae5e522ade72b5d5762777dc525985704">DC_XMLCID_CPS</a> = 0x28, 
+<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da5a078d1613d82fda1cfc76ebffa30e0b">DC_SOCID_CPS</a> = 0x30, 
+<a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da064b570e9b8a7b6eb5f8413900234975">DC_CPS_MASK</a> = 0x38
+<br/>
+ }</td></tr>
+<tr class="separator:a5abde1b9c65b4232ed4bc330ee50453d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d95987c61b09bc503f198eea04ea484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484">DZH_GROUP_TYPE</a> { <a class="el" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484aca4246a453bc06ae911d056c45832524">DG_NIL</a> = 0, 
+<a class="el" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484afd97dc197189e605ebfbabfd5b9dc34f">DG_PRODUCT</a>, 
+<a class="el" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484ad60827a7c1d6f8076568b076bfe18cfa">DG_SC_CPY</a>, 
+<a class="el" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484a0745cb4ce2c6c2384170f1bcc5a4c023">DG_SC_DEP</a>
+ }</td></tr>
+<tr class="separator:a8d95987c61b09bc503f198eea04ea484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a8f6c78bd665f3f3947c32c643ad36721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structINDUSTRY__CLASIFY.html">INDUSTRY_CLASIFY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="datacollect_8h.html#a8f6c78bd665f3f3947c32c643ad36721">industryClasify</a> []</td></tr>
+<tr class="separator:a8f6c78bd665f3f3947c32c643ad36721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ac023fdfd4ee6a87d4b3ea0c2069537ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_ATR&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01168">1168</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea055234ea3187e7dca1fb61ee779e15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_DAT&#160;&#160;&#160;0x6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01170">1170</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa126b46b82c9b4ea5bf1a00cb71dd644"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_ENCODE&#160;&#160;&#160;0xF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01171">1171</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1100dcc8b3472a9dfe556903346d1f6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_ID&#160;&#160;&#160;0x3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01167">1167</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaba6664366989b3daed08d410a763e0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_LBL&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01166">1166</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5f954cdd6f80ed4bc1e093e7b48ff6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_SOH&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01165">1165</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6ae9534a38b84559bf7dedb92d74eb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_TIM&#160;&#160;&#160;0x5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01169">1169</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6639d91862f5af32587212761d0d6f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_ADDSTK&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00799">799</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2860842dd1ad56f4e32bc2f08e66fe62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_DATA_CHANGED&#160;&#160;&#160;0x8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00802">802</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a198081b9ffec3b841a83c1341a3a62fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_DUP&#160;&#160;&#160;0x8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00696">696</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50a08dbd7ffa52187bc6aefc99ff8df9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_LABEL_CHANGED&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00800">800</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2477eea1265f9452fd80d043614e5380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_NAME_CHANGED&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00801">801</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8732c21c96e2e1c5aa26deca8f162d8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_PORT&#160;&#160;&#160;9966</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00620">620</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82c958200751246902867611089f8bfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DC_TAG&#160;&#160;&#160;0x6C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00694">694</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="combine__dc__packet_8cc_source.html#l00113">CombineDCPacket::Combine()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>, <a class="el" href="uncompress__dc__packet_8cc_source.html#l00038">UncompressDCPacket::ExtractDataPack()</a>, <a class="el" href="combine__dc__packet_8cc_source.html#l00071">CombineDCPacket::IsDCHeader()</a> , 以及 <a class="el" href="shunt__net__packet_8cc_source.html#l00466">ShuntNetPacket::RunThreadFunc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27ef6be7f0a3f451b661a734ac47104b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_DIDDAT&#160;&#160;&#160;0x20000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00728">728</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a551d5b1d2ecb8647e6acc836674e1e89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_DIDSTATIC&#160;&#160;&#160;0x10000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00726">726</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8cf22de5e3dd407344c6fe16bdba58d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_FULLDATA&#160;&#160;&#160;0x40000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00729">729</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7da63b1de544be05138c38bb2c2e59eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_HKSEC&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00720">720</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bfac44a023d3f88ce7b7833bb7dd001"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_INCODESTATIC&#160;&#160;&#160;0x4000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00724">724</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37acabd8728aaff8daee8314ba11a16b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_NOSTATIC&#160;&#160;&#160;0x8000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00725">725</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a972ed0b4ee4056c84950c40199dcaee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_RAWSVR&#160;&#160;&#160;0x80000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00730">730</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6188d14f2ced8566a90d3a9b0d5be054"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_SHLEVEL2&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00719">719</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c7418825177e0a69d697c4087e70be9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_SZLEVEL2&#160;&#160;&#160;0x8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00722">722</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a833b6e8e0a28bb46229165d58ba894c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCATTR_VARTIME&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00721">721</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a130dad276d0f5a3f795de1dcbb028060"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DZH_AGGROUP_MASK&#160;&#160;&#160;0x1FFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01078">1078</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="datacollect_8h_source.html#l01089">DZH_AUT_GROUP::GetGroup()</a>, <a class="el" href="datacollect_8h_source.html#l01084">DZH_AUT_GROUP::SetData()</a> , 以及 <a class="el" href="datacollect_8h_source.html#l01090">DZH_AUT_GROUP::SetGroup()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade1ff34b749fa69804aab0d6620bd5b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DZH_AGTYPE_MASK&#160;&#160;&#160;0xE000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01077">1077</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="datacollect_8h_source.html#l01086">DZH_AUT_GROUP::GetType()</a>, <a class="el" href="datacollect_8h_source.html#l01084">DZH_AUT_GROUP::SetData()</a> , 以及 <a class="el" href="datacollect_8h_source.html#l01087">DZH_AUT_GROUP::SetType()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeffd1eb44425777db23fdde4646c973e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DZH_AUT_GROUP_SIZE&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01093">1093</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7edd0286c0e427886ef69c3f7d3d0f87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIX_BJ&#160;&#160;&#160;&quot;ZQ_QDBJ.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01139">1139</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7da0b485c62b04d444a078b3874c9fd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIX_HQ&#160;&#160;&#160;&quot;ZQ_CJHQ.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01140">1140</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24f52069a7e27b6db6009019db2ff462"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIX_MX&#160;&#160;&#160;&quot;ZQ_CJMX.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01141">1141</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1fc135f4e52c63685a18fbfd4dbdcbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIX_XX&#160;&#160;&#160;&quot;ZQ_ZQXX.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01142">1142</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af060dee5d70e58be54615368bfee3355"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_BLK_STK&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>+3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00970">970</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="utils_8cc_source.html#l00183">Utils::DCGeneral_IntypeToString()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b4fac828a7a7329f099df7350d19b1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_HKDYNA&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>+2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00969">969</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generalcps_8cpp_source.html#l00388">CompressGeneralData()</a>, <a class="el" href="utils_8cc_source.html#l00183">Utils::DCGeneral_IntypeToString()</a>, <a class="el" href="generalcps_8cpp_source.html#l00435">ExpandGeneralData()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5f199cde75b91fd5b3b567deae8f287"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_HKREL_TXT&#160;&#160;&#160;1001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00966">966</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="utils_8cc_source.html#l00183">Utils::DCGeneral_IntypeToString()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad18ae309a98a3081a9e4939a7dc31360"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_IOPV&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00964">964</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="utils_8cc_source.html#l00183">Utils::DCGeneral_IntypeToString()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4f386d2af89b62e029f286384aa662e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_MATU_YLD&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00965">965</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="utils_8cc_source.html#l00183">Utils::DCGeneral_IntypeToString()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a640a391df5dc70370df670434a0b01f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_MAX_EXTRA&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00962">962</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7a110e23de0eb4fa3bd7a00c876959a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GE_STATIC_EX&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a640a391df5dc70370df670434a0b01f2">GE_MAX_EXTRA</a>+1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00968">968</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generalcps_8cpp_source.html#l00388">CompressGeneralData()</a>, <a class="el" href="utils_8cc_source.html#l00183">Utils::DCGeneral_IntypeToString()</a>, <a class="el" href="generalcps_8cpp_source.html#l00435">ExpandGeneralData()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0442eed80e8bc07628b69788c4067a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_ATTR_MASK&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00919">919</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d2f1c3bb1dc2ab89428df4bba29fcf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_CHAR&#160;&#160;&#160;0x300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00923">923</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8f582eee2fbb9b2541a0b484301cac4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_CONN_SEND&#160;&#160;&#160;0x40000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00932">932</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d7923366a2c8b24e27c6f01f3495a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_DIR_SEND&#160;&#160;&#160;0x80000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00933">933</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a739382338946966914623920177c5d3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_DWORD&#160;&#160;&#160;0x200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00922">922</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e8b655e1b6c41e602446e7ada911cf4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_FIXED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00917">917</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa98cd1796d8704426a15713113b65cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_FLOAT&#160;&#160;&#160;0x100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00921">921</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adead3603f7d3a8236358b2d2eae928bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_FLOAT_FIX&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>|<a class="el" href="datacollect_8h.html#aaa98cd1796d8704426a15713113b65cf">GENERAL_FLOAT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00935">935</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a423a65f13a3f3302ac2a39300263e214"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_FLOAT_VAR&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a76043353920f3befe78f8b1644c29f83">GENERAL_VAR</a>|<a class="el" href="datacollect_8h.html#ab94097c3405a69be3da84c775d287b74">GENERAL_TIMEFLOAT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00936">936</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46cd3ef89a1714db5005647a96acb28e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_INTR_SEND&#160;&#160;&#160;0x20000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00931">931</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acad1901c878efa5d16c7c6d94af0f666"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_STATIC&#160;&#160;&#160;0x1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00928">928</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1acb621fe4531f523aafa782e34f313"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_STRING_FIX&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>|<a class="el" href="datacollect_8h.html#a6d2f1c3bb1dc2ab89428df4bba29fcf8">GENERAL_CHAR</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00938">938</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87474e89f331beb969e32b981f5503e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_STRING_VAR&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a76043353920f3befe78f8b1644c29f83">GENERAL_VAR</a>|<a class="el" href="datacollect_8h.html#a6d2f1c3bb1dc2ab89428df4bba29fcf8">GENERAL_CHAR</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00937">937</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ea7fb03c9b98ea57479d5223876174f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_STRUCT&#160;&#160;&#160;0x500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00925">925</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e39321a2644f6028042b53f741dffab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_STRUCT_FIX&#160;&#160;&#160;(<a class="el" href="datacollect_8h.html#a3e8b655e1b6c41e602446e7ada911cf4">GENERAL_FIXED</a>|<a class="el" href="datacollect_8h.html#a5ea7fb03c9b98ea57479d5223876174f">GENERAL_STRUCT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00939">939</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab94097c3405a69be3da84c775d287b74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_TIMEFLOAT&#160;&#160;&#160;0x400</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00924">924</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f6653467fb2265c719f495d9773b879"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_TYPE_MASK&#160;&#160;&#160;0xF00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00926">926</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76043353920f3befe78f8b1644c29f83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_VAR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00918">918</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generalcps_8cpp_source.html#l00435">ExpandGeneralData()</a> , 以及 <a class="el" href="uncompress__dc__packet_8cc_source.html#l00099">UncompressDCPacket::Uncompress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a183d24582d15230afcb8cefb778b74cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GENERAL_WHOLE&#160;&#160;&#160;0x10000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00930">930</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bf1fbee1a1a28888b9718dd5ea6b332"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNL_ISIN&#160;&#160;&#160;48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01193">1193</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60d4c0026b44a12aaf5d8f8bd4c725f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNL_ROUND_LOT&#160;&#160;&#160;561</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01194">1194</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aecf41cfeff01330560272974354e195b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNL_STKNAME_ENG&#160;&#160;&#160;107</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01192">1192</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af13723e8108a2db57362dcb42bd9fe01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNL_SZSTK_STATAS&#160;&#160;&#160;8901</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01191">1191</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfbc58abb0ac591aac9be2845a1f0ff3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define L2_STAT_CPS&#160;&#160;&#160;&quot;L2STAT.CPS&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01160">1160</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bbdb8fa38ea1ea7f76182ab8db03389"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define L2_STAT_FILE&#160;&#160;&#160;&quot;L2STAT.ZIP&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01159">1159</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ef74e2ffd2054d42c08a9156a4f797b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MK_VARTIME&#160;&#160;&#160;&quot;MK_VT.txt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01157">1157</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7613d9e566858f25e2811a81f43be3c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_BUYPRICE&#160;&#160;&#160;0x40000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00333">333</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a> , 以及 <a class="el" href="l2compress_8cpp_source.html#l00328">ExpandL2Queue()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d127a9b8f75da9b307273ad6729d597"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_ORDER&#160;&#160;&#160;0x0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00332">332</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a> , 以及 <a class="el" href="l2compress_8cpp_source.html#l00328">ExpandL2Queue()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91b016e5a69e4f75bcb83e2bf2813609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_ORDER_IN&#160;&#160;&#160;0x20000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00342">342</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad88cf27f3fbe7c98759f73ca06b3ea27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_SELLPRICE&#160;&#160;&#160;0x80000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00334">334</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a> , 以及 <a class="el" href="l2compress_8cpp_source.html#l00328">ExpandL2Queue()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0912da69ea7a37625cde4e6c84a838d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_STOCKID&#160;&#160;&#160;0xC0000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00335">335</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a> , 以及 <a class="el" href="l2compress_8cpp_source.html#l00328">ExpandL2Queue()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6a6a68bdb47aada7f86e332ae0034e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_TYPE_MASK&#160;&#160;&#160;0xC0000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00330">330</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa41c31deb23cad1d77c844e94d3762d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_ADVERTISE&#160;&#160;&#160;&quot;ADVT.ZIP&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01221">1221</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3460f990ad650ba80789983f541e20f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_AES&#160;&#160;&#160;0x10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01124">1124</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c3ba0083d78d25c7beb4091357a9c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_AUTHORIZE&#160;&#160;&#160;0x4000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01120">1120</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5583eb3604fb38de738d9038317792d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_BROADCAST&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01116">1116</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a1ae5c73816289baf3fc235d8cb3e52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_CLIENT_BC&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01118">1118</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d443e319a4e6a6152c0c68b6149e23e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_COMMAND_FILE&#160;&#160;&#160;&quot;COMD.XML&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01228">1228</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e8e00d0d781bd7d5d2979142b5f12bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_DFIX_DATA&#160;&#160;&#160;&quot;DFIX.DAT&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01235">1235</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab060708beb37a28ccd60a78777c5a5f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_INITDEL&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01114">1114</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af30e2ce7462fa33c567c9b5c3ae6814c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_NOSAVE&#160;&#160;&#160;0x20000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01125">1125</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1d3add303ffacd11687cf36021f1d12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_NOTIFY_FILE&#160;&#160;&#160;&quot;NTFY.NTF&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01204">1204</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a247a0be64fed1e77ddd3cbe000625da8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_PLANA_FILE&#160;&#160;&#160;&quot;PLANA.XML&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01163">1163</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2920a4116f8412a73d8359b1a2d8eea3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_POOL_FILE&#160;&#160;&#160;&quot;PLSVC.XML&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01162">1162</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acca3f833b31a8de92d302212ff709c9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_SVRSAVE_BC&#160;&#160;&#160;0x8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01117">1117</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8558163a2139b9ccef4bf76afa296a6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_SVRUSE&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01115">1115</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b1c068230d0c582039bdf25f9ac7ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_ZLIBCPS&#160;&#160;&#160;0x8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01123">1123</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9c1d329af73af4b02d77a74d09164c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHL2_MMP_SIZE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00309">309</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58fcf4fbe822fb67c4b343befe4be74b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SIMPLE_ENCY_MASK&#160;&#160;&#160;0x7C59ACDC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00660">660</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43ef5db4078596f261c3269a12805402"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USERNAMELEN&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00975">975</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8f60e00c47b148ac594713885154170"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USERPWDLEN&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00976">976</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453d">DC_COMPRESS_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453da89a586d911d94035b719f20b49fdce43"></a>DC_NOCOMPRESS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453dae428054f63acb39c7269eda5dca8a48d"></a>DC_STD_CPS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453dae1b88f613a356e4d8bd2479e2fb1e00b"></a>DC_ZLIB_CPS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453da7a5aeeb44243db2873c8ff8a818a685c"></a>DC_ZIP_CPS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453dac9e99aae046cbc92031bb3e295f86a23"></a>DC_EXT_CPS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453dae5e522ade72b5d5762777dc525985704"></a>DC_XMLCID_CPS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453da5a078d1613d82fda1cfc76ebffa30e0b"></a>DC_SOCID_CPS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5abde1b9c65b4232ed4bc330ee50453da064b570e9b8a7b6eb5f8413900234975"></a>DC_CPS_MASK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00671">671</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;{</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da89a586d911d94035b719f20b49fdce43">DC_NOCOMPRESS</a> = 0,      <span class="comment">//不压缩</span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae428054f63acb39c7269eda5dca8a48d">DC_STD_CPS</a> =    0x8,    <span class="comment">//标准方法</span></div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae1b88f613a356e4d8bd2479e2fb1e00b">DC_ZLIB_CPS</a> =   0x10,   <span class="comment">//ZLIB压缩</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da7a5aeeb44243db2873c8ff8a818a685c">DC_ZIP_CPS</a> =    0x18,   <span class="comment">//ZIP格式</span></div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dac9e99aae046cbc92031bb3e295f86a23">DC_EXT_CPS</a> =    0x20,   <span class="comment">//扩展压缩，自定义</span></div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae5e522ade72b5d5762777dc525985704">DC_XMLCID_CPS</a> = 0x28,   <span class="comment">//表示该数据用xmlcid模板压缩解压</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da5a078d1613d82fda1cfc76ebffa30e0b">DC_SOCID_CPS</a> =  0x30,   <span class="comment">//表式该数据用so库里socid函数模板压缩解压</span></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <a class="code" href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da064b570e9b8a7b6eb5f8413900234975">DC_CPS_MASK</a> = 0x38      <span class="comment">//压缩方法MASK</span></div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;};</div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453dae1b88f613a356e4d8bd2479e2fb1e00b"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae1b88f613a356e4d8bd2479e2fb1e00b">DC_ZLIB_CPS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00675">datacollect.h:675</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453dae5e522ade72b5d5762777dc525985704"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae5e522ade72b5d5762777dc525985704">DC_XMLCID_CPS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00678">datacollect.h:678</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453dae428054f63acb39c7269eda5dca8a48d"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dae428054f63acb39c7269eda5dca8a48d">DC_STD_CPS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00674">datacollect.h:674</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453da89a586d911d94035b719f20b49fdce43"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da89a586d911d94035b719f20b49fdce43">DC_NOCOMPRESS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00673">datacollect.h:673</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453da5a078d1613d82fda1cfc76ebffa30e0b"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da5a078d1613d82fda1cfc76ebffa30e0b">DC_SOCID_CPS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00679">datacollect.h:679</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453dac9e99aae046cbc92031bb3e295f86a23"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453dac9e99aae046cbc92031bb3e295f86a23">DC_EXT_CPS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00677">datacollect.h:677</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453da7a5aeeb44243db2873c8ff8a818a685c"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da7a5aeeb44243db2873c8ff8a818a685c">DC_ZIP_CPS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00676">datacollect.h:676</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a5abde1b9c65b4232ed4bc330ee50453da064b570e9b8a7b6eb5f8413900234975"><div class="ttname"><a href="datacollect_8h.html#a5abde1b9c65b4232ed4bc330ee50453da064b570e9b8a7b6eb5f8413900234975">DC_CPS_MASK</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00681">datacollect.h:681</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a034dbd69671c7979a030803b6c493199"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199">DC_ENCY_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a034dbd69671c7979a030803b6c493199a38fdd26e6fe272bde3d6cb8a12796c7a"></a>DC_NOENC</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a034dbd69671c7979a030803b6c493199acc7c5375c2cfdffb170e03219b3e88fe"></a>DC_ENCY_SIMPLE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a034dbd69671c7979a030803b6c493199abe92786d2b79d186a47c461f2be7daf9"></a>DC_ENCY_DES</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a034dbd69671c7979a030803b6c493199a509bb7a5a90b92c57d16b0786202b4bb"></a>DC_ENCY_AES</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a034dbd69671c7979a030803b6c493199a3e90f631993eb9ffcac2142ea3b0c1de"></a>DC_ENCY_MASK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00662">662</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;{</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <a class="code" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a38fdd26e6fe272bde3d6cb8a12796c7a">DC_NOENC</a> = 0,           <span class="comment">//明码传送</span></div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    <a class="code" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199acc7c5375c2cfdffb170e03219b3e88fe">DC_ENCY_SIMPLE</a>,         <span class="comment">//简单加密</span></div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <a class="code" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199abe92786d2b79d186a47c461f2be7daf9">DC_ENCY_DES</a>,            <span class="comment">//DES加密 (##)</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <a class="code" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a509bb7a5a90b92c57d16b0786202b4bb">DC_ENCY_AES</a>,            <span class="comment">//AES加密</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <a class="code" href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a3e90f631993eb9ffcac2142ea3b0c1de">DC_ENCY_MASK</a> = 7        <span class="comment">//加密方法MASK</span></div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;};</div>
+<div class="ttc" id="datacollect_8h_html_a034dbd69671c7979a030803b6c493199a38fdd26e6fe272bde3d6cb8a12796c7a"><div class="ttname"><a href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a38fdd26e6fe272bde3d6cb8a12796c7a">DC_NOENC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00664">datacollect.h:664</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a034dbd69671c7979a030803b6c493199abe92786d2b79d186a47c461f2be7daf9"><div class="ttname"><a href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199abe92786d2b79d186a47c461f2be7daf9">DC_ENCY_DES</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00666">datacollect.h:666</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a034dbd69671c7979a030803b6c493199a3e90f631993eb9ffcac2142ea3b0c1de"><div class="ttname"><a href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a3e90f631993eb9ffcac2142ea3b0c1de">DC_ENCY_MASK</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00669">datacollect.h:669</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a034dbd69671c7979a030803b6c493199acc7c5375c2cfdffb170e03219b3e88fe"><div class="ttname"><a href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199acc7c5375c2cfdffb170e03219b3e88fe">DC_ENCY_SIMPLE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00665">datacollect.h:665</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a034dbd69671c7979a030803b6c493199a509bb7a5a90b92c57d16b0786202b4bb"><div class="ttname"><a href="datacollect_8h.html#a034dbd69671c7979a030803b6c493199a509bb7a5a90b92c57d16b0786202b4bb">DC_ENCY_AES</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00667">datacollect.h:667</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aeb75636b4cf40079d53793523ece2d99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="datacollect_8h.html#aeb75636b4cf40079d53793523ece2d99">DC_RECFULL_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aeb75636b4cf40079d53793523ece2d99a38292d662839c7f01ab68739d2a912cb"></a>DC_RECFULL_FLAG</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00451">451</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;{</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <a class="code" href="datacollect_8h.html#aeb75636b4cf40079d53793523ece2d99a38292d662839c7f01ab68739d2a912cb">DC_RECFULL_FLAG</a> = 0x80000000,<span class="comment">//记录数全量标记MASK</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;};</div>
+<div class="ttc" id="datacollect_8h_html_aeb75636b4cf40079d53793523ece2d99a38292d662839c7f01ab68739d2a912cb"><div class="ttname"><a href="datacollect_8h.html#aeb75636b4cf40079d53793523ece2d99a38292d662839c7f01ab68739d2a912cb">DC_RECFULL_FLAG</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00453">datacollect.h:453</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a804a1e471c26183da571955646dc02c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6">DC_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5"></a>DCT_NUL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92"></a>DCT_KEEPALIVE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f"></a>DCT_LOGIN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e"></a>DCT_REQPASS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61"></a>DCT_USERnPASS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4"></a>DCT_READY</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d"></a>DCT_RESEND</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f"></a>DCT_STKSTATIC</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c"></a>DCT_STKDYNA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684"></a>DCT_SHL2_MMPEx</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba"></a>DCT_SHL2_REPORT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37"></a>DCT_SHL2_BIG_WD</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630"></a>DCT_SHL2_ACCU_WD</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822"></a>DCT_HK_STATIC</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5"></a>DCT_HK_DYNA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5"></a>DCT_XML</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe"></a>DCT_SHL2_QUEUE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464"></a>DCT_GENERAL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7"></a>DCT_USERSTAT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267"></a>DCT_RAWDATA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2"></a>DCT_NEWS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd"></a>DCT_SZL2_ORDER_QUEUE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5"></a>DCT_SZL2_ORDER_STAT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0"></a>DCT_DSCRC</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f"></a>DCT_DSDID</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a"></a>DCT_DSDATA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30"></a>DCT_DID</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60"></a>DCT_DIDSTATIC</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477"></a>DCT_INCODESTATIC</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c"></a>DCT_SZL2_ORDER_FIVE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca"></a>DCT_SZL2_TRADE_FIVE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00624">624</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;{</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5">DCT_NUL</a> = 0,</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92">DCT_KEEPALIVE</a>,          <span class="comment">//&lt;--&gt;保持连接1</span></div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f">DCT_LOGIN</a>,              <span class="comment">//&lt;--&gt;登陆以及采数机属性 2</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e">DCT_REQPASS</a>,            <span class="comment">//&lt;--&gt;要求用户名密码登陆3</span></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61">DCT_USERnPASS</a>,          <span class="comment">//&lt;--&gt;用户名密码4</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4">DCT_READY</a>,              <span class="comment">//--&gt;登陆成功，可以接收数据5</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d">DCT_RESEND</a>,             <span class="comment">//--&gt;重发数据包6</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f">DCT_STKSTATIC</a>,          <span class="comment">//&lt;--静态数据7</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c">DCT_STKDYNA</a>,            <span class="comment">//&lt;--动态行情8</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684">DCT_SHL2_MMPEx</a>,         <span class="comment">//&lt;--level2扩展买卖盘9</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba">DCT_SHL2_REPORT</a>,        <span class="comment">//&lt;--level2分笔成交10</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37">DCT_SHL2_BIG_WD</a>,        <span class="comment">//&lt;--level2即时最大撤单11</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630">DCT_SHL2_ACCU_WD</a>,       <span class="comment">//&lt;--level2累计最大撤单12</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822">DCT_HK_STATIC</a>,          <span class="comment">//&lt;--港股静态13</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5">DCT_HK_DYNA</a>,            <span class="comment">//&lt;--港股动态14</span></div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5">DCT_XML</a>,                <span class="comment">//&lt;--XML格式数据15</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe">DCT_SHL2_QUEUE</a>,         <span class="comment">//&lt;--买卖盘队列，level2特有16</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464">DCT_GENERAL</a>,            <span class="comment">//&lt;--通用数据17</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7">DCT_USERSTAT</a>,           <span class="comment">//--&gt;用户数量统计18</span></div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267">DCT_RAWDATA</a>,            <span class="comment">//&lt;--&gt;原始数据19</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2">DCT_NEWS</a>,               <span class="comment">//&lt;--公告新闻等文本类型数据20</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd">DCT_SZL2_ORDER_QUEUE</a>,   <span class="comment">//&lt;--委托队列，深圳Level2特有21</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5">DCT_SZL2_ORDER_STAT</a>,    <span class="comment">//&lt;--委托队列统计，深圳Level2特有22</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0">DCT_DSCRC</a>,              <span class="comment">//&lt;--did模板crc,23</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f">DCT_DSDID</a>,              <span class="comment">//&lt;--需要发送模板的did 24</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a">DCT_DSDATA</a>,             <span class="comment">//&lt;---did模板数据 25</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30">DCT_DID</a>,                <span class="comment">//DID数据,根据模板解析 26</span></div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60">DCT_DIDSTATIC</a>,          <span class="comment">//DID数据，模板号为100003，静态码表数据，结构为DC_HEAD+DC_STKSTATIC（不含STK_STATIC）+DC_DIDHEAD+DC_DIDCompress+DATA</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477">DCT_INCODESTATIC</a>,       <span class="comment">//&lt;--外码转换成内码后的静态数据,28</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c">DCT_SZL2_ORDER_FIVE</a>=100,<span class="comment">//&lt;--委托队列多笔明细，深圳Level2特有</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca">DCT_SZL2_TRADE_FIVE</a>=101,<span class="comment">//&lt;--成交,撤单队列多笔明细，深圳Level2特有</span></div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;};</div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2">DCT_NEWS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00646">datacollect.h:646</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe">DCT_SHL2_QUEUE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00642">datacollect.h:642</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5">DCT_NUL</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00626">datacollect.h:626</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba">DCT_SHL2_REPORT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00636">datacollect.h:636</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92">DCT_KEEPALIVE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00627">datacollect.h:627</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5">DCT_SZL2_ORDER_STAT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00648">datacollect.h:648</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4">DCT_READY</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00631">datacollect.h:631</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a">DCT_DSDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00651">datacollect.h:651</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d">DCT_RESEND</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00632">datacollect.h:632</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60">DCT_DIDSTATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00653">datacollect.h:653</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca">DCT_SZL2_TRADE_FIVE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00657">datacollect.h:657</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f">DCT_DSDID</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00650">datacollect.h:650</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7">DCT_USERSTAT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00644">datacollect.h:644</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477">DCT_INCODESTATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00654">datacollect.h:654</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e">DCT_REQPASS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00629">datacollect.h:629</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5">DCT_XML</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00641">datacollect.h:641</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464">DCT_GENERAL</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00643">datacollect.h:643</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267">DCT_RAWDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00645">datacollect.h:645</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30">DCT_DID</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00652">datacollect.h:652</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684">DCT_SHL2_MMPEx</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00635">datacollect.h:635</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822">DCT_HK_STATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00639">datacollect.h:639</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f">DCT_LOGIN</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00628">datacollect.h:628</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37">DCT_SHL2_BIG_WD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00637">datacollect.h:637</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0">DCT_DSCRC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00649">datacollect.h:649</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f">DCT_STKSTATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00633">datacollect.h:633</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61">DCT_USERnPASS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00630">datacollect.h:630</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c">DCT_SZL2_ORDER_FIVE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00656">datacollect.h:656</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c">DCT_STKDYNA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00634">datacollect.h:634</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5">DCT_HK_DYNA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00640">datacollect.h:640</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630">DCT_SHL2_ACCU_WD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00638">datacollect.h:638</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd">DCT_SZL2_ORDER_QUEUE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00647">datacollect.h:647</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8d95987c61b09bc503f198eea04ea484"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484">DZH_GROUP_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a8d95987c61b09bc503f198eea04ea484aca4246a453bc06ae911d056c45832524"></a>DG_NIL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a8d95987c61b09bc503f198eea04ea484afd97dc197189e605ebfbabfd5b9dc34f"></a>DG_PRODUCT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a8d95987c61b09bc503f198eea04ea484ad60827a7c1d6f8076568b076bfe18cfa"></a>DG_SC_CPY</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a8d95987c61b09bc503f198eea04ea484a0745cb4ce2c6c2384170f1bcc5a4c023"></a>DG_SC_DEP</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l01069">1069</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;{</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <a class="code" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484aca4246a453bc06ae911d056c45832524">DG_NIL</a> = 0,                 <span class="comment">//无效</span></div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    <a class="code" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484afd97dc197189e605ebfbabfd5b9dc34f">DG_PRODUCT</a>,                 <span class="comment">//产品</span></div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    <a class="code" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484ad60827a7c1d6f8076568b076bfe18cfa">DG_SC_CPY</a>,                  <span class="comment">//券商</span></div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    <a class="code" href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484a0745cb4ce2c6c2384170f1bcc5a4c023">DG_SC_DEP</a>,                  <span class="comment">//营业部，必须在DG_SC_CPY券商分类之后才有意义</span></div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;};</div>
+<div class="ttc" id="datacollect_8h_html_a8d95987c61b09bc503f198eea04ea484a0745cb4ce2c6c2384170f1bcc5a4c023"><div class="ttname"><a href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484a0745cb4ce2c6c2384170f1bcc5a4c023">DG_SC_DEP</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l01074">datacollect.h:1074</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a8d95987c61b09bc503f198eea04ea484aca4246a453bc06ae911d056c45832524"><div class="ttname"><a href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484aca4246a453bc06ae911d056c45832524">DG_NIL</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l01071">datacollect.h:1071</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a8d95987c61b09bc503f198eea04ea484ad60827a7c1d6f8076568b076bfe18cfa"><div class="ttname"><a href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484ad60827a7c1d6f8076568b076bfe18cfa">DG_SC_CPY</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l01073">datacollect.h:1073</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a8d95987c61b09bc503f198eea04ea484afd97dc197189e605ebfbabfd5b9dc34f"><div class="ttname"><a href="datacollect_8h.html#a8d95987c61b09bc503f198eea04ea484afd97dc197189e605ebfbabfd5b9dc34f">DG_PRODUCT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l01072">datacollect.h:1072</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a8f6c78bd665f3f3947c32c643ad36721"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="structINDUSTRY__CLASIFY.html">INDUSTRY_CLASIFY</a> industryClasify[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">=</div>
+<div class="line">{</div>
+<div class="line">    {<span class="charliteral">&#39;A&#39;</span>,<span class="stringliteral">&quot;农牧业&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;B&#39;</span>,<span class="stringliteral">&quot;采掘业&quot;</span>},</div>
+<div class="line">    {0x3043,<span class="stringliteral">&quot;食品饮料&quot;</span>},    </div>
+<div class="line">    {0x3143,<span class="stringliteral">&quot;纺织服装&quot;</span>},    </div>
+<div class="line">    {0x3243,<span class="stringliteral">&quot;木材家具&quot;</span>},    </div>
+<div class="line">    {0x3343,<span class="stringliteral">&quot;造纸印刷&quot;</span>},    </div>
+<div class="line">    {0x3443,<span class="stringliteral">&quot;石油化工&quot;</span>},    </div>
+<div class="line">    {0x3543,<span class="stringliteral">&quot;电子&quot;</span>},      </div>
+<div class="line">    {0x3643,<span class="stringliteral">&quot;金属材料&quot;</span>},    </div>
+<div class="line">    {0x3743,<span class="stringliteral">&quot;机械仪表&quot;</span>},    </div>
+<div class="line">    {0x3843,<span class="stringliteral">&quot;生物医药&quot;</span>},    </div>
+<div class="line">    {0x3943,<span class="stringliteral">&quot;其他制造&quot;</span>},    </div>
+<div class="line">    {<span class="charliteral">&#39;D&#39;</span>,<span class="stringliteral">&quot;供水供电&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;E&#39;</span>,<span class="stringliteral">&quot;建筑业&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;F&#39;</span>,<span class="stringliteral">&quot;交通仓储&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;G&#39;</span>,<span class="stringliteral">&quot;信息技术&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;H&#39;</span>,<span class="stringliteral">&quot;商业贸易&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;I&#39;</span>,<span class="stringliteral">&quot;金融保险&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;J&#39;</span>,<span class="stringliteral">&quot;房地产&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;K&#39;</span>,<span class="stringliteral">&quot;社会服务&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;L&#39;</span>,<span class="stringliteral">&quot;文化传播&quot;</span>},</div>
+<div class="line">    {<span class="charliteral">&#39;M&#39;</span>,<span class="stringliteral">&quot;综合类&quot;</span>}</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="datacollect_8h_source.html">datacollect.h</a> 第 <a class="el" href="datacollect_8h_source.html#l00237">237</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="generalcps_8cpp_source.html#l00031">CompressStaticEx()</a> , 以及 <a class="el" href="generalcps_8cpp_source.html#l00136">ExpandStaticEx()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

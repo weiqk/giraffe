@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: asan_symbolize.LLVMSymbolizer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceasan__symbolize.html">asan_symbolize</a></li><li class="navelem"><a class="el" href="classasan__symbolize_1_1LLVMSymbolizer.html">LLVMSymbolizer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classasan__symbolize_1_1LLVMSymbolizer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">asan_symbolize.LLVMSymbolizer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 asan_symbolize.LLVMSymbolizer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1LLVMSymbolizer__inherit__graph.png" border="0" usemap="#asan__symbolize_8LLVMSymbolizer_inherit__map" alt="Inheritance graph"/></div>
+<map name="asan__symbolize_8LLVMSymbolizer_inherit__map" id="asan__symbolize_8LLVMSymbolizer_inherit__map">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1Symbolizer.html" title="{asan_symbolize.Symbolizer\n||+ __init__()\l+ symbolize()\l}" alt="" coords="22,131,207,223"/></map>
+</div>
+<div class="dynheader">
+asan_symbolize.LLVMSymbolizer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1LLVMSymbolizer__coll__graph.png" border="0" usemap="#asan__symbolize_8LLVMSymbolizer_coll__map" alt="Collaboration graph"/></div>
+<map name="asan__symbolize_8LLVMSymbolizer_coll__map" id="asan__symbolize_8LLVMSymbolizer_coll__map">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1Symbolizer.html" title="{asan_symbolize.Symbolizer\n||+ __init__()\l+ symbolize()\l}" alt="" coords="22,131,207,223"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a67402829c0aec5d376e5486bb62449ba"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">__init__</a></td></tr>
+<tr class="separator:a67402829c0aec5d376e5486bb62449ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d1dd7e82b97c9df5b97e774abd426b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">open_llvm_symbolizer</a></td></tr>
+<tr class="separator:af0d1dd7e82b97c9df5b97e774abd426b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c2b26cd5b61d27017467020ce2cb8a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">symbolize</a></td></tr>
+<tr class="separator:a09c2b26cd5b61d27017467020ce2cb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classasan__symbolize_1_1Symbolizer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasan__symbolize_1_1Symbolizer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classasan__symbolize_1_1Symbolizer.html">asan_symbolize.Symbolizer</a></td></tr>
+<tr class="memitem:aee2436e91868e66aac63bd884f82f469 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1Symbolizer.html#aee2436e91868e66aac63bd884f82f469">__init__</a></td></tr>
+<tr class="separator:aee2436e91868e66aac63bd884f82f469 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0985bb4630b3683c45f15be4f3d73378 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1Symbolizer.html#a0985bb4630b3683c45f15be4f3d73378">symbolize</a></td></tr>
+<tr class="separator:a0985bb4630b3683c45f15be4f3d73378 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aad3e7144c5d248033bf78a3436a2d973"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a></td></tr>
+<tr class="separator:aad3e7144c5d248033bf78a3436a2d973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a448ab2a81336b60973d5be3a1bc474"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">pipe</a></td></tr>
+<tr class="separator:a4a448ab2a81336b60973d5be3a1bc474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00054">54</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a67402829c0aec5d376e5486bb62449ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.LLVMSymbolizer.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>symbolizer_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00055">55</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">   55</a></span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">__init__</a>(self, symbolizer_path):</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">   57</a></span>&#160;    super(LLVMSymbolizer, self).<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">__init__</a>()</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">   58</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a> = symbolizer_path</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">pipe</a> = self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">open_llvm_symbolizer</a>()</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_af0d1dd7e82b97c9df5b97e774abd426b"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">asan_symbolize.LLVMSymbolizer.open_llvm_symbolizer</a></div><div class="ttdeci">def open_llvm_symbolizer</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00060">asan_symbolize.py:60</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a67402829c0aec5d376e5486bb62449ba"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">asan_symbolize.LLVMSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00055">asan_symbolize.py:55</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_aad3e7144c5d248033bf78a3436a2d973"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">asan_symbolize.LLVMSymbolizer.symbolizer_path</a></div><div class="ttdeci">symbolizer_path</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00057">asan_symbolize.py:57</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a4a448ab2a81336b60973d5be3a1bc474"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">asan_symbolize.LLVMSymbolizer.pipe</a></div><div class="ttdeci">pipe</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00058">asan_symbolize.py:58</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af0d1dd7e82b97c9df5b97e774abd426b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.LLVMSymbolizer.open_llvm_symbolizer </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00060">60</a> 行定义.</p>
+
+<p>参考 <a class="el" href="asan__symbolize_8py_source.html#l00057">asan_symbolize.LLVMSymbolizer.symbolizer_path</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">   60</a></span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">open_llvm_symbolizer</a>(self):</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> os.path.exists(self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a>):</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    cmd = [self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a>,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;           <span class="stringliteral">&#39;--use-symbol-table=true&#39;</span>,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;           <span class="stringliteral">&#39;--demangle=%s&#39;</span> % demangle,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;           <span class="stringliteral">&#39;--functions=true&#39;</span>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;           <span class="stringliteral">&#39;--inlining=true&#39;</span>]</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">print</span> <span class="stringliteral">&#39; &#39;</span>.join(cmd)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> subprocess.Popen(cmd, stdin=subprocess.PIPE,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                            stdout=subprocess.PIPE)</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_af0d1dd7e82b97c9df5b97e774abd426b"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">asan_symbolize.LLVMSymbolizer.open_llvm_symbolizer</a></div><div class="ttdeci">def open_llvm_symbolizer</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00060">asan_symbolize.py:60</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_aad3e7144c5d248033bf78a3436a2d973"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">asan_symbolize.LLVMSymbolizer.symbolizer_path</a></div><div class="ttdeci">symbolizer_path</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00057">asan_symbolize.py:57</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a09c2b26cd5b61d27017467020ce2cb8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.LLVMSymbolizer.symbolize </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Overrides Symbolizer.symbolize.</pre> 
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考 <a class="el" href="asan__symbolize_8py_source.html#l00026">asan_symbolize.fix_filename()</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00058">asan_symbolize.LLVMSymbolizer.pipe</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">   73</a></span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Overrides Symbolizer.symbolize.&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">pipe</a>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    result = []</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      symbolizer_input = <span class="stringliteral">&#39;%s %s&#39;</span> % (binary, offset)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">print</span> symbolizer_input</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">print</span> &gt;&gt; self.pipe.stdin, symbolizer_input</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        function_name = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> function_name:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <span class="keywordflow">break</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        file_name = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        file_name = <a class="code" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">fix_filename</a>(file_name)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordflow">not</span> function_name.startswith(<span class="stringliteral">&#39;??&#39;</span>) <span class="keywordflow">and</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">not</span> file_name.startswith(<span class="stringliteral">&#39;??&#39;</span>)):</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          <span class="comment"># Append only valid frames.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          result.append(<span class="stringliteral">&#39;%s in %s %s&#39;</span> % (addr, function_name,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                         file_name))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">except</span> Exception:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      result = []</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> result:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      result = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+</div>
+<div class="ttc" id="namespaceasan__symbolize_html_a8acebde17954f066b71355ec0a0f862a"><div class="ttname"><a href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">asan_symbolize.fix_filename</a></div><div class="ttdeci">def fix_filename</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00026">asan_symbolize.py:26</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a09c2b26cd5b61d27017467020ce2cb8a"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">asan_symbolize.LLVMSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00073">asan_symbolize.py:73</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a4a448ab2a81336b60973d5be3a1bc474"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">asan_symbolize.LLVMSymbolizer.pipe</a></div><div class="ttdeci">pipe</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00058">asan_symbolize.py:58</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1LLVMSymbolizer_a09c2b26cd5b61d27017467020ce2cb8a_cgraph.png" border="0" usemap="#classasan__symbolize_1_1LLVMSymbolizer_a09c2b26cd5b61d27017467020ce2cb8a_cgraph" alt=""/></div>
+<map name="classasan__symbolize_1_1LLVMSymbolizer_a09c2b26cd5b61d27017467020ce2cb8a_cgraph" id="classasan__symbolize_1_1LLVMSymbolizer_a09c2b26cd5b61d27017467020ce2cb8a_cgraph">
+<area shape="rect" id="node2" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a" title="asan_symbolize.fix\l_filename" alt="" coords="337,5,471,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a4a448ab2a81336b60973d5be3a1bc474"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.LLVMSymbolizer.pipe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00058">58</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00155">asan_symbolize.DarwinSymbolizer.open_atos()</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00073">asan_symbolize.LLVMSymbolizer.symbolize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad3e7144c5d248033bf78a3436a2d973"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.LLVMSymbolizer.symbolizer_path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00057">57</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00060">asan_symbolize.LLVMSymbolizer.open_llvm_symbolizer()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>scripts/<a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

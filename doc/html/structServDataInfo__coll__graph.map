@@ -1,0 +1,6 @@
+<map id="LPServDataInfo" name="LPServDataInfo">
+<area shape="rect" id="node2" href="$structUserType.html" title="{LPUserType\n|+ YYBID\l+ online_user_num\l|}" alt="" coords="5,199,136,291"/>
+<area shape="rect" id="node3" href="$structUserVer.html" title="{LPUserVer\n|+ ver\l+ build\l+ online_user_num\l|}" alt="" coords="161,192,292,299"/>
+<area shape="rect" id="node4" href="$structStatHqsInfo.html" title="{LPStatHqsInfo\n|+ market_code\l+ main_hqs_flag\l+ init_flag\l|}" alt="" coords="317,192,435,299"/>
+<area shape="rect" id="node5" href="$structStatSingleHqsInfo.html" title="{LPStatSingleHqsInfo\n|+ exist_flag\l+ hqs_ip\l+ m_wLastSeq\l+ fresh_time\l|}" alt="" coords="304,6,448,127"/>
+</map>

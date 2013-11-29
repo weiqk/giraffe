@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: CDidStructApi类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="classCDidStructApi-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CDidStructApi类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="dscomapi_8h_source.html">dscomapi.h</a>&gt;</code></p>
+<div class="dynheader">
+类 CDidStructApi 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDidStructApi__inherit__graph.png" border="0" usemap="#CDidStructApi_inherit__map" alt="Inheritance graph"/></div>
+<map name="CDidStructApi_inherit__map" id="CDidStructApi_inherit__map">
+<area shape="rect" id="node2" href="classJUncopyable.html" title="{JUncopyable\n||# JUncopyable()\l# ~JUncopyable()\l&#45; JUncopyable()\l&#45; operator=()\l}" alt="" coords="24,6,149,127"/></map>
+</div>
+<div class="dynheader">
+CDidStructApi 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDidStructApi__coll__graph.png" border="0" usemap="#CDidStructApi_coll__map" alt="Collaboration graph"/></div>
+<map name="CDidStructApi_coll__map" id="CDidStructApi_coll__map">
+<area shape="rect" id="node2" href="classJUncopyable.html" title="{JUncopyable\n||# JUncopyable()\l# ~JUncopyable()\l&#45; JUncopyable()\l&#45; operator=()\l}" alt="" coords="5,257,131,378"/><area shape="rect" id="node3" href="structDids.html" title="{Dids\n|+ m_wDidsNum\l|}" alt="" coords="155,279,271,356"/><area shape="rect" id="node4" href="structDidName.html" title="{DidName\n|+ m_cName\l+ m_dwDid\l|}" alt="" coords="166,27,260,119"/><area shape="rect" id="node5" href="structCids.html" title="{Cids\n|+ m_wCidsNum\l|}" alt="" coords="296,279,412,356"/><area shape="rect" id="node6" href="structCidInfo.html" title="{CidInfo\n|+ m_cName\l+ m_dwCid\l+ m_dwDCid\l+ m_dwFiledsNum\l+ m_uint64Offset\l|}" alt="" coords="287,5,419,141"/><area shape="rect" id="node7" href="structStrIds.html" title="{StrIds\n|+ m_wStrIdNum\l|}" alt="" coords="437,279,555,356"/><area shape="rect" id="node8" href="structStrList.html" title="{StrList\n|+ m_cName\l+ m_dwStrId\l+ m_wStrNum\l+ m_wMaxStrLen\l+ m_uint64Offset\l|}" alt="" coords="444,5,569,141"/><area shape="rect" id="node9" href="structds__field__info.html" title="{ds_field_info\n|+ m_byteTypeIndex\l+ m_byteTypeSize\l+ m_byteSortFlag\l+ m_byteSaveFlag\l+ m_wId\l+ m_wASize\l+ m_dwOffset\l+ m_dwROffset\l+ m_cName\l+ idpos\l和 8 更多...\l|}" alt="" coords="580,205,719,429"/><area shape="rect" id="node10" href="structCodeBitIds.html" title="{CodeBitIds\n|+ m_wCodeBitIdNum\l|}" alt="" coords="743,279,891,356"/><area shape="rect" id="node11" href="structCodeBitInfo.html" title="{CodeBitInfo\n|+ m_cName\l+ m_dwCid\l+ m_dwNum\l+ m_uint64Offset\l|}" alt="" coords="756,13,879,134"/><area shape="rect" id="node12" href="structds__did__info.html" title="{ds_did_info\n|+ did\l+ index_key\l+ m_cName\l+ m_sKeyFieldPos\l+ m_wSortSecs\l+ m_wFieldsNum\l+ m_wAllFieldsNum\l+ m_wTablesNum\l+ m_dwRRecSize\l+ m_dwVRecSize\l和 8 更多...\l|}" alt="" coords="915,205,1055,429"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9b5e157edd717a655ff0204950e32660"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a9b5e157edd717a655ff0204950e32660">LoadMemXmlBuffer</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *xmlbuf, unsigned int xmlbuflen)=0</td></tr>
+<tr class="separator:a9b5e157edd717a655ff0204950e32660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc3be395b734cca63995544e2ab5eae"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a2dc3be395b734cca63995544e2ab5eae">PrintfFields</a> (void)=0</td></tr>
+<tr class="separator:a2dc3be395b734cca63995544e2ab5eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a74df05b2ba30600de8ee940a035ebea1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a74df05b2ba30600de8ee940a035ebea1">getIndexByStr</a> (char *str, <a class="el" href="structStrList.html">StrList</a> *pStrList)</td></tr>
+<tr class="separator:a74df05b2ba30600de8ee940a035ebea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6915c83b2e7cce363fb1bea1d6ab1bb8"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a6915c83b2e7cce363fb1bea1d6ab1bb8">ds_cal_crc</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *p, unsigned int len)</td></tr>
+<tr class="separator:a6915c83b2e7cce363fb1bea1d6ab1bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fb38423fe345f56ff12df8aa9c2cc2"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a81fb38423fe345f56ff12df8aa9c2cc2">ds_cal_crc_part</a> (unsigned int oldcrc, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *p, unsigned int len)</td></tr>
+<tr class="separator:a81fb38423fe345f56ff12df8aa9c2cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda0bd7c3ce0b235c0aca1352ddf2e8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCDidStructApi.html">CDidStructApi</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#afda0bd7c3ce0b235c0aca1352ddf2e8f">CreateDidStructObj</a> ()</td></tr>
+<tr class="separator:afda0bd7c3ce0b235c0aca1352ddf2e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2875bed4736327406f39cff136a3594f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a2875bed4736327406f39cff136a3594f">DestoryDidStructObj</a> (<a class="el" href="classCDidStructApi.html">CDidStructApi</a> *pDidStruct)</td></tr>
+<tr class="separator:a2875bed4736327406f39cff136a3594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a02efb968b37763ef8420a3216bb152a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a02efb968b37763ef8420a3216bb152a7">m_dwCrc</a></td></tr>
+<tr class="separator:a02efb968b37763ef8420a3216bb152a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eabaf56fbbc789d46bc46a5e4c03b0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDids.html">Dids</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a2eabaf56fbbc789d46bc46a5e4c03b0e">m_pDids</a></td></tr>
+<tr class="separator:a2eabaf56fbbc789d46bc46a5e4c03b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe218fb6d909aea6832d3ba2cb9b289c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds__did__info.html">ds_did_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#afe218fb6d909aea6832d3ba2cb9b289c">mDidInfo</a></td></tr>
+<tr class="separator:afe218fb6d909aea6832d3ba2cb9b289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939cac0c578c442be63ffa9451621b31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structds__field__info.html">ds_field_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a939cac0c578c442be63ffa9451621b31">m_pFieldsInfo</a></td></tr>
+<tr class="separator:a939cac0c578c442be63ffa9451621b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65a5ae15965b7ff8db928c79678ce9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCids.html">Cids</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#ac65a5ae15965b7ff8db928c79678ce9f">m_pCids</a></td></tr>
+<tr class="separator:ac65a5ae15965b7ff8db928c79678ce9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0198c3ebb296a087d3af3761101c295d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCodeBitIds.html">CodeBitIds</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a0198c3ebb296a087d3af3761101c295d">m_pCodeBitIds</a></td></tr>
+<tr class="separator:a0198c3ebb296a087d3af3761101c295d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a2e188e35b9fca6649357398bdfe8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structStrIds.html">StrIds</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#ae1a2e188e35b9fca6649357398bdfe8c">m_pStrIds</a></td></tr>
+<tr class="separator:ae1a2e188e35b9fca6649357398bdfe8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a075c95fb995362d6609eccd453f591e7"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDidStructApi.html#a075c95fb995362d6609eccd453f591e7">ds_crc32_table256</a> []</td></tr>
+<tr class="separator:a075c95fb995362d6609eccd453f591e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_classJUncopyable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classJUncopyable')"><img src="closed.png" alt="-"/>&#160;Private 成员函数 继承自 <a class="el" href="classJUncopyable.html">JUncopyable</a></td></tr>
+<tr class="memitem:a561f097916dc505a45b0c71ceeb7ed7e inherit pub_methods_classJUncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUncopyable.html#a561f097916dc505a45b0c71ceeb7ed7e">JUncopyable</a> ()</td></tr>
+<tr class="separator:a561f097916dc505a45b0c71ceeb7ed7e inherit pub_methods_classJUncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b221d0b72be80b18b3937088f52384 inherit pub_methods_classJUncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUncopyable.html#ac9b221d0b72be80b18b3937088f52384">~JUncopyable</a> ()</td></tr>
+<tr class="separator:ac9b221d0b72be80b18b3937088f52384 inherit pub_methods_classJUncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00027">27</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="afda0bd7c3ce0b235c0aca1352ddf2e8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classCDidStructApi.html">CDidStructApi</a>* CDidStructApi::CreateDidStructObj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDidStructApi_afda0bd7c3ce0b235c0aca1352ddf2e8f_icgraph.png" border="0" usemap="#classCDidStructApi_afda0bd7c3ce0b235c0aca1352ddf2e8f_icgraph" alt=""/></div>
+<map name="classCDidStructApi_afda0bd7c3ce0b235c0aca1352ddf2e8f_icgraph" id="classCDidStructApi_afda0bd7c3ce0b235c0aca1352ddf2e8f_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="227,5,458,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a7e1066ef710795951412447d427adac9" title="DidUncompress::Initialize" alt="" coords="257,56,429,83"/><area shape="rect" id="node4" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="236,107,449,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2875bed4736327406f39cff136a3594f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CDidStructApi::DestoryDidStructObj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCDidStructApi.html">CDidStructApi</a> *&#160;</td>
+          <td class="paramname"><em>pDidStruct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00163">DidUncompress::~DidUncompress()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDidStructApi_a2875bed4736327406f39cff136a3594f_icgraph.png" border="0" usemap="#classCDidStructApi_a2875bed4736327406f39cff136a3594f_icgraph" alt=""/></div>
+<map name="classCDidStructApi_a2875bed4736327406f39cff136a3594f_icgraph" id="classCDidStructApi_a2875bed4736327406f39cff136a3594f_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="235,5,466,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a7e1066ef710795951412447d427adac9" title="DidUncompress::Initialize" alt="" coords="265,56,437,83"/><area shape="rect" id="node4" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="244,107,457,133"/><area shape="rect" id="node5" href="classDidUncompress.html#a3de0f3288486d3e32eb5851e2aa0bb10" title="DidUncompress::~DidUncompress" alt="" coords="237,157,464,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6915c83b2e7cce363fb1bea1d6ab1bb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int CDidStructApi::ds_cal_crc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="public_8cpp_source.html#l00068">CalcFileCrc()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDidStructApi_a6915c83b2e7cce363fb1bea1d6ab1bb8_icgraph.png" border="0" usemap="#classCDidStructApi_a6915c83b2e7cce363fb1bea1d6ab1bb8_icgraph" alt=""/></div>
+<map name="classCDidStructApi_a6915c83b2e7cce363fb1bea1d6ab1bb8_icgraph" id="classCDidStructApi_a6915c83b2e7cce363fb1bea1d6ab1bb8_icgraph">
+<area shape="rect" id="node2" href="public_8h.html#afd207ba4af01aa80689fb12ed9e4c422" title="CalcFileCrc" alt="" coords="232,5,323,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a81fb38423fe345f56ff12df8aa9c2cc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int CDidStructApi::ds_cal_crc_part </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>oldcrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74df05b2ba30600de8ee940a035ebea1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int CDidStructApi::getIndexByStr </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structStrList.html">StrList</a> *&#160;</td>
+          <td class="paramname"><em>pStrList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b5e157edd717a655ff0204950e32660"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDidStructApi::LoadMemXmlBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>xmlbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xmlbuflen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDidStructApi_a9b5e157edd717a655ff0204950e32660_icgraph.png" border="0" usemap="#classCDidStructApi_a9b5e157edd717a655ff0204950e32660_icgraph" alt=""/></div>
+<map name="classCDidStructApi_a9b5e157edd717a655ff0204950e32660_icgraph" id="classCDidStructApi_a9b5e157edd717a655ff0204950e32660_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="249,5,479,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="257,56,471,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2dc3be395b734cca63995544e2ab5eae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDidStructApi::PrintfFields </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a075c95fb995362d6609eccd453f591e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int CDidStructApi::ds_crc32_table256[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02efb968b37763ef8420a3216bb152a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> CDidStructApi::m_dwCrc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac65a5ae15965b7ff8db928c79678ce9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCids.html">Cids</a>* CDidStructApi::m_pCids</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0198c3ebb296a087d3af3761101c295d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCodeBitIds.html">CodeBitIds</a>* CDidStructApi::m_pCodeBitIds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2eabaf56fbbc789d46bc46a5e4c03b0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDids.html">Dids</a>* CDidStructApi::m_pDids</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00031">31</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a939cac0c578c442be63ffa9451621b31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structds__field__info.html">ds_field_info</a>* CDidStructApi::m_pFieldsInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1a2e188e35b9fca6649357398bdfe8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structStrIds.html">StrIds</a>* CDidStructApi::m_pStrIds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe218fb6d909aea6832d3ba2cb9b289c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structds__did__info.html">ds_did_info</a> CDidStructApi::mDidInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00032">32</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="dscomapi_8h_source.html">dscomapi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

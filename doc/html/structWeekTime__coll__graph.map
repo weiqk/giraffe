@@ -1,0 +1,3 @@
+<map id="WeekTime" name="WeekTime">
+<area shape="rect" id="node2" href="$structWeekDayTime.html" title="{WeekDayTime\n|+ m_cWeekDay\l+ m_wStartTime\l+ m_wEndTime\l|}" alt="" coords="5,5,123,112"/>
+</map>

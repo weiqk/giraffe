@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: l2compress.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">l2compress.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="l2compress_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _SHL2_COMPRESS_INCLUDE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _SHL2_COMPRESS_INCLUDE</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datacollect_8h.html">datacollect.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//以下压缩算法均返回压缩了的数据数量，nBufSize调用时带入缓冲区数据容量，返回时得到实际数据数量，如果缓冲区不够，则返回-1，并用nBufSize带回需要的容量缓冲区</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//压缩逐笔成交</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a5b378d7419d64f6f2181c66e73f026b0">CompressL2Report</a>(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> wMarket,<span class="keyword">const</span> <a class="code" href="structSH__L2__REPORT.html">SH_L2_REPORT</a>* pRep,<span class="keywordtype">int</span> nNum,<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);      </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a5f93a4c9d77e569a4c1919e8aa5d6668">ExpandL2Report</a>(<span class="keyword">const</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nDataLen,<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&amp; wMarket,<a class="code" href="structSH__L2__REPORT.html">SH_L2_REPORT</a>* pRepBuf,<span class="keywordtype">int</span>&amp; nBufSize);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//压缩扩展买卖盘</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//int CompressL2MMPEx(WORD wMarket,const SH_L2_MMPEX* pMMPEx,int nNum,BYTE* pBuf,int&amp; nBufSize);</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//int ExpandL2MMPEx(const BYTE* pData,int nDataLen,WORD&amp; wMarket,SH_L2_MMPEX* pMMPExBuf,int&amp; nBufSize);</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//压缩买卖盘队列</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//队列索引和队列分不同缓冲区存储</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a39ec1d49c233d830a57bf2ca0b2373de">CompressL2Queue</a>(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> wMarket,<span class="keyword">const</span> <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>* pQueue,<span class="keywordtype">int</span> nQueueLen,<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize,<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bOrderQueue=<a class="code" href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a3a5f057f04181484e67cd8ea324c0581">ExpandL2Queue</a>(<span class="keyword">const</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nDataLen,<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>* pQueueBuf,<span class="keywordtype">int</span>&amp; nQueueBufSize,<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bOrderQueue=<a class="code" href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//压缩即时最大撤单</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a541ac0b9303497dc2dcde3296522cac2">CompressL2BigWD</a>(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> wMarket,<span class="keyword">const</span> <a class="code" href="structDC__SHL2__BIG__WD.html">DC_SHL2_BIG_WD</a>* pWD,<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a3c2fae1285627f9012f6c866aa137a93">ExpandL2BigWD</a>(<span class="keyword">const</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nDataLen,<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&amp; wMarket,<a class="code" href="structDC__SHL2__BIG__WD.html">DC_SHL2_BIG_WD</a>* pWDBuf,<span class="keywordtype">int</span>&amp; nBufSize);   <span class="comment">//nBufSize表示字节数</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//压缩累计最大撤单</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a49243b4048866b22c3660d94a14f0490">CompressL2AccuWD</a>(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> wMarket,<span class="keyword">const</span> <a class="code" href="structDC__SHL2__ACCU__WD.html">DC_SHL2_ACCU_WD</a>* pWD,<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a561d7a7728fd839fba6801b92781643c">ExpandL2AccuWD</a>(<span class="keyword">const</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nDataLen,<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>&amp; wMarket,<a class="code" href="structDC__SHL2__ACCU__WD.html">DC_SHL2_ACCU_WD</a>* pWDBuf,<span class="keywordtype">int</span>&amp; nBufSize); <span class="comment">//nBufSize表示字节数</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//用于买卖两个即时最大撤单压缩到一起</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//int CompressL2BigWD(WORD wMarket,const DC_SHL2_BIG_WD* pBuyWD,const DC_SHL2_BIG_WD* pSellWD,SVRNetHead* pBuf,int&amp; nBufSize);</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//int ExpandL2BigWD(const SVRNetHead* pData,WORD&amp; wMarket,SH_L2_BIG_WD* pBuyBuf,int&amp; nBuyBufSize,SH_L2_BIG_WD* pSellBuf,int&amp; nSellBufSize); //nBufBufSize, nSellBufSize表示数量</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//int ExpandL2BigWD(const SVRNetHead* pHead,const BYTE* pData,WORD&amp; wMarket,SH_L2_BIG_WD* pBuyBuf,int&amp; nBuyBufSize,SH_L2_BIG_WD* pSellBuf,int&amp; nSellBufSize);   //nBufBufSize, nSellBufSize表示数量</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//int CompressL2AccuWD(WORD wMarket,const DC_SHL2_ACCU_WD* pBuyWD,const DC_SHL2_ACCU_WD* pSellWD,SVRNetHead* pBuf,int&amp; nBufSize);</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//int ExpandL2AccuWD(const SVRNetHead* pData,WORD&amp; wMarket,SH_L2_ACCU_WD* pBuyBuf,int&amp; nBuyBufSize,SH_L2_ACCU_WD* pSellBuf,int&amp; nSellBufSize);  //nBuyBufSize,nSellBufSize表示数量</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//int ExpandL2AccuWD(const SVRNetHead* pHead,const BYTE* pData,WORD&amp; wMarket,SH_L2_ACCU_WD* pBuyBuf,int&amp; nBuyBufSize,SH_L2_ACCU_WD* pSellBuf,int&amp; nSellBufSize);    //nBuyBufSize,nSellBufSize表示数量</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//压缩逐笔委托统计</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code" href="l2compress_8cpp.html#a27bb31e9d36ca475ef9f0c78577ac5d3">CompressL2OrderStat</a>(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> wMarket,<span class="keyword">const</span> <a class="code" href="structDC__SZL2__ORDER__STAT.html">DC_SZL2_ORDER_STAT</a>* pStat,<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pBuf,<span class="keywordtype">int</span>&amp; nBufSize);                <span class="comment">//nBufSize表示字节数,返回后表示压缩后的总长度,压缩成功返回TRUE</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="l2compress_8cpp.html#a54be403367ecea6724ad78d523a43c45">ExpandL2OrderStat</a>(<span class="keyword">const</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nDataLen,<a class="code" href="structDC__SZL2__ORDER__STAT.html">DC_SZL2_ORDER_STAT</a>* pStatBuf,<span class="keywordtype">int</span>&amp; nBufSize);   <span class="comment">//nBufSize表示字节数,返回后表示压缩后的总长度,返回解压缩成功数量</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif //_SHL2_COMPRESS_INCLUDE</span></div>
+<div class="ttc" id="l2compress_8cpp_html_a5f93a4c9d77e569a4c1919e8aa5d6668"><div class="ttname"><a href="l2compress_8cpp.html#a5f93a4c9d77e569a4c1919e8aa5d6668">ExpandL2Report</a></div><div class="ttdeci">int ExpandL2Report(const BYTE *pData, int nDataLen, WORD &amp;wMarket, SH_L2_REPORT *pRepBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00140">l2compress.cpp:140</a></div></div>
+<div class="ttc" id="structDC__SZL2__ORDER__STAT_html"><div class="ttname"><a href="structDC__SZL2__ORDER__STAT.html">DC_SZL2_ORDER_STAT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00872">datacollect.h:872</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a3c2fae1285627f9012f6c866aa137a93"><div class="ttname"><a href="l2compress_8cpp.html#a3c2fae1285627f9012f6c866aa137a93">ExpandL2BigWD</a></div><div class="ttdeci">int ExpandL2BigWD(const BYTE *pData, int nDataLen, WORD &amp;wMarket, DC_SHL2_BIG_WD *pWDBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00510">l2compress.cpp:510</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a49243b4048866b22c3660d94a14f0490"><div class="ttname"><a href="l2compress_8cpp.html#a49243b4048866b22c3660d94a14f0490">CompressL2AccuWD</a></div><div class="ttdeci">int CompressL2AccuWD(WORD wMarket, const DC_SHL2_ACCU_WD *pWD, BYTE *pBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00694">l2compress.cpp:694</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a561d7a7728fd839fba6801b92781643c"><div class="ttname"><a href="l2compress_8cpp.html#a561d7a7728fd839fba6801b92781643c">ExpandL2AccuWD</a></div><div class="ttdeci">int ExpandL2AccuWD(const BYTE *pData, int nDataLen, WORD &amp;wMarket, DC_SHL2_ACCU_WD *pWDBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00739">l2compress.cpp:739</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00039">ldgloble.h:39</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a27bb31e9d36ca475ef9f0c78577ac5d3"><div class="ttname"><a href="l2compress_8cpp.html#a27bb31e9d36ca475ef9f0c78577ac5d3">CompressL2OrderStat</a></div><div class="ttdeci">BOOL CompressL2OrderStat(WORD wMarket, const DC_SZL2_ORDER_STAT *pStat, BYTE *pBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00980">l2compress.cpp:980</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a197942eefa7db30960ae396d68339b97"><div class="ttname"><a href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></div><div class="ttdeci">unsigned short WORD</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00024">dzh_time_t.h:24</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00047">ldgloble.h:47</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a54be403367ecea6724ad78d523a43c45"><div class="ttname"><a href="l2compress_8cpp.html#a54be403367ecea6724ad78d523a43c45">ExpandL2OrderStat</a></div><div class="ttdeci">int ExpandL2OrderStat(const BYTE *pData, int nDataLen, DC_SZL2_ORDER_STAT *pStatBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l01045">l2compress.cpp:1045</a></div></div>
+<div class="ttc" id="structSH__L2__REPORT_html"><div class="ttname"><a href="structSH__L2__REPORT.html">SH_L2_REPORT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00352">datacollect.h:352</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a798af1e30bc65f319c1a246cecf59e39"><div class="ttname"><a href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></div><div class="ttdeci">unsigned int DWORD</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00055">ldgloble.h:55</a></div></div>
+<div class="ttc" id="datacollect_8h_html"><div class="ttname"><a href="datacollect_8h.html">datacollect.h</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a541ac0b9303497dc2dcde3296522cac2"><div class="ttname"><a href="l2compress_8cpp.html#a541ac0b9303497dc2dcde3296522cac2">CompressL2BigWD</a></div><div class="ttdeci">int CompressL2BigWD(WORD wMarket, const DC_SHL2_BIG_WD *pWD, BYTE *pBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00459">l2compress.cpp:459</a></div></div>
+<div class="ttc" id="structDC__SHL2__ACCU__WD_html"><div class="ttname"><a href="structDC__SHL2__ACCU__WD.html">DC_SHL2_ACCU_WD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00863">datacollect.h:863</a></div></div>
+<div class="ttc" id="dscomapi_8h_html_a4ae1dab0fb4b072a66584546209e7d58"><div class="ttname"><a href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></div><div class="ttdeci">unsigned char BYTE</div><div class="ttdef"><b>Definition:</b> <a href="dscomapi_8h_source.html#l00012">dscomapi.h:12</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a5b378d7419d64f6f2181c66e73f026b0"><div class="ttname"><a href="l2compress_8cpp.html#a5b378d7419d64f6f2181c66e73f026b0">CompressL2Report</a></div><div class="ttdeci">int CompressL2Report(WORD wMarket, const SH_L2_REPORT *pRep, int nNum, BYTE *pBuf, int &amp;nBufSize)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00064">l2compress.cpp:64</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a39ec1d49c233d830a57bf2ca0b2373de"><div class="ttname"><a href="l2compress_8cpp.html#a39ec1d49c233d830a57bf2ca0b2373de">CompressL2Queue</a></div><div class="ttdeci">int CompressL2Queue(WORD wMarket, const DWORD *pQueue, int nQueueLen, BYTE *pBuf, int &amp;nBufSize, BOOL bOrderQueue)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00255">l2compress.cpp:255</a></div></div>
+<div class="ttc" id="l2compress_8cpp_html_a3a5f057f04181484e67cd8ea324c0581"><div class="ttname"><a href="l2compress_8cpp.html#a3a5f057f04181484e67cd8ea324c0581">ExpandL2Queue</a></div><div class="ttdeci">int ExpandL2Queue(const BYTE *pData, int nDataLen, DWORD *pQueueBuf, int &amp;nQueueBufSize, BOOL bOrderQueue)</div><div class="ttdef"><b>Definition:</b> <a href="l2compress_8cpp_source.html#l00328">l2compress.cpp:328</a></div></div>
+<div class="ttc" id="structDC__SHL2__BIG__WD_html"><div class="ttname"><a href="structDC__SHL2__BIG__WD.html">DC_SHL2_BIG_WD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00854">datacollect.h:854</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

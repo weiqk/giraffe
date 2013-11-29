@@ -1,0 +1,6 @@
+<map id="TiXmlComment" name="TiXmlComment">
+<area shape="rect" id="node2" href="$classTiXmlNode.html" title="{TiXmlNode\n|# type\l# value\l|+ ~TiXmlNode()\l+ Value()\l+ ValueTStr()\l+ SetValue()\l+ Clear()\l+ Parent()\l+ Parent()\l+ FirstChild()\l+ FirstChild()\l+ FirstChild()\l和 49 更多...\l# TiXmlNode()\l# CopyTo()\l# Identify()\l&#45; TiXmlNode()\l&#45; operator=()\l}" alt="" coords="77,715,192,1027"/>
+<area shape="rect" id="node3" href="$classTiXmlBase.html" title="{TiXmlBase\n|+ utf8ByteTable\l# userData\l# errorString\l&#45; condenseWhiteSpace\l|+ TiXmlBase()\l+ ~TiXmlBase()\l+ Print()\l+ Row()\l+ Column()\l+ SetUserData()\l+ GetUserData()\l+ GetUserData()\l+ Parse()\l+ SetCondenseWhiteSpace()\l+ IsWhiteSpaceCondensed()\l+ EncodeString()\l# SkipWhiteSpace()\l# IsWhiteSpace()\l# IsWhiteSpace()\l# ReadName()\l# ReadText()\l# GetEntity()\l# GetChar()\l# StringEqual()\l# IsAlpha()\l# IsAlphaNum()\l# ToLower()\l# ConvertUTF32ToUTF8()\l&#45; TiXmlBase()\l&#45; operator=()\l}" alt="" coords="39,176,231,664"/>
+<area shape="rect" id="node4" href="$structTiXmlCursor.html" title="{TiXmlCursor\n|+ row\l+ col\l|+ TiXmlCursor()\l+ Clear()\l}" alt="" coords="5,5,120,112"/>
+<area shape="rect" id="node5" href="$structTiXmlBase_1_1Entity.html" title="{TiXmlBase::Entity\n|+ str\l+ strLength\l+ chr\l|}" alt="" coords="144,5,272,112"/>
+</map>

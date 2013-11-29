@@ -1,0 +1,4 @@
+<map id="ExSH_L2_REPORTV2" name="ExSH_L2_REPORTV2">
+<area shape="rect" id="node2" href="$classVFloat.html" title="{VFloat\n|+ m_llTag\l+ m_llBase\l+ m_llPrec\l+ _real_data\l+ _value\l&#45; _data\l|+ VFloat()\l+ VFloat()\l+ VFloat()\l+ VFloat()\l+ VFloat()\l+ operator double()\l+ GetValue()\l+ GetABSValue()\l+ GetStrValue()\l+ operator+()\l和 46 更多...\l&#45; CheckValid()\l&#45; Power10()\l&#45; Str2VFloat()\l}" alt="" coords="4,5,133,347"/>
+<area shape="rect" id="node3" href="$classPFloat.html" title="{PFloat\n|+ m_llTag\l+ m_llBase\l+ m_llPrec\l+ _real_data\l+ _value\l&#45; _data\l|+ PFloat()\l+ PFloat()\l+ PFloat()\l+ PFloat()\l+ PFloat()\l+ operator double()\l+ GetValue()\l+ GetABSValue()\l+ GetStrValue()\l+ operator+()\l和 46 更多...\l&#45; CheckValid()\l&#45; Power10()\l&#45; Str2PFloat()\l}" alt="" coords="159,5,288,347"/>
+</map>

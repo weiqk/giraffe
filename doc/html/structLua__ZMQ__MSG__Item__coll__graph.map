@@ -1,0 +1,4 @@
+<map id="Lua_ZMQ_MSG_Item" name="Lua_ZMQ_MSG_Item">
+<area shape="rect" id="node2" href="$structSTK__STATIC.html" title="{STK_STATIC\n|+ m_wStkID\l+ m_strLabel\l+ m_strName\l+ m_cType\l+ m_nPriceDigit\l+ m_nVolUnit\l+ m_dwLastClose\l+ m_dwAdvStop\l+ m_dwDecStop\l|+ GetPriceMul()\l}" alt="" coords="15,323,143,517"/>
+<area shape="rect" id="node3" href="$structMWORD.html" title="{MWORD\n|+ m_nBase\l+ m_nMul\l|+ MWORD()\l+ MWORD()\l+ MWORD()\l+ operator INT64()\l+ GetValue()\l+ GetABSValue()\l+ operator&#45;=()\l+ operator&#45;=()\l+ operator+=()\l+ operator+=()\l和 30 更多...\l}" alt="" coords="14,6,143,245"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="ip_head" name="ip_head">
+<area shape="rect" id="node2" href="$structip__address.html" title="{ip_address\n|+ byte1\l+ byte2\l+ byte3\l+ byte4\l|}" alt="" coords="16,6,101,127"/>
+</map>

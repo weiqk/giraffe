@@ -1,0 +1,4 @@
+<map id="JUncopyable" name="JUncopyable">
+<area shape="rect" id="node2" href="$classCDidStructApi.html" title="{CDidStructApi\n|+ m_dwCrc\l+ m_pDids\l+ mDidInfo\l+ m_pFieldsInfo\l+ m_pCids\l+ m_pCodeBitIds\l+ m_pStrIds\l+ ds_crc32_table256\l|+ LoadMemXmlBuffer()\l+ PrintfFields()\l+ getIndexByStr()\l+ ds_cal_crc()\l+ ds_cal_crc_part()\l+ CreateDidStructObj()\l+ DestoryDidStructObj()\l}" alt="" coords="5,177,168,445"/>
+<area shape="rect" id="node3" href="$classCDsCompressApi.html" title="{CDsCompressApi\n||+ Initialize()\l+ GetCompressOutputBufferLen()\l+ SetCompressOutputBuffer()\l+ CompressData()\l+ CompressDataOneRecData()\l+ FinishCompressedData()\l+ GetCompressedDataLen()\l+ SetUnCompressOutputBuffer()\l+ UnCompressData()\l+ FinishUnCompressedData()\l+ CreateCompressObj()\l+ DestroyCompressObj()\l}" alt="" coords="192,191,411,430"/>
+</map>

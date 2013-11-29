@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: did_template_to_lua_struct.cc 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">did_template_to_lua_struct.cc 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="did__template__to__lua__struct_8h_source.html">did_template_to_lua_struct.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="xml__class__set_8h_source.html">xml_class_set.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a>&quot;</code><br/>
+<code>#include &lt;io.h&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+did_template_to_lua_struct.cc 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="did__template__to__lua__struct_8cc__incl.png" border="0" usemap="#did__template__to__lua__struct_8cc" alt=""/></div>
+<map name="did__template__to__lua__struct_8cc" id="did__template__to__lua__struct_8cc">
+<area shape="rect" id="node2" href="did__template__to__lua__struct_8h.html" title="did_template_to_lua\l_struct.h" alt="" coords="233,97,372,138"/><area shape="rect" id="node5" href="xml__class__set_8h.html" title="xml parser class set " alt="" coords="140,187,256,213"/><area shape="rect" id="node10" href="xml2cfg_8h.html" title="xml parser api " alt="" coords="523,187,601,213"/></map>
+</div>
+</div>
+<p><a href="did__template__to__lua__struct_8cc_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a03eac2d6659aaa8c160006c14a6d7e48"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="did__template__to__lua__struct_8cc.html#a03eac2d6659aaa8c160006c14a6d7e48">map_typesize_t</a></td></tr>
+<tr class="separator:a03eac2d6659aaa8c160006c14a6d7e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7eac727bc288cc3c8d4965f521deece5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="did__template__to__lua__struct_8cc.html#a7eac727bc288cc3c8d4965f521deece5">cat_to</a> (char *dest, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *val, int pos)</td></tr>
+<tr class="memdesc:a7eac727bc288cc3c8d4965f521deece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">encapsulate strcat  <a href="#a7eac727bc288cc3c8d4965f521deece5">更多...</a><br/></td></tr>
+<tr class="separator:a7eac727bc288cc3c8d4965f521deece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a5daf2ae72c5e9aa4b26793f0b4c99481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="did__template__to__lua__struct_8cc.html#a03eac2d6659aaa8c160006c14a6d7e48">map_typesize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="did__template__to__lua__struct_8cc.html#a5daf2ae72c5e9aa4b26793f0b4c99481">did_type_map</a></td></tr>
+<tr class="separator:a5daf2ae72c5e9aa4b26793f0b4c99481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a03eac2d6659aaa8c160006c14a6d7e48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt; std::string, int &gt; <a class="el" href="did__template__to__lua__struct_8cc.html#a03eac2d6659aaa8c160006c14a6d7e48">map_typesize_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="did__template__to__lua__struct_8cc_source.html">did_template_to_lua_struct.cc</a> 第 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a7eac727bc288cc3c8d4965f521deece5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cat_to </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>encapsulate strcat </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td></td></tr>
+    <tr><td class="paramname">val</td><td></td></tr>
+    <tr><td class="paramname">pos</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>在文件 <a class="el" href="did__template__to__lua__struct_8cc_source.html">did_template_to_lua_struct.cc</a> 第 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00031">31</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00064">DIDTemplateToLuaStruct::Transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> _len = strlen( val );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    strcat( dest + pos, val );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> pos + _len;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="did__template__to__lua__struct_8cc_a7eac727bc288cc3c8d4965f521deece5_icgraph.png" border="0" usemap="#did__template__to__lua__struct_8cc_a7eac727bc288cc3c8d4965f521deece5_icgraph" alt=""/></div>
+<map name="did__template__to__lua__struct_8cc_a7eac727bc288cc3c8d4965f521deece5_icgraph" id="did__template__to__lua__struct_8cc_a7eac727bc288cc3c8d4965f521deece5_icgraph">
+<area shape="rect" id="node2" href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55" title="transform all the did template to lua template " alt="" coords="112,5,283,46"/><area shape="rect" id="node3" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7" title="transform did template to lua template " alt="" coords="331,12,522,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a5daf2ae72c5e9aa4b26793f0b4c99481"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="did__template__to__lua__struct_8cc.html#a03eac2d6659aaa8c160006c14a6d7e48">map_typesize_t</a> did_type_map</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="did__template__to__lua__struct_8cc_source.html">did_template_to_lua_struct.cc</a> 第 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<map id="TiXmlBase::GetChar" name="TiXmlBase::GetChar">
+<area shape="rect" id="node2" href="$classTiXmlBase.html#aa646c74921aa33156968b802bbf5566e" title="TiXmlBase::ReadText" alt="" coords="198,49,349,75"/>
+<area shape="rect" id="node3" href="$classTiXmlAttribute.html#ad62774421b814894b995af3b5d231dda" title="TiXmlAttribute::Parse" alt="" coords="397,23,544,50"/>
+<area shape="rect" id="node6" href="$classTiXmlText.html#a8d2dcfa41fc73d3e62dacc2fcf633819" title="TiXmlText::Parse" alt="" coords="409,74,533,101"/>
+<area shape="rect" id="node4" href="$classTiXmlElement.html#af95c9165159fd9dfdcc5b894a3fcf85b" title="TiXmlElement::Parse" alt="" coords="816,23,963,50"/>
+<area shape="rect" id="node5" href="$classTiXmlDeclaration.html#a9839ea97ed687a2b7342fd7b0f04361b" title="TiXmlDeclaration::Parse" alt="" coords="598,23,762,50"/>
+<area shape="rect" id="node7" href="$classTiXmlElement.html#ac786bce103042d3837c4cc2ff6967d41" title="TiXmlElement::ReadValue" alt="" coords="592,74,768,101"/>
+</map>

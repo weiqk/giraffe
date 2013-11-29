@@ -1,0 +1,14 @@
+<map id="TiXmlNode::Clone" name="TiXmlNode::Clone">
+<area shape="rect" id="node2" href="$classTiXmlElement.html#a9e0c1983b840de4134f1f6bf7af00b0f" title="TiXmlElement::CopyTo" alt="" coords="203,81,362,108"/>
+<area shape="rect" id="node6" href="$classTiXmlDocument.html#af69deeb984e060bd00f668460dec8ef2" title="TiXmlDocument::CopyTo" alt="" coords="197,183,368,209"/>
+<area shape="rect" id="node10" href="$classTiXmlNode.html#a274db3292218202805c093f66a964cb5" title="TiXmlNode::InsertAfterChild" alt="" coords="189,233,376,260"/>
+<area shape="rect" id="node11" href="$classTiXmlNode.html#a71e54e393336382bc9875f64aab5cb15" title="TiXmlNode::InsertBeforeChild" alt="" coords="185,284,381,311"/>
+<area shape="rect" id="node12" href="$classTiXmlNode.html#af287a913ce46d8dbf7ef24fec69bbaf0" title="TiXmlNode::InsertEndChild" alt="" coords="192,335,373,361"/>
+<area shape="rect" id="node13" href="$classTiXmlNode.html#a543208c2c801c84a213529541e904b9f" title="TiXmlNode::ReplaceChild" alt="" coords="196,385,369,412"/>
+<area shape="rect" id="node3" href="$classTiXmlElement.html#a13f6df105ebb1e8dc636e75cc883be32" title="Creates a new Element and returns it &#45; the returned element is a copy. " alt="" coords="465,5,612,32"/>
+<area shape="rect" id="node4" href="$classTiXmlElement.html#af5cd4156e082ef3bf23adfe0ed173340" title="TiXmlElement::operator=" alt="" coords="455,56,622,83"/>
+<area shape="rect" id="node5" href="$classTiXmlElement.html#a1ca4465f3c2eac6a60e641cd7f1d9f7e" title="TiXmlElement::TiXmlElement" alt="" coords="441,107,636,133"/>
+<area shape="rect" id="node7" href="$classTiXmlDocument.html#ac9e8f09b23454d953b32d1b65cd1409e" title="TiXmlDocument::Clone" alt="" coords="459,157,618,184"/>
+<area shape="rect" id="node8" href="$classTiXmlDocument.html#aafbfacc3414008f619b1345775ef12a4" title="TiXmlDocument::operator=" alt="" coords="449,208,628,235"/>
+<area shape="rect" id="node9" href="$classTiXmlDocument.html#a323a7486e7da6099cdc19a5ff7e74b07" title="TiXmlDocument::TiXmlDocument" alt="" coords="429,259,648,285"/>
+</map>

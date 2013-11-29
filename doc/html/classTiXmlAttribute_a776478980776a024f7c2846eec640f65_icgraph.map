@@ -1,0 +1,8 @@
+<map id="TiXmlAttribute::Next" name="TiXmlAttribute::Next">
+<area shape="rect" id="node2" href="$classTiXmlElement.html#a9e0c1983b840de4134f1f6bf7af00b0f" title="TiXmlElement::CopyTo" alt="" coords="195,56,354,83"/>
+<area shape="rect" id="node6" href="$classTiXmlElement.html#ad9d0c008866982ab8d9aafae7e14d692" title="TiXmlElement::Print" alt="" coords="205,107,344,133"/>
+<area shape="rect" id="node7" href="$classTiXmlPrinter.html#a6dccaf5ee4979f13877690afe28721e8" title="Visit an element. " alt="" coords="195,157,354,184"/>
+<area shape="rect" id="node3" href="$classTiXmlElement.html#a1ca4465f3c2eac6a60e641cd7f1d9f7e" title="TiXmlElement::TiXmlElement" alt="" coords="403,5,597,32"/>
+<area shape="rect" id="node4" href="$classTiXmlElement.html#af5cd4156e082ef3bf23adfe0ed173340" title="TiXmlElement::operator=" alt="" coords="417,56,583,83"/>
+<area shape="rect" id="node5" href="$classTiXmlElement.html#a13f6df105ebb1e8dc636e75cc883be32" title="Creates a new Element and returns it &#45; the returned element is a copy. " alt="" coords="427,107,573,133"/>
+</map>

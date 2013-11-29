@@ -1,0 +1,6 @@
+<map id="CBitStream::DecodeFindMatch" name="CBitStream::DecodeFindMatch">
+<area shape="rect" id="node2" href="$classCBitStream.html#afcf3c39118ef75ede0693186710495c7" title="CBitStream::Get" alt="" coords="286,5,405,32"/>
+<area shape="rect" id="node3" href="$classCBitStream.html#abeea0b58bcd9759afc03e0bf51033192" title="CBitStream::GetNoMove" alt="" coords="480,31,648,57"/>
+<area shape="rect" id="node4" href="$structBITCODE.html#a01d527a5fa70d902dd1038322d22e984" title="BITCODE::IsOriginalData" alt="" coords="259,107,432,133"/>
+<area shape="rect" id="node5" href="$classCBitStream.html#a0e80e1a1663b61c132817179a5f593b0" title="CBitStream::Move" alt="" coords="280,157,411,184"/>
+</map>

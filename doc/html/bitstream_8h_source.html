@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: bitstream.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bitstream.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bitstream_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BITSTREAM_H_INCLUDE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _BITSTREAM_H_INCLUDE</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mword_8h.html">mword.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="typedef_8h.html">typedef.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//BITCODE::m_cCode</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//&#39;B&#39;:数据不超过m_dwCodeData位,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//&#39;b&#39;:数据不超过m_dwCodeData位, 带符号数</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//&#39;m&#39;:数据不超过m_dwCodeData位, 负数</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//&#39;S&#39;:数据右移HIWORD(m_dwCodeData)后不超过LOWORD(m_dwCodeData)位</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//&#39;E&#39;:数据等于CodeData</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//&#39;Z&#39;:数据为x*10^N, x&lt;CodeData,N==1-4</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//&#39;P&#39;:在m_dwCodeData位数据中，存在一个1，这个1的位置</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//&#39;D&#39;:原始整形数据，原始数据放入Bit流,总是放在最后面，不进行匹配</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//&#39;M&#39;:原始MWORD数据，原始数据放入Bit流,总是放在最后面，不进行匹配</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structBITCODE.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structBITCODE.html">BITCODE</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structBITCODE.html#a57c90239c3faad21d40f29d9c2934420">   25</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>    <a class="code" href="structBITCODE.html#a57c90239c3faad21d40f29d9c2934420">m_wCodeBits</a>;    <span class="comment">//编码</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structBITCODE.html#aeef8acd96a74200798fc8638a5590e14">   26</a></span>&#160;    <span class="keywordtype">char</span>    <a class="code" href="structBITCODE.html#aeef8acd96a74200798fc8638a5590e14">m_nCodeLen</a>;     <span class="comment">//编码长度</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structBITCODE.html#a7b261cf60bd9b59909f7d2e4757df9c0">   27</a></span>&#160;    <span class="keywordtype">char</span>    <a class="code" href="structBITCODE.html#a7b261cf60bd9b59909f7d2e4757df9c0">m_nDataLen</a>;     <span class="comment">//编码后跟随的数据长度,单位Bit，最大32Bit</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structBITCODE.html#a4de68d1252ee1b6c1a04e9045f73fb92">   28</a></span>&#160;    <span class="keywordtype">char</span>    <a class="code" href="structBITCODE.html#a4de68d1252ee1b6c1a04e9045f73fb92">m_cCode</a>;        <span class="comment">//编码方法    &#39;B&#39;:数据不超过m_dwCodeData位,</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                        <span class="comment">//&#39;X&#39;:数据为x*10^N, x为CodeData位,N==1-4</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                        <span class="comment">//&#39;E&#39;:数据等于CodeData</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                        <span class="comment">//&#39;D&#39;:原始整形数据，原始数据放入Bit流,总是放在最后面，不进行匹配</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                        <span class="comment">//&#39;F&#39;:原始浮点数据，原始数据放入Bit流,总是放在最后面，不进行匹配</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structBITCODE.html#a3a5bfd4d652ba1eb777af961564f57c0">   33</a></span>&#160;    <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>   <a class="code" href="structBITCODE.html#a3a5bfd4d652ba1eb777af961564f57c0">m_dwCodeData</a>;   <span class="comment">//编码数据</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structBITCODE.html#af16086e6c597a63cf423447030bf7d1e">   34</a></span>&#160;    <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>   <a class="code" href="structBITCODE.html#af16086e6c597a63cf423447030bf7d1e">m_dwDataBias</a>;   <span class="comment">//编码数据偏移量</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span>    <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>   m_dwCodeCount;  <span class="comment">//频度</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structBITCODE.html#a01d527a5fa70d902dd1038322d22e984">   38</a></span>&#160;<span class="preprocessor"></span>    <a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code" href="structBITCODE.html#a01d527a5fa70d902dd1038322d22e984">IsOriginalData</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_cCode==<span class="charliteral">&#39;D&#39;</span> || m_cCode==<span class="charliteral">&#39;M&#39;</span>;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structBITCODE.html#a548abf8f8dfc921e33d7ff901ec527ea">   39</a></span>&#160;    <a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code" href="structBITCODE.html#a548abf8f8dfc921e33d7ff901ec527ea">IsBitPos</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_cCode==<span class="charliteral">&#39;P&#39;</span>;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classCBitStream.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCBitStream.html">CBitStream</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classCBitStream.html#a1b4ce2ce9fae480c0f375f00dfdf7316">   45</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* <a class="code" href="classCBitStream.html#a1b4ce2ce9fae480c0f375f00dfdf7316">m_pData</a>;              <span class="comment">//缓冲区</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classCBitStream.html#a45cce95a3677224da4a287e5de1c4cb5">   46</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#a45cce95a3677224da4a287e5de1c4cb5">m_nBitSize</a>;             <span class="comment">//缓冲区大小，Bit</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classCBitStream.html#a18472d4a8a8f80ede40168d217ca833a">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#a18472d4a8a8f80ede40168d217ca833a">m_nCurPos</a>;              <span class="comment">//当前位置</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCBitStream.html#ae996e70bf61d0cb8bcd5616940dfaa7b">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#ae996e70bf61d0cb8bcd5616940dfaa7b">m_nSavedPos</a>;            <span class="comment">//上一次保存的位置</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classCBitStream.html#a9597a1de59505984dca1bd8a1f932e60">   51</a></span>&#160;    <a class="code" href="structBITCODE.html">BITCODE</a>*    <a class="code" href="classCBitStream.html#a9597a1de59505984dca1bd8a1f932e60">m_pCodes</a>;   <span class="comment">//当前编解码码表</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classCBitStream.html#adcbae086295401c5db1240120f8ef0a1">   52</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="classCBitStream.html#adcbae086295401c5db1240120f8ef0a1">m_nNumCode</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classCBitStream.html">CBitStream</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classCBitStream.html">CBitStream</a>(<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nSize);          <span class="comment">//直接使用给定缓冲区,nSize是字节数</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> SetBuffer(<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nSize);      <span class="comment">//直接使用给定缓冲区,nSize是字节数</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> AttachToBuffer(<a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>* pData,<span class="keywordtype">int</span> nSize,<span class="keywordtype">int</span> nBitPos); <span class="comment">//使用给定缓冲区，nSize是字节数,nBitPos是之前编码所到的位置,</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classCBitStream.html#aeb386b7b47c36fec5d60603621cb021e">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#aeb386b7b47c36fec5d60603621cb021e">GetBitLength</a>(){<span class="keywordflow">return</span> m_nCurPos;}                       <span class="comment">//得到当前Bit流Bit数</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classCBitStream.html#aaafddaad10a7f5d18494bb861f364009">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#aaafddaad10a7f5d18494bb861f364009">GetByteLength</a>(){<span class="keywordflow">return</span> (m_nCurPos+7)/8;}                <span class="comment">//得到当前Bit流Byte数</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classCBitStream.html#ae23b91c66cf460235e06cc2c302252a6">   63</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#ae23b91c66cf460235e06cc2c302252a6">GetCurPos</a>(){<span class="keywordflow">return</span> m_nCurPos;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classCBitStream.html#a30dc9f979d7d833ee336ee2ee3b232b8">   64</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#a30dc9f979d7d833ee336ee2ee3b232b8">GetBitSize</a>(){<span class="keywordflow">return</span> m_nBitSize;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> Get(<span class="keywordtype">int</span> nBit);                <span class="comment">//取得nBit数据，最多32Bit</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetNoMove(<span class="keywordtype">int</span> nBit,<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&amp; dw);  <span class="comment">//不移动内部指针，取得nBit数据，最多32Bit，返回实际取得的长度</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> GetString(<span class="keywordtype">char</span>* pBuf,<span class="keywordtype">int</span> nBufSize);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> Put(<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> dw,<span class="keywordtype">int</span> nBit);         <span class="comment">//向当前位置添加nBit数据</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> PutString(<a class="code" href="ldgloble_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> str);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classCBitStream.html#a0e80e1a1663b61c132817179a5f593b0">   73</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCBitStream.html#a0e80e1a1663b61c132817179a5f593b0">Move</a>(<span class="keywordtype">int</span> nBit){<span class="keywordflow">return</span> MoveTo(m_nCurPos+nBit);}      <span class="comment">//移动内部指针，nBit可以为负，返回新的位置</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> MoveTo(<span class="keywordtype">int</span> nPos);                   <span class="comment">//移动内部指针到nPos处</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classCBitStream.html#a8ede243e2da443f9c76409bc67a6fbee">   76</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCBitStream.html#a8ede243e2da443f9c76409bc67a6fbee">SaveCurrentPos</a>(){m_nSavedPos = m_nCurPos;}     <span class="comment">//保存当前位置</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classCBitStream.html#a5f040cc2e4de263eb2a08d90ebcc49eb">   77</a></span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="classCBitStream.html#a5f040cc2e4de263eb2a08d90ebcc49eb">RestoreToSavedPos</a>(){<span class="keywordflow">return</span> MoveTo(m_nSavedPos);}       <span class="comment">//回卷到上一次保存的位置</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classCBitStream.html#af83b9f45096d68df41cfd2899d795851">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCBitStream.html#af83b9f45096d68df41cfd2899d795851">SetBitCode</a>(<a class="code" href="structBITCODE.html">BITCODE</a>* pCodes,<span class="keywordtype">int</span> nNumCode){m_pCodes = pCodes;m_nNumCode = nNumCode;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> EncodeData(<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> dwData,<span class="keyword">const</span> <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>* pdwLastData=NULL,<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bReverse=<a class="code" href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>); <span class="comment">//根据情况编码，返回编码Bit长度</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> EncodeData(<a class="code" href="structMWORD.html">MWORD</a> mData,<span class="keyword">const</span> <a class="code" href="structMWORD.html">MWORD</a>* pmLastData=NULL);   <span class="comment">//根据情况编码，返回编码Bit长度</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> EncodeFloat(<span class="keywordtype">float</span> f,<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bCheck0);              <span class="comment">//返回编码Bit长度,不需要编码</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> EncodeStringData(<a class="code" href="ldgloble_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> strData,<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&amp; dwLastData);                         <span class="comment">//根据情况编码，返回编码Bit长度,更新dwLastData</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> DecodeData(<span class="keyword">const</span> <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>* pdwLastData=NULL,<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bReverse=<a class="code" href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="structMWORD.html">MWORD</a> DecodeMWordData(<span class="keyword">const</span> <a class="code" href="structMWORD.html">MWORD</a>* pmLastData=NULL,<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bReverse=<a class="code" href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">float</span> DecodeFloat(<a class="code" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> bCheck0);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> DecodeStringData(<span class="keywordtype">char</span>* pBuf,<span class="keywordtype">int</span> nBufSize,<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&amp; dwLastData);                      <span class="comment">//如果解出数字Label，则返回该数字，否则返回0xFFFFFFFF,更新dwLastData</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> GetNumZero(<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&amp; dw);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> GetNumZero(<a class="code" href="structMWORD.html">MWORD</a>&amp; m);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <a class="code" href="structBITCODE.html">BITCODE</a>* EncodeFindMatch(<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&amp; dw);                          <span class="comment">//找到配合的编码,编码后的数据通过dw带回</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">const</span> <a class="code" href="structBITCODE.html">BITCODE</a>* DecodeFindMatch(<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&amp; dw);                          <span class="comment">//找到配合的编码，并通过dw返回</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> <a class="code" href="structBITCODE.html">BITCODE</a>* FindOrgMData();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">const</span> <a class="code" href="structBITCODE.html">BITCODE</a>* FindStringData();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="bitstream_8h.html#a45ec482a6b0390ea3314ffff6d36f765">  102</a></span>&#160;<span class="preprocessor">#define SETBITCODE(x)   SetBitCode(x,sizeof(x)/sizeof(x[0]))</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span><span class="keywordtype">float</span> GetAvgCodeLen(<a class="code" href="structBITCODE.html">BITCODE</a>* pCode,<span class="keywordtype">int</span> nNum);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define AVGCODELEN(x)   GetAvgCodeLen(x,sizeof(x)/sizeof(x[0]))</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> PrintOptimizedCode(<a class="code" href="ldgloble_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a> name,<a class="code" href="structBITCODE.html">BITCODE</a>* pCodes,<span class="keywordtype">int</span> nNum);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#define PRINTOPTCODE(y,x)   PrintOptimizedCode(x,y,sizeof(y)/sizeof(y[0]))</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif //_BITSTREAM_H_INCLUDE</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="structBITCODE_html_a548abf8f8dfc921e33d7ff901ec527ea"><div class="ttname"><a href="structBITCODE.html#a548abf8f8dfc921e33d7ff901ec527ea">BITCODE::IsBitPos</a></div><div class="ttdeci">BOOL IsBitPos() const </div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00039">bitstream.h:39</a></div></div>
+<div class="ttc" id="mword_8h_html"><div class="ttname"><a href="mword_8h.html">mword.h</a></div></div>
+<div class="ttc" id="structBITCODE_html_af16086e6c597a63cf423447030bf7d1e"><div class="ttname"><a href="structBITCODE.html#af16086e6c597a63cf423447030bf7d1e">BITCODE::m_dwDataBias</a></div><div class="ttdeci">DWORD m_dwDataBias</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00034">bitstream.h:34</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00039">ldgloble.h:39</a></div></div>
+<div class="ttc" id="classCBitStream_html_af83b9f45096d68df41cfd2899d795851"><div class="ttname"><a href="classCBitStream.html#af83b9f45096d68df41cfd2899d795851">CBitStream::SetBitCode</a></div><div class="ttdeci">void SetBitCode(BITCODE *pCodes, int nNumCode)</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00079">bitstream.h:79</a></div></div>
+<div class="ttc" id="structBITCODE_html_a3a5bfd4d652ba1eb777af961564f57c0"><div class="ttname"><a href="structBITCODE.html#a3a5bfd4d652ba1eb777af961564f57c0">BITCODE::m_dwCodeData</a></div><div class="ttdeci">DWORD m_dwCodeData</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00033">bitstream.h:33</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a197942eefa7db30960ae396d68339b97"><div class="ttname"><a href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></div><div class="ttdeci">unsigned short WORD</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00024">dzh_time_t.h:24</a></div></div>
+<div class="ttc" id="classCBitStream_html_aeb386b7b47c36fec5d60603621cb021e"><div class="ttname"><a href="classCBitStream.html#aeb386b7b47c36fec5d60603621cb021e">CBitStream::GetBitLength</a></div><div class="ttdeci">int GetBitLength()</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00061">bitstream.h:61</a></div></div>
+<div class="ttc" id="structBITCODE_html"><div class="ttname"><a href="structBITCODE.html">BITCODE</a></div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00023">bitstream.h:23</a></div></div>
+<div class="ttc" id="classCBitStream_html_ae996e70bf61d0cb8bcd5616940dfaa7b"><div class="ttname"><a href="classCBitStream.html#ae996e70bf61d0cb8bcd5616940dfaa7b">CBitStream::m_nSavedPos</a></div><div class="ttdeci">int m_nSavedPos</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00049">bitstream.h:49</a></div></div>
+<div class="ttc" id="classCBitStream_html_a9597a1de59505984dca1bd8a1f932e60"><div class="ttname"><a href="classCBitStream.html#a9597a1de59505984dca1bd8a1f932e60">CBitStream::m_pCodes</a></div><div class="ttdeci">BITCODE * m_pCodes</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00051">bitstream.h:51</a></div></div>
+<div class="ttc" id="structBITCODE_html_a01d527a5fa70d902dd1038322d22e984"><div class="ttname"><a href="structBITCODE.html#a01d527a5fa70d902dd1038322d22e984">BITCODE::IsOriginalData</a></div><div class="ttdeci">BOOL IsOriginalData() const </div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00038">bitstream.h:38</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00047">ldgloble.h:47</a></div></div>
+<div class="ttc" id="classCBitStream_html_a5f040cc2e4de263eb2a08d90ebcc49eb"><div class="ttname"><a href="classCBitStream.html#a5f040cc2e4de263eb2a08d90ebcc49eb">CBitStream::RestoreToSavedPos</a></div><div class="ttdeci">int RestoreToSavedPos()</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00077">bitstream.h:77</a></div></div>
+<div class="ttc" id="typedef_8h_html"><div class="ttname"><a href="typedef_8h.html">typedef.h</a></div></div>
+<div class="ttc" id="structMWORD_html"><div class="ttname"><a href="structMWORD.html">MWORD</a></div><div class="ttdef"><b>Definition:</b> <a href="mword_8h_source.html#l00015">mword.h:15</a></div></div>
+<div class="ttc" id="structBITCODE_html_aeef8acd96a74200798fc8638a5590e14"><div class="ttname"><a href="structBITCODE.html#aeef8acd96a74200798fc8638a5590e14">BITCODE::m_nCodeLen</a></div><div class="ttdeci">char m_nCodeLen</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00026">bitstream.h:26</a></div></div>
+<div class="ttc" id="classCBitStream_html_a8ede243e2da443f9c76409bc67a6fbee"><div class="ttname"><a href="classCBitStream.html#a8ede243e2da443f9c76409bc67a6fbee">CBitStream::SaveCurrentPos</a></div><div class="ttdeci">void SaveCurrentPos()</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00076">bitstream.h:76</a></div></div>
+<div class="ttc" id="structBITCODE_html_a7b261cf60bd9b59909f7d2e4757df9c0"><div class="ttname"><a href="structBITCODE.html#a7b261cf60bd9b59909f7d2e4757df9c0">BITCODE::m_nDataLen</a></div><div class="ttdeci">char m_nDataLen</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00027">bitstream.h:27</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a798af1e30bc65f319c1a246cecf59e39"><div class="ttname"><a href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></div><div class="ttdeci">unsigned int DWORD</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00055">ldgloble.h:55</a></div></div>
+<div class="ttc" id="classCBitStream_html"><div class="ttname"><a href="classCBitStream.html">CBitStream</a></div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00042">bitstream.h:42</a></div></div>
+<div class="ttc" id="classCBitStream_html_a30dc9f979d7d833ee336ee2ee3b232b8"><div class="ttname"><a href="classCBitStream.html#a30dc9f979d7d833ee336ee2ee3b232b8">CBitStream::GetBitSize</a></div><div class="ttdeci">int GetBitSize()</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00064">bitstream.h:64</a></div></div>
+<div class="ttc" id="classCBitStream_html_adcbae086295401c5db1240120f8ef0a1"><div class="ttname"><a href="classCBitStream.html#adcbae086295401c5db1240120f8ef0a1">CBitStream::m_nNumCode</a></div><div class="ttdeci">int m_nNumCode</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00052">bitstream.h:52</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_adbea528b1294c9a1dfda3dfa33ff1472"><div class="ttname"><a href="ldgloble_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a></div><div class="ttdeci">const char * LPCSTR</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00071">ldgloble.h:71</a></div></div>
+<div class="ttc" id="structBITCODE_html_a4de68d1252ee1b6c1a04e9045f73fb92"><div class="ttname"><a href="structBITCODE.html#a4de68d1252ee1b6c1a04e9045f73fb92">BITCODE::m_cCode</a></div><div class="ttdeci">char m_cCode</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00028">bitstream.h:28</a></div></div>
+<div class="ttc" id="classCBitStream_html_aaafddaad10a7f5d18494bb861f364009"><div class="ttname"><a href="classCBitStream.html#aaafddaad10a7f5d18494bb861f364009">CBitStream::GetByteLength</a></div><div class="ttdeci">int GetByteLength()</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00062">bitstream.h:62</a></div></div>
+<div class="ttc" id="dscomapi_8h_html_a4ae1dab0fb4b072a66584546209e7d58"><div class="ttname"><a href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></div><div class="ttdeci">unsigned char BYTE</div><div class="ttdef"><b>Definition:</b> <a href="dscomapi_8h_source.html#l00012">dscomapi.h:12</a></div></div>
+<div class="ttc" id="classCBitStream_html_a1b4ce2ce9fae480c0f375f00dfdf7316"><div class="ttname"><a href="classCBitStream.html#a1b4ce2ce9fae480c0f375f00dfdf7316">CBitStream::m_pData</a></div><div class="ttdeci">BYTE * m_pData</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00045">bitstream.h:45</a></div></div>
+<div class="ttc" id="classCBitStream_html_a0e80e1a1663b61c132817179a5f593b0"><div class="ttname"><a href="classCBitStream.html#a0e80e1a1663b61c132817179a5f593b0">CBitStream::Move</a></div><div class="ttdeci">int Move(int nBit)</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00073">bitstream.h:73</a></div></div>
+<div class="ttc" id="classCBitStream_html_a45cce95a3677224da4a287e5de1c4cb5"><div class="ttname"><a href="classCBitStream.html#a45cce95a3677224da4a287e5de1c4cb5">CBitStream::m_nBitSize</a></div><div class="ttdeci">int m_nBitSize</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00046">bitstream.h:46</a></div></div>
+<div class="ttc" id="structBITCODE_html_a57c90239c3faad21d40f29d9c2934420"><div class="ttname"><a href="structBITCODE.html#a57c90239c3faad21d40f29d9c2934420">BITCODE::m_wCodeBits</a></div><div class="ttdeci">WORD m_wCodeBits</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00025">bitstream.h:25</a></div></div>
+<div class="ttc" id="classCBitStream_html_a18472d4a8a8f80ede40168d217ca833a"><div class="ttname"><a href="classCBitStream.html#a18472d4a8a8f80ede40168d217ca833a">CBitStream::m_nCurPos</a></div><div class="ttdeci">int m_nCurPos</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00047">bitstream.h:47</a></div></div>
+<div class="ttc" id="classCBitStream_html_ae23b91c66cf460235e06cc2c302252a6"><div class="ttname"><a href="classCBitStream.html#ae23b91c66cf460235e06cc2c302252a6">CBitStream::GetCurPos</a></div><div class="ttdeci">int GetCurPos()</div><div class="ttdef"><b>Definition:</b> <a href="bitstream_8h_source.html#l00063">bitstream.h:63</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:47 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

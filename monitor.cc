@@ -244,6 +244,7 @@ void JoinCaptureThread(deque<CaptureNetPacket> & capture_net_packet_deque, deque
 */
 int main(int argc, char * argv[])
 {
+
 /** windows:exit program related*/
 #ifndef __linux
 	SetConsoleCtrlHandler((PHANDLER_ROUTINE)Event_Routine,true);
@@ -254,7 +255,7 @@ int main(int argc, char * argv[])
 
 	log4cxx::LogString pattern_layout("%d [%t] %-5p - %m (%F:%L)%n");
 	log4cxx::RollingFileAppender * rf_appender = new log4cxx::RollingFileAppender(log4cxx::LayoutPtr(new log4cxx::PatternLayout(pattern_layout)),"app.log",false);
-	rf_appender->setMaxFileSize("1G");
+	rf_appender->setMaxFileSize(FLAGS_LOG_FILE_MAX_SIZE.c_str());
 
 	log4cxx::BasicConfigurator::configure(log4cxx::AppenderPtr(rf_appender));
 	log4cxx::LoggerPtr root_logger = log4cxx::Logger::getRootLogger();

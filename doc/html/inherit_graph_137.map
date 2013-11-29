@@ -1,0 +1,28 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node2" href="$structSTEP_1_1Exception.html" title="Base QuickFIX exception type. " alt="" coords="136,588,259,615"/>
+<area shape="rect" id="node3" href="$structSTEP_1_1ConfigError.html" title="Application is not configured correctly " alt="" coords="355,5,485,32"/>
+<area shape="rect" id="node4" href="$structSTEP_1_1DoNotSend.html" title="Indicates user does not want to send a message. " alt="" coords="353,56,487,83"/>
+<area shape="rect" id="node5" href="$structSTEP_1_1DuplicateFieldNumber.html" title="Field shows up twice in the message. " alt="" coords="323,107,517,133"/>
+<area shape="rect" id="node6" href="$structSTEP_1_1FieldConvertError.html" title="Unable to convert field into its native format. " alt="" coords="337,157,503,184"/>
+<area shape="rect" id="node7" href="$structSTEP_1_1FieldNotFound.html" title="Field not found inside a message. " alt="" coords="345,208,495,235"/>
+<area shape="rect" id="node8" href="$structSTEP_1_1IncorrectDataFormat.html" title="Field has a badly formatted value. " alt="" coords="327,259,513,285"/>
+<area shape="rect" id="node9" href="$structSTEP_1_1IncorrectMessageStructure.html" title="Message is not structured correctly. " alt="" coords="309,309,531,336"/>
+<area shape="rect" id="node10" href="$structSTEP_1_1IncorrectTagValue.html" title="Field has a value that is out of range. " alt="" coords="335,360,505,387"/>
+<area shape="rect" id="node11" href="$structSTEP_1_1InvalidMessage.html" title="Not a recognizable message. " alt="" coords="342,411,498,437"/>
+<area shape="rect" id="node12" href="$structSTEP_1_1InvalidMessageType.html" title="Not a known message type. " alt="" coords="327,461,513,488"/>
+<area shape="rect" id="node13" href="$structSTEP_1_1InvalidTagNumber.html" title="Tag number does not exist in specification. " alt="" coords="335,512,505,539"/>
+<area shape="rect" id="node14" href="$structSTEP_1_1IOException.html" title="IO Error. " alt="" coords="351,563,489,589"/>
+<area shape="rect" id="node15" href="$structSTEP_1_1MessageParseError.html" title="Unable to parse message. " alt="" coords="330,613,510,640"/>
+<area shape="rect" id="node16" href="$structSTEP_1_1NoTagValue.html" title="Field exists in message without a value. " alt="" coords="351,664,489,691"/>
+<area shape="rect" id="node17" href="$structSTEP_1_1RejectLogon.html" title="User wants to reject permission to logon. " alt="" coords="351,715,489,741"/>
+<area shape="rect" id="node18" href="$structSTEP_1_1RepeatedTag.html" title="Repeated tag not part of repeating group. " alt="" coords="349,765,491,792"/>
+<area shape="rect" id="node19" href="$structSTEP_1_1RepeatingGroupCountMismatch.html" title="Repeated group count not equal to actual count. " alt="" coords="323,817,517,858"/>
+<area shape="rect" id="node20" href="$structSTEP_1_1RequiredTagMissing.html" title="Required field is not in message. " alt="" coords="328,883,512,909"/>
+<area shape="rect" id="node21" href="$structSTEP_1_1RuntimeError.html" title="Application encountered serious error during runtime " alt="" coords="349,933,491,960"/>
+<area shape="rect" id="node22" href="$structSTEP_1_1SocketException.html" title="Socket Error. " alt="" coords="338,984,502,1011"/>
+<area shape="rect" id="node24" href="$structSTEP_1_1TagNotDefinedForMessage.html" title="Field does not belong to message. " alt="" coords="307,1035,533,1061"/>
+<area shape="rect" id="node25" href="$structSTEP_1_1TagOutOfOrder.html" title="Tag is not in the correct order. " alt="" coords="343,1085,497,1112"/>
+<area shape="rect" id="node26" href="$structSTEP_1_1UnsupportedMessageType.html" title="Message type not supported by application. " alt="" coords="309,1136,531,1163"/>
+<area shape="rect" id="node27" href="$structSTEP_1_1UnsupportedVersion.html" title="Version of FIX is not supported. " alt="" coords="329,1187,511,1213"/>
+<area shape="rect" id="node23" href="$structSTEP_1_1SocketRecvFailed.html" title="Socket recv operation failed. " alt="" coords="582,984,754,1011"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TiXmlElement::ClearThis" name="TiXmlElement::ClearThis">
+<area shape="rect" id="node2" href="$classTiXmlNode.html#a708e7f953df61d4d2d12f73171550a4b" title="Delete all the children of this node. Does not affect &#39;this&#39;. " alt="" coords="225,5,351,32"/>
+<area shape="rect" id="node3" href="$classTiXmlAttributeSet.html#ae0636e88cedd4b09d61c451860f68598" title="TiXmlAttributeSet::\lFirst" alt="" coords="221,57,355,98"/>
+<area shape="rect" id="node4" href="$classTiXmlAttributeSet.html#a924a73d071f2573f9060f0be57879c57" title="TiXmlAttributeSet::\lRemove" alt="" coords="221,122,355,163"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="CBitStream" name="CBitStream">
+<area shape="rect" id="node2" href="$structBITCODE.html" title="{BITCODE\n|+ m_wCodeBits\l+ m_nCodeLen\l+ m_nDataLen\l+ m_cCode\l+ m_dwCodeData\l+ m_dwDataBias\l|+ IsOriginalData()\l+ IsBitPos()\l}" alt="" coords="15,5,143,171"/>
+</map>

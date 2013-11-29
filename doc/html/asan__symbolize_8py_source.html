@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: scripts/asan_symbolize.py 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_53e6fa9553ac22a5646d2a2b2d7b97a1.html">scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">asan_symbolize.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="asan__symbolize_8py.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html">    1</a></span>&#160;<span class="comment">#!/usr/bin/env python</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">#===- lib/asan/scripts/asan_symbolize.py -----------------------------------===#</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">#</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">#                     The LLVM Compiler Infrastructure</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">#</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"># This file is distributed under the University of Illinois Open Source</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"># License. See LICENSE.TXT for details.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">#</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">#===------------------------------------------------------------------------===#</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> bisect</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">import</span> getopt</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> os</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> re</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">import</span> subprocess</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">import</span> sys</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#aa669768e1ff7cda86e94874192e1e80c">   17</a></span>&#160;llvm_symbolizer = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#aea5331745257becb76409f817aa931c3">   18</a></span>&#160;symbolizers = {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a31a9c24ba92b9d6ad5defef9b336562f">   19</a></span>&#160;filetypes = {}</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#abf04ec3f055103dadfaa0b609dc91f15">   20</a></span>&#160;vmaddrs = {}</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a63fc98ac6ff0727861f255aaf9fcb756">   21</a></span>&#160;DEBUG = <span class="keyword">False</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a96532e5e01d33ca10fdd05b91c546550">   22</a></span>&#160;demangle = <span class="keyword">False</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"># FIXME: merge the code that calls fix_filename().</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">   26</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">fix_filename</a>(file_name):</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">for</span> path_to_cut <span class="keywordflow">in</span> sys.argv[1:]:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    file_name = re.sub(<span class="stringliteral">&#39;.*&#39;</span> + path_to_cut, <span class="stringliteral">&#39;&#39;</span>, file_name)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  file_name = re.sub(<span class="stringliteral">&#39;.*asan_[a-z_]*.cc:[0-9]*&#39;</span>, <span class="stringliteral">&#39;_asan_rtl_&#39;</span>, file_name)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  file_name = re.sub(<span class="stringliteral">&#39;.*crtstuff.c:0&#39;</span>, <span class="stringliteral">&#39;???:0&#39;</span>, file_name)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> file_name</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Symbolizer.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1Symbolizer.html">Symbolizer</a>(object):</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Symbolizer.html#aee2436e91868e66aac63bd884f82f469">   35</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1Symbolizer.html#aee2436e91868e66aac63bd884f82f469">__init__</a>(self):</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">pass</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Symbolizer.html#a0985bb4630b3683c45f15be4f3d73378">   38</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1Symbolizer.html#a0985bb4630b3683c45f15be4f3d73378">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Symbolize the given address (pair of binary and offset).</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">    Overriden in subclasses.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">    Args:</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">        addr: virtual address of an instruction.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">        binary: path to executable/shared object containing this instruction.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">        offset: instruction offset in the @binary.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">    Returns:</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">        list of strings (one string for each inlined frame) describing</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">        the code locations for this instruction (that is, function name, file</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">        name, line and column numbers).</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html">LLVMSymbolizer</a>(<a class="code" href="classasan__symbolize_1_1Symbolizer.html">Symbolizer</a>):</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">   55</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">__init__</a>(self, symbolizer_path):</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    super(LLVMSymbolizer, self).<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">__init__</a>()</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">   57</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a> = symbolizer_path</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">   58</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">pipe</a> = self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">open_llvm_symbolizer</a>()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">   60</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">open_llvm_symbolizer</a>(self):</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> os.path.exists(self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a>):</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    cmd = [self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">symbolizer_path</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;           <span class="stringliteral">&#39;--use-symbol-table=true&#39;</span>,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;           <span class="stringliteral">&#39;--demangle=%s&#39;</span> % demangle,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;           <span class="stringliteral">&#39;--functions=true&#39;</span>,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;           <span class="stringliteral">&#39;--inlining=true&#39;</span>]</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">print</span> <span class="stringliteral">&#39; &#39;</span>.join(cmd)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> subprocess.Popen(cmd, stdin=subprocess.PIPE,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                            stdout=subprocess.PIPE)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">   73</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Overrides Symbolizer.symbolize.&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.<a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">pipe</a>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    result = []</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      symbolizer_input = <span class="stringliteral">&#39;%s %s&#39;</span> % (binary, offset)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">print</span> symbolizer_input</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">print</span> &gt;&gt; self.pipe.stdin, symbolizer_input</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        function_name = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> function_name:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          <span class="keywordflow">break</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        file_name = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        file_name = <a class="code" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">fix_filename</a>(file_name)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (<span class="keywordflow">not</span> function_name.startswith(<span class="stringliteral">&#39;??&#39;</span>) <span class="keywordflow">and</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">not</span> file_name.startswith(<span class="stringliteral">&#39;??&#39;</span>)):</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          <span class="comment"># Append only valid frames.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          result.append(<span class="stringliteral">&#39;%s in %s %s&#39;</span> % (addr, function_name,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                         file_name))</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">except</span> Exception:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      result = []</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> result:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      result = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a4509975a1c1c0cf97561ff4c04896e1c">  101</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceasan__symbolize.html#a4509975a1c1c0cf97561ff4c04896e1c">LLVMSymbolizerFactory</a>(system):</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  symbolizer_path = os.getenv(<span class="stringliteral">&#39;LLVM_SYMBOLIZER_PATH&#39;</span>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> <span class="keywordflow">not</span> symbolizer_path:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment"># Assume llvm-symbolizer is in PATH.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    symbolizer_path = <span class="stringliteral">&#39;llvm-symbolizer&#39;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classasan__symbolize_1_1LLVMSymbolizer.html">LLVMSymbolizer</a>(symbolizer_path)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Addr2LineSymbolizer.html">  109</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html">Addr2LineSymbolizer</a>(<a class="code" href="classasan__symbolize_1_1Symbolizer.html">Symbolizer</a>):</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a9af95edad0a20a4d24b6edcaa53b1b13">  110</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a9af95edad0a20a4d24b6edcaa53b1b13">__init__</a>(self, binary):</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    super(Addr2LineSymbolizer, self).<a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a9af95edad0a20a4d24b6edcaa53b1b13">__init__</a>()</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab97a91df7e7721e247a517c325f23537">  112</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab97a91df7e7721e247a517c325f23537">binary</a> = binary</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab2e0a7bf9b7c60d1d297fcd7f1a5f1fe">  113</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab2e0a7bf9b7c60d1d297fcd7f1a5f1fe">pipe</a> = self.<a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#aad95726f002c61620dd64e1dcb0bbea9">open_addr2line</a>()</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#aad95726f002c61620dd64e1dcb0bbea9">  115</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#aad95726f002c61620dd64e1dcb0bbea9">open_addr2line</a>(self):</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    cmd = [<span class="stringliteral">&#39;addr2line&#39;</span>, <span class="stringliteral">&#39;-f&#39;</span>]</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> demangle:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      cmd += [<span class="stringliteral">&#39;--demangle&#39;</span>]</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    cmd += [<span class="stringliteral">&#39;-e&#39;</span>, self.<a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab97a91df7e7721e247a517c325f23537">binary</a>]</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">print</span> <span class="stringliteral">&#39; &#39;</span>.join(cmd)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> subprocess.Popen(cmd,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                            stdin=subprocess.PIPE, stdout=subprocess.PIPE)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a749dbe0212ef6d5a735d052dd938c5c1">  125</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a749dbe0212ef6d5a735d052dd938c5c1">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Overrides Symbolizer.symbolize.&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> self.<a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab97a91df7e7721e247a517c325f23537">binary</a> != binary:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">print</span> &gt;&gt; self.pipe.stdin, offset</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      function_name = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      file_name = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">except</span> Exception:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      function_name = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      file_name = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    file_name = <a class="code" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">fix_filename</a>(file_name)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> [<span class="stringliteral">&#39;%s in %s %s&#39;</span> % (addr, function_name, file_name)]</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html">  140</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html">DarwinSymbolizer</a>(<a class="code" href="classasan__symbolize_1_1Symbolizer.html">Symbolizer</a>):</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#a1bb5d7b06cbe9d22b3b0813fd5db3b49">  141</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a1bb5d7b06cbe9d22b3b0813fd5db3b49">__init__</a>(self, addr, binary):</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    super(DarwinSymbolizer, self).<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a1bb5d7b06cbe9d22b3b0813fd5db3b49">__init__</a>()</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#aad6fa792e7482be5b5f4493430520f41">  143</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#aad6fa792e7482be5b5f4493430520f41">binary</a> = binary</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment"># Guess which arch we&#39;re running. 10 = len(&#39;0x&#39;) + 8 hex digits.</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> len(addr) &gt; 10:</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#a8c467fb29aa55f0648872ea27f7d3ae1">  146</a></span>&#160;      self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a8c467fb29aa55f0648872ea27f7d3ae1">arch</a> = <span class="stringliteral">&#39;x86_64&#39;</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a8c467fb29aa55f0648872ea27f7d3ae1">arch</a> = <span class="stringliteral">&#39;i386&#39;</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#afb39851eb0ee8c6f522f4bf74089a230">  149</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#afb39851eb0ee8c6f522f4bf74089a230">vmaddr</a> = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#a4f1d0a00cbf2976c22686403f82e9d86">  150</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a4f1d0a00cbf2976c22686403f82e9d86">pipe</a> = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#a2f45b30f0a15f4aeaed721b374f61cd4">  152</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a2f45b30f0a15f4aeaed721b374f61cd4">write_addr_to_pipe</a>(self, offset):</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">print</span> &gt;&gt; self.pipe.stdin, <span class="stringliteral">&#39;0x%x&#39;</span> % int(offset, 16)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#af1a6ccc09718a3d5384e78099f3e95e9">  155</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#af1a6ccc09718a3d5384e78099f3e95e9">open_atos</a>(self):</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordflow">print</span> <span class="stringliteral">&#39;atos -o %s -arch %s&#39;</span> % (self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#aad6fa792e7482be5b5f4493430520f41">binary</a>, self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a8c467fb29aa55f0648872ea27f7d3ae1">arch</a>)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    cmdline = [<span class="stringliteral">&#39;atos&#39;</span>, <span class="stringliteral">&#39;-o&#39;</span>, self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#aad6fa792e7482be5b5f4493430520f41">binary</a>, <span class="stringliteral">&#39;-arch&#39;</span>, self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a8c467fb29aa55f0648872ea27f7d3ae1">arch</a>]</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a4f1d0a00cbf2976c22686403f82e9d86">pipe</a> = subprocess.Popen(cmdline,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                 stdin=subprocess.PIPE,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                 stdout=subprocess.PIPE,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                 stderr=subprocess.PIPE)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1DarwinSymbolizer.html#ab5b0e7537550e52ce394d905c218b35c">  164</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#ab5b0e7537550e52ce394d905c218b35c">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Overrides Symbolizer.symbolize.&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#aad6fa792e7482be5b5f4493430520f41">binary</a> != binary:</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#af1a6ccc09718a3d5384e78099f3e95e9">open_atos</a>()</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html#a2f45b30f0a15f4aeaed721b374f61cd4">write_addr_to_pipe</a>(offset)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    self.pipe.stdin.close()</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    atos_line = self.pipe.stdout.readline().rstrip()</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment"># A well-formed atos response looks like this:</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">#   foo(type1, type2) (in object.name) (filename.cc:80)</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    match = re.match(<span class="stringliteral">&#39;^(.*) \(in (.*)\) \((.*:\d*)\)$&#39;</span>, atos_line)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="keywordflow">print</span> <span class="stringliteral">&#39;atos_line: &#39;</span>, atos_line</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> match:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      function_name = match.group(1)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      function_name = re.sub(<span class="stringliteral">&#39;\(.*?\)&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, function_name)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      file_name = <a class="code" href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">fix_filename</a>(match.group(3))</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keywordflow">return</span> [<span class="stringliteral">&#39;%s in %s %s&#39;</span> % (addr, function_name, file_name)]</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">return</span> [<span class="stringliteral">&#39;%s in %s&#39;</span> % (addr, atos_line)]</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"># Chain several symbolizers so that if one symbolizer fails, we fall back</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"># to the next symbolizer in chain.</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html">  188</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html">ChainSymbolizer</a>(<a class="code" href="classasan__symbolize_1_1Symbolizer.html">Symbolizer</a>):</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">  189</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">__init__</a>(self, symbolizer_list):</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    super(ChainSymbolizer, self).<a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">__init__</a>()</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">  191</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">symbolizer_list</a> = symbolizer_list</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">  193</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Overrides Symbolizer.symbolize.&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">for</span> symbolizer <span class="keywordflow">in</span> self.<a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">symbolizer_list</a>:</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">if</span> symbolizer:</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        result = symbolizer.symbolize(addr, binary, offset)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span> result:</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;          <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">  202</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">append_symbolizer</a>(self, symbolizer):</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    self.symbolizer_list.append(symbolizer)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a140590d4e495fecbcee073c24077c1a5">  206</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceasan__symbolize.html#a140590d4e495fecbcee073c24077c1a5">BreakpadSymbolizerFactory</a>(binary):</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  suffix = os.getenv(<span class="stringliteral">&#39;BREAKPAD_SUFFIX&#39;</span>)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordflow">if</span> suffix:</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    filename = binary + suffix</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> os.access(filename, os.F_OK):</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html">BreakpadSymbolizer</a>(filename)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#a894d3b4285274c98801b7d6550195880">  215</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespaceasan__symbolize.html#a894d3b4285274c98801b7d6550195880">SystemSymbolizerFactory</a>(system, addr, binary):</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">if</span> system == <span class="stringliteral">&#39;Darwin&#39;</span>:</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classasan__symbolize_1_1DarwinSymbolizer.html">DarwinSymbolizer</a>(addr, binary)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">elif</span> system == <span class="stringliteral">&#39;Linux&#39;</span>:</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classasan__symbolize_1_1Addr2LineSymbolizer.html">Addr2LineSymbolizer</a>(binary)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html">  222</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html">BreakpadSymbolizer</a>(<a class="code" href="classasan__symbolize_1_1Symbolizer.html">Symbolizer</a>):</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">  223</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">__init__</a>(self, filename):</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    super(BreakpadSymbolizer, self).<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">__init__</a>()</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">  225</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">filename</a> = filename</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    lines = file(filename).readlines()</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">  227</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a> = []</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">  228</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a> = {}</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">  229</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a> = []</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">  230</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a> = {}</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment"># MODULE mac x86_64 A7001116478B33F18FF9BEDE9F615F190 t</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    fragments = lines[0].rstrip().split()</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">  233</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">arch</a> = fragments[2]</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">  234</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">debug_id</a> = fragments[3]</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">  235</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">binary</a> = <span class="stringliteral">&#39; &#39;</span>.join(fragments[4:])</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">parse_lines</a>(lines[1:])</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">  238</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">parse_lines</a>(self, lines):</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    cur_function_addr = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">for</span> line <span class="keywordflow">in</span> lines:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      fragments = line.split()</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordflow">if</span> fragments[0] == <span class="stringliteral">&#39;FILE&#39;</span>:</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">assert</span> int(fragments[1]) == len(self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a>)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        self.files.append(<span class="stringliteral">&#39; &#39;</span>.join(fragments[2:]))</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">elif</span> fragments[0] == <span class="stringliteral">&#39;PUBLIC&#39;</span>:</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a>[int(fragments[1], 16)] = <span class="stringliteral">&#39; &#39;</span>.join(fragments[3:])</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">elif</span> fragments[0] <span class="keywordflow">in</span> [<span class="stringliteral">&#39;CFI&#39;</span>, <span class="stringliteral">&#39;STACK&#39;</span>]:</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">pass</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">elif</span> fragments[0] == <span class="stringliteral">&#39;FUNC&#39;</span>:</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        cur_function_addr = int(fragments[1], 16)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> cur_function_addr <span class="keywordflow">in</span> self.symbols.keys():</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a>[cur_function_addr] = <span class="stringliteral">&#39; &#39;</span>.join(fragments[4:])</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment"># Line starting with an address.</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        addr = int(fragments[0], 16)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        self.address_list.append(addr)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment"># Tuple of symbol address, size, line, file number.</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a>[addr] = (cur_function_addr,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                int(fragments[1], 16),</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                int(fragments[2]),</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                int(fragments[3]))</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    self.address_list.sort()</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">  264</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">get_sym_file_line</a>(self, addr):</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    key = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> addr <span class="keywordflow">in</span> self.addresses.keys():</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      key = addr</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      index = bisect.bisect_left(self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a>, addr)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <span class="keywordflow">if</span> index == 0:</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        key = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a>[index - 1]</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    sym_id, size, line_no, file_no = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a>[key]</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    symbol = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a>[sym_id]</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    filename = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a>[file_no]</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> addr &lt; key + size:</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="keywordflow">return</span> symbol, filename, line_no</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">  282</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">if</span> self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">binary</a> != binary:</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    res = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">get_sym_file_line</a>(int(offset, 16))</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> res:</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      function_name, file_name, line_no = res</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      result = [<span class="stringliteral">&#39;%s in %s %s:%d&#39;</span> % (</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          addr, function_name, file_name, line_no)]</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">print</span> result</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html">  296</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html">SymbolizationLoop</a>(object):</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a538729967d90650f434fc24a159d6a71">  297</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a538729967d90650f434fc24a159d6a71">__init__</a>(self, binary_name_filter=None):</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment"># Used by clients who may want to supply a different binary name.</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment"># E.g. in Chrome several binaries may share a single .dSYM.</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a85156cb369ec7a35fd445184399f9786">  300</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a85156cb369ec7a35fd445184399f9786">binary_name_filter</a> = binary_name_filter</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#aaf5c50c3b665aa10cf882826d1ff6ae5">  301</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#aaf5c50c3b665aa10cf882826d1ff6ae5">system</a> = os.uname()[0]</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">if</span> self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#aaf5c50c3b665aa10cf882826d1ff6ae5">system</a> <span class="keywordflow">in</span> [<span class="stringliteral">&#39;Linux&#39;</span>, <span class="stringliteral">&#39;Darwin&#39;</span>]:</div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a6cdbec7a4fbc326561a331bf1c21251b">  303</a></span>&#160;      self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a6cdbec7a4fbc326561a331bf1c21251b">llvm_symbolizer</a> = <a class="code" href="namespaceasan__symbolize.html#a4509975a1c1c0cf97561ff4c04896e1c">LLVMSymbolizerFactory</a>(self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#aaf5c50c3b665aa10cf882826d1ff6ae5">system</a>)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">raise</span> Exception(<span class="stringliteral">&#39;Unknown system&#39;</span>)</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a4f6efdc8fc2401ab1966f9316f479e29">  307</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a4f6efdc8fc2401ab1966f9316f479e29">symbolize_address</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment"># Use the chain of symbolizers:</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment"># Breakpad symbolizer -&gt; LLVM symbolizer -&gt; addr2line/atos</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment"># (fall back to next symbolizer if the previous one fails).</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> binary <span class="keywordflow">in</span> symbolizers:</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      symbolizers[binary] = <a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html">ChainSymbolizer</a>(</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;          [<a class="code" href="namespaceasan__symbolize.html#a140590d4e495fecbcee073c24077c1a5">BreakpadSymbolizerFactory</a>(binary), self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a6cdbec7a4fbc326561a331bf1c21251b">llvm_symbolizer</a>])</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    result = symbolizers[binary].symbolize(addr, binary, offset)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">if</span> result <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="comment"># Initialize system symbolizer only if other symbolizers failed.</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      symbolizers[binary].append_symbolizer(</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          <a class="code" href="namespaceasan__symbolize.html#a894d3b4285274c98801b7d6550195880">SystemSymbolizerFactory</a>(self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#aaf5c50c3b665aa10cf882826d1ff6ae5">system</a>, addr, binary))</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      result = symbolizers[binary].symbolize(addr, binary, offset)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment"># The system symbolizer must produce some result.</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keyword">assert</span> result</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#adc09535eefedaf980ec042bab47e37f5">  324</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#adc09535eefedaf980ec042bab47e37f5">print_symbolized_lines</a>(self, symbolized_lines):</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> symbolized_lines:</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <span class="keywordflow">print</span> self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a638992f69e55292c55746012314bd3cf">current_line</a></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <span class="keywordflow">for</span> symbolized_frame <span class="keywordflow">in</span> symbolized_lines:</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">print</span> <span class="stringliteral">&#39;    #&#39;</span> + str(self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a55f007d272924297122d33cf2afed5aa">frame_no</a>) + <span class="stringliteral">&#39; &#39;</span> + symbolized_frame.rstrip()</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a55f007d272924297122d33cf2afed5aa">frame_no</a> += 1</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a3fea466c318d79d5aa08c4db3bf9da5c">  332</a></span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a3fea466c318d79d5aa08c4db3bf9da5c">process_stdin</a>(self):</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a55f007d272924297122d33cf2afed5aa">  333</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a55f007d272924297122d33cf2afed5aa">frame_no</a> = 0</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">for</span> line <span class="keywordflow">in</span> sys.stdin:</div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1SymbolizationLoop.html#a638992f69e55292c55746012314bd3cf">  335</a></span>&#160;      self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a638992f69e55292c55746012314bd3cf">current_line</a> = line.rstrip()</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="comment">#0 0x7f6e35cf2e45  (/blah/foo.so+0x11fe45)</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      stack_trace_line_format = (</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;          <span class="stringliteral">&#39;^( *#([0-9]+) *)(0x[0-9a-f]+) *\((.*)\+(0x[0-9a-f]+)\)&#39;</span>)</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      match = re.match(stack_trace_line_format, line)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">if</span> <span class="keywordflow">not</span> match:</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">print</span> self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a638992f69e55292c55746012314bd3cf">current_line</a></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">continue</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="keywordflow">if</span> DEBUG:</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">print</span> line</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      _, frameno_str, addr, binary, offset = match.groups()</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">if</span> frameno_str == <span class="stringliteral">&#39;0&#39;</span>:</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment"># Assume that frame #0 is the first frame of new stack trace.</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a55f007d272924297122d33cf2afed5aa">frame_no</a> = 0</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      original_binary = binary</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordflow">if</span> self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a85156cb369ec7a35fd445184399f9786">binary_name_filter</a>:</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        binary = self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a85156cb369ec7a35fd445184399f9786">binary_name_filter</a>(binary)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      symbolized_line = self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a4f6efdc8fc2401ab1966f9316f479e29">symbolize_address</a>(addr, binary, offset)</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      <span class="keywordflow">if</span> <span class="keywordflow">not</span> symbolized_line:</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">if</span> original_binary != binary:</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;          symbolized_line = self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#a4f6efdc8fc2401ab1966f9316f479e29">symbolize_address</a>(addr, binary, offset)</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      self.<a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html#adc09535eefedaf980ec042bab47e37f5">print_symbolized_lines</a>(symbolized_line)</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&#39;__main__&#39;</span>:</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  opts, args = getopt.getopt(sys.argv[1:], <span class="stringliteral">&quot;d&quot;</span>, [<span class="stringliteral">&quot;demangle&quot;</span>])</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keywordflow">for</span> o, a <span class="keywordflow">in</span> opts:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">if</span> o <span class="keywordflow">in</span> (<span class="stringliteral">&quot;-d&quot;</span>, <span class="stringliteral">&quot;--demangle&quot;</span>):</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      demangle = <span class="keyword">True</span>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="namespaceasan__symbolize.html#aa8eaf8dd42d850ab060530bb2e3ece07">  364</a></span>&#160;  loop = <a class="code" href="classasan__symbolize_1_1SymbolizationLoop.html">SymbolizationLoop</a>()</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  loop.process_stdin()</div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a39496c04326fe23e36f7741fce749f96"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">asan_symbolize.BreakpadSymbolizer.arch</a></div><div class="ttdeci">arch</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00233">asan_symbolize.py:233</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a185d31c2ca347163556d10157abb6fc6"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">asan_symbolize.BreakpadSymbolizer.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00225">asan_symbolize.py:225</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a52abcd4b49f0d092f6876b29d21709b4"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">asan_symbolize.ChainSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00189">asan_symbolize.py:189</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Addr2LineSymbolizer_html_ab97a91df7e7721e247a517c325f23537"><div class="ttname"><a href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab97a91df7e7721e247a517c325f23537">asan_symbolize.Addr2LineSymbolizer.binary</a></div><div class="ttdeci">binary</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00112">asan_symbolize.py:112</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Symbolizer_html"><div class="ttname"><a href="classasan__symbolize_1_1Symbolizer.html">asan_symbolize.Symbolizer</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00034">asan_symbolize.py:34</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Addr2LineSymbolizer_html_ab2e0a7bf9b7c60d1d297fcd7f1a5f1fe"><div class="ttname"><a href="classasan__symbolize_1_1Addr2LineSymbolizer.html#ab2e0a7bf9b7c60d1d297fcd7f1a5f1fe">asan_symbolize.Addr2LineSymbolizer.pipe</a></div><div class="ttdeci">pipe</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00113">asan_symbolize.py:113</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a670673e81c39ef8fc59a2f606f9c961e"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">asan_symbolize.ChainSymbolizer.symbolizer_list</a></div><div class="ttdeci">symbolizer_list</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00191">asan_symbolize.py:191</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Addr2LineSymbolizer_html_aad95726f002c61620dd64e1dcb0bbea9"><div class="ttname"><a href="classasan__symbolize_1_1Addr2LineSymbolizer.html#aad95726f002c61620dd64e1dcb0bbea9">asan_symbolize.Addr2LineSymbolizer.open_addr2line</a></div><div class="ttdeci">def open_addr2line</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00115">asan_symbolize.py:115</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_ab5b0e7537550e52ce394d905c218b35c"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#ab5b0e7537550e52ce394d905c218b35c">asan_symbolize.DarwinSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00164">asan_symbolize.py:164</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a538729967d90650f434fc24a159d6a71"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a538729967d90650f434fc24a159d6a71">asan_symbolize.SymbolizationLoop.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00297">asan_symbolize.py:297</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html">asan_symbolize.BreakpadSymbolizer</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00222">asan_symbolize.py:222</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Symbolizer_html_a0985bb4630b3683c45f15be4f3d73378"><div class="ttname"><a href="classasan__symbolize_1_1Symbolizer.html#a0985bb4630b3683c45f15be4f3d73378">asan_symbolize.Symbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00038">asan_symbolize.py:38</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a6cdbec7a4fbc326561a331bf1c21251b"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a6cdbec7a4fbc326561a331bf1c21251b">asan_symbolize.SymbolizationLoop.llvm_symbolizer</a></div><div class="ttdeci">llvm_symbolizer</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00303">asan_symbolize.py:303</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_af0d1dd7e82b97c9df5b97e774abd426b"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#af0d1dd7e82b97c9df5b97e774abd426b">asan_symbolize.LLVMSymbolizer.open_llvm_symbolizer</a></div><div class="ttdeci">def open_llvm_symbolizer</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00060">asan_symbolize.py:60</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_ab5701fd2f8d5f50efe25dd698be45d3f"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">asan_symbolize.BreakpadSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00223">asan_symbolize.py:223</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a67402829c0aec5d376e5486bb62449ba"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a67402829c0aec5d376e5486bb62449ba">asan_symbolize.LLVMSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00055">asan_symbolize.py:55</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a6da75a6e66e7a347fd50c786c3737db3"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">asan_symbolize.BreakpadSymbolizer.get_sym_file_line</a></div><div class="ttdeci">def get_sym_file_line</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00264">asan_symbolize.py:264</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Addr2LineSymbolizer_html"><div class="ttname"><a href="classasan__symbolize_1_1Addr2LineSymbolizer.html">asan_symbolize.Addr2LineSymbolizer</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00109">asan_symbolize.py:109</a></div></div>
+<div class="ttc" id="namespaceasan__symbolize_html_a8acebde17954f066b71355ec0a0f862a"><div class="ttname"><a href="namespaceasan__symbolize.html#a8acebde17954f066b71355ec0a0f862a">asan_symbolize.fix_filename</a></div><div class="ttdeci">def fix_filename</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00026">asan_symbolize.py:26</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Symbolizer_html_aee2436e91868e66aac63bd884f82f469"><div class="ttname"><a href="classasan__symbolize_1_1Symbolizer.html#aee2436e91868e66aac63bd884f82f469">asan_symbolize.Symbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00035">asan_symbolize.py:35</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_ac49ecc6ecaa593e54ca54794682eafc4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">asan_symbolize.BreakpadSymbolizer.binary</a></div><div class="ttdeci">binary</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00235">asan_symbolize.py:235</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_aaf5c50c3b665aa10cf882826d1ff6ae5"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#aaf5c50c3b665aa10cf882826d1ff6ae5">asan_symbolize.SymbolizationLoop.system</a></div><div class="ttdeci">system</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00301">asan_symbolize.py:301</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html">asan_symbolize.DarwinSymbolizer</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00140">asan_symbolize.py:140</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html">asan_symbolize.LLVMSymbolizer</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00054">asan_symbolize.py:54</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_aad3e7144c5d248033bf78a3436a2d973"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#aad3e7144c5d248033bf78a3436a2d973">asan_symbolize.LLVMSymbolizer.symbolizer_path</a></div><div class="ttdeci">symbolizer_path</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00057">asan_symbolize.py:57</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Addr2LineSymbolizer_html_a749dbe0212ef6d5a735d052dd938c5c1"><div class="ttname"><a href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a749dbe0212ef6d5a735d052dd938c5c1">asan_symbolize.Addr2LineSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00125">asan_symbolize.py:125</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_af628d0b1832f44aec9afb8fda296b28d"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">asan_symbolize.ChainSymbolizer.append_symbolizer</a></div><div class="ttdeci">def append_symbolizer</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00202">asan_symbolize.py:202</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a4f6efdc8fc2401ab1966f9316f479e29"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a4f6efdc8fc2401ab1966f9316f479e29">asan_symbolize.SymbolizationLoop.symbolize_address</a></div><div class="ttdeci">def symbolize_address</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00307">asan_symbolize.py:307</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_aad6fa792e7482be5b5f4493430520f41"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#aad6fa792e7482be5b5f4493430520f41">asan_symbolize.DarwinSymbolizer.binary</a></div><div class="ttdeci">binary</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00143">asan_symbolize.py:143</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_aa703b5fa479c2727a99c91e05a3d28c9"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">asan_symbolize.BreakpadSymbolizer.files</a></div><div class="ttdeci">files</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00227">asan_symbolize.py:227</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a96bab8130f2097fe4a4fe38dc32672cf"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">asan_symbolize.ChainSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00193">asan_symbolize.py:193</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a638992f69e55292c55746012314bd3cf"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a638992f69e55292c55746012314bd3cf">asan_symbolize.SymbolizationLoop.current_line</a></div><div class="ttdeci">current_line</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00335">asan_symbolize.py:335</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a235cc7141fffacb1f3ab121aaeb2b32e"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">asan_symbolize.BreakpadSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00282">asan_symbolize.py:282</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_a4f1d0a00cbf2976c22686403f82e9d86"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#a4f1d0a00cbf2976c22686403f82e9d86">asan_symbolize.DarwinSymbolizer.pipe</a></div><div class="ttdeci">pipe</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00150">asan_symbolize.py:150</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a3fea466c318d79d5aa08c4db3bf9da5c"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a3fea466c318d79d5aa08c4db3bf9da5c">asan_symbolize.SymbolizationLoop.process_stdin</a></div><div class="ttdeci">def process_stdin</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00332">asan_symbolize.py:332</a></div></div>
+<div class="ttc" id="namespaceasan__symbolize_html_a4509975a1c1c0cf97561ff4c04896e1c"><div class="ttname"><a href="namespaceasan__symbolize.html#a4509975a1c1c0cf97561ff4c04896e1c">asan_symbolize.LLVMSymbolizerFactory</a></div><div class="ttdeci">def LLVMSymbolizerFactory</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00101">asan_symbolize.py:101</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html">asan_symbolize.SymbolizationLoop</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00296">asan_symbolize.py:296</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_afb39851eb0ee8c6f522f4bf74089a230"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#afb39851eb0ee8c6f522f4bf74089a230">asan_symbolize.DarwinSymbolizer.vmaddr</a></div><div class="ttdeci">vmaddr</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00149">asan_symbolize.py:149</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_af1a6ccc09718a3d5384e78099f3e95e9"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#af1a6ccc09718a3d5384e78099f3e95e9">asan_symbolize.DarwinSymbolizer.open_atos</a></div><div class="ttdeci">def open_atos</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00155">asan_symbolize.py:155</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a09c2b26cd5b61d27017467020ce2cb8a"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a09c2b26cd5b61d27017467020ce2cb8a">asan_symbolize.LLVMSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00073">asan_symbolize.py:73</a></div></div>
+<div class="ttc" id="namespaceasan__symbolize_html_a894d3b4285274c98801b7d6550195880"><div class="ttname"><a href="namespaceasan__symbolize.html#a894d3b4285274c98801b7d6550195880">asan_symbolize.SystemSymbolizerFactory</a></div><div class="ttdeci">def SystemSymbolizerFactory</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00215">asan_symbolize.py:215</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_a8c467fb29aa55f0648872ea27f7d3ae1"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#a8c467fb29aa55f0648872ea27f7d3ae1">asan_symbolize.DarwinSymbolizer.arch</a></div><div class="ttdeci">arch</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00146">asan_symbolize.py:146</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a2541358cd5c1d04498a952fb436738d4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">asan_symbolize.BreakpadSymbolizer.symbols</a></div><div class="ttdeci">symbols</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00228">asan_symbolize.py:228</a></div></div>
+<div class="ttc" id="namespaceasan__symbolize_html_a140590d4e495fecbcee073c24077c1a5"><div class="ttname"><a href="namespaceasan__symbolize.html#a140590d4e495fecbcee073c24077c1a5">asan_symbolize.BreakpadSymbolizerFactory</a></div><div class="ttdeci">def BreakpadSymbolizerFactory</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00206">asan_symbolize.py:206</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_a1bb5d7b06cbe9d22b3b0813fd5db3b49"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#a1bb5d7b06cbe9d22b3b0813fd5db3b49">asan_symbolize.DarwinSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00141">asan_symbolize.py:141</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1LLVMSymbolizer_html_a4a448ab2a81336b60973d5be3a1bc474"><div class="ttname"><a href="classasan__symbolize_1_1LLVMSymbolizer.html#a4a448ab2a81336b60973d5be3a1bc474">asan_symbolize.LLVMSymbolizer.pipe</a></div><div class="ttdeci">pipe</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00058">asan_symbolize.py:58</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a514e467868009ce29b157affd3045353"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">asan_symbolize.BreakpadSymbolizer.debug_id</a></div><div class="ttdeci">debug_id</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00234">asan_symbolize.py:234</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a329c6f6402c03e6c5d20dfa175cc9470"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">asan_symbolize.BreakpadSymbolizer.addresses</a></div><div class="ttdeci">addresses</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00230">asan_symbolize.py:230</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a4fbe9ea4401eade558dd103ccc7337cf"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">asan_symbolize.BreakpadSymbolizer.address_list</a></div><div class="ttdeci">address_list</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00229">asan_symbolize.py:229</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a55f007d272924297122d33cf2afed5aa"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a55f007d272924297122d33cf2afed5aa">asan_symbolize.SymbolizationLoop.frame_no</a></div><div class="ttdeci">frame_no</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00333">asan_symbolize.py:333</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_a85156cb369ec7a35fd445184399f9786"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#a85156cb369ec7a35fd445184399f9786">asan_symbolize.SymbolizationLoop.binary_name_filter</a></div><div class="ttdeci">binary_name_filter</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00300">asan_symbolize.py:300</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1DarwinSymbolizer_html_a2f45b30f0a15f4aeaed721b374f61cd4"><div class="ttname"><a href="classasan__symbolize_1_1DarwinSymbolizer.html#a2f45b30f0a15f4aeaed721b374f61cd4">asan_symbolize.DarwinSymbolizer.write_addr_to_pipe</a></div><div class="ttdeci">def write_addr_to_pipe</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00152">asan_symbolize.py:152</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1SymbolizationLoop_html_adc09535eefedaf980ec042bab47e37f5"><div class="ttname"><a href="classasan__symbolize_1_1SymbolizationLoop.html#adc09535eefedaf980ec042bab47e37f5">asan_symbolize.SymbolizationLoop.print_symbolized_lines</a></div><div class="ttdeci">def print_symbolized_lines</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00324">asan_symbolize.py:324</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html">asan_symbolize.ChainSymbolizer</a></div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00188">asan_symbolize.py:188</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a42b1fd1de79e03a19836ddcc604be871"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">asan_symbolize.BreakpadSymbolizer.parse_lines</a></div><div class="ttdeci">def parse_lines</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00238">asan_symbolize.py:238</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1Addr2LineSymbolizer_html_a9af95edad0a20a4d24b6edcaa53b1b13"><div class="ttname"><a href="classasan__symbolize_1_1Addr2LineSymbolizer.html#a9af95edad0a20a4d24b6edcaa53b1b13">asan_symbolize.Addr2LineSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00110">asan_symbolize.py:110</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

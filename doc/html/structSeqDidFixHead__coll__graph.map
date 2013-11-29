@@ -1,0 +1,5 @@
+<map id="SeqDidFixHead" name="SeqDidFixHead">
+<area shape="rect" id="node2" href="$structMemOffsetLen.html" title="{MemOffsetLen\n|+ m_uint64Offset\l+ m_uint64Len\l|}" alt="" coords="5,50,128,142"/>
+<area shape="rect" id="node3" href="$structSeqBufArgs.html" title="{SeqBufArgs\n|+ m_dwDiskSavePartsNum\l+ m_dwMemSaveRevPartsNum\l+ m_dwBlkSize\l+ m_uint64BufSize\l|}" alt="" coords="152,35,361,157"/>
+<area shape="rect" id="node4" href="$structSeqNumArgs.html" title="{SeqNumArgs\n|+ m_dwMaxCodeNum\l+ m_dwMemMaxIndexNum\l+ m_dwLastMaxNum\l+ m_dwLastPartSize\l+ m_dwLastBufSize\l+ m_dwRcntPartNum\l+ m_dwRcntPartSzie\l+ m_dwRcntBufSize\l|}" alt="" coords="387,6,569,186"/>
+</map>

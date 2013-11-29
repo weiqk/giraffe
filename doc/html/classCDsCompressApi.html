@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: CDsCompressApi类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classCDsCompressApi-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CDsCompressApi类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="dscomapi_8h_source.html">dscomapi.h</a>&gt;</code></p>
+<div class="dynheader">
+类 CDsCompressApi 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi__inherit__graph.png" border="0" usemap="#CDsCompressApi_inherit__map" alt="Inheritance graph"/></div>
+<map name="CDsCompressApi_inherit__map" id="CDsCompressApi_inherit__map">
+<area shape="rect" id="node2" href="classJUncopyable.html" title="{JUncopyable\n||# JUncopyable()\l# ~JUncopyable()\l&#45; JUncopyable()\l&#45; operator=()\l}" alt="" coords="52,6,177,127"/></map>
+</div>
+<div class="dynheader">
+CDsCompressApi 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi__coll__graph.png" border="0" usemap="#CDsCompressApi_coll__map" alt="Collaboration graph"/></div>
+<map name="CDsCompressApi_coll__map" id="CDsCompressApi_coll__map">
+<area shape="rect" id="node2" href="classJUncopyable.html" title="{JUncopyable\n||# JUncopyable()\l# ~JUncopyable()\l&#45; JUncopyable()\l&#45; operator=()\l}" alt="" coords="52,6,177,127"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5a24d78a34fa571896732f959add017d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a5a24d78a34fa571896732f959add017d">Initialize</a> (<a class="el" href="classCDidStructApi.html">CDidStructApi</a> *pDidStruct, <a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> did, int cid, int lastcmp=0, <a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> staticday=0, <a class="el" href="dscomapi_8h.html#a21868b51655c3073b850794409506a83">LPGetBmData</a> pGetBmData=NULL, <a class="el" href="dscomapi_8h.html#af2edb3d7f6b1dfb1ba1726920403bb7e">LPSetBmData</a> pSetBmData=NULL, char *pUserArg=NULL, <a class="el" href="classCDidStructApi.html">CDidStructApi</a> *pComDidStruct=NULL)=0</td></tr>
+<tr class="separator:a5a24d78a34fa571896732f959add017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69656bfe20e887e42d8597a7690a6902"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a69656bfe20e887e42d8597a7690a6902">GetCompressOutputBufferLen</a> (int recnum=1)=0</td></tr>
+<tr class="separator:a69656bfe20e887e42d8597a7690a6902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5900453a049040b3ced098458d5d53e2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a5900453a049040b3ced098458d5d53e2">SetCompressOutputBuffer</a> (char *pDestBuf, int destbuf_len)=0</td></tr>
+<tr class="separator:a5900453a049040b3ced098458d5d53e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a1dcb581139ab6fb61d21a8a82357e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a80a1dcb581139ab6fb61d21a8a82357e">CompressData</a> (char *pOrgData, <a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> orgdata_len, int recnum)=0</td></tr>
+<tr class="separator:a80a1dcb581139ab6fb61d21a8a82357e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f04d56852cc51a8cc13933816519cae"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a8f04d56852cc51a8cc13933816519cae">CompressDataOneRecData</a> (char *pOrgOneRec, <a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> onerec_len)=0</td></tr>
+<tr class="separator:a8f04d56852cc51a8cc13933816519cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8556cad4d0989e5f7e63b6a0d44a47b5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a8556cad4d0989e5f7e63b6a0d44a47b5">FinishCompressedData</a> (void)=0</td></tr>
+<tr class="separator:a8556cad4d0989e5f7e63b6a0d44a47b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebad10d26fc416a9167e7ec9cfaa8af"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#acebad10d26fc416a9167e7ec9cfaa8af">GetCompressedDataLen</a> (void)=0</td></tr>
+<tr class="separator:acebad10d26fc416a9167e7ec9cfaa8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266a192c2c8ca1a77a6ae64e3bd025b1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a266a192c2c8ca1a77a6ae64e3bd025b1">SetUnCompressOutputBuffer</a> (char *pDestBuf, int destbuf_len)=0</td></tr>
+<tr class="separator:a266a192c2c8ca1a77a6ae64e3bd025b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a70b09494f9f4432f8f856b7977dfaf"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a9a70b09494f9f4432f8f856b7977dfaf">UnCompressData</a> (char *pOrgData, <a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> orgdata_len, int recnum, int fd=0)=0</td></tr>
+<tr class="separator:a9a70b09494f9f4432f8f856b7977dfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cf8c0fff22918001da434bc656d950"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#aa2cf8c0fff22918001da434bc656d950">FinishUnCompressedData</a> (bool bCmbCrc=true)=0</td></tr>
+<tr class="separator:aa2cf8c0fff22918001da434bc656d950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a15196a558742c87915099655977097b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCDsCompressApi.html">CDsCompressApi</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#a15196a558742c87915099655977097b1">CreateCompressObj</a> ()</td></tr>
+<tr class="separator:a15196a558742c87915099655977097b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba469cffca8387ddb52ebe2cfb3a775"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCDsCompressApi.html#adba469cffca8387ddb52ebe2cfb3a775">DestroyCompressObj</a> (<a class="el" href="classCDsCompressApi.html">CDsCompressApi</a> *pCompress)</td></tr>
+<tr class="separator:adba469cffca8387ddb52ebe2cfb3a775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_classJUncopyable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classJUncopyable')"><img src="closed.png" alt="-"/>&#160;Private 成员函数 继承自 <a class="el" href="classJUncopyable.html">JUncopyable</a></td></tr>
+<tr class="memitem:a561f097916dc505a45b0c71ceeb7ed7e inherit pub_methods_classJUncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUncopyable.html#a561f097916dc505a45b0c71ceeb7ed7e">JUncopyable</a> ()</td></tr>
+<tr class="separator:a561f097916dc505a45b0c71ceeb7ed7e inherit pub_methods_classJUncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b221d0b72be80b18b3937088f52384 inherit pub_methods_classJUncopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUncopyable.html#ac9b221d0b72be80b18b3937088f52384">~JUncopyable</a> ()</td></tr>
+<tr class="separator:ac9b221d0b72be80b18b3937088f52384 inherit pub_methods_classJUncopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="dscomapi_8h_source.html">dscomapi.h</a> 第 <a class="el" href="dscomapi_8h_source.html#l00090">90</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a80a1dcb581139ab6fb61d21a8a82357e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::CompressData </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pOrgData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;</td>
+          <td class="paramname"><em>orgdata_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recnum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f04d56852cc51a8cc13933816519cae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::CompressDataOneRecData </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pOrgOneRec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;</td>
+          <td class="paramname"><em>onerec_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15196a558742c87915099655977097b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classCDsCompressApi.html">CDsCompressApi</a>* CDsCompressApi::CreateCompressObj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi_a15196a558742c87915099655977097b1_icgraph.png" border="0" usemap="#classCDsCompressApi_a15196a558742c87915099655977097b1_icgraph" alt=""/></div>
+<map name="classCDsCompressApi_a15196a558742c87915099655977097b1_icgraph" id="classCDsCompressApi_a15196a558742c87915099655977097b1_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="310,5,541,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a7e1066ef710795951412447d427adac9" title="DidUncompress::Initialize" alt="" coords="339,56,511,83"/><area shape="rect" id="node4" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="319,107,532,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adba469cffca8387ddb52ebe2cfb3a775"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CDsCompressApi::DestroyCompressObj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCDsCompressApi.html">CDsCompressApi</a> *&#160;</td>
+          <td class="paramname"><em>pCompress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a>, <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00163">DidUncompress::~DidUncompress()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi_adba469cffca8387ddb52ebe2cfb3a775_icgraph.png" border="0" usemap="#classCDsCompressApi_adba469cffca8387ddb52ebe2cfb3a775_icgraph" alt=""/></div>
+<map name="classCDsCompressApi_adba469cffca8387ddb52ebe2cfb3a775_icgraph" id="classCDsCompressApi_adba469cffca8387ddb52ebe2cfb3a775_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="318,5,549,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a7e1066ef710795951412447d427adac9" title="DidUncompress::Initialize" alt="" coords="347,56,519,83"/><area shape="rect" id="node4" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="327,107,540,133"/><area shape="rect" id="node5" href="classDidUncompress.html#a3de0f3288486d3e32eb5851e2aa0bb10" title="DidUncompress::~DidUncompress" alt="" coords="320,157,547,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8556cad4d0989e5f7e63b6a0d44a47b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::FinishCompressedData </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2cf8c0fff22918001da434bc656d950"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::FinishUnCompressedData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bCmbCrc</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi_aa2cf8c0fff22918001da434bc656d950_icgraph.png" border="0" usemap="#classCDsCompressApi_aa2cf8c0fff22918001da434bc656d950_icgraph" alt=""/></div>
+<map name="classCDsCompressApi_aa2cf8c0fff22918001da434bc656d950_icgraph" id="classCDsCompressApi_aa2cf8c0fff22918001da434bc656d950_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="243,12,474,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acebad10d26fc416a9167e7ec9cfaa8af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::GetCompressedDataLen </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69656bfe20e887e42d8597a7690a6902"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::GetCompressOutputBufferLen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recnum</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a24d78a34fa571896732f959add017d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CDsCompressApi::Initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCDidStructApi.html">CDidStructApi</a> *&#160;</td>
+          <td class="paramname"><em>pDidStruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td>
+          <td class="paramname"><em>did</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lastcmp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td>
+          <td class="paramname"><em>staticday</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dscomapi_8h.html#a21868b51655c3073b850794409506a83">LPGetBmData</a>&#160;</td>
+          <td class="paramname"><em>pGetBmData</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dscomapi_8h.html#af2edb3d7f6b1dfb1ba1726920403bb7e">LPSetBmData</a>&#160;</td>
+          <td class="paramname"><em>pSetBmData</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pUserArg</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCDidStructApi.html">CDidStructApi</a> *&#160;</td>
+          <td class="paramname"><em>pComDidStruct</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi_a5a24d78a34fa571896732f959add017d_icgraph.png" border="0" usemap="#classCDsCompressApi_a5a24d78a34fa571896732f959add017d_icgraph" alt=""/></div>
+<map name="classCDsCompressApi_a5a24d78a34fa571896732f959add017d_icgraph" id="classCDsCompressApi_a5a24d78a34fa571896732f959add017d_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="238,5,469,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="247,56,460,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5900453a049040b3ced098458d5d53e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CDsCompressApi::SetCompressOutputBuffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pDestBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destbuf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a266a192c2c8ca1a77a6ae64e3bd025b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CDsCompressApi::SetUnCompressOutputBuffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pDestBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destbuf_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi_a266a192c2c8ca1a77a6ae64e3bd025b1_icgraph.png" border="0" usemap="#classCDsCompressApi_a266a192c2c8ca1a77a6ae64e3bd025b1_icgraph" alt=""/></div>
+<map name="classCDsCompressApi_a266a192c2c8ca1a77a6ae64e3bd025b1_icgraph" id="classCDsCompressApi_a266a192c2c8ca1a77a6ae64e3bd025b1_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="289,12,519,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a70b09494f9f4432f8f856b7977dfaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int CDsCompressApi::UnCompressData </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pOrgData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;</td>
+          <td class="paramname"><em>orgdata_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recnum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCDsCompressApi_a9a70b09494f9f4432f8f856b7977dfaf_icgraph.png" border="0" usemap="#classCDsCompressApi_a9a70b09494f9f4432f8f856b7977dfaf_icgraph" alt=""/></div>
+<map name="classCDsCompressApi_a9a70b09494f9f4432f8f856b7977dfaf_icgraph" id="classCDsCompressApi_a9a70b09494f9f4432f8f856b7977dfaf_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#aed5f5eab01600ffbe8e07b232526133f" title="DidUncompress::DisassemblePack" alt="" coords="297,5,527,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="dscomapi_8h_source.html">dscomapi.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

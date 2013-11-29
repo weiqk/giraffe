@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: tinyxmlparser.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">tinyxmlparser.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="stdafx_8h_source.html">stdafx.h</a>&quot;</code><br/>
+<code>#include &lt;ctype.h&gt;</code><br/>
+<code>#include &lt;stddef.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+tinyxmlparser.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="tinyxmlparser_8cpp__incl.png" border="0" usemap="#tinyxmlparser_8cpp" alt=""/></div>
+<map name="tinyxmlparser_8cpp" id="tinyxmlparser_8cpp">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="stdafx.h" alt="" coords="304,80,373,107"/><area shape="rect" id="node21" href="tinyxml_8h.html" title="tinyxml.h" alt="" coords="155,155,228,181"/><area shape="rect" id="node3" href="ldgloble_8h.html" title="ldgloble.h" alt="" coords="812,155,888,181"/><area shape="rect" id="node23" href="tinystr_8h.html" title="tinystr.h" alt="" coords="51,229,120,256"/></map>
+</div>
+</div>
+<p><a href="tinyxmlparser_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlParsingData.html">TiXmlParsingData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a37999e32163e2a3280bc0b8e1999774e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyxmlparser_8cpp.html#a37999e32163e2a3280bc0b8e1999774e">TIXML_UTF_LEAD_0</a> = 0xefU</td></tr>
+<tr class="separator:a37999e32163e2a3280bc0b8e1999774e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cda92a178036c812663a7b75c5e04d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyxmlparser_8cpp.html#a3cda92a178036c812663a7b75c5e04d0">TIXML_UTF_LEAD_1</a> = 0xbbU</td></tr>
+<tr class="separator:a3cda92a178036c812663a7b75c5e04d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e36ce25f81f009c066037e937da3a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tinyxmlparser_8cpp.html#a8e36ce25f81f009c066037e937da3a6a">TIXML_UTF_LEAD_2</a> = 0xbfU</td></tr>
+<tr class="separator:a8e36ce25f81f009c066037e937da3a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a37999e32163e2a3280bc0b8e1999774e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char TIXML_UTF_LEAD_0 = 0xefU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxmlparser_8cpp_source.html">tinyxmlparser.cpp</a> 第 <a class="el" href="tinyxmlparser_8cpp_source.html#l00062">62</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxmlparser_8cpp_source.html#l00704">TiXmlDocument::Parse()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01104">TiXmlDocument::SaveFile()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00314">TiXmlBase::SkipWhiteSpace()</a> , 以及 <a class="el" href="tinyxmlparser_8cpp_source.html#l00196">TiXmlParsingData::Stamp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cda92a178036c812663a7b75c5e04d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char TIXML_UTF_LEAD_1 = 0xbbU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxmlparser_8cpp_source.html">tinyxmlparser.cpp</a> 第 <a class="el" href="tinyxmlparser_8cpp_source.html#l00063">63</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxmlparser_8cpp_source.html#l00704">TiXmlDocument::Parse()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01104">TiXmlDocument::SaveFile()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00314">TiXmlBase::SkipWhiteSpace()</a> , 以及 <a class="el" href="tinyxmlparser_8cpp_source.html#l00196">TiXmlParsingData::Stamp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e36ce25f81f009c066037e937da3a6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> unsigned char TIXML_UTF_LEAD_2 = 0xbfU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxmlparser_8cpp_source.html">tinyxmlparser.cpp</a> 第 <a class="el" href="tinyxmlparser_8cpp_source.html#l00064">64</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxmlparser_8cpp_source.html#l00704">TiXmlDocument::Parse()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01104">TiXmlDocument::SaveFile()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00314">TiXmlBase::SkipWhiteSpace()</a> , 以及 <a class="el" href="tinyxmlparser_8cpp_source.html#l00196">TiXmlParsingData::Stamp()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

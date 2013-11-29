@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: monitor.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">monitor.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="monitor_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _CRT_SECURE_NO_WARNINGS</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;log4cxx/logger.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;log4cxx/rollingfileappender.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;log4cxx/basicconfigurator.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;log4cxx/patternlayout.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;log4cxx/simplelayout.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;log4cxx/logmanager.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//#include &lt;zmq.hpp&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//#include &quot;configsax2handler.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//#include &quot;FriendlyExceptionHandle.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xml2cfg_8h.html">xml2cfg.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xml__class__set_8h.html">xml_class_set.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//#include &quot;capture.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="capture__net__packet_8h.html">capture_net_packet.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shunt__net__packet_8h.html">shunt_net_packet.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="business__error__info_8h.html">business_error_info.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="did__template__to__lua__struct_8h.html">did_template_to_lua_struct.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config__parser_8h.html">config_parser.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="flags_8h.html">flags.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using namespace </span>log4cxx;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using namespace </span>log4cxx::helpers;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//extern map&lt;string, int&gt; logtagmap;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifndef __linux</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="monitor_8cc.html#a5b9eb73f25d424f36d3b33cfb9b2fa6e">   49</a></span>&#160;<span class="preprocessor"></span><span class="keywordtype">bool</span> <a class="code" href="monitor_8cc.html#a5b9eb73f25d424f36d3b33cfb9b2fa6e">Event_Routine</a>(<a class="code" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> event_type)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">switch</span>(event_type)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">case</span> CTRL_CLOSE_EVENT:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//int get_network_adapter()</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//  pcap_if_t *alldevs;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//    char *errbuf= new char[PCAP_ERRBUF_SIZE];</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//  int devsnum = 0;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//  int inum = 0;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//    pcap_if_t *d;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//  if(pcap_findalldevs(&amp;alldevs,errbuf) == -1)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//  {</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//      cout&lt;&lt;&quot;Error in pcap_findalldevs %s &quot;&lt;&lt;errbuf&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//      return -1;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//  }</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//  if(NULL != errbuf)</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//  {</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//      delete [] errbuf;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//      errbuf = NULL;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//  }</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//  for(d=alldevs; d; d=d-&gt;next)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//  {</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//      cout&lt;&lt;++devsnum&lt;&lt;&quot;. &quot;&lt;&lt;d-&gt;name;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//      if(d-&gt;description)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//          cout&lt;&lt;&quot; (&quot;&lt;&lt;d-&gt;description&lt;&lt;&quot;)&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//      else</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//          cout&lt;&lt;&quot; (No description)&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//  }</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">//  cout&lt;&lt;&quot;Please input the number of adapter you choose:&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//  cin&gt;&gt;inum;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//  if(inum&lt;1||inum&gt;devsnum)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">//  {</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//      cout&lt;&lt;&quot;Adapter number out of range!&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//      pcap_freealldevs(alldevs);</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//      return  -2;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//  }</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//  else</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">//      return inum;</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//}</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f">  107</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f">RunLogThread</a>(zmq::context_t &amp;context, <a class="code" href="classLog.html">Log</a> &amp;log ,<a class="code" href="classXML__Log.html">XML_Log</a> &amp; xml_log)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    deque&lt;XML_ZMQ&gt; * log_zmqdeque = xml_log.<a class="code" href="classXML__Log.html#a4c34cb14e24f1f11f3f1aae854148b17">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//init log zmq property based on the config file</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span>(deque&lt;XML_ZMQ&gt;::iterator iter = log_zmqdeque-&gt;begin();iter!=log_zmqdeque-&gt;end();iter++)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="structZMQItem.html">ZMQItem</a> zmq_item;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        zmq_item.<a class="code" href="structZMQItem.html#ae8d6a9fbdbd88814c7199cb18e58d506">zmqpattern</a> = (*iter).get_zmqpattern();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        zmq_item.<a class="code" href="structZMQItem.html#a19ca3ea8ad9a6a84eebd08d863fc729b">zmqsocketaction</a> = (*iter).get_zmqsocketaction();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        zmq_item.<a class="code" href="structZMQItem.html#a572ee0244529bb34e399cabdaf8721fc">zmqsocketaddr</a> = (*iter).get_zmqsocketaddr();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        log.<a class="code" href="classBaseThread.html#a3cc66810b0961581ba4618d3b3a1ff82">AddZMQItem</a>(zmq_item);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    log.<a class="code" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c">Start</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba">  129</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba">RunBusinessErrorInfoThread</a>(zmq::context_t &amp;context, <a class="code" href="classBusinessErrorInfo.html">BusinessErrorInfo</a> &amp;business_errinfo ,<a class="code" href="classXML__Business__Error__Info.html">XML_Business_Error_Info</a> &amp; xml_business_errinfo)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    deque&lt;XML_ZMQ&gt; * business_errinfo_zmqdeque = xml_business_errinfo.<a class="code" href="classXML__Business__Error__Info.html#aaa2cc061d08d03316f3470196b0f95ed">get_zmqdeque</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//init log zmq property based on the config file</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">for</span>(deque&lt;XML_ZMQ&gt;::iterator iter = business_errinfo_zmqdeque-&gt;begin();iter!=business_errinfo_zmqdeque-&gt;end();++iter)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="structZMQItem.html">ZMQItem</a> zmq_item;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        zmq_item.<a class="code" href="structZMQItem.html#ae8d6a9fbdbd88814c7199cb18e58d506">zmqpattern</a> = (*iter).get_zmqpattern();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        zmq_item.<a class="code" href="structZMQItem.html#a19ca3ea8ad9a6a84eebd08d863fc729b">zmqsocketaction</a> = (*iter).get_zmqsocketaction();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        zmq_item.<a class="code" href="structZMQItem.html#a572ee0244529bb34e399cabdaf8721fc">zmqsocketaddr</a> = (*iter).get_zmqsocketaddr();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        business_errinfo.<a class="code" href="classBaseThread.html#a3cc66810b0961581ba4618d3b3a1ff82">AddZMQItem</a>(zmq_item);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    business_errinfo.<a class="code" href="classBusinessErrorInfo.html#a94bacbd126eda762b7b52f303ec8c5d3">Init</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    business_errinfo.<a class="code" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c">Start</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7">  150</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7">TransformDidTemplateToLua</a>(<a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> &amp; xml_listening_item)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="classDIDTemplateToLuaStruct.html">DIDTemplateToLuaStruct</a> did_to_lua;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    did_to_lua.<a class="code" href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55">Transform</a>(xml_listening_item);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="monitor_8cc.html#ac2c8f9a180f23882d061b33c1c683619">  164</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="monitor_8cc.html#ac2c8f9a180f23882d061b33c1c683619">RunCaptureThread</a>(zmq::context_t &amp;context, deque&lt;CaptureNetPacket&gt; &amp; cap_net_packet_deque, deque&lt;ShuntNetPacket&gt; &amp; shunt_net_packet_deque, deque&lt;XML_ListeningItem&gt; &amp;listeningitem_deque)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//create capture thread based on the config file</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">int</span> index = 0;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">for</span>(deque&lt;XML_ListeningItem&gt;::iterator item=listeningitem_deque.begin();item != listeningitem_deque.end();item++)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="comment">//TransformDidTemplateToLua(*item);</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classCaptureNetPacket.html">CaptureNetPacket</a> capture_net_packet(item-&gt;get_net_adapter(), item-&gt;get_filter(), &amp;context);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="classShuntNetPacket.html">ShuntNetPacket</a> shunt_net_packet(&amp;context, *item);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        deque&lt;XML_ZMQ&gt; *capture_net_packet_zmq_deque = (*item).get_capture_net_packet()-&gt;get_zmqdeque();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">for</span>(deque&lt;XML_ZMQ&gt;::iterator iter_cap=capture_net_packet_zmq_deque-&gt;begin();iter_cap!=capture_net_packet_zmq_deque-&gt;end();iter_cap++)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="code" href="structZMQItem.html">ZMQItem</a> capture_net_packet_zmq_item;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            capture_net_packet_zmq_item.<a class="code" href="structZMQItem.html#ae8d6a9fbdbd88814c7199cb18e58d506">zmqpattern</a> = (*iter_cap).get_zmqpattern();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            capture_net_packet_zmq_item.<a class="code" href="structZMQItem.html#a19ca3ea8ad9a6a84eebd08d863fc729b">zmqsocketaction</a> = (*iter_cap).get_zmqsocketaction();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordtype">char</span> buf[16];</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            memset(buf,0,<span class="keyword">sizeof</span>(buf));</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            sprintf(buf,<span class="stringliteral">&quot;%d&quot;</span>,index);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            capture_net_packet_zmq_item.<a class="code" href="structZMQItem.html#a572ee0244529bb34e399cabdaf8721fc">zmqsocketaddr</a> = (*iter_cap).get_zmqsocketaddr() + buf;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            capture_net_packet.AddZMQItem(capture_net_packet_zmq_item);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        deque&lt;XML_ZMQ&gt; *shunt_net_packet_zmq_deque = (*item).get_shunt_net_packet()-&gt;get_zmqdeque();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">for</span>(deque&lt;XML_ZMQ&gt;::iterator iter_handle=shunt_net_packet_zmq_deque-&gt;begin();iter_handle!=shunt_net_packet_zmq_deque-&gt;end();iter_handle++)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="structZMQItem.html">ZMQItem</a> shunt_net_packet_zmq_item;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            shunt_net_packet_zmq_item.<a class="code" href="structZMQItem.html#ae8d6a9fbdbd88814c7199cb18e58d506">zmqpattern</a> = (*iter_handle).get_zmqpattern();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            shunt_net_packet_zmq_item.<a class="code" href="structZMQItem.html#a19ca3ea8ad9a6a84eebd08d863fc729b">zmqsocketaction</a> = iter_handle-&gt;get_zmqsocketaction();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordtype">char</span> buf[16];</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            memset(buf,0,<span class="keyword">sizeof</span>(buf));</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            sprintf(buf,<span class="stringliteral">&quot;%d&quot;</span>,index);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            shunt_net_packet_zmq_item.<a class="code" href="structZMQItem.html#a572ee0244529bb34e399cabdaf8721fc">zmqsocketaddr</a> = iter_handle-&gt;get_zmqsocketaddr() + buf;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            shunt_net_packet.AddZMQItem(shunt_net_packet_zmq_item);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        index++;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        cap_net_packet_deque.push_back(capture_net_packet);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        shunt_net_packet_deque.push_back(shunt_net_packet);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">for</span>(deque&lt;CaptureNetPacket&gt;::iterator iter=cap_net_packet_deque.begin();iter!=cap_net_packet_deque.end();iter++)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        iter-&gt;Init();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        iter-&gt;Start();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">for</span>(deque&lt;ShuntNetPacket&gt;::iterator iter=shunt_net_packet_deque.begin();iter!=shunt_net_packet_deque.end();iter++)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        iter-&gt;Init();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="classUtils.html#a89353d60a41dfcf7a0b964c2e3e127e3">Utils::SleepUsec</a>(1000000);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        iter-&gt;Start();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="monitor_8cc.html#a115ed0955aa677202b01fdf22866d76d">  225</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="monitor_8cc.html#a115ed0955aa677202b01fdf22866d76d">JoinCaptureThread</a>(deque&lt;CaptureNetPacket&gt; &amp; capture_net_packet_deque, deque&lt;ShuntNetPacket&gt; &amp; shunt_net_packet_deque)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">for</span>(deque&lt;CaptureNetPacket&gt;::iterator iter=capture_net_packet_deque.begin();iter!=capture_net_packet_deque.end();iter++)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        iter-&gt;Join();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span>(deque&lt;ShuntNetPacket&gt;::iterator iter=shunt_net_packet_deque.begin();iter!=shunt_net_packet_deque.end();iter++)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        iter-&gt;Join();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">  245</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#ifndef __linux</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span>    SetConsoleCtrlHandler((PHANDLER_ROUTINE)<a class="code" href="monitor_8cc.html#a5b9eb73f25d424f36d3b33cfb9b2fa6e">Event_Routine</a>,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    google::ParseCommandLineFlags(&amp;argc, &amp;argv, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    log4cxx::LogString pattern_layout(<span class="stringliteral">&quot;%d [%t] %-5p - %m (%F:%L)%n&quot;</span>);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    log4cxx::RollingFileAppender * rf_appender = <span class="keyword">new</span> log4cxx::RollingFileAppender(log4cxx::LayoutPtr(<span class="keyword">new</span> log4cxx::PatternLayout(pattern_layout)),<span class="stringliteral">&quot;app.log&quot;</span>,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    rf_appender-&gt;setMaxFileSize(FLAGS_LOG_FILE_MAX_SIZE.c_str());</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    log4cxx::BasicConfigurator::configure(log4cxx::AppenderPtr(rf_appender));</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    log4cxx::LoggerPtr root_logger = log4cxx::Logger::getRootLogger();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    root_logger-&gt;setLevel(log4cxx::Level::getDebug());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    root_logger-&gt;addAppender(log4cxx::AppenderPtr(rf_appender));</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    log4cxx::LoggerPtr logger = log4cxx::Logger::getLogger(<span class="stringliteral">&quot;monitor&quot;</span>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    LOG4CXX_INFO(logger, <span class="stringliteral">&quot;begin&quot;</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">//int adapter_id = get_network_adapter();</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">//assert(adapter_id &gt;= 0);</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="classConfigParser.html">ConfigParser</a> config_parser(FLAGS_CONFIG_FILE_PATH);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    config_parser.<a class="code" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">Parse</a>();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    zmq::context_t context(1);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    vector&lt;int&gt;&amp; ports = config_parser.<a class="code" href="classConfigParser.html#a6c07437d991e0bad70bde7560c1f0d20">get_ports</a>();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="classXML__Log.html">XML_Log</a> &amp; xml_log = config_parser.<a class="code" href="classConfigParser.html#a3c03fab421d3e5cf1b59c5e645f0a0a9">get_log_obj</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="classLog.html">Log</a> log(&amp;context,ports);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f">RunLogThread</a>(context, log, xml_log);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="classXML__Business__Error__Info.html">XML_Business_Error_Info</a> &amp; xml_business_errinfo = config_parser.<a class="code" href="classConfigParser.html#ac8d48e9dd38434bf793911d1c2652948">get_business_error_info_obj</a>();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="classBusinessErrorInfo.html">BusinessErrorInfo</a> business_errinfo(&amp;context);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba">RunBusinessErrorInfoThread</a>(context, business_errinfo, xml_business_errinfo);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    deque&lt;CaptureNetPacket&gt; cap_net_packet_deque;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    deque&lt;ShuntNetPacket&gt; shunt_net_packet_deque;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    deque&lt;XML_ListeningItem&gt; &amp; listeningitem_deque = config_parser.<a class="code" href="classConfigParser.html#aebd629d902f91f6402df208c1f95314e">get_listeningitems</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="monitor_8cc.html#ac2c8f9a180f23882d061b33c1c683619">RunCaptureThread</a>(context, cap_net_packet_deque, shunt_net_packet_deque, listeningitem_deque);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="monitor_8cc.html#a115ed0955aa677202b01fdf22866d76d">JoinCaptureThread</a>(cap_net_packet_deque, shunt_net_packet_deque);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    pthread_exit(NULL);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    LOG4CXX_INFO(logger, <span class="stringliteral">&quot;exit&quot;</span>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    context.close();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">//EnableFriendllyExceptionHandle( true );</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">//int n;</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">//int i =0;</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="comment">//try</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">//    XMLPlatformUtils::Initialize();</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">//catch(const XMLException &amp;err)</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">//    char *msg = XMLString::transcode(err.getMessage());</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">//    cout&lt;&lt;&quot;initial error:&quot;&lt;&lt;msg&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">//    XMLString::release(&amp;msg);</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">//    return 1;</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">//char *xmlfile = CONFIGFILE;</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">//SAX2XMLReader *reader = XMLReaderFactory::createXMLReader();</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">//reader-&gt;setFeature(XMLUni::fgSAX2CoreValidation,true);</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">//ConfigSAX2Handler * handler = new ConfigSAX2Handler();</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">//reader-&gt;setContentHandler(handler);</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">//reader-&gt;setErrorHandler(handler);</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">//try</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="comment">//reader-&gt;parse(xmlfile);</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">//zmq::context_t context(1);</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">//        n = ports.size();</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">//        for(i=0;i&lt;n;i++)</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">//        {</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment">//            logtagmap.insert(pair&lt;string,int&gt;(filters[i],ports[i]));</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">//        }</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">//        for(i=0;i&lt;logs.size();i++)</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">//        {</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">//            logs[i].init(&amp;context,ports);</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">//            logs[i].Start();</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">//        }</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">//      //for(i=0;i&lt;working_luas.size();i++)</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">//      //{</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">//      //  working_luas[i].Init(&amp;context);</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">//      //  working_luas[i].Start();</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">//      //}</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">//        for(i=0;i&lt;n;i++)</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">//        {</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">//            cout&lt;&lt;ports[i]&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">//            cout&lt;&lt;filters[i]&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">//            cout&lt;&lt;caps[i].zmqitems_[0].zmqsocketaddr&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">//            caps[i].init(&amp;context, filters[i]);</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">//            caps[i].Start();</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">//#ifdef __linux</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment">//            sleep(1);</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">//#else</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">//          Sleep(1000);</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">//#endif</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">//        }</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">//        for(i=0;i&lt;n;i++)</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">//        {</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">//            parses[i].init(&amp;context);</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">//            parses[i].Start();</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">//        }</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">//        for(i=0;i&lt;logs.size();i++)</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">//        {</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//            logs[i].Join();</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">//        }</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">//        //for(i=0;i&lt;n;i++)</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">//        //{</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">//        //    caps[i].Join();</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">//        //    parses[i].Join();</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">//        //    //working_luas[i].Join();</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">//        //}</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="comment">//context.close();</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="comment">//catch(const XMLException &amp;err)</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="comment">//    char *msg = XMLString::transcode(err.getMessage());</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="comment">//    cout&lt;&lt;&quot;error:xml exceptiion&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">//    XMLString::release(&amp;msg);</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">//    return -1;</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">//catch(const SAXParseException &amp;err)</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">//    char *msg = XMLString::transcode(err.getMessage());</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">//    cout&lt;&lt;&quot;error:saxpase&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="comment">//    XMLString::release(&amp;msg);</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">//    return -1;</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">//delete reader;</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">//delete handler;</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="ttc" id="classConfigParser_html_a6c07437d991e0bad70bde7560c1f0d20"><div class="ttname"><a href="classConfigParser.html#a6c07437d991e0bad70bde7560c1f0d20">ConfigParser::get_ports</a></div><div class="ttdeci">vector&lt; int &gt; &amp; get_ports()</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8h_source.html#l00028">config_parser.h:28</a></div></div>
+<div class="ttc" id="structZMQItem_html"><div class="ttname"><a href="structZMQItem.html">ZMQItem</a></div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00215">structs.h:215</a></div></div>
+<div class="ttc" id="classBaseThread_html_a24b523b2c3dec9c13b1271ed21e6cf5c"><div class="ttname"><a href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c">BaseThread::Start</a></div><div class="ttdeci">bool Start()</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00071">basethread.h:71</a></div></div>
+<div class="ttc" id="monitor_8cc_html_adbb5f40ae887eade067c196efb646db7"><div class="ttname"><a href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7">TransformDidTemplateToLua</a></div><div class="ttdeci">void TransformDidTemplateToLua(XML_ListeningItem &amp;xml_listening_item)</div><div class="ttdoc">transform did template to lua template </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00150">monitor.cc:150</a></div></div>
+<div class="ttc" id="constants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div><div class="ttdoc">constant </div></div>
+<div class="ttc" id="classDIDTemplateToLuaStruct_html"><div class="ttname"><a href="classDIDTemplateToLuaStruct.html">DIDTemplateToLuaStruct</a></div><div class="ttdef"><b>Definition:</b> <a href="did__template__to__lua__struct_8h_source.html#l00010">did_template_to_lua_struct.h:10</a></div></div>
+<div class="ttc" id="classConfigParser_html"><div class="ttname"><a href="classConfigParser.html">ConfigParser</a></div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8h_source.html#l00008">config_parser.h:8</a></div></div>
+<div class="ttc" id="structZMQItem_html_a19ca3ea8ad9a6a84eebd08d863fc729b"><div class="ttname"><a href="structZMQItem.html#a19ca3ea8ad9a6a84eebd08d863fc729b">ZMQItem::zmqsocketaction</a></div><div class="ttdeci">std::string zmqsocketaction</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00218">structs.h:218</a></div></div>
+<div class="ttc" id="capture__net__packet_8h_html"><div class="ttname"><a href="capture__net__packet_8h.html">capture_net_packet.h</a></div></div>
+<div class="ttc" id="classDIDTemplateToLuaStruct_html_abed42016858381182ef4c67c1bf15c55"><div class="ttname"><a href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55">DIDTemplateToLuaStruct::Transform</a></div><div class="ttdeci">void Transform(XML_ListeningItem &amp;listening_item)</div><div class="ttdoc">transform all the did template to lua template </div><div class="ttdef"><b>Definition:</b> <a href="did__template__to__lua__struct_8cc_source.html#l00064">did_template_to_lua_struct.cc:64</a></div></div>
+<div class="ttc" id="classLog_html"><div class="ttname"><a href="classLog.html">Log</a></div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00024">log.h:24</a></div></div>
+<div class="ttc" id="classBusinessErrorInfo_html"><div class="ttname"><a href="classBusinessErrorInfo.html">BusinessErrorInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="business__error__info_8h_source.html#l00029">business_error_info.h:29</a></div></div>
+<div class="ttc" id="classConfigParser_html_a3c03fab421d3e5cf1b59c5e645f0a0a9"><div class="ttname"><a href="classConfigParser.html#a3c03fab421d3e5cf1b59c5e645f0a0a9">ConfigParser::get_log_obj</a></div><div class="ttdeci">XML_Log &amp; get_log_obj()</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8h_source.html#l00020">config_parser.h:20</a></div></div>
+<div class="ttc" id="business__error__info_8h_html"><div class="ttname"><a href="business__error__info_8h.html">business_error_info.h</a></div></div>
+<div class="ttc" id="monitor_8cc_html_ac2c8f9a180f23882d061b33c1c683619"><div class="ttname"><a href="monitor_8cc.html#ac2c8f9a180f23882d061b33c1c683619">RunCaptureThread</a></div><div class="ttdeci">void RunCaptureThread(zmq::context_t &amp;context, deque&lt; CaptureNetPacket &gt; &amp;cap_net_packet_deque, deque&lt; ShuntNetPacket &gt; &amp;shunt_net_packet_deque, deque&lt; XML_ListeningItem &gt; &amp;listeningitem_deque)</div><div class="ttdoc">capture thread:init zmq and start </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00164">monitor.cc:164</a></div></div>
+<div class="ttc" id="classConfigParser_html_a40c1a0aea2fce19bfe57d7eaafe81e15"><div class="ttname"><a href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15">ConfigParser::Parse</a></div><div class="ttdeci">void Parse()</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8cc_source.html#l00028">config_parser.cc:28</a></div></div>
+<div class="ttc" id="classConfigParser_html_ac8d48e9dd38434bf793911d1c2652948"><div class="ttname"><a href="classConfigParser.html#ac8d48e9dd38434bf793911d1c2652948">ConfigParser::get_business_error_info_obj</a></div><div class="ttdeci">XML_Business_Error_Info &amp; get_business_error_info_obj()</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8h_source.html#l00024">config_parser.h:24</a></div></div>
+<div class="ttc" id="structZMQItem_html_a572ee0244529bb34e399cabdaf8721fc"><div class="ttname"><a href="structZMQItem.html#a572ee0244529bb34e399cabdaf8721fc">ZMQItem::zmqsocketaddr</a></div><div class="ttdeci">std::string zmqsocketaddr</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00219">structs.h:219</a></div></div>
+<div class="ttc" id="classXML__Business__Error__Info_html"><div class="ttname"><a href="classXML__Business__Error__Info.html">XML_Business_Error_Info</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00198">xml_class_set.h:198</a></div></div>
+<div class="ttc" id="shunt__net__packet_8h_html"><div class="ttname"><a href="shunt__net__packet_8h.html">shunt_net_packet.h</a></div></div>
+<div class="ttc" id="monitor_8cc_html_a115ed0955aa677202b01fdf22866d76d"><div class="ttname"><a href="monitor_8cc.html#a115ed0955aa677202b01fdf22866d76d">JoinCaptureThread</a></div><div class="ttdeci">void JoinCaptureThread(deque&lt; CaptureNetPacket &gt; &amp;capture_net_packet_deque, deque&lt; ShuntNetPacket &gt; &amp;shunt_net_packet_deque)</div><div class="ttdoc">join capture thread </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00225">monitor.cc:225</a></div></div>
+<div class="ttc" id="xml__class__set_8h_html"><div class="ttname"><a href="xml__class__set_8h.html">xml_class_set.h</a></div><div class="ttdoc">xml parser class set </div></div>
+<div class="ttc" id="classUtils_html_a89353d60a41dfcf7a0b964c2e3e127e3"><div class="ttname"><a href="classUtils.html#a89353d60a41dfcf7a0b964c2e3e127e3">Utils::SleepUsec</a></div><div class="ttdeci">static void SleepUsec(const int usec)</div><div class="ttdoc">sleep usecs </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00245">utils.cc:245</a></div></div>
+<div class="ttc" id="ldgloble_8h_html_a798af1e30bc65f319c1a246cecf59e39"><div class="ttname"><a href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></div><div class="ttdeci">unsigned int DWORD</div><div class="ttdef"><b>Definition:</b> <a href="ldgloble_8h_source.html#l00055">ldgloble.h:55</a></div></div>
+<div class="ttc" id="monitor_8cc_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdoc">main </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00245">monitor.cc:245</a></div></div>
+<div class="ttc" id="classXML__Business__Error__Info_html_aaa2cc061d08d03316f3470196b0f95ed"><div class="ttname"><a href="classXML__Business__Error__Info.html#aaa2cc061d08d03316f3470196b0f95ed">XML_Business_Error_Info::get_zmqdeque</a></div><div class="ttdeci">deque&lt; XML_ZMQ &gt; * get_zmqdeque()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00203">xml_class_set.h:203</a></div></div>
+<div class="ttc" id="monitor_8cc_html_a5b9eb73f25d424f36d3b33cfb9b2fa6e"><div class="ttname"><a href="monitor_8cc.html#a5b9eb73f25d424f36d3b33cfb9b2fa6e">Event_Routine</a></div><div class="ttdeci">bool Event_Routine(DWORD event_type)</div><div class="ttdoc">windows:capture ctrl close event </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00049">monitor.cc:49</a></div></div>
+<div class="ttc" id="classXML__Log_html_a4c34cb14e24f1f11f3f1aae854148b17"><div class="ttname"><a href="classXML__Log.html#a4c34cb14e24f1f11f3f1aae854148b17">XML_Log::get_zmqdeque</a></div><div class="ttdeci">deque&lt; XML_ZMQ &gt; * get_zmqdeque()</div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00190">xml_class_set.h:190</a></div></div>
+<div class="ttc" id="classXML__ListeningItem_html"><div class="ttname"><a href="classXML__ListeningItem.html">XML_ListeningItem</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00237">xml_class_set.h:237</a></div></div>
+<div class="ttc" id="classConfigParser_html_aebd629d902f91f6402df208c1f95314e"><div class="ttname"><a href="classConfigParser.html#aebd629d902f91f6402df208c1f95314e">ConfigParser::get_listeningitems</a></div><div class="ttdeci">deque&lt; XML_ListeningItem &gt; &amp; get_listeningitems()</div><div class="ttdef"><b>Definition:</b> <a href="config__parser_8h_source.html#l00016">config_parser.h:16</a></div></div>
+<div class="ttc" id="monitor_8cc_html_aaf791e283242b126b86976932a79141f"><div class="ttname"><a href="monitor_8cc.html#aaf791e283242b126b86976932a79141f">RunLogThread</a></div><div class="ttdeci">void RunLogThread(zmq::context_t &amp;context, Log &amp;log, XML_Log &amp;xml_log)</div><div class="ttdoc">log thread:init zmq and start </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00107">monitor.cc:107</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html"><div class="ttname"><a href="classCaptureNetPacket.html">CaptureNetPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00008">capture_net_packet.h:8</a></div></div>
+<div class="ttc" id="did__template__to__lua__struct_8h_html"><div class="ttname"><a href="did__template__to__lua__struct_8h.html">did_template_to_lua_struct.h</a></div></div>
+<div class="ttc" id="classBaseThread_html_a3cc66810b0961581ba4618d3b3a1ff82"><div class="ttname"><a href="classBaseThread.html#a3cc66810b0961581ba4618d3b3a1ff82">BaseThread::AddZMQItem</a></div><div class="ttdeci">void AddZMQItem(ZMQItem zmqitem)</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00083">basethread.h:83</a></div></div>
+<div class="ttc" id="config__parser_8h_html"><div class="ttname"><a href="config__parser_8h.html">config_parser.h</a></div></div>
+<div class="ttc" id="structZMQItem_html_ae8d6a9fbdbd88814c7199cb18e58d506"><div class="ttname"><a href="structZMQItem.html#ae8d6a9fbdbd88814c7199cb18e58d506">ZMQItem::zmqpattern</a></div><div class="ttdeci">int zmqpattern</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00217">structs.h:217</a></div></div>
+<div class="ttc" id="classBusinessErrorInfo_html_a94bacbd126eda762b7b52f303ec8c5d3"><div class="ttname"><a href="classBusinessErrorInfo.html#a94bacbd126eda762b7b52f303ec8c5d3">BusinessErrorInfo::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">init </div><div class="ttdef"><b>Definition:</b> <a href="business__error__info_8cc_source.html#l00034">business_error_info.cc:34</a></div></div>
+<div class="ttc" id="flags_8h_html"><div class="ttname"><a href="flags_8h.html">flags.h</a></div></div>
+<div class="ttc" id="monitor_8cc_html_a3f62a1956335005c201c4eaeb873ccba"><div class="ttname"><a href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba">RunBusinessErrorInfoThread</a></div><div class="ttdeci">void RunBusinessErrorInfoThread(zmq::context_t &amp;context, BusinessErrorInfo &amp;business_errinfo, XML_Business_Error_Info &amp;xml_business_errinfo)</div><div class="ttdoc">business_error_info thread:init zmq and start </div><div class="ttdef"><b>Definition:</b> <a href="monitor_8cc_source.html#l00129">monitor.cc:129</a></div></div>
+<div class="ttc" id="classXML__Log_html"><div class="ttname"><a href="classXML__Log.html">XML_Log</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00179">xml_class_set.h:179</a></div></div>
+<div class="ttc" id="xml2cfg_8h_html"><div class="ttname"><a href="xml2cfg_8h.html">xml2cfg.h</a></div><div class="ttdoc">xml parser api </div></div>
+<div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html"><div class="ttname"><a href="classShuntNetPacket.html">ShuntNetPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00015">shunt_net_packet.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="STEP::SocketRecvFailed" name="STEP::SocketRecvFailed">
+<area shape="rect" id="node2" href="$structSTEP_1_1SocketException.html" title="Socket Error. " alt="" coords="9,256,172,363"/>
+<area shape="rect" id="node3" href="$structSTEP_1_1Exception.html" title="Base QuickFIX exception type. " alt="" coords="29,131,152,208"/>
+</map>

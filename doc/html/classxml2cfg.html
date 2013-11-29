@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: xml2cfg类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classxml2cfg-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">xml2cfg类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a>&gt;</code></p>
+<div class="dynheader">
+xml2cfg 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxml2cfg__coll__graph.png" border="0" usemap="#xml2cfg_coll__map" alt="Collaboration graph"/></div>
+<map name="xml2cfg_coll__map" id="xml2cfg_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab971b4351ffc29878de76c9ad9e52114"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#ab971b4351ffc29878de76c9ad9e52114">xml2cfg</a> ()</td></tr>
+<tr class="separator:ab971b4351ffc29878de76c9ad9e52114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0225375656548768f3f281f2fe9d850"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#ae0225375656548768f3f281f2fe9d850">open</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *filename)</td></tr>
+<tr class="separator:ae0225375656548768f3f281f2fe9d850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3c88d5eb81ef79fac8fdc1fa5b4824"><td class="memItemLeft" align="right" valign="top">xmlNodeSetPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#a4d3c88d5eb81ef79fac8fdc1fa5b4824">locate</a> (xmlNodePtr currentroot, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *xpath)</td></tr>
+<tr class="separator:a4d3c88d5eb81ef79fac8fdc1fa5b4824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b2d62c4b8ecd9dc6c268400427737c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#ad6b2d62c4b8ecd9dc6c268400427737c">get_nodes_num</a> (xmlNodeSetPtr nodesetptr)</td></tr>
+<tr class="separator:ad6b2d62c4b8ecd9dc6c268400427737c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebe0544aa900b2f646ba0de7a7a93f8"><td class="memItemLeft" align="right" valign="top">xmlNodePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#a4ebe0544aa900b2f646ba0de7a7a93f8">get_node</a> (xmlNodeSetPtr nodesetptr, int index)</td></tr>
+<tr class="separator:a4ebe0544aa900b2f646ba0de7a7a93f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85e4d59b40e05b5f66362fd41f0b6a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#af85e4d59b40e05b5f66362fd41f0b6a4">get_prop_int</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> xmlNodePtr nodeptr, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *propname, int default_val)</td></tr>
+<tr class="separator:af85e4d59b40e05b5f66362fd41f0b6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a53cbb4b15823a071484560d71c2e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#af4a53cbb4b15823a071484560d71c2e7">get_prop_string</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> xmlNodePtr nodeptr, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *propname, std::string &amp;output, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *default_val)</td></tr>
+<tr class="separator:af4a53cbb4b15823a071484560d71c2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab350afe38bf64790be412a1124501f8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#ab350afe38bf64790be412a1124501f8e">get_prop_string</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> xmlNodePtr nodeptr, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *propname, char *output, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *default_val)</td></tr>
+<tr class="separator:ab350afe38bf64790be412a1124501f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a6ee2659f608f1eb65e5c67bfe1622f62"><td class="memItemLeft" align="right" valign="top">xmlDocPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">docptr_</a></td></tr>
+<tr class="separator:a6ee2659f608f1eb65e5c67bfe1622f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4b9bea3840858c34908338f0bbd9d7"><td class="memItemLeft" align="right" valign="top">xmlXPathObjectPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xmlobjptr_</a></td></tr>
+<tr class="separator:a5e4b9bea3840858c34908338f0bbd9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22278f6da1652552bdb080a8b87e176"><td class="memItemLeft" align="right" valign="top">xmlXPathContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xmlctxptr_</a></td></tr>
+<tr class="separator:aa22278f6da1652552bdb080a8b87e176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2d06523d93c9370b26024a953303f2"><td class="memItemLeft" align="right" valign="top">xmlXPathContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xmlrootctxptr_</a></td></tr>
+<tr class="separator:a0a2d06523d93c9370b26024a953303f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00022">22</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ab971b4351ffc29878de76c9ad9e52114"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xml2cfg::xml2cfg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             :</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">docptr_</a>(NULL), <a class="code" href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xmlobjptr_</a>(NULL),<a class="code" href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xmlctxptr_</a>(NULL),<a class="code" href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xmlrootctxptr_</a>(NULL)<span class="comment">//,rootnode_(NULL)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      }</div>
+<div class="ttc" id="classxml2cfg_html_a5e4b9bea3840858c34908338f0bbd9d7"><div class="ttname"><a href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xml2cfg::xmlobjptr_</a></div><div class="ttdeci">xmlXPathObjectPtr xmlobjptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00126">xml2cfg.h:126</a></div></div>
+<div class="ttc" id="classxml2cfg_html_aa22278f6da1652552bdb080a8b87e176"><div class="ttname"><a href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xml2cfg::xmlctxptr_</a></div><div class="ttdeci">xmlXPathContextPtr xmlctxptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00127">xml2cfg.h:127</a></div></div>
+<div class="ttc" id="classxml2cfg_html_a6ee2659f608f1eb65e5c67bfe1622f62"><div class="ttname"><a href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">xml2cfg::docptr_</a></div><div class="ttdeci">xmlDocPtr docptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00125">xml2cfg.h:125</a></div></div>
+<div class="ttc" id="classxml2cfg_html_a0a2d06523d93c9370b26024a953303f2"><div class="ttname"><a href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xml2cfg::xmlrootctxptr_</a></div><div class="ttdeci">xmlXPathContextPtr xmlrootctxptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00127">xml2cfg.h:127</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a4ebe0544aa900b2f646ba0de7a7a93f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmlNodePtr xml2cfg::get_node </td>
+          <td>(</td>
+          <td class="paramtype">xmlNodeSetPtr&#160;</td>
+          <td class="paramname"><em>nodesetptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="config__parser_8cc_source.html#l00028">ConfigParser::Parse()</a> , 以及 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00064">DIDTemplateToLuaStruct::Transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          <span class="keywordflow">return</span> nodesetptr-&gt;nodeTab[index];</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxml2cfg_a4ebe0544aa900b2f646ba0de7a7a93f8_icgraph.png" border="0" usemap="#classxml2cfg_a4ebe0544aa900b2f646ba0de7a7a93f8_icgraph" alt=""/></div>
+<map name="classxml2cfg_a4ebe0544aa900b2f646ba0de7a7a93f8_icgraph" id="classxml2cfg_a4ebe0544aa900b2f646ba0de7a7a93f8_icgraph">
+<area shape="rect" id="node2" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="ConfigParser::Parse" alt="" coords="199,5,339,32"/><area shape="rect" id="node4" href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55" title="transform all the did template to lua template " alt="" coords="184,57,355,98"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="473,5,524,32"/><area shape="rect" id="node5" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7" title="transform did template to lua template " alt="" coords="403,64,594,91"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6b2d62c4b8ecd9dc6c268400427737c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xml2cfg::get_nodes_num </td>
+          <td>(</td>
+          <td class="paramtype">xmlNodeSetPtr&#160;</td>
+          <td class="paramname"><em>nodesetptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00068">68</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          <span class="keywordflow">return</span> nodesetptr-&gt;nodeNr;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af85e4d59b40e05b5f66362fd41f0b6a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xml2cfg::get_prop_int </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> xmlNodePtr&#160;</td>
+          <td class="paramname"><em>nodeptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>propname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00078">78</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="config__parser_8cc_source.html#l00028">ConfigParser::Parse()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          xmlChar *_propval = xmlGetProp( nodeptr, (<span class="keyword">const</span> xmlChar *)propname );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          <span class="keywordflow">if</span>( _propval == NULL )</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;              <span class="keywordflow">return</span> default_val;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <span class="keywordtype">int</span> _ret =  atoi( (<span class="keyword">const</span> <span class="keywordtype">char</span> *)_propval );</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          xmlFree( _propval );</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          <span class="keywordflow">return</span> _ret;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxml2cfg_af85e4d59b40e05b5f66362fd41f0b6a4_icgraph.png" border="0" usemap="#classxml2cfg_af85e4d59b40e05b5f66362fd41f0b6a4_icgraph" alt=""/></div>
+<map name="classxml2cfg_af85e4d59b40e05b5f66362fd41f0b6a4_icgraph" id="classxml2cfg_af85e4d59b40e05b5f66362fd41f0b6a4_icgraph">
+<area shape="rect" id="node2" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="ConfigParser::Parse" alt="" coords="201,5,341,32"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="389,5,440,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af4a53cbb4b15823a071484560d71c2e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xml2cfg::get_prop_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> xmlNodePtr&#160;</td>
+          <td class="paramname"><em>nodeptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>propname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00088">88</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="config__parser_8cc_source.html#l00028">ConfigParser::Parse()</a> , 以及 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00064">DIDTemplateToLuaStruct::Transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          xmlChar *_propval = xmlGetProp( nodeptr, (<span class="keyword">const</span> xmlChar *)propname );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          <span class="keywordflow">if</span>( _propval == NULL )</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;              <span class="keywordflow">if</span>( default_val != NULL &amp;&amp; strlen( default_val ) &gt; 0 )</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                  output = default_val;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                  <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;          {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;              output = (<span class="keyword">const</span> <span class="keywordtype">char</span> *)_propval;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;              xmlFree( _propval );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxml2cfg_af4a53cbb4b15823a071484560d71c2e7_icgraph.png" border="0" usemap="#classxml2cfg_af4a53cbb4b15823a071484560d71c2e7_icgraph" alt=""/></div>
+<map name="classxml2cfg_af4a53cbb4b15823a071484560d71c2e7_icgraph" id="classxml2cfg_af4a53cbb4b15823a071484560d71c2e7_icgraph">
+<area shape="rect" id="node2" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="ConfigParser::Parse" alt="" coords="234,5,374,32"/><area shape="rect" id="node4" href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55" title="transform all the did template to lua template " alt="" coords="219,57,389,98"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="508,5,559,32"/><area shape="rect" id="node5" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7" title="transform did template to lua template " alt="" coords="438,64,629,91"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab350afe38bf64790be412a1124501f8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xml2cfg::get_prop_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> xmlNodePtr&#160;</td>
+          <td class="paramname"><em>nodeptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>propname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>default_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00106">106</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          xmlChar *_propval = xmlGetProp( nodeptr, (<span class="keyword">const</span> xmlChar *)propname );</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          <span class="keywordflow">if</span>( _propval == NULL )</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;              <span class="keywordflow">if</span>( default_val != NULL &amp;&amp; strlen( default_val ) &gt; 0 )</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                  strcpy( output, default_val );</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;              <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                  <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;              strcpy( output, (<span class="keyword">const</span> <span class="keywordtype">char</span> *)_propval );</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;              xmlFree( _propval );</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4d3c88d5eb81ef79fac8fdc1fa5b4824"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmlNodeSetPtr xml2cfg::locate </td>
+          <td>(</td>
+          <td class="paramtype">xmlNodePtr&#160;</td>
+          <td class="paramname"><em>currentroot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>xpath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00049">49</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="config__parser_8cc_source.html#l00028">ConfigParser::Parse()</a> , 以及 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00064">DIDTemplateToLuaStruct::Transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          <span class="keywordflow">if</span>( <a class="code" href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xmlctxptr_</a> == NULL )</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          xmlXPathContextPtr _ptr = NULL;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <span class="keywordflow">if</span>( currentroot == NULL )</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              _ptr = <a class="code" href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xmlrootctxptr_</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              _ptr = <a class="code" href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xmlctxptr_</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              _ptr-&gt;node = currentroot;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          <a class="code" href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xmlobjptr_</a> = xmlXPathEvalExpression( (<span class="keyword">const</span> xmlChar *)xpath, _ptr ); </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          <span class="keywordflow">if</span>( <a class="code" href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xmlobjptr_</a> == NULL )</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;              <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xmlobjptr_</a>-&gt;nodesetval;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
+<div class="ttc" id="classxml2cfg_html_a5e4b9bea3840858c34908338f0bbd9d7"><div class="ttname"><a href="classxml2cfg.html#a5e4b9bea3840858c34908338f0bbd9d7">xml2cfg::xmlobjptr_</a></div><div class="ttdeci">xmlXPathObjectPtr xmlobjptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00126">xml2cfg.h:126</a></div></div>
+<div class="ttc" id="classxml2cfg_html_aa22278f6da1652552bdb080a8b87e176"><div class="ttname"><a href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xml2cfg::xmlctxptr_</a></div><div class="ttdeci">xmlXPathContextPtr xmlctxptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00127">xml2cfg.h:127</a></div></div>
+<div class="ttc" id="classxml2cfg_html_a0a2d06523d93c9370b26024a953303f2"><div class="ttname"><a href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xml2cfg::xmlrootctxptr_</a></div><div class="ttdeci">xmlXPathContextPtr xmlrootctxptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00127">xml2cfg.h:127</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxml2cfg_a4d3c88d5eb81ef79fac8fdc1fa5b4824_icgraph.png" border="0" usemap="#classxml2cfg_a4d3c88d5eb81ef79fac8fdc1fa5b4824_icgraph" alt=""/></div>
+<map name="classxml2cfg_a4d3c88d5eb81ef79fac8fdc1fa5b4824_icgraph" id="classxml2cfg_a4d3c88d5eb81ef79fac8fdc1fa5b4824_icgraph">
+<area shape="rect" id="node2" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="ConfigParser::Parse" alt="" coords="181,5,321,32"/><area shape="rect" id="node4" href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55" title="transform all the did template to lua template " alt="" coords="165,57,336,98"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="455,5,505,32"/><area shape="rect" id="node5" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7" title="transform did template to lua template " alt="" coords="385,64,575,91"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0225375656548768f3f281f2fe9d850"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xml2cfg::open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00030">30</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="config__parser_8cc_source.html#l00028">ConfigParser::Parse()</a> , 以及 <a class="el" href="did__template__to__lua__struct_8cc_source.html#l00064">DIDTemplateToLuaStruct::Transform()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;              <a class="code" href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">docptr_</a> = xmlParseFile( filename );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          <span class="keywordflow">catch</span>(...)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              <span class="keywordflow">if</span> ( errno == 2 )</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                  <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          <span class="keywordflow">if</span>( <a class="code" href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">docptr_</a> == NULL )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;              <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          <a class="code" href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xmlctxptr_</a> = xmlXPathNewContext( <a class="code" href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">docptr_</a> );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          <a class="code" href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xmlrootctxptr_</a> = xmlXPathNewContext( <a class="code" href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">docptr_</a> );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      }</div>
+<div class="ttc" id="classxml2cfg_html_aa22278f6da1652552bdb080a8b87e176"><div class="ttname"><a href="classxml2cfg.html#aa22278f6da1652552bdb080a8b87e176">xml2cfg::xmlctxptr_</a></div><div class="ttdeci">xmlXPathContextPtr xmlctxptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00127">xml2cfg.h:127</a></div></div>
+<div class="ttc" id="classxml2cfg_html_a6ee2659f608f1eb65e5c67bfe1622f62"><div class="ttname"><a href="classxml2cfg.html#a6ee2659f608f1eb65e5c67bfe1622f62">xml2cfg::docptr_</a></div><div class="ttdeci">xmlDocPtr docptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00125">xml2cfg.h:125</a></div></div>
+<div class="ttc" id="classxml2cfg_html_a0a2d06523d93c9370b26024a953303f2"><div class="ttname"><a href="classxml2cfg.html#a0a2d06523d93c9370b26024a953303f2">xml2cfg::xmlrootctxptr_</a></div><div class="ttdeci">xmlXPathContextPtr xmlrootctxptr_</div><div class="ttdef"><b>Definition:</b> <a href="xml2cfg_8h_source.html#l00127">xml2cfg.h:127</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxml2cfg_ae0225375656548768f3f281f2fe9d850_icgraph.png" border="0" usemap="#classxml2cfg_ae0225375656548768f3f281f2fe9d850_icgraph" alt=""/></div>
+<map name="classxml2cfg_ae0225375656548768f3f281f2fe9d850_icgraph" id="classxml2cfg_ae0225375656548768f3f281f2fe9d850_icgraph">
+<area shape="rect" id="node2" href="classConfigParser.html#a40c1a0aea2fce19bfe57d7eaafe81e15" title="ConfigParser::Parse" alt="" coords="173,5,313,32"/><area shape="rect" id="node4" href="classDIDTemplateToLuaStruct.html#abed42016858381182ef4c67c1bf15c55" title="transform all the did template to lua template " alt="" coords="157,57,328,98"/><area shape="rect" id="node3" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="447,5,497,32"/><area shape="rect" id="node5" href="monitor_8cc.html#adbb5f40ae887eade067c196efb646db7" title="transform did template to lua template " alt="" coords="377,64,567,91"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a6ee2659f608f1eb65e5c67bfe1622f62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmlDocPtr xml2cfg::docptr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa22278f6da1652552bdb080a8b87e176"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmlXPathContextPtr xml2cfg::xmlctxptr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00127">127</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e4b9bea3840858c34908338f0bbd9d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmlXPathObjectPtr xml2cfg::xmlobjptr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a2d06523d93c9370b26024a953303f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmlXPathContextPtr xml2cfg::xmlrootctxptr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a> 第 <a class="el" href="xml2cfg_8h_source.html#l00127">127</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="xml2cfg_8h_source.html">xml2cfg.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

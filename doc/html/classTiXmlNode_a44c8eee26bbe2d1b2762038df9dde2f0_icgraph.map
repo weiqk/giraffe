@@ -1,0 +1,11 @@
+<map id="TiXmlNode::FirstChild" name="TiXmlNode::FirstChild">
+<area shape="rect" id="node2" href="$classTiXmlElement.html#a31ab28cc3b892a69254391d6bbe08df3" title="TiXmlElement::Accept" alt="" coords="229,5,382,32"/>
+<area shape="rect" id="node3" href="$classTiXmlDocument.html#a3daab2f472418ef66315750202f762ae" title="TiXmlDocument::Accept" alt="" coords="223,56,388,83"/>
+<area shape="rect" id="node4" href="$classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55" title="Convenience function to get through elements. " alt="" coords="206,107,405,133"/>
+<area shape="rect" id="node6" href="$classTiXmlElement.html#aa6dedd8a146acf3b1bc0903deb2d411a" title="TiXmlElement::GetText" alt="" coords="226,157,385,184"/>
+<area shape="rect" id="node7" href="$classTiXmlNode.html#aaef7ac3978c4bb1cc8a24ffae7bced75" title="TiXmlNode::IterateChildren" alt="" coords="215,208,395,235"/>
+<area shape="rect" id="node8" href="$classTiXmlDocument.html#a7b1aea204fee266b70b9c105c8bf2ada" title="Print this Document to a FILE stream. " alt="" coords="230,259,381,285"/>
+<area shape="rect" id="node9" href="$classTiXmlPrinter.html#a6dccaf5ee4979f13877690afe28721e8" title="Visit an element. " alt="" coords="226,309,385,336"/>
+<area shape="rect" id="node10" href="$classTiXmlPrinter.html#ae6a1df8271df4bf62d7873c38e34aa69" title="Visit an element. " alt="" coords="230,360,381,387"/>
+<area shape="rect" id="node5" href="$classTiXmlDocument.html#ad09d17927f908f40efb406af2fb873be" title="TiXmlDocument::RootElement" alt="" coords="453,107,653,133"/>
+</map>

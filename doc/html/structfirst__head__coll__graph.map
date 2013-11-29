@@ -1,0 +1,4 @@
+<map id="first_head" name="first_head">
+<area shape="rect" id="node2" href="$structstock__head.html" title="{stock_head\n|+ m_uint64Ver\l|}" alt="" coords="57,163,164,240"/>
+<area shape="rect" id="node3" href="$structtimemyval.html" title="{timemyval\n|+ m_uint64TimeSec\l+ m_uint64TimeUSec\l|}" alt="" coords="36,6,184,98"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="CDidStructApi" name="CDidStructApi">
+<area shape="rect" id="node2" href="$classJUncopyable.html" title="{JUncopyable\n||# JUncopyable()\l# ~JUncopyable()\l&#45; JUncopyable()\l&#45; operator=()\l}" alt="" coords="5,257,131,378"/>
+<area shape="rect" id="node3" href="$structDids.html" title="{Dids\n|+ m_wDidsNum\l|}" alt="" coords="155,279,271,356"/>
+<area shape="rect" id="node4" href="$structDidName.html" title="{DidName\n|+ m_cName\l+ m_dwDid\l|}" alt="" coords="166,27,260,119"/>
+<area shape="rect" id="node5" href="$structCids.html" title="{Cids\n|+ m_wCidsNum\l|}" alt="" coords="296,279,412,356"/>
+<area shape="rect" id="node6" href="$structCidInfo.html" title="{CidInfo\n|+ m_cName\l+ m_dwCid\l+ m_dwDCid\l+ m_dwFiledsNum\l+ m_uint64Offset\l|}" alt="" coords="287,5,419,141"/>
+<area shape="rect" id="node7" href="$structStrIds.html" title="{StrIds\n|+ m_wStrIdNum\l|}" alt="" coords="437,279,555,356"/>
+<area shape="rect" id="node8" href="$structStrList.html" title="{StrList\n|+ m_cName\l+ m_dwStrId\l+ m_wStrNum\l+ m_wMaxStrLen\l+ m_uint64Offset\l|}" alt="" coords="444,5,569,141"/>
+<area shape="rect" id="node9" href="$structds__field__info.html" title="{ds_field_info\n|+ m_byteTypeIndex\l+ m_byteTypeSize\l+ m_byteSortFlag\l+ m_byteSaveFlag\l+ m_wId\l+ m_wASize\l+ m_dwOffset\l+ m_dwROffset\l+ m_cName\l+ idpos\l和 8 更多...\l|}" alt="" coords="580,205,719,429"/>
+<area shape="rect" id="node10" href="$structCodeBitIds.html" title="{CodeBitIds\n|+ m_wCodeBitIdNum\l|}" alt="" coords="743,279,891,356"/>
+<area shape="rect" id="node11" href="$structCodeBitInfo.html" title="{CodeBitInfo\n|+ m_cName\l+ m_dwCid\l+ m_dwNum\l+ m_uint64Offset\l|}" alt="" coords="756,13,879,134"/>
+<area shape="rect" id="node12" href="$structds__did__info.html" title="{ds_did_info\n|+ did\l+ index_key\l+ m_cName\l+ m_sKeyFieldPos\l+ m_wSortSecs\l+ m_wFieldsNum\l+ m_wAllFieldsNum\l+ m_wTablesNum\l+ m_dwRRecSize\l+ m_dwVRecSize\l和 8 更多...\l|}" alt="" coords="915,205,1055,429"/>
+</map>

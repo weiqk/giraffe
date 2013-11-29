@@ -1,0 +1,6 @@
+<map id="TiXmlComment::operator=" name="TiXmlComment::operator=">
+<area shape="rect" id="node2" href="$classTiXmlNode.html#a708e7f953df61d4d2d12f73171550a4b" title="Delete all the children of this node. Does not affect &#39;this&#39;. " alt="" coords="250,5,377,32"/>
+<area shape="rect" id="node3" href="$classTiXmlComment.html#a3175b2f27628f4fb7a043897930cd934" title="TiXmlComment::CopyTo" alt="" coords="230,56,397,83"/>
+<area shape="rect" id="node4" href="$classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038" title="TiXmlNode::CopyTo" alt="" coords="445,56,587,83"/>
+<area shape="rect" id="node5" href="$classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90" title="TiXmlNode::SetValue" alt="" coords="635,56,783,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="STK_HKDYNA" name="STK_HKDYNA">
+<area shape="rect" id="node2" href="$structMWORD.html" title="{MWORD\n|+ m_nBase\l+ m_nMul\l|+ MWORD()\l+ MWORD()\l+ MWORD()\l+ operator INT64()\l+ GetValue()\l+ GetABSValue()\l+ operator&#45;=()\l+ operator&#45;=()\l+ operator+=()\l+ operator+=()\l和 30 更多...\l}" alt="" coords="5,6,133,245"/>
+<area shape="rect" id="node3" href="$structSTK__HKDYNA_1_1HK__BROKER.html" title="{STK_HKDYNA::HK_BROKER\n|+ m_wNumBroker\l+ m_wBrokerNo\l+ m_cType\l|}" alt="" coords="159,72,361,179"/>
+</map>

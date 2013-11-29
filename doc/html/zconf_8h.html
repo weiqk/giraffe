@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: zconf.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
+  <div class="headertitle">
+<div class="title">zconf.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="zconf_8h__dep__incl.png" border="0" usemap="#zconf_8hdep" alt=""/></div>
+<map name="zconf_8hdep" id="zconf_8hdep">
+<area shape="rect" id="node2" href="zlib_8h.html" title="zlib.h" alt="" coords="140,80,193,107"/><area shape="rect" id="node3" href="DidUncompress_8cpp.html" title="DidUncompress.cpp" alt="" coords="4,155,144,181"/><area shape="rect" id="node4" href="uncompress__dc__packet_8cc.html" title="uncompress dc packet " alt="" coords="169,155,348,181"/></map>
+</div>
+</div>
+<p><a href="zconf_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2c212835823e3c54a8ab6d95c652660e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="separator:a2c212835823e3c54a8ab6d95c652660e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9fefb3d20386851ca693946127ab2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a8e9fefb3d20386851ca693946127ab2e">MAX_MEM_LEVEL</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a8e9fefb3d20386851ca693946127ab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2f406ac1f9c49236376115d78ccb5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#abd2f406ac1f9c49236376115d78ccb5b">MAX_WBITS</a>&#160;&#160;&#160;15 /* 32K LZ77 window */</td></tr>
+<tr class="separator:abd2f406ac1f9c49236376115d78ccb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c3c093d0900e1d96d07c91b53c1b5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#aa6c3c093d0900e1d96d07c91b53c1b5d">OF</a>(args)&#160;&#160;&#160;()</td></tr>
+<tr class="separator:aa6c3c093d0900e1d96d07c91b53c1b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181415878f03b95a7094309d824a14b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a181415878f03b95a7094309d824a14b6">ZEXPORT</a></td></tr>
+<tr class="separator:a181415878f03b95a7094309d824a14b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38d1853df635eee27f1a02f96457b22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#af38d1853df635eee27f1a02f96457b22">ZEXPORTVA</a></td></tr>
+<tr class="separator:af38d1853df635eee27f1a02f96457b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b7f5eccfcc99e53178581632bc9589"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a49b7f5eccfcc99e53178581632bc9589">ZEXTERN</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:a49b7f5eccfcc99e53178581632bc9589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef060b3456fdcc093a7210a762d5f2ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a></td></tr>
+<tr class="separator:aef060b3456fdcc093a7210a762d5f2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d112bae8fd35be772185b6ec6bcbe64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a0d112bae8fd35be772185b6ec6bcbe64">SEEK_SET</a>&#160;&#160;&#160;0       /* Seek from beginning of file.  */</td></tr>
+<tr class="separator:a0d112bae8fd35be772185b6ec6bcbe64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8d0b76b470ba65a43ca46a88320f39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a4c8d0b76b470ba65a43ca46a88320f39">SEEK_CUR</a>&#160;&#160;&#160;1       /* Seek from current position.  */</td></tr>
+<tr class="separator:a4c8d0b76b470ba65a43ca46a88320f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a2e6c114780c3071efd24f16c7f7d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#ad2a2e6c114780c3071efd24f16c7f7d8">SEEK_END</a>&#160;&#160;&#160;2       /* Set file pointer to EOF plus &quot;offset&quot; */</td></tr>
+<tr class="separator:ad2a2e6c114780c3071efd24f16c7f7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf4661a88ec12823d7cbdd3fa629eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a8cf4661a88ec12823d7cbdd3fa629eb0">z_off_t</a>&#160;&#160;&#160;long</td></tr>
+<tr class="separator:a8cf4661a88ec12823d7cbdd3fa629eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ae3a497195d617519e5353ea7b417940f"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a></td></tr>
+<tr class="separator:ae3a497195d617519e5353ea7b417940f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d141052bcd5ec8a80812a565c70369"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a87d141052bcd5ec8a80812a565c70369">uInt</a></td></tr>
+<tr class="separator:a87d141052bcd5ec8a80812a565c70369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2a5701a3aecf6700d2c66c606ecb40"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#acd2a5701a3aecf6700d2c66c606ecb40">uLong</a></td></tr>
+<tr class="separator:acd2a5701a3aecf6700d2c66c606ecb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb722a888064be47e12d05f692e0f407"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#aeb722a888064be47e12d05f692e0f407">Bytef</a></td></tr>
+<tr class="separator:aeb722a888064be47e12d05f692e0f407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3f92a9c02f6f688bf081aabf230212"><td class="memItemLeft" align="right" valign="top">typedef char <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a0f3f92a9c02f6f688bf081aabf230212">charf</a></td></tr>
+<tr class="separator:a0f3f92a9c02f6f688bf081aabf230212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa857123283d7630b35e9b1d427dd6438"><td class="memItemLeft" align="right" valign="top">typedef int <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#aa857123283d7630b35e9b1d427dd6438">intf</a></td></tr>
+<tr class="separator:aa857123283d7630b35e9b1d427dd6438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddbe74608d318334285e01f8a56fa5a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#a87d141052bcd5ec8a80812a565c70369">uInt</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#adddbe74608d318334285e01f8a56fa5a">uIntf</a></td></tr>
+<tr class="separator:adddbe74608d318334285e01f8a56fa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0426a5a0ed418ec4ae15af8281c64254"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#acd2a5701a3aecf6700d2c66c606ecb40">uLong</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a0426a5a0ed418ec4ae15af8281c64254">uLongf</a></td></tr>
+<tr class="separator:a0426a5a0ed418ec4ae15af8281c64254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c731495379021454c8e61439dc88ec"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#a04c731495379021454c8e61439dc88ec">voidpf</a></td></tr>
+<tr class="separator:a04c731495379021454c8e61439dc88ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3397ff439b5e076528b04bc9b8b086a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zconf_8h.html#aa3397ff439b5e076528b04bc9b8b086a">voidp</a></td></tr>
+<tr class="separator:aa3397ff439b5e076528b04bc9b8b086a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a2c212835823e3c54a8ab6d95c652660e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef060b3456fdcc093a7210a762d5f2ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00220">220</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e9fefb3d20386851ca693946127ab2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_MEM_LEVEL&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd2f406ac1f9c49236376115d78ccb5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_WBITS&#160;&#160;&#160;15 /* 32K LZ77 window */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6c3c093d0900e1d96d07c91b53c1b5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">args</td><td>)</td>
+          <td>&#160;&#160;&#160;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c8d0b76b470ba65a43ca46a88320f39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEEK_CUR&#160;&#160;&#160;1       /* Seek from current position.  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00258">258</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2a2e6c114780c3071efd24f16c7f7d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEEK_END&#160;&#160;&#160;2       /* Set file pointer to EOF plus &quot;offset&quot; */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00259">259</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="public_8cpp_source.html#l00019">GetFileContent()</a> , 以及 <a class="el" href="tinyxml_8cpp_source.html#l00975">TiXmlDocument::LoadFile()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d112bae8fd35be772185b6ec6bcbe64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEEK_SET&#160;&#160;&#160;0       /* Seek from beginning of file.  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00257">257</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="public_8cpp_source.html#l00019">GetFileContent()</a> , 以及 <a class="el" href="tinyxml_8cpp_source.html#l00975">TiXmlDocument::LoadFile()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cf4661a88ec12823d7cbdd3fa629eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define z_off_t&#160;&#160;&#160;long</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00262">262</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a181415878f03b95a7094309d824a14b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZEXPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00210">210</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af38d1853df635eee27f1a02f96457b22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZEXPORTVA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00213">213</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49b7f5eccfcc99e53178581632bc9589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZEXTERN&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00216">216</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="ae3a497195d617519e5353ea7b417940f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb722a888064be47e12d05f692e0f407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> <a class="el" href="zconf_8h.html#aeb722a888064be47e12d05f692e0f407">Bytef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00233">233</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f3f92a9c02f6f688bf081aabf230212"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> <a class="el" href="zconf_8h.html#a0f3f92a9c02f6f688bf081aabf230212">charf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00235">235</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa857123283d7630b35e9b1d427dd6438"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> <a class="el" href="zconf_8h.html#aa857123283d7630b35e9b1d427dd6438">intf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00236">236</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87d141052bcd5ec8a80812a565c70369"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="zconf_8h.html#a87d141052bcd5ec8a80812a565c70369">uInt</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00226">226</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adddbe74608d318334285e01f8a56fa5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#a87d141052bcd5ec8a80812a565c70369">uInt</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> <a class="el" href="zconf_8h.html#adddbe74608d318334285e01f8a56fa5a">uIntf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00237">237</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd2a5701a3aecf6700d2c66c606ecb40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned long <a class="el" href="zconf_8h.html#acd2a5701a3aecf6700d2c66c606ecb40">uLong</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00227">227</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0426a5a0ed418ec4ae15af8281c64254"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#acd2a5701a3aecf6700d2c66c606ecb40">uLong</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a> <a class="el" href="zconf_8h.html#a0426a5a0ed418ec4ae15af8281c64254">uLongf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00238">238</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3397ff439b5e076528b04bc9b8b086a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a>* <a class="el" href="zconf_8h.html#aa3397ff439b5e076528b04bc9b8b086a">voidp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00245">245</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04c731495379021454c8e61439dc88ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> <a class="el" href="zconf_8h.html#aef060b3456fdcc093a7210a762d5f2ed">FAR</a>* <a class="el" href="zconf_8h.html#a04c731495379021454c8e61439dc88ec">voidpf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="zconf_8h_source.html">zconf.h</a> 第 <a class="el" href="zconf_8h_source.html#l00244">244</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

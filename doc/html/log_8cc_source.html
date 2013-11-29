@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: log.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">log.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="log_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;log4cxx/logger.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;log4cxx/dailyrollingfileappender.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;log4cxx/basicconfigurator.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;log4cxx/patternlayout.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>log4cxx;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;LoggerPtr <a class="code" href="classLog.html#aa838d152e4c4a0962f7a91aec7311b54">Log::logger_</a>(Logger::getLogger(<span class="stringliteral">&quot;log&quot;</span>));</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//map&lt;int,log4cpp::Category*&gt; logmapping;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="log_8cc.html#aaf642f81875fe70943458fbb39adb52f">   18</a></span>&#160;map&lt;int, log4cxx::LoggerPtr&gt; <a class="code" href="log_8cc.html#aaf642f81875fe70943458fbb39adb52f">logmapping</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classLog.html#a602f5b9115271d5d959ec254cd82f02e">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classLog.html#a602f5b9115271d5d959ec254cd82f02e">Log::RunThreadFunc</a>()</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//zmq version</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> n = ports_.size();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    zmq::context_t * context = context_;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    log4cxx::LogString pattern_str(<span class="stringliteral">&quot;%d:%p:%m%n&quot;</span>); </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    log4cxx::PatternLayoutPtr layout(<span class="keyword">new</span> PatternLayout(pattern_str));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    vector&lt;log4cxx::DailyRollingFileAppenderPtr&gt; appender_array(n);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    vector&lt;log4cxx::LoggerPtr&gt; logger_array(n);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;n;i++)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">string</span> logfile;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        stringstream ss;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ss&lt;&lt;ports_[i];</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        ss&gt;&gt;logfile;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        logfile += <span class="stringliteral">&quot;.log&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        appender_array[i] = <span class="keyword">new</span> DailyRollingFileAppender(layout, logfile, <span class="stringliteral">&quot;&#39;.&#39;yyyy-MM-dd&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        appender_array[i]-&gt;setAppend(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        logger_array[i] = Logger::getLogger(logfile);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        logger_array[i]-&gt;addAppender(appender_array[i]);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        logger_array[i]-&gt;setAdditivity(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="log_8cc.html#aaf642f81875fe70943458fbb39adb52f">logmapping</a>.insert(make_pair(ports_[i], logger_array[i]));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }   </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//vector&lt;log4cpp::Appender *&gt; appender(n);</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;   <span class="comment">/* log4cpp::Appender *appender[n];*/</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//log4cpp::PatternLayout *playout = new log4cpp::PatternLayout();</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//playout-&gt;setConversionPattern(&quot;%d:%p:%m%n&quot;);</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//log4cpp::Category &amp;root = log4cpp::Category::getRoot();</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//vector&lt;log4cpp::Category *&gt; logarray (n);</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//log4cpp::Category *logarray[n];</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//size_t maxfilesize = 1024*1024*1024; //1G</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//for(int i=0;i&lt;n;i++)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//    string logfile;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//    stringstream ss;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//    ss&lt;&lt;ports_[i];</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//    ss&gt;&gt;logfile;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//  logfile += &quot;.log&quot;;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//    appender[i]=  new log4cpp::RollingFileAppender(&quot;default&quot;,logfile,maxfilesize,true);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//    appender[i]-&gt;setLayout(playout);</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//    logarray[i] = &amp;(root.getInstance(logfile));</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//    logarray[i]-&gt;addAppender(appender[i]);</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//    logarray[i]-&gt;setPriority(log4cpp::Priority::INFO);</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//    logmapping.insert(pair&lt;int,log4cpp::Category *&gt;(ports_[i],logarray[i]));</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="structbufelement.html">bufelement</a> info;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//log4cpp::Category *log;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    LoggerPtr log;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//map&lt;int, log4cpp::Category *&gt;::iterator it;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    map&lt;int, LoggerPtr&gt;::iterator it;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    zmq::socket_t socket_log (*context, this-&gt;zmqitems_[0].zmqpattern);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//socket_log.setsockopt(ZMQ_RCVHWM, &amp;ZMQ_RCVHWM_SIZE, sizeof(ZMQ_RCVHWM_SIZE));</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//cout&lt;&lt;&quot;log:pattern:&quot;&lt;&lt;this-&gt;zmqitems_[0].zmqpattern&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//cout&lt;&lt;&quot;log:socketaction:&quot;&lt;&lt;this-&gt;zmqitems_[0].zmqsocketaction&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//cout&lt;&lt;&quot;log:socketaddr:&quot;&lt;&lt;this-&gt;zmqitems_[0].zmqsocketaddr&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span>(<span class="stringliteral">&quot;bind&quot;</span> == this-&gt;zmqitems_[0].zmqsocketaction)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        socket_log.bind(this-&gt;zmqitems_[0].zmqsocketaddr.c_str());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="stringliteral">&quot;connect&quot;</span> == this-&gt;zmqitems_[0].zmqsocketaction)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        socket_log.connect(this-&gt;zmqitems_[0].zmqsocketaddr.c_str());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//zmq::pollitem_t items[] = {socket_log, 0, ZMQ_POLLIN, 0};</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">//wait for recv</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">//int rc = zmq::poll(items, 1, 1000);//timeout = 1s</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="comment">//if(rc &gt; 0)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">//{</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">//    if(items[0].revents &amp; ZMQ_POLLIN)</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">//    {</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    zmq::message_t msg_rcv(<span class="keyword">sizeof</span>(<a class="code" href="structbufelement.html">bufelement</a>));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="comment">//socket_log.recv(&amp;msg_rcv,ZMQ_NOBLOCK);</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    socket_log.recv(&amp;msg_rcv);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    info = *(<span class="keyword">static_cast&lt;</span><a class="code" href="structbufelement.html">bufelement</a> *<span class="keyword">&gt;</span>(msg_rcv.data()));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    it = <a class="code" href="log_8cc.html#aaf642f81875fe70943458fbb39adb52f">logmapping</a>.find(info.<a class="code" href="structbufelement.html#a652c8b5828be0da9d241af99259f5557">port_tag</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keywordflow">if</span>(it != <a class="code" href="log_8cc.html#aaf642f81875fe70943458fbb39adb52f">logmapping</a>.end())</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                        log = it-&gt;second;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        LOG4CXX_INFO(log, info.<a class="code" href="structbufelement.html#a22edd4348bf6064809b5f4d5f9d8b223">timestamp</a> &lt;&lt; \</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                    <span class="stringliteral">&quot; len:&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a9decb36c385de843452ba540b0ed6ee2">len</a> &lt;&lt; \</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                    <span class="stringliteral">&quot; &quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#ae1ae6ba0a5cb503beedd9126a34ae44c">iproto</a> &lt;&lt; \</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                    <span class="stringliteral">&quot; &quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a1e05e36a28c9d4d541cdaa1598920e43">saddrbyte1</a> &lt;&lt; \</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                    <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#af68c4bf792298a01045ed0856e4452e9">saddrbyte2</a> &lt;&lt; \</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                    <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#ab15315a36d4429cc8d2687faeb9bdb87">saddrbyte3</a> &lt;&lt; \</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                    <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a791156189f53dfc03b65833370cb3fa2">saddrbyte4</a> &lt;&lt; \</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                    <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a0731540824334163819d266af2d579e2">sport</a> &lt;&lt; \</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                    <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#ab358deec615a7174068c8bf45e5943a7">daddrbyte1</a> &lt;&lt; \</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                    <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a2d4c40e967d6ff615d8c419360394409">daddrbyte2</a> &lt;&lt; \</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                    <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#ab4d07161b3b3099447e1c2f594213ffb">daddrbyte3</a> &lt;&lt; \</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                    <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a800bca6696385ee4f44e0b32bd306d7d">daddrbyte4</a> &lt;&lt; \</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                    <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#abeac826153e80fe27ade2013613300c5">dport</a> &lt;&lt; \</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                    <span class="stringliteral">&quot; flags:&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#aef018f7bef55bd7e62df2184b071d588">flags</a> &lt;&lt; \</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                    <span class="stringliteral">&quot; dc_type:&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#a9bb28a18bec111d3c6c8646ed8eccba9">dctype</a> &lt;&lt; \</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                    <span class="stringliteral">&quot; seq:&quot;</span> &lt;&lt; info.<a class="code" href="structbufelement.html#abc76b09fd9bc404264a6cda5460e6201">seqtag</a>);    </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                        <span class="comment">//log-&gt;info(&quot;%s len:%-5d %-6s %d.%d.%d.%d:%-6d -&gt; %d.%d.%d.%d:%-6d flags:%-10s dc_type:%-16s seq:%-10lu&quot;,</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        <span class="comment">//        info.timestamp,</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        <span class="comment">//        info.len,</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        <span class="comment">//        info.iproto,</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        <span class="comment">//        info.saddrbyte1,</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        <span class="comment">//        info.saddrbyte2,</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        <span class="comment">//        info.saddrbyte3,</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        <span class="comment">//        info.saddrbyte4,</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                        <span class="comment">//        info.sport,</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                        <span class="comment">//        info.daddrbyte1,</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                        <span class="comment">//        info.daddrbyte2,</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                        <span class="comment">//        info.daddrbyte3,</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                        <span class="comment">//        info.daddrbyte4,</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                        <span class="comment">//        info.dport,</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                        <span class="comment">//        info.flags,</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                        <span class="comment">//        info.dctype,</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                        <span class="comment">//      info.seqtag);</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        <span class="comment">//cout&lt;&lt;&quot;can&#39;t find mapping!&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                        LOG4CXX_ERROR(logger_, <span class="stringliteral">&quot;can&#39;t find mapping!&quot;</span>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">//    }</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="comment">//}</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="comment">//else if (rc ==0 )//timeout</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="comment">//{</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="comment">//    continue;</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="comment">//}</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">//else</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">//{</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="comment">//    cout&lt;&lt;&quot;zmq poll fail&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="comment">//}</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">catch</span>(zmq::error_t error)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="comment">//cout&lt;&lt;&quot;zmq recv error:&quot;&lt;&lt;error.what()&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            LOG4CXX_ERROR(logger_, <span class="stringliteral">&quot;zmq recv error:&quot;</span> &lt;&lt; error.what());</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//deque version</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//    int n = *((int *)(args));</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">//    log4cpp::Appender *appender[n];</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">//    log4cpp::PatternLayout *playout = new log4cpp::PatternLayout();</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">//    playout-&gt;setConversionPattern(&quot;%d:%p:%m%n&quot;);</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">//    log4cpp::Category &amp;root = log4cpp::Category::getRoot();</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">//    log4cpp::Category *logarray[n];</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">//    for(int i=0;i&lt;n;i++)</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">//    {</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">//        string logfile;</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">//        stringstream ss;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">//        ss&lt;&lt;i;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">//        ss&gt;&gt;logfile;</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">//      logfile += &quot;.log&quot;;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">//        appender[i]=  new log4cpp::FileAppender(&quot;default&quot;,logfile);</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//        appender[i]-&gt;setLayout(playout);</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">//        logarray[i] = &amp;(root.getInstance(logfile));</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">//        logarray[i]-&gt;addAppender(appender[i]);</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">//        logarray[i]-&gt;setPriority(log4cpp::Priority::INFO);</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">//        logmapping.insert(pair&lt;int,log4cpp::Category *&gt;(i,logarray[i]));</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">//    }</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">//    bufelement info;</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">//    log4cpp::Category *log;</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">//    map&lt;int, log4cpp::Category *&gt;::iterator it;</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">//    while(true)</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">//    {</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">//        //deque</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">//        if(!dbuf_log.empty())</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">//        {</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">//            pthread_mutex_lock(&amp;mutex);</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">//            info = dbuf_log.front();</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">//            cout&lt;&lt;&quot;deque size:&quot;&lt;&lt;dbuf_log.size()&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">//            cout&lt;&lt;&quot;info filtertag:&quot;&lt;&lt;info.filtertag&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">//            it = logmapping.find(info.filtertag);</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">//            if(it != logmapping.end())</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">//            {</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">//                log = it-&gt;second;</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">//                log-&gt;info(&quot;%s len:%d %s %d.%d.%d.%d:%d -&gt; %d.%d.%d.%d:%d flags:%s dc_type:%s&quot;,</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">//                        info.timestamp,</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">//                        info.len,</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">//                        info.iproto,</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">//                        info.saddrbyte1,</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">//                        info.saddrbyte2,</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">//                        info.saddrbyte3,</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">//                        info.saddrbyte4,</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">//                        info.sport,</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">//                        info.daddrbyte1,</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">//                        info.daddrbyte2,</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">//                        info.daddrbyte3,</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//                        info.daddrbyte4,</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//                        info.dport,</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">//                        info.flags,</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">//                        info.dctype);</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">//                dbuf_log.pop_front();</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">//                pthread_mutex_unlock(&amp;mutex);</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">//            }</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">//            else</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">//            {</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">//                cout&lt;&lt;&quot;can&#39;t find mapping!&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">//            }</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">//        }</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">//    }</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">//}</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="ttc" id="structbufelement_html_abeac826153e80fe27ade2013613300c5"><div class="ttname"><a href="structbufelement.html#abeac826153e80fe27ade2013613300c5">bufelement::dport</a></div><div class="ttdeci">int dport</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00138">structs.h:138</a></div></div>
+<div class="ttc" id="structbufelement_html_a0731540824334163819d266af2d579e2"><div class="ttname"><a href="structbufelement.html#a0731540824334163819d266af2d579e2">bufelement::sport</a></div><div class="ttdeci">int sport</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00133">structs.h:133</a></div></div>
+<div class="ttc" id="structbufelement_html_ab15315a36d4429cc8d2687faeb9bdb87"><div class="ttname"><a href="structbufelement.html#ab15315a36d4429cc8d2687faeb9bdb87">bufelement::saddrbyte3</a></div><div class="ttdeci">int saddrbyte3</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00131">structs.h:131</a></div></div>
+<div class="ttc" id="structbufelement_html_af68c4bf792298a01045ed0856e4452e9"><div class="ttname"><a href="structbufelement.html#af68c4bf792298a01045ed0856e4452e9">bufelement::saddrbyte2</a></div><div class="ttdeci">int saddrbyte2</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00130">structs.h:130</a></div></div>
+<div class="ttc" id="structbufelement_html_a791156189f53dfc03b65833370cb3fa2"><div class="ttname"><a href="structbufelement.html#a791156189f53dfc03b65833370cb3fa2">bufelement::saddrbyte4</a></div><div class="ttdeci">int saddrbyte4</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00132">structs.h:132</a></div></div>
+<div class="ttc" id="structbufelement_html_aef018f7bef55bd7e62df2184b071d588"><div class="ttname"><a href="structbufelement.html#aef018f7bef55bd7e62df2184b071d588">bufelement::flags</a></div><div class="ttdeci">char * flags</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00139">structs.h:139</a></div></div>
+<div class="ttc" id="structbufelement_html_a800bca6696385ee4f44e0b32bd306d7d"><div class="ttname"><a href="structbufelement.html#a800bca6696385ee4f44e0b32bd306d7d">bufelement::daddrbyte4</a></div><div class="ttdeci">int daddrbyte4</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00137">structs.h:137</a></div></div>
+<div class="ttc" id="structbufelement_html_a9decb36c385de843452ba540b0ed6ee2"><div class="ttname"><a href="structbufelement.html#a9decb36c385de843452ba540b0ed6ee2">bufelement::len</a></div><div class="ttdeci">int len</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00127">structs.h:127</a></div></div>
+<div class="ttc" id="structbufelement_html_a2d4c40e967d6ff615d8c419360394409"><div class="ttname"><a href="structbufelement.html#a2d4c40e967d6ff615d8c419360394409">bufelement::daddrbyte2</a></div><div class="ttdeci">int daddrbyte2</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00135">structs.h:135</a></div></div>
+<div class="ttc" id="structbufelement_html_ae1ae6ba0a5cb503beedd9126a34ae44c"><div class="ttname"><a href="structbufelement.html#ae1ae6ba0a5cb503beedd9126a34ae44c">bufelement::iproto</a></div><div class="ttdeci">char * iproto</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00128">structs.h:128</a></div></div>
+<div class="ttc" id="structbufelement_html_abc76b09fd9bc404264a6cda5460e6201"><div class="ttname"><a href="structbufelement.html#abc76b09fd9bc404264a6cda5460e6201">bufelement::seqtag</a></div><div class="ttdeci">unsigned long seqtag</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00141">structs.h:141</a></div></div>
+<div class="ttc" id="classLog_html_a602f5b9115271d5d959ec254cd82f02e"><div class="ttname"><a href="classLog.html#a602f5b9115271d5d959ec254cd82f02e">Log::RunThreadFunc</a></div><div class="ttdeci">void RunThreadFunc()</div><div class="ttdoc">thread running function </div><div class="ttdef"><b>Definition:</b> <a href="log_8cc_source.html#l00023">log.cc:23</a></div></div>
+<div class="ttc" id="log_8cc_html_aaf642f81875fe70943458fbb39adb52f"><div class="ttname"><a href="log_8cc.html#aaf642f81875fe70943458fbb39adb52f">logmapping</a></div><div class="ttdeci">map&lt; int, log4cxx::LoggerPtr &gt; logmapping</div><div class="ttdef"><b>Definition:</b> <a href="log_8cc_source.html#l00018">log.cc:18</a></div></div>
+<div class="ttc" id="structbufelement_html_ab358deec615a7174068c8bf45e5943a7"><div class="ttname"><a href="structbufelement.html#ab358deec615a7174068c8bf45e5943a7">bufelement::daddrbyte1</a></div><div class="ttdeci">int daddrbyte1</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00134">structs.h:134</a></div></div>
+<div class="ttc" id="structbufelement_html_a1e05e36a28c9d4d541cdaa1598920e43"><div class="ttname"><a href="structbufelement.html#a1e05e36a28c9d4d541cdaa1598920e43">bufelement::saddrbyte1</a></div><div class="ttdeci">int saddrbyte1</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00129">structs.h:129</a></div></div>
+<div class="ttc" id="structbufelement_html_ab4d07161b3b3099447e1c2f594213ffb"><div class="ttname"><a href="structbufelement.html#ab4d07161b3b3099447e1c2f594213ffb">bufelement::daddrbyte3</a></div><div class="ttdeci">int daddrbyte3</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00136">structs.h:136</a></div></div>
+<div class="ttc" id="structbufelement_html_a22edd4348bf6064809b5f4d5f9d8b223"><div class="ttname"><a href="structbufelement.html#a22edd4348bf6064809b5f4d5f9d8b223">bufelement::timestamp</a></div><div class="ttdeci">char timestamp[16]</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00126">structs.h:126</a></div></div>
+<div class="ttc" id="structbufelement_html_a9bb28a18bec111d3c6c8646ed8eccba9"><div class="ttname"><a href="structbufelement.html#a9bb28a18bec111d3c6c8646ed8eccba9">bufelement::dctype</a></div><div class="ttdeci">char * dctype</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00140">structs.h:140</a></div></div>
+<div class="ttc" id="classLog_html_aa838d152e4c4a0962f7a91aec7311b54"><div class="ttname"><a href="classLog.html#aa838d152e4c4a0962f7a91aec7311b54">Log::logger_</a></div><div class="ttdeci">static log4cxx::LoggerPtr logger_</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00036">log.h:36</a></div></div>
+<div class="ttc" id="structbufelement_html"><div class="ttname"><a href="structbufelement.html">bufelement</a></div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00123">structs.h:123</a></div></div>
+<div class="ttc" id="structbufelement_html_a652c8b5828be0da9d241af99259f5557"><div class="ttname"><a href="structbufelement.html#a652c8b5828be0da9d241af99259f5557">bufelement::port_tag</a></div><div class="ttdeci">int port_tag</div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00125">structs.h:125</a></div></div>
+<div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

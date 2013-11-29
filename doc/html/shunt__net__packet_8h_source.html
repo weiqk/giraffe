@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: shunt_net_packet.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">shunt_net_packet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="shunt__net__packet_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MONITOR_HANDLE_NET_PACKET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MONITOR_HANDLE_NET_PACKET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;log4cxx/logger.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;zmq.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basethread_8h.html">basethread.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xml__class__set_8h.html">xml_class_set.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//#include &quot;parse.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="combine__dc__packet_8h.html">combine_dc_packet.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uncompress__dc__packet_8h.html">uncompress_dc_packet.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="luaroutine_8h.html">luaroutine.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="shunt__net__packet_8h.html#a59b2b6c0eb59df7070d12d99ee04fd14">   13</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="shunt__net__packet_8h.html#a59b2b6c0eb59df7070d12d99ee04fd14">kPoolSize</a> = 1;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShuntNetPacket.html">ShuntNetPacket</a>:<span class="keyword">public</span> <a class="code" href="classBaseThread.html">BaseThread</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a68d692bdc2e1a02abf592dd079dc1bb9">   18</a></span>&#160;    <a class="code" href="classShuntNetPacket.html#a68d692bdc2e1a02abf592dd079dc1bb9">ShuntNetPacket</a>(zmq::context_t *context,<a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> &amp;listening_item):<a class="code" href="classShuntNetPacket.html#a5e30206e20a15da1d77259efb23dab84">context_</a>(context),<a class="code" href="classShuntNetPacket.html#a54e28372293e171ebdfb432c36601081">listening_item_</a>(listening_item),<a class="code" href="classShuntNetPacket.html#aac02b48bf014e1fad98e33d94990d70f">curent_pool_size_</a>(0)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">sock_</a> = NULL;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classShuntNetPacket.html#a5d627ee3a92d543f92ffae3fe00ab595">lua_routine_</a> = NULL;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classShuntNetPacket.html#abaebba739f82527bb204702b17c17707">combine_dc_packet_</a> = NULL;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classShuntNetPacket.html#ae1175bb14ebeb530547fb23d1ed47b4f">uncompress_dc_packet_</a> = NULL;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a2f1cbe157efb475de24787802ca940fa">   25</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classShuntNetPacket.html#a2f1cbe157efb475de24787802ca940fa">~ShuntNetPacket</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span> (NULL != <a class="code" href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">sock_</a>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">delete</span> <a class="code" href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">sock_</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">sock_</a> = NULL;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="classShuntNetPacket.html#ae20257ea8bf3544752b0c970f9766550">sock_ex_deque_</a>.empty())</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            zmq::socket_t *sock = <a class="code" href="classShuntNetPacket.html#ae20257ea8bf3544752b0c970f9766550">sock_ex_deque_</a>.front();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span>(NULL != sock)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keyword">delete</span> sock;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                sock = NULL;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classShuntNetPacket.html#ae20257ea8bf3544752b0c970f9766550">sock_ex_deque_</a>.pop_front();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//while(!parse_deque_.empty())</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">//{</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//  Parse *parse = parse_deque_.front();</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//  if(NULL != parse)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//  {</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">//      delete parse;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">//      parse = NULL;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">//  }</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">//  parse_deque_.pop_front();</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="classShuntNetPacket.html#a66f986a201d1dfa59fee64a954360211">combine_dc_deque_</a>.empty())</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classCombineDCPacket.html">CombineDCPacket</a> *combine_dc_packet = <a class="code" href="classShuntNetPacket.html#a66f986a201d1dfa59fee64a954360211">combine_dc_deque_</a>.front();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">if</span>(NULL != combine_dc_packet)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keyword">delete</span> combine_dc_packet;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                combine_dc_packet = NULL;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classShuntNetPacket.html#a66f986a201d1dfa59fee64a954360211">combine_dc_deque_</a>.pop_front();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="classShuntNetPacket.html#ae2241c005b0b19fdb886d271363361c4">uncompress_dc_deque_</a>.empty())</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="classUncompressDCPacket.html">UncompressDCPacket</a> *uncompress_dc_packet = <a class="code" href="classShuntNetPacket.html#ae2241c005b0b19fdb886d271363361c4">uncompress_dc_deque_</a>.front();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span>(NULL != uncompress_dc_packet)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keyword">delete</span> uncompress_dc_packet;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                uncompress_dc_packet = NULL;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="classShuntNetPacket.html#ae2241c005b0b19fdb886d271363361c4">uncompress_dc_deque_</a>.pop_front();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="classShuntNetPacket.html#a3bef9d6bedc62a6948dc5a83796973c7">lua_routine_deque_</a>.empty())</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classLuaRoutine.html">LuaRoutine</a> *lua_routine = <a class="code" href="classShuntNetPacket.html#a3bef9d6bedc62a6948dc5a83796973c7">lua_routine_deque_</a>.front();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span>(NULL != lua_routine)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keyword">delete</span> lua_routine;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                lua_routine = NULL;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classShuntNetPacket.html#a3bef9d6bedc62a6948dc5a83796973c7">lua_routine_deque_</a>.pop_front();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classShuntNetPacket.html#a4986b004aeb467473e36f51940f4d5db">sock_ex_map_</a>.clear();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#af7d474b3729ad524e4f681ad6ba5b2be">Init</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#ab6605f386710311dab5134d65e2a580b">InitZMQEx</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a50cd09f16f8d2dbe77283fcb6cc89e9b">   86</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#a50cd09f16f8d2dbe77283fcb6cc89e9b">AddZMQItemEx</a>(<a class="code" href="structZMQItem.html">ZMQItem</a> item)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classShuntNetPacket.html#aeaf70eb43d6d9c384c09289170489419">zmqitems_ex_</a>.push_back(item);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#aa3e69bace6f2bf04bba316e278b07548">AddToZMQDequeEx</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#a615517e4d77bb9d79abd7ed58b5f3a95">RunParseThread</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#af3e5a8a6fca3f4cb9a367b33b559c1b7">InitLuaRoutineThread</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#a9de42aac520fc0c5d2fc72c44b2a7a37">RunLuaRoutineThread</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#aef00747d0e8db4544add67e56586b5cb">InitCombineDCPacketThread</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#a7fec97c8c68770533e7286731856ed98">RunCombineDCPacketThread</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#aa3769fc4358467060a39746ebabdf77a">InitUncompressDCPacketThread</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#ae13d80229f6a56c3c05fcf8f4af695ff">RunUncompressDCPacketThread</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShuntNetPacket.html#a12d9d33957e5295f628054a4ba2c2401">IncreasePool</a>(<span class="keywordtype">int</span> pool_sizse=<a class="code" href="shunt__net__packet_8h.html#a59b2b6c0eb59df7070d12d99ee04fd14">kPoolSize</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#ad6ebbff0b03255371c07d7309fc2d1fc">DispatchData</a>(zmq::socket_t * sock, <span class="keywordtype">void</span> * data, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShuntNetPacket.html#a1bfb4eeb07930e0d2c012c70350da8be">IsTcpDisConnection</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> flags);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classShuntNetPacket.html#a5051f86d71dcd6e3dddc2a5fc964e1ec">IsTcpConnection</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> flags, <span class="keywordtype">int</span> &amp;tcpconntag, <span class="keywordtype">int</span> &amp;tcpconnstatus);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#af905bdc121152329cc14633ef02a22ca">WriteDidConfFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * file_name, vector&lt;DidStruct&gt; &amp;did_structs);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#a1081de0dc3e384aeafb9594af27e3071">CreateDidConfContent</a>(vector&lt;DidStruct&gt; &amp; did_structs, <span class="keywordtype">char</span> * out_str);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#a139206a113c20d1d38d7094bdfad6ba8">PreHandleADisconnection</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classShuntNetPacket.html#ab49190ede64f1bf9e55a8b9006d493b3">RunThreadFunc</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a5e30206e20a15da1d77259efb23dab84">  107</a></span>&#160;    zmq::context_t *<a class="code" href="classShuntNetPacket.html#a5e30206e20a15da1d77259efb23dab84">context_</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">  108</a></span>&#160;    zmq::socket_t *<a class="code" href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">sock_</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a5d627ee3a92d543f92ffae3fe00ab595">  109</a></span>&#160;    <a class="code" href="classLuaRoutine.html">LuaRoutine</a>* <a class="code" href="classShuntNetPacket.html#a5d627ee3a92d543f92ffae3fe00ab595">lua_routine_</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#abaebba739f82527bb204702b17c17707">  110</a></span>&#160;    <a class="code" href="classCombineDCPacket.html">CombineDCPacket</a>* <a class="code" href="classShuntNetPacket.html#abaebba739f82527bb204702b17c17707">combine_dc_packet_</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#ae1175bb14ebeb530547fb23d1ed47b4f">  111</a></span>&#160;    <a class="code" href="classUncompressDCPacket.html">UncompressDCPacket</a>* <a class="code" href="classShuntNetPacket.html#ae1175bb14ebeb530547fb23d1ed47b4f">uncompress_dc_packet_</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a54e28372293e171ebdfb432c36601081">  112</a></span>&#160;    <a class="code" href="classXML__ListeningItem.html">XML_ListeningItem</a> <a class="code" href="classShuntNetPacket.html#a54e28372293e171ebdfb432c36601081">listening_item_</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#ae820ceadccc397e93a6a6a9b893c353a">  113</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classShuntNetPacket.html#ae820ceadccc397e93a6a6a9b893c353a">market_id_</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//deque&lt;Parse *&gt; parse_deque_;</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a66f986a201d1dfa59fee64a954360211">  115</a></span>&#160;    deque&lt;CombineDCPacket *&gt; <a class="code" href="classShuntNetPacket.html#a66f986a201d1dfa59fee64a954360211">combine_dc_deque_</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#ae2241c005b0b19fdb886d271363361c4">  116</a></span>&#160;    deque&lt;UncompressDCPacket *&gt; <a class="code" href="classShuntNetPacket.html#ae2241c005b0b19fdb886d271363361c4">uncompress_dc_deque_</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a3bef9d6bedc62a6948dc5a83796973c7">  117</a></span>&#160;    deque&lt;LuaRoutine*&gt; <a class="code" href="classShuntNetPacket.html#a3bef9d6bedc62a6948dc5a83796973c7">lua_routine_deque_</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#ae20257ea8bf3544752b0c970f9766550">  118</a></span>&#160;    deque&lt;zmq::socket_t *&gt;<a class="code" href="classShuntNetPacket.html#ae20257ea8bf3544752b0c970f9766550">sock_ex_deque_</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a4986b004aeb467473e36f51940f4d5db">  119</a></span>&#160;    map&lt;std::string,zmq::socket_t *&gt; <a class="code" href="classShuntNetPacket.html#a4986b004aeb467473e36f51940f4d5db">sock_ex_map_</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a71b736ecfcdf441278193378b0f3fa9f">  120</a></span>&#160;    map&lt;zmq::socket_t *, unsigned long&gt; <a class="code" href="classShuntNetPacket.html#a71b736ecfcdf441278193378b0f3fa9f">sock_delta_time_map_</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#aac02b48bf014e1fad98e33d94990d70f">  121</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classShuntNetPacket.html#aac02b48bf014e1fad98e33d94990d70f">curent_pool_size_</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#aeaf70eb43d6d9c384c09289170489419">  122</a></span>&#160;    std::vector&lt;ZMQItem&gt; <a class="code" href="classShuntNetPacket.html#aeaf70eb43d6d9c384c09289170489419">zmqitems_ex_</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classShuntNetPacket.html#a7866547193b02a7ee112fdc8cd3a5d49">  123</a></span>&#160;    <span class="keyword">static</span> log4cxx::LoggerPtr <a class="code" href="classShuntNetPacket.html#a7866547193b02a7ee112fdc8cd3a5d49">logger_</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classShuntNetPacket_html_aeaf70eb43d6d9c384c09289170489419"><div class="ttname"><a href="classShuntNetPacket.html#aeaf70eb43d6d9c384c09289170489419">ShuntNetPacket::zmqitems_ex_</a></div><div class="ttdeci">std::vector&lt; ZMQItem &gt; zmqitems_ex_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00122">shunt_net_packet.h:122</a></div></div>
+<div class="ttc" id="structZMQItem_html"><div class="ttname"><a href="structZMQItem.html">ZMQItem</a></div><div class="ttdef"><b>Definition:</b> <a href="structs_8h_source.html#l00215">structs.h:215</a></div></div>
+<div class="ttc" id="classLuaRoutine_html"><div class="ttname"><a href="classLuaRoutine.html">LuaRoutine</a></div><div class="ttdef"><b>Definition:</b> <a href="luaroutine_8h_source.html#l00024">luaroutine.h:24</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ae2241c005b0b19fdb886d271363361c4"><div class="ttname"><a href="classShuntNetPacket.html#ae2241c005b0b19fdb886d271363361c4">ShuntNetPacket::uncompress_dc_deque_</a></div><div class="ttdeci">deque&lt; UncompressDCPacket * &gt; uncompress_dc_deque_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00116">shunt_net_packet.h:116</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_af905bdc121152329cc14633ef02a22ca"><div class="ttname"><a href="classShuntNetPacket.html#af905bdc121152329cc14633ef02a22ca">ShuntNetPacket::WriteDidConfFile</a></div><div class="ttdeci">void WriteDidConfFile(const char *file_name, vector&lt; DidStruct &gt; &amp;did_structs)</div><div class="ttdoc">write did configure file </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00322">shunt_net_packet.cc:322</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a2f1cbe157efb475de24787802ca940fa"><div class="ttname"><a href="classShuntNetPacket.html#a2f1cbe157efb475de24787802ca940fa">ShuntNetPacket::~ShuntNetPacket</a></div><div class="ttdeci">virtual ~ShuntNetPacket()</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00025">shunt_net_packet.h:25</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a12d9d33957e5295f628054a4ba2c2401"><div class="ttname"><a href="classShuntNetPacket.html#a12d9d33957e5295f628054a4ba2c2401">ShuntNetPacket::IncreasePool</a></div><div class="ttdeci">bool IncreasePool(int pool_sizse=kPoolSize)</div><div class="ttdoc">relarge thread pool:a simple pool has not management function </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00265">shunt_net_packet.cc:265</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a3bef9d6bedc62a6948dc5a83796973c7"><div class="ttname"><a href="classShuntNetPacket.html#a3bef9d6bedc62a6948dc5a83796973c7">ShuntNetPacket::lua_routine_deque_</a></div><div class="ttdeci">deque&lt; LuaRoutine * &gt; lua_routine_deque_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00117">shunt_net_packet.h:117</a></div></div>
+<div class="ttc" id="shunt__net__packet_8h_html_a59b2b6c0eb59df7070d12d99ee04fd14"><div class="ttname"><a href="shunt__net__packet_8h.html#a59b2b6c0eb59df7070d12d99ee04fd14">kPoolSize</a></div><div class="ttdeci">const int kPoolSize</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00013">shunt_net_packet.h:13</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ae820ceadccc397e93a6a6a9b893c353a"><div class="ttname"><a href="classShuntNetPacket.html#ae820ceadccc397e93a6a6a9b893c353a">ShuntNetPacket::market_id_</a></div><div class="ttdeci">unsigned short market_id_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00113">shunt_net_packet.h:113</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a50cd09f16f8d2dbe77283fcb6cc89e9b"><div class="ttname"><a href="classShuntNetPacket.html#a50cd09f16f8d2dbe77283fcb6cc89e9b">ShuntNetPacket::AddZMQItemEx</a></div><div class="ttdeci">void AddZMQItemEx(ZMQItem item)</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00086">shunt_net_packet.h:86</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_af3e5a8a6fca3f4cb9a367b33b559c1b7"><div class="ttname"><a href="classShuntNetPacket.html#af3e5a8a6fca3f4cb9a367b33b559c1b7">ShuntNetPacket::InitLuaRoutineThread</a></div><div class="ttdeci">void InitLuaRoutineThread(int index)</div><div class="ttdoc">init lua routine thread </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00118">shunt_net_packet.cc:118</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a4986b004aeb467473e36f51940f4d5db"><div class="ttname"><a href="classShuntNetPacket.html#a4986b004aeb467473e36f51940f4d5db">ShuntNetPacket::sock_ex_map_</a></div><div class="ttdeci">map&lt; std::string, zmq::socket_t * &gt; sock_ex_map_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00119">shunt_net_packet.h:119</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a81f4392aaece6868da95a5f855e96ca6"><div class="ttname"><a href="classShuntNetPacket.html#a81f4392aaece6868da95a5f855e96ca6">ShuntNetPacket::sock_</a></div><div class="ttdeci">zmq::socket_t * sock_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00108">shunt_net_packet.h:108</a></div></div>
+<div class="ttc" id="luaroutine_8h_html"><div class="ttname"><a href="luaroutine_8h.html">luaroutine.h</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a68d692bdc2e1a02abf592dd079dc1bb9"><div class="ttname"><a href="classShuntNetPacket.html#a68d692bdc2e1a02abf592dd079dc1bb9">ShuntNetPacket::ShuntNetPacket</a></div><div class="ttdeci">ShuntNetPacket(zmq::context_t *context, XML_ListeningItem &amp;listening_item)</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00018">shunt_net_packet.h:18</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_af7d474b3729ad524e4f681ad6ba5b2be"><div class="ttname"><a href="classShuntNetPacket.html#af7d474b3729ad524e4f681ad6ba5b2be">ShuntNetPacket::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">init ShuntNetPacket thread:mainly init zmq </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00054">shunt_net_packet.cc:54</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a54e28372293e171ebdfb432c36601081"><div class="ttname"><a href="classShuntNetPacket.html#a54e28372293e171ebdfb432c36601081">ShuntNetPacket::listening_item_</a></div><div class="ttdeci">XML_ListeningItem listening_item_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00112">shunt_net_packet.h:112</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ae1175bb14ebeb530547fb23d1ed47b4f"><div class="ttname"><a href="classShuntNetPacket.html#ae1175bb14ebeb530547fb23d1ed47b4f">ShuntNetPacket::uncompress_dc_packet_</a></div><div class="ttdeci">UncompressDCPacket * uncompress_dc_packet_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00111">shunt_net_packet.h:111</a></div></div>
+<div class="ttc" id="xml__class__set_8h_html"><div class="ttname"><a href="xml__class__set_8h.html">xml_class_set.h</a></div><div class="ttdoc">xml parser class set </div></div>
+<div class="ttc" id="classShuntNetPacket_html_aac02b48bf014e1fad98e33d94990d70f"><div class="ttname"><a href="classShuntNetPacket.html#aac02b48bf014e1fad98e33d94990d70f">ShuntNetPacket::curent_pool_size_</a></div><div class="ttdeci">int curent_pool_size_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00121">shunt_net_packet.h:121</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a1081de0dc3e384aeafb9594af27e3071"><div class="ttname"><a href="classShuntNetPacket.html#a1081de0dc3e384aeafb9594af27e3071">ShuntNetPacket::CreateDidConfContent</a></div><div class="ttdeci">void CreateDidConfContent(vector&lt; DidStruct &gt; &amp;did_structs, char *out_str)</div><div class="ttdoc">create did configure file content </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00302">shunt_net_packet.cc:302</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ad6ebbff0b03255371c07d7309fc2d1fc"><div class="ttname"><a href="classShuntNetPacket.html#ad6ebbff0b03255371c07d7309fc2d1fc">ShuntNetPacket::DispatchData</a></div><div class="ttdeci">void DispatchData(zmq::socket_t *sock, void *data, int size)</div><div class="ttdoc">dispatch data to other threads </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00401">shunt_net_packet.cc:401</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ab49190ede64f1bf9e55a8b9006d493b3"><div class="ttname"><a href="classShuntNetPacket.html#ab49190ede64f1bf9e55a8b9006d493b3">ShuntNetPacket::RunThreadFunc</a></div><div class="ttdeci">void RunThreadFunc()</div><div class="ttdoc">thread running function </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00466">shunt_net_packet.cc:466</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_aef00747d0e8db4544add67e56586b5cb"><div class="ttname"><a href="classShuntNetPacket.html#aef00747d0e8db4544add67e56586b5cb">ShuntNetPacket::InitCombineDCPacketThread</a></div><div class="ttdeci">void InitCombineDCPacketThread(int index)</div><div class="ttdoc">init CombineDCPacket thread </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00163">shunt_net_packet.cc:163</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_aa3e69bace6f2bf04bba316e278b07548"><div class="ttname"><a href="classShuntNetPacket.html#aa3e69bace6f2bf04bba316e278b07548">ShuntNetPacket::AddToZMQDequeEx</a></div><div class="ttdeci">void AddToZMQDequeEx(int index)</div><div class="ttdoc">init zmq and push back zmq deque </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00099">shunt_net_packet.cc:99</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a71b736ecfcdf441278193378b0f3fa9f"><div class="ttname"><a href="classShuntNetPacket.html#a71b736ecfcdf441278193378b0f3fa9f">ShuntNetPacket::sock_delta_time_map_</a></div><div class="ttdeci">map&lt; zmq::socket_t *, unsigned long &gt; sock_delta_time_map_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00120">shunt_net_packet.h:120</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a66f986a201d1dfa59fee64a954360211"><div class="ttname"><a href="classShuntNetPacket.html#a66f986a201d1dfa59fee64a954360211">ShuntNetPacket::combine_dc_deque_</a></div><div class="ttdeci">deque&lt; CombineDCPacket * &gt; combine_dc_deque_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00115">shunt_net_packet.h:115</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a5051f86d71dcd6e3dddc2a5fc964e1ec"><div class="ttname"><a href="classShuntNetPacket.html#a5051f86d71dcd6e3dddc2a5fc964e1ec">ShuntNetPacket::IsTcpConnection</a></div><div class="ttdeci">bool IsTcpConnection(unsigned char flags, int &amp;tcpconntag, int &amp;tcpconnstatus)</div><div class="ttdoc">if has a new connection through tcp </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00338">shunt_net_packet.cc:338</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ae13d80229f6a56c3c05fcf8f4af695ff"><div class="ttname"><a href="classShuntNetPacket.html#ae13d80229f6a56c3c05fcf8f4af695ff">ShuntNetPacket::RunUncompressDCPacketThread</a></div><div class="ttdeci">void RunUncompressDCPacketThread()</div><div class="ttdoc">start UncompressDCPacket thread </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00228">shunt_net_packet.cc:228</a></div></div>
+<div class="ttc" id="classXML__ListeningItem_html"><div class="ttname"><a href="classXML__ListeningItem.html">XML_ListeningItem</a></div><div class="ttdef"><b>Definition:</b> <a href="xml__class__set_8h_source.html#l00237">xml_class_set.h:237</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ae20257ea8bf3544752b0c970f9766550"><div class="ttname"><a href="classShuntNetPacket.html#ae20257ea8bf3544752b0c970f9766550">ShuntNetPacket::sock_ex_deque_</a></div><div class="ttdeci">deque&lt; zmq::socket_t * &gt; sock_ex_deque_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00118">shunt_net_packet.h:118</a></div></div>
+<div class="ttc" id="combine__dc__packet_8h_html"><div class="ttname"><a href="combine__dc__packet_8h.html">combine_dc_packet.h</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a139206a113c20d1d38d7094bdfad6ba8"><div class="ttname"><a href="classShuntNetPacket.html#a139206a113c20d1d38d7094bdfad6ba8">ShuntNetPacket::PreHandleADisconnection</a></div><div class="ttdeci">void PreHandleADisconnection()</div><div class="ttdoc">if has a abnormal disconnection(like not receiving data), then send reset tag to other threads ...</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00422">shunt_net_packet.cc:422</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a615517e4d77bb9d79abd7ed58b5f3a95"><div class="ttname"><a href="classShuntNetPacket.html#a615517e4d77bb9d79abd7ed58b5f3a95">ShuntNetPacket::RunParseThread</a></div><div class="ttdeci">void RunParseThread(int index)</div></div>
+<div class="ttc" id="classCombineDCPacket_html"><div class="ttname"><a href="classCombineDCPacket.html">CombineDCPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="combine__dc__packet_8h_source.html#l00009">combine_dc_packet.h:9</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a5e30206e20a15da1d77259efb23dab84"><div class="ttname"><a href="classShuntNetPacket.html#a5e30206e20a15da1d77259efb23dab84">ShuntNetPacket::context_</a></div><div class="ttdeci">zmq::context_t * context_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00107">shunt_net_packet.h:107</a></div></div>
+<div class="ttc" id="uncompress__dc__packet_8h_html"><div class="ttname"><a href="uncompress__dc__packet_8h.html">uncompress_dc_packet.h</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_aa3769fc4358467060a39746ebabdf77a"><div class="ttname"><a href="classShuntNetPacket.html#aa3769fc4358467060a39746ebabdf77a">ShuntNetPacket::InitUncompressDCPacketThread</a></div><div class="ttdeci">void InitUncompressDCPacketThread(int index)</div><div class="ttdoc">init UncompressDCPacket thread </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00199">shunt_net_packet.cc:199</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a7fec97c8c68770533e7286731856ed98"><div class="ttname"><a href="classShuntNetPacket.html#a7fec97c8c68770533e7286731856ed98">ShuntNetPacket::RunCombineDCPacketThread</a></div><div class="ttdeci">void RunCombineDCPacketThread()</div><div class="ttdoc">start CombineDCPacket thread </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00185">shunt_net_packet.cc:185</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a5d627ee3a92d543f92ffae3fe00ab595"><div class="ttname"><a href="classShuntNetPacket.html#a5d627ee3a92d543f92ffae3fe00ab595">ShuntNetPacket::lua_routine_</a></div><div class="ttdeci">LuaRoutine * lua_routine_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00109">shunt_net_packet.h:109</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a1bfb4eeb07930e0d2c012c70350da8be"><div class="ttname"><a href="classShuntNetPacket.html#a1bfb4eeb07930e0d2c012c70350da8be">ShuntNetPacket::IsTcpDisConnection</a></div><div class="ttdeci">bool IsTcpDisConnection(unsigned char flags)</div><div class="ttdoc">if has a disconnection through tcp </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00385">shunt_net_packet.cc:385</a></div></div>
+<div class="ttc" id="basethread_8h_html"><div class="ttname"><a href="basethread_8h.html">basethread.h</a></div><div class="ttdoc">base thread class </div></div>
+<div class="ttc" id="classShuntNetPacket_html_a9de42aac520fc0c5d2fc72c44b2a7a37"><div class="ttname"><a href="classShuntNetPacket.html#a9de42aac520fc0c5d2fc72c44b2a7a37">ShuntNetPacket::RunLuaRoutineThread</a></div><div class="ttdeci">void RunLuaRoutineThread()</div><div class="ttdoc">start luaroutine thread </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00148">shunt_net_packet.cc:148</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_ab6605f386710311dab5134d65e2a580b"><div class="ttname"><a href="classShuntNetPacket.html#ab6605f386710311dab5134d65e2a580b">ShuntNetPacket::InitZMQEx</a></div><div class="ttdeci">void InitZMQEx(int index)</div><div class="ttdoc">init ShuntNetPacket zmq property from config file </div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8cc_source.html#l00076">shunt_net_packet.cc:76</a></div></div>
+<div class="ttc" id="classBaseThread_html"><div class="ttname"><a href="classBaseThread.html">BaseThread</a></div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00065">basethread.h:65</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_a7866547193b02a7ee112fdc8cd3a5d49"><div class="ttname"><a href="classShuntNetPacket.html#a7866547193b02a7ee112fdc8cd3a5d49">ShuntNetPacket::logger_</a></div><div class="ttdeci">static log4cxx::LoggerPtr logger_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00123">shunt_net_packet.h:123</a></div></div>
+<div class="ttc" id="classUncompressDCPacket_html"><div class="ttname"><a href="classUncompressDCPacket.html">UncompressDCPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="uncompress__dc__packet_8h_source.html#l00039">uncompress_dc_packet.h:39</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html_abaebba739f82527bb204702b17c17707"><div class="ttname"><a href="classShuntNetPacket.html#abaebba739f82527bb204702b17c17707">ShuntNetPacket::combine_dc_packet_</a></div><div class="ttdeci">CombineDCPacket * combine_dc_packet_</div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00110">shunt_net_packet.h:110</a></div></div>
+<div class="ttc" id="classShuntNetPacket_html"><div class="ttname"><a href="classShuntNetPacket.html">ShuntNetPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="shunt__net__packet_8h_source.html#l00015">shunt_net_packet.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

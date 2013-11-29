@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: uncompress_dc_packet.cc 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">uncompress_dc_packet.cc 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>uncompress dc packet  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="uncompress__dc__packet_8h_source.html">uncompress_dc_packet.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="extract__dc_8h_source.html">extract_dc.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="DidUncompress_8h_source.html">DidUncompress.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="public_8h_source.html">public.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="xml__class__set_8h_source.html">xml_class_set.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="did__template__to__lua__struct_8h_source.html">did_template_to_lua_struct.h</a>&quot;</code><br/>
+<code>#include &lt;lua.hpp&gt;</code><br/>
+<code>#include &lt;sys/types.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="zlib_8h_source.html">zlib.h</a>&gt;</code><br/>
+<code>#include &lt;set&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+uncompress_dc_packet.cc 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="uncompress__dc__packet_8cc__incl.png" border="0" usemap="#uncompress__dc__packet_8cc" alt=""/></div>
+<map name="uncompress__dc__packet_8cc" id="uncompress__dc__packet_8cc">
+<area shape="rect" id="node2" href="uncompress__dc__packet_8h.html" title="uncompress_dc_packet.h" alt="" coords="1420,80,1590,107"/><area shape="rect" id="node23" href="extract__dc_8h.html" title="extract_dc.h" alt="" coords="1866,163,1960,189"/><area shape="rect" id="node27" href="xml__class__set_8h.html" title="xml parser class set " alt="" coords="126,245,242,272"/><area shape="rect" id="node32" href="DidUncompress_8h.html" title="DidUncompress.h" alt="" coords="903,163,1029,189"/><area shape="rect" id="node44" href="public_8h.html" title="public.h" alt="" coords="1204,80,1270,107"/><area shape="rect" id="node45" href="did__template__to__lua__struct_8h.html" title="did_template_to_lua\l_struct.h" alt="" coords="502,155,641,197"/><area shape="rect" id="node48" href="zlib_8h.html" title="zlib.h" alt="" coords="1924,80,1977,107"/><area shape="rect" id="node9" href="data_8h.html" title="data.h" alt="" coords="2137,245,2194,272"/><area shape="rect" id="node10" href="datacollect_8h.html" title="datacollect.h" alt="" coords="2118,395,2214,421"/><area shape="rect" id="node13" href="structs_8h.html" title="structs set " alt="" coords="1556,245,1629,272"/><area shape="rect" id="node19" href="utils_8h.html" title="utils.h" alt="" coords="1784,163,1841,189"/><area shape="rect" id="node22" href="basethread_8h.html" title="base thread class " alt="" coords="1560,163,1657,189"/><area shape="rect" id="node26" href="dzh__time__t_8h.html" title="dzh_time_t.h" alt="" coords="1336,395,1433,421"/><area shape="rect" id="node11" href="mword_8h.html" title="mword.h" alt="" coords="1881,469,1953,496"/><area shape="rect" id="node12" href="stdafx_8h.html" title="stdafx.h" alt="" coords="1357,544,1426,571"/><area shape="rect" id="node17" href="flags_8h.html" title="flags.h" alt="" coords="1336,320,1397,347"/><area shape="rect" id="node20" href="typedef_8h.html" title="typedef.h" alt="" coords="1955,320,2030,347"/><area shape="rect" id="node24" href="crc16_8h.html" title="crc16.h" alt="" coords="2047,245,2112,272"/><area shape="rect" id="node25" href="bitstream_8h.html" title="bitstream.h" alt="" coords="1936,245,2022,272"/><area shape="rect" id="node33" href="dscomapi_8h.html" title="dscomapi.h" alt="" coords="940,245,1029,272"/><area shape="rect" id="node37" href="LIBXML__DOMDocument_8h.html" title="LIBXML_DOMDocument.h" alt="" coords="558,245,737,272"/><area shape="rect" id="node34" href="ds__dat_8h.html" title="ds_dat.h" alt="" coords="1006,320,1078,347"/><area shape="rect" id="node35" href="pfloat_8h.html" title="pfloat.h" alt="" coords="1008,395,1073,421"/><area shape="rect" id="node36" href="vfloat_8h.html" title="vfloat.h" alt="" coords="1098,395,1162,421"/><area shape="rect" id="node38" href="DOMDocument_8h.html" title="DOMDocument.h" alt="" coords="756,320,880,347"/><area shape="rect" id="node39" href="Exceptions_8h.html" title="Exceptions.h" alt="" coords="340,320,438,347"/><area shape="rect" id="node49" href="zconf_8h.html" title="zconf.h" alt="" coords="2334,163,2398,189"/></map>
+</div>
+</div>
+<p><a href="uncompress__dc__packet_8cc_source.html">浏览源代码.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>uncompress dc packet </p>
+<dl class="section author"><dt>作者</dt><dd>ly </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>0.1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2013-11-28 </dd></dl>
+
+<p>在文件 <a class="el" href="uncompress__dc__packet_8cc_source.html">uncompress_dc_packet.cc</a> 中定义.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

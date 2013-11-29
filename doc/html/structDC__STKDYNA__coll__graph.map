@@ -1,0 +1,4 @@
+<map id="DC_STKDYNA" name="DC_STKDYNA">
+<area shape="rect" id="node2" href="$structSTK__DYNA.html" title="{STK_DYNA\n|+ m_wStkID\l+ m_time\l+ m_dwOpen\l+ m_dwHigh\l+ m_dwLow\l+ m_dwNew\l+ m_dwTickCount\l+ m_dwBuyPrice\l+ m_dwBuyVol\l+ m_dwSellPrice\l+ m_dwSellVol\l+ m_dwOpenInterest\l+ m_dwSettlePrice\l|}" alt="" coords="5,339,149,592"/>
+<area shape="rect" id="node3" href="$structMWORD.html" title="{MWORD\n|+ m_nBase\l+ m_nMul\l|+ MWORD()\l+ MWORD()\l+ MWORD()\l+ operator INT64()\l+ GetValue()\l+ GetABSValue()\l+ operator&#45;=()\l+ operator&#45;=()\l+ operator+=()\l+ operator+=()\l和 30 更多...\l}" alt="" coords="13,6,141,245"/>
+</map>

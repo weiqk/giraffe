@@ -1,0 +1,4 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classSTEP_1_1DOMDocument.html" title="Interface that represents document of underlying XML parser. " alt="" coords="6,5,162,32"/>
+<area shape="rect" id="node2" href="$classSTEP_1_1LIBXML__DOMDocument.html" title="XML document as represented by libxml. " alt="" coords="211,5,421,32"/>
+</map>

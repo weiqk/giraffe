@@ -1,3 +1,5 @@
+--handle business problems, should be written by someone
+
 local ErrorID = {
    business = 0,	--"Business",
    system = 1,		--"System"

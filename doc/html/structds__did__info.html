@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: ds_did_info结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structds__did__info-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ds_did_info结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ds__dat_8h_source.html">ds_dat.h</a>&gt;</code></p>
+<div class="dynheader">
+ds_did_info 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structds__did__info__coll__graph.png" border="0" usemap="#ds__did__info_coll__map" alt="Collaboration graph"/></div>
+<map name="ds__did__info_coll__map" id="ds__did__info_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ad7a50a764c84f288653bcfa99cec5e01"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#ad7a50a764c84f288653bcfa99cec5e01">did</a></td></tr>
+<tr class="separator:ad7a50a764c84f288653bcfa99cec5e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e819611d6a8ce6ff78d726a3638a910"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a1e819611d6a8ce6ff78d726a3638a910">index_key</a></td></tr>
+<tr class="separator:a1e819611d6a8ce6ff78d726a3638a910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b52aea40c74cc4f0ecc6ca8c396db36"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a6b52aea40c74cc4f0ecc6ca8c396db36">m_cName</a> [<a class="el" href="ds__dat_8h.html#a78b18a009ca443222333b13085a955bf">MAX_FIELD_NAME</a>+1]</td></tr>
+<tr class="separator:a6b52aea40c74cc4f0ecc6ca8c396db36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbea5a654ea55f1a24d29cab7d5659d"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a0fbea5a654ea55f1a24d29cab7d5659d">m_sKeyFieldPos</a></td></tr>
+<tr class="separator:a0fbea5a654ea55f1a24d29cab7d5659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cef8ce613fa0c321ecaff2596539f5c"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a3cef8ce613fa0c321ecaff2596539f5c">m_wSortSecs</a></td></tr>
+<tr class="separator:a3cef8ce613fa0c321ecaff2596539f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f71934aecfb0386885cd17fac5b0a4e"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a9f71934aecfb0386885cd17fac5b0a4e">m_wFieldsNum</a></td></tr>
+<tr class="separator:a9f71934aecfb0386885cd17fac5b0a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93e5845e20c7732694551951b5db9a2"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#aa93e5845e20c7732694551951b5db9a2">m_wAllFieldsNum</a></td></tr>
+<tr class="separator:aa93e5845e20c7732694551951b5db9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6cb29e5e30d04fb35742abbe723aec5"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#aa6cb29e5e30d04fb35742abbe723aec5">m_wTablesNum</a></td></tr>
+<tr class="separator:aa6cb29e5e30d04fb35742abbe723aec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14d454a82c6be59af0e30c6c606d6aa"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#ae14d454a82c6be59af0e30c6c606d6aa">m_dwRRecSize</a></td></tr>
+<tr class="separator:ae14d454a82c6be59af0e30c6c606d6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb072e06d937a620499e9910685e311"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#adfb072e06d937a620499e9910685e311">m_dwVRecSize</a></td></tr>
+<tr class="separator:adfb072e06d937a620499e9910685e311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d21c9ada77cc3cad9e4836ea349b17"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#ac1d21c9ada77cc3cad9e4836ea349b17">m_dwAllVRecSize</a></td></tr>
+<tr class="separator:ac1d21c9ada77cc3cad9e4836ea349b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e1c42db810c7c9b0cfb8d50f656c68"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a52e1c42db810c7c9b0cfb8d50f656c68">m_byteMaxBits</a></td></tr>
+<tr class="separator:a52e1c42db810c7c9b0cfb8d50f656c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61a667c6f65370c1e04b07f47da4949"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#ae61a667c6f65370c1e04b07f47da4949">m_byteEqual</a></td></tr>
+<tr class="separator:ae61a667c6f65370c1e04b07f47da4949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfc63c2db592bd4e6d05ad4460f994a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a2dfc63c2db592bd4e6d05ad4460f994a">drvver</a></td></tr>
+<tr class="separator:a2dfc63c2db592bd4e6d05ad4460f994a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0644f759d3e312b1852d0f8542add6d8"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a0644f759d3e312b1852d0f8542add6d8">m_byteFullPush</a>:1</td></tr>
+<tr class="separator:a0644f759d3e312b1852d0f8542add6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcb13c576c89f391c349a28d2ead518"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a6dcb13c576c89f391c349a28d2ead518">m_byteDatType</a>:7</td></tr>
+<tr class="separator:a6dcb13c576c89f391c349a28d2ead518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab21ac40d1e2042aa681853c9ea9bfd"><td class="memItemLeft" align="right" valign="top">dzh_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#a7ab21ac40d1e2042aa681853c9ea9bfd">m_dtGmtMinTimes</a></td></tr>
+<tr class="separator:a7ab21ac40d1e2042aa681853c9ea9bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7bfd432b8be579eeae850524ba67697"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structds__did__info.html#aa7bfd432b8be579eeae850524ba67697">m_uint64TimeLen</a></td></tr>
+<tr class="separator:aa7bfd432b8be579eeae850524ba67697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00287">287</a> 行定义.</p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ad7a50a764c84f288653bcfa99cec5e01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ds_did_info::did</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00289">289</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00481">DidUncompress::DisassemblePack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2dfc63c2db592bd4e6d05ad4460f994a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ds_did_info::drvver</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00302">302</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e819611d6a8ce6ff78d726a3638a910"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ds_did_info::index_key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00290">290</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6dcb13c576c89f391c349a28d2ead518"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ds_did_info::m_byteDatType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00304">304</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae61a667c6f65370c1e04b07f47da4949"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ds_did_info::m_byteEqual</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00301">301</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0644f759d3e312b1852d0f8542add6d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ds_did_info::m_byteFullPush</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00303">303</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52e1c42db810c7c9b0cfb8d50f656c68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char ds_did_info::m_byteMaxBits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00300">300</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b52aea40c74cc4f0ecc6ca8c396db36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ds_did_info::m_cName[<a class="el" href="ds__dat_8h.html#a78b18a009ca443222333b13085a955bf">MAX_FIELD_NAME</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00291">291</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ab21ac40d1e2042aa681853c9ea9bfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dzh_time_t ds_did_info::m_dtGmtMinTimes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00305">305</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1d21c9ada77cc3cad9e4836ea349b17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ds_did_info::m_dwAllVRecSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00299">299</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae14d454a82c6be59af0e30c6c606d6aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ds_did_info::m_dwRRecSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00297">297</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfb072e06d937a620499e9910685e311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ds_did_info::m_dwVRecSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00298">298</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fbea5a654ea55f1a24d29cab7d5659d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short ds_did_info::m_sKeyFieldPos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00292">292</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7bfd432b8be579eeae850524ba67697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> ds_did_info::m_uint64TimeLen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00306">306</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa93e5845e20c7732694551951b5db9a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short ds_did_info::m_wAllFieldsNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00295">295</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f71934aecfb0386885cd17fac5b0a4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short ds_did_info::m_wFieldsNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00294">294</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cef8ce613fa0c321ecaff2596539f5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short ds_did_info::m_wSortSecs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00293">293</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6cb29e5e30d04fb35742abbe723aec5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short ds_did_info::m_wTablesNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ds__dat_8h_source.html">ds_dat.h</a> 第 <a class="el" href="ds__dat_8h_source.html#l00296">296</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li><a class="el" href="ds__dat_8h_source.html">ds_dat.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:49 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

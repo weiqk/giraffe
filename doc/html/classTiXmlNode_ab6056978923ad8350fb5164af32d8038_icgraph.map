@@ -1,0 +1,26 @@
+<map id="TiXmlNode::CopyTo" name="TiXmlNode::CopyTo">
+<area shape="rect" id="node2" href="$classTiXmlElement.html#a9e0c1983b840de4134f1f6bf7af00b0f" title="TiXmlElement::CopyTo" alt="" coords="203,81,362,108"/>
+<area shape="rect" id="node6" href="$classTiXmlComment.html#a3175b2f27628f4fb7a043897930cd934" title="TiXmlComment::CopyTo" alt="" coords="199,233,366,260"/>
+<area shape="rect" id="node10" href="$classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1" title="TiXmlText::CopyTo" alt="" coords="215,385,351,412"/>
+<area shape="rect" id="node14" href="$classTiXmlDeclaration.html#a9d08959f935421a593032bd3efb30c38" title="TiXmlDeclaration::CopyTo" alt="" coords="195,487,371,513"/>
+<area shape="rect" id="node18" href="$classTiXmlUnknown.html#a08ca7b225a2bcb604d3c72e199d33408" title="TiXmlUnknown::CopyTo" alt="" coords="200,639,365,665"/>
+<area shape="rect" id="node22" href="$classTiXmlDocument.html#af69deeb984e060bd00f668460dec8ef2" title="TiXmlDocument::CopyTo" alt="" coords="197,791,368,817"/>
+<area shape="rect" id="node3" href="$classTiXmlElement.html#a13f6df105ebb1e8dc636e75cc883be32" title="Creates a new Element and returns it &#45; the returned element is a copy. " alt="" coords="461,5,608,32"/>
+<area shape="rect" id="node4" href="$classTiXmlElement.html#af5cd4156e082ef3bf23adfe0ed173340" title="TiXmlElement::operator=" alt="" coords="451,56,618,83"/>
+<area shape="rect" id="node5" href="$classTiXmlElement.html#a1ca4465f3c2eac6a60e641cd7f1d9f7e" title="TiXmlElement::TiXmlElement" alt="" coords="437,107,632,133"/>
+<area shape="rect" id="node7" href="$classTiXmlComment.html#a4f6590c9c9a2b63a48972655b78eb853" title="Returns a copy of this Comment. " alt="" coords="457,157,612,184"/>
+<area shape="rect" id="node8" href="$classTiXmlComment.html#a46373f99b65cb960637dccb1f126bd49" title="TiXmlComment::operator=" alt="" coords="447,208,623,235"/>
+<area shape="rect" id="node9" href="$classTiXmlComment.html#afaec41ac2760ce946ba1590eb5708e50" title="TiXmlComment::TiXmlComment" alt="" coords="429,259,641,285"/>
+<area shape="rect" id="node11" href="$classTiXmlText.html#adde1869dfb029be50713fbfd8ce4d21f" title="[internal use] Creates a new Element and returns it. " alt="" coords="473,309,597,336"/>
+<area shape="rect" id="node12" href="$classTiXmlText.html#a8d2cc1b4af2208cbb0171cf20f6815d1" title="TiXmlText::TiXmlText" alt="" coords="459,360,610,387"/>
+<area shape="rect" id="node13" href="$classTiXmlText.html#af5f15d40d048cea7cab9d0eb4fd8a7d2" title="TiXmlText::operator=" alt="" coords="462,411,607,437"/>
+<area shape="rect" id="node15" href="$classTiXmlDeclaration.html#aff8231266d735943d8a7514a9c9822b9" title="Creates a copy of this Declaration and returns it. " alt="" coords="453,461,617,488"/>
+<area shape="rect" id="node16" href="$classTiXmlDeclaration.html#a0fedc57539af9049be8db2d7d9d9ba33" title="TiXmlDeclaration::operator=" alt="" coords="442,512,627,539"/>
+<area shape="rect" id="node17" href="$classTiXmlDeclaration.html#a58ac9042c342f7845c8491da0bb091e8" title="TiXmlDeclaration::TiXmlDeclaration" alt="" coords="419,563,650,589"/>
+<area shape="rect" id="node19" href="$classTiXmlUnknown.html#a675c4b2684af35e4c7649b7fd5ae598d" title="Creates a copy of this Unknown and returns it. " alt="" coords="458,613,611,640"/>
+<area shape="rect" id="node20" href="$classTiXmlUnknown.html#abe798ff4feea31474850c7f0de6bdf5e" title="TiXmlUnknown::TiXmlUnknown" alt="" coords="431,664,639,691"/>
+<area shape="rect" id="node21" href="$classTiXmlUnknown.html#a5097fe228cd5ad4edcdddf02c334fd83" title="TiXmlUnknown::operator=" alt="" coords="447,715,622,741"/>
+<area shape="rect" id="node23" href="$classTiXmlDocument.html#ac9e8f09b23454d953b32d1b65cd1409e" title="TiXmlDocument::Clone" alt="" coords="455,765,614,792"/>
+<area shape="rect" id="node24" href="$classTiXmlDocument.html#aafbfacc3414008f619b1345775ef12a4" title="TiXmlDocument::operator=" alt="" coords="445,816,624,843"/>
+<area shape="rect" id="node25" href="$classTiXmlDocument.html#a323a7486e7da6099cdc19a5ff7e74b07" title="TiXmlDocument::TiXmlDocument" alt="" coords="425,867,644,893"/>
+</map>

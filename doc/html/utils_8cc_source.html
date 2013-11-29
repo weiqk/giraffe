@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: utils.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utils_8cc.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datacollect_8h.html">datacollect.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sys/select.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classUtils.html#a5e1d0cf964fa8cd438ea13405580faed">   23</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classUtils.html#a5e1d0cf964fa8cd438ea13405580faed">Utils::tcp_flag_to_str</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> flag )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">switch</span>((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)flag)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa4fd3b2e5ef1de47198993a022f4f60ae">cons::FIN</a>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[FIN]&quot;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa41ed8f6a2bfd093ea987d79309fb4e04">cons::SYN</a>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[SYN]&quot;</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa6363c71f8666df5b903e3a7bc0bb4d4b">cons::RST</a>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[RST]&quot;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaabb4af4acd4bed04b3c39885cd7625779">cons::PSH</a>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[PSH]&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa252983ee49da53a9d5ef9488d5d63700">cons::ACK</a>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[ACK]&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa13999747fd26c2ab11ab77b26acb0fca">cons::FINACK</a>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[FIN,ACK]&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaad5005a3bddd42c0b0ef75768f5de9fd7">cons::SYNACK</a>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[SYN,ACK]&quot;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa6700d1188886392e21b1ea0dc5099837">cons::RSTACK</a>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[RST,ACK]&quot;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa9dcf85fe062821e09485f601859ae109">cons::PSHACK</a>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[PSH,ACK]&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa66f28b2b2017e8ae03a43d0e91be4140">cons::FINPSHACK</a>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[FIN,PSH,ACK]&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa06fd3ce63ee0ea2392603d048c88753f">cons::URG</a>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[URG]&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;[UNKNOW]&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classUtils.html#a8d3d72407cc3856d01310573ab787a6b">   73</a></span>&#160;<a class="code" href="typedef_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> <a class="code" href="classUtils.html#a8d3d72407cc3856d01310573ab787a6b">Utils::ToMword</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> x)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="typedef_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a> n;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> mul;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    n = x&amp;0x3fffffff ;  <span class="comment">//low 30 bit</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    mul=x&gt;&gt;30&amp;0x3;<span class="comment">// high 2 bit</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">for</span>(i=0;i&lt;mul;i++)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        n*=16;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classUtils.html#aa4ad4a933ab1da6a475409b455ee251d">   93</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classUtils.html#aa4ad4a933ab1da6a475409b455ee251d">Utils::UINT24to32</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> low,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> high)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> low + (high&lt;&lt;16);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classUtils.html#ae0b4afbedbf4e571628741d17dfc3dba">  105</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="classUtils.html#ae0b4afbedbf4e571628741d17dfc3dba">Utils::DCTypeToString</a>(<span class="keywordtype">int</span> dc_type)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">switch</span>(dc_type)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5">DCT_NUL</a>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_NUL&quot;</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92">DCT_KEEPALIVE</a>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_KEEPALIVE&quot;</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f">DCT_LOGIN</a>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_LOGIN&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e">DCT_REQPASS</a>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_REQPASS&quot;</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61">DCT_USERnPASS</a>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_USERnPASS&quot;</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4">DCT_READY</a>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_READY&quot;</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d">DCT_RESEND</a>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_RESEND&quot;</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f">DCT_STKSTATIC</a>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_STKSTATIC&quot;</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c">DCT_STKDYNA</a>:</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_STKDYNA&quot;</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684">DCT_SHL2_MMPEx</a>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SHL2_MMPEx&quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba">DCT_SHL2_REPORT</a>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SHL2_REPORT&quot;</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37">DCT_SHL2_BIG_WD</a>:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SHL2_BIG_WD&quot;</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630">DCT_SHL2_ACCU_WD</a>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SHL2_ACCU_WD&quot;</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822">DCT_HK_STATIC</a>:</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_HK_STATIC&quot;</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5">DCT_HK_DYNA</a>:</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_HK_DYNA&quot;</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5">DCT_XML</a>:</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_XML&quot;</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe">DCT_SHL2_QUEUE</a>:</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SHL2_QUEUE&quot;</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464">DCT_GENERAL</a>:</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_GENERAL&quot;</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7">DCT_USERSTAT</a>:</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_USERSTAT&quot;</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267">DCT_RAWDATA</a>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_RAWDATA&quot;</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2">DCT_NEWS</a>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_NEWS&quot;</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd">DCT_SZL2_ORDER_QUEUE</a>:</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SZL2_ORDER_QUEUE&quot;</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5">DCT_SZL2_ORDER_STAT</a>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SZL2_ORDER_STAT&quot;</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0">DCT_DSCRC</a>:</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_DSCRC&quot;</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f">DCT_DSDID</a>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_DSDID&quot;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a">DCT_DSDATA</a>:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_DSDATA&quot;</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30">DCT_DID</a>:</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_DID&quot;</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60">DCT_DIDSTATIC</a>:</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_DIDSTATIC&quot;</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477">DCT_INCODESTATIC</a>:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_INCODESTATIC&quot;</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c">DCT_SZL2_ORDER_FIVE</a>:</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SZL2_ORDER_FIVE&quot;</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca">DCT_SZL2_TRADE_FIVE</a>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;DCT_SZL2_TRADE_FIVE&quot;</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;UNKNOW DC_TYPE&quot;</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classUtils.html#aaece2d84c6d945396486d4612e197628">  183</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="classUtils.html#aaece2d84c6d945396486d4612e197628">Utils::DCGeneral_IntypeToString</a>(<span class="keywordtype">int</span> dc_general_intype)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">switch</span>(dc_general_intype)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#af7a110e23de0eb4fa3bd7a00c876959a">GE_STATIC_EX</a>:</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;GE_STATIC_EX&quot;</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#a1b4fac828a7a7329f099df7350d19b1a">GE_HKDYNA</a>:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;GE_HKDYNA&quot;</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#af060dee5d70e58be54615368bfee3355">GE_BLK_STK</a>:</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;GE_BLK_STK&quot;</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#ad18ae309a98a3081a9e4939a7dc31360">GE_IOPV</a>:</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;GE_IOPV&quot;</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#ad4f386d2af89b62e029f286384aa662e">GE_MATU_YLD</a>:</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;GE_MATU_YLD&quot;</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="datacollect_8h.html#aa5f199cde75b91fd5b3b567deae8f287">GE_HKREL_TXT</a>:</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;GE_HIREL_TXT&quot;</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;UNKNOW DC_GENERAL INNER TYPE&quot;</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classUtils.html#a5cde56d0b42695aa81d7bfd27bab87ff">  209</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUtils.html#a5cde56d0b42695aa81d7bfd27bab87ff">Utils::Print_Thread_ID</a>(pthread_t tid)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">size_t</span> i;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">for</span>(i=<span class="keyword">sizeof</span>(i);i;--i)</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        printf(<span class="stringliteral">&quot;%02x&quot;</span>,*(((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)&amp;tid)+i-1));</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classUtils.html#a2351ec3f806cbacb87918ac5a9bb2d48">  225</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUtils.html#a2351ec3f806cbacb87918ac5a9bb2d48">Utils::WriteIntoFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_name, <span class="keyword">const</span> <span class="keywordtype">char</span> *mode, <span class="keyword">const</span> <span class="keywordtype">void</span>* data , <span class="keywordtype">size_t</span> length)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    FILE * fp = fopen(file_name, mode);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span>(NULL != fp)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        fwrite(data, 1, length, fp);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        fclose(fp);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="comment">//cout&lt;&lt;&quot;open file error!&quot;&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        assert(0);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classUtils.html#a89353d60a41dfcf7a0b964c2e3e127e3">  245</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUtils.html#a89353d60a41dfcf7a0b964c2e3e127e3">Utils::SleepUsec</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> usec)</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">struct </span>timeval tval;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    tval.tv_sec = 0;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    tval.tv_usec = usec;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    select(0,NULL,NULL,NULL,&amp;tval);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classUtils.html#add3b3c17d1c8b3a997d17c70604b21bf">  258</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classUtils.html#add3b3c17d1c8b3a997d17c70604b21bf">Utils::GetCurrentTime</a>()</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">struct </span>timeval tval;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    gettimeofday(&amp;tval, NULL);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">return</span> tval.tv_sec*1000000+tval.tv_usec;    </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
+<div class="ttc" id="classUtils_html_a2351ec3f806cbacb87918ac5a9bb2d48"><div class="ttname"><a href="classUtils.html#a2351ec3f806cbacb87918ac5a9bb2d48">Utils::WriteIntoFile</a></div><div class="ttdeci">static void WriteIntoFile(const char *file_name, const char *mode, const void *data, size_t length)</div><div class="ttdoc">write into file </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00225">utils.cc:225</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a583990f531e5e662e297346e3a7ad1b2">DCT_NEWS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00646">datacollect.h:646</a></div></div>
+<div class="ttc" id="classUtils_html_a5e1d0cf964fa8cd438ea13405580faed"><div class="ttname"><a href="classUtils.html#a5e1d0cf964fa8cd438ea13405580faed">Utils::tcp_flag_to_str</a></div><div class="ttdeci">static const char * tcp_flag_to_str(unsigned char flag)</div><div class="ttdoc">get flag name based on the flag number </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00023">utils.cc:23</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0c3c3ab5ceec4222849c2766e6694ebe">DCT_SHL2_QUEUE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00642">datacollect.h:642</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa4fd3b2e5ef1de47198993a022f4f60ae"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa4fd3b2e5ef1de47198993a022f4f60ae">cons::FIN</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00079">constants.h:79</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa6363c71f8666df5b903e3a7bc0bb4d4b"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa6363c71f8666df5b903e3a7bc0bb4d4b">cons::RST</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00081">constants.h:81</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a58929cafbddefa41d99adf42f3281ca5">DCT_NUL</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00626">datacollect.h:626</a></div></div>
+<div class="ttc" id="constants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div><div class="ttdoc">constant </div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a291fece10613beb1a281de6a98f8f5ba">DCT_SHL2_REPORT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00636">datacollect.h:636</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a83fc51e5ece2b981c2b6002b1fc47b92">DCT_KEEPALIVE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00627">datacollect.h:627</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6af5499c6b22940bdbb934d5d8243cf5e5">DCT_SZL2_ORDER_STAT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00648">datacollect.h:648</a></div></div>
+<div class="ttc" id="classUtils_html_add3b3c17d1c8b3a997d17c70604b21bf"><div class="ttname"><a href="classUtils.html#add3b3c17d1c8b3a997d17c70604b21bf">Utils::GetCurrentTime</a></div><div class="ttdeci">static unsigned long GetCurrentTime()</div><div class="ttdoc">get current time </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00258">utils.cc:258</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaad5005a3bddd42c0b0ef75768f5de9fd7"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaad5005a3bddd42c0b0ef75768f5de9fd7">cons::SYNACK</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00085">constants.h:85</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7cb2cdda7b98b76d6441827cda1737c4">DCT_READY</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00631">datacollect.h:631</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac150f303904fb332052d63159e45609a">DCT_DSDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00651">datacollect.h:651</a></div></div>
+<div class="ttc" id="typedef_8h_html_aecfc3c54bd29ad5964e1c1c3ccbf89df"><div class="ttname"><a href="typedef_8h.html#aecfc3c54bd29ad5964e1c1c3ccbf89df">int64</a></div><div class="ttdeci">long long int64</div><div class="ttdef"><b>Definition:</b> <a href="typedef_8h_source.html#l00007">typedef.h:7</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a38e54635a2c536faad238b0e6c3fc14d">DCT_RESEND</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00632">datacollect.h:632</a></div></div>
+<div class="ttc" id="classUtils_html_aaece2d84c6d945396486d4612e197628"><div class="ttname"><a href="classUtils.html#aaece2d84c6d945396486d4612e197628">Utils::DCGeneral_IntypeToString</a></div><div class="ttdeci">static const char * DCGeneral_IntypeToString(int dc_general_intype)</div><div class="ttdoc">trans dc_general intype to string </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00183">utils.cc:183</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a69f430e96551f096a20753d6e54b9b60">DCT_DIDSTATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00653">datacollect.h:653</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ec52d401bad386d0b11071287ba92ca">DCT_SZL2_TRADE_FIVE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00657">datacollect.h:657</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a4b134819326db3786a8e2dd6ff424c8f">DCT_DSDID</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00650">datacollect.h:650</a></div></div>
+<div class="ttc" id="utils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a8a181f12eca1e018fa27d9c28d9237e7">DCT_USERSTAT</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00644">datacollect.h:644</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa9dcf85fe062821e09485f601859ae109"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa9dcf85fe062821e09485f601859ae109">cons::PSHACK</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00087">constants.h:87</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa41ed8f6a2bfd093ea987d79309fb4e04"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa41ed8f6a2bfd093ea987d79309fb4e04">cons::SYN</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00080">constants.h:80</a></div></div>
+<div class="ttc" id="classUtils_html_a8d3d72407cc3856d01310573ab787a6b"><div class="ttname"><a href="classUtils.html#a8d3d72407cc3856d01310573ab787a6b">Utils::ToMword</a></div><div class="ttdeci">static int64 ToMword(unsigned long x)</div><div class="ttdoc">be used for getting the value of type MWORD </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00073">utils.cc:73</a></div></div>
+<div class="ttc" id="classUtils_html_a89353d60a41dfcf7a0b964c2e3e127e3"><div class="ttname"><a href="classUtils.html#a89353d60a41dfcf7a0b964c2e3e127e3">Utils::SleepUsec</a></div><div class="ttdeci">static void SleepUsec(const int usec)</div><div class="ttdoc">sleep usecs </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00245">utils.cc:245</a></div></div>
+<div class="ttc" id="classUtils_html_a5cde56d0b42695aa81d7bfd27bab87ff"><div class="ttname"><a href="classUtils.html#a5cde56d0b42695aa81d7bfd27bab87ff">Utils::Print_Thread_ID</a></div><div class="ttdeci">static void Print_Thread_ID(pthread_t tid)</div><div class="ttdoc">print thread id </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00209">utils.cc:209</a></div></div>
+<div class="ttc" id="datacollect_8h_html"><div class="ttname"><a href="datacollect_8h.html">datacollect.h</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa54ffae7fabc2ec743ff05e2f9cd2477">DCT_INCODESTATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00654">datacollect.h:654</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa06fd3ce63ee0ea2392603d048c88753f"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa06fd3ce63ee0ea2392603d048c88753f">cons::URG</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00089">constants.h:89</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a534db2ee0a53b15d7b93bf001e7a7b5e">DCT_REQPASS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00629">datacollect.h:629</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a1b4fac828a7a7329f099df7350d19b1a"><div class="ttname"><a href="datacollect_8h.html#a1b4fac828a7a7329f099df7350d19b1a">GE_HKDYNA</a></div><div class="ttdeci">#define GE_HKDYNA</div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00969">datacollect.h:969</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa96f043ead35ebb6428636355c1a16b5">DCT_XML</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00641">datacollect.h:641</a></div></div>
+<div class="ttc" id="classUtils_html_ae0b4afbedbf4e571628741d17dfc3dba"><div class="ttname"><a href="classUtils.html#ae0b4afbedbf4e571628741d17dfc3dba">Utils::DCTypeToString</a></div><div class="ttdeci">static const char * DCTypeToString(int dc_type)</div><div class="ttdoc">trans dc_type to string </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00105">utils.cc:105</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab96d66a9fed4a0273d72c6b651690464">DCT_GENERAL</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00643">datacollect.h:643</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac36771e7b51cce8ccbcdf78c6d975267">DCT_RAWDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00645">datacollect.h:645</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a3527dc77ae5c55a9cfcdc488a196ad30">DCT_DID</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00652">datacollect.h:652</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa252983ee49da53a9d5ef9488d5d63700"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa252983ee49da53a9d5ef9488d5d63700">cons::ACK</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00083">constants.h:83</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a59890775813f2dba476f3abe785b6684">DCT_SHL2_MMPEx</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00635">datacollect.h:635</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6efd0e6222c2cc0630d741874f82b822">DCT_HK_STATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00639">datacollect.h:639</a></div></div>
+<div class="ttc" id="datacollect_8h_html_ad4f386d2af89b62e029f286384aa662e"><div class="ttname"><a href="datacollect_8h.html#ad4f386d2af89b62e029f286384aa662e">GE_MATU_YLD</a></div><div class="ttdeci">#define GE_MATU_YLD</div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00965">datacollect.h:965</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ac2b80735a2972441393cb8235f76006f">DCT_LOGIN</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00628">datacollect.h:628</a></div></div>
+<div class="ttc" id="datacollect_8h_html_ad18ae309a98a3081a9e4939a7dc31360"><div class="ttname"><a href="datacollect_8h.html#ad18ae309a98a3081a9e4939a7dc31360">GE_IOPV</a></div><div class="ttdeci">#define GE_IOPV</div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00964">datacollect.h:964</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aa7aa523ea07872d767f81dc898899f37">DCT_SHL2_BIG_WD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00637">datacollect.h:637</a></div></div>
+<div class="ttc" id="datacollect_8h_html_aa5f199cde75b91fd5b3b567deae8f287"><div class="ttname"><a href="datacollect_8h.html#aa5f199cde75b91fd5b3b567deae8f287">GE_HKREL_TXT</a></div><div class="ttdeci">#define GE_HKREL_TXT</div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00966">datacollect.h:966</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a7ae213a7a07f9a3de9f603443e863cf0">DCT_DSCRC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00649">datacollect.h:649</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a697ffc6d7fb72e0ea22d6745a02c4a6f">DCT_STKSTATIC</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00633">datacollect.h:633</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a0d81454b600a8e13860b962168aefb61">DCT_USERnPASS</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00630">datacollect.h:630</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa6700d1188886392e21b1ea0dc5099837"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa6700d1188886392e21b1ea0dc5099837">cons::RSTACK</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00086">constants.h:86</a></div></div>
+<div class="ttc" id="classUtils_html_aa4ad4a933ab1da6a475409b455ee251d"><div class="ttname"><a href="classUtils.html#aa4ad4a933ab1da6a475409b455ee251d">Utils::UINT24to32</a></div><div class="ttdeci">static unsigned int UINT24to32(unsigned short low, unsigned char high)</div><div class="ttdoc">trans UINT24 type to unsigned int </div><div class="ttdef"><b>Definition:</b> <a href="utils_8cc_source.html#l00093">utils.cc:93</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a36ddf03b1bbbce519bffb1d5d90b023c">DCT_SZL2_ORDER_FIVE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00656">datacollect.h:656</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaabb4af4acd4bed04b3c39885cd7625779"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaabb4af4acd4bed04b3c39885cd7625779">cons::PSH</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00082">constants.h:82</a></div></div>
+<div class="ttc" id="datacollect_8h_html_af060dee5d70e58be54615368bfee3355"><div class="ttname"><a href="datacollect_8h.html#af060dee5d70e58be54615368bfee3355">GE_BLK_STK</a></div><div class="ttdeci">#define GE_BLK_STK</div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00970">datacollect.h:970</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a6a648c513d97826c539ec5d82faa6f3c">DCT_STKDYNA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00634">datacollect.h:634</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa13999747fd26c2ab11ab77b26acb0fca"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa13999747fd26c2ab11ab77b26acb0fca">cons::FINACK</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00084">constants.h:84</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6aab22dc8e145f24e76926de08befd4ea5">DCT_HK_DYNA</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00640">datacollect.h:640</a></div></div>
+<div class="ttc" id="namespacecons_html_a3991e90ca1b93b6f22f46057e617c7eaa66f28b2b2017e8ae03a43d0e91be4140"><div class="ttname"><a href="namespacecons.html#a3991e90ca1b93b6f22f46057e617c7eaa66f28b2b2017e8ae03a43d0e91be4140">cons::FINPSHACK</a></div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00088">constants.h:88</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6a113cb48f494eafb90e664025a5225630">DCT_SHL2_ACCU_WD</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00638">datacollect.h:638</a></div></div>
+<div class="ttc" id="datacollect_8h_html_a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd"><div class="ttname"><a href="datacollect_8h.html#a804a1e471c26183da571955646dc02c6ab6331bd41fee99c68be12978f1770edd">DCT_SZL2_ORDER_QUEUE</a></div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00647">datacollect.h:647</a></div></div>
+<div class="ttc" id="datacollect_8h_html_af7a110e23de0eb4fa3bd7a00c876959a"><div class="ttname"><a href="datacollect_8h.html#af7a110e23de0eb4fa3bd7a00c876959a">GE_STATIC_EX</a></div><div class="ttdeci">#define GE_STATIC_EX</div><div class="ttdef"><b>Definition:</b> <a href="datacollect_8h_source.html#l00968">datacollect.h:968</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

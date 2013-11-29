@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: capture_net_packet.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">capture_net_packet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="capture__net__packet_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MONITOR_CAPTURE_NET_PACKET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MONITOR_CAPTURE_NET_PACKET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basethread_8h.html">basethread.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;log4cxx/logger.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCaptureNetPacket.html">CaptureNetPacket</a>: <span class="keyword">public</span> <a class="code" href="classBaseThread.html">BaseThread</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#a89a0f7fcf8a316cc48987f22a41ca3f0">   11</a></span>&#160;    <a class="code" href="classCaptureNetPacket.html#a89a0f7fcf8a316cc48987f22a41ca3f0">CaptureNetPacket</a>(std::string adapter_id, std::string filter, zmq::context_t *context):<a class="code" href="classCaptureNetPacket.html#a7f181712e430020af4057bce6edfac5f">adapter_id_</a>(adapter_id),<a class="code" href="classCaptureNetPacket.html#af2c4923da846c9c5e4735dad6635b8b5">filter_</a>(filter),<a class="code" href="classCaptureNetPacket.html#af21d52424a1f3311e2bcc1ab05c0b087">context_</a>(context)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">sock_</a> = NULL;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    };</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#a152c61963e1759ed748bdf6f30ae5956">   15</a></span>&#160;    <a class="code" href="classCaptureNetPacket.html#a152c61963e1759ed748bdf6f30ae5956">~CaptureNetPacket</a>()</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">if</span>(NULL != <a class="code" href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">sock_</a>)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keyword">delete</span> <a class="code" href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">sock_</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">sock_</a> = NULL;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCaptureNetPacket.html#aed65b58151be2c09d7ecc3f134ab01cb">RunThreadFunc</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCaptureNetPacket.html#a54f0e2bc8518d38101f52af073cf9939">Init</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCaptureNetPacket.html#a2dcf215d0503a59b277eda1e7ca730ea">InitZMQ</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classCaptureNetPacket.html#ab68ea6fb78d9787f50e279b358500985">DispatchCapData</a>(zmq::socket_t * sock, <span class="keywordtype">void</span> * data, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classCaptureNetPacket.html#af0d7ab07346efdf76efc92e8ecece0fa">PacketHandler</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*param, <span class="keyword">const</span> <span class="keyword">struct</span> pcap_pkthdr *header, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pkt_data);</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#a36a879cff46ccb92962cf1c8e228101e">   29</a></span>&#160;    <span class="keyword">static</span> log4cxx::LoggerPtr <a class="code" href="classCaptureNetPacket.html#a36a879cff46ccb92962cf1c8e228101e">logger_</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">   30</a></span>&#160;    zmq::socket_t *<a class="code" href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">sock_</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#a7f181712e430020af4057bce6edfac5f">   31</a></span>&#160;    std::string <a class="code" href="classCaptureNetPacket.html#a7f181712e430020af4057bce6edfac5f">adapter_id_</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#af2c4923da846c9c5e4735dad6635b8b5">   32</a></span>&#160;    std::string <a class="code" href="classCaptureNetPacket.html#af2c4923da846c9c5e4735dad6635b8b5">filter_</a>;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCaptureNetPacket.html#af21d52424a1f3311e2bcc1ab05c0b087">   33</a></span>&#160;    zmq::context_t *<a class="code" href="classCaptureNetPacket.html#af21d52424a1f3311e2bcc1ab05c0b087">context_</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCaptureNetPacket_html_af0d7ab07346efdf76efc92e8ecece0fa"><div class="ttname"><a href="classCaptureNetPacket.html#af0d7ab07346efdf76efc92e8ecece0fa">CaptureNetPacket::PacketHandler</a></div><div class="ttdeci">static void PacketHandler(unsigned char *param, const struct pcap_pkthdr *header, const unsigned char *pkt_data)</div><div class="ttdoc">pcap callback function </div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8cc_source.html#l00175">capture_net_packet.cc:175</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a152c61963e1759ed748bdf6f30ae5956"><div class="ttname"><a href="classCaptureNetPacket.html#a152c61963e1759ed748bdf6f30ae5956">CaptureNetPacket::~CaptureNetPacket</a></div><div class="ttdeci">~CaptureNetPacket()</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00015">capture_net_packet.h:15</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_af21d52424a1f3311e2bcc1ab05c0b087"><div class="ttname"><a href="classCaptureNetPacket.html#af21d52424a1f3311e2bcc1ab05c0b087">CaptureNetPacket::context_</a></div><div class="ttdeci">zmq::context_t * context_</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00033">capture_net_packet.h:33</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a2dcf215d0503a59b277eda1e7ca730ea"><div class="ttname"><a href="classCaptureNetPacket.html#a2dcf215d0503a59b277eda1e7ca730ea">CaptureNetPacket::InitZMQ</a></div><div class="ttdeci">void InitZMQ()</div><div class="ttdoc">init zmq </div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8cc_source.html#l00053">capture_net_packet.cc:53</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_ab68ea6fb78d9787f50e279b358500985"><div class="ttname"><a href="classCaptureNetPacket.html#ab68ea6fb78d9787f50e279b358500985">CaptureNetPacket::DispatchCapData</a></div><div class="ttdeci">static void DispatchCapData(zmq::socket_t *sock, void *data, int size)</div><div class="ttdoc">dispatch data from capture thread to shunt thread </div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8cc_source.html#l00023">capture_net_packet.cc:23</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a36a879cff46ccb92962cf1c8e228101e"><div class="ttname"><a href="classCaptureNetPacket.html#a36a879cff46ccb92962cf1c8e228101e">CaptureNetPacket::logger_</a></div><div class="ttdeci">static log4cxx::LoggerPtr logger_</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00029">capture_net_packet.h:29</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_af2c4923da846c9c5e4735dad6635b8b5"><div class="ttname"><a href="classCaptureNetPacket.html#af2c4923da846c9c5e4735dad6635b8b5">CaptureNetPacket::filter_</a></div><div class="ttdeci">std::string filter_</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00032">capture_net_packet.h:32</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html"><div class="ttname"><a href="classCaptureNetPacket.html">CaptureNetPacket</a></div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00008">capture_net_packet.h:8</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a54f0e2bc8518d38101f52af073cf9939"><div class="ttname"><a href="classCaptureNetPacket.html#a54f0e2bc8518d38101f52af073cf9939">CaptureNetPacket::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">init capture net packet thread </div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8cc_source.html#l00044">capture_net_packet.cc:44</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a89a0f7fcf8a316cc48987f22a41ca3f0"><div class="ttname"><a href="classCaptureNetPacket.html#a89a0f7fcf8a316cc48987f22a41ca3f0">CaptureNetPacket::CaptureNetPacket</a></div><div class="ttdeci">CaptureNetPacket(std::string adapter_id, std::string filter, zmq::context_t *context)</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00011">capture_net_packet.h:11</a></div></div>
+<div class="ttc" id="basethread_8h_html"><div class="ttname"><a href="basethread_8h.html">basethread.h</a></div><div class="ttdoc">base thread class </div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a2a12e020e698cdc837b28648dc4b89b4"><div class="ttname"><a href="classCaptureNetPacket.html#a2a12e020e698cdc837b28648dc4b89b4">CaptureNetPacket::sock_</a></div><div class="ttdeci">zmq::socket_t * sock_</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00030">capture_net_packet.h:30</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_aed65b58151be2c09d7ecc3f134ab01cb"><div class="ttname"><a href="classCaptureNetPacket.html#aed65b58151be2c09d7ecc3f134ab01cb">CaptureNetPacket::RunThreadFunc</a></div><div class="ttdeci">void RunThreadFunc()</div><div class="ttdoc">capture thread running function </div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8cc_source.html#l00070">capture_net_packet.cc:70</a></div></div>
+<div class="ttc" id="classBaseThread_html"><div class="ttname"><a href="classBaseThread.html">BaseThread</a></div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00065">basethread.h:65</a></div></div>
+<div class="ttc" id="classCaptureNetPacket_html_a7f181712e430020af4057bce6edfac5f"><div class="ttname"><a href="classCaptureNetPacket.html#a7f181712e430020af4057bce6edfac5f">CaptureNetPacket::adapter_id_</a></div><div class="ttdeci">std::string adapter_id_</div><div class="ttdef"><b>Definition:</b> <a href="capture__net__packet_8h_source.html#l00031">capture_net_packet.h:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:47 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

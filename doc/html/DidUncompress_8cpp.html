@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: DidUncompress.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">DidUncompress.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="DidUncompress_8h_source.html">DidUncompress.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="public_8h_source.html">public.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zlib_8h_source.html">zlib.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+DidUncompress.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="DidUncompress_8cpp__incl.png" border="0" usemap="#DidUncompress_8cpp" alt=""/></div>
+<map name="DidUncompress_8cpp" id="DidUncompress_8cpp">
+<area shape="rect" id="node2" href="DidUncompress_8h.html" title="DidUncompress.h" alt="" coords="1199,80,1325,107"/><area shape="rect" id="node48" href="public_8h.html" title="public.h" alt="" coords="209,453,276,480"/><area shape="rect" id="node49" href="zlib_8h.html" title="zlib.h" alt="" coords="1523,80,1576,107"/><area shape="rect" id="node3" href="dscomapi_8h.html" title="dscomapi.h" alt="" coords="1135,155,1224,181"/><area shape="rect" id="node27" href="LIBXML__DOMDocument_8h.html" title="LIBXML_DOMDocument.h" alt="" coords="1087,229,1265,256"/><area shape="rect" id="node4" href="ds__dat_8h.html" title="ds_dat.h" alt="" coords="561,229,633,256"/><area shape="rect" id="node5" href="stdafx_8h.html" title="stdafx.h" alt="" coords="463,453,532,480"/><area shape="rect" id="node19" href="mword_8h.html" title="mword.h" alt="" coords="476,379,548,405"/><area shape="rect" id="node20" href="datacollect_8h.html" title="datacollect.h" alt="" coords="464,304,560,331"/><area shape="rect" id="node21" href="dzh__time__t_8h.html" title="dzh_time_t.h" alt="" coords="635,304,732,331"/><area shape="rect" id="node24" href="pfloat_8h.html" title="pfloat.h" alt="" coords="757,304,821,331"/><area shape="rect" id="node25" href="vfloat_8h.html" title="vfloat.h" alt="" coords="323,304,388,331"/><area shape="rect" id="node6" href="ldgloble_8h.html" title="ldgloble.h" alt="" coords="459,528,535,555"/><area shape="rect" id="node28" href="DOMDocument_8h.html" title="DOMDocument.h" alt="" coords="978,304,1101,331"/><area shape="rect" id="node32" href="Exceptions_8h.html" title="Exceptions.h" alt="" coords="1127,304,1225,331"/><area shape="rect" id="node34" href="Utility_8h.html" title="Utility.h" alt="" coords="1245,528,1312,555"/><area shape="rect" id="node50" href="zconf_8h.html" title="zconf.h" alt="" coords="1603,155,1668,181"/></map>
+</div>
+</div>
+<p><a href="DidUncompress_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ae2f48fa36d5e81ffe766bf1d833cadd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DidUncompress_8cpp.html#ae2f48fa36d5e81ffe766bf1d833cadd6">MaxStocksCount</a>&#160;&#160;&#160;4000;</td></tr>
+<tr class="separator:ae2f48fa36d5e81ffe766bf1d833cadd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1d127a2caadb5bcb6a92bbdee4a1dc22"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DidUncompress_8cpp.html#a1d127a2caadb5bcb6a92bbdee4a1dc22">GetBmData</a> (int num, <a class="el" href="structLastArgs.html">LastArgs</a> *pLastArgs, <a class="el" href="structLastArgs.html">LastArgs</a> *pNowArgs, <a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> did, CDidStruct *pDidStruct, char *pUserArg, <a class="el" href="structds__field__info.html">ds_field_info</a> *&amp;pSaveField)</td></tr>
+<tr class="separator:a1d127a2caadb5bcb6a92bbdee4a1dc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc490fd3a041dcd5b92695bcac50d0fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DidUncompress_8cpp.html#acc490fd3a041dcd5b92695bcac50d0fc">SetBmData</a> (<a class="el" href="structLastArgs.html">LastArgs</a> *pNowArgs, <a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a> did, CDidStruct *pDidStruct, char *pUserArg, char *pRecBuf)</td></tr>
+<tr class="separator:acc490fd3a041dcd5b92695bcac50d0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ae2f48fa36d5e81ffe766bf1d833cadd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MaxStocksCount&#160;&#160;&#160;4000;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="DidUncompress_8cpp_source.html">DidUncompress.cpp</a> 第 <a class="el" href="DidUncompress_8cpp_source.html#l00008">8</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a1d127a2caadb5bcb6a92bbdee4a1dc22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* GetBmData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structLastArgs.html">LastArgs</a> *&#160;</td>
+          <td class="paramname"><em>pLastArgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structLastArgs.html">LastArgs</a> *&#160;</td>
+          <td class="paramname"><em>pNowArgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td>
+          <td class="paramname"><em>did</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CDidStruct *&#160;</td>
+          <td class="paramname"><em>pDidStruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pUserArg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structds__field__info.html">ds_field_info</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pSaveField</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="DidUncompress_8cpp_source.html">DidUncompress.cpp</a> 第 <a class="el" href="DidUncompress_8cpp_source.html#l00014">14</a> 行定义.</p>
+
+<p>参考 <a class="el" href="DidUncompress_8h_source.html#l00034">TStructForGetBmData::iBufferSize</a>, <a class="el" href="DidUncompress_8h_source.html#l00033">TStructForGetBmData::pFullData</a>, <a class="el" href="ds__dat_8h_source.html#l00377">LastArgs::pRec</a> , 以及 <a class="el" href="DidUncompress_8h_source.html#l00032">TStructForGetBmData::pStkIDMapHash</a>.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> (NULL == pUserArg)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="structTStructForGetBmData.html">TStructForGetBmData</a>* pObj = (<a class="code" href="structTStructForGetBmData.html">TStructForGetBmData</a>*)pUserArg;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (NULL == pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">pFullData</a> || NULL == pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//one rec size</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> iRecSize = ((<a class="code" href="classCDidStructApi.html">CDidStructApi</a>*)pDidStruct)-&gt;mDidInfo.m_dwRRecSize;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> stk_id = *((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)pNowArgs-&gt;<a class="code" href="structLastArgs.html#a52691320bcdf780882abb18c31c82585">pRec</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span>(!pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>-&gt;count(stk_id))</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> iPos = iRecSize * pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>-&gt;find(stk_id)-&gt;second;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (iPos + iRecSize &gt; pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a438ac34ed7dfb521c5ddc8256ba83322">iBufferSize</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">char</span>* pRecordData = (pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">pFullData</a>) + iPos;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (*(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)pRecordData != stk_id)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> pRecordData;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="ttc" id="classCDidStructApi_html"><div class="ttname"><a href="classCDidStructApi.html">CDidStructApi</a></div><div class="ttdef"><b>Definition:</b> <a href="dscomapi_8h_source.html#l00027">dscomapi.h:27</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_a438ac34ed7dfb521c5ddc8256ba83322"><div class="ttname"><a href="structTStructForGetBmData.html#a438ac34ed7dfb521c5ddc8256ba83322">TStructForGetBmData::iBufferSize</a></div><div class="ttdeci">unsigned int iBufferSize</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00034">DidUncompress.h:34</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html"><div class="ttname"><a href="structTStructForGetBmData.html">TStructForGetBmData</a></div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00030">DidUncompress.h:30</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_ad1cfcb5308e99d4b8e2124904acdb5ff"><div class="ttname"><a href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">TStructForGetBmData::pStkIDMapHash</a></div><div class="ttdeci">STKIDMAP * pStkIDMapHash</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00032">DidUncompress.h:32</a></div></div>
+<div class="ttc" id="structLastArgs_html_a52691320bcdf780882abb18c31c82585"><div class="ttname"><a href="structLastArgs.html#a52691320bcdf780882abb18c31c82585">LastArgs::pRec</a></div><div class="ttdeci">char * pRec</div><div class="ttdef"><b>Definition:</b> <a href="ds__dat_8h_source.html#l00377">ds_dat.h:377</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_a2b5cd44e895bd43572ea50bbb4b8cd8f"><div class="ttname"><a href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">TStructForGetBmData::pFullData</a></div><div class="ttdeci">char * pFullData</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00033">DidUncompress.h:33</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="DidUncompress_8cpp_a1d127a2caadb5bcb6a92bbdee4a1dc22_icgraph.png" border="0" usemap="#DidUncompress_8cpp_a1d127a2caadb5bcb6a92bbdee4a1dc22_icgraph" alt=""/></div>
+<map name="DidUncompress_8cpp_a1d127a2caadb5bcb6a92bbdee4a1dc22_icgraph" id="DidUncompress_8cpp_a1d127a2caadb5bcb6a92bbdee4a1dc22_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#a7e1066ef710795951412447d427adac9" title="DidUncompress::Initialize" alt="" coords="165,5,337,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="144,56,357,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc490fd3a041dcd5b92695bcac50d0fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SetBmData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structLastArgs.html">LastArgs</a> *&#160;</td>
+          <td class="paramname"><em>pNowArgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>&#160;</td>
+          <td class="paramname"><em>did</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CDidStruct *&#160;</td>
+          <td class="paramname"><em>pDidStruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pUserArg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pRecBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="DidUncompress_8cpp_source.html">DidUncompress.cpp</a> 第 <a class="el" href="DidUncompress_8cpp_source.html#l00041">41</a> 行定义.</p>
+
+<p>参考 <a class="el" href="DidUncompress_8h_source.html#l00034">TStructForGetBmData::iBufferSize</a>, <a class="el" href="DidUncompress_8h_source.html#l00035">TStructForGetBmData::iTotalStk</a>, <a class="el" href="DidUncompress_8h_source.html#l00033">TStructForGetBmData::pFullData</a> , 以及 <a class="el" href="DidUncompress_8h_source.html#l00032">TStructForGetBmData::pStkIDMapHash</a>.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00284">DidUncompress::Initialize()</a> , 以及 <a class="el" href="DidUncompress_8cpp_source.html#l00754">DidUncompress::UpdateDSData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (NULL == pUserArg)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="structTStructForGetBmData.html">TStructForGetBmData</a>* pObj = (<a class="code" href="structTStructForGetBmData.html">TStructForGetBmData</a>*)pUserArg;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (NULL == pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">pFullData</a> || NULL == pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> iPos = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> iRecSize = ((<a class="code" href="classCDidStructApi.html">CDidStructApi</a>*)pDidStruct)-&gt;mDidInfo.m_dwRRecSize;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> stk_id = *((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)pRecBuf);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span>(!pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>-&gt;count(stk_id))</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a7500f993919aa8186e65e6a1b7bdc016">iTotalStk</a> &gt;= pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a438ac34ed7dfb521c5ddc8256ba83322">iBufferSize</a>/iRecSize)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        (*(pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>))[stk_id] = pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a7500f993919aa8186e65e6a1b7bdc016">iTotalStk</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a7500f993919aa8186e65e6a1b7bdc016">iTotalStk</a>++;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">char</span>* pPos = pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">pFullData</a> + ((pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a7500f993919aa8186e65e6a1b7bdc016">iTotalStk</a>-1) * iRecSize);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//copy data to full data buffer</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        memcpy(pPos, pRecBuf, iRecSize);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        iPos = iRecSize * (*(pObj-&gt;<a class="code" href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">pStkIDMapHash</a>))[stk_id];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (iPos + iRecSize &gt; pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a438ac34ed7dfb521c5ddc8256ba83322">iBufferSize</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">char</span>* pPos = pObj-&gt;<a class="code" href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">pFullData</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        pPos += iPos;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (*(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)pPos != stk_id)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">//copy data to full data buffer</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        memcpy(pPos, pRecBuf, iRecSize);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="ttc" id="classCDidStructApi_html"><div class="ttname"><a href="classCDidStructApi.html">CDidStructApi</a></div><div class="ttdef"><b>Definition:</b> <a href="dscomapi_8h_source.html#l00027">dscomapi.h:27</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_a438ac34ed7dfb521c5ddc8256ba83322"><div class="ttname"><a href="structTStructForGetBmData.html#a438ac34ed7dfb521c5ddc8256ba83322">TStructForGetBmData::iBufferSize</a></div><div class="ttdeci">unsigned int iBufferSize</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00034">DidUncompress.h:34</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html"><div class="ttname"><a href="structTStructForGetBmData.html">TStructForGetBmData</a></div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00030">DidUncompress.h:30</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_ad1cfcb5308e99d4b8e2124904acdb5ff"><div class="ttname"><a href="structTStructForGetBmData.html#ad1cfcb5308e99d4b8e2124904acdb5ff">TStructForGetBmData::pStkIDMapHash</a></div><div class="ttdeci">STKIDMAP * pStkIDMapHash</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00032">DidUncompress.h:32</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_a7500f993919aa8186e65e6a1b7bdc016"><div class="ttname"><a href="structTStructForGetBmData.html#a7500f993919aa8186e65e6a1b7bdc016">TStructForGetBmData::iTotalStk</a></div><div class="ttdeci">unsigned int iTotalStk</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00035">DidUncompress.h:35</a></div></div>
+<div class="ttc" id="structTStructForGetBmData_html_a2b5cd44e895bd43572ea50bbb4b8cd8f"><div class="ttname"><a href="structTStructForGetBmData.html#a2b5cd44e895bd43572ea50bbb4b8cd8f">TStructForGetBmData::pFullData</a></div><div class="ttdeci">char * pFullData</div><div class="ttdef"><b>Definition:</b> <a href="DidUncompress_8h_source.html#l00033">DidUncompress.h:33</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="DidUncompress_8cpp_acc490fd3a041dcd5b92695bcac50d0fc_icgraph.png" border="0" usemap="#DidUncompress_8cpp_acc490fd3a041dcd5b92695bcac50d0fc_icgraph" alt=""/></div>
+<map name="DidUncompress_8cpp_acc490fd3a041dcd5b92695bcac50d0fc_icgraph" id="DidUncompress_8cpp_acc490fd3a041dcd5b92695bcac50d0fc_icgraph">
+<area shape="rect" id="node2" href="classDidUncompress.html#a7e1066ef710795951412447d427adac9" title="DidUncompress::Initialize" alt="" coords="165,5,337,32"/><area shape="rect" id="node3" href="classDidUncompress.html#a0d3e1fb12d2d235583cda1589c68fbe3" title="DidUncompress::UpdateDSData" alt="" coords="144,56,357,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

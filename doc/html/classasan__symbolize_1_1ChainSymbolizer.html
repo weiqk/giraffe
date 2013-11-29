@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: asan_symbolize.ChainSymbolizer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceasan__symbolize.html">asan_symbolize</a></li><li class="navelem"><a class="el" href="classasan__symbolize_1_1ChainSymbolizer.html">ChainSymbolizer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classasan__symbolize_1_1ChainSymbolizer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">asan_symbolize.ChainSymbolizer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 asan_symbolize.ChainSymbolizer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1ChainSymbolizer__inherit__graph.png" border="0" usemap="#asan__symbolize_8ChainSymbolizer_inherit__map" alt="Inheritance graph"/></div>
+<map name="asan__symbolize_8ChainSymbolizer_inherit__map" id="asan__symbolize_8ChainSymbolizer_inherit__map">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1Symbolizer.html" title="{asan_symbolize.Symbolizer\n||+ __init__()\l+ symbolize()\l}" alt="" coords="22,131,207,223"/></map>
+</div>
+<div class="dynheader">
+asan_symbolize.ChainSymbolizer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1ChainSymbolizer__coll__graph.png" border="0" usemap="#asan__symbolize_8ChainSymbolizer_coll__map" alt="Collaboration graph"/></div>
+<map name="asan__symbolize_8ChainSymbolizer_coll__map" id="asan__symbolize_8ChainSymbolizer_coll__map">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1Symbolizer.html" title="{asan_symbolize.Symbolizer\n||+ __init__()\l+ symbolize()\l}" alt="" coords="22,131,207,223"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a52abcd4b49f0d092f6876b29d21709b4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">__init__</a></td></tr>
+<tr class="separator:a52abcd4b49f0d092f6876b29d21709b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bab8130f2097fe4a4fe38dc32672cf"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">symbolize</a></td></tr>
+<tr class="separator:a96bab8130f2097fe4a4fe38dc32672cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af628d0b1832f44aec9afb8fda296b28d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">append_symbolizer</a></td></tr>
+<tr class="separator:af628d0b1832f44aec9afb8fda296b28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classasan__symbolize_1_1Symbolizer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasan__symbolize_1_1Symbolizer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classasan__symbolize_1_1Symbolizer.html">asan_symbolize.Symbolizer</a></td></tr>
+<tr class="memitem:aee2436e91868e66aac63bd884f82f469 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1Symbolizer.html#aee2436e91868e66aac63bd884f82f469">__init__</a></td></tr>
+<tr class="separator:aee2436e91868e66aac63bd884f82f469 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0985bb4630b3683c45f15be4f3d73378 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1Symbolizer.html#a0985bb4630b3683c45f15be4f3d73378">symbolize</a></td></tr>
+<tr class="separator:a0985bb4630b3683c45f15be4f3d73378 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a670673e81c39ef8fc59a2f606f9c961e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">symbolizer_list</a></td></tr>
+<tr class="separator:a670673e81c39ef8fc59a2f606f9c961e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00188">188</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a52abcd4b49f0d092f6876b29d21709b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.ChainSymbolizer.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>symbolizer_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00189">189</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">  189</a></span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">__init__</a>(self, symbolizer_list):</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">  191</a></span>&#160;    super(ChainSymbolizer, self).<a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">__init__</a>()</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">symbolizer_list</a> = symbolizer_list</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a52abcd4b49f0d092f6876b29d21709b4"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a52abcd4b49f0d092f6876b29d21709b4">asan_symbolize.ChainSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00189">asan_symbolize.py:189</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a670673e81c39ef8fc59a2f606f9c961e"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">asan_symbolize.ChainSymbolizer.symbolizer_list</a></div><div class="ttdeci">symbolizer_list</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00191">asan_symbolize.py:191</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af628d0b1832f44aec9afb8fda296b28d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.ChainSymbolizer.append_symbolizer </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>symbolizer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00202">202</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">  202</a></span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">append_symbolizer</a>(self, symbolizer):</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    self.symbolizer_list.append(symbolizer)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_af628d0b1832f44aec9afb8fda296b28d"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#af628d0b1832f44aec9afb8fda296b28d">asan_symbolize.ChainSymbolizer.append_symbolizer</a></div><div class="ttdeci">def append_symbolizer</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00202">asan_symbolize.py:202</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a96bab8130f2097fe4a4fe38dc32672cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.ChainSymbolizer.symbolize </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Overrides Symbolizer.symbolize.</pre> 
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00193">193</a> 行定义.</p>
+
+<p>参考 <a class="el" href="asan__symbolize_8py_source.html#l00191">asan_symbolize.ChainSymbolizer.symbolizer_list</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">  193</a></span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Overrides Symbolizer.symbolize.&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">for</span> symbolizer <span class="keywordflow">in</span> self.<a class="code" href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">symbolizer_list</a>:</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">if</span> symbolizer:</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        result = symbolizer.symbolize(addr, binary, offset)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">if</span> result:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;          <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a670673e81c39ef8fc59a2f606f9c961e"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a670673e81c39ef8fc59a2f606f9c961e">asan_symbolize.ChainSymbolizer.symbolizer_list</a></div><div class="ttdeci">symbolizer_list</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00191">asan_symbolize.py:191</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1ChainSymbolizer_html_a96bab8130f2097fe4a4fe38dc32672cf"><div class="ttname"><a href="classasan__symbolize_1_1ChainSymbolizer.html#a96bab8130f2097fe4a4fe38dc32672cf">asan_symbolize.ChainSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00193">asan_symbolize.py:193</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a670673e81c39ef8fc59a2f606f9c961e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.ChainSymbolizer.symbolizer_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00191">191</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00193">asan_symbolize.ChainSymbolizer.symbolize()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>scripts/<a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

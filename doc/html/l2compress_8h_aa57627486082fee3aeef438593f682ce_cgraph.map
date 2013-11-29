@@ -1,0 +1,8 @@
+<map id="CompressL2Queue" name="CompressL2Queue">
+<area shape="rect" id="node2" href="$classCBitStream.html#a81968d041a157363b3d895d9fb17aa24" title="CBitStream::EncodeData" alt="" coords="189,56,360,83"/>
+<area shape="rect" id="node4" href="$classCBitStream.html#a46d785c4e00db865b14f6fd49cd1d15f" title="CBitStream::Put" alt="" coords="450,107,569,133"/>
+<area shape="rect" id="node6" href="$classCBitStream.html#ae23b91c66cf460235e06cc2c302252a6" title="CBitStream::GetCurPos" alt="" coords="193,157,356,184"/>
+<area shape="rect" id="node7" href="$classCBitStream.html#a571bacb8af3fdae76059f0fe409b1e55" title="CBitStream::SetBuffer" alt="" coords="198,208,351,235"/>
+<area shape="rect" id="node3" href="$classCBitStream.html#aa0087f4250131949c3ef30cbdbead314" title="CBitStream::EncodeFindMatch" alt="" coords="408,5,611,32"/>
+<area shape="rect" id="node5" href="$structBITCODE.html#a01d527a5fa70d902dd1038322d22e984" title="BITCODE::IsOriginalData" alt="" coords="423,56,596,83"/>
+</map>

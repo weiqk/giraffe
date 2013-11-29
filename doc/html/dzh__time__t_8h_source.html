@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: dzh_time_t.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dzh_time_t.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dzh__time__t_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/********************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    created:    2012:12:12   12:40</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    filename:   dzh_time_t.h</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    author:     fu.changyou</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    purpose:    大智慧时间类定义</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    attention:  大智慧时间是GM时间，即格林威治时间，因此在构造时需要传入该时间所对应的时区信息</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*********************************************************************/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _DZH_TIME_T_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _DZH_TIME_T_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef INT64</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if defined(WIN32)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int64 <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">typedef</span> __int64 <a class="code" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  <a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">   22</a></span>&#160;<span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">   23</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a4ae1dab0fb4b072a66584546209e7d58">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  <a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifdef __linux </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_DZH_TIME_SECOND     17592186044415ll  //大智慧时间的最大值</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INVALID_DZH_TIME        0xFFFFFFFFFFFFFFFFll  //无效的大智慧时间</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a267cdef4c0bc4f1fa7915eff13f76fbf">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_DZH_TIME_SECOND     17592186044415i64   //大智慧时间的最大值</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INVALID_DZH_TIME        0xFFFFFFFFFFFFFFFFi64  //无效的大智慧时间</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/*时间相关格式代码为：</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *%Y（四位年份）%y（两位年份）</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *%m（月份)</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *%d (日期)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> *%H（小时，24小时），%h（小时，12小时 + AM/PM）</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> *%M（分钟）</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> *%S（秒）</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> *%&lt;digit&gt;u （分数秒，精度&lt;digit&gt;[01-06]）*/</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aa7c5698481d531da2be789db01db3b1c">   46</a></span>&#160;<span class="preprocessor">#define DZH_TIME_FORMAT_4YEAR   &quot;%Y&quot;    //四位年份</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aa493c2a55aa218ff36e2f56fffb1e142">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_2YEAR   &quot;%y&quot;    //两位年份 前面两位省略</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ad856741f828b877d6c38949423b5391f">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_MONTH   &quot;%m&quot;    //月份</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ac94c954dfe9187debdcb184ea50ed80b">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_DAY     &quot;%d&quot;    //日期</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a80f2b97e34bef3377c7ab6ec18fe03ab">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_24HOUR  &quot;%H&quot;    //24小时</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a616189d45609ce140af36cfd5e0c7de3">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_12HOUR  &quot;%h&quot;    //12小时 + AM/PM</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a9cecd2ccb64a01d619fba260dbeacffa">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_MINUTE  &quot;%M&quot;    //分钟</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aacf56de5aae04b74f9639315e1d7974b">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DZH_TIME_FORMAT_SECOND  &quot;%S&quot;    //秒</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aaa9cf2b0c4d25a046fb9b7a68d6eb4d5">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STR_TIME_FORMAT_1       &quot;%Y%m%d%H%M%S%06u&quot; //精确到微妙的YYYYMMDD24HMISSUUUUUU</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ae3cba916e94eac266ecc6a2bb02224a4">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STR_TIME_FORMAT_2       &quot;%Y-%m-%d %H:%M:%S %06u&quot; //精确到微妙的YYYY-MM-DD 24H:MI:SS UUUUUU</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a940241503bf07b4aee05ace320d17618">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STR_TIME_FORMAT_3       &quot;%Y%m%d%H%M%S&quot;      //精确到微妙的YYYYMMDD24HMISS</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ac7689dada8e032081952494de588dd0b">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STR_TIME_FORMAT_4       &quot;%Y-%m-%d %H:%M:%S&quot; //精确到微妙的YYYY-MM-DD 24H:MI:SS</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//世界时区相对于标准时间的偏移分钟数定义</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a77e4acccb58225583aad0b05d56efdc6">   60</a></span>&#160;<span class="preprocessor">#define ZONE_MINUTE_UTCN1200 -720  //</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#af995ec3aa39b251cb00ea1a1f0fee8bc">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN1100 -660  //</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a7de6a7b9b99ad4fa3a2f17df97036c78">   62</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN1000 -600  //℉ST - 夏威夷－阿留申标准时间）</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a2353007abf4f50cbd857eeb5a2bda847">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN930  -570  //</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aa069439728cca7380d8d44c7ed270200">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN900  -540  //（AKST - 阿拉斯加标准时间）</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ab0de25135159bed580e9729e7a87fead">   65</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN800  -480  //（PST - 太平洋标准时间）</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a765c899cb0b5376fa6f4cc2ee8e697ee">   66</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN700  -420  //（MST - 北美山区标准时间）</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a6010a42cc853a6261e911c2aa8413365">   67</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN600  -360  //（CST - 北美中部标准时间）</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a42478a22338db87fd0c50a39d232c8a2">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN500  -300  //（EST - 北美东部标准时间）</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a5ea5fe7a5c13558811fb95f31454ab22">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN430  -270  //</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ab0a889b7a30cd74d7cf22eaaeeba2bd4">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN400  -240  //（AST - 大西洋标准时间）</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a6b65e222fe0bbb46d71a155dc9072e66">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN330  -210  //（NST - 纽芬兰岛标准时间）</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a5716f3597b1d22ce441733a1e6acacc1">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN300  -180  //</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#af7455f9cfd66f2c8568148f7d17da8bb">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN200  -120  //</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ada660ab40757d7494ca49e5a411f5819">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCN100  -60   //</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a0ab6f51c9885685e9006a79bb6864c97">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTC000    0    //（WET - 欧洲西部时区，GMT - 格林尼治标准时间）</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a23fa5db469d288657c095aee59164834">   76</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP100   60   //（CET - 欧洲中部时区）</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ad0305b5051a8774ab7c3106bad50eee4">   77</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP200   120  //（EET - 欧洲东部时区）</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#add579bff774a8e55719ec2f4baad564a">   78</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP300   180  //（MSK - 莫斯科时区）</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a157626e56789b5cf71c9185a5596c63a">   79</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP330   210  //</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a7f3ff9abc8ae996118dad83985c9022d">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP400   240  //</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ae7e0a31b62e83b9b3f6ac9a8f5495529">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP430   270  //</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a159059cebce3825e6ff35808520e7e43">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP500   300  //</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a3483a075ed32842c34a707049c5a1999">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP530   330  //</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a5a4cf04958bf7f5b546aaee596c93d4b">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP545   345  //</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a162d2960a1d76f5d37ad268dcaf7b494">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP600   360  //</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a3d408d708b45cb652ac11ad75bbbad57">   86</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP630   390  //</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a2e0d7c77dd95b278b6cf615d0ede79e6">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP700   420  //</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#af714ec310db8d144f408801d8c27cc60">   88</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP800   480  //（CST - 中国标准时间）</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a3acabdac7153eecf634d4ee4e770d9ee">   89</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP900   540  //（KST- 韩国标准时间）</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#af9b1ad1853c563dcc123a68e360b2fa9">   90</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP930   570  //（ACST - 澳洲中部标准时间）</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ad91d184de3a708643f75e8e400c35397">   91</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1000  600  //（AEST - 澳洲东部标准时间）</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ab049d14b62bc73cbb903a4bc8a435f4b">   92</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1030  630  //</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a4fc4b93b4ba75ed78ca6895150e203ea">   93</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1100  660  //</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a0024f8a81f8c149ee787246e37f9174f">   94</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1130  690  //</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a3d75359a7ef1742443cfbb1a99dea6f2">   95</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1200  720  //</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#a92bd7e5bbe583d84bc720ad1c8488e10">   96</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1245  765  //</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#aef72fd5d8fbb38f6079d617191f8801f">   97</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1300  780  //</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ae8fca3be401153b2ee00be46765b5ed0">   98</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZONE_MINUTE_UTCP1400  840  //</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/*大智慧TM时间结构*/</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html">  101</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structTDzhTimeNumStruct.html">TDzhTimeNumStruct</a></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#ada1d6cf6e1536ca62f26045be15d3dd9">  103</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> <a class="code" href="structTDzhTimeNumStruct.html#ada1d6cf6e1536ca62f26045be15d3dd9">uYear</a>;     <span class="comment">/*year, from 0*/</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#ad83153e75d132031b8e25a1144aef2d5">  104</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="code" href="structTDzhTimeNumStruct.html#ad83153e75d132031b8e25a1144aef2d5">uMonth</a>;    <span class="comment">/*month from 1-12*/</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a79ad43f598745d7b68f64e82f6da0e48">  105</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="code" href="structTDzhTimeNumStruct.html#a79ad43f598745d7b68f64e82f6da0e48">uDay</a>;      <span class="comment">/*day from 1-31*/</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a2e4f0ea0f240d993bc663ff1d5547360">  106</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="code" href="structTDzhTimeNumStruct.html#a2e4f0ea0f240d993bc663ff1d5547360">uHour</a>;     <span class="comment">/*hour from 0-23*/</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a4477b71085912cb54bac7b990b8b7ed3">  107</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="code" href="structTDzhTimeNumStruct.html#a4477b71085912cb54bac7b990b8b7ed3">uMinute</a>;   <span class="comment">/*minute from 0-59*/</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a152f36affd6cf6e139abe662d904e90d">  108</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="code" href="structTDzhTimeNumStruct.html#a152f36affd6cf6e139abe662d904e90d">uSecond</a>;   <span class="comment">/*second from 0-59*/</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a6c3f74f994e41ab190e844d27f152698">  109</a></span>&#160;    <a class="code" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a> <a class="code" href="structTDzhTimeNumStruct.html#a6c3f74f994e41ab190e844d27f152698">uWeekDay</a>;  <span class="comment">/*week days since Sunday - [0,6]*/</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a92a1cd4f1cf1d0107d1110dd95c426f7">  110</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> <a class="code" href="structTDzhTimeNumStruct.html#a92a1cd4f1cf1d0107d1110dd95c426f7">uMsec</a>;     <span class="comment">/*millisecond from 0-999*/</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a0b36e50cb96ea3c22a48d1d4dc6a8f18">  111</a></span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> <a class="code" href="structTDzhTimeNumStruct.html#a0b36e50cb96ea3c22a48d1d4dc6a8f18">uUsec</a>;     <span class="comment">/*microsecond from 0-999*/</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a92140703bd4dbf85c6ad60ebe62d15c8">  112</a></span>&#160;    <a class="code" href="structTDzhTimeNumStruct.html#a92140703bd4dbf85c6ad60ebe62d15c8">TDzhTimeNumStruct</a>()</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#ada1d6cf6e1536ca62f26045be15d3dd9">uYear</a> = <a class="code" href="structTDzhTimeNumStruct.html#a92a1cd4f1cf1d0107d1110dd95c426f7">uMsec</a> = <a class="code" href="structTDzhTimeNumStruct.html#a0b36e50cb96ea3c22a48d1d4dc6a8f18">uUsec</a> = 0;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#ad83153e75d132031b8e25a1144aef2d5">uMonth</a> = <a class="code" href="structTDzhTimeNumStruct.html#a79ad43f598745d7b68f64e82f6da0e48">uDay</a> = <a class="code" href="structTDzhTimeNumStruct.html#a2e4f0ea0f240d993bc663ff1d5547360">uHour</a> = <a class="code" href="structTDzhTimeNumStruct.html#a4477b71085912cb54bac7b990b8b7ed3">uMinute</a> = <a class="code" href="structTDzhTimeNumStruct.html#a152f36affd6cf6e139abe662d904e90d">uSecond</a> = <a class="code" href="structTDzhTimeNumStruct.html#a6c3f74f994e41ab190e844d27f152698">uWeekDay</a> = 0;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structTDzhTimeNumStruct.html#a618bdb16e1c3eee6dd4dcfd080dfb220">  117</a></span>&#160;    <a class="code" href="structTDzhTimeNumStruct.html#a618bdb16e1c3eee6dd4dcfd080dfb220">TDzhTimeNumStruct</a>(<span class="keyword">const</span> <a class="code" href="structTDzhTimeNumStruct.html">TDzhTimeNumStruct</a>&amp; t)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#ada1d6cf6e1536ca62f26045be15d3dd9">uYear</a>   = t.<a class="code" href="structTDzhTimeNumStruct.html#ada1d6cf6e1536ca62f26045be15d3dd9">uYear</a>;     <span class="comment">/*year, from 0*/</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#ad83153e75d132031b8e25a1144aef2d5">uMonth</a>  = t.<a class="code" href="structTDzhTimeNumStruct.html#ad83153e75d132031b8e25a1144aef2d5">uMonth</a>;    <span class="comment">/*month from 1-12*/</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a79ad43f598745d7b68f64e82f6da0e48">uDay</a>    = t.<a class="code" href="structTDzhTimeNumStruct.html#a79ad43f598745d7b68f64e82f6da0e48">uDay</a>;      <span class="comment">/*day from 1-31*/</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a2e4f0ea0f240d993bc663ff1d5547360">uHour</a>   = t.<a class="code" href="structTDzhTimeNumStruct.html#a2e4f0ea0f240d993bc663ff1d5547360">uHour</a>;     <span class="comment">/*hour from 0-23*/</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a4477b71085912cb54bac7b990b8b7ed3">uMinute</a> = t.<a class="code" href="structTDzhTimeNumStruct.html#a4477b71085912cb54bac7b990b8b7ed3">uMinute</a>;   <span class="comment">/*minute from 0-59*/</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a152f36affd6cf6e139abe662d904e90d">uSecond</a> = t.<a class="code" href="structTDzhTimeNumStruct.html#a152f36affd6cf6e139abe662d904e90d">uSecond</a>;   <span class="comment">/*second from 0-59*/</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a92a1cd4f1cf1d0107d1110dd95c426f7">uMsec</a>   = t.<a class="code" href="structTDzhTimeNumStruct.html#a92a1cd4f1cf1d0107d1110dd95c426f7">uMsec</a>;     <span class="comment">/*millisecond from 0-999*/</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a0b36e50cb96ea3c22a48d1d4dc6a8f18">uUsec</a>   = t.<a class="code" href="structTDzhTimeNumStruct.html#a0b36e50cb96ea3c22a48d1d4dc6a8f18">uUsec</a>;     <span class="comment">/*microsecond from 0-999*/</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="structTDzhTimeNumStruct.html#a6c3f74f994e41ab190e844d27f152698">uWeekDay</a> = t.<a class="code" href="structTDzhTimeNumStruct.html#a6c3f74f994e41ab190e844d27f152698">uWeekDay</a>; <span class="comment">/*week days since Sunday - [0,6]*/</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef DLL_FILE</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span><span class="keyword">class </span>_declspec(dllexport) dzh_time_t <span class="comment">//导出类</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;#elif __linux </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;class dzh_time_t</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;#else</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901">  136</a></span>&#160;class <a class="code" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901">_declspec</a>(dllimport) dzh_time_t</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;#endif</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">//构造一个空的大智慧时间</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    dzh_time_t();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">//传入一个dzh_time_t</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    dzh_time_t(<span class="keyword">const</span> dzh_time_t&amp; uDzhTime);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">//传入一个UINT64</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    dzh_time_t(<a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> uDzhTime);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">//分别传入整形表示的日期和时间，如dzh_time_t(20121221,235959),表示2012年12月21日23点59分59秒</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    dzh_time_t(<a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> uDate, <a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> uTime);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">//传入大智慧的秒、毫秒、微妙</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    dzh_time_t(<a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> uSecFrom1900, <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> uMsec, <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> uUsec);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">/*传入精确到微妙的时间，NULL表示获取当前时间,</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">     *格式为YYYYMMDD24HMISS+3字节毫秒+3字节微妙,</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">     *如20121212124039020099，表示2012年12月12日 12时40分39秒 20毫秒 99微妙*/</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    dzh_time_t(<span class="keyword">const</span> <span class="keywordtype">char</span>* pTime, <span class="keywordtype">short</span> iZoneMinutes=0);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">//传入一个格林威治的time_t时间</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    dzh_time_t(time_t &amp;tTime);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">//传入一个tm结构，为NULL表示获取当前时间</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    dzh_time_t(<span class="keyword">struct</span> tm* pTime, <span class="keywordtype">short</span> iZoneMinutes=0);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//分别传入年月日时分秒及毫秒和微妙，小时均为24小时制</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    dzh_time_t(<span class="keyword">const</span> <span class="keywordtype">char</span>* pYear, <span class="keyword">const</span> <span class="keywordtype">char</span>* pMonth, <span class="keyword">const</span> <span class="keywordtype">char</span>* pDay</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        , <span class="keyword">const</span> <span class="keywordtype">char</span>* pHour, <span class="keyword">const</span> <span class="keywordtype">char</span>* pMinute, <span class="keyword">const</span> <span class="keywordtype">char</span>* pSecond</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        , <span class="keyword">const</span> <span class="keywordtype">char</span>* pMsec=NULL, <span class="keyword">const</span> <span class="keywordtype">char</span>* pUsec=NULL, <span class="keywordtype">short</span> iZoneMinutes=0);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">//分别传入年月日时分秒及毫秒和微妙，小时均为24小时制</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    dzh_time_t(<span class="keywordtype">int</span> y, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> minute, <span class="keywordtype">int</span> s, <span class="keywordtype">int</span> ms=0, <span class="keywordtype">int</span> us=0, <span class="keywordtype">short</span> iZoneMinutes=0);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">/*将大智慧时间按照要求格式化成字符串，同时支持时区计算</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">     *tTime：要格式化的大智慧时间，fmt：格式化参数，iZoneMinutes：时区信息</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">     *返回的是tTime+iZoneMinutes之后的时间字符串</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* FormatTimeToString(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt=<a class="code" href="dzh__time__t_8h.html#aaa9cf2b0c4d25a046fb9b7a68d6eb4d5">STR_TIME_FORMAT_1</a></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        , <span class="keywordtype">char</span>* pOutBuffer = NULL</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        , <span class="keywordtype">int</span> iBufferLen = 0</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        , <span class="keywordtype">short</span> iZoneMinutes=0)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> _FormatTimeToString(*<span class="keyword">this</span>, fmt, pOutBuffer, iBufferLen, iZoneMinutes);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">//将大智慧时间转换成TDzhTimeNumStruct</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">struct </span><a class="code" href="structTDzhTimeNumStruct.html">TDzhTimeNumStruct</a> DzhTM();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    dzh_time_t <a class="code" href="tinystr_8cpp.html#a6ee35bce93b3aaf8a2353471c0dd2d58">operator+</a>(<span class="keyword">const</span> dzh_time_t&amp; t);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    dzh_time_t operator-(<span class="keyword">const</span> dzh_time_t&amp; t);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    dzh_time_t <a class="code" href="tinystr_8cpp.html#a6ee35bce93b3aaf8a2353471c0dd2d58">operator+</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    dzh_time_t operator-(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">const</span> dzh_time_t&amp; operator+=(<span class="keyword">const</span> dzh_time_t&amp; t);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">const</span> dzh_time_t&amp; operator-=(<span class="keyword">const</span> dzh_time_t&amp; t);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> dzh_time_t&amp; operator+=(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">const</span> dzh_time_t&amp; operator-=(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">const</span> dzh_time_t&amp; operator=(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">const</span> dzh_time_t&amp; operator=(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ab43569e63f57a29dbc7deebfee90f98e">operator==</a>(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ad56c73c4b133b623f29fdf9e5240296d">operator!=</a>(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#a1390d728e894f489d3f02cedbaf53e35">operator&gt;</a>(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#a28e13086a32670328b9f4fac22f09ccb">operator&lt;</a>(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ad5a4ecbced1596c900ac7d7a51660357">operator&gt;=</a>(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ab7fa4756616605a2697128067b80ffa5">operator&lt;=</a>(<span class="keyword">const</span> dzh_time_t&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ab43569e63f57a29dbc7deebfee90f98e">operator==</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ad56c73c4b133b623f29fdf9e5240296d">operator!=</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#a1390d728e894f489d3f02cedbaf53e35">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#a28e13086a32670328b9f4fac22f09ccb">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ad5a4ecbced1596c900ac7d7a51660357">operator&gt;=</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="tinystr_8h.html#ab7fa4756616605a2697128067b80ffa5">operator&lt;=</a>(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    time_t ToTime();        <span class="comment">//转换成time_t格式，会丢失毫秒和微秒</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">struct </span>tm* ToGMTime(<span class="keyword">struct</span> tm&amp; tmTime);         <span class="comment">//转换成GMT的tm格式，tm_yday存放的是毫秒和微秒值（毫秒自动转换成微秒）</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">struct </span>tm* ToLocalTime(<span class="keyword">struct</span> tm&amp; tmTime, <span class="keywordtype">short</span> iZoneMinutes=0);    <span class="comment">//转换成本地时间，tm_yday存放的是毫秒和微秒值（毫秒自动转换成微秒），tm_isdst值为0</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> To64(){<span class="keywordflow">return</span> _value;}               <span class="comment">//UINT64内存块</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> Second(){<span class="keywordflow">return</span> secs;}               <span class="comment">//获取秒 from 1900</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>   MilliSecond(){<span class="keywordflow">return</span> msecs;}         <span class="comment">//获取毫秒</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>   MicroSecond(){<span class="keywordflow">return</span> usecs;}         <span class="comment">//获取微秒</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    dzh_time_t&amp;   SetValue(<a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> v){_value = v; <span class="keywordflow">return</span> *<span class="keyword">this</span>;} <span class="comment">//设置值</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    dzh_time_t&amp;   SetSecond(<a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> v);          <span class="comment">//设置秒 from 1900</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    dzh_time_t&amp;   SetMilliSecond(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> v);       <span class="comment">//设置毫秒</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    dzh_time_t&amp;   SetMicroSecond(<a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> v);     <span class="comment">//设置微秒</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    dzh_time_t&amp;   AddSecond(<a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> v);          <span class="comment">//添加秒</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    dzh_time_t&amp;   AddMilliSecond(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> v);       <span class="comment">//添加毫秒</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    dzh_time_t&amp;   AddMicroSecond(<a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> v);     <span class="comment">//添加微秒</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    dzh_time_t&amp;   SubSecond(<a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> v);          <span class="comment">//减去秒</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    dzh_time_t&amp;   SubMilliSecond(<a class="code" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a> v);       <span class="comment">//减去毫秒</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    dzh_time_t&amp;   SubMicroSecond(<a class="code" href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> v);     <span class="comment">//减去微秒</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">//将字符串转换成大智慧时间，格式为YYYYMMDD24HMISS+3字节毫秒+3字节微妙</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">static</span> dzh_time_t StringToTime(<span class="keyword">const</span> <span class="keywordtype">char</span>* pStr, <span class="keywordtype">short</span> iZoneMinutes=0)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        dzh_time_t t;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        t._StringToDzhTime(pStr, iZoneMinutes);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="comment">//将字符串转换成大智慧时间，指定格式，并进行时区计算</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">static</span> dzh_time_t StringToTime(<span class="keyword">const</span> <span class="keywordtype">char</span>* pStr, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, <span class="keywordtype">short</span> iZoneMinutes = 0);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="comment">//获取当前时间，该时间是格林威治时间，经过了时区转换的,windows精确到毫秒，linux精确到微秒</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">static</span> dzh_time_t GetCurrentTime()</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        dzh_time_t t;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        t._GetCurrentTime();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">/*将大智慧时间转换成字符串, 转换后返回的是经过iZoneMinutes偏移的本地时间</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">    * 如大智慧时间是2012年12月20日 15点20分30秒 100毫秒 888微妙，iZoneMinutes是0分钟</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">    * 返回的结果是大智慧时间+iZoneMinutes，为20121220232030100888，即2012年12月20日 23点20分30秒 100毫秒 888微妙</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* TimeToString(dzh_time_t tTime</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        , <span class="keywordtype">char</span>* pOutBuffer = NULL</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        , <span class="keywordtype">int</span> iBufferLen = 0</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        , <span class="keywordtype">short</span> iZoneMinutes=0)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> tTime._TimeToString(tTime, pOutBuffer, iBufferLen, iZoneMinutes);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">/*将大智慧时间按照要求格式化成字符串，同时支持时区计算</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">     *tTime：要格式化的大智慧时间，fmt：格式化参数，iZoneMinutes：时区信息</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">     *返回的是tTime+iZoneMinutes之后的时间字符串</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* FormatTimeToString(dzh_time_t&amp; tTime</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        , <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt=<a class="code" href="dzh__time__t_8h.html#aaa9cf2b0c4d25a046fb9b7a68d6eb4d5">STR_TIME_FORMAT_1</a></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        , <span class="keywordtype">char</span>* pOutBuffer = NULL</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        , <span class="keywordtype">int</span> iBufferLen = 0</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        , <span class="keywordtype">short</span> iZoneMinutes=0)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> tTime._FormatTimeToString(tTime, fmt, pOutBuffer, iBufferLen, iZoneMinutes);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">/*将大智慧时间偏移某个时区得到格林威治的大智慧时间</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">    * tTime：需要进行偏移的大智慧时间</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">    * iZoneMinutes：需要进行偏移的分钟数</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">    * 返回偏移后的时间，计算方法是tTime-iZoneMinutes</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">    * 如北京时间</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">//static dzh_time_t GMTDzhTime(dzh_time_t&amp; tTime, short iZoneMinutes);</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="comment">//将大智慧时间转换成TDzhTimeNumStruct</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structTDzhTimeNumStruct.html">TDzhTimeNumStruct</a> DzhTM(dzh_time_t&amp; t);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">//大智慧TM时间转换成大智慧时间</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">static</span> dzh_time_t DzhTimeNumStruct2DzhTime(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structTDzhTimeNumStruct.html">TDzhTimeNumStruct</a>&amp; tTimeStruct);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    dzh_time_t operator*(<span class="keyword">const</span> dzh_time_t&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    dzh_time_t operator/(<span class="keyword">const</span> dzh_time_t&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    dzh_time_t operator*(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    dzh_time_t operator/(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    dzh_time_t operator*=(<span class="keyword">const</span> dzh_time_t&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    dzh_time_t operator/=(<span class="keyword">const</span> dzh_time_t&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    dzh_time_t operator*=(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    dzh_time_t operator/=(<span class="keyword">const</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&amp; t)<span class="keyword"> const</span>{<span class="keywordflow">return</span> <a class="code" href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a>;};</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">//格式为YYYYMMDD24HMISS+3字节毫秒+3字节微妙</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">void</span> _StringToDzhTime(<span class="keyword">const</span> <span class="keywordtype">char</span>* pStr, <span class="keywordtype">short</span> iZoneMinutes=0);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">//获取当前时间</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">void</span> _GetCurrentTime();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment">//将大智慧时间转换成字符串</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* _TimeToString(dzh_time_t&amp; tTime</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        , <span class="keywordtype">char</span>* pOutBuffer = NULL</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        , <span class="keywordtype">int</span> iBufferLen = 0</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        , <span class="keywordtype">short</span> iZoneMinutes=0)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">return</span> _FormatTimeToString(tTime, <a class="code" href="dzh__time__t_8h.html#aaa9cf2b0c4d25a046fb9b7a68d6eb4d5">STR_TIME_FORMAT_1</a>, pOutBuffer, iBufferLen, iZoneMinutes);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="comment">//将time_t转换成大智慧时间</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> Time2DzhTime(time_t &amp;tTime);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">//将tm时间转换成大智慧时间</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">void</span> TM2DzhTime(<span class="keyword">struct</span> tm* tmTime);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">//将大智慧时间按照某种格式转换成字符串时间，同时支持时区计算，计算方法是在大智慧时间上加上时区偏移量</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* _FormatTimeToString(dzh_time_t&amp; tTime</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        , <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt=<a class="code" href="dzh__time__t_8h.html#aaa9cf2b0c4d25a046fb9b7a68d6eb4d5">STR_TIME_FORMAT_1</a></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        , <span class="keywordtype">char</span>* pOutBuffer = NULL</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        , <span class="keywordtype">int</span> iBufferLen = 0</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        , <span class="keywordtype">short</span> iZoneMinutes=0);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keyword">mutable</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> secs:44;   <span class="comment">//1900年1月1日00:00:00到当前时刻的秒数,time_t</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keyword">mutable</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> msecs:10;  <span class="comment">//毫秒数</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="keyword">mutable</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> usecs:10;  <span class="comment">//微秒数</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        };</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keyword">mutable</span> <a class="code" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> _value;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    };</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="dzh__time__t_8h.html#abf32221a97af9f02de1e6d327917cf00">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> dzh_time_t&amp; t);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;};</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="dzh__time__t_8h.html#abf32221a97af9f02de1e6d327917cf00">  348</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="dzh__time__t_8h.html#abf32221a97af9f02de1e6d327917cf00">operator&lt;&lt;</a>(std::ostream&amp; os, dzh_time_t&amp; t)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;{</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* pStr = t.FormatTimeToString(<a class="code" href="dzh__time__t_8h.html#ae3cba916e94eac266ecc6a2bb02224a4">STR_TIME_FORMAT_2</a>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span> (NULL == pStr)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;(null)&quot;</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        os &lt;&lt; pStr;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="dzh__time__t_8h_html_aaa9cf2b0c4d25a046fb9b7a68d6eb4d5"><div class="ttname"><a href="dzh__time__t_8h.html#aaa9cf2b0c4d25a046fb9b7a68d6eb4d5">STR_TIME_FORMAT_1</a></div><div class="ttdeci">#define STR_TIME_FORMAT_1</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00054">dzh_time_t.h:54</a></div></div>
+<div class="ttc" id="tinystr_8h_html_a1390d728e894f489d3f02cedbaf53e35"><div class="ttname"><a href="tinystr_8h.html#a1390d728e894f489d3f02cedbaf53e35">operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00280">tinystr.h:280</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a4477b71085912cb54bac7b990b8b7ed3"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a4477b71085912cb54bac7b990b8b7ed3">TDzhTimeNumStruct::uMinute</a></div><div class="ttdeci">BYTE uMinute</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00107">dzh_time_t.h:107</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html"><div class="ttname"><a href="structTDzhTimeNumStruct.html">TDzhTimeNumStruct</a></div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00101">dzh_time_t.h:101</a></div></div>
+<div class="ttc" id="tinystr_8h_html_a28e13086a32670328b9f4fac22f09ccb"><div class="ttname"><a href="tinystr_8h.html#a28e13086a32670328b9f4fac22f09ccb">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00274">tinystr.h:274</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_abf32221a97af9f02de1e6d327917cf00"><div class="ttname"><a href="dzh__time__t_8h.html#abf32221a97af9f02de1e6d327917cf00">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, dzh_time_t &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00348">dzh_time_t.h:348</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a0b36e50cb96ea3c22a48d1d4dc6a8f18"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a0b36e50cb96ea3c22a48d1d4dc6a8f18">TDzhTimeNumStruct::uUsec</a></div><div class="ttdeci">WORD uUsec</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00111">dzh_time_t.h:111</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a6a2b55a6391419ed0b7b9da06e094b4b"><div class="ttname"><a href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a></div><div class="ttdeci">long long INT64</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00023">dzh_time_t.h:23</a></div></div>
+<div class="ttc" id="tinystr_8cpp_html_a6ee35bce93b3aaf8a2353471c0dd2d58"><div class="ttname"><a href="tinystr_8cpp.html#a6ee35bce93b3aaf8a2353471c0dd2d58">operator+</a></div><div class="ttdeci">TiXmlString operator+(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00086">tinystr.cpp:86</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a197942eefa7db30960ae396d68339b97"><div class="ttname"><a href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></div><div class="ttdeci">unsigned short WORD</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00024">dzh_time_t.h:24</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_ada1d6cf6e1536ca62f26045be15d3dd9"><div class="ttname"><a href="structTDzhTimeNumStruct.html#ada1d6cf6e1536ca62f26045be15d3dd9">TDzhTimeNumStruct::uYear</a></div><div class="ttdeci">WORD uYear</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00103">dzh_time_t.h:103</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a92a1cd4f1cf1d0107d1110dd95c426f7"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a92a1cd4f1cf1d0107d1110dd95c426f7">TDzhTimeNumStruct::uMsec</a></div><div class="ttdeci">WORD uMsec</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00110">dzh_time_t.h:110</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a152f36affd6cf6e139abe662d904e90d"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a152f36affd6cf6e139abe662d904e90d">TDzhTimeNumStruct::uSecond</a></div><div class="ttdeci">BYTE uSecond</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00108">dzh_time_t.h:108</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_ad83153e75d132031b8e25a1144aef2d5"><div class="ttname"><a href="structTDzhTimeNumStruct.html#ad83153e75d132031b8e25a1144aef2d5">TDzhTimeNumStruct::uMonth</a></div><div class="ttdeci">BYTE uMonth</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00104">dzh_time_t.h:104</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="dzh__time__t_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00026">dzh_time_t.h:26</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_ac4cbbaed12b3f648b1e523b20cdef901"><div class="ttname"><a href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901">_declspec</a></div><div class="ttdeci">class _declspec(dllimport) dzh_time_t</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00136">dzh_time_t.h:136</a></div></div>
+<div class="ttc" id="tinystr_8h_html_ab43569e63f57a29dbc7deebfee90f98e"><div class="ttname"><a href="tinystr_8h.html#ab43569e63f57a29dbc7deebfee90f98e">operator==</a></div><div class="ttdeci">bool operator==(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00269">tinystr.h:269</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_aca3d2f725ab1ec8a6d6d61bf2e0d1d7f"><div class="ttname"><a href="dzh__time__t_8h.html#aca3d2f725ab1ec8a6d6d61bf2e0d1d7f">INVALID_DZH_TIME</a></div><div class="ttdeci">#define INVALID_DZH_TIME</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00035">dzh_time_t.h:35</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a618bdb16e1c3eee6dd4dcfd080dfb220"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a618bdb16e1c3eee6dd4dcfd080dfb220">TDzhTimeNumStruct::TDzhTimeNumStruct</a></div><div class="ttdeci">TDzhTimeNumStruct(const TDzhTimeNumStruct &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00117">dzh_time_t.h:117</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a2e4f0ea0f240d993bc663ff1d5547360"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a2e4f0ea0f240d993bc663ff1d5547360">TDzhTimeNumStruct::uHour</a></div><div class="ttdeci">BYTE uHour</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00106">dzh_time_t.h:106</a></div></div>
+<div class="ttc" id="tinystr_8h_html_ad5a4ecbced1596c900ac7d7a51660357"><div class="ttname"><a href="tinystr_8h.html#ad5a4ecbced1596c900ac7d7a51660357">operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00282">tinystr.h:282</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a57be03562867144161c1bfee95ca8f7c"><div class="ttname"><a href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a></div><div class="ttdeci">unsigned long long UINT64</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00022">dzh_time_t.h:22</a></div></div>
+<div class="ttc" id="tinystr_8h_html_ad56c73c4b133b623f29fdf9e5240296d"><div class="ttname"><a href="tinystr_8h.html#ad56c73c4b133b623f29fdf9e5240296d">operator!=</a></div><div class="ttdeci">bool operator!=(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00279">tinystr.h:279</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a92140703bd4dbf85c6ad60ebe62d15c8"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a92140703bd4dbf85c6ad60ebe62d15c8">TDzhTimeNumStruct::TDzhTimeNumStruct</a></div><div class="ttdeci">TDzhTimeNumStruct()</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00112">dzh_time_t.h:112</a></div></div>
+<div class="ttc" id="dzh__time__t_8h_html_ae3cba916e94eac266ecc6a2bb02224a4"><div class="ttname"><a href="dzh__time__t_8h.html#ae3cba916e94eac266ecc6a2bb02224a4">STR_TIME_FORMAT_2</a></div><div class="ttdeci">#define STR_TIME_FORMAT_2</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00055">dzh_time_t.h:55</a></div></div>
+<div class="ttc" id="dscomapi_8h_html_a4ae1dab0fb4b072a66584546209e7d58"><div class="ttname"><a href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></div><div class="ttdeci">unsigned char BYTE</div><div class="ttdef"><b>Definition:</b> <a href="dscomapi_8h_source.html#l00012">dscomapi.h:12</a></div></div>
+<div class="ttc" id="tinystr_8h_html_ab7fa4756616605a2697128067b80ffa5"><div class="ttname"><a href="tinystr_8h.html#ab7fa4756616605a2697128067b80ffa5">operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const TiXmlString &amp;a, const TiXmlString &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00281">tinystr.h:281</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a79ad43f598745d7b68f64e82f6da0e48"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a79ad43f598745d7b68f64e82f6da0e48">TDzhTimeNumStruct::uDay</a></div><div class="ttdeci">BYTE uDay</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00105">dzh_time_t.h:105</a></div></div>
+<div class="ttc" id="structTDzhTimeNumStruct_html_a6c3f74f994e41ab190e844d27f152698"><div class="ttname"><a href="structTDzhTimeNumStruct.html#a6c3f74f994e41ab190e844d27f152698">TDzhTimeNumStruct::uWeekDay</a></div><div class="ttdeci">BYTE uWeekDay</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00109">dzh_time_t.h:109</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

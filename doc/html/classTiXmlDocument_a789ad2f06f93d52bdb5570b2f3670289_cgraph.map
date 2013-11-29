@@ -1,0 +1,22 @@
+<map id="TiXmlDocument::Parse" name="TiXmlDocument::Parse">
+<area shape="rect" id="node2" href="$structTiXmlCursor.html#a1e6fa622b59dafb71b6efe595105dcdd" title="TiXmlCursor::Clear" alt="" coords="706,86,841,113"/>
+<area shape="rect" id="node3" href="$classTiXmlDocument.html#ac66b8c28db86363315712a3574e87c35" title="TiXmlDocument::ClearError" alt="" coords="214,466,397,493"/>
+<area shape="rect" id="node4" href="$classTiXmlParsingData.html#a56908a17d7d7a6b2e511e62cf1d40d05" title="TiXmlParsingData::Cursor" alt="" coords="686,238,861,265"/>
+<area shape="rect" id="node5" href="$classTiXmlDeclaration.html#a5d974231f9e9a2f0542f15f3a46cdb76" title="Encoding. Will return an empty string if none was found. " alt="" coords="213,517,397,544"/>
+<area shape="rect" id="node6" href="$classTiXmlNode.html#ac1e3a8e7578be463b04617786120c2bb" title="TiXmlNode::Identify" alt="" coords="236,213,375,240"/>
+<area shape="rect" id="node7" href="$classTiXmlBase.html#ac0c3d66d8a9e6996a1fa016275e16875" title="TiXmlBase::SkipWhiteSpace" alt="" coords="446,10,637,37"/>
+<area shape="rect" id="node11" href="$classTiXmlBase.html#a51631e6986179558b9e5850723ed165a" title="TiXmlBase::StringEqual" alt="" coords="461,416,622,442"/>
+<area shape="rect" id="node15" href="$classTiXmlDocument.html#a735c23e318597b920c94eae77fa206de" title="TiXmlDocument::SetError" alt="" coords="455,213,627,240"/>
+<area shape="rect" id="node17" href="$classTiXmlNode.html#a1a881212554b759865f6cac79a851d38" title="TiXmlNode::LinkEndChild" alt="" coords="219,314,391,341"/>
+<area shape="rect" id="node19" href="$classTiXmlBase.html#a00e4edb0219d00a1379c856e5a1d2025" title="TiXmlBase::Parse" alt="" coords="241,568,369,594"/>
+<area shape="rect" id="node20" href="$classTiXmlDocument.html#a612360241b85bad0826b2a9ae9cda561" title="TiXmlDocument::TabSize" alt="" coords="219,618,391,645"/>
+<area shape="rect" id="node21" href="$classTiXmlNode.html#a9f43e6984fc7d4afd6eb32714c6b7b72" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="217,669,393,696"/>
+<area shape="rect" id="node9" href="$classTiXmlNode.html#aa66f4ebcd175204a168ed7c2d7b43071" title="TiXmlNode::GetDocument" alt="" coords="453,264,629,290"/>
+<area shape="rect" id="node13" href="$classTiXmlText.html#acb17ff7c5d09b2c839393445a3de5ea9" title="Turns on or off a CDATA representation of text. " alt="" coords="463,162,619,189"/>
+<area shape="rect" id="node14" href="$classTiXmlBase.html#ae22522b2e8e1ac43102d16394f639fc8" title="TiXmlBase::IsAlpha" alt="" coords="472,112,611,138"/>
+<area shape="rect" id="node8" href="$classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e" title="TiXmlBase::IsWhiteSpace" alt="" coords="685,10,861,37"/>
+<area shape="rect" id="node10" href="$classTiXmlNode.html#a8a4cda4b15c29f64cff419309aebed08" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="688,289,859,316"/>
+<area shape="rect" id="node12" href="$classTiXmlBase.html#a799f17405a86a5c2029618e85f11a097" title="TiXmlBase::ToLower" alt="" coords="701,416,845,442"/>
+<area shape="rect" id="node16" href="$classTiXmlParsingData.html#a65cee8ab77a36c605db08c84b4c30a7d" title="TiXmlParsingData::Stamp" alt="" coords="686,188,861,214"/>
+<area shape="rect" id="node18" href="$classTiXmlNode.html#a57b99d5c97d67a42b9752f5210a1ba5e" title="TiXmlNode::Type" alt="" coords="479,314,603,341"/>
+</map>

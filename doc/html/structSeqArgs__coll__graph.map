@@ -1,0 +1,7 @@
+<map id="SeqArgs" name="SeqArgs">
+<area shape="rect" id="node2" href="$structSeqFilter.html" title="{SeqFilter\n|+ m_cDatTypeName\l+ m_cKeyFieldName\l+ m_cFunName\l+ m_nUpdateDatType\l+ m_nMinTimeMins\l+ m_nMaxTimeMins\l|}" alt="" coords="5,191,155,342"/>
+<area shape="rect" id="node3" href="$structSeqBufArgs.html" title="{SeqBufArgs\n|+ m_dwDiskSavePartsNum\l+ m_dwMemSaveRevPartsNum\l+ m_dwBlkSize\l+ m_uint64BufSize\l|}" alt="" coords="180,206,389,327"/>
+<area shape="rect" id="node4" href="$structWeekTime.html" title="{WeekTime\n|+ m_byteNum\l|}" alt="" coords="414,228,519,305"/>
+<area shape="rect" id="node5" href="$structWeekDayTime.html" title="{WeekDayTime\n|+ m_cWeekDay\l+ m_wStartTime\l+ m_wEndTime\l|}" alt="" coords="407,5,525,112"/>
+<area shape="rect" id="node6" href="$structSeqNumArgs.html" title="{SeqNumArgs\n|+ m_dwMaxCodeNum\l+ m_dwMemMaxIndexNum\l+ m_dwLastMaxNum\l+ m_dwLastPartSize\l+ m_dwLastBufSize\l+ m_dwRcntPartNum\l+ m_dwRcntPartSzie\l+ m_dwRcntBufSize\l|}" alt="" coords="543,177,725,357"/>
+</map>

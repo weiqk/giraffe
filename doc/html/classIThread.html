@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: IThread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classIThread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IThread类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="basethread_8h_source.html">basethread.h</a>&gt;</code></p>
+<div class="dynheader">
+IThread 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIThread__coll__graph.png" border="0" usemap="#IThread_coll__map" alt="Collaboration graph"/></div>
+<map name="IThread_coll__map" id="IThread_coll__map">
+<area shape="rect" id="node2" href="classBaseThread.html" title="{BaseThread\n|+ zmqitems_\l|+ BaseThread()\l+ ~BaseThread()\l+ Start()\l+ Join()\l+ Cancel()\l+ AddZMQItem()\l+ RunThreadFunc()\l&#45; Run()\l&#45; ThreadFunc()\l}" alt="" coords="5,205,139,400"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a474e78c215ce8b9b722c4d7cd5fbf55e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a474e78c215ce8b9b722c4d7cd5fbf55e">IThread</a> ()</td></tr>
+<tr class="separator:a474e78c215ce8b9b722c4d7cd5fbf55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4876774252bd9e40ddfdb616505ecbf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a4876774252bd9e40ddfdb616505ecbf6">~IThread</a> ()</td></tr>
+<tr class="separator:a4876774252bd9e40ddfdb616505ecbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b284208548f8285901c2e34e7ad5919"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a8b284208548f8285901c2e34e7ad5919">Start</a> (<a class="el" href="basethread_8h.html#a9aaae50eff0ccb8efcf792874617403f">WorkThread</a> workthread, <a class="el" href="classBaseThread.html">BaseThread</a> *basethread)</td></tr>
+<tr class="separator:a8b284208548f8285901c2e34e7ad5919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437e2a9f5d5e0b0449ab5b3cf598fb17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a437e2a9f5d5e0b0449ab5b3cf598fb17">Join</a> ()</td></tr>
+<tr class="separator:a437e2a9f5d5e0b0449ab5b3cf598fb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f9e3f77a5c4fa3ef329f5019290fab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a90f9e3f77a5c4fa3ef329f5019290fab">Cancel</a> ()</td></tr>
+<tr class="separator:a90f9e3f77a5c4fa3ef329f5019290fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a548eab729aa20570564c0400c1b5e413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBaseThread.html">BaseThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a548eab729aa20570564c0400c1b5e413">pbasethread_</a></td></tr>
+<tr class="separator:a548eab729aa20570564c0400c1b5e413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a682e199128d3f4a43cf45b87bfb4e12b"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">tid_</a></td></tr>
+<tr class="separator:a682e199128d3f4a43cf45b87bfb4e12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00018">18</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a474e78c215ce8b9b722c4d7cd5fbf55e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IThread::IThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00023">23</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00021">pbasethread_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{<a class="code" href="classIThread.html#a548eab729aa20570564c0400c1b5e413">pbasethread_</a> = NULL;};</div>
+<div class="ttc" id="classIThread_html_a548eab729aa20570564c0400c1b5e413"><div class="ttname"><a href="classIThread.html#a548eab729aa20570564c0400c1b5e413">IThread::pbasethread_</a></div><div class="ttdeci">BaseThread * pbasethread_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00021">basethread.h:21</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4876774252bd9e40ddfdb616505ecbf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IThread::~IThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00024">24</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a90f9e3f77a5c4fa3ef329f5019290fab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IThread::Cancel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00050">50</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00061">tid_</a>.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00079">BaseThread::Cancel()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span>(pthread_cancel(<a class="code" href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">tid_</a>))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            cout&lt;&lt;<span class="stringliteral">&quot;can&#39;t cancel thread&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="ttc" id="classIThread_html_a682e199128d3f4a43cf45b87bfb4e12b"><div class="ttname"><a href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">IThread::tid_</a></div><div class="ttdeci">pthread_t tid_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00061">basethread.h:61</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIThread_a90f9e3f77a5c4fa3ef329f5019290fab_icgraph.png" border="0" usemap="#classIThread_a90f9e3f77a5c4fa3ef329f5019290fab_icgraph" alt=""/></div>
+<map name="classIThread_a90f9e3f77a5c4fa3ef329f5019290fab_icgraph" id="classIThread_a90f9e3f77a5c4fa3ef329f5019290fab_icgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a2348dbcdd968be7d53e4e824c1ab8cea" title="BaseThread::Cancel" alt="" coords="168,5,309,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a437e2a9f5d5e0b0449ab5b3cf598fb17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IThread::Join </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00039">39</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00061">tid_</a>.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00075">BaseThread::Join()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> * tret;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span>(pthread_join(<a class="code" href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">tid_</a>,&amp;tret))</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            cout&lt;&lt;<span class="stringliteral">&quot;can&#39;t join thread!&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="ttc" id="classIThread_html_a682e199128d3f4a43cf45b87bfb4e12b"><div class="ttname"><a href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">IThread::tid_</a></div><div class="ttdeci">pthread_t tid_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00061">basethread.h:61</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIThread_a437e2a9f5d5e0b0449ab5b3cf598fb17_icgraph.png" border="0" usemap="#classIThread_a437e2a9f5d5e0b0449ab5b3cf598fb17_icgraph" alt=""/></div>
+<map name="classIThread_a437e2a9f5d5e0b0449ab5b3cf598fb17_icgraph" id="classIThread_a437e2a9f5d5e0b0449ab5b3cf598fb17_icgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a97bc148706d1917e55fc67a2bf9c1808" title="BaseThread::Join" alt="" coords="153,5,277,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b284208548f8285901c2e34e7ad5919"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IThread::Start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="basethread_8h.html#a9aaae50eff0ccb8efcf792874617403f">WorkThread</a>&#160;</td>
+          <td class="paramname"><em>workthread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classBaseThread.html">BaseThread</a> *&#160;</td>
+          <td class="paramname"><em>basethread</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00025">25</a> 行定义.</p>
+
+<p>参考 <a class="el" href="basethread_8h_source.html#l00021">pbasethread_</a> , 以及 <a class="el" href="basethread_8h_source.html#l00061">tid_</a>.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00071">BaseThread::Start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classIThread.html#a548eab729aa20570564c0400c1b5e413">pbasethread_</a> = basethread;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">//pthread_attr_t attr;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">//pthread_attr_init(&amp;attr);</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">//pthread_attr_setdetachstate(&amp;attr,PTHREAD_CREATE_DETACHED);</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span>(pthread_create(&amp;<a class="code" href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">tid_</a>,NULL,workthread,<span class="keyword">this</span>))</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            cout&lt;&lt;<span class="stringliteral">&quot;can&#39;t create thread!&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="ttc" id="classIThread_html_a682e199128d3f4a43cf45b87bfb4e12b"><div class="ttname"><a href="classIThread.html#a682e199128d3f4a43cf45b87bfb4e12b">IThread::tid_</a></div><div class="ttdeci">pthread_t tid_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00061">basethread.h:61</a></div></div>
+<div class="ttc" id="classIThread_html_a548eab729aa20570564c0400c1b5e413"><div class="ttname"><a href="classIThread.html#a548eab729aa20570564c0400c1b5e413">IThread::pbasethread_</a></div><div class="ttdeci">BaseThread * pbasethread_</div><div class="ttdef"><b>Definition:</b> <a href="basethread_8h_source.html#l00021">basethread.h:21</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIThread_a8b284208548f8285901c2e34e7ad5919_icgraph.png" border="0" usemap="#classIThread_a8b284208548f8285901c2e34e7ad5919_icgraph" alt=""/></div>
+<map name="classIThread_a8b284208548f8285901c2e34e7ad5919_icgraph" id="classIThread_a8b284208548f8285901c2e34e7ad5919_icgraph">
+<area shape="rect" id="node2" href="classBaseThread.html#a24b523b2c3dec9c13b1271ed21e6cf5c" title="BaseThread::Start" alt="" coords="157,31,285,57"/><area shape="rect" id="node3" href="monitor_8cc.html#a3f62a1956335005c201c4eaeb873ccba" title="business_error_info thread:init zmq and start " alt="" coords="334,5,525,32"/><area shape="rect" id="node5" href="monitor_8cc.html#aaf791e283242b126b86976932a79141f" title="log thread:init zmq and start " alt="" coords="376,56,483,83"/><area shape="rect" id="node4" href="monitor_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="main " alt="" coords="573,31,624,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a548eab729aa20570564c0400c1b5e413"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBaseThread.html">BaseThread</a>* IThread::pbasethread_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00021">21</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00023">IThread()</a>, <a class="el" href="basethread_8h_source.html#l00025">Start()</a> , 以及 <a class="el" href="basethread_8h_source.html#l00091">BaseThread::ThreadFunc()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a682e199128d3f4a43cf45b87bfb4e12b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_t IThread::tid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="basethread_8h_source.html">basethread.h</a> 第 <a class="el" href="basethread_8h_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="basethread_8h_source.html#l00050">Cancel()</a>, <a class="el" href="basethread_8h_source.html#l00039">Join()</a> , 以及 <a class="el" href="basethread_8h_source.html#l00025">Start()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="basethread_8h_source.html">basethread.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:49 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

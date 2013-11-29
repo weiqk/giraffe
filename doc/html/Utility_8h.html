@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: Utility.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Utility.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br/>
+<code>#include &lt;sys/socket.h&gt;</code><br/>
+<code>#include &lt;sys/ioctl.h&gt;</code><br/>
+<code>#include &lt;sys/time.h&gt;</code><br/>
+<code>#include &lt;sys/stat.h&gt;</code><br/>
+<code>#include &lt;netinet/in.h&gt;</code><br/>
+<code>#include &lt;netinet/tcp.h&gt;</code><br/>
+<code>#include &lt;arpa/inet.h&gt;</code><br/>
+<code>#include &lt;netdb.h&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
+<code>#include &lt;pthread.h&gt;</code><br/>
+<code>#include &lt;signal.h&gt;</code><br/>
+<code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;cctype&gt;</code><br/>
+<code>#include &lt;ctime&gt;</code><br/>
+<code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;cstdio&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Utility.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="Utility_8h__incl.png" border="0" usemap="#Utility_8h" alt=""/></div>
+<map name="Utility_8h" id="Utility_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="Utility_8h__dep__incl.png" border="0" usemap="#Utility_8hdep" alt=""/></div>
+<map name="Utility_8hdep" id="Utility_8hdep">
+<area shape="rect" id="node2" href="Exceptions_8h.html" title="Exceptions.h" alt="" coords="297,80,396,107"/><area shape="rect" id="node3" href="LIBXML__DOMDocument_8h.html" title="LIBXML_DOMDocument.h" alt="" coords="257,155,436,181"/><area shape="rect" id="node4" href="DidUncompress_8h.html" title="DidUncompress.h" alt="" coords="191,229,317,256"/><area shape="rect" id="node11" href="LIBXML__DOMDocument_8cpp.html" title="LIBXML_DOMDocument.cpp" alt="" coords="343,229,535,256"/><area shape="rect" id="node5" href="DidUncompress_8cpp.html" title="DidUncompress.cpp" alt="" coords="4,304,144,331"/><area shape="rect" id="node6" href="uncompress__dc__packet_8h.html" title="uncompress_dc_packet.h" alt="" coords="169,304,340,331"/><area shape="rect" id="node10" href="uncompress__dc__packet_8cc.html" title="uncompress dc packet " alt="" coords="288,379,467,405"/><area shape="rect" id="node7" href="shunt__net__packet_8h.html" title="shunt_net_packet.h" alt="" coords="128,379,263,405"/><area shape="rect" id="node8" href="monitor_8cc.html" title="main function " alt="" coords="87,453,168,480"/><area shape="rect" id="node9" href="shunt__net__packet_8cc.html" title="shunt net packet by connections " alt="" coords="193,453,335,480"/></map>
+</div>
+</div>
+<p><a href="Utility_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceSTEP"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html">STEP</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac88ec09edaec1d93bc81c2300d2aaf50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#ac88ec09edaec1d93bc81c2300d2aaf50">THREAD_PROC</a>&#160;&#160;&#160;void *</td></tr>
+<tr class="separator:ac88ec09edaec1d93bc81c2300d2aaf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628ffab6a798bf320aceeca2aecd2b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a628ffab6a798bf320aceeca2aecd2b46">FILE_FSCANF</a>&#160;&#160;&#160;fscanf</td></tr>
+<tr class="separator:a628ffab6a798bf320aceeca2aecd2b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa538496316e49b20bf5a8999d22b854c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#aa538496316e49b20bf5a8999d22b854c">STRING_SPRINTF</a>&#160;&#160;&#160;sprintf</td></tr>
+<tr class="separator:aa538496316e49b20bf5a8999d22b854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a45e451a9125b268bf8b42ad42f2d38bd"><td class="memItemLeft" align="right" valign="top">typedef void *(&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a45e451a9125b268bf8b42ad42f2d38bd">THREAD_START_ROUTINE</a> )(void *)</td></tr>
+<tr class="separator:a45e451a9125b268bf8b42ad42f2d38bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab40420f00f9ae40bd38b310acba7b271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#ab40420f00f9ae40bd38b310acba7b271">STEP::string_replace</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;oldValue, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;newValue, std::string &amp;value)</td></tr>
+<tr class="separator:ab40420f00f9ae40bd38b310acba7b271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ed4597d3114951e814b3423a6d60f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a23ed4597d3114951e814b3423a6d60f3">STEP::socket_init</a> ()</td></tr>
+<tr class="separator:a23ed4597d3114951e814b3423a6d60f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e31fffbe8a88b4296a87e98d426e81a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a8e31fffbe8a88b4296a87e98d426e81a">STEP::socket_createConnector</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *address, int port)</td></tr>
+<tr class="separator:a8e31fffbe8a88b4296a87e98d426e81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7715b68223e800077a67edf870b6b31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#aa7715b68223e800077a67edf870b6b31">STEP::socket_createListener</a> (int nPort)</td></tr>
+<tr class="separator:aa7715b68223e800077a67edf870b6b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72d1f639b6ca716b3348efcb5a4363d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#ab72d1f639b6ca716b3348efcb5a4363d">STEP::socket_send</a> (int s, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *msg, int length)</td></tr>
+<tr class="separator:ab72d1f639b6ca716b3348efcb5a4363d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000bcef8731d997e946240250c2189a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a000bcef8731d997e946240250c2189a2">STEP::socket_close</a> (int s)</td></tr>
+<tr class="separator:a000bcef8731d997e946240250c2189a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c5426dfacd33b8a6956a6d7d1fdd9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a06c5426dfacd33b8a6956a6d7d1fdd9a">STEP::WaitForData</a> (int, char, long)</td></tr>
+<tr class="separator:a06c5426dfacd33b8a6956a6d7d1fdd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd58a755cc9552ed59882f6717b771a"><td class="memItemLeft" align="right" valign="top">tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a9bd58a755cc9552ed59882f6717b771a">STEP::time_gmtime</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> time_t *t)</td></tr>
+<tr class="separator:a9bd58a755cc9552ed59882f6717b771a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac155cbd4dde4bc00756c8f8c41f7cfd1"><td class="memItemLeft" align="right" valign="top">tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#ac155cbd4dde4bc00756c8f8c41f7cfd1">STEP::time_localtime</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> time_t *t)</td></tr>
+<tr class="separator:ac155cbd4dde4bc00756c8f8c41f7cfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38757da3fedd6c1129efda46e929583c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a38757da3fedd6c1129efda46e929583c">STEP::file_separator</a> ()</td></tr>
+<tr class="separator:a38757da3fedd6c1129efda46e929583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae244850ab89a6e9fa83268ce0cd5c54b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#ae244850ab89a6e9fa83268ce0cd5c54b">STEP::file_mkdir</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *path)</td></tr>
+<tr class="separator:ae244850ab89a6e9fa83268ce0cd5c54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e2a1f3edc39bba56e911c13e03d986"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a36e2a1f3edc39bba56e911c13e03d986">STEP::file_fopen</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *path, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *mode)</td></tr>
+<tr class="separator:a36e2a1f3edc39bba56e911c13e03d986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad199420cccdc8524ddc83e0290af95bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#ad199420cccdc8524ddc83e0290af95bc">STEP::file_unlink</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *path)</td></tr>
+<tr class="separator:ad199420cccdc8524ddc83e0290af95bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a65a99bfbb1aa34f50c26bc91c00e64"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#a5a65a99bfbb1aa34f50c26bc91c00e64">STEP::file_appendpath</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;path, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> std::string &amp;file)</td></tr>
+<tr class="separator:a5a65a99bfbb1aa34f50c26bc91c00e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af847b66e1c7d96dae390068efb9e4eb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSTEP.html#af847b66e1c7d96dae390068efb9e4eb1">STEP::UTF8_2_GB2312</a> (char *in, int inLen, char *out, int outLen)</td></tr>
+<tr class="separator:af847b66e1c7d96dae390068efb9e4eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4754eb67b42b407cd7488451bd2615c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a4754eb67b42b407cd7488451bd2615c3">thread_spawn</a> (<a class="el" href="Utility_8h.html#a45e451a9125b268bf8b42ad42f2d38bd">THREAD_START_ROUTINE</a> func, void *var, unsigned &amp;thread)</td></tr>
+<tr class="separator:a4754eb67b42b407cd7488451bd2615c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6626cfedddfccfa27a77a94b67dd8c67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a6626cfedddfccfa27a77a94b67dd8c67">thread_spawn</a> (<a class="el" href="Utility_8h.html#a45e451a9125b268bf8b42ad42f2d38bd">THREAD_START_ROUTINE</a> func, void *var)</td></tr>
+<tr class="separator:a6626cfedddfccfa27a77a94b67dd8c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63be9406bd376c4f3887fd19e2f3b2b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a63be9406bd376c4f3887fd19e2f3b2b3">thread_join</a> (unsigned thread)</td></tr>
+<tr class="separator:a63be9406bd376c4f3887fd19e2f3b2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335acfee527b0502fd2e3fc783e406ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a335acfee527b0502fd2e3fc783e406ce">thread_detach</a> (unsigned thread)</td></tr>
+<tr class="separator:a335acfee527b0502fd2e3fc783e406ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c425d7e24bda5aa03134e79993b45f"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a75c425d7e24bda5aa03134e79993b45f">thread_self</a> ()</td></tr>
+<tr class="separator:a75c425d7e24bda5aa03134e79993b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be54109c0215483b37a6073deab62ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a7be54109c0215483b37a6073deab62ad">process_sleep</a> (double s)</td></tr>
+<tr class="separator:a7be54109c0215483b37a6073deab62ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0346069554c510bde82b02ab6f680b58"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a0346069554c510bde82b02ab6f680b58">SfRealloc</a> (void *pMem, int nNewSize)</td></tr>
+<tr class="separator:a0346069554c510bde82b02ab6f680b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0bf9003b1e4f373e3be9e075ba41bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#abf0bf9003b1e4f373e3be9e075ba41bb">str_to_upper</a> (char *string)</td></tr>
+<tr class="separator:abf0bf9003b1e4f373e3be9e075ba41bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1cc74f0dae2c079c30ea23da218f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a6c1cc74f0dae2c079c30ea23da218f47">str_to_lower</a> (char *string)</td></tr>
+<tr class="separator:a6c1cc74f0dae2c079c30ea23da218f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0864f825628874d6ffb73922e3138c0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a0864f825628874d6ffb73922e3138c0c">trim</a> (char *s)</td></tr>
+<tr class="separator:a0864f825628874d6ffb73922e3138c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa9b3a8b066ec6f220009774dbc2eab"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a8fa9b3a8b066ec6f220009774dbc2eab">next_token</a> (char *buf, char *token, char *stopchars)</td></tr>
+<tr class="separator:a8fa9b3a8b066ec6f220009774dbc2eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd4c84b7b866f3c76cdb31c06bd9890"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a9dd4c84b7b866f3c76cdb31c06bd9890">Power</a> (int n)</td></tr>
+<tr class="separator:a9dd4c84b7b866f3c76cdb31c06bd9890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fffce2870078d2bab5c0d37115bf5a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#ad7fffce2870078d2bab5c0d37115bf5a">IP2DWORD</a> (char *pcAddress)</td></tr>
+<tr class="separator:ad7fffce2870078d2bab5c0d37115bf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce77e6e3f5693c55949907ac5c1e2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#acce77e6e3f5693c55949907ac5c1e2b9">FormatFileName</a> (char *newname, char *oldname, int nDate, int nType)</td></tr>
+<tr class="separator:acce77e6e3f5693c55949907ac5c1e2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fcbaed668a49d4971b916d672ad6bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a94fcbaed668a49d4971b916d672ad6bf">ConvertStrTime</a> (char *time)</td></tr>
+<tr class="separator:a94fcbaed668a49d4971b916d672ad6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be3f83b027830c5a7c701e05533bec0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a5be3f83b027830c5a7c701e05533bec0">ConvertShortTime</a> (char *time)</td></tr>
+<tr class="separator:a5be3f83b027830c5a7c701e05533bec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47757cc220cdc15893eb4817609f2e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#aa47757cc220cdc15893eb4817609f2e0">ConvertStrDateTime</a> (char *datetime, int &amp;nDate, int &amp;nTime)</td></tr>
+<tr class="separator:aa47757cc220cdc15893eb4817609f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026f9512eddc6e6702542be2628cfa45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a026f9512eddc6e6702542be2628cfa45">DelReturn</a> (char *s)</td></tr>
+<tr class="separator:a026f9512eddc6e6702542be2628cfa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7d725b56c975a7736cb13230f97920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a3e7d725b56c975a7736cb13230f97920">mySleep</a> (int sec)</td></tr>
+<tr class="separator:a3e7d725b56c975a7736cb13230f97920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5735847a5d8d3c4f70cfde3995955304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a5735847a5d8d3c4f70cfde3995955304">AtoH</a> (char *szDest, char *szSource, int iCount)</td></tr>
+<tr class="separator:a5735847a5d8d3c4f70cfde3995955304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d84fc1bea0ede2dbb5329082173835"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a39d84fc1bea0ede2dbb5329082173835">BtoH</a> (char ch)</td></tr>
+<tr class="separator:a39d84fc1bea0ede2dbb5329082173835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd6d037efb9f0d511d42ca6c7a63cce"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Utility_8h.html#a7dd6d037efb9f0d511d42ca6c7a63cce">String2Int64</a> (char *str, int len)</td></tr>
+<tr class="separator:a7dd6d037efb9f0d511d42ca6c7a63cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a628ffab6a798bf320aceeca2aecd2b46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_FSCANF&#160;&#160;&#160;fscanf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Utility_8h_source.html">Utility.h</a> 第 <a class="el" href="Utility_8h_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa538496316e49b20bf5a8999d22b854c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRING_SPRINTF&#160;&#160;&#160;sprintf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Utility_8h_source.html">Utility.h</a> 第 <a class="el" href="Utility_8h_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac88ec09edaec1d93bc81c2300d2aaf50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_PROC&#160;&#160;&#160;void *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Utility_8h_source.html">Utility.h</a> 第 <a class="el" href="Utility_8h_source.html#l00079">79</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a45e451a9125b268bf8b42ad42f2d38bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void*( THREAD_START_ROUTINE)(void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="Utility_8h_source.html">Utility.h</a> 第 <a class="el" href="Utility_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a5735847a5d8d3c4f70cfde3995955304"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AtoH </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>szDest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>szSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39d84fc1bea0ede2dbb5329082173835"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char BtoH </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5be3f83b027830c5a7c701e05533bec0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConvertShortTime </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa47757cc220cdc15893eb4817609f2e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConvertStrDateTime </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>datetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>nDate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>nTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94fcbaed668a49d4971b916d672ad6bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConvertStrTime </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a026f9512eddc6e6702542be2628cfa45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DelReturn </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acce77e6e3f5693c55949907ac5c1e2b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormatFileName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>newname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>oldname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nDate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7fffce2870078d2bab5c0d37115bf5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int IP2DWORD </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pcAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e7d725b56c975a7736cb13230f97920"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mySleep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fa9b3a8b066ec6f220009774dbc2eab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* next_token </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>stopchars</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9dd4c84b7b866f3c76cdb31c06bd9890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Power </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7be54109c0215483b37a6073deab62ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void process_sleep </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0346069554c510bde82b02ab6f680b58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SfRealloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pMem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nNewSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c1cc74f0dae2c079c30ea23da218f47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void str_to_lower </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf0bf9003b1e4f373e3be9e075ba41bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void str_to_upper </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7dd6d037efb9f0d511d42ca6c7a63cce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long String2Int64 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a335acfee527b0502fd2e3fc783e406ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void thread_detach </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63be9406bd376c4f3887fd19e2f3b2b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void thread_join </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a75c425d7e24bda5aa03134e79993b45f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned thread_self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4754eb67b42b407cd7488451bd2615c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool thread_spawn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Utility_8h.html#a45e451a9125b268bf8b42ad42f2d38bd">THREAD_START_ROUTINE</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>thread</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6626cfedddfccfa27a77a94b67dd8c67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool thread_spawn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Utility_8h.html#a45e451a9125b268bf8b42ad42f2d38bd">THREAD_START_ROUTINE</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>var</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0864f825628874d6ffb73922e3138c0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void trim </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

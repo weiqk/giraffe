@@ -1,0 +1,5 @@
+<map id="TiXmlNode" name="TiXmlNode">
+<area shape="rect" id="node2" href="$classTiXmlBase.html" title="{TiXmlBase\n|+ utf8ByteTable\l# userData\l# errorString\l&#45; condenseWhiteSpace\l|+ TiXmlBase()\l+ ~TiXmlBase()\l+ Print()\l+ Row()\l+ Column()\l+ SetUserData()\l+ GetUserData()\l+ GetUserData()\l+ Parse()\l+ SetCondenseWhiteSpace()\l+ IsWhiteSpaceCondensed()\l+ EncodeString()\l# SkipWhiteSpace()\l# IsWhiteSpace()\l# IsWhiteSpace()\l# ReadName()\l# ReadText()\l# GetEntity()\l# GetChar()\l# StringEqual()\l# IsAlpha()\l# IsAlphaNum()\l# ToLower()\l# ConvertUTF32ToUTF8()\l&#45; TiXmlBase()\l&#45; operator=()\l}" alt="" coords="39,176,231,664"/>
+<area shape="rect" id="node3" href="$structTiXmlCursor.html" title="{TiXmlCursor\n|+ row\l+ col\l|+ TiXmlCursor()\l+ Clear()\l}" alt="" coords="5,5,120,112"/>
+<area shape="rect" id="node4" href="$structTiXmlBase_1_1Entity.html" title="{TiXmlBase::Entity\n|+ str\l+ strLength\l+ chr\l|}" alt="" coords="144,5,272,112"/>
+</map>

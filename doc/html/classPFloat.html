@@ -1,0 +1,1465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: PFloat类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classPFloat-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">PFloat类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="pfloat_8h_source.html">pfloat.h</a>&gt;</code></p>
+<div class="dynheader">
+PFloat 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPFloat__coll__graph.png" border="0" usemap="#PFloat_coll__map" alt="Collaboration graph"/></div>
+<map name="PFloat_coll__map" id="PFloat_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af5631a0a4f0994c0bfa879daee477b3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#af5631a0a4f0994c0bfa879daee477b3c">PFloat</a> ()</td></tr>
+<tr class="separator:af5631a0a4f0994c0bfa879daee477b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c62007e499571a548b2cf2bb84bd073"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a8c62007e499571a548b2cf2bb84bd073">PFloat</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> fValue)</td></tr>
+<tr class="separator:a8c62007e499571a548b2cf2bb84bd073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d0cb3f5012e37ae857bc8d750371d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a46d0cb3f5012e37ae857bc8d750371d8">PFloat</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;obj)</td></tr>
+<tr class="separator:a46d0cb3f5012e37ae857bc8d750371d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef6f7da099e52ec286c83e541bdd56c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a2ef6f7da099e52ec286c83e541bdd56c">PFloat</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *strValue)</td></tr>
+<tr class="separator:a2ef6f7da099e52ec286c83e541bdd56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e9487331ec5e51a5278cf12a329ccb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a76e9487331ec5e51a5278cf12a329ccb">PFloat</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> nBase, unsigned short sPrec)</td></tr>
+<tr class="separator:a76e9487331ec5e51a5278cf12a329ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c39263560de0ec11f956c4b232620f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a38c39263560de0ec11f956c4b232620f">operator double</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a38c39263560de0ec11f956c4b232620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9700ab2f901d5977612c86ea6239992"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#af9700ab2f901d5977612c86ea6239992">GetValue</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:af9700ab2f901d5977612c86ea6239992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8595e4c63a8ea16349bbfd1a805393d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a8595e4c63a8ea16349bbfd1a805393d8">GetABSValue</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a8595e4c63a8ea16349bbfd1a805393d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f2d23ee01897cb1b869d82fcdda28d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a79f2d23ee01897cb1b869d82fcdda28d">GetStrValue</a> (char sValue[])</td></tr>
+<tr class="separator:a79f2d23ee01897cb1b869d82fcdda28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a8d5a538cbf1632381a066b461222a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a36a8d5a538cbf1632381a066b461222a">operator+</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a36a8d5a538cbf1632381a066b461222a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23ea25cb655cd7a8c98404c4103dff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ac23ea25cb655cd7a8c98404c4103dff6">operator-</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ac23ea25cb655cd7a8c98404c4103dff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaee23477f2ad4e5bfe35b1a1621baee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#aeaee23477f2ad4e5bfe35b1a1621baee">operator*</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aeaee23477f2ad4e5bfe35b1a1621baee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16aa27e28a23db18d4714925128f80e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ab16aa27e28a23db18d4714925128f80e">operator/</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab16aa27e28a23db18d4714925128f80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4860ffa00776c96c68232388544da11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ae4860ffa00776c96c68232388544da11">operator+</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae4860ffa00776c96c68232388544da11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163946d7bca10eab4a8b88c0c27ff547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a163946d7bca10eab4a8b88c0c27ff547">operator-</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a163946d7bca10eab4a8b88c0c27ff547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b5376c3208dc4028fd436e76e18875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ad1b5376c3208dc4028fd436e76e18875">operator*</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ad1b5376c3208dc4028fd436e76e18875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5281e6dd8be3338a63270568c1d623c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#aa5281e6dd8be3338a63270568c1d623c">operator/</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aa5281e6dd8be3338a63270568c1d623c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad689c768d86aeabb3867bbcbe2f06a7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ad689c768d86aeabb3867bbcbe2f06a7c">operator+</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ad689c768d86aeabb3867bbcbe2f06a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcc58cd94cfe062d225dc0d323035ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#affcc58cd94cfe062d225dc0d323035ca">operator-</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:affcc58cd94cfe062d225dc0d323035ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f5114b1acee9fedfc4863fe18dca5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a94f5114b1acee9fedfc4863fe18dca5b">operator*</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a94f5114b1acee9fedfc4863fe18dca5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff1792468d6a5e741f27db515838a73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a0ff1792468d6a5e741f27db515838a73">operator/</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a0ff1792468d6a5e741f27db515838a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7bfb3a0bf38af7ed50a3e3cdd06e89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a2d7bfb3a0bf38af7ed50a3e3cdd06e89">operator+=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a2d7bfb3a0bf38af7ed50a3e3cdd06e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61c7fbef3097b6055a9b6898e285475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#af61c7fbef3097b6055a9b6898e285475">operator-=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:af61c7fbef3097b6055a9b6898e285475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838f871252960fb94b11668fc2f4aec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a838f871252960fb94b11668fc2f4aec8">operator*=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a838f871252960fb94b11668fc2f4aec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb04e3105ce0518ab1e8a12d18608053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#afb04e3105ce0518ab1e8a12d18608053">operator/=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:afb04e3105ce0518ab1e8a12d18608053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1b8c57c70b60558c687c49bdb328da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a3d1b8c57c70b60558c687c49bdb328da">operator+=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a3d1b8c57c70b60558c687c49bdb328da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1d0898bb5b94a8e963b2cbf18fb50aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ab1d0898bb5b94a8e963b2cbf18fb50aa">operator-=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab1d0898bb5b94a8e963b2cbf18fb50aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab5c35919f8b343bdf7c89271bec443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a4ab5c35919f8b343bdf7c89271bec443">operator*=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a4ab5c35919f8b343bdf7c89271bec443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a414b2d14b1b7952757829b03c6637a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a4a414b2d14b1b7952757829b03c6637a">operator/=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a4a414b2d14b1b7952757829b03c6637a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05b4cee2e8cb39a6c1ab99fb578b481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ab05b4cee2e8cb39a6c1ab99fb578b481">operator+=</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab05b4cee2e8cb39a6c1ab99fb578b481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c204ac16fccfd5b7d8669f588275544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a9c204ac16fccfd5b7d8669f588275544">operator-=</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a9c204ac16fccfd5b7d8669f588275544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39add87fad6986d791052b1806d6800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#aa39add87fad6986d791052b1806d6800">operator*=</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aa39add87fad6986d791052b1806d6800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5392902cd6f33d2728013d520902e4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ad5392902cd6f33d2728013d520902e4d">operator/=</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ad5392902cd6f33d2728013d520902e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8004a56e4dfaacfb88c9d815c85b8cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a8004a56e4dfaacfb88c9d815c85b8cca">operator=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a8004a56e4dfaacfb88c9d815c85b8cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef322d14d114eba17bff3c8a30967b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a1ef322d14d114eba17bff3c8a30967b8">operator=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a1ef322d14d114eba17bff3c8a30967b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c898f8c6105e43111f463c7dfd1aef2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a7c898f8c6105e43111f463c7dfd1aef2">operator=</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a7c898f8c6105e43111f463c7dfd1aef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c39b32ec2058a9ff99d772d377b8c6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a1c39b32ec2058a9ff99d772d377b8c6f">operator==</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a1c39b32ec2058a9ff99d772d377b8c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc81b711ba514ddab6823dc16312ad3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a5fc81b711ba514ddab6823dc16312ad3">operator==</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a5fc81b711ba514ddab6823dc16312ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8490cb1b333ea1b3baa2a43372b78365"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a8490cb1b333ea1b3baa2a43372b78365">operator==</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a8490cb1b333ea1b3baa2a43372b78365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829b75fe5282b387cd27831958c3d776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a829b75fe5282b387cd27831958c3d776">operator!=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a829b75fe5282b387cd27831958c3d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa4ceef67fbf4e80c10c72dd3658cf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#adfa4ceef67fbf4e80c10c72dd3658cf6">operator!=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:adfa4ceef67fbf4e80c10c72dd3658cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab013f95aa273e6dcd3d04665edc5a336"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ab013f95aa273e6dcd3d04665edc5a336">operator!=</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab013f95aa273e6dcd3d04665edc5a336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09634ddeb5b6ec7e77d395def1bc6384"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a09634ddeb5b6ec7e77d395def1bc6384">operator&gt;</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a09634ddeb5b6ec7e77d395def1bc6384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6212dd3bb4e929131344160fd22b37ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a6212dd3bb4e929131344160fd22b37ba">operator&gt;</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a6212dd3bb4e929131344160fd22b37ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20540cc9bd0522901105296704acbf53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a20540cc9bd0522901105296704acbf53">operator&gt;</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a20540cc9bd0522901105296704acbf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13e28aff43f566dc9c63aff1b12dbc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ac13e28aff43f566dc9c63aff1b12dbc1">operator&lt;</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ac13e28aff43f566dc9c63aff1b12dbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4b2bc4d082ee9d1e703aed8ab55903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a6a4b2bc4d082ee9d1e703aed8ab55903">operator&lt;</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a6a4b2bc4d082ee9d1e703aed8ab55903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdca64026990c3311a8719c86394342"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a0fdca64026990c3311a8719c86394342">operator&lt;</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> f) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a0fdca64026990c3311a8719c86394342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47f7f5f2c8acccd8904400de8dd6c4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ae47f7f5f2c8acccd8904400de8dd6c4c">IsZero</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae47f7f5f2c8acccd8904400de8dd6c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa24ac6c109e9cdcc5005393b2bc4c06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#aaa24ac6c109e9cdcc5005393b2bc4c06">IsMinus</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aaa24ac6c109e9cdcc5005393b2bc4c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0344b39c988db628df05dbfe0fde45bf"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a0344b39c988db628df05dbfe0fde45bf">GetPrec</a> ()</td></tr>
+<tr class="separator:a0344b39c988db628df05dbfe0fde45bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1e3dc55db6eedb553942ec7ac540cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a0c1e3dc55db6eedb553942ec7ac540cd">GetBase</a> ()</td></tr>
+<tr class="separator:a0c1e3dc55db6eedb553942ec7ac540cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ceb22f36480e66e65a54cd6accfeb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a86ceb22f36480e66e65a54cd6accfeb8">ToInt64</a> ()</td></tr>
+<tr class="separator:a86ceb22f36480e66e65a54cd6accfeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a9c81ac4bf53097bb1aad25d2afa4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ad4a9c81ac4bf53097bb1aad25d2afa4c">SetBase</a> (<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> base)</td></tr>
+<tr class="separator:ad4a9c81ac4bf53097bb1aad25d2afa4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7eadf137c1995cf137333c88742d0b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ad7eadf137c1995cf137333c88742d0b2">SetPrec</a> (short prec)</td></tr>
+<tr class="separator:ad7eadf137c1995cf137333c88742d0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f046a2a9a347b039620d389f514dee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a6f046a2a9a347b039620d389f514dee2">ChangePrec</a> (short prec)</td></tr>
+<tr class="separator:a6f046a2a9a347b039620d389f514dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ad3d21d4c46bc0adb5c3808e8b017c05b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ad3d21d4c46bc0adb5c3808e8b017c05b">CheckValid</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *strValue) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ad3d21d4c46bc0adb5c3808e8b017c05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97593065ae2264e19aaa5aa5b514d69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ae97593065ae2264e19aaa5aa5b514d69">Power10</a> (short n) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae97593065ae2264e19aaa5aa5b514d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64cbb4ba51b97d5ddd14e4800c62c58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPFloat.html">PFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#ae64cbb4ba51b97d5ddd14e4800c62c58">Str2PFloat</a> (<a class="el" href="classPFloat.html">PFloat</a> &amp;f, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae64cbb4ba51b97d5ddd14e4800c62c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a549042d0b32f659221a8b95ea99b719a"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:aee14e24482964aa503f6d1d70efd5379"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ab0e9203221f6bba034405a6f7fbf1efe"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;&#160;&#160;<a class="el" href="classPFloat.html#a50fe167da33b3520f9b471016349f916">m_llTag</a>:1</td></tr>
+<tr class="separator:ab0e9203221f6bba034405a6f7fbf1efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728b74995bf66ca2dd31e0a5949d6cc9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;&#160;&#160;<a class="el" href="classPFloat.html#a73211a87ccfe1eb88b2ec859f65f346f">m_llBase</a>:55</td></tr>
+<tr class="separator:a728b74995bf66ca2dd31e0a5949d6cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c31046ed84bb134af4c670e1b6b7bf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a>&#160;&#160;&#160;<a class="el" href="classPFloat.html#a58bfcef03847c2b0c132950280790dfd">m_llPrec</a>:8</td></tr>
+<tr class="separator:ad1c31046ed84bb134af4c670e1b6b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee14e24482964aa503f6d1d70efd5379"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="classPFloat.html#abe67bbe6f40d5ce75420613c51e0a4b8">_real_data</a></td></tr>
+<tr class="separator:aee14e24482964aa503f6d1d70efd5379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7226956872f14398d99b1ac01eb0eb87"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;&#160;&#160;<a class="el" href="classPFloat.html#ad4088ebc2ddd7fb8d726ad81c4bf7285">_value</a></td></tr>
+<tr class="separator:a7226956872f14398d99b1ac01eb0eb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549042d0b32f659221a8b95ea99b719a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a></td></tr>
+<tr class="separator:a549042d0b32f659221a8b95ea99b719a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00059">59</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="af5631a0a4f0994c0bfa879daee477b3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFloat::PFloat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c62007e499571a548b2cf2bb84bd073"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFloat::PFloat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>fValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a46d0cb3f5012e37ae857bc8d750371d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFloat::PFloat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ef6f7da099e52ec286c83e541bdd56c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFloat::PFloat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76e9487331ec5e51a5278cf12a329ccb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFloat::PFloat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>nBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>sPrec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6f046a2a9a347b039620d389f514dee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PFloat::ChangePrec </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>prec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad3d21d4c46bc0adb5c3808e8b017c05b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::CheckValid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>strValue</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8595e4c63a8ea16349bbfd1a805393d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PFloat::GetABSValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c1e3dc55db6eedb553942ec7ac540cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> PFloat::GetBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00138">138</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classPFloat.html#aaa24ac6c109e9cdcc5005393b2bc4c06">IsMinus</a>() ? ~((<a class="code" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>)(<a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llBase))+1 : <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llBase;}  </div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+<div class="ttc" id="dzh__time__t_8h_html_a6a2b55a6391419ed0b7b9da06e094b4b"><div class="ttname"><a href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a></div><div class="ttdeci">long long INT64</div><div class="ttdef"><b>Definition:</b> <a href="dzh__time__t_8h_source.html#l00023">dzh_time_t.h:23</a></div></div>
+<div class="ttc" id="classPFloat_html_aaa24ac6c109e9cdcc5005393b2bc4c06"><div class="ttname"><a href="classPFloat.html#aaa24ac6c109e9cdcc5005393b2bc4c06">PFloat::IsMinus</a></div><div class="ttdeci">bool IsMinus() const </div><div class="ttdef"><b>Definition:</b> <a href="pfloat_8h_source.html#l00136">pfloat.h:136</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0344b39c988db628df05dbfe0fde45bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short PFloat::GetPrec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00137">137</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llPrec;}  <span class="comment">//获取精度 </span></div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a79f2d23ee01897cb1b869d82fcdda28d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* PFloat::GetStrValue </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sValue</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9700ab2f901d5977612c86ea6239992"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PFloat::GetValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa24ac6c109e9cdcc5005393b2bc4c06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::IsMinus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00136">136</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llTag == 1;}</div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae47f7f5f2c8acccd8904400de8dd6c4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::IsZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00135">135</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llBase == 0;}</div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a38c39263560de0ec11f956c4b232620f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PFloat::operator double </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00068">68</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classPFloat.html#af9700ab2f901d5977612c86ea6239992">GetValue</a>();};</div>
+<div class="ttc" id="classPFloat_html_af9700ab2f901d5977612c86ea6239992"><div class="ttname"><a href="classPFloat.html#af9700ab2f901d5977612c86ea6239992">PFloat::GetValue</a></div><div class="ttdeci">double GetValue() const </div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a829b75fe5282b387cd27831958c3d776"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfa4ceef67fbf4e80c10c72dd3658cf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab013f95aa273e6dcd3d04665edc5a336"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeaee23477f2ad4e5bfe35b1a1621baee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1b5376c3208dc4028fd436e76e18875"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94f5114b1acee9fedfc4863fe18dca5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a838f871252960fb94b11668fc2f4aec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator*= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ab5c35919f8b343bdf7c89271bec443"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator*= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa39add87fad6986d791052b1806d6800"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator*= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36a8d5a538cbf1632381a066b461222a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4860ffa00776c96c68232388544da11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad689c768d86aeabb3867bbcbe2f06a7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d7bfb3a0bf38af7ed50a3e3cdd06e89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d1b8c57c70b60558c687c49bdb328da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab05b4cee2e8cb39a6c1ab99fb578b481"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac23ea25cb655cd7a8c98404c4103dff6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a163946d7bca10eab4a8b88c0c27ff547"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affcc58cd94cfe062d225dc0d323035ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af61c7fbef3097b6055a9b6898e285475"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1d0898bb5b94a8e963b2cbf18fb50aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c204ac16fccfd5b7d8669f588275544"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab16aa27e28a23db18d4714925128f80e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5281e6dd8be3338a63270568c1d623c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ff1792468d6a5e741f27db515838a73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb04e3105ce0518ab1e8a12d18608053"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator/= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a414b2d14b1b7952757829b03c6637a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator/= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5392902cd6f33d2728013d520902e4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator/= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac13e28aff43f566dc9c63aff1b12dbc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a4b2bc4d082ee9d1e703aed8ab55903"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fdca64026990c3311a8719c86394342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8004a56e4dfaacfb88c9d815c85b8cca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ef322d14d114eba17bff3c8a30967b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c898f8c6105e43111f463c7dfd1aef2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a>&amp; PFloat::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c39b32ec2058a9ff99d772d377b8c6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fc81b711ba514ddab6823dc16312ad3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8490cb1b333ea1b3baa2a43372b78365"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09634ddeb5b6ec7e77d395def1bc6384"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6212dd3bb4e929131344160fd22b37ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a20540cc9bd0522901105296704acbf53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PFloat::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae97593065ae2264e19aaa5aa5b514d69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PFloat::Power10 </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4a9c81ac4bf53097bb1aad25d2afa4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PFloat::SetBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a>&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00140">140</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span> (base &lt; 0)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llTag = 1;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llBase = ~base+1;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llTag = 0;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llBase = base;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad7eadf137c1995cf137333c88742d0b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PFloat::SetPrec </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>prec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00153">153</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{<a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._real_data.m_llPrec = prec;}</div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae64cbb4ba51b97d5ddd14e4800c62c58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPFloat.html">PFloat</a> PFloat::Str2PFloat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPFloat.html">PFloat</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86ceb22f36480e66e65a54cd6accfeb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> PFloat::ToInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00139">139</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">_data</a>._value;};  <span class="comment">//得到一个与PFloat内存块对应的Int64值</span></div>
+<div class="ttc" id="classPFloat_html_a549042d0b32f659221a8b95ea99b719a"><div class="ttname"><a href="classPFloat.html#a549042d0b32f659221a8b95ea99b719a">PFloat::_data</a></div><div class="ttdeci">union PFloat::@15 _data</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a549042d0b32f659221a8b95ea99b719a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }  PFloat::_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe67bbe6f40d5ce75420613c51e0a4b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  PFloat::_real_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4088ebc2ddd7fb8d726ad81c4bf7285"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a6a2b55a6391419ed0b7b9da06e094b4b">INT64</a> PFloat::_value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00168">168</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73211a87ccfe1eb88b2ec859f65f346f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> PFloat::m_llBase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00165">165</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58bfcef03847c2b0c132950280790dfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> PFloat::m_llPrec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00166">166</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50fe167da33b3520f9b471016349f916"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dzh__time__t_8h.html#a57be03562867144161c1bfee95ca8f7c">UINT64</a> PFloat::m_llTag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="pfloat_8h_source.html">pfloat.h</a> 第 <a class="el" href="pfloat_8h_source.html#l00164">164</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="pfloat_8h_source.html">pfloat.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:49 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

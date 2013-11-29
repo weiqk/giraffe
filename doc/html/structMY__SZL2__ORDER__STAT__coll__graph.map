@@ -1,0 +1,5 @@
+<map id="MY_SZL2_ORDER_STAT" name="MY_SZL2_ORDER_STAT">
+<area shape="rect" id="node2" href="$structSZ__L2__ORDER__STAT.html" title="{SZ_L2_ORDER_STAT\n|+ m_wStkID\l|+ Init()\l+ AddNewOrder()\l+ AddNewWithdarw()\l}" alt="" coords="72,339,229,445"/>
+<area shape="rect" id="node3" href="$structMWORD.html" title="{MWORD\n|+ m_nBase\l+ m_nMul\l|+ MWORD()\l+ MWORD()\l+ MWORD()\l+ operator INT64()\l+ GetValue()\l+ GetABSValue()\l+ operator&#45;=()\l+ operator&#45;=()\l+ operator+=()\l+ operator+=()\l和 30 更多...\l}" alt="" coords="5,6,133,245"/>
+<area shape="rect" id="node4" href="$structUINT24.html" title="{UINT24\n|+ m_wLow\l+ m_cHigh\l|+ Get()\l+ Set()\l+ operator=()\l+ operator==()\l+ operator DWORD()\l}" alt="" coords="159,50,305,201"/>
+</map>

@@ -1,0 +1,1720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: TiXmlString类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="classTiXmlString-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TiXmlString类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tinystr_8h_source.html">tinystr.h</a>&gt;</code></p>
+<div class="dynheader">
+类 TiXmlString 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString__inherit__graph.png" border="0" usemap="#TiXmlString_inherit__map" alt="Inheritance graph"/></div>
+<map name="TiXmlString_inherit__map" id="TiXmlString_inherit__map">
+<area shape="rect" id="node2" href="classTiXmlOutStream.html" title="{TiXmlOutStream\n||+ operator\&lt;\&lt;()\l+ operator\&lt;\&lt;()\l}" alt="" coords="5,395,123,487"/></map>
+</div>
+<div class="dynheader">
+TiXmlString 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString__coll__graph.png" border="0" usemap="#TiXmlString_coll__map" alt="Collaboration graph"/></div>
+<map name="TiXmlString_coll__map" id="TiXmlString_coll__map">
+<area shape="rect" id="node2" href="structTiXmlString_1_1Rep.html" title="{TiXmlString::Rep\n|+ size\l+ capacity\l+ str\l|}" alt="" coords="5,5,128,112"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTiXmlString_1_1Rep.html">Rep</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:abeb2c1893a04c17904f7c06546d0b971"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a></td></tr>
+<tr class="separator:abeb2c1893a04c17904f7c06546d0b971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a342f61e0fc2244df300b73aedf6d3fef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a342f61e0fc2244df300b73aedf6d3fef">TiXmlString</a> ()</td></tr>
+<tr class="separator:a342f61e0fc2244df300b73aedf6d3fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80fe17693a438c9ab2591664743fcb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ac80fe17693a438c9ab2591664743fcb6">TiXmlString</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;copy)</td></tr>
+<tr class="separator:ac80fe17693a438c9ab2591664743fcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b32bd2891a757c9f36c21db44c81d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinystr_8h.html#ae341476cd6b94ee32e3e93110a759581">TIXML_EXPLICIT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#aa3b32bd2891a757c9f36c21db44c81d2">TiXmlString</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *copy)</td></tr>
+<tr class="separator:aa3b32bd2891a757c9f36c21db44c81d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b17ea5c5db986f14827223dfa8f1547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinystr_8h.html#ae341476cd6b94ee32e3e93110a759581">TIXML_EXPLICIT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a4b17ea5c5db986f14827223dfa8f1547">TiXmlString</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str, <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> len)</td></tr>
+<tr class="separator:a4b17ea5c5db986f14827223dfa8f1547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac03f581ca3422c4808162ab14f3450"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a7ac03f581ca3422c4808162ab14f3450">~TiXmlString</a> ()</td></tr>
+<tr class="separator:a7ac03f581ca3422c4808162ab14f3450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bc6147afc0ec2aa0da3a3c0a8fcfb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0">operator=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *copy)</td></tr>
+<tr class="separator:ae0bc6147afc0ec2aa0da3a3c0a8fcfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f1f5d3eceaa0f22d0a7e6055ea81b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ab1f1f5d3eceaa0f22d0a7e6055ea81b0">operator=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;copy)</td></tr>
+<tr class="separator:ab1f1f5d3eceaa0f22d0a7e6055ea81b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56336ac2aa2a08d24a71eb9a2b502a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5">operator+=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *suffix)</td></tr>
+<tr class="separator:ab56336ac2aa2a08d24a71eb9a2b502a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa09d5240470b76d54ec709e04f8c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a6aa09d5240470b76d54ec709e04f8c13">operator+=</a> (char single)</td></tr>
+<tr class="separator:a6aa09d5240470b76d54ec709e04f8c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcae5ea2b4d9e194dc21226b817f417"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#afdcae5ea2b4d9e194dc21226b817f417">operator+=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;suffix)</td></tr>
+<tr class="separator:afdcae5ea2b4d9e194dc21226b817f417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5581ca641d915551d3cda90f8e7bf49b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a5581ca641d915551d3cda90f8e7bf49b">c_str</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a5581ca641d915551d3cda90f8e7bf49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00abc60f135c7ca1951c7334cc2c7993"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">data</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a00abc60f135c7ca1951c7334cc2c7993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3202f27d139a3fac79205f1f3c707727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a3202f27d139a3fac79205f1f3c707727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96103e5c0f67e987fa48527e1f47a1f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a96103e5c0f67e987fa48527e1f47a1f6">size</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a96103e5c0f67e987fa48527e1f47a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a61e1d11cdb71bea4a4ed79caa793f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a9a61e1d11cdb71bea4a4ed79caa793f4">empty</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a9a61e1d11cdb71bea4a4ed79caa793f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e4d6aba7845f4cf9c02332a5fbf916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">capacity</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a76e4d6aba7845f4cf9c02332a5fbf916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6763093267bbdecbf03f8840bc349877"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a6763093267bbdecbf03f8840bc349877">at</a> (<a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> index) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a6763093267bbdecbf03f8840bc349877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cdc1d46c538536b786f7ae03c0c1d9"><td class="memItemLeft" align="right" valign="top">char &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ae8cdc1d46c538536b786f7ae03c0c1d9">operator[]</a> (<a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> index) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae8cdc1d46c538536b786f7ae03c0c1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2b368b5eafe075fd9565cbcbd4c2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a5c2b368b5eafe075fd9565cbcbd4c2f9">find</a> (char lookup) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a5c2b368b5eafe075fd9565cbcbd4c2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2a6fd565751410b392f249a9786db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a5f2a6fd565751410b392f249a9786db4">find</a> (char tofind, <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> offset) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a5f2a6fd565751410b392f249a9786db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20e06e4c666abf3bdbfb3a1191d4888"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ab20e06e4c666abf3bdbfb3a1191d4888">clear</a> ()</td></tr>
+<tr class="separator:ab20e06e4c666abf3bdbfb3a1191d4888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ecf9f0f00cb5c67b6b637958d7049c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c">reserve</a> (<a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> cap)</td></tr>
+<tr class="separator:a88ecf9f0f00cb5c67b6b637958d7049c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72f3d9149b7812c1e6c59402014d0d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5">assign</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str, <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> len)</td></tr>
+<tr class="separator:ac72f3d9149b7812c1e6c59402014d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44b21700d2ec24a511367b222b643fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">append</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *str, <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> len)</td></tr>
+<tr class="separator:ad44b21700d2ec24a511367b222b643fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa392cbc180752a79f007f4f9280c7762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762">swap</a> (<a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;other)</td></tr>
+<tr class="separator:aa392cbc180752a79f007f4f9280c7762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a8f4422d227088dc7bec96f479b275d0a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a8f4422d227088dc7bec96f479b275d0a">npos</a> = static_cast&lt; <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a> &gt;(-1)</td></tr>
+<tr class="separator:a8f4422d227088dc7bec96f479b275d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a694eacb51c43d8eba8aa7d4552b598ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a> (<a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> sz)</td></tr>
+<tr class="separator:a694eacb51c43d8eba8aa7d4552b598ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d70615367bf2920c25feddf6ac4ad30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30">set_size</a> (<a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> sz)</td></tr>
+<tr class="separator:a5d70615367bf2920c25feddf6ac4ad30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36417caceebe25352f53a87e8cd966b4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a36417caceebe25352f53a87e8cd966b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58faf1c6b9828c8d5d5092bebf146167"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167">finish</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a58faf1c6b9828c8d5d5092bebf146167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11cd23e090fd2e7bb62eda05b45a2d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ae11cd23e090fd2e7bb62eda05b45a2d6">init</a> (<a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> sz, <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> cap)</td></tr>
+<tr class="separator:ae11cd23e090fd2e7bb62eda05b45a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6008ae51286a342cd366fbf1e3eeafc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc">quit</a> ()</td></tr>
+<tr class="separator:aa6008ae51286a342cd366fbf1e3eeafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ac7be48f31ca451bcb16de428b5c40e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTiXmlString_1_1Rep.html">Rep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a></td></tr>
+<tr class="separator:ac7be48f31ca451bcb16de428b5c40e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:ae1f9e0de28328eed27d5623ff67a3191"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structTiXmlString_1_1Rep.html">Rep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">nullrep_</a> = { 0, 0, { '\0' } }</td></tr>
+<tr class="separator:ae1f9e0de28328eed27d5623ff67a3191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00067">67</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="abeb2c1893a04c17904f7c06546d0b971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef size_t <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a342f61e0fc2244df300b73aedf6d3fef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlString::TiXmlString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00078">78</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                   : <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>(&amp;<a class="code" href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">nullrep_</a>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ae1f9e0de28328eed27d5623ff67a3191"><div class="ttname"><a href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">TiXmlString::nullrep_</a></div><div class="ttdeci">static Rep nullrep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00264">tinystr.h:264</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac80fe17693a438c9ab2591664743fcb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlString::TiXmlString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00083">83</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00145">data()</a>, <a class="el" href="tinystr_8h_source.html#l00220">init()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00222">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                            : <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>(0)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>(copy.<a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        memcpy(<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), copy.<a class="code" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">data</a>(), <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a36417caceebe25352f53a87e8cd966b4"><div class="ttname"><a href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">TiXmlString::start</a></div><div class="ttdeci">char * start() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00222">tinystr.h:222</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a00abc60f135c7ca1951c7334cc2c7993"><div class="ttname"><a href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">TiXmlString::data</a></div><div class="ttdeci">const char * data() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00145">tinystr.h:145</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ac80fe17693a438c9ab2591664743fcb6_cgraph.png" border="0" usemap="#classTiXmlString_ac80fe17693a438c9ab2591664743fcb6_cgraph" alt=""/></div>
+<map name="classTiXmlString_ac80fe17693a438c9ab2591664743fcb6_cgraph" id="classTiXmlString_ac80fe17693a438c9ab2591664743fcb6_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993" title="TiXmlString::data" alt="" coords="227,5,349,32"/><area shape="rect" id="node3" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="231,80,345,107"/><area shape="rect" id="node4" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="221,131,355,157"/><area shape="rect" id="node5" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="226,181,350,208"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3b32bd2891a757c9f36c21db44c81d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tinystr_8h.html#ae341476cd6b94ee32e3e93110a759581">TIXML_EXPLICIT</a> TiXmlString::TiXmlString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00090">90</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00220">init()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00222">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                    : <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>(0)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>( static_cast&lt;size_type&gt;( strlen(copy) ));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        memcpy(<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), copy, <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a36417caceebe25352f53a87e8cd966b4"><div class="ttname"><a href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">TiXmlString::start</a></div><div class="ttdeci">char * start() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00222">tinystr.h:222</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_aa3b32bd2891a757c9f36c21db44c81d2_cgraph.png" border="0" usemap="#classTiXmlString_aa3b32bd2891a757c9f36c21db44c81d2_cgraph" alt=""/></div>
+<map name="classTiXmlString_aa3b32bd2891a757c9f36c21db44c81d2_cgraph" id="classTiXmlString_aa3b32bd2891a757c9f36c21db44c81d2_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="231,29,345,56"/><area shape="rect" id="node3" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="221,80,355,107"/><area shape="rect" id="node4" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="226,131,350,157"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b17ea5c5db986f14827223dfa8f1547"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tinystr_8h.html#ae341476cd6b94ee32e3e93110a759581">TIXML_EXPLICIT</a> TiXmlString::TiXmlString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00097">97</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00220">init()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00222">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                                  : <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>(0)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>(len);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        memcpy(<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), str, len);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a36417caceebe25352f53a87e8cd966b4"><div class="ttname"><a href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">TiXmlString::start</a></div><div class="ttdeci">char * start() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00222">tinystr.h:222</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a4b17ea5c5db986f14827223dfa8f1547_cgraph.png" border="0" usemap="#classTiXmlString_a4b17ea5c5db986f14827223dfa8f1547_cgraph" alt=""/></div>
+<map name="classTiXmlString_a4b17ea5c5db986f14827223dfa8f1547_cgraph" id="classTiXmlString_a4b17ea5c5db986f14827223dfa8f1547_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="227,29,341,56"/><area shape="rect" id="node3" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="222,80,346,107"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ac03f581ca3422c4808162ab14f3450"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlString::~TiXmlString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00104">104</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00253">quit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc">quit</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_aa6008ae51286a342cd366fbf1e3eeafc"><div class="ttname"><a href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc">TiXmlString::quit</a></div><div class="ttdeci">void quit()</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00253">tinystr.h:253</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a7ac03f581ca3422c4808162ab14f3450_cgraph.png" border="0" usemap="#classTiXmlString_a7ac03f581ca3422c4808162ab14f3450_cgraph" alt=""/></div>
+<map name="classTiXmlString_a7ac03f581ca3422c4808162ab14f3450_cgraph" id="classTiXmlString_a7ac03f581ca3422c4808162ab14f3450_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc" title="TiXmlString::quit" alt="" coords="230,5,349,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad44b21700d2ec24a511367b222b643fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp; TiXmlString::append </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8cpp_source.html">tinystr.cpp</a> 第 <a class="el" href="tinystr_8cpp_source.html#l00073">73</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00157">capacity()</a>, <a class="el" href="tinystr_8h_source.html#l00223">finish()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a>, <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00221">set_size()</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00095">operator+()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00123">operator+=()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> newsize = <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>() + len;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (newsize &gt; <a class="code" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">capacity</a>())</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c">reserve</a> (newsize + <a class="code" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">capacity</a>());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    memmove(<a class="code" href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167">finish</a>(), str, len);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30">set_size</a>(newsize);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="ttc" id="classTiXmlString_html_a58faf1c6b9828c8d5d5092bebf146167"><div class="ttname"><a href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167">TiXmlString::finish</a></div><div class="ttdeci">char * finish() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00223">tinystr.h:223</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a76e4d6aba7845f4cf9c02332a5fbf916"><div class="ttname"><a href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">TiXmlString::capacity</a></div><div class="ttdeci">size_type capacity() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00157">tinystr.h:157</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a88ecf9f0f00cb5c67b6b637958d7049c"><div class="ttname"><a href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c">TiXmlString::reserve</a></div><div class="ttdeci">void reserve(size_type cap)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00042">tinystr.cpp:42</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a5d70615367bf2920c25feddf6ac4ad30"><div class="ttname"><a href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30">TiXmlString::set_size</a></div><div class="ttdeci">void set_size(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00221">tinystr.h:221</a></div></div>
+<div class="ttc" id="classTiXmlString_html_abeb2c1893a04c17904f7c06546d0b971"><div class="ttname"><a href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a></div><div class="ttdeci">size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00071">tinystr.h:71</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ad44b21700d2ec24a511367b222b643fb_cgraph.png" border="0" usemap="#classTiXmlString_ad44b21700d2ec24a511367b222b643fb_cgraph" alt=""/></div>
+<map name="classTiXmlString_ad44b21700d2ec24a511367b222b643fb_cgraph" id="classTiXmlString_ad44b21700d2ec24a511367b222b643fb_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="389,5,536,32"/><area shape="rect" id="node3" href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167" title="TiXmlString::finish" alt="" coords="203,157,333,184"/><area shape="rect" id="node4" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="396,56,529,83"/><area shape="rect" id="node5" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="197,107,339,133"/><area shape="rect" id="node10" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="195,208,341,235"/><area shape="rect" id="node6" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="405,232,520,259"/><area shape="rect" id="node7" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="401,283,525,309"/><area shape="rect" id="node8" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993" title="TiXmlString::data" alt="" coords="401,107,524,133"/><area shape="rect" id="node9" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="398,157,527,184"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ad44b21700d2ec24a511367b222b643fb_icgraph.png" border="0" usemap="#classTiXmlString_ad44b21700d2ec24a511367b222b643fb_icgraph" alt=""/></div>
+<map name="classTiXmlString_ad44b21700d2ec24a511367b222b643fb_icgraph" id="classTiXmlString_ad44b21700d2ec24a511367b222b643fb_icgraph">
+<area shape="rect" id="node2" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="237,5,315,32"/><area shape="rect" id="node3" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="195,56,357,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac72f3d9149b7812c1e6c59402014d0d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp; TiXmlString::assign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8cpp_source.html">tinystr.cpp</a> 第 <a class="el" href="tinystr_8cpp_source.html#l00054">54</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00157">capacity()</a>, <a class="el" href="tinystr_8h_source.html#l00220">init()</a>, <a class="el" href="tinystr_8h_source.html#l00221">set_size()</a>, <a class="el" href="tinystr_8h_source.html#l00222">start()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00211">swap()</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00110">operator=()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> cap = <a class="code" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">capacity</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (len &gt; cap || cap &gt; 3*(len + 8))</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classTiXmlString.html">TiXmlString</a> tmp;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        tmp.<a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>(len);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        memcpy(tmp.<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), str, len);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762">swap</a>(tmp);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        memmove(<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), str, len);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30">set_size</a>(len);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="ttc" id="classTiXmlString_html_a36417caceebe25352f53a87e8cd966b4"><div class="ttname"><a href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">TiXmlString::start</a></div><div class="ttdeci">char * start() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00222">tinystr.h:222</a></div></div>
+<div class="ttc" id="classTiXmlString_html_aa392cbc180752a79f007f4f9280c7762"><div class="ttname"><a href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762">TiXmlString::swap</a></div><div class="ttdeci">void swap(TiXmlString &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00211">tinystr.h:211</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a76e4d6aba7845f4cf9c02332a5fbf916"><div class="ttname"><a href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">TiXmlString::capacity</a></div><div class="ttdeci">size_type capacity() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00157">tinystr.h:157</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a5d70615367bf2920c25feddf6ac4ad30"><div class="ttname"><a href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30">TiXmlString::set_size</a></div><div class="ttdeci">void set_size(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00221">tinystr.h:221</a></div></div>
+<div class="ttc" id="classTiXmlString_html_abeb2c1893a04c17904f7c06546d0b971"><div class="ttname"><a href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a></div><div class="ttdeci">size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00071">tinystr.h:71</a></div></div>
+<div class="ttc" id="classTiXmlString_html"><div class="ttname"><a href="classTiXmlString.html">TiXmlString</a></div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00067">tinystr.h:67</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_cgraph.png" border="0" usemap="#classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_cgraph" alt=""/></div>
+<map name="classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_cgraph" id="classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="189,5,336,32"/><area shape="rect" id="node3" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="205,80,320,107"/><area shape="rect" id="node4" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="189,131,336,157"/><area shape="rect" id="node5" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="201,181,325,208"/><area shape="rect" id="node6" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="198,232,327,259"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_icgraph.png" border="0" usemap="#classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_icgraph" alt=""/></div>
+<map name="classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_icgraph" id="classTiXmlString_ac72f3d9149b7812c1e6c59402014d0d5_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" title="TiXmlString::operator=" alt="" coords="190,5,343,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6763093267bbdecbf03f8840bc349877"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char&amp; TiXmlString::at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00161">161</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00148">length()</a>, <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        assert( index &lt; <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>() );</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>[ index ];</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a6763093267bbdecbf03f8840bc349877_cgraph.png" border="0" usemap="#classTiXmlString_a6763093267bbdecbf03f8840bc349877_cgraph" alt=""/></div>
+<map name="classTiXmlString_a6763093267bbdecbf03f8840bc349877_cgraph" id="classTiXmlString_a6763093267bbdecbf03f8840bc349877_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="163,5,296,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5581ca641d915551d3cda90f8e7bf49b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* TiXmlString::c_str </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00142">142</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00181">find()</a>, <a class="el" href="tinystr_8h_source.html#l00274">operator&lt;()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00269">operator==()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>; }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a5581ca641d915551d3cda90f8e7bf49b_icgraph.png" border="0" usemap="#classTiXmlString_a5581ca641d915551d3cda90f8e7bf49b_icgraph" alt=""/></div>
+<map name="classTiXmlString_a5581ca641d915551d3cda90f8e7bf49b_icgraph" id="classTiXmlString_a5581ca641d915551d3cda90f8e7bf49b_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a5f2a6fd565751410b392f249a9786db4" title="TiXmlString::find" alt="" coords="182,5,301,32"/><area shape="rect" id="node3" href="tinystr_8h.html#a28e13086a32670328b9f4fac22f09ccb" title="operator\&lt;" alt="" coords="203,56,280,83"/><area shape="rect" id="node5" href="tinystr_8h.html#ab43569e63f57a29dbc7deebfee90f98e" title="operator==" alt="" coords="199,107,284,133"/><area shape="rect" id="node4" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="350,81,431,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a76e4d6aba7845f4cf9c02332a5fbf916"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> TiXmlString::capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00157">157</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::capacity</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a>, <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a> , 以及 <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a9f38da318212f4a2f6ebe0afdbfaf477">capacity</a>; }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a9f38da318212f4a2f6ebe0afdbfaf477"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a9f38da318212f4a2f6ebe0afdbfaf477">TiXmlString::Rep::capacity</a></div><div class="ttdeci">size_type capacity</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a76e4d6aba7845f4cf9c02332a5fbf916_icgraph.png" border="0" usemap="#classTiXmlString_a76e4d6aba7845f4cf9c02332a5fbf916_icgraph" alt=""/></div>
+<map name="classTiXmlString_a76e4d6aba7845f4cf9c02332a5fbf916_icgraph" id="classTiXmlString_a76e4d6aba7845f4cf9c02332a5fbf916_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="397,56,537,83"/><area shape="rect" id="node5" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="203,5,339,32"/><area shape="rect" id="node7" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="200,107,341,133"/><area shape="rect" id="node3" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="635,56,712,83"/><area shape="rect" id="node4" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="593,5,754,32"/><area shape="rect" id="node6" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" title="TiXmlString::operator=" alt="" coords="390,5,543,32"/><area shape="rect" id="node8" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="428,107,505,133"/><area shape="rect" id="node9" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="633,107,714,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab20e06e4c666abf3bdbfb3a1191d4888"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00192">192</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00220">init()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00253">quit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">//Lee:</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="comment">//The original was just too strange, though correct:</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="comment">//  TiXmlString().swap(*this);</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="comment">//Instead use the quit &amp; re-init:</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc">quit</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>(0,0);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_aa6008ae51286a342cd366fbf1e3eeafc"><div class="ttname"><a href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc">TiXmlString::quit</a></div><div class="ttdeci">void quit()</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00253">tinystr.h:253</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ab20e06e4c666abf3bdbfb3a1191d4888_cgraph.png" border="0" usemap="#classTiXmlString_ab20e06e4c666abf3bdbfb3a1191d4888_cgraph" alt=""/></div>
+<map name="classTiXmlString_ab20e06e4c666abf3bdbfb3a1191d4888_cgraph" id="classTiXmlString_ab20e06e4c666abf3bdbfb3a1191d4888_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="184,29,299,56"/><area shape="rect" id="node3" href="classTiXmlString.html#aa6008ae51286a342cd366fbf1e3eeafc" title="TiXmlString::quit" alt="" coords="182,80,301,107"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a00abc60f135c7ca1951c7334cc2c7993"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* TiXmlString::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00145">145</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00135">operator+=()</a>, <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00083">TiXmlString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>; }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a00abc60f135c7ca1951c7334cc2c7993_icgraph.png" border="0" usemap="#classTiXmlString_a00abc60f135c7ca1951c7334cc2c7993_icgraph" alt=""/></div>
+<map name="classTiXmlString_a00abc60f135c7ca1951c7334cc2c7993_icgraph" id="classTiXmlString_a00abc60f135c7ca1951c7334cc2c7993_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#afdcae5ea2b4d9e194dc21226b817f417" title="TiXmlString::operator+=" alt="" coords="179,31,341,57"/><area shape="rect" id="node3" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="189,81,331,108"/><area shape="rect" id="node9" href="classTiXmlString.html#ac80fe17693a438c9ab2591664743fcb6" title="TiXmlString::TiXmlString" alt="" coords="177,132,343,159"/><area shape="rect" id="node4" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="393,56,533,83"/><area shape="rect" id="node7" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="424,107,501,133"/><area shape="rect" id="node5" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="624,5,701,32"/><area shape="rect" id="node6" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="582,56,743,83"/><area shape="rect" id="node8" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="622,107,703,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a61e1d11cdb71bea4a4ed79caa793f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TiXmlString::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00154">154</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::size</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">size</a> == 0; }</div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a3470330fe806a575dbb5909a1b908ac1"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">TiXmlString::Rep::size</a></div><div class="ttdeci">size_type size</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5c2b368b5eafe075fd9565cbcbd4c2f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> TiXmlString::find </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>lookup</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00175">175</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#a5c2b368b5eafe075fd9565cbcbd4c2f9">find</a>(lookup, 0);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a5c2b368b5eafe075fd9565cbcbd4c2f9"><div class="ttname"><a href="classTiXmlString.html#a5c2b368b5eafe075fd9565cbcbd4c2f9">TiXmlString::find</a></div><div class="ttdeci">size_type find(char lookup) const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00175">tinystr.h:175</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5f2a6fd565751410b392f249a9786db4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> TiXmlString::find </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>tofind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00181">181</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00142">c_str()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00074">npos</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">if</span> (offset &gt;= <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>()) <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#a8f4422d227088dc7bec96f479b275d0a">npos</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* p = <a class="code" href="classTiXmlString.html#a5581ca641d915551d3cda90f8e7bf49b">c_str</a>() + offset; *p != <span class="charliteral">&#39;\0&#39;</span>; ++p)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;           <span class="keywordflow">if</span> (*p == tofind) <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span> <a class="code" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> <span class="keyword">&gt;</span>( p - <a class="code" href="classTiXmlString.html#a5581ca641d915551d3cda90f8e7bf49b">c_str</a>() );</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#a8f4422d227088dc7bec96f479b275d0a">npos</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a8f4422d227088dc7bec96f479b275d0a"><div class="ttname"><a href="classTiXmlString.html#a8f4422d227088dc7bec96f479b275d0a">TiXmlString::npos</a></div><div class="ttdeci">static const size_type npos</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00074">tinystr.h:74</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_abeb2c1893a04c17904f7c06546d0b971"><div class="ttname"><a href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a></div><div class="ttdeci">size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00071">tinystr.h:71</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a5581ca641d915551d3cda90f8e7bf49b"><div class="ttname"><a href="classTiXmlString.html#a5581ca641d915551d3cda90f8e7bf49b">TiXmlString::c_str</a></div><div class="ttdeci">const char * c_str() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00142">tinystr.h:142</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a5f2a6fd565751410b392f249a9786db4_cgraph.png" border="0" usemap="#classTiXmlString_a5f2a6fd565751410b392f249a9786db4_cgraph" alt=""/></div>
+<map name="classTiXmlString_a5f2a6fd565751410b392f249a9786db4_cgraph" id="classTiXmlString_a5f2a6fd565751410b392f249a9786db4_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a5581ca641d915551d3cda90f8e7bf49b" title="TiXmlString::c_str" alt="" coords="177,5,303,32"/><area shape="rect" id="node3" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="173,56,307,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a58faf1c6b9828c8d5d5092bebf146167"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* TiXmlString::finish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00223">223</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a>, <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::size</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a> + <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">size</a>; }</div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a3470330fe806a575dbb5909a1b908ac1"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">TiXmlString::Rep::size</a></div><div class="ttdeci">size_type size</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a58faf1c6b9828c8d5d5092bebf146167_icgraph.png" border="0" usemap="#classTiXmlString_a58faf1c6b9828c8d5d5092bebf146167_icgraph" alt=""/></div>
+<map name="classTiXmlString_a58faf1c6b9828c8d5d5092bebf146167_icgraph" id="classTiXmlString_a58faf1c6b9828c8d5d5092bebf146167_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="185,31,325,57"/><area shape="rect" id="node3" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="416,5,493,32"/><area shape="rect" id="node4" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="374,56,535,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a694eacb51c43d8eba8aa7d4552b598ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>sz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00220">220</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00220">init()</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a>, <a class="el" href="tinystr_8h_source.html#l00192">clear()</a>, <a class="el" href="tinystr_8h_source.html#l00220">init()</a>, <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00083">TiXmlString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;{ <a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>(sz, sz); }</div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_cgraph.png" border="0" usemap="#classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_cgraph" alt=""/></div>
+<map name="classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_cgraph" id="classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_cgraph">
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_icgraph.png" border="0" usemap="#classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_icgraph" alt=""/></div>
+<map name="classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_icgraph" id="classTiXmlString_a694eacb51c43d8eba8aa7d4552b598ff_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="184,5,320,32"/><area shape="rect" id="node4" href="classTiXmlString.html#ab20e06e4c666abf3bdbfb3a1191d4888" title="TiXmlString::clear" alt="" coords="189,56,315,83"/><area shape="rect" id="node5" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="181,107,323,133"/><area shape="rect" id="node11" href="classTiXmlString.html#ac80fe17693a438c9ab2591664743fcb6" title="TiXmlString::TiXmlString" alt="" coords="169,157,335,184"/><area shape="rect" id="node3" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" title="TiXmlString::operator=" alt="" coords="385,5,538,32"/><area shape="rect" id="node6" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="391,81,531,108"/><area shape="rect" id="node9" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="423,132,500,159"/><area shape="rect" id="node7" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="629,31,707,57"/><area shape="rect" id="node8" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="587,81,749,108"/><area shape="rect" id="node10" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="627,132,709,159"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae11cd23e090fd2e7bb62eda05b45a2d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>cap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00231">231</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::capacity</a>, <a class="el" href="tinystr_8h_source.html#l00264">nullrep_</a>, <a class="el" href="tinystr_8h_source.html#l00263">rep_</a>, <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::size</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (cap)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="comment">// Lee: the original form:</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="comment">//  rep_ = static_cast&lt;Rep*&gt;(operator new(sizeof(Rep) + cap));</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="comment">// doesn&#39;t work in some cases of new being overloaded. Switching</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="comment">// to the normal allocation, although use an &#39;int&#39; for systems</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="comment">// that are overly picky about structure alignment.</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keyword">const</span> <a class="code" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> bytesNeeded = <span class="keyword">sizeof</span>(Rep) + cap;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keyword">const</span> <a class="code" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> intsNeeded = ( bytesNeeded + <span class="keyword">sizeof</span>(int) - 1 ) / <span class="keyword">sizeof</span>( int ); </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a> = <span class="keyword">reinterpret_cast&lt;</span>Rep*<span class="keyword">&gt;</span>( <span class="keyword">new</span> <span class="keywordtype">int</span>[ intsNeeded ] );</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>[ <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">size</a> = sz ] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a9f38da318212f4a2f6ebe0afdbfaf477">capacity</a> = cap;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a> = &amp;<a class="code" href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">nullrep_</a>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a3470330fe806a575dbb5909a1b908ac1"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">TiXmlString::Rep::size</a></div><div class="ttdeci">size_type size</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a9f38da318212f4a2f6ebe0afdbfaf477"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a9f38da318212f4a2f6ebe0afdbfaf477">TiXmlString::Rep::capacity</a></div><div class="ttdeci">size_type capacity</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_abeb2c1893a04c17904f7c06546d0b971"><div class="ttname"><a href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a></div><div class="ttdeci">size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00071">tinystr.h:71</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ae1f9e0de28328eed27d5623ff67a3191"><div class="ttname"><a href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">TiXmlString::nullrep_</a></div><div class="ttdeci">static Rep nullrep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00264">tinystr.h:264</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3202f27d139a3fac79205f1f3c707727"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> TiXmlString::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00148">148</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::size</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a>, <a class="el" href="tinystr_8h_source.html#l00161">at()</a>, <a class="el" href="tinystr_8h_source.html#l00181">find()</a>, <a class="el" href="tinystr_8cpp_source.html#l00086">operator+()</a>, <a class="el" href="tinystr_8h_source.html#l00135">operator+=()</a>, <a class="el" href="tinystr_8h_source.html#l00116">operator=()</a>, <a class="el" href="tinystr_8h_source.html#l00269">operator==()</a>, <a class="el" href="tinystr_8h_source.html#l00168">operator[]()</a>, <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00083">TiXmlString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">size</a>; }</div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a3470330fe806a575dbb5909a1b908ac1"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">TiXmlString::Rep::size</a></div><div class="ttdeci">size_type size</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a3202f27d139a3fac79205f1f3c707727_icgraph.png" border="0" usemap="#classTiXmlString_a3202f27d139a3fac79205f1f3c707727_icgraph" alt=""/></div>
+<map name="classTiXmlString_a3202f27d139a3fac79205f1f3c707727_icgraph" id="classTiXmlString_a3202f27d139a3fac79205f1f3c707727_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="403,24,543,51"/><area shape="rect" id="node5" href="classTiXmlString.html#a6763093267bbdecbf03f8840bc349877" title="TiXmlString::at" alt="" coords="216,201,325,228"/><area shape="rect" id="node6" href="classTiXmlString.html#a5f2a6fd565751410b392f249a9786db4" title="TiXmlString::find" alt="" coords="211,252,330,279"/><area shape="rect" id="node7" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="435,100,512,127"/><area shape="rect" id="node9" href="classTiXmlString.html#afdcae5ea2b4d9e194dc21226b817f417" title="TiXmlString::operator+=" alt="" coords="190,303,351,329"/><area shape="rect" id="node10" href="classTiXmlString.html#ab1f1f5d3eceaa0f22d0a7e6055ea81b0" title="TiXmlString::operator=" alt="" coords="194,353,347,380"/><area shape="rect" id="node11" href="tinystr_8h.html#ab43569e63f57a29dbc7deebfee90f98e" title="operator==" alt="" coords="431,151,516,177"/><area shape="rect" id="node12" href="classTiXmlString.html#ae8cdc1d46c538536b786f7ae03c0c1d9" title="TiXmlString::operator[]" alt="" coords="194,404,347,431"/><area shape="rect" id="node13" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="200,49,341,76"/><area shape="rect" id="node14" href="classTiXmlString.html#ac80fe17693a438c9ab2591664743fcb6" title="TiXmlString::TiXmlString" alt="" coords="187,455,354,481"/><area shape="rect" id="node3" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="635,5,712,32"/><area shape="rect" id="node4" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="593,56,754,83"/><area shape="rect" id="node8" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="633,119,714,145"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab56336ac2aa2a08d24a71eb9a2b502a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a>&amp; TiXmlString::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>suffix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00123">123</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">append</a>(suffix, static_cast&lt;size_type&gt;( strlen(suffix) ));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_ad44b21700d2ec24a511367b222b643fb"><div class="ttname"><a href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">TiXmlString::append</a></div><div class="ttdeci">TiXmlString &amp; append(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00073">tinystr.cpp:73</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ab56336ac2aa2a08d24a71eb9a2b502a5_cgraph.png" border="0" usemap="#classTiXmlString_ab56336ac2aa2a08d24a71eb9a2b502a5_cgraph" alt=""/></div>
+<map name="classTiXmlString_ab56336ac2aa2a08d24a71eb9a2b502a5_cgraph" id="classTiXmlString_ab56336ac2aa2a08d24a71eb9a2b502a5_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="217,107,357,133"/><area shape="rect" id="node3" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="600,5,747,32"/><area shape="rect" id="node4" href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167" title="TiXmlString::finish" alt="" coords="414,157,543,184"/><area shape="rect" id="node5" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="607,56,740,83"/><area shape="rect" id="node6" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="408,107,549,133"/><area shape="rect" id="node11" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="405,208,552,235"/><area shape="rect" id="node7" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="616,232,731,259"/><area shape="rect" id="node8" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="611,283,735,309"/><area shape="rect" id="node9" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993" title="TiXmlString::data" alt="" coords="612,107,735,133"/><area shape="rect" id="node10" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="609,157,738,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6aa09d5240470b76d54ec709e04f8c13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a>&amp; TiXmlString::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>single</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00129">129</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">append</a>(&amp;single, 1);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_ad44b21700d2ec24a511367b222b643fb"><div class="ttname"><a href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">TiXmlString::append</a></div><div class="ttdeci">TiXmlString &amp; append(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00073">tinystr.cpp:73</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a6aa09d5240470b76d54ec709e04f8c13_cgraph.png" border="0" usemap="#classTiXmlString_a6aa09d5240470b76d54ec709e04f8c13_cgraph" alt=""/></div>
+<map name="classTiXmlString_a6aa09d5240470b76d54ec709e04f8c13_cgraph" id="classTiXmlString_a6aa09d5240470b76d54ec709e04f8c13_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="217,107,357,133"/><area shape="rect" id="node3" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="600,5,747,32"/><area shape="rect" id="node4" href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167" title="TiXmlString::finish" alt="" coords="414,157,543,184"/><area shape="rect" id="node5" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="607,56,740,83"/><area shape="rect" id="node6" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="408,107,549,133"/><area shape="rect" id="node11" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="405,208,552,235"/><area shape="rect" id="node7" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="616,232,731,259"/><area shape="rect" id="node8" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="611,283,735,309"/><area shape="rect" id="node9" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993" title="TiXmlString::data" alt="" coords="612,107,735,133"/><area shape="rect" id="node10" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="609,157,738,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afdcae5ea2b4d9e194dc21226b817f417"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a>&amp; TiXmlString::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td>
+          <td class="paramname"><em>suffix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00135">135</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a>, <a class="el" href="tinystr_8h_source.html#l00145">data()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00148">length()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">append</a>(suffix.<a class="code" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">data</a>(), suffix.<a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>());</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ad44b21700d2ec24a511367b222b643fb"><div class="ttname"><a href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb">TiXmlString::append</a></div><div class="ttdeci">TiXmlString &amp; append(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00073">tinystr.cpp:73</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a00abc60f135c7ca1951c7334cc2c7993"><div class="ttname"><a href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">TiXmlString::data</a></div><div class="ttdeci">const char * data() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00145">tinystr.h:145</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_afdcae5ea2b4d9e194dc21226b817f417_cgraph.png" border="0" usemap="#classTiXmlString_afdcae5ea2b4d9e194dc21226b817f417_cgraph" alt=""/></div>
+<map name="classTiXmlString_afdcae5ea2b4d9e194dc21226b817f417_cgraph" id="classTiXmlString_afdcae5ea2b4d9e194dc21226b817f417_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="217,132,357,159"/><area shape="rect" id="node5" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="607,107,740,134"/><area shape="rect" id="node9" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993" title="TiXmlString::data" alt="" coords="612,384,735,411"/><area shape="rect" id="node3" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="600,158,747,184"/><area shape="rect" id="node4" href="classTiXmlString.html#a58faf1c6b9828c8d5d5092bebf146167" title="TiXmlString::finish" alt="" coords="414,31,543,58"/><area shape="rect" id="node6" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="408,234,549,260"/><area shape="rect" id="node11" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="405,82,552,108"/><area shape="rect" id="node7" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="616,334,731,360"/><area shape="rect" id="node8" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="611,208,735,235"/><area shape="rect" id="node10" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="609,259,738,286"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0bc6147afc0ec2aa0da3a3c0a8fcfb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a>&amp; TiXmlString::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00110">110</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5">assign</a>( copy, (<a class="code" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>)strlen(copy));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_ac72f3d9149b7812c1e6c59402014d0d5"><div class="ttname"><a href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5">TiXmlString::assign</a></div><div class="ttdeci">TiXmlString &amp; assign(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00054">tinystr.cpp:54</a></div></div>
+<div class="ttc" id="classTiXmlString_html_abeb2c1893a04c17904f7c06546d0b971"><div class="ttname"><a href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a></div><div class="ttdeci">size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00071">tinystr.h:71</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ae0bc6147afc0ec2aa0da3a3c0a8fcfb0_cgraph.png" border="0" usemap="#classTiXmlString_ae0bc6147afc0ec2aa0da3a3c0a8fcfb0_cgraph" alt=""/></div>
+<map name="classTiXmlString_ae0bc6147afc0ec2aa0da3a3c0a8fcfb0_cgraph" id="classTiXmlString_ae0bc6147afc0ec2aa0da3a3c0a8fcfb0_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="208,131,344,157"/><area shape="rect" id="node3" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="392,5,539,32"/><area shape="rect" id="node4" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="408,80,523,107"/><area shape="rect" id="node5" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="392,131,539,157"/><area shape="rect" id="node6" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="403,181,527,208"/><area shape="rect" id="node7" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="401,232,530,259"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1f1f5d3eceaa0f22d0a7e6055ea81b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html">TiXmlString</a>&amp; TiXmlString::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00116">116</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00222">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5">assign</a>(copy.<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), copy.<a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a36417caceebe25352f53a87e8cd966b4"><div class="ttname"><a href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">TiXmlString::start</a></div><div class="ttdeci">char * start() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00222">tinystr.h:222</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac72f3d9149b7812c1e6c59402014d0d5"><div class="ttname"><a href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5">TiXmlString::assign</a></div><div class="ttdeci">TiXmlString &amp; assign(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cpp_source.html#l00054">tinystr.cpp:54</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ab1f1f5d3eceaa0f22d0a7e6055ea81b0_cgraph.png" border="0" usemap="#classTiXmlString_ab1f1f5d3eceaa0f22d0a7e6055ea81b0_cgraph" alt=""/></div>
+<map name="classTiXmlString_ab1f1f5d3eceaa0f22d0a7e6055ea81b0_cgraph" id="classTiXmlString_ab1f1f5d3eceaa0f22d0a7e6055ea81b0_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="208,156,344,183"/><area shape="rect" id="node6" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="403,232,527,259"/><area shape="rect" id="node8" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="209,269,343,296"/><area shape="rect" id="node3" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="392,5,539,32"/><area shape="rect" id="node4" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="408,80,523,107"/><area shape="rect" id="node5" href="classTiXmlString.html#a5d70615367bf2920c25feddf6ac4ad30" title="TiXmlString::set_size" alt="" coords="392,131,539,157"/><area shape="rect" id="node7" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="401,181,530,208"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8cdc1d46c538536b786f7ae03c0c1d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char&amp; TiXmlString::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00168">168</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00148">length()</a>, <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        assert( index &lt; <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>() );</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>[ index ];</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_ae8cdc1d46c538536b786f7ae03c0c1d9_cgraph.png" border="0" usemap="#classTiXmlString_ae8cdc1d46c538536b786f7ae03c0c1d9_cgraph" alt=""/></div>
+<map name="classTiXmlString_ae8cdc1d46c538536b786f7ae03c0c1d9_cgraph" id="classTiXmlString_ae8cdc1d46c538536b786f7ae03c0c1d9_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="208,5,341,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6008ae51286a342cd366fbf1e3eeafc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::quit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00253">253</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00264">nullrep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00192">clear()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00104">~TiXmlString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a> != &amp;<a class="code" href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">nullrep_</a>)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="comment">// The rep_ is really an array of ints. (see the allocator, above).</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="comment">// Cast it back before delete, so the compiler won&#39;t incorrectly call destructors.</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keyword">delete</span> [] ( <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>( <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a> ) );</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ae1f9e0de28328eed27d5623ff67a3191"><div class="ttname"><a href="classTiXmlString.html#ae1f9e0de28328eed27d5623ff67a3191">TiXmlString::nullrep_</a></div><div class="ttdeci">static Rep nullrep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00264">tinystr.h:264</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_aa6008ae51286a342cd366fbf1e3eeafc_icgraph.png" border="0" usemap="#classTiXmlString_aa6008ae51286a342cd366fbf1e3eeafc_icgraph" alt=""/></div>
+<map name="classTiXmlString_aa6008ae51286a342cd366fbf1e3eeafc_icgraph" id="classTiXmlString_aa6008ae51286a342cd366fbf1e3eeafc_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ab20e06e4c666abf3bdbfb3a1191d4888" title="TiXmlString::clear" alt="" coords="198,5,325,32"/><area shape="rect" id="node3" href="classTiXmlString.html#a7ac03f581ca3422c4808162ab14f3450" title="TiXmlString::~TiXmlString" alt="" coords="174,56,349,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a88ecf9f0f00cb5c67b6b637958d7049c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::reserve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>cap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8cpp_source.html">tinystr.cpp</a> 第 <a class="el" href="tinystr_8cpp_source.html#l00042">42</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00157">capacity()</a>, <a class="el" href="tinystr_8h_source.html#l00145">data()</a>, <a class="el" href="tinystr_8h_source.html#l00220">init()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a>, <a class="el" href="tinystr_8h_source.html#l00222">start()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00211">swap()</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a> , 以及 <a class="el" href="tinystr_8cpp_source.html#l00086">operator+()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (cap &gt; <a class="code" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">capacity</a>())</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classTiXmlString.html">TiXmlString</a> tmp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        tmp.<a class="code" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">init</a>(<a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>(), cap);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        memcpy(tmp.<a class="code" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">start</a>(), <a class="code" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">data</a>(), <a class="code" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">length</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762">swap</a>(tmp);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="ttc" id="classTiXmlString_html_a36417caceebe25352f53a87e8cd966b4"><div class="ttname"><a href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4">TiXmlString::start</a></div><div class="ttdeci">char * start() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00222">tinystr.h:222</a></div></div>
+<div class="ttc" id="classTiXmlString_html_aa392cbc180752a79f007f4f9280c7762"><div class="ttname"><a href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762">TiXmlString::swap</a></div><div class="ttdeci">void swap(TiXmlString &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00211">tinystr.h:211</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a76e4d6aba7845f4cf9c02332a5fbf916"><div class="ttname"><a href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916">TiXmlString::capacity</a></div><div class="ttdeci">size_type capacity() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00157">tinystr.h:157</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a3202f27d139a3fac79205f1f3c707727"><div class="ttname"><a href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727">TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00148">tinystr.h:148</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a694eacb51c43d8eba8aa7d4552b598ff"><div class="ttname"><a href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff">TiXmlString::init</a></div><div class="ttdeci">void init(size_type sz)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00220">tinystr.h:220</a></div></div>
+<div class="ttc" id="classTiXmlString_html_a00abc60f135c7ca1951c7334cc2c7993"><div class="ttname"><a href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993">TiXmlString::data</a></div><div class="ttdeci">const char * data() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00145">tinystr.h:145</a></div></div>
+<div class="ttc" id="classTiXmlString_html"><div class="ttname"><a href="classTiXmlString.html">TiXmlString</a></div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00067">tinystr.h:67</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_cgraph.png" border="0" usemap="#classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_cgraph" alt=""/></div>
+<map name="classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_cgraph" id="classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_cgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#a76e4d6aba7845f4cf9c02332a5fbf916" title="TiXmlString::capacity" alt="" coords="195,5,341,32"/><area shape="rect" id="node3" href="classTiXmlString.html#a00abc60f135c7ca1951c7334cc2c7993" title="TiXmlString::data" alt="" coords="207,56,329,83"/><area shape="rect" id="node4" href="classTiXmlString.html#a694eacb51c43d8eba8aa7d4552b598ff" title="TiXmlString::init" alt="" coords="211,131,325,157"/><area shape="rect" id="node5" href="classTiXmlString.html#a3202f27d139a3fac79205f1f3c707727" title="TiXmlString::length" alt="" coords="201,181,335,208"/><area shape="rect" id="node6" href="classTiXmlString.html#a36417caceebe25352f53a87e8cd966b4" title="TiXmlString::start" alt="" coords="206,232,330,259"/><area shape="rect" id="node7" href="classTiXmlString.html#aa392cbc180752a79f007f4f9280c7762" title="TiXmlString::swap" alt="" coords="203,283,333,309"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_icgraph.png" border="0" usemap="#classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_icgraph" alt=""/></div>
+<map name="classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_icgraph" id="classTiXmlString_a88ecf9f0f00cb5c67b6b637958d7049c_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="195,56,335,83"/><area shape="rect" id="node5" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="227,107,304,133"/><area shape="rect" id="node3" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="427,5,504,32"/><area shape="rect" id="node4" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="385,56,546,83"/><area shape="rect" id="node6" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="425,107,506,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d70615367bf2920c25feddf6ac4ad30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::set_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a>&#160;</td>
+          <td class="paramname"><em>sz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00221">221</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a>, <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::size</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00073">append()</a> , 以及 <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;{ <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>[ <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">size</a> = sz ] = <span class="charliteral">&#39;\0&#39;</span>; }</div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a3470330fe806a575dbb5909a1b908ac1"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">TiXmlString::Rep::size</a></div><div class="ttdeci">size_type size</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a5d70615367bf2920c25feddf6ac4ad30_icgraph.png" border="0" usemap="#classTiXmlString_a5d70615367bf2920c25feddf6ac4ad30_icgraph" alt=""/></div>
+<map name="classTiXmlString_a5d70615367bf2920c25feddf6ac4ad30_icgraph" id="classTiXmlString_a5d70615367bf2920c25feddf6ac4ad30_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="201,56,341,83"/><area shape="rect" id="node5" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="203,107,339,133"/><area shape="rect" id="node3" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="432,5,509,32"/><area shape="rect" id="node4" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="390,56,551,83"/><area shape="rect" id="node6" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" title="TiXmlString::operator=" alt="" coords="394,107,547,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a96103e5c0f67e987fa48527e1f47a1f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">size_type</a> TiXmlString::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00151">151</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00227">TiXmlString::Rep::size</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">size</a>; }</div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a3470330fe806a575dbb5909a1b908ac1"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a3470330fe806a575dbb5909a1b908ac1">TiXmlString::Rep::size</a></div><div class="ttdeci">size_type size</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00227">tinystr.h:227</a></div></div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a36417caceebe25352f53a87e8cd966b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* TiXmlString::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00222">222</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00228">TiXmlString::Rep::str</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a>, <a class="el" href="tinystr_8h_source.html#l00116">operator=()</a>, <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00083">TiXmlString()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>-&gt;<a class="code" href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">str</a>; }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+<div class="ttc" id="structTiXmlString_1_1Rep_html_a88a7037a489827ec9e59b008e11342b0"><div class="ttname"><a href="structTiXmlString_1_1Rep.html#a88a7037a489827ec9e59b008e11342b0">TiXmlString::Rep::str</a></div><div class="ttdeci">char str[1]</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00228">tinystr.h:228</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_a36417caceebe25352f53a87e8cd966b4_icgraph.png" border="0" usemap="#classTiXmlString_a36417caceebe25352f53a87e8cd966b4_icgraph" alt=""/></div>
+<map name="classTiXmlString_a36417caceebe25352f53a87e8cd966b4_icgraph" id="classTiXmlString_a36417caceebe25352f53a87e8cd966b4_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="195,5,331,32"/><area shape="rect" id="node4" href="classTiXmlString.html#ab1f1f5d3eceaa0f22d0a7e6055ea81b0" title="TiXmlString::operator=" alt="" coords="186,56,339,83"/><area shape="rect" id="node5" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="192,107,333,133"/><area shape="rect" id="node11" href="classTiXmlString.html#ac80fe17693a438c9ab2591664743fcb6" title="TiXmlString::TiXmlString" alt="" coords="179,157,346,184"/><area shape="rect" id="node3" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" title="TiXmlString::operator=" alt="" coords="395,5,549,32"/><area shape="rect" id="node6" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="402,81,542,108"/><area shape="rect" id="node9" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="433,132,511,159"/><area shape="rect" id="node7" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="640,31,717,57"/><area shape="rect" id="node8" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="598,81,759,108"/><area shape="rect" id="node10" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="638,132,719,159"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa392cbc180752a79f007f4f9280c7762"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlString::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlString.html">TiXmlString</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00211">211</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinystr_8h_source.html#l00263">rep_</a>.</p>
+
+<p>参考自 <a class="el" href="tinystr_8cpp_source.html#l00054">assign()</a> , 以及 <a class="el" href="tinystr_8cpp_source.html#l00042">reserve()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        Rep* r = <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a> = other.<a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        other.<a class="code" href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">rep_</a> = r;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlString_html_ac7be48f31ca451bcb16de428b5c40e0c"><div class="ttname"><a href="classTiXmlString.html#ac7be48f31ca451bcb16de428b5c40e0c">TiXmlString::rep_</a></div><div class="ttdeci">Rep * rep_</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00263">tinystr.h:263</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlString_aa392cbc180752a79f007f4f9280c7762_icgraph.png" border="0" usemap="#classTiXmlString_aa392cbc180752a79f007f4f9280c7762_icgraph" alt=""/></div>
+<map name="classTiXmlString_aa392cbc180752a79f007f4f9280c7762_icgraph" id="classTiXmlString_aa392cbc180752a79f007f4f9280c7762_icgraph">
+<area shape="rect" id="node2" href="classTiXmlString.html#ac72f3d9149b7812c1e6c59402014d0d5" title="TiXmlString::assign" alt="" coords="187,5,323,32"/><area shape="rect" id="node4" href="classTiXmlString.html#a88ecf9f0f00cb5c67b6b637958d7049c" title="TiXmlString::reserve" alt="" coords="184,56,325,83"/><area shape="rect" id="node3" href="classTiXmlString.html#ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" title="TiXmlString::operator=" alt="" coords="374,5,527,32"/><area shape="rect" id="node5" href="classTiXmlString.html#ad44b21700d2ec24a511367b222b643fb" title="TiXmlString::append" alt="" coords="381,56,521,83"/><area shape="rect" id="node8" href="tinystr_8h.html#a6ee35bce93b3aaf8a2353471c0dd2d58" title="operator+" alt="" coords="412,107,489,133"/><area shape="rect" id="node6" href="tinystr_8h.html#ab77ef9617d62643b24e52118db159b7b" title="operator+" alt="" coords="619,5,696,32"/><area shape="rect" id="node7" href="classTiXmlString.html#ab56336ac2aa2a08d24a71eb9a2b502a5" title="TiXmlString::operator+=" alt="" coords="577,56,738,83"/><area shape="rect" id="node9" href="dzh__time__t_8h.html#ac4cbbaed12b3f648b1e523b20cdef901" title="_declspec" alt="" coords="617,107,698,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a8f4422d227088dc7bec96f479b275d0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a> TiXmlString::npos = static_cast&lt; <a class="el" href="classTiXmlString.html#abeb2c1893a04c17904f7c06546d0b971">TiXmlString::size_type</a> &gt;(-1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00074">74</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00181">find()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1f9e0de28328eed27d5623ff67a3191"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTiXmlString_1_1Rep.html">TiXmlString::Rep</a> TiXmlString::nullrep_ = { 0, 0, { '\0' } }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00264">264</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00231">init()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00253">quit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7be48f31ca451bcb16de428b5c40e0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTiXmlString_1_1Rep.html">Rep</a>* TiXmlString::rep_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinystr_8h_source.html">tinystr.h</a> 第 <a class="el" href="tinystr_8h_source.html#l00263">263</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinystr_8h_source.html#l00161">at()</a>, <a class="el" href="tinystr_8h_source.html#l00142">c_str()</a>, <a class="el" href="tinystr_8h_source.html#l00157">capacity()</a>, <a class="el" href="tinystr_8h_source.html#l00145">data()</a>, <a class="el" href="tinystr_8h_source.html#l00154">empty()</a>, <a class="el" href="tinystr_8h_source.html#l00223">finish()</a>, <a class="el" href="tinystr_8h_source.html#l00231">init()</a>, <a class="el" href="tinystr_8h_source.html#l00148">length()</a>, <a class="el" href="tinystr_8h_source.html#l00168">operator[]()</a>, <a class="el" href="tinystr_8h_source.html#l00253">quit()</a>, <a class="el" href="tinystr_8h_source.html#l00221">set_size()</a>, <a class="el" href="tinystr_8h_source.html#l00151">size()</a>, <a class="el" href="tinystr_8h_source.html#l00222">start()</a> , 以及 <a class="el" href="tinystr_8h_source.html#l00211">swap()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tinystr_8h_source.html">tinystr.h</a></li>
+<li><a class="el" href="tinystr_8cpp_source.html">tinystr.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

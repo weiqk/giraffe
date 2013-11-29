@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: asan_symbolize.BreakpadSymbolizer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceasan__symbolize.html">asan_symbolize</a></li><li class="navelem"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html">BreakpadSymbolizer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classasan__symbolize_1_1BreakpadSymbolizer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">asan_symbolize.BreakpadSymbolizer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 asan_symbolize.BreakpadSymbolizer 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1BreakpadSymbolizer__inherit__graph.png" border="0" usemap="#asan__symbolize_8BreakpadSymbolizer_inherit__map" alt="Inheritance graph"/></div>
+<map name="asan__symbolize_8BreakpadSymbolizer_inherit__map" id="asan__symbolize_8BreakpadSymbolizer_inherit__map">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1Symbolizer.html" title="{asan_symbolize.Symbolizer\n||+ __init__()\l+ symbolize()\l}" alt="" coords="33,131,217,223"/></map>
+</div>
+<div class="dynheader">
+asan_symbolize.BreakpadSymbolizer 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1BreakpadSymbolizer__coll__graph.png" border="0" usemap="#asan__symbolize_8BreakpadSymbolizer_coll__map" alt="Collaboration graph"/></div>
+<map name="asan__symbolize_8BreakpadSymbolizer_coll__map" id="asan__symbolize_8BreakpadSymbolizer_coll__map">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1Symbolizer.html" title="{asan_symbolize.Symbolizer\n||+ __init__()\l+ symbolize()\l}" alt="" coords="33,131,217,223"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab5701fd2f8d5f50efe25dd698be45d3f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">__init__</a></td></tr>
+<tr class="separator:ab5701fd2f8d5f50efe25dd698be45d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b1fd1de79e03a19836ddcc604be871"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">parse_lines</a></td></tr>
+<tr class="separator:a42b1fd1de79e03a19836ddcc604be871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da75a6e66e7a347fd50c786c3737db3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">get_sym_file_line</a></td></tr>
+<tr class="separator:a6da75a6e66e7a347fd50c786c3737db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235cc7141fffacb1f3ab121aaeb2b32e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">symbolize</a></td></tr>
+<tr class="separator:a235cc7141fffacb1f3ab121aaeb2b32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classasan__symbolize_1_1Symbolizer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classasan__symbolize_1_1Symbolizer')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classasan__symbolize_1_1Symbolizer.html">asan_symbolize.Symbolizer</a></td></tr>
+<tr class="memitem:aee2436e91868e66aac63bd884f82f469 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1Symbolizer.html#aee2436e91868e66aac63bd884f82f469">__init__</a></td></tr>
+<tr class="separator:aee2436e91868e66aac63bd884f82f469 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0985bb4630b3683c45f15be4f3d73378 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1Symbolizer.html#a0985bb4630b3683c45f15be4f3d73378">symbolize</a></td></tr>
+<tr class="separator:a0985bb4630b3683c45f15be4f3d73378 inherit pub_methods_classasan__symbolize_1_1Symbolizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a185d31c2ca347163556d10157abb6fc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">filename</a></td></tr>
+<tr class="separator:a185d31c2ca347163556d10157abb6fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa703b5fa479c2727a99c91e05a3d28c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a></td></tr>
+<tr class="separator:aa703b5fa479c2727a99c91e05a3d28c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2541358cd5c1d04498a952fb436738d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a></td></tr>
+<tr class="separator:a2541358cd5c1d04498a952fb436738d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbe9ea4401eade558dd103ccc7337cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a></td></tr>
+<tr class="separator:a4fbe9ea4401eade558dd103ccc7337cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329c6f6402c03e6c5d20dfa175cc9470"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a></td></tr>
+<tr class="separator:a329c6f6402c03e6c5d20dfa175cc9470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39496c04326fe23e36f7741fce749f96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">arch</a></td></tr>
+<tr class="separator:a39496c04326fe23e36f7741fce749f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514e467868009ce29b157affd3045353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">debug_id</a></td></tr>
+<tr class="separator:a514e467868009ce29b157affd3045353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49ecc6ecaa593e54ca54794682eafc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">binary</a></td></tr>
+<tr class="separator:ac49ecc6ecaa593e54ca54794682eafc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00222">222</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ab5701fd2f8d5f50efe25dd698be45d3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.BreakpadSymbolizer.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00223">223</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">  223</a></span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">__init__</a>(self, filename):</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">  225</a></span>&#160;    super(BreakpadSymbolizer, self).<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">__init__</a>()</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">filename</a> = filename</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">  227</a></span>&#160;    lines = file(filename).readlines()</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">  228</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a> = []</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">  229</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a> = {}</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">  230</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a> = []</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a> = {}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment"># MODULE mac x86_64 A7001116478B33F18FF9BEDE9F615F190 t</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">  233</a></span>&#160;    fragments = lines[0].rstrip().split()</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">  234</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">arch</a> = fragments[2]</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">  235</a></span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">debug_id</a> = fragments[3]</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">binary</a> = <span class="stringliteral">&#39; &#39;</span>.join(fragments[4:])</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">parse_lines</a>(lines[1:])</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a39496c04326fe23e36f7741fce749f96"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a39496c04326fe23e36f7741fce749f96">asan_symbolize.BreakpadSymbolizer.arch</a></div><div class="ttdeci">arch</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00233">asan_symbolize.py:233</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a185d31c2ca347163556d10157abb6fc6"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a185d31c2ca347163556d10157abb6fc6">asan_symbolize.BreakpadSymbolizer.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00225">asan_symbolize.py:225</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_ab5701fd2f8d5f50efe25dd698be45d3f"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#ab5701fd2f8d5f50efe25dd698be45d3f">asan_symbolize.BreakpadSymbolizer.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00223">asan_symbolize.py:223</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_ac49ecc6ecaa593e54ca54794682eafc4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">asan_symbolize.BreakpadSymbolizer.binary</a></div><div class="ttdeci">binary</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00235">asan_symbolize.py:235</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_aa703b5fa479c2727a99c91e05a3d28c9"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">asan_symbolize.BreakpadSymbolizer.files</a></div><div class="ttdeci">files</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00227">asan_symbolize.py:227</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a2541358cd5c1d04498a952fb436738d4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">asan_symbolize.BreakpadSymbolizer.symbols</a></div><div class="ttdeci">symbols</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00228">asan_symbolize.py:228</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a514e467868009ce29b157affd3045353"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a514e467868009ce29b157affd3045353">asan_symbolize.BreakpadSymbolizer.debug_id</a></div><div class="ttdeci">debug_id</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00234">asan_symbolize.py:234</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a329c6f6402c03e6c5d20dfa175cc9470"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">asan_symbolize.BreakpadSymbolizer.addresses</a></div><div class="ttdeci">addresses</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00230">asan_symbolize.py:230</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a4fbe9ea4401eade558dd103ccc7337cf"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">asan_symbolize.BreakpadSymbolizer.address_list</a></div><div class="ttdeci">address_list</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00229">asan_symbolize.py:229</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a42b1fd1de79e03a19836ddcc604be871"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">asan_symbolize.BreakpadSymbolizer.parse_lines</a></div><div class="ttdeci">def parse_lines</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00238">asan_symbolize.py:238</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6da75a6e66e7a347fd50c786c3737db3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.BreakpadSymbolizer.get_sym_file_line </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00264">264</a> 行定义.</p>
+
+<p>参考 <a class="el" href="asan__symbolize_8py_source.html#l00229">asan_symbolize.BreakpadSymbolizer.address_list</a>, <a class="el" href="asan__symbolize_8py_source.html#l00230">asan_symbolize.BreakpadSymbolizer.addresses</a>, <a class="el" href="asan__symbolize_8py_source.html#l00227">asan_symbolize.BreakpadSymbolizer.files</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00228">asan_symbolize.BreakpadSymbolizer.symbols</a>.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00282">asan_symbolize.BreakpadSymbolizer.symbolize()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">  264</a></span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">get_sym_file_line</a>(self, addr):</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    key = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> addr <span class="keywordflow">in</span> self.addresses.keys():</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      key = addr</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      index = bisect.bisect_left(self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a>, addr)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keywordflow">if</span> index == 0:</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        key = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">address_list</a>[index - 1]</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    sym_id, size, line_no, file_no = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a>[key]</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    symbol = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a>[sym_id]</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    filename = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a>[file_no]</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">if</span> addr &lt; key + size:</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="keywordflow">return</span> symbol, filename, line_no</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a6da75a6e66e7a347fd50c786c3737db3"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">asan_symbolize.BreakpadSymbolizer.get_sym_file_line</a></div><div class="ttdeci">def get_sym_file_line</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00264">asan_symbolize.py:264</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_aa703b5fa479c2727a99c91e05a3d28c9"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">asan_symbolize.BreakpadSymbolizer.files</a></div><div class="ttdeci">files</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00227">asan_symbolize.py:227</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a2541358cd5c1d04498a952fb436738d4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">asan_symbolize.BreakpadSymbolizer.symbols</a></div><div class="ttdeci">symbols</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00228">asan_symbolize.py:228</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a329c6f6402c03e6c5d20dfa175cc9470"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">asan_symbolize.BreakpadSymbolizer.addresses</a></div><div class="ttdeci">addresses</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00230">asan_symbolize.py:230</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a4fbe9ea4401eade558dd103ccc7337cf"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a4fbe9ea4401eade558dd103ccc7337cf">asan_symbolize.BreakpadSymbolizer.address_list</a></div><div class="ttdeci">address_list</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00229">asan_symbolize.py:229</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1BreakpadSymbolizer_a6da75a6e66e7a347fd50c786c3737db3_icgraph.png" border="0" usemap="#classasan__symbolize_1_1BreakpadSymbolizer_a6da75a6e66e7a347fd50c786c3737db3_icgraph" alt=""/></div>
+<map name="classasan__symbolize_1_1BreakpadSymbolizer_a6da75a6e66e7a347fd50c786c3737db3_icgraph" id="classasan__symbolize_1_1BreakpadSymbolizer_a6da75a6e66e7a347fd50c786c3737db3_icgraph">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e" title="asan_symbolize.BreakpadSymbolizer.symbolize" alt="" coords="318,12,621,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a42b1fd1de79e03a19836ddcc604be871"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.BreakpadSymbolizer.parse_lines </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lines</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00238">238</a> 行定义.</p>
+
+<p>参考 <a class="el" href="asan__symbolize_8py_source.html#l00230">asan_symbolize.BreakpadSymbolizer.addresses</a>, <a class="el" href="asan__symbolize_8py_source.html#l00227">asan_symbolize.BreakpadSymbolizer.files</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00228">asan_symbolize.BreakpadSymbolizer.symbols</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">  238</a></span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">parse_lines</a>(self, lines):</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    cur_function_addr = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">for</span> line <span class="keywordflow">in</span> lines:</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      fragments = line.split()</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">if</span> fragments[0] == <span class="stringliteral">&#39;FILE&#39;</span>:</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keyword">assert</span> int(fragments[1]) == len(self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">files</a>)</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        self.files.append(<span class="stringliteral">&#39; &#39;</span>.join(fragments[2:]))</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="keywordflow">elif</span> fragments[0] == <span class="stringliteral">&#39;PUBLIC&#39;</span>:</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a>[int(fragments[1], 16)] = <span class="stringliteral">&#39; &#39;</span>.join(fragments[3:])</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordflow">elif</span> fragments[0] <span class="keywordflow">in</span> [<span class="stringliteral">&#39;CFI&#39;</span>, <span class="stringliteral">&#39;STACK&#39;</span>]:</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">pass</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keywordflow">elif</span> fragments[0] == <span class="stringliteral">&#39;FUNC&#39;</span>:</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        cur_function_addr = int(fragments[1], 16)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> cur_function_addr <span class="keywordflow">in</span> self.symbols.keys():</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">symbols</a>[cur_function_addr] = <span class="stringliteral">&#39; &#39;</span>.join(fragments[4:])</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment"># Line starting with an address.</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        addr = int(fragments[0], 16)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        self.address_list.append(addr)</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="comment"># Tuple of symbol address, size, line, file number.</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">addresses</a>[addr] = (cur_function_addr,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                int(fragments[1], 16),</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                int(fragments[2]),</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                int(fragments[3]))</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    self.address_list.sort()</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_aa703b5fa479c2727a99c91e05a3d28c9"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#aa703b5fa479c2727a99c91e05a3d28c9">asan_symbolize.BreakpadSymbolizer.files</a></div><div class="ttdeci">files</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00227">asan_symbolize.py:227</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a2541358cd5c1d04498a952fb436738d4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a2541358cd5c1d04498a952fb436738d4">asan_symbolize.BreakpadSymbolizer.symbols</a></div><div class="ttdeci">symbols</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00228">asan_symbolize.py:228</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a329c6f6402c03e6c5d20dfa175cc9470"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a329c6f6402c03e6c5d20dfa175cc9470">asan_symbolize.BreakpadSymbolizer.addresses</a></div><div class="ttdeci">addresses</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00230">asan_symbolize.py:230</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a42b1fd1de79e03a19836ddcc604be871"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a42b1fd1de79e03a19836ddcc604be871">asan_symbolize.BreakpadSymbolizer.parse_lines</a></div><div class="ttdeci">def parse_lines</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00238">asan_symbolize.py:238</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a235cc7141fffacb1f3ab121aaeb2b32e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def asan_symbolize.BreakpadSymbolizer.symbolize </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00282">282</a> 行定义.</p>
+
+<p>参考 <a class="el" href="asan__symbolize_8py_source.html#l00112">asan_symbolize.Addr2LineSymbolizer.binary</a>, <a class="el" href="asan__symbolize_8py_source.html#l00143">asan_symbolize.DarwinSymbolizer.binary</a>, <a class="el" href="asan__symbolize_8py_source.html#l00235">asan_symbolize.BreakpadSymbolizer.binary</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00264">asan_symbolize.BreakpadSymbolizer.get_sym_file_line()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">  282</a></span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keyword">def </span><a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">symbolize</a>(self, addr, binary, offset):</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">if</span> self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">binary</a> != binary:</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    res = self.<a class="code" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">get_sym_file_line</a>(int(offset, 16))</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span> res:</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      function_name, file_name, line_no = res</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      result = [<span class="stringliteral">&#39;%s in %s %s:%d&#39;</span> % (</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          addr, function_name, file_name, line_no)]</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keywordflow">print</span> result</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+</div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a6da75a6e66e7a347fd50c786c3737db3"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3">asan_symbolize.BreakpadSymbolizer.get_sym_file_line</a></div><div class="ttdeci">def get_sym_file_line</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00264">asan_symbolize.py:264</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_ac49ecc6ecaa593e54ca54794682eafc4"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#ac49ecc6ecaa593e54ca54794682eafc4">asan_symbolize.BreakpadSymbolizer.binary</a></div><div class="ttdeci">binary</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00235">asan_symbolize.py:235</a></div></div>
+<div class="ttc" id="classasan__symbolize_1_1BreakpadSymbolizer_html_a235cc7141fffacb1f3ab121aaeb2b32e"><div class="ttname"><a href="classasan__symbolize_1_1BreakpadSymbolizer.html#a235cc7141fffacb1f3ab121aaeb2b32e">asan_symbolize.BreakpadSymbolizer.symbolize</a></div><div class="ttdeci">def symbolize</div><div class="ttdef"><b>Definition:</b> <a href="asan__symbolize_8py_source.html#l00282">asan_symbolize.py:282</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classasan__symbolize_1_1BreakpadSymbolizer_a235cc7141fffacb1f3ab121aaeb2b32e_cgraph.png" border="0" usemap="#classasan__symbolize_1_1BreakpadSymbolizer_a235cc7141fffacb1f3ab121aaeb2b32e_cgraph" alt=""/></div>
+<map name="classasan__symbolize_1_1BreakpadSymbolizer_a235cc7141fffacb1f3ab121aaeb2b32e_cgraph" id="classasan__symbolize_1_1BreakpadSymbolizer_a235cc7141fffacb1f3ab121aaeb2b32e_cgraph">
+<area shape="rect" id="node2" href="classasan__symbolize_1_1BreakpadSymbolizer.html#a6da75a6e66e7a347fd50c786c3737db3" title="asan_symbolize.BreakpadSymbolizer.get\l_sym_file_line" alt="" coords="358,5,621,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a4fbe9ea4401eade558dd103ccc7337cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.address_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00229">229</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00264">asan_symbolize.BreakpadSymbolizer.get_sym_file_line()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a329c6f6402c03e6c5d20dfa175cc9470"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.addresses</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00230">230</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00264">asan_symbolize.BreakpadSymbolizer.get_sym_file_line()</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00238">asan_symbolize.BreakpadSymbolizer.parse_lines()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39496c04326fe23e36f7741fce749f96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.arch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00233">233</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac49ecc6ecaa593e54ca54794682eafc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.binary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00235">235</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00282">asan_symbolize.BreakpadSymbolizer.symbolize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a514e467868009ce29b157affd3045353"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.debug_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00234">234</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a185d31c2ca347163556d10157abb6fc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.filename</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00225">225</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa703b5fa479c2727a99c91e05a3d28c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.files</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00227">227</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00264">asan_symbolize.BreakpadSymbolizer.get_sym_file_line()</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00238">asan_symbolize.BreakpadSymbolizer.parse_lines()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2541358cd5c1d04498a952fb436738d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asan_symbolize.BreakpadSymbolizer.symbols</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a> 第 <a class="el" href="asan__symbolize_8py_source.html#l00228">228</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="asan__symbolize_8py_source.html#l00264">asan_symbolize.BreakpadSymbolizer.get_sym_file_line()</a> , 以及 <a class="el" href="asan__symbolize_8py_source.html#l00238">asan_symbolize.BreakpadSymbolizer.parse_lines()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>scripts/<a class="el" href="asan__symbolize_8py_source.html">asan_symbolize.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

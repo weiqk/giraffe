@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: TiXmlText类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classTiXmlText-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TiXmlText类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>&gt;</code></p>
+<div class="dynheader">
+类 TiXmlText 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText__inherit__graph.png" border="0" usemap="#TiXmlText_inherit__map" alt="Inheritance graph"/></div>
+<map name="TiXmlText_inherit__map" id="TiXmlText_inherit__map">
+<area shape="rect" id="node2" href="classTiXmlNode.html" title="{TiXmlNode\n|# parent\l# type\l# firstChild\l# lastChild\l# value\l# prev\l# next\l|+ ~TiXmlNode()\l+ Value()\l+ ValueTStr()\l+ SetValue()\l+ Clear()\l+ Parent()\l+ Parent()\l+ FirstChild()\l+ FirstChild()\l+ FirstChild()\l和 49 更多...\l# TiXmlNode()\l# CopyTo()\l# Identify()\l&#45; TiXmlNode()\l&#45; operator=()\l}" alt="" coords="44,571,159,957"/><area shape="rect" id="node3" href="classTiXmlBase.html" title="{TiXmlBase\n|+ utf8ByteTable\l# location\l# userData\l# errorString\l&#45; entity\l&#45; condenseWhiteSpace\l|+ TiXmlBase()\l+ ~TiXmlBase()\l+ Print()\l+ Row()\l+ Column()\l+ SetUserData()\l+ GetUserData()\l+ GetUserData()\l+ Parse()\l+ SetCondenseWhiteSpace()\l+ IsWhiteSpaceCondensed()\l+ EncodeString()\l# SkipWhiteSpace()\l# IsWhiteSpace()\l# IsWhiteSpace()\l# ReadName()\l# ReadText()\l# GetEntity()\l# GetChar()\l# StringEqual()\l# IsAlpha()\l# IsAlphaNum()\l# ToLower()\l# ConvertUTF32ToUTF8()\l&#45; TiXmlBase()\l&#45; operator=()\l}" alt="" coords="5,5,197,523"/></map>
+</div>
+<div class="dynheader">
+TiXmlText 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText__coll__graph.png" border="0" usemap="#TiXmlText_coll__map" alt="Collaboration graph"/></div>
+<map name="TiXmlText_coll__map" id="TiXmlText_coll__map">
+<area shape="rect" id="node2" href="classTiXmlNode.html" title="{TiXmlNode\n|# type\l# value\l|+ ~TiXmlNode()\l+ Value()\l+ ValueTStr()\l+ SetValue()\l+ Clear()\l+ Parent()\l+ Parent()\l+ FirstChild()\l+ FirstChild()\l+ FirstChild()\l和 49 更多...\l# TiXmlNode()\l# CopyTo()\l# Identify()\l&#45; TiXmlNode()\l&#45; operator=()\l}" alt="" coords="77,715,192,1027"/><area shape="rect" id="node3" href="classTiXmlBase.html" title="{TiXmlBase\n|+ utf8ByteTable\l# userData\l# errorString\l&#45; condenseWhiteSpace\l|+ TiXmlBase()\l+ ~TiXmlBase()\l+ Print()\l+ Row()\l+ Column()\l+ SetUserData()\l+ GetUserData()\l+ GetUserData()\l+ Parse()\l+ SetCondenseWhiteSpace()\l+ IsWhiteSpaceCondensed()\l+ EncodeString()\l# SkipWhiteSpace()\l# IsWhiteSpace()\l# IsWhiteSpace()\l# ReadName()\l# ReadText()\l# GetEntity()\l# GetChar()\l# StringEqual()\l# IsAlpha()\l# IsAlphaNum()\l# ToLower()\l# ConvertUTF32ToUTF8()\l&#45; TiXmlBase()\l&#45; operator=()\l}" alt="" coords="39,176,231,664"/><area shape="rect" id="node4" href="structTiXmlCursor.html" title="{TiXmlCursor\n|+ row\l+ col\l|+ TiXmlCursor()\l+ Clear()\l}" alt="" coords="5,5,120,112"/><area shape="rect" id="node5" href="structTiXmlBase_1_1Entity.html" title="{TiXmlBase::Entity\n|+ str\l+ strLength\l+ chr\l|}" alt="" coords="144,5,272,112"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af659e77c6b87d684827f35a8f4895960"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#af659e77c6b87d684827f35a8f4895960">TiXmlText</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *initValue)</td></tr>
+<tr class="separator:af659e77c6b87d684827f35a8f4895960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829a4bd2d8d2461c333eb4f3f5b1b3d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a829a4bd2d8d2461c333eb4f3f5b1b3d2">~TiXmlText</a> ()</td></tr>
+<tr class="separator:a829a4bd2d8d2461c333eb4f3f5b1b3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2cc1b4af2208cbb0171cf20f6815d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a8d2cc1b4af2208cbb0171cf20f6815d1">TiXmlText</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlText.html">TiXmlText</a> &amp;copy)</td></tr>
+<tr class="separator:a8d2cc1b4af2208cbb0171cf20f6815d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f15d40d048cea7cab9d0eb4fd8a7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#af5f15d40d048cea7cab9d0eb4fd8a7d2">operator=</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlText.html">TiXmlText</a> &amp;base)</td></tr>
+<tr class="separator:af5f15d40d048cea7cab9d0eb4fd8a7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae74d56c5b3ddec6cc3103dd51821af92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#ae74d56c5b3ddec6cc3103dd51821af92">Print</a> (FILE *cfile, int depth) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ae74d56c5b3ddec6cc3103dd51821af92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a6a6b83fa2271022dd97c072a2b586"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#ad1a6a6b83fa2271022dd97c072a2b586">CDATA</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:ad1a6a6b83fa2271022dd97c072a2b586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether this represents text using a CDATA section.  <a href="#ad1a6a6b83fa2271022dd97c072a2b586">更多...</a><br/></td></tr>
+<tr class="separator:ad1a6a6b83fa2271022dd97c072a2b586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb17ff7c5d09b2c839393445a3de5ea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#acb17ff7c5d09b2c839393445a3de5ea9">SetCDATA</a> (bool _cdata)</td></tr>
+<tr class="memdesc:acb17ff7c5d09b2c839393445a3de5ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns on or off a CDATA representation of text.  <a href="#acb17ff7c5d09b2c839393445a3de5ea9">更多...</a><br/></td></tr>
+<tr class="separator:acb17ff7c5d09b2c839393445a3de5ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2dcfa41fc73d3e62dacc2fcf633819"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a8d2dcfa41fc73d3e62dacc2fcf633819">Parse</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *p, <a class="el" href="classTiXmlParsingData.html">TiXmlParsingData</a> *data, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:a8d2dcfa41fc73d3e62dacc2fcf633819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895bf34ffad17f7439ab2a52b9651648"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlText.html">TiXmlText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a895bf34ffad17f7439ab2a52b9651648">ToText</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a895bf34ffad17f7439ab2a52b9651648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null not of the requested type.  <a href="#a895bf34ffad17f7439ab2a52b9651648">更多...</a><br/></td></tr>
+<tr class="separator:a895bf34ffad17f7439ab2a52b9651648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c3a8fd3e4dbf6c0c4363a943d72f5b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlText.html">TiXmlText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#ae7c3a8fd3e4dbf6c0c4363a943d72f5b">ToText</a> ()</td></tr>
+<tr class="memdesc:ae7c3a8fd3e4dbf6c0c4363a943d72f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null not of the requested type.  <a href="#ae7c3a8fd3e4dbf6c0c4363a943d72f5b">更多...</a><br/></td></tr>
+<tr class="separator:ae7c3a8fd3e4dbf6c0c4363a943d72f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b9954ebf679557fac1a4453f337b7c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a43b9954ebf679557fac1a4453f337b7c">Accept</a> (<a class="el" href="classTiXmlVisitor.html">TiXmlVisitor</a> *content) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a43b9954ebf679557fac1a4453f337b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classTiXmlNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTiXmlNode')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classTiXmlNode.html">TiXmlNode</a></td></tr>
+<tr class="memitem:a027a76cccd359c831ee4024b58c49625 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a027a76cccd359c831ee4024b58c49625">~TiXmlNode</a> ()</td></tr>
+<tr class="separator:a027a76cccd359c831ee4024b58c49625 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77943eb90d12c2892b1337a9f5918b41 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a77943eb90d12c2892b1337a9f5918b41">Value</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a77943eb90d12c2892b1337a9f5918b41 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ece13d2ea66dac66e0b21332229239 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a83ece13d2ea66dac66e0b21332229239">ValueTStr</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a83ece13d2ea66dac66e0b21332229239 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a38329ca5d3f28f98ce932b8299ae90 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90">SetValue</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_value)</td></tr>
+<tr class="separator:a2a38329ca5d3f28f98ce932b8299ae90 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708e7f953df61d4d2d12f73171550a4b inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a708e7f953df61d4d2d12f73171550a4b">Clear</a> ()</td></tr>
+<tr class="memdesc:a708e7f953df61d4d2d12f73171550a4b inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all the children of this node. Does not affect 'this'.  <a href="#a708e7f953df61d4d2d12f73171550a4b">更多...</a><br/></td></tr>
+<tr class="separator:a708e7f953df61d4d2d12f73171550a4b inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab643043132ffd794f8602685d34a982e inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ab643043132ffd794f8602685d34a982e">Parent</a> ()</td></tr>
+<tr class="memdesc:ab643043132ffd794f8602685d34a982e inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">One step up the DOM.  <a href="#ab643043132ffd794f8602685d34a982e">更多...</a><br/></td></tr>
+<tr class="separator:ab643043132ffd794f8602685d34a982e inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78878709e53066f06eb4fcbcdd3a5260 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a78878709e53066f06eb4fcbcdd3a5260">Parent</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a78878709e53066f06eb4fcbcdd3a5260 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c8eee26bbe2d1b2762038df9dde2f0 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a44c8eee26bbe2d1b2762038df9dde2f0">FirstChild</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a44c8eee26bbe2d1b2762038df9dde2f0 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first child of this node. Will be null if there are no children.  <a href="#a44c8eee26bbe2d1b2762038df9dde2f0">更多...</a><br/></td></tr>
+<tr class="separator:a44c8eee26bbe2d1b2762038df9dde2f0 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e97d69b7c0ebd27fb7286be56559b77 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a5e97d69b7c0ebd27fb7286be56559b77">FirstChild</a> ()</td></tr>
+<tr class="separator:a5e97d69b7c0ebd27fb7286be56559b77 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f722624113c8203227de4f56576d31 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ab5f722624113c8203227de4f56576d31">FirstChild</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab5f722624113c8203227de4f56576d31 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8bf32be6419ec453a731868de19554 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#abc8bf32be6419ec453a731868de19554">FirstChild</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_value)</td></tr>
+<tr class="memdesc:abc8bf32be6419ec453a731868de19554 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first child of this node with the matching 'value'. Will be null if none found.  <a href="#abc8bf32be6419ec453a731868de19554">更多...</a><br/></td></tr>
+<tr class="separator:abc8bf32be6419ec453a731868de19554 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d671107e00cca1d28cb2d7f3a87a21e inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a6d671107e00cca1d28cb2d7f3a87a21e">LastChild</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a6d671107e00cca1d28cb2d7f3a87a21e inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6432d2b2495f6caf9cb4278df706a031 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a6432d2b2495f6caf9cb4278df706a031">LastChild</a> ()</td></tr>
+<tr class="memdesc:a6432d2b2495f6caf9cb4278df706a031 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last child of this node. Will be null if there are no children.  <a href="#a6432d2b2495f6caf9cb4278df706a031">更多...</a><br/></td></tr>
+<tr class="separator:a6432d2b2495f6caf9cb4278df706a031 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd3fdc436aa7433023310a041e5e63f inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#acdd3fdc436aa7433023310a041e5e63f">LastChild</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:acdd3fdc436aa7433023310a041e5e63f inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad5bf1059c48127b958711ef89e8e5d inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#abad5bf1059c48127b958711ef89e8e5d">LastChild</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_value)</td></tr>
+<tr class="memdesc:abad5bf1059c48127b958711ef89e8e5d inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last child of this node matching 'value'. Will be null if there are no children.  <a href="#abad5bf1059c48127b958711ef89e8e5d">更多...</a><br/></td></tr>
+<tr class="separator:abad5bf1059c48127b958711ef89e8e5d inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef7ac3978c4bb1cc8a24ffae7bced75 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aaef7ac3978c4bb1cc8a24ffae7bced75">IterateChildren</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *previous) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aaef7ac3978c4bb1cc8a24ffae7bced75 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2358e747118fdbf0e467b1e4f7d03de1 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a2358e747118fdbf0e467b1e4f7d03de1">IterateChildren</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *previous)</td></tr>
+<tr class="separator:a2358e747118fdbf0e467b1e4f7d03de1 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b86dbe25d3d26fa48180edc5e2a9fc inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#af2b86dbe25d3d26fa48180edc5e2a9fc">IterateChildren</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *previous) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:af2b86dbe25d3d26fa48180edc5e2a9fc inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">This flavor of IterateChildren searches for children with a particular 'value'.  <a href="#af2b86dbe25d3d26fa48180edc5e2a9fc">更多...</a><br/></td></tr>
+<tr class="separator:af2b86dbe25d3d26fa48180edc5e2a9fc inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ba8275e533e6f76340236c42ea0aea inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a67ba8275e533e6f76340236c42ea0aea">IterateChildren</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_value, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *previous)</td></tr>
+<tr class="separator:a67ba8275e533e6f76340236c42ea0aea inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af287a913ce46d8dbf7ef24fec69bbaf0 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#af287a913ce46d8dbf7ef24fec69bbaf0">InsertEndChild</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> &amp;addThis)</td></tr>
+<tr class="separator:af287a913ce46d8dbf7ef24fec69bbaf0 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a881212554b759865f6cac79a851d38 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a1a881212554b759865f6cac79a851d38">LinkEndChild</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *addThis)</td></tr>
+<tr class="separator:a1a881212554b759865f6cac79a851d38 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e54e393336382bc9875f64aab5cb15 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a71e54e393336382bc9875f64aab5cb15">InsertBeforeChild</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *beforeThis, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> &amp;addThis)</td></tr>
+<tr class="separator:a71e54e393336382bc9875f64aab5cb15 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274db3292218202805c093f66a964cb5 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a274db3292218202805c093f66a964cb5">InsertAfterChild</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *afterThis, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> &amp;addThis)</td></tr>
+<tr class="separator:a274db3292218202805c093f66a964cb5 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543208c2c801c84a213529541e904b9f inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a543208c2c801c84a213529541e904b9f">ReplaceChild</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *replaceThis, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> &amp;withThis)</td></tr>
+<tr class="separator:a543208c2c801c84a213529541e904b9f inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19d8510efc90596552f4feeac9a8fbf inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ae19d8510efc90596552f4feeac9a8fbf">RemoveChild</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *removeThis)</td></tr>
+<tr class="memdesc:ae19d8510efc90596552f4feeac9a8fbf inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a child of this node.  <a href="#ae19d8510efc90596552f4feeac9a8fbf">更多...</a><br/></td></tr>
+<tr class="separator:ae19d8510efc90596552f4feeac9a8fbf inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cd892768726270e511b2ab32de4d10 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ac2cd892768726270e511b2ab32de4d10">PreviousSibling</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:ac2cd892768726270e511b2ab32de4d10 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a sibling node.  <a href="#ac2cd892768726270e511b2ab32de4d10">更多...</a><br/></td></tr>
+<tr class="separator:ac2cd892768726270e511b2ab32de4d10 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c0642ad6ecc03f62953e68896ed1cc inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#af8c0642ad6ecc03f62953e68896ed1cc">PreviousSibling</a> ()</td></tr>
+<tr class="separator:af8c0642ad6ecc03f62953e68896ed1cc inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb3b8c1f38fa7b9e52d584a4aeca795 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#abbb3b8c1f38fa7b9e52d584a4aeca795">PreviousSibling</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:abbb3b8c1f38fa7b9e52d584a4aeca795 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a sibling node.  <a href="#abbb3b8c1f38fa7b9e52d584a4aeca795">更多...</a><br/></td></tr>
+<tr class="separator:abbb3b8c1f38fa7b9e52d584a4aeca795 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c977049207177ef21b51972315c2053 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a6c977049207177ef21b51972315c2053">PreviousSibling</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_prev)</td></tr>
+<tr class="separator:a6c977049207177ef21b51972315c2053 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af854baeba384f5fe9859f5aee03b548e inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#af854baeba384f5fe9859f5aee03b548e">NextSibling</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:af854baeba384f5fe9859f5aee03b548e inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a sibling node.  <a href="#af854baeba384f5fe9859f5aee03b548e">更多...</a><br/></td></tr>
+<tr class="separator:af854baeba384f5fe9859f5aee03b548e inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d05f7b1d7b470ac6887edd072d4892a inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a4d05f7b1d7b470ac6887edd072d4892a">NextSibling</a> ()</td></tr>
+<tr class="separator:a4d05f7b1d7b470ac6887edd072d4892a inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf9dc17531ac041f602f9ad579573ea inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#acaf9dc17531ac041f602f9ad579573ea">NextSibling</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:acaf9dc17531ac041f602f9ad579573ea inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a sibling node with the given 'value'.  <a href="#acaf9dc17531ac041f602f9ad579573ea">更多...</a><br/></td></tr>
+<tr class="separator:acaf9dc17531ac041f602f9ad579573ea inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4080bc5cc8a5c139e7cf308669e850fc inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a4080bc5cc8a5c139e7cf308669e850fc">NextSibling</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_next)</td></tr>
+<tr class="separator:a4080bc5cc8a5c139e7cf308669e850fc inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7667217e269e0da01d1f82aee94d1a3d inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a7667217e269e0da01d1f82aee94d1a3d">NextSiblingElement</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a7667217e269e0da01d1f82aee94d1a3d inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b211cb5034655a04358e0e2f6fc5010 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a1b211cb5034655a04358e0e2f6fc5010">NextSiblingElement</a> ()</td></tr>
+<tr class="separator:a1b211cb5034655a04358e0e2f6fc5010 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7897999f99cf4870dd59df6331d7ff inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a3d7897999f99cf4870dd59df6331d7ff">NextSiblingElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a3d7897999f99cf4870dd59df6331d7ff inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1ac6b800e18049bc75e9f8e63a8e5f inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a6e1ac6b800e18049bc75e9f8e63a8e5f">NextSiblingElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_next)</td></tr>
+<tr class="separator:a6e1ac6b800e18049bc75e9f8e63a8e5f inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f8d8e70d88aea4c5efedfe00862d55 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:ab1f8d8e70d88aea4c5efedfe00862d55 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to get through elements.  <a href="#ab1f8d8e70d88aea4c5efedfe00862d55">更多...</a><br/></td></tr>
+<tr class="separator:ab1f8d8e70d88aea4c5efedfe00862d55 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fecff1f3866ab33a8a25506e95db1d inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aa0fecff1f3866ab33a8a25506e95db1d">FirstChildElement</a> ()</td></tr>
+<tr class="separator:aa0fecff1f3866ab33a8a25506e95db1d inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec361bfef1cf1978d060295f597e0d9 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a0ec361bfef1cf1978d060295f597e0d9">FirstChildElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_value) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a0ec361bfef1cf1978d060295f597e0d9 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to get through elements.  <a href="#a0ec361bfef1cf1978d060295f597e0d9">更多...</a><br/></td></tr>
+<tr class="separator:a0ec361bfef1cf1978d060295f597e0d9 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6936ae323675071808ac4840379e57f5 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a6936ae323675071808ac4840379e57f5">FirstChildElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *_value)</td></tr>
+<tr class="separator:a6936ae323675071808ac4840379e57f5 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b99d5c97d67a42b9752f5210a1ba5e inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a57b99d5c97d67a42b9752f5210a1ba5e">Type</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a57b99d5c97d67a42b9752f5210a1ba5e inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66f4ebcd175204a168ed7c2d7b43071 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlDocument.html">TiXmlDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aa66f4ebcd175204a168ed7c2d7b43071">GetDocument</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:aa66f4ebcd175204a168ed7c2d7b43071 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2372c0e7adfb32f5b6902fe49a39b2 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlDocument.html">TiXmlDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a7b2372c0e7adfb32f5b6902fe49a39b2">GetDocument</a> ()</td></tr>
+<tr class="separator:a7b2372c0e7adfb32f5b6902fe49a39b2 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed21ad30630ef6e7faf096127edc9f3 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aeed21ad30630ef6e7faf096127edc9f3">NoChildren</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:aeed21ad30630ef6e7faf096127edc9f3 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this node has no children.  <a href="#aeed21ad30630ef6e7faf096127edc9f3">更多...</a><br/></td></tr>
+<tr class="separator:aeed21ad30630ef6e7faf096127edc9f3 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4cda4b15c29f64cff419309aebed08 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlDocument.html">TiXmlDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a8a4cda4b15c29f64cff419309aebed08">ToDocument</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a8a4cda4b15c29f64cff419309aebed08 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a8a4cda4b15c29f64cff419309aebed08">更多...</a><br/></td></tr>
+<tr class="separator:a8a4cda4b15c29f64cff419309aebed08 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72abed96dc9667ab9e0a2a275301bb1c inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a72abed96dc9667ab9e0a2a275301bb1c">ToElement</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a72abed96dc9667ab9e0a2a275301bb1c inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a72abed96dc9667ab9e0a2a275301bb1c">更多...</a><br/></td></tr>
+<tr class="separator:a72abed96dc9667ab9e0a2a275301bb1c inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a5086f9eaee910bbfdc7f975e26574 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlComment.html">TiXmlComment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aa0a5086f9eaee910bbfdc7f975e26574">ToComment</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:aa0a5086f9eaee910bbfdc7f975e26574 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#aa0a5086f9eaee910bbfdc7f975e26574">更多...</a><br/></td></tr>
+<tr class="separator:aa0a5086f9eaee910bbfdc7f975e26574 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7205cf31d7a376929f8a36930627a2 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#afd7205cf31d7a376929f8a36930627a2">ToUnknown</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:afd7205cf31d7a376929f8a36930627a2 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#afd7205cf31d7a376929f8a36930627a2">更多...</a><br/></td></tr>
+<tr class="separator:afd7205cf31d7a376929f8a36930627a2 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f43e6984fc7d4afd6eb32714c6b7b72 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlDeclaration.html">TiXmlDeclaration</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a9f43e6984fc7d4afd6eb32714c6b7b72">ToDeclaration</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:a9f43e6984fc7d4afd6eb32714c6b7b72 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a9f43e6984fc7d4afd6eb32714c6b7b72">更多...</a><br/></td></tr>
+<tr class="separator:a9f43e6984fc7d4afd6eb32714c6b7b72 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4c8ac28ee7a745d059db6691e03bae inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlDocument.html">TiXmlDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a6a4c8ac28ee7a745d059db6691e03bae">ToDocument</a> ()</td></tr>
+<tr class="memdesc:a6a4c8ac28ee7a745d059db6691e03bae inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a6a4c8ac28ee7a745d059db6691e03bae">更多...</a><br/></td></tr>
+<tr class="separator:a6a4c8ac28ee7a745d059db6691e03bae inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65d000223187d22a4dcebd7479e9ebc inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlElement.html">TiXmlElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aa65d000223187d22a4dcebd7479e9ebc">ToElement</a> ()</td></tr>
+<tr class="memdesc:aa65d000223187d22a4dcebd7479e9ebc inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#aa65d000223187d22a4dcebd7479e9ebc">更多...</a><br/></td></tr>
+<tr class="separator:aa65d000223187d22a4dcebd7479e9ebc inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383e06a0787f7063953934867990f849 inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlComment.html">TiXmlComment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a383e06a0787f7063953934867990f849">ToComment</a> ()</td></tr>
+<tr class="memdesc:a383e06a0787f7063953934867990f849 inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a383e06a0787f7063953934867990f849">更多...</a><br/></td></tr>
+<tr class="separator:a383e06a0787f7063953934867990f849 inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06de5af852668c7e4af0d09c205f0b0d inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlUnknown.html">TiXmlUnknown</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a06de5af852668c7e4af0d09c205f0b0d">ToUnknown</a> ()</td></tr>
+<tr class="memdesc:a06de5af852668c7e4af0d09c205f0b0d inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a06de5af852668c7e4af0d09c205f0b0d">更多...</a><br/></td></tr>
+<tr class="separator:a06de5af852668c7e4af0d09c205f0b0d inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4027136ca820ff4a636b607231b6a6df inherit pub_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlDeclaration.html">TiXmlDeclaration</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a4027136ca820ff4a636b607231b6a6df">ToDeclaration</a> ()</td></tr>
+<tr class="memdesc:a4027136ca820ff4a636b607231b6a6df inherit pub_methods_classTiXmlNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to a more defined type. Will return null if not of the requested type.  <a href="#a4027136ca820ff4a636b607231b6a6df">更多...</a><br/></td></tr>
+<tr class="separator:a4027136ca820ff4a636b607231b6a6df inherit pub_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:ac6753fe8a2c89669038fcf281cb301bf inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ac6753fe8a2c89669038fcf281cb301bf">TiXmlBase</a> ()</td></tr>
+<tr class="separator:ac6753fe8a2c89669038fcf281cb301bf inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1837ecb25a913612fa1115f090cbb56 inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ad1837ecb25a913612fa1115f090cbb56">~TiXmlBase</a> ()</td></tr>
+<tr class="separator:ad1837ecb25a913612fa1115f090cbb56 inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024bceb070188df92c2a8d8852dd0853 inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a024bceb070188df92c2a8d8852dd0853">Row</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a024bceb070188df92c2a8d8852dd0853 inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54bfb9b70fe6dd276e7b279cab7f003 inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ab54bfb9b70fe6dd276e7b279cab7f003">Column</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:ab54bfb9b70fe6dd276e7b279cab7f003 inherit pub_methods_classTiXmlBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classTiXmlBase.html#a024bceb070188df92c2a8d8852dd0853">Row()</a>  <a href="#ab54bfb9b70fe6dd276e7b279cab7f003">更多...</a><br/></td></tr>
+<tr class="separator:ab54bfb9b70fe6dd276e7b279cab7f003 inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b3e0f790930d4970ec30764e937b5d inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ac6b3e0f790930d4970ec30764e937b5d">SetUserData</a> (void *user)</td></tr>
+<tr class="memdesc:ac6b3e0f790930d4970ec30764e937b5d inherit pub_methods_classTiXmlBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a pointer to arbitrary user data.  <a href="#ac6b3e0f790930d4970ec30764e937b5d">更多...</a><br/></td></tr>
+<tr class="separator:ac6b3e0f790930d4970ec30764e937b5d inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6559a530ca6763fc301a14d77ed28c17 inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a6559a530ca6763fc301a14d77ed28c17">GetUserData</a> ()</td></tr>
+<tr class="memdesc:a6559a530ca6763fc301a14d77ed28c17 inherit pub_methods_classTiXmlBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to arbitrary user data.  <a href="#a6559a530ca6763fc301a14d77ed28c17">更多...</a><br/></td></tr>
+<tr class="separator:a6559a530ca6763fc301a14d77ed28c17 inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0120210e4680ef2088601753ce0ede4 inherit pub_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ad0120210e4680ef2088601753ce0ede4">GetUserData</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:ad0120210e4680ef2088601753ce0ede4 inherit pub_methods_classTiXmlBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to arbitrary user data.  <a href="#ad0120210e4680ef2088601753ce0ede4">更多...</a><br/></td></tr>
+<tr class="separator:ad0120210e4680ef2088601753ce0ede4 inherit pub_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:adde1869dfb029be50713fbfd8ce4d21f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#adde1869dfb029be50713fbfd8ce4d21f">Clone</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="memdesc:adde1869dfb029be50713fbfd8ce4d21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal use] Creates a new Element and returns it.  <a href="#adde1869dfb029be50713fbfd8ce4d21f">更多...</a><br/></td></tr>
+<tr class="separator:adde1869dfb029be50713fbfd8ce4d21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcec7d9b6fccfc5777452bb97e6031c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">CopyTo</a> (<a class="el" href="classTiXmlText.html">TiXmlText</a> *target) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:adcec7d9b6fccfc5777452bb97e6031c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c120428e3b3cf24d79706e6d2b65aa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a1c120428e3b3cf24d79706e6d2b65aa6">Blank</a> () <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:a1c120428e3b3cf24d79706e6d2b65aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classTiXmlNode"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classTiXmlNode')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classTiXmlNode.html">TiXmlNode</a></td></tr>
+<tr class="memitem:a3f46721695868667113c7487ff123f20 inherit pro_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a3f46721695868667113c7487ff123f20">TiXmlNode</a> (<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2">NodeType</a> _type)</td></tr>
+<tr class="separator:a3f46721695868667113c7487ff123f20 inherit pro_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6056978923ad8350fb5164af32d8038 inherit pro_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038">CopyTo</a> (<a class="el" href="classTiXmlNode.html">TiXmlNode</a> *target) <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> </td></tr>
+<tr class="separator:ab6056978923ad8350fb5164af32d8038 inherit pro_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e3a8e7578be463b04617786120c2bb inherit pro_methods_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#ac1e3a8e7578be463b04617786120c2bb">Identify</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *start, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:ac1e3a8e7578be463b04617786120c2bb inherit pro_methods_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a1919a0467daf2cf5d099b225add5b9f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a></td></tr>
+<tr class="separator:a1919a0467daf2cf5d099b225add5b9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ab6592e32cb9132be517cc12a70564c4b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlText.html#ab6592e32cb9132be517cc12a70564c4b">TiXmlElement</a></td></tr>
+<tr class="separator:ab6592e32cb9132be517cc12a70564c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_classTiXmlNode"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classTiXmlNode')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classTiXmlNode.html">TiXmlNode</a></td></tr>
+<tr class="memitem:a836eded4920ab9e9ef28496f48cd95a2 inherit pub_types_classTiXmlNode"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2">NodeType</a> { <br/>
+&#160;&#160;<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127">DOCUMENT</a>, 
+<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2aaf2344bcea122ef52d47c4dcc357f070">ELEMENT</a>, 
+<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a7737f35757c7152ca4f612d449ea0e4b">COMMENT</a>, 
+<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2af521ee2fb1e05705776b28fc55a70037">UNKNOWN</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8">TEXT</a>, 
+<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2ac02445686c2b72d11385002b3466c28b">DECLARATION</a>, 
+<a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a8334037fb3fe05c67d6110975b38a8bf">TYPECOUNT</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a836eded4920ab9e9ef28496f48cd95a2 inherit pub_types_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:a21c070379c7994cc551752ccee93414a inherit pub_types_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa750a76ca602241c416d5ec357d55fba1">TIXML_NO_ERROR</a> = 0, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aabcabc1b8efabeda1cc4352aa73d64390">TIXML_ERROR</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aab803949b8f12e03b5b57f86d9c52b614">TIXML_ERROR_OPENING_FILE</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa92e3bfc96126d3544f47e8b3f031e7bb">TIXML_ERROR_OUT_OF_MEMORY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa5cbfcf7fe5e67f0cd1aef98deac55dd2">TIXML_ERROR_PARSING_ELEMENT</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aadcc31ca78a9d507a88c9fafb3d18a3c4">TIXML_ERROR_FAILED_TO_READ_ELEMENT_NAME</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aafefdc75db23215e846605a2b5af0c2d3">TIXML_ERROR_READING_ELEMENT_VALUE</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa670fac23171b64829f90639cc3696d6e">TIXML_ERROR_READING_ATTRIBUTES</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa5f2aee664733a20f13f6f77556b9fa85">TIXML_ERROR_PARSING_EMPTY</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa175f7c72e2f9630bb96ef5137b325502">TIXML_ERROR_READING_END_TAG</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa24c814fdcf1d84704869e6f76b19cb6e">TIXML_ERROR_PARSING_UNKNOWN</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa72e3072a44be499edb89593f6ce10f6c">TIXML_ERROR_PARSING_COMMENT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa4c200f9d125027ab449e2be7be471ba0">TIXML_ERROR_PARSING_DECLARATION</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aab345f3e42e6ae9cdedee2b95e4d461b9">TIXML_ERROR_DOCUMENT_EMPTY</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aade7edbad3a94a6c161cac2638f380e17">TIXML_ERROR_EMBEDDED_NULL</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aaab2c858631b5d38eae1e6675949b9cd4">TIXML_ERROR_PARSING_CDATA</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa679b15d950f29257700a724bb118c34d">TIXML_ERROR_DOCUMENT_TOP_ONLY</a>, 
+<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa14552894942250efcec6b00dc52fc48a">TIXML_ERROR_STRING_COUNT</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a21c070379c7994cc551752ccee93414a inherit pub_types_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:a0f799ec645bfb8d8a969e83478f379c1 inherit pub_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a0f799ec645bfb8d8a969e83478f379c1">SetCondenseWhiteSpace</a> (bool condense)</td></tr>
+<tr class="separator:a0f799ec645bfb8d8a969e83478f379c1 inherit pub_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b1472531c647a25b1840a87ae42438 inherit pub_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ad4b1472531c647a25b1840a87ae42438">IsWhiteSpaceCondensed</a> ()</td></tr>
+<tr class="memdesc:ad4b1472531c647a25b1840a87ae42438 inherit pub_static_methods_classTiXmlBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current white space setting.  <a href="#ad4b1472531c647a25b1840a87ae42438">更多...</a><br/></td></tr>
+<tr class="separator:ad4b1472531c647a25b1840a87ae42438 inherit pub_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ed202562b58de64c7d799ca3c9db98 inherit pub_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a32ed202562b58de64c7d799ca3c9db98">EncodeString</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> &amp;str, <a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> *out)</td></tr>
+<tr class="separator:a32ed202562b58de64c7d799ca3c9db98 inherit pub_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;静态 Public 属性 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:ac8c86058137bdb4b413c3eca58f2d467 inherit pub_static_attribs_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ac8c86058137bdb4b413c3eca58f2d467">utf8ByteTable</a> [256]</td></tr>
+<tr class="separator:ac8c86058137bdb4b413c3eca58f2d467 inherit pub_static_attribs_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;静态 Protected 成员函数 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:ac0c3d66d8a9e6996a1fa016275e16875 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ac0c3d66d8a9e6996a1fa016275e16875">SkipWhiteSpace</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:ac0c3d66d8a9e6996a1fa016275e16875 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56296d561c0bab4bc8e198cdcf5c48e inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e">IsWhiteSpace</a> (char c)</td></tr>
+<tr class="separator:af56296d561c0bab4bc8e198cdcf5c48e inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de391ea9f4c4a8aa10d04480b048795 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a3de391ea9f4c4a8aa10d04480b048795">IsWhiteSpace</a> (int c)</td></tr>
+<tr class="separator:a3de391ea9f4c4a8aa10d04480b048795 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c21a6ab5f7b503acd91f35f183734b3 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a1c21a6ab5f7b503acd91f35f183734b3">ReadName</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *p, <a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> *name, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:a1c21a6ab5f7b503acd91f35f183734b3 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa646c74921aa33156968b802bbf5566e inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#aa646c74921aa33156968b802bbf5566e">ReadText</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *in, <a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> *text, bool ignoreWhiteSpace, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *endTag, bool ignoreCase, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:aa646c74921aa33156968b802bbf5566e inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c08bf3deffcda0bf8ce2958372b584 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ac5c08bf3deffcda0bf8ce2958372b584">GetEntity</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *in, char *value, int *length, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:ac5c08bf3deffcda0bf8ce2958372b584 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0fde72d6f662ae1fd6303195d2159b inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a5b0fde72d6f662ae1fd6303195d2159b">GetChar</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *p, char *_value, int *length, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:a5b0fde72d6f662ae1fd6303195d2159b inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51631e6986179558b9e5850723ed165a inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a51631e6986179558b9e5850723ed165a">StringEqual</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *p, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *endTag, bool ignoreCase, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:a51631e6986179558b9e5850723ed165a inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22522b2e8e1ac43102d16394f639fc8 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ae22522b2e8e1ac43102d16394f639fc8">IsAlpha</a> (unsigned char anyByte, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:ae22522b2e8e1ac43102d16394f639fc8 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321919055c115c78ded17f85a793f368 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a321919055c115c78ded17f85a793f368">IsAlphaNum</a> (unsigned char anyByte, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:a321919055c115c78ded17f85a793f368 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799f17405a86a5c2029618e85f11a097 inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a799f17405a86a5c2029618e85f11a097">ToLower</a> (int v, <a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a> encoding)</td></tr>
+<tr class="separator:a799f17405a86a5c2029618e85f11a097 inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c765e3a7f979d343e646ea797b180b inherit pro_static_methods_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a07c765e3a7f979d343e646ea797b180b">ConvertUTF32ToUTF8</a> (unsigned long input, char *output, int *length)</td></tr>
+<tr class="separator:a07c765e3a7f979d343e646ea797b180b inherit pro_static_methods_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classTiXmlNode"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classTiXmlNode')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classTiXmlNode.html">TiXmlNode</a></td></tr>
+<tr class="memitem:a662c4de61244e4fa5bd4e2d8c63143a5 inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a662c4de61244e4fa5bd4e2d8c63143a5">parent</a></td></tr>
+<tr class="separator:a662c4de61244e4fa5bd4e2d8c63143a5 inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2619c6379181c16ba95ae6922e2ca839 inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2">NodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a2619c6379181c16ba95ae6922e2ca839">type</a></td></tr>
+<tr class="separator:a2619c6379181c16ba95ae6922e2ca839 inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af749fb7f22010b80e8f904c32653d50e inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#af749fb7f22010b80e8f904c32653d50e">firstChild</a></td></tr>
+<tr class="separator:af749fb7f22010b80e8f904c32653d50e inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b30756d21b304580d22a841ec9d61f8 inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a5b30756d21b304580d22a841ec9d61f8">lastChild</a></td></tr>
+<tr class="separator:a5b30756d21b304580d22a841ec9d61f8 inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead528b3cedc33c16a6c539872c7cc8b inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a></td></tr>
+<tr class="separator:aead528b3cedc33c16a6c539872c7cc8b inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5370ea2cbfd9f0e0f7b30a57fd68f5 inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a9c5370ea2cbfd9f0e0f7b30a57fd68f5">prev</a></td></tr>
+<tr class="separator:a9c5370ea2cbfd9f0e0f7b30a57fd68f5 inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f329cc993d2d34df76e17dcbb776b45 inherit pro_attribs_classTiXmlNode"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlNode.html#a2f329cc993d2d34df76e17dcbb776b45">next</a></td></tr>
+<tr class="separator:a2f329cc993d2d34df76e17dcbb776b45 inherit pro_attribs_classTiXmlNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:a0d992580f3bc264909f898e942677a3c inherit pro_attribs_classTiXmlBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTiXmlCursor.html">TiXmlCursor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a0d992580f3bc264909f898e942677a3c">location</a></td></tr>
+<tr class="separator:a0d992580f3bc264909f898e942677a3c inherit pro_attribs_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab242c01590191f644569fa89a080d97c inherit pro_attribs_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#ab242c01590191f644569fa89a080d97c">userData</a></td></tr>
+<tr class="memdesc:ab242c01590191f644569fa89a080d97c inherit pro_attribs_classTiXmlBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field containing a generic user pointer.  <a href="#ab242c01590191f644569fa89a080d97c">更多...</a><br/></td></tr>
+<tr class="separator:ab242c01590191f644569fa89a080d97c inherit pro_attribs_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classTiXmlBase"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classTiXmlBase')"><img src="closed.png" alt="-"/>&#160;静态 Protected 属性 继承自 <a class="el" href="classTiXmlBase.html">TiXmlBase</a></td></tr>
+<tr class="memitem:a7ac8feec4100e446b3d78e1ac0659700 inherit pro_static_attribs_classTiXmlBase"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTiXmlBase.html#a7ac8feec4100e446b3d78e1ac0659700">errorString</a> [<a class="el" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aa14552894942250efcec6b00dc52fc48a">TIXML_ERROR_STRING_COUNT</a>]</td></tr>
+<tr class="separator:a7ac8feec4100e446b3d78e1ac0659700 inherit pro_static_attribs_classTiXmlBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>XML text. A text node can have 2 ways to output the next. "normal" output and CDATA. It will default to the mode it was parsed from the XML file and you generally want to leave it alone, but you can change the output mode with <a class="el" href="classTiXmlText.html#acb17ff7c5d09b2c839393445a3de5ea9" title="Turns on or off a CDATA representation of text. ">SetCDATA()</a> and query it with <a class="el" href="classTiXmlText.html#ad1a6a6b83fa2271022dd97c072a2b586" title="Queries whether this represents text using a CDATA section. ">CDATA()</a>. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01206">1206</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="af659e77c6b87d684827f35a8f4895960"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlText::TiXmlText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>initValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor for text element. By default, it is treated as normal, encoded text. If you want it be output as a CDATA text element, set the parameter _cdata to 'true' </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01214">1214</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01262">cdata</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l00511">TiXmlNode::SetValue()</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8cpp_source.html#l01371">Clone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                                        : <a class="code" href="classTiXmlNode.html#a3f46721695868667113c7487ff123f20">TiXmlNode</a> (<a class="code" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8">TiXmlNode::TEXT</a>)</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    {</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;        <a class="code" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90">SetValue</a>( initValue );</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    }</div>
+<div class="ttc" id="classTiXmlNode_html_a2a38329ca5d3f28f98ce932b8299ae90"><div class="ttname"><a href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90">TiXmlNode::SetValue</a></div><div class="ttdeci">void SetValue(const char *_value)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00511">tinyxml.h:511</a></div></div>
+<div class="ttc" id="classTiXmlText_html_a1919a0467daf2cf5d099b225add5b9f1"><div class="ttname"><a href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01262">tinyxml.h:1262</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8"><div class="ttname"><a href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8">TiXmlNode::TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00471">tinyxml.h:471</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a3f46721695868667113c7487ff123f20"><div class="ttname"><a href="classTiXmlNode.html#a3f46721695868667113c7487ff123f20">TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00137">tinyxml.cpp:137</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_af659e77c6b87d684827f35a8f4895960_cgraph.png" border="0" usemap="#classTiXmlText_af659e77c6b87d684827f35a8f4895960_cgraph" alt=""/></div>
+<map name="classTiXmlText_af659e77c6b87d684827f35a8f4895960_cgraph" id="classTiXmlText_af659e77c6b87d684827f35a8f4895960_cgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90" title="TiXmlNode::SetValue" alt="" coords="206,5,354,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_af659e77c6b87d684827f35a8f4895960_icgraph.png" border="0" usemap="#classTiXmlText_af659e77c6b87d684827f35a8f4895960_icgraph" alt=""/></div>
+<map name="classTiXmlText_af659e77c6b87d684827f35a8f4895960_icgraph" id="classTiXmlText_af659e77c6b87d684827f35a8f4895960_icgraph">
+<area shape="rect" id="node2" href="classTiXmlText.html#adde1869dfb029be50713fbfd8ce4d21f" title="[internal use] Creates a new Element and returns it. " alt="" coords="206,5,330,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a829a4bd2d8d2461c333eb4f3f5b1b3d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TiXmlText::~TiXmlText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01219">1219</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8d2cc1b4af2208cbb0171cf20f6815d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TiXmlText::TiXmlText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlText.html">TiXmlText</a> &amp;&#160;</td>
+          <td class="paramname"><em>copy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01230">1230</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8cpp_source.html#l01358">CopyTo()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;: <a class="code" href="classTiXmlNode.html#a3f46721695868667113c7487ff123f20">TiXmlNode</a>( <a class="code" href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8">TiXmlNode::TEXT</a> )  { copy.<a class="code" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">CopyTo</a>( <span class="keyword">this</span> ); }</div>
+<div class="ttc" id="classTiXmlNode_html_a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8"><div class="ttname"><a href="classTiXmlNode.html#a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8">TiXmlNode::TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00471">tinyxml.h:471</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_a3f46721695868667113c7487ff123f20"><div class="ttname"><a href="classTiXmlNode.html#a3f46721695868667113c7487ff123f20">TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00137">tinyxml.cpp:137</a></div></div>
+<div class="ttc" id="classTiXmlText_html_adcec7d9b6fccfc5777452bb97e6031c1"><div class="ttname"><a href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">TiXmlText::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlText *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l01358">tinyxml.cpp:1358</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_a8d2cc1b4af2208cbb0171cf20f6815d1_cgraph.png" border="0" usemap="#classTiXmlText_a8d2cc1b4af2208cbb0171cf20f6815d1_cgraph" alt=""/></div>
+<map name="classTiXmlText_a8d2cc1b4af2208cbb0171cf20f6815d1_cgraph" id="classTiXmlText_a8d2cc1b4af2208cbb0171cf20f6815d1_cgraph">
+<area shape="rect" id="node2" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1" title="TiXmlText::CopyTo" alt="" coords="205,5,341,32"/><area shape="rect" id="node3" href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038" title="TiXmlNode::CopyTo" alt="" coords="389,5,531,32"/><area shape="rect" id="node4" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90" title="TiXmlNode::SetValue" alt="" coords="579,5,727,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a43b9954ebf679557fac1a4453f337b7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TiXmlText::Accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlVisitor.html">TiXmlVisitor</a> *&#160;</td>
+          <td class="paramname"><em>content</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Walk the XML tree visiting this node and all of its children. </p>
+
+<p>实现了 <a class="el" href="classTiXmlNode.html#acc0f88b7462c6cb73809d410a4f5bb86">TiXmlNode</a>.</p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01365">1365</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l00147">TiXmlVisitor::Visit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;{</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    <span class="keywordflow">return</span> visitor-&gt;Visit( *<span class="keyword">this</span> );</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_a43b9954ebf679557fac1a4453f337b7c_cgraph.png" border="0" usemap="#classTiXmlText_a43b9954ebf679557fac1a4453f337b7c_cgraph" alt=""/></div>
+<map name="classTiXmlText_a43b9954ebf679557fac1a4453f337b7c_cgraph" id="classTiXmlText_a43b9954ebf679557fac1a4453f337b7c_cgraph">
+<area shape="rect" id="node2" href="classTiXmlVisitor.html#afad71c71ce6473fb9b4b64cd92de4a19" title="Visit a declaration. " alt="" coords="185,5,311,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c120428e3b3cf24d79706e6d2b65aa6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TiXmlText::Blank </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxmlparser_8cpp_source.html">tinyxmlparser.cpp</a> 第 <a class="el" href="tinyxmlparser_8cpp_source.html#l01631">1631</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l00293">TiXmlBase::IsWhiteSpace()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l00764">TiXmlNode::value</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxmlparser_8cpp_source.html#l01177">TiXmlElement::ReadValue()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;{</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i=0; i&lt;<a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>.length(); i++ )</div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;        <span class="keywordflow">if</span> ( !<a class="code" href="classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e">IsWhiteSpace</a>( <a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>[i] ) )</div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;}</div>
+<div class="ttc" id="classTiXmlBase_html_af56296d561c0bab4bc8e198cdcf5c48e"><div class="ttname"><a href="classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e">TiXmlBase::IsWhiteSpace</a></div><div class="ttdeci">static bool IsWhiteSpace(char c)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00293">tinyxml.h:293</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_aead528b3cedc33c16a6c539872c7cc8b"><div class="ttname"><a href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00764">tinyxml.h:764</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_cgraph.png" border="0" usemap="#classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_cgraph" alt=""/></div>
+<map name="classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_cgraph" id="classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_cgraph">
+<area shape="rect" id="node2" href="classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e" title="TiXmlBase::IsWhiteSpace" alt="" coords="176,5,352,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_icgraph.png" border="0" usemap="#classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_icgraph" alt=""/></div>
+<map name="classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_icgraph" id="classTiXmlText_a1c120428e3b3cf24d79706e6d2b65aa6_icgraph">
+<area shape="rect" id="node2" href="classTiXmlElement.html#ac786bce103042d3837c4cc2ff6967d41" title="TiXmlElement::ReadValue" alt="" coords="176,5,352,32"/><area shape="rect" id="node3" href="classTiXmlElement.html#af95c9165159fd9dfdcc5b894a3fcf85b" title="TiXmlElement::Parse" alt="" coords="400,5,547,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1a6a6b83fa2271022dd97c072a2b586"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TiXmlText::CDATA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries whether this represents text using a CDATA section. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01237">1237</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01262">cdata</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8cpp_source.html#l01833">TiXmlPrinter::Visit()</a> , 以及 <a class="el" href="tinyxml_8cpp_source.html#l01770">TiXmlPrinter::VisitEnter()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a>; }</div>
+<div class="ttc" id="classTiXmlText_html_a1919a0467daf2cf5d099b225add5b9f1"><div class="ttname"><a href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01262">tinyxml.h:1262</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_ad1a6a6b83fa2271022dd97c072a2b586_icgraph.png" border="0" usemap="#classTiXmlText_ad1a6a6b83fa2271022dd97c072a2b586_icgraph" alt=""/></div>
+<map name="classTiXmlText_ad1a6a6b83fa2271022dd97c072a2b586_icgraph" id="classTiXmlText_ad1a6a6b83fa2271022dd97c072a2b586_icgraph">
+<area shape="rect" id="node2" href="classTiXmlPrinter.html#a0857c5d32c59b9a257f9a49cb9411df5" title="Visit a text node. " alt="" coords="205,5,333,32"/><area shape="rect" id="node3" href="classTiXmlPrinter.html#a6dccaf5ee4979f13877690afe28721e8" title="Visit an element. " alt="" coords="190,56,349,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adde1869dfb029be50713fbfd8ce4d21f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTiXmlNode.html">TiXmlNode</a> * TiXmlText::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[internal use] Creates a new Element and returns it. </p>
+
+<p>实现了 <a class="el" href="classTiXmlNode.html#a4508cc3a2d7a98e96a54cc09c37a78a4">TiXmlNode</a>.</p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01371">1371</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8cpp_source.html#l01358">CopyTo()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01214">TiXmlText()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;{   </div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <a class="code" href="classTiXmlText.html">TiXmlText</a>* clone = 0;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    clone = <span class="keyword">new</span> <a class="code" href="classTiXmlText.html#af659e77c6b87d684827f35a8f4895960">TiXmlText</a>( <span class="stringliteral">&quot;&quot;</span> );</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    <span class="keywordflow">if</span> ( !clone )</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    <a class="code" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">CopyTo</a>( clone );</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    <span class="keywordflow">return</span> clone;</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;}</div>
+<div class="ttc" id="classTiXmlText_html"><div class="ttname"><a href="classTiXmlText.html">TiXmlText</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01206">tinyxml.h:1206</a></div></div>
+<div class="ttc" id="classTiXmlText_html_af659e77c6b87d684827f35a8f4895960"><div class="ttname"><a href="classTiXmlText.html#af659e77c6b87d684827f35a8f4895960">TiXmlText::TiXmlText</a></div><div class="ttdeci">TiXmlText(const char *initValue)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01214">tinyxml.h:1214</a></div></div>
+<div class="ttc" id="classTiXmlText_html_adcec7d9b6fccfc5777452bb97e6031c1"><div class="ttname"><a href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">TiXmlText::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlText *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l01358">tinyxml.cpp:1358</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_adde1869dfb029be50713fbfd8ce4d21f_cgraph.png" border="0" usemap="#classTiXmlText_adde1869dfb029be50713fbfd8ce4d21f_cgraph" alt=""/></div>
+<map name="classTiXmlText_adde1869dfb029be50713fbfd8ce4d21f_cgraph" id="classTiXmlText_adde1869dfb029be50713fbfd8ce4d21f_cgraph">
+<area shape="rect" id="node2" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1" title="TiXmlText::CopyTo" alt="" coords="179,5,315,32"/><area shape="rect" id="node5" href="classTiXmlText.html#af659e77c6b87d684827f35a8f4895960" title="TiXmlText::TiXmlText" alt="" coords="363,56,514,83"/><area shape="rect" id="node3" href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038" title="TiXmlNode::CopyTo" alt="" coords="368,5,509,32"/><area shape="rect" id="node4" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90" title="TiXmlNode::SetValue" alt="" coords="563,31,711,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adcec7d9b6fccfc5777452bb97e6031c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlText::CopyTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTiXmlText.html">TiXmlText</a> *&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01358">1358</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01262">cdata</a> , 以及 <a class="el" href="tinyxml_8cpp_source.html#l00162">TiXmlNode::CopyTo()</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8cpp_source.html#l01371">Clone()</a>, <a class="el" href="tinyxml_8h_source.html#l01231">operator=()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01230">TiXmlText()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;{</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;    <a class="code" href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038">TiXmlNode::CopyTo</a>( target );</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    target-&gt;<a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a> = <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a>;</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;}</div>
+<div class="ttc" id="classTiXmlText_html_a1919a0467daf2cf5d099b225add5b9f1"><div class="ttname"><a href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01262">tinyxml.h:1262</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_ab6056978923ad8350fb5164af32d8038"><div class="ttname"><a href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038">TiXmlNode::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlNode *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00162">tinyxml.cpp:162</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_cgraph.png" border="0" usemap="#classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_cgraph" alt=""/></div>
+<map name="classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_cgraph" id="classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_cgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038" title="TiXmlNode::CopyTo" alt="" coords="189,5,331,32"/><area shape="rect" id="node3" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90" title="TiXmlNode::SetValue" alt="" coords="379,5,527,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_icgraph.png" border="0" usemap="#classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_icgraph" alt=""/></div>
+<map name="classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_icgraph" id="classTiXmlText_adcec7d9b6fccfc5777452bb97e6031c1_icgraph">
+<area shape="rect" id="node2" href="classTiXmlText.html#adde1869dfb029be50713fbfd8ce4d21f" title="[internal use] Creates a new Element and returns it. " alt="" coords="203,5,327,32"/><area shape="rect" id="node3" href="classTiXmlText.html#af5f15d40d048cea7cab9d0eb4fd8a7d2" title="TiXmlText::operator=" alt="" coords="193,56,338,83"/><area shape="rect" id="node4" href="classTiXmlText.html#a8d2cc1b4af2208cbb0171cf20f6815d1" title="TiXmlText::TiXmlText" alt="" coords="190,107,341,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af5f15d40d048cea7cab9d0eb4fd8a7d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlText::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlText.html">TiXmlText</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01231">1231</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8cpp_source.html#l01358">CopyTo()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;{ base.<a class="code" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">CopyTo</a>( <span class="keyword">this</span> ); }</div>
+<div class="ttc" id="classTiXmlText_html_adcec7d9b6fccfc5777452bb97e6031c1"><div class="ttname"><a href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1">TiXmlText::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlText *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l01358">tinyxml.cpp:1358</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_af5f15d40d048cea7cab9d0eb4fd8a7d2_cgraph.png" border="0" usemap="#classTiXmlText_af5f15d40d048cea7cab9d0eb4fd8a7d2_cgraph" alt=""/></div>
+<map name="classTiXmlText_af5f15d40d048cea7cab9d0eb4fd8a7d2_cgraph" id="classTiXmlText_af5f15d40d048cea7cab9d0eb4fd8a7d2_cgraph">
+<area shape="rect" id="node2" href="classTiXmlText.html#adcec7d9b6fccfc5777452bb97e6031c1" title="TiXmlText::CopyTo" alt="" coords="200,5,336,32"/><area shape="rect" id="node3" href="classTiXmlNode.html#ab6056978923ad8350fb5164af32d8038" title="TiXmlNode::CopyTo" alt="" coords="384,5,525,32"/><area shape="rect" id="node4" href="classTiXmlNode.html#a2a38329ca5d3f28f98ce932b8299ae90" title="TiXmlNode::SetValue" alt="" coords="574,5,722,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d2dcfa41fc73d3e62dacc2fcf633819"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char * TiXmlText::Parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTiXmlParsingData.html">TiXmlParsingData</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tinyxml_8h.html#a88d51847a13ee0f4b4d320d03d2c4d96">TiXmlEncoding</a>&#160;</td>
+          <td class="paramname"><em>encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="classTiXmlBase.html#a00e4edb0219d00a1379c856e5a1d2025">TiXmlBase</a>.</p>
+
+<p>在文件 <a class="el" href="tinyxmlparser_8cpp_source.html">tinyxmlparser.cpp</a> 第 <a class="el" href="tinyxmlparser_8cpp_source.html#l01498">1498</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01262">cdata</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00177">TiXmlParsingData::Cursor()</a>, <a class="el" href="tinyxml_8cpp_source.html#l00493">TiXmlNode::GetDocument()</a>, <a class="el" href="tinyxml_8h_source.html#l00376">TiXmlBase::location</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00574">TiXmlBase::ReadText()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00798">TiXmlDocument::SetError()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00196">TiXmlParsingData::Stamp()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l00534">TiXmlBase::StringEqual()</a>, <a class="el" href="tinyxml_8h_source.html#l00284">TiXmlBase::TIXML_ERROR_PARSING_CDATA</a>, <a class="el" href="tinyxml_8h_source.html#l00055">TIXML_STRING</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l00764">TiXmlNode::value</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxmlparser_8cpp_source.html#l01177">TiXmlElement::ReadValue()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;{</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;    <a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;    <a class="code" href="classTiXmlDocument.html">TiXmlDocument</a>* document = <a class="code" href="classTiXmlNode.html#aa66f4ebcd175204a168ed7c2d7b43071">GetDocument</a>();</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;    <span class="keywordflow">if</span> ( data )</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;    {</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;        data-&gt;<a class="code" href="classTiXmlParsingData.html#a65cee8ab77a36c605db08c84b4c30a7d">Stamp</a>( p, encoding );</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        <a class="code" href="classTiXmlBase.html#a0d992580f3bc264909f898e942677a3c">location</a> = data-&gt;<a class="code" href="classTiXmlParsingData.html#a56908a17d7d7a6b2e511e62cf1d40d05">Cursor</a>();</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    }</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> startTag = <span class="stringliteral">&quot;&lt;![CDATA[&quot;</span>;</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> endTag   = <span class="stringliteral">&quot;]]&gt;&quot;</span>;</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a> || <a class="code" href="classTiXmlBase.html#a51631e6986179558b9e5850723ed165a">StringEqual</a>( p, startTag, <span class="keyword">false</span>, encoding ) )</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    {</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;        <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;        <span class="keywordflow">if</span> ( !<a class="code" href="classTiXmlBase.html#a51631e6986179558b9e5850723ed165a">StringEqual</a>( p, startTag, <span class="keyword">false</span>, encoding ) )</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;        {</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;            document-&gt;<a class="code" href="classTiXmlDocument.html#a735c23e318597b920c94eae77fa206de">SetError</a>( <a class="code" href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aaab2c858631b5d38eae1e6675949b9cd4">TIXML_ERROR_PARSING_CDATA</a>, p, data, encoding );</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;        }</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;        p += strlen( startTag );</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;        <span class="comment">// Keep all the white space, ignore the encoding, etc.</span></div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        <span class="keywordflow">while</span> (    p &amp;&amp; *p</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;                &amp;&amp; !<a class="code" href="classTiXmlBase.html#a51631e6986179558b9e5850723ed165a">StringEqual</a>( p, endTag, <span class="keyword">false</span>, encoding )</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;              )</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;        {</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;            <a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a> += *p;</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;            ++p;</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;        }</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dummy; </div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        p = <a class="code" href="classTiXmlBase.html#aa646c74921aa33156968b802bbf5566e">ReadText</a>( p, &amp;dummy, <span class="keyword">false</span>, endTag, <span class="keyword">false</span>, encoding );</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        <span class="keywordflow">return</span> p;</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;    }</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    {</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;        <span class="keywordtype">bool</span> ignoreWhite = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* end = <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;        p = <a class="code" href="classTiXmlBase.html#aa646c74921aa33156968b802bbf5566e">ReadText</a>( p, &amp;<a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>, ignoreWhite, end, <span class="keyword">false</span>, encoding );</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;        <span class="keywordflow">if</span> ( p )</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;            <span class="keywordflow">return</span> p-1; <span class="comment">// don&#39;t truncate the &#39;&lt;&#39;</span></div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;    }</div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;}</div>
+<div class="ttc" id="classTiXmlParsingData_html_a56908a17d7d7a6b2e511e62cf1d40d05"><div class="ttname"><a href="classTiXmlParsingData.html#a56908a17d7d7a6b2e511e62cf1d40d05">TiXmlParsingData::Cursor</a></div><div class="ttdeci">const TiXmlCursor &amp; Cursor()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cpp_source.html#l00177">tinyxmlparser.cpp:177</a></div></div>
+<div class="ttc" id="classTiXmlText_html_a1919a0467daf2cf5d099b225add5b9f1"><div class="ttname"><a href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01262">tinyxml.h:1262</a></div></div>
+<div class="ttc" id="classTiXmlBase_html_aa646c74921aa33156968b802bbf5566e"><div class="ttname"><a href="classTiXmlBase.html#aa646c74921aa33156968b802bbf5566e">TiXmlBase::ReadText</a></div><div class="ttdeci">static const char * ReadText(const char *in, TIXML_STRING *text, bool ignoreWhiteSpace, const char *endTag, bool ignoreCase, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cpp_source.html#l00574">tinyxmlparser.cpp:574</a></div></div>
+<div class="ttc" id="classTiXmlBase_html_a0d992580f3bc264909f898e942677a3c"><div class="ttname"><a href="classTiXmlBase.html#a0d992580f3bc264909f898e942677a3c">TiXmlBase::location</a></div><div class="ttdeci">TiXmlCursor location</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00376">tinyxml.h:376</a></div></div>
+<div class="ttc" id="classTiXmlBase_html_a21c070379c7994cc551752ccee93414aaab2c858631b5d38eae1e6675949b9cd4"><div class="ttname"><a href="classTiXmlBase.html#a21c070379c7994cc551752ccee93414aaab2c858631b5d38eae1e6675949b9cd4">TiXmlBase::TIXML_ERROR_PARSING_CDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00284">tinyxml.h:284</a></div></div>
+<div class="ttc" id="classTiXmlDocument_html"><div class="ttname"><a href="classTiXmlDocument.html">TiXmlDocument</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01387">tinyxml.h:1387</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_aa66f4ebcd175204a168ed7c2d7b43071"><div class="ttname"><a href="classTiXmlNode.html#aa66f4ebcd175204a168ed7c2d7b43071">TiXmlNode::GetDocument</a></div><div class="ttdeci">const TiXmlDocument * GetDocument() const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00493">tinyxml.cpp:493</a></div></div>
+<div class="ttc" id="classTiXmlBase_html_a51631e6986179558b9e5850723ed165a"><div class="ttname"><a href="classTiXmlBase.html#a51631e6986179558b9e5850723ed165a">TiXmlBase::StringEqual</a></div><div class="ttdeci">static bool StringEqual(const char *p, const char *endTag, bool ignoreCase, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cpp_source.html#l00534">tinyxmlparser.cpp:534</a></div></div>
+<div class="ttc" id="classTiXmlDocument_html_a735c23e318597b920c94eae77fa206de"><div class="ttname"><a href="classTiXmlDocument.html#a735c23e318597b920c94eae77fa206de">TiXmlDocument::SetError</a></div><div class="ttdeci">void SetError(int err, const char *errorLocation, TiXmlParsingData *prevData, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cpp_source.html#l00798">tinyxmlparser.cpp:798</a></div></div>
+<div class="ttc" id="classTiXmlParsingData_html_a65cee8ab77a36c605db08c84b4c30a7d"><div class="ttname"><a href="classTiXmlParsingData.html#a65cee8ab77a36c605db08c84b4c30a7d">TiXmlParsingData::Stamp</a></div><div class="ttdeci">void Stamp(const char *now, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cpp_source.html#l00196">tinyxmlparser.cpp:196</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_aead528b3cedc33c16a6c539872c7cc8b"><div class="ttname"><a href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00764">tinyxml.h:764</a></div></div>
+<div class="ttc" id="tinyxml_8h_html_a92bada05fd84d9a0c9a5bbe53de26887"><div class="ttname"><a href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a></div><div class="ttdeci">#define TIXML_STRING</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00055">tinyxml.h:55</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_cgraph.png" border="0" usemap="#classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_cgraph" alt=""/></div>
+<map name="classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_cgraph" id="classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_cgraph">
+<area shape="rect" id="node2" href="classTiXmlParsingData.html#a56908a17d7d7a6b2e511e62cf1d40d05" title="TiXmlParsingData::Cursor" alt="" coords="411,259,586,285"/><area shape="rect" id="node3" href="classTiXmlNode.html#aa66f4ebcd175204a168ed7c2d7b43071" title="TiXmlNode::GetDocument" alt="" coords="179,56,355,83"/><area shape="rect" id="node5" href="classTiXmlBase.html#aa646c74921aa33156968b802bbf5566e" title="TiXmlBase::ReadText" alt="" coords="191,157,342,184"/><area shape="rect" id="node11" href="classTiXmlBase.html#a51631e6986179558b9e5850723ed165a" title="TiXmlBase::StringEqual" alt="" coords="418,208,579,235"/><area shape="rect" id="node13" href="classTiXmlDocument.html#a735c23e318597b920c94eae77fa206de" title="TiXmlDocument::SetError" alt="" coords="181,309,353,336"/><area shape="rect" id="node15" href="classTiXmlParsingData.html#a65cee8ab77a36c605db08c84b4c30a7d" title="TiXmlParsingData::Stamp" alt="" coords="411,360,586,387"/><area shape="rect" id="node4" href="classTiXmlNode.html#a8a4cda4b15c29f64cff419309aebed08" title="Cast to a more defined type. Will return null if not of the requested type. " alt="" coords="413,5,584,32"/><area shape="rect" id="node6" href="classTiXmlBase.html#a5b0fde72d6f662ae1fd6303195d2159b" title="TiXmlBase::GetChar" alt="" coords="427,157,570,184"/><area shape="rect" id="node9" href="classTiXmlBase.html#af56296d561c0bab4bc8e198cdcf5c48e" title="TiXmlBase::IsWhiteSpace" alt="" coords="643,81,819,108"/><area shape="rect" id="node10" href="classTiXmlBase.html#ac0c3d66d8a9e6996a1fa016275e16875" title="TiXmlBase::SkipWhiteSpace" alt="" coords="403,56,594,83"/><area shape="rect" id="node7" href="classTiXmlBase.html#ac5c08bf3deffcda0bf8ce2958372b584" title="TiXmlBase::GetEntity" alt="" coords="656,157,805,184"/><area shape="rect" id="node8" href="classTiXmlBase.html#a07c765e3a7f979d343e646ea797b180b" title="TiXmlBase::ConvertUTF32ToUTF8" alt="" coords="867,157,1095,184"/><area shape="rect" id="node12" href="classTiXmlBase.html#a799f17405a86a5c2029618e85f11a097" title="TiXmlBase::ToLower" alt="" coords="659,208,803,235"/><area shape="rect" id="node14" href="structTiXmlCursor.html#a1e6fa622b59dafb71b6efe595105dcdd" title="TiXmlCursor::Clear" alt="" coords="431,309,566,336"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_icgraph.png" border="0" usemap="#classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_icgraph" alt=""/></div>
+<map name="classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_icgraph" id="classTiXmlText_a8d2dcfa41fc73d3e62dacc2fcf633819_icgraph">
+<area shape="rect" id="node2" href="classTiXmlElement.html#ac786bce103042d3837c4cc2ff6967d41" title="TiXmlElement::ReadValue" alt="" coords="179,5,355,32"/><area shape="rect" id="node3" href="classTiXmlElement.html#af95c9165159fd9dfdcc5b894a3fcf85b" title="TiXmlElement::Parse" alt="" coords="403,5,549,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae74d56c5b3ddec6cc3103dd51821af92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlText::Print </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>cfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>All TinyXml classes can print themselves to a filestream or the string class (<a class="el" href="classTiXmlString.html">TiXmlString</a> in non-STL mode, std::string in STL mode.) Either or both cfile and str can be null.</p>
+<p>This is a formatted print, and will insert tabs and newlines.</p>
+<p>(For an unformatted stream, use the &lt;&lt; operator.) </p>
+
+<p>实现了 <a class="el" href="classTiXmlBase.html#a0de56b3f2ef14c65091a3b916437b512">TiXmlBase</a>.</p>
+
+<p>在文件 <a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a> 第 <a class="el" href="tinyxml_8cpp_source.html#l01337">1337</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01262">cdata</a>, <a class="el" href="tinyxml_8cpp_source.html#l00053">TiXmlBase::EncodeString()</a>, <a class="el" href="tinyxml_8h_source.html#l00055">TIXML_STRING</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l00764">TiXmlNode::value</a>.</p>
+<div class="fragment"><div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;{</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;    assert( cfile );</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a> )</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    {</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        fprintf( cfile, <span class="stringliteral">&quot;\n&quot;</span> );</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        <span class="keywordflow">for</span> ( i=0; i&lt;depth; i++ ) {</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;            fprintf( cfile, <span class="stringliteral">&quot;    &quot;</span> );</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;        }</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        fprintf( cfile, <span class="stringliteral">&quot;&lt;![CDATA[%s]]&gt;\n&quot;</span>, <a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>.c_str() );    <span class="comment">// unformatted output</span></div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;    }</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;    {</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> buffer;</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        <a class="code" href="classTiXmlBase.html#a32ed202562b58de64c7d799ca3c9db98">EncodeString</a>( <a class="code" href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">value</a>, &amp;buffer );</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        fprintf( cfile, <span class="stringliteral">&quot;%s&quot;</span>, buffer.c_str() );</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    }</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;}</div>
+<div class="ttc" id="classTiXmlText_html_a1919a0467daf2cf5d099b225add5b9f1"><div class="ttname"><a href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01262">tinyxml.h:1262</a></div></div>
+<div class="ttc" id="classTiXmlBase_html_a32ed202562b58de64c7d799ca3c9db98"><div class="ttname"><a href="classTiXmlBase.html#a32ed202562b58de64c7d799ca3c9db98">TiXmlBase::EncodeString</a></div><div class="ttdeci">static void EncodeString(const TIXML_STRING &amp;str, TIXML_STRING *out)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cpp_source.html#l00053">tinyxml.cpp:53</a></div></div>
+<div class="ttc" id="classTiXmlNode_html_aead528b3cedc33c16a6c539872c7cc8b"><div class="ttname"><a href="classTiXmlNode.html#aead528b3cedc33c16a6c539872c7cc8b">TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00764">tinyxml.h:764</a></div></div>
+<div class="ttc" id="tinyxml_8h_html_a92bada05fd84d9a0c9a5bbe53de26887"><div class="ttname"><a href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a></div><div class="ttdeci">#define TIXML_STRING</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00055">tinyxml.h:55</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_ae74d56c5b3ddec6cc3103dd51821af92_cgraph.png" border="0" usemap="#classTiXmlText_ae74d56c5b3ddec6cc3103dd51821af92_cgraph" alt=""/></div>
+<map name="classTiXmlText_ae74d56c5b3ddec6cc3103dd51821af92_cgraph" id="classTiXmlText_ae74d56c5b3ddec6cc3103dd51821af92_cgraph">
+<area shape="rect" id="node2" href="classTiXmlBase.html#a32ed202562b58de64c7d799ca3c9db98" title="TiXmlBase::EncodeString" alt="" coords="171,5,343,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acb17ff7c5d09b2c839393445a3de5ea9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TiXmlText::SetCDATA </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_cdata</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turns on or off a CDATA representation of text. </p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01239">1239</a> 行定义.</p>
+
+<p>参考 <a class="el" href="tinyxml_8h_source.html#l01262">cdata</a>.</p>
+
+<p>参考自 <a class="el" href="tinyxmlparser_8cpp_source.html#l00818">TiXmlNode::Identify()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;{ <a class="code" href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">cdata</a> = _cdata; }</div>
+<div class="ttc" id="classTiXmlText_html_a1919a0467daf2cf5d099b225add5b9f1"><div class="ttname"><a href="classTiXmlText.html#a1919a0467daf2cf5d099b225add5b9f1">TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01262">tinyxml.h:1262</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTiXmlText_acb17ff7c5d09b2c839393445a3de5ea9_icgraph.png" border="0" usemap="#classTiXmlText_acb17ff7c5d09b2c839393445a3de5ea9_icgraph" alt=""/></div>
+<map name="classTiXmlText_acb17ff7c5d09b2c839393445a3de5ea9_icgraph" id="classTiXmlText_acb17ff7c5d09b2c839393445a3de5ea9_icgraph">
+<area shape="rect" id="node2" href="classTiXmlNode.html#ac1e3a8e7578be463b04617786120c2bb" title="TiXmlNode::Identify" alt="" coords="211,31,349,57"/><area shape="rect" id="node3" href="classTiXmlDocument.html#a789ad2f06f93d52bdb5570b2f3670289" title="TiXmlDocument::Parse" alt="" coords="406,5,565,32"/><area shape="rect" id="node5" href="classTiXmlElement.html#ac786bce103042d3837c4cc2ff6967d41" title="TiXmlElement::ReadValue" alt="" coords="397,56,573,83"/><area shape="rect" id="node4" href="classTiXmlDocument.html#a41f6fe7200864d1dca663d230caf8db6" title="TiXmlDocument::LoadFile" alt="" coords="621,5,795,32"/><area shape="rect" id="node6" href="classTiXmlElement.html#af95c9165159fd9dfdcc5b894a3fcf85b" title="TiXmlElement::Parse" alt="" coords="635,56,781,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a895bf34ffad17f7439ab2a52b9651648"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="classTiXmlText.html">TiXmlText</a>* TiXmlText::ToText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast to a more defined type. Will return null not of the requested type. </p>
+
+<p>重载 <a class="el" href="classTiXmlNode.html#a95a46a52c525992d6b4ee08beb14cd69">TiXmlNode</a> .</p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01243">1243</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7c3a8fd3e4dbf6c0c4363a943d72f5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classTiXmlText.html">TiXmlText</a>* TiXmlText::ToText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast to a more defined type. Will return null not of the requested type. </p>
+
+<p>重载 <a class="el" href="classTiXmlNode.html#a3ddfbcac78fbea041fad57e5c6d60a03">TiXmlNode</a> .</p>
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01244">1244</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关函数文档</h2>
+<a class="anchor" id="ab6592e32cb9132be517cc12a70564c4b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classTiXmlElement.html">TiXmlElement</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01208">1208</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1919a0467daf2cf5d099b225add5b9f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TiXmlText::cdata</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a> 第 <a class="el" href="tinyxml_8h_source.html#l01262">1262</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="tinyxml_8h_source.html#l01237">CDATA()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01358">CopyTo()</a>, <a class="el" href="tinyxmlparser_8cpp_source.html#l01498">Parse()</a>, <a class="el" href="tinyxml_8cpp_source.html#l01337">Print()</a>, <a class="el" href="tinyxml_8h_source.html#l01239">SetCDATA()</a> , 以及 <a class="el" href="tinyxml_8h_source.html#l01214">TiXmlText()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="tinyxml_8h_source.html">tinyxml.h</a></li>
+<li><a class="el" href="tinyxml_8cpp_source.html">tinyxml.cpp</a></li>
+<li><a class="el" href="tinyxmlparser_8cpp_source.html">tinyxmlparser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:50 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: ldgloble.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a>  </div>
+  <div class="headertitle">
+<div class="title">ldgloble.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;pthread.h&gt;</code><br/>
+<code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &lt;fcntl.h&gt;</code><br/>
+<code>#include &lt;ctype.h&gt;</code><br/>
+<code>#include &lt;netdb.h&gt;</code><br/>
+<code>#include &lt;sys/socket.h&gt;</code><br/>
+<code>#include &lt;sys/select.h&gt;</code><br/>
+<code>#include &lt;netinet/in.h&gt;</code><br/>
+<code>#include &lt;arpa/inet.h&gt;</code><br/>
+<code>#include &lt;sys/resource.h&gt;</code><br/>
+<code>#include &lt;sys/stat.h&gt;</code><br/>
+<code>#include &lt;sys/mman.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+ldgloble.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ldgloble_8h__incl.png" border="0" usemap="#ldgloble_8h" alt=""/></div>
+<map name="ldgloble_8h" id="ldgloble_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="ldgloble_8h__dep__incl.png" border="0" usemap="#ldgloble_8hdep" alt=""/></div>
+<map name="ldgloble_8hdep" id="ldgloble_8hdep">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="stdafx.h" alt="" coords="2099,80,2168,107"/><area shape="rect" id="node3" href="mword_8h.html" title="mword.h" alt="" coords="1724,155,1796,181"/><area shape="rect" id="node25" href="generalcps_8cpp.html" title="generalcps.cpp" alt="" coords="1559,453,1669,480"/><area shape="rect" id="node27" href="l2compress_8cpp.html" title="l2compress.cpp" alt="" coords="1737,453,1852,480"/><area shape="rect" id="node30" href="mword_8cpp.html" title="mword.cpp" alt="" coords="129,379,215,405"/><area shape="rect" id="node32" href="bitstream_8cpp.html" title="bitstream.cpp" alt="" coords="1868,379,1969,405"/><area shape="rect" id="node36" href="ds__dat_8h.html" title="ds_dat.h" alt="" coords="1885,304,1957,331"/><area shape="rect" id="node40" href="public_8cpp.html" title="public.cpp" alt="" coords="2191,453,2272,480"/><area shape="rect" id="node42" href="crc16_8cpp.html" title="crc16.cpp" alt="" coords="2197,155,2275,181"/><area shape="rect" id="node43" href="tinystr_8cpp.html" title="tinystr.cpp" alt="" coords="2300,155,2381,181"/><area shape="rect" id="node44" href="tinyxml_8cpp.html" title="tinyxml.cpp" alt="" coords="2407,155,2496,181"/><area shape="rect" id="node45" href="tinyxmlerror_8cpp.html" title="tinyxmlerror.cpp" alt="" coords="2521,155,2636,181"/><area shape="rect" id="node46" href="tinyxmlparser_8cpp.html" title="tinyxmlparser.cpp" alt="" coords="2660,155,2785,181"/><area shape="rect" id="node4" href="structs_8h.html" title="structs set " alt="" coords="766,304,839,331"/><area shape="rect" id="node31" href="bitstream_8h.html" title="bitstream.h" alt="" coords="1717,304,1803,331"/><area shape="rect" id="node34" href="datacollect_8h.html" title="datacollect.h" alt="" coords="1424,229,1520,256"/><area shape="rect" id="node5" href="basethread_8h.html" title="base thread class " alt="" coords="734,453,831,480"/><area shape="rect" id="node10" href="capture__net__packet_8cc.html" title="capture net packet listened on some port using pcap " alt="" coords="272,603,425,629"/><area shape="rect" id="node15" href="log_8h.html" title="log.h" alt="" coords="153,528,204,555"/><area shape="rect" id="node16" href="configsax2handler_8h.html" title="configsax2handler.h" alt="" coords="109,603,248,629"/><area shape="rect" id="node20" href="uncompress__dc__packet_8h.html" title="uncompress_dc_packet.h" alt="" coords="1173,528,1344,555"/><area shape="rect" id="node22" href="decrypt__simple_8h.html" title="decrypt_simple.h" alt="" coords="643,379,764,405"/><area shape="rect" id="node23" href="extract__dc_8h.html" title="extract_dc.h" alt="" coords="1331,379,1425,405"/><area shape="rect" id="node26" href="stkdatacps_8h.html" title="stkdatacps.h" alt="" coords="1746,379,1843,405"/><area shape="rect" id="node28" href="utils_8h.html" title="utils.h" alt="" coords="1093,379,1149,405"/><area shape="rect" id="node6" href="business__error__info_8h.html" title="business_error_info.h" alt="" coords="563,528,709,555"/><area shape="rect" id="node9" href="capture__net__packet_8h.html" title="capture_net_packet.h" alt="" coords="392,528,539,555"/><area shape="rect" id="node11" href="combine__dc__packet_8h.html" title="combine_dc_packet.h" alt="" coords="899,528,1047,555"/><area shape="rect" id="node13" href="shunt__net__packet_8h.html" title="shunt_net_packet.h" alt="" coords="851,603,985,629"/><area shape="rect" id="node18" href="luaroutine_8h.html" title="luaroutine.h" alt="" coords="734,528,823,555"/><area shape="rect" id="node7" href="business__error__info_8cc.html" title="recv business error info and send to webserver " alt="" coords="502,603,655,629"/><area shape="rect" id="node8" href="monitor_8cc.html" title="main function " alt="" coords="537,677,619,704"/><area shape="rect" id="node12" href="combine__dc__packet_8cc.html" title="combine dc packet " alt="" coords="1011,603,1167,629"/><area shape="rect" id="node14" href="shunt__net__packet_8cc.html" title="shunt net packet by connections " alt="" coords="990,677,1132,704"/><area shape="rect" id="node17" href="log_8cc.html" title="record listening ports log info to different log files " alt="" coords="27,603,84,629"/><area shape="rect" id="node19" href="luaroutine_8cc.html" title="send to lua script " alt="" coords="731,603,827,629"/><area shape="rect" id="node21" href="uncompress__dc__packet_8cc.html" title="uncompress dc packet " alt="" coords="1307,603,1485,629"/><area shape="rect" id="node24" href="extract__dc_8cc.html" title="extract dc package " alt="" coords="1433,453,1535,480"/><area shape="rect" id="node29" href="utils_8cc.html" title="some utils " alt="" coords="1143,453,1207,480"/><area shape="rect" id="node33" href="generalcps_8h.html" title="generalcps.h" alt="" coords="1451,379,1547,405"/><area shape="rect" id="node35" href="data_8h.html" title="data.h" alt="" coords="1349,304,1407,331"/><area shape="rect" id="node41" href="l2compress_8h.html" title="l2compress.h" alt="" coords="1622,379,1721,405"/><area shape="rect" id="node37" href="dscomapi_8h.html" title="dscomapi.h" alt="" coords="2146,379,2235,405"/><area shape="rect" id="node38" href="DidUncompress_8h.html" title="DidUncompress.h" alt="" coords="1877,453,2003,480"/><area shape="rect" id="node39" href="DidUncompress_8cpp.html" title="DidUncompress.cpp" alt="" coords="1761,528,1901,555"/></map>
+</div>
+</div>
+<p><a href="ldgloble_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a67a2cd041e512a0bbf1b6db6f2a70f84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a67a2cd041e512a0bbf1b6db6f2a70f84">BABY_NONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a67a2cd041e512a0bbf1b6db6f2a70f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7a507fdbee3fd4210b4728b633cd88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a5e7a507fdbee3fd4210b4728b633cd88">BABY_RDWR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a5e7a507fdbee3fd4210b4728b633cd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc367eb74ef1b0c5b1a0f82c9b1ad8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#abbc367eb74ef1b0c5b1a0f82c9b1ad8e">BABY_RD</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:abbc367eb74ef1b0c5b1a0f82c9b1ad8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f3229452830043eb163951acf43e80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#af9f3229452830043eb163951acf43e80">BABY_WR</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:af9f3229452830043eb163951acf43e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfa1639c52cfcbfa6849103c30e732e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a8bfa1639c52cfcbfa6849103c30e732e">RESET_AUTO_PTR</a>(OLD, NEW)&#160;&#160;&#160;OLD.reset( NEW.release() );</td></tr>
+<tr class="separator:a8bfa1639c52cfcbfa6849103c30e732e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93f0eb578d23995850d61f7d61c55c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa93f0eb578d23995850d61f7d61c55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00be6c40bc7a1297ada4d47a028066b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a00be6c40bc7a1297ada4d47a028066b8">LOWORD</a>(l)&#160;&#160;&#160;((<a class="el" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>)(l))</td></tr>
+<tr class="separator:a00be6c40bc7a1297ada4d47a028066b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb28b2d61bd674900a89bfb77e28ae07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#aeb28b2d61bd674900a89bfb77e28ae07">HIWORD</a>(l)&#160;&#160;&#160;((<a class="el" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>)(((<a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>)(l) &gt;&gt; 16) &amp; 0xFFFF))</td></tr>
+<tr class="separator:aeb28b2d61bd674900a89bfb77e28ae07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d020b5dd8606c615fa96fbe2647a4b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a7d020b5dd8606c615fa96fbe2647a4b0">TRACE</a>()</td></tr>
+<tr class="separator:a7d020b5dd8606c615fa96fbe2647a4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1de050f33b0c40e79dd868b9d84bf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a0f1de050f33b0c40e79dd868b9d84bf0">TRACE3</a>()</td></tr>
+<tr class="separator:a0f1de050f33b0c40e79dd868b9d84bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d0e59ffa296a184e6496bc44ff46e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#aa7d0e59ffa296a184e6496bc44ff46e9">ASSERT</a>()</td></tr>
+<tr class="separator:aa7d0e59ffa296a184e6496bc44ff46e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a8dc8083897335125630f1af5dafd5831"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a></td></tr>
+<tr class="separator:a8dc8083897335125630f1af5dafd5831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050c65e107f0c828f856a231f4b4e788"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></td></tr>
+<tr class="separator:a050c65e107f0c828f856a231f4b4e788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197942eefa7db30960ae396d68339b97"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></td></tr>
+<tr class="separator:a197942eefa7db30960ae396d68339b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798af1e30bc65f319c1a246cecf59e39"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></td></tr>
+<tr class="separator:a798af1e30bc65f319c1a246cecf59e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae1dab0fb4b072a66584546209e7d58"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></td></tr>
+<tr class="separator:a4ae1dab0fb4b072a66584546209e7d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td></tr>
+<tr class="separator:a0c8186d9b9b7880309c27230bbb5e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td></tr>
+<tr class="separator:a36cb3b01d81ffd844bbbfb54003e06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbea528b1294c9a1dfda3dfa33ff1472"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a></td></tr>
+<tr class="separator:adbea528b1294c9a1dfda3dfa33ff1472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a140cf415e90c02039ff733cd93e4affd"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ldgloble_8h.html#a140cf415e90c02039ff733cd93e4affd">LPSTR</a></td></tr>
+<tr class="separator:a140cf415e90c02039ff733cd93e4affd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="aa7d0e59ffa296a184e6496bc44ff46e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67a2cd041e512a0bbf1b6db6f2a70f84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BABY_NONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbc367eb74ef1b0c5b1a0f82c9b1ad8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BABY_RD&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e7a507fdbee3fd4210b4728b633cd88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BABY_RDWR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9f3229452830043eb163951acf43e80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BABY_WR&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa93f0eb578d23995850d61f7d61c55c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FALSE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00047">47</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00980">CompressL2OrderStat()</a>, <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a>, <a class="el" href="bitstream_8cpp_source.html#l00420">CBitStream::EncodeData()</a>, <a class="el" href="l2compress_8cpp_source.html#l01045">ExpandL2OrderStat()</a>, <a class="el" href="l2compress_8cpp_source.html#l00328">ExpandL2Queue()</a>, <a class="el" href="extract__dc_8cc_source.html#l00368">ExtractDC::ExtractDynaStream()</a>, <a class="el" href="extract__dc_8cc_source.html#l00273">ExtractDC::ExtractStaticStream()</a>, <a class="el" href="extract__dc_8h_source.html#l00402">ExtractDC::HasAmount()</a> , 以及 <a class="el" href="extract__dc_8h_source.html#l00401">ExtractDC::HasTickCount()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb28b2d61bd674900a89bfb77e28ae07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HIWORD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">l</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>)(((<a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a>)(l) &gt;&gt; 16) &amp; 0xFFFF))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00075">75</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bitstream_8cpp_source.html#l00320">CBitStream::DecodeFindMatch()</a> , 以及 <a class="el" href="bitstream_8cpp_source.html#l00211">CBitStream::EncodeFindMatch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00be6c40bc7a1297ada4d47a028066b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOWORD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">l</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a>)(l))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00074">74</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bitstream_8cpp_source.html#l00211">CBitStream::EncodeFindMatch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bfa1639c52cfcbfa6849103c30e732e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESET_AUTO_PTR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OLD, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NEW&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;OLD.reset( NEW.release() );</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00032">32</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="DidUncompress_8cpp_source.html#l00202">DidUncompress::ReadConfig()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d020b5dd8606c615fa96fbe2647a4b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRACE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f1de050f33b0c40e79dd868b9d84bf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRACE3</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8cecfc5c5c054d2875c03e77b7be15d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRUE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00043">43</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="l2compress_8cpp_source.html#l00459">CompressL2BigWD()</a>, <a class="el" href="l2compress_8cpp_source.html#l00980">CompressL2OrderStat()</a>, <a class="el" href="l2compress_8cpp_source.html#l00255">CompressL2Queue()</a>, <a class="el" href="generalcps_8cpp_source.html#l00031">CompressStaticEx()</a>, <a class="el" href="bitstream_8cpp_source.html#l00563">CBitStream::DecodeFloat()</a>, <a class="el" href="bitstream_8cpp_source.html#l00420">CBitStream::EncodeData()</a>, <a class="el" href="l2compress_8cpp_source.html#l00510">ExpandL2BigWD()</a>, <a class="el" href="extract__dc_8cc_source.html#l00946">ExtractDC::ExpandL2MMPEx()</a>, <a class="el" href="l2compress_8cpp_source.html#l00328">ExpandL2Queue()</a>, <a class="el" href="generalcps_8cpp_source.html#l00136">ExpandStaticEx()</a>, <a class="el" href="extract__dc_8cc_source.html#l00368">ExtractDC::ExtractDynaStream()</a>, <a class="el" href="extract__dc_8cc_source.html#l00273">ExtractDC::ExtractStaticStream()</a>, <a class="el" href="extract__dc_8h_source.html#l00402">ExtractDC::HasAmount()</a> , 以及 <a class="el" href="extract__dc_8h_source.html#l00401">ExtractDC::HasTickCount()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a050c65e107f0c828f856a231f4b4e788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="ldgloble_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ae1dab0fb4b072a66584546209e7d58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="dscomapi_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c8186d9b9b7880309c27230bbb5e69d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="ldgloble_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a798af1e30bc65f319c1a246cecf59e39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="ldgloble_8h.html#a798af1e30bc65f319c1a246cecf59e39">DWORD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbea528b1294c9a1dfda3dfa33ff1472"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* <a class="el" href="ldgloble_8h.html#adbea528b1294c9a1dfda3dfa33ff1472">LPCSTR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a140cf415e90c02039ff733cd93e4affd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char* <a class="el" href="ldgloble_8h.html#a140cf415e90c02039ff733cd93e4affd">LPSTR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00084">84</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dc8083897335125630f1af5dafd5831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="ldgloble_8h.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36cb3b01d81ffd844bbbfb54003e06ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="ldgloble_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a197942eefa7db30960ae396d68339b97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="dzh__time__t_8h.html#a197942eefa7db30960ae396d68339b97">WORD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="ldgloble_8h_source.html">ldgloble.h</a> 第 <a class="el" href="ldgloble_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

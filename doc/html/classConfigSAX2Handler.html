@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: ConfigSAX2Handler类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classConfigSAX2Handler-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ConfigSAX2Handler类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a>&gt;</code></p>
+<div class="dynheader">
+类 ConfigSAX2Handler 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classConfigSAX2Handler__inherit__graph.png" border="0" usemap="#ConfigSAX2Handler_inherit__map" alt="Inheritance graph"/></div>
+<map name="ConfigSAX2Handler_inherit__map" id="ConfigSAX2Handler_inherit__map">
+</map>
+</div>
+<div class="dynheader">
+ConfigSAX2Handler 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classConfigSAX2Handler__coll__graph.png" border="0" usemap="#ConfigSAX2Handler_coll__map" alt="Collaboration graph"/></div>
+<map name="ConfigSAX2Handler_coll__map" id="ConfigSAX2Handler_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae669094f32a72c6f0a0989a9767a7c59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#ae669094f32a72c6f0a0989a9767a7c59">ConfigSAX2Handler</a> ()</td></tr>
+<tr class="separator:ae669094f32a72c6f0a0989a9767a7c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe564ecce0d049389dd14a5711922dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#abe564ecce0d049389dd14a5711922dd2">~ConfigSAX2Handler</a> ()</td></tr>
+<tr class="separator:abe564ecce0d049389dd14a5711922dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07d4c5090274b55b7f8769d835926cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#ae07d4c5090274b55b7f8769d835926cc">startElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uri, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> localname, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> qname, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Attributes &amp;attrs)</td></tr>
+<tr class="separator:ae07d4c5090274b55b7f8769d835926cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8f8cd476320e90192353fa6dc80760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#a9c8f8cd476320e90192353fa6dc80760">endElement</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uri, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> localname, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> qname)</td></tr>
+<tr class="separator:a9c8f8cd476320e90192353fa6dc80760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ac270af42d7995113f7456896d77e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#ad5ac270af42d7995113f7456896d77e9">characters</a> (<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> chars, <a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLSize_t length)</td></tr>
+<tr class="separator:ad5ac270af42d7995113f7456896d77e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62f903a1622261c31bcad3280333a48"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classXML__ListeningItem.html">XML_ListeningItem</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#ab62f903a1622261c31bcad3280333a48">get_listeningitem</a> ()</td></tr>
+<tr class="separator:ab62f903a1622261c31bcad3280333a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a0b15ab60e6bd7d167f743b283b6e4e86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#a0b15ab60e6bd7d167f743b283b6e4e86">content_</a></td></tr>
+<tr class="separator:a0b15ab60e6bd7d167f743b283b6e4e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc80c352d3c3bc0a7a952a377e7de182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#abc80c352d3c3bc0a7a952a377e7de182">countcapzmqs_</a></td></tr>
+<tr class="separator:abc80c352d3c3bc0a7a952a377e7de182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887ca881932e0d3e6575149a678e7d8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#a887ca881932e0d3e6575149a678e7d8c">countparsezmqs_</a></td></tr>
+<tr class="separator:a887ca881932e0d3e6575149a678e7d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08c4ceb4b271e608b1c30bf10555bee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#ab08c4ceb4b271e608b1c30bf10555bee">countlogzmqs_</a></td></tr>
+<tr class="separator:ab08c4ceb4b271e608b1c30bf10555bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61aa9bf18ea5f0ff75c7bc0ae523ad2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#ac61aa9bf18ea5f0ff75c7bc0ae523ad2">countworkingluazmqs_</a></td></tr>
+<tr class="separator:ac61aa9bf18ea5f0ff75c7bc0ae523ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016dfc50ab0e5f77902fd6014f867b64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#a016dfc50ab0e5f77902fd6014f867b64">threadtagcap_</a></td></tr>
+<tr class="separator:a016dfc50ab0e5f77902fd6014f867b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2e8623a92da573f491abe8a9077253"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#aed2e8623a92da573f491abe8a9077253">threadtagparse_</a></td></tr>
+<tr class="separator:aed2e8623a92da573f491abe8a9077253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6092f625dacdb829043a100b9b5a4ed6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#a6092f625dacdb829043a100b9b5a4ed6">threadtaglog_</a></td></tr>
+<tr class="separator:a6092f625dacdb829043a100b9b5a4ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6848d131d6c47149ec053483515d7b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#aa6848d131d6c47149ec053483515d7b0">threadtagworkinglua_</a></td></tr>
+<tr class="separator:aa6848d131d6c47149ec053483515d7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5b6d8a81b6f1eb0b06c754d160d3fc"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classXML__ListeningItem.html">XML_ListeningItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfigSAX2Handler.html#a9f5b6d8a81b6f1eb0b06c754d160d3fc">listeningitem_</a></td></tr>
+<tr class="separator:a9f5b6d8a81b6f1eb0b06c754d160d3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00018">18</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ae669094f32a72c6f0a0989a9767a7c59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigSAX2Handler::ConfigSAX2Handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe564ecce0d049389dd14a5711922dd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigSAX2Handler::~ConfigSAX2Handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad5ac270af42d7995113f7456896d77e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigSAX2Handler::characters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>chars</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLSize_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c8f8cd476320e90192353fa6dc80760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigSAX2Handler::endElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>localname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>qname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab62f903a1622261c31bcad3280333a48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classXML__ListeningItem.html">XML_ListeningItem</a>&gt;&amp; ConfigSAX2Handler::get_listeningitem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae07d4c5090274b55b7f8769d835926cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigSAX2Handler::startElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>localname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> XMLCh *<a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramname"><em>qname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> Attributes &amp;&#160;</td>
+          <td class="paramname"><em>attrs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a0b15ab60e6bd7d167f743b283b6e4e86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ConfigSAX2Handler::content_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc80c352d3c3bc0a7a952a377e7de182"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::countcapzmqs_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab08c4ceb4b271e608b1c30bf10555bee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::countlogzmqs_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a887ca881932e0d3e6575149a678e7d8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::countparsezmqs_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac61aa9bf18ea5f0ff75c7bc0ae523ad2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::countworkingluazmqs_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f5b6d8a81b6f1eb0b06c754d160d3fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classXML__ListeningItem.html">XML_ListeningItem</a>&gt; ConfigSAX2Handler::listeningitem_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a016dfc50ab0e5f77902fd6014f867b64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::threadtagcap_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6092f625dacdb829043a100b9b5a4ed6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::threadtaglog_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed2e8623a92da573f491abe8a9077253"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::threadtagparse_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6848d131d6c47149ec053483515d7b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfigSAX2Handler::threadtagworkinglua_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a> 第 <a class="el" href="configsax2handler_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="configsax2handler_8h_source.html">configsax2handler.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:49 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

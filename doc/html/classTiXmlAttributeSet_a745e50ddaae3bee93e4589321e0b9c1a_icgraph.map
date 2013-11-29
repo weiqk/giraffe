@@ -1,0 +1,10 @@
+<map id="TiXmlAttributeSet::Add" name="TiXmlAttributeSet::Add">
+<area shape="rect" id="node2" href="$classTiXmlElement.html#af95c9165159fd9dfdcc5b894a3fcf85b" title="TiXmlElement::Parse" alt="" coords="228,5,375,32"/>
+<area shape="rect" id="node3" href="$classTiXmlElement.html#abf0b3bd7f0e4c746a89ec6e7f101fc32" title="TiXmlElement::SetAttribute" alt="" coords="211,56,392,83"/>
+<area shape="rect" id="node4" href="$classTiXmlElement.html#ace6f4be75e373726d4774073d666d1a7" title="TiXmlElement::SetAttribute" alt="" coords="461,5,643,32"/>
+<area shape="rect" id="node5" href="$classTiXmlElement.html#a0d1dd975d75496778177e35abfe0ec0b" title="TiXmlElement::SetDoubleAttribute" alt="" coords="441,56,663,83"/>
+<area shape="rect" id="node6" href="$classTiXmlElement.html#a9e0c1983b840de4134f1f6bf7af00b0f" title="TiXmlElement::CopyTo" alt="" coords="473,107,631,133"/>
+<area shape="rect" id="node7" href="$classTiXmlElement.html#a1ca4465f3c2eac6a60e641cd7f1d9f7e" title="TiXmlElement::TiXmlElement" alt="" coords="712,56,907,83"/>
+<area shape="rect" id="node8" href="$classTiXmlElement.html#af5cd4156e082ef3bf23adfe0ed173340" title="TiXmlElement::operator=" alt="" coords="726,107,893,133"/>
+<area shape="rect" id="node9" href="$classTiXmlElement.html#a13f6df105ebb1e8dc636e75cc883be32" title="Creates a new Element and returns it &#45; the returned element is a copy. " alt="" coords="736,157,883,184"/>
+</map>

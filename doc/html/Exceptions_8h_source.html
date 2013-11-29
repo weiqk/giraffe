@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Giraffe: Exceptions.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Giraffe
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>友元</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Exceptions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Exceptions_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STEP_EXCEPTIONS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STEP_EXCEPTIONS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Utility_8h.html">Utility.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>STEP</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span>Exception : <span class="keyword">public</span> std::logic_error</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">   17</a></span>&#160;  <a class="code" href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">Exception</a>( <span class="keyword">const</span> std::string&amp; what, <span class="keyword">const</span> std::string&amp; detail )</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : std::logic_error( detail.size() ? what + <span class="stringliteral">&quot;: &quot;</span> + detail : what )</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structSTEP_1_1FieldNotFound.html">   23</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1FieldNotFound.html">FieldNotFound</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="group__exceptions.html#gac78f9766a122cef6316946d3983fbcc0">   25</a></span>&#160;  <a class="code" href="group__exceptions.html#gac78f9766a122cef6316946d3983fbcc0">FieldNotFound</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Field not found&quot;</span>, what ),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                 <a class="code" href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">field</a>( f ) {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">   28</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">field</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structSTEP_1_1FieldConvertError.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1FieldConvertError.html">FieldConvertError</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga131be601cf4ebebb5cace0553c20b9c0">   34</a></span>&#160;  <a class="code" href="group__exceptions.html#ga131be601cf4ebebb5cace0553c20b9c0">FieldConvertError</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Could not convert field&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structSTEP_1_1MessageParseError.html">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1MessageParseError.html">MessageParseError</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga6eecf529b84d6551da272f00e5b44422">   41</a></span>&#160;  <a class="code" href="group__exceptions.html#ga6eecf529b84d6551da272f00e5b44422">MessageParseError</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Could not parse message&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structSTEP_1_1InvalidMessage.html">   46</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1InvalidMessage.html">InvalidMessage</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga8782a298de385b60f4d198ec42c15636">   48</a></span>&#160;  <a class="code" href="group__exceptions.html#ga8782a298de385b60f4d198ec42c15636">InvalidMessage</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Invalid message&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structSTEP_1_1ConfigError.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1ConfigError.html">ConfigError</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga467474a291718f4ea1dccddbd86d4d83">   55</a></span>&#160;  <a class="code" href="group__exceptions.html#ga467474a291718f4ea1dccddbd86d4d83">ConfigError</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Configuration failed&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structSTEP_1_1RuntimeError.html">   60</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1RuntimeError.html">RuntimeError</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga0223b1c2368d3e70825689221ff04930">   62</a></span>&#160;  <a class="code" href="group__exceptions.html#ga0223b1c2368d3e70825689221ff04930">RuntimeError</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Runtime error&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structSTEP_1_1InvalidTagNumber.html">   67</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1InvalidTagNumber.html">InvalidTagNumber</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaa07817d125abb0eea891c6176162ff49">   69</a></span>&#160;  <a class="code" href="group__exceptions.html#gaa07817d125abb0eea891c6176162ff49">InvalidTagNumber</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Invalid tag number&quot;</span>, what ),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                 <a class="code" href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">field</a>( f ) {}</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">   72</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">field</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structSTEP_1_1RequiredTagMissing.html">   76</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1RequiredTagMissing.html">RequiredTagMissing</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaf96ee3d6c5605fe845e2fe5a6c898d13">   78</a></span>&#160;  <a class="code" href="group__exceptions.html#gaf96ee3d6c5605fe845e2fe5a6c898d13">RequiredTagMissing</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Required tag missing&quot;</span>, what ),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                 <a class="code" href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">field</a>( f ) {}</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">   81</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">field</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="structSTEP_1_1TagNotDefinedForMessage.html">   85</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1TagNotDefinedForMessage.html">TagNotDefinedForMessage</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga97f84b4041c5c82f91a7379d181f8394">   87</a></span>&#160;  <a class="code" href="group__exceptions.html#ga97f84b4041c5c82f91a7379d181f8394">TagNotDefinedForMessage</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Tag not defined for this message type&quot;</span>, what ),</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                 <a class="code" href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">field</a>( f ) {}</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">   90</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">field</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structSTEP_1_1NoTagValue.html">   94</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1NoTagValue.html">NoTagValue</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga954317668fd2cd6a31560e939546855a">   96</a></span>&#160;  <a class="code" href="group__exceptions.html#ga954317668fd2cd6a31560e939546855a">NoTagValue</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Tag specified without a value&quot;</span>, what ),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                 <a class="code" href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">field</a>( f ) {}</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">   99</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">field</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structSTEP_1_1IncorrectTagValue.html">  103</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1IncorrectTagValue.html">IncorrectTagValue</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga41b348f2393a47f3360bea4e0ce3c86e">  105</a></span>&#160;  <a class="code" href="group__exceptions.html#ga41b348f2393a47f3360bea4e0ce3c86e">IncorrectTagValue</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Value is incorrect (out of range) for this tag&quot;</span>, what ),</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                 <a class="code" href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">field</a>( f ) {}</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">  108</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">field</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structSTEP_1_1IncorrectDataFormat.html">  112</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1IncorrectDataFormat.html">IncorrectDataFormat</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group__exceptions.html#gafdfab07adf38bcf32efc597ef4789787">  114</a></span>&#160;  <a class="code" href="group__exceptions.html#gafdfab07adf38bcf32efc597ef4789787">IncorrectDataFormat</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Incorrect data format for value&quot;</span>, what ),</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                 <a class="code" href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">field</a>( f ) {}</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">  117</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">field</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="structSTEP_1_1IncorrectMessageStructure.html">  121</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1IncorrectMessageStructure.html">IncorrectMessageStructure</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group__exceptions.html#gacbdb560587fcb37008d1cfe46ac13982">  123</a></span>&#160;  <a class="code" href="group__exceptions.html#gacbdb560587fcb37008d1cfe46ac13982">IncorrectMessageStructure</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Incorrect message structure&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="structSTEP_1_1DuplicateFieldNumber.html">  128</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1DuplicateFieldNumber.html">DuplicateFieldNumber</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group__exceptions.html#gab029b95d564b1dc1b1a27376c9518fa5">  130</a></span>&#160;  <a class="code" href="group__exceptions.html#gab029b95d564b1dc1b1a27376c9518fa5">DuplicateFieldNumber</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Duplicate field number&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="structSTEP_1_1InvalidMessageType.html">  135</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1InvalidMessageType.html">InvalidMessageType</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group__exceptions.html#gad326e94892fae7839710238f5bf2e978">  137</a></span>&#160;  <a class="code" href="group__exceptions.html#gad326e94892fae7839710238f5bf2e978">InvalidMessageType</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Invalid Message Type&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="structSTEP_1_1UnsupportedMessageType.html">  142</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1UnsupportedMessageType.html">UnsupportedMessageType</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga9a9e131d87c99864a31f59d4c9d69c3b">  144</a></span>&#160;  <a class="code" href="group__exceptions.html#ga9a9e131d87c99864a31f59d4c9d69c3b">UnsupportedMessageType</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Unsupported Message Type&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="structSTEP_1_1UnsupportedVersion.html">  149</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1UnsupportedVersion.html">UnsupportedVersion</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaf942818dc3833bbe6e5148aa7ff3d03d">  151</a></span>&#160;  <a class="code" href="group__exceptions.html#gaf942818dc3833bbe6e5148aa7ff3d03d">UnsupportedVersion</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Unsupported Version&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="structSTEP_1_1TagOutOfOrder.html">  156</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1TagOutOfOrder.html">TagOutOfOrder</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaf4fe356d3e7254b3d1b800fcb3d79915">  158</a></span>&#160;  <a class="code" href="group__exceptions.html#gaf4fe356d3e7254b3d1b800fcb3d79915">TagOutOfOrder</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Tag specified out of required order&quot;</span>, what ),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                 <a class="code" href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">field</a>( f ) {}</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">  161</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">field</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="structSTEP_1_1RepeatedTag.html">  165</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1RepeatedTag.html">RepeatedTag</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga12d837099a809cc14e45707c76864af3">  167</a></span>&#160;  <a class="code" href="group__exceptions.html#ga12d837099a809cc14e45707c76864af3">RepeatedTag</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Repeated tag not part of repeating group&quot;</span>, what ),</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                 <a class="code" href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">field</a>( f ) {}</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">  170</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">field</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="structSTEP_1_1RepeatingGroupCountMismatch.html">  174</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1RepeatingGroupCountMismatch.html">RepeatingGroupCountMismatch</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga9e8f681a489e952804ed8010bc98387d">  176</a></span>&#160;  <a class="code" href="group__exceptions.html#ga9e8f681a489e952804ed8010bc98387d">RepeatingGroupCountMismatch</a>( <span class="keywordtype">int</span> f = 0, <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Repeating group count mismatch&quot;</span>, what ),</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                 <a class="code" href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">field</a>( f ) {}</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">  179</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">field</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;};</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="structSTEP_1_1DoNotSend.html">  183</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1DoNotSend.html">DoNotSend</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga1307487318a2e0f401e6e2b6c2f80264">  185</a></span>&#160;  <a class="code" href="group__exceptions.html#ga1307487318a2e0f401e6e2b6c2f80264">DoNotSend</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Do Not Send Message&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="structSTEP_1_1RejectLogon.html">  190</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1RejectLogon.html">RejectLogon</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;{</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaacef0e4c356b51b5b4863b91e028a5dd">  192</a></span>&#160;  <a class="code" href="group__exceptions.html#gaacef0e4c356b51b5b4863b91e028a5dd">RejectLogon</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Rejected Logon Attempt&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;};</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="structSTEP_1_1IOException.html">  198</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1IOException.html">IOException</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga3b545facdcd1bc662f09473d06089222">  200</a></span>&#160;  <a class="code" href="group__exceptions.html#ga3b545facdcd1bc662f09473d06089222">IOException</a>( <span class="keyword">const</span> std::string&amp; what = <span class="stringliteral">&quot;&quot;</span> )</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;IO Error&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="structSTEP_1_1SocketException.html">  205</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1SocketException.html">SocketException</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1Exception.html">Exception</a></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">  207</a></span>&#160;  <a class="code" href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">SocketException</a>()</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Socket Error&quot;</span>, <a class="code" href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">errorToWhat</a>() ) {}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga4d6ca180811ab0f7a39df62d0c468bc2">  210</a></span>&#160;  <a class="code" href="group__exceptions.html#ga4d6ca180811ab0f7a39df62d0c468bc2">SocketException</a>( <span class="keyword">const</span> std::string&amp; what )</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    : <a class="code" href="structSTEP_1_1Exception.html">Exception</a>( <span class="stringliteral">&quot;Socket Error&quot;</span>, what ) {}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">  213</a></span>&#160;  std::string <a class="code" href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">errorToWhat</a>()</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor"></span>    <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a> = WSAGetLastError();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">char</span> buffer[2048];</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    FormatMessage( FORMAT_MESSAGE_FROM_SYSTEM, NULL, <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a>,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                   MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                   buffer, 2048, NULL );</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> buffer;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span>    <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a> = errno;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">return</span> strerror( <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a> );</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">  228</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">error</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;};</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="structSTEP_1_1SocketRecvFailed.html">  233</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSTEP_1_1SocketRecvFailed.html">SocketRecvFailed</a> : <span class="keyword">public</span> <a class="code" href="structSTEP_1_1SocketException.html">SocketException</a></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group__exceptions.html#gadb7f62f4a1f18851420f24e95d861323">  235</a></span>&#160;  <a class="code" href="group__exceptions.html#gadb7f62f4a1f18851420f24e95d861323">SocketRecvFailed</a>( <span class="keywordtype">int</span> size )</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    : <a class="code" href="structSTEP_1_1SocketException.html">SocketException</a>( size == 0 ? <span class="stringliteral">&quot;Connection reset by peer.&quot;</span> : size &lt; 0 ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;Success.&quot;</span> ) {}</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="group__exceptions.html#ga296534a604051aea0f5abcb3d31e4358">  237</a></span>&#160;  <a class="code" href="group__exceptions.html#ga296534a604051aea0f5abcb3d31e4358">SocketRecvFailed</a>( <span class="keyword">const</span> std::string&amp; what )</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    : <a class="code" href="structSTEP_1_1SocketException.html">SocketException</a>( what ) {}</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;};</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif //STEP_EXCEPTIONS_H</span></div>
+<div class="ttc" id="group__exceptions_html_ga41b348f2393a47f3360bea4e0ce3c86e"><div class="ttname"><a href="group__exceptions.html#ga41b348f2393a47f3360bea4e0ce3c86e">STEP::IncorrectTagValue::IncorrectTagValue</a></div><div class="ttdeci">IncorrectTagValue(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00105">Exceptions.h:105</a></div></div>
+<div class="ttc" id="structSTEP_1_1RuntimeError_html"><div class="ttname"><a href="structSTEP_1_1RuntimeError.html">STEP::RuntimeError</a></div><div class="ttdoc">Application encountered serious error during runtime </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00060">Exceptions.h:60</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga30ce4839fab0d1f84424a6ad2f82c0e7"><div class="ttname"><a href="group__exceptions.html#ga30ce4839fab0d1f84424a6ad2f82c0e7">STEP::NoTagValue::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00099">Exceptions.h:99</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaafd3014b73e071da95b140ce1f7052dc"><div class="ttname"><a href="group__exceptions.html#gaafd3014b73e071da95b140ce1f7052dc">STEP::RepeatedTag::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00170">Exceptions.h:170</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaacef0e4c356b51b5b4863b91e028a5dd"><div class="ttname"><a href="group__exceptions.html#gaacef0e4c356b51b5b4863b91e028a5dd">STEP::RejectLogon::RejectLogon</a></div><div class="ttdeci">RejectLogon(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00192">Exceptions.h:192</a></div></div>
+<div class="ttc" id="structSTEP_1_1InvalidMessageType_html"><div class="ttname"><a href="structSTEP_1_1InvalidMessageType.html">STEP::InvalidMessageType</a></div><div class="ttdoc">Not a known message type. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00135">Exceptions.h:135</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga10508d592cd334285fc118d9ba427d3c"><div class="ttname"><a href="group__exceptions.html#ga10508d592cd334285fc118d9ba427d3c">STEP::TagNotDefinedForMessage::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00090">Exceptions.h:90</a></div></div>
+<div class="ttc" id="group__exceptions_html_gadff04b85107828865636619053b8ec2c"><div class="ttname"><a href="group__exceptions.html#gadff04b85107828865636619053b8ec2c">STEP::IncorrectTagValue::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00108">Exceptions.h:108</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0223b1c2368d3e70825689221ff04930"><div class="ttname"><a href="group__exceptions.html#ga0223b1c2368d3e70825689221ff04930">STEP::RuntimeError::RuntimeError</a></div><div class="ttdeci">RuntimeError(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00062">Exceptions.h:62</a></div></div>
+<div class="ttc" id="group__exceptions_html_gad326e94892fae7839710238f5bf2e978"><div class="ttname"><a href="group__exceptions.html#gad326e94892fae7839710238f5bf2e978">STEP::InvalidMessageType::InvalidMessageType</a></div><div class="ttdeci">InvalidMessageType(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00137">Exceptions.h:137</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga9230ff203d66d65c2bb81fbeef30b502"><div class="ttname"><a href="group__exceptions.html#ga9230ff203d66d65c2bb81fbeef30b502">STEP::InvalidTagNumber::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00072">Exceptions.h:72</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga4d6ca180811ab0f7a39df62d0c468bc2"><div class="ttname"><a href="group__exceptions.html#ga4d6ca180811ab0f7a39df62d0c468bc2">STEP::SocketException::SocketException</a></div><div class="ttdeci">SocketException(const std::string &amp;what)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00210">Exceptions.h:210</a></div></div>
+<div class="ttc" id="group__exceptions_html_gacbdb560587fcb37008d1cfe46ac13982"><div class="ttname"><a href="group__exceptions.html#gacbdb560587fcb37008d1cfe46ac13982">STEP::IncorrectMessageStructure::IncorrectMessageStructure</a></div><div class="ttdeci">IncorrectMessageStructure(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00123">Exceptions.h:123</a></div></div>
+<div class="ttc" id="group__exceptions_html_gabc7928fdf47581a5ee2b3a97be6416b1"><div class="ttname"><a href="group__exceptions.html#gabc7928fdf47581a5ee2b3a97be6416b1">STEP::FieldNotFound::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00028">Exceptions.h:28</a></div></div>
+<div class="ttc" id="structSTEP_1_1MessageParseError_html"><div class="ttname"><a href="structSTEP_1_1MessageParseError.html">STEP::MessageParseError</a></div><div class="ttdoc">Unable to parse message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00039">Exceptions.h:39</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0021029228fc03316d68b3b7c48acc3d"><div class="ttname"><a href="group__exceptions.html#ga0021029228fc03316d68b3b7c48acc3d">STEP::Exception::Exception</a></div><div class="ttdeci">Exception(const std::string &amp;what, const std::string &amp;detail)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00017">Exceptions.h:17</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga6eecf529b84d6551da272f00e5b44422"><div class="ttname"><a href="group__exceptions.html#ga6eecf529b84d6551da272f00e5b44422">STEP::MessageParseError::MessageParseError</a></div><div class="ttdeci">MessageParseError(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00041">Exceptions.h:41</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga3ae747f9e43e196e5dd76825eb972c4d"><div class="ttname"><a href="group__exceptions.html#ga3ae747f9e43e196e5dd76825eb972c4d">STEP::SocketException::error</a></div><div class="ttdeci">int error</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00228">Exceptions.h:228</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga8a29470ffa7dfdd0b8161cfca197c2d0"><div class="ttname"><a href="group__exceptions.html#ga8a29470ffa7dfdd0b8161cfca197c2d0">STEP::RepeatingGroupCountMismatch::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00179">Exceptions.h:179</a></div></div>
+<div class="ttc" id="group__exceptions_html_gae11578f2c65302511a018d119e9bb9e6"><div class="ttname"><a href="group__exceptions.html#gae11578f2c65302511a018d119e9bb9e6">STEP::RequiredTagMissing::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00081">Exceptions.h:81</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga3b545facdcd1bc662f09473d06089222"><div class="ttname"><a href="group__exceptions.html#ga3b545facdcd1bc662f09473d06089222">STEP::IOException::IOException</a></div><div class="ttdeci">IOException(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00200">Exceptions.h:200</a></div></div>
+<div class="ttc" id="structSTEP_1_1NoTagValue_html"><div class="ttname"><a href="structSTEP_1_1NoTagValue.html">STEP::NoTagValue</a></div><div class="ttdoc">Field exists in message without a value. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00094">Exceptions.h:94</a></div></div>
+<div class="ttc" id="group__exceptions_html_gab029b95d564b1dc1b1a27376c9518fa5"><div class="ttname"><a href="group__exceptions.html#gab029b95d564b1dc1b1a27376c9518fa5">STEP::DuplicateFieldNumber::DuplicateFieldNumber</a></div><div class="ttdeci">DuplicateFieldNumber(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00130">Exceptions.h:130</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga12d837099a809cc14e45707c76864af3"><div class="ttname"><a href="group__exceptions.html#ga12d837099a809cc14e45707c76864af3">STEP::RepeatedTag::RepeatedTag</a></div><div class="ttdeci">RepeatedTag(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00167">Exceptions.h:167</a></div></div>
+<div class="ttc" id="structSTEP_1_1RepeatedTag_html"><div class="ttname"><a href="structSTEP_1_1RepeatedTag.html">STEP::RepeatedTag</a></div><div class="ttdoc">Repeated tag not part of repeating group. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00165">Exceptions.h:165</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga9a9e131d87c99864a31f59d4c9d69c3b"><div class="ttname"><a href="group__exceptions.html#ga9a9e131d87c99864a31f59d4c9d69c3b">STEP::UnsupportedMessageType::UnsupportedMessageType</a></div><div class="ttdeci">UnsupportedMessageType(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00144">Exceptions.h:144</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga1307487318a2e0f401e6e2b6c2f80264"><div class="ttname"><a href="group__exceptions.html#ga1307487318a2e0f401e6e2b6c2f80264">STEP::DoNotSend::DoNotSend</a></div><div class="ttdeci">DoNotSend(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00185">Exceptions.h:185</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga0a61f0780fe8d3f4f1193d3e44ac98ba"><div class="ttname"><a href="group__exceptions.html#ga0a61f0780fe8d3f4f1193d3e44ac98ba">STEP::IncorrectDataFormat::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00117">Exceptions.h:117</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga954317668fd2cd6a31560e939546855a"><div class="ttname"><a href="group__exceptions.html#ga954317668fd2cd6a31560e939546855a">STEP::NoTagValue::NoTagValue</a></div><div class="ttdeci">NoTagValue(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00096">Exceptions.h:96</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga131be601cf4ebebb5cace0553c20b9c0"><div class="ttname"><a href="group__exceptions.html#ga131be601cf4ebebb5cace0553c20b9c0">STEP::FieldConvertError::FieldConvertError</a></div><div class="ttdeci">FieldConvertError(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00034">Exceptions.h:34</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaf0576f63789a236cf114a5db05a78e0b"><div class="ttname"><a href="group__exceptions.html#gaf0576f63789a236cf114a5db05a78e0b">STEP::TagOutOfOrder::field</a></div><div class="ttdeci">int field</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00161">Exceptions.h:161</a></div></div>
+<div class="ttc" id="structSTEP_1_1FieldConvertError_html"><div class="ttname"><a href="structSTEP_1_1FieldConvertError.html">STEP::FieldConvertError</a></div><div class="ttdoc">Unable to convert field into its native format. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00032">Exceptions.h:32</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaf4fe356d3e7254b3d1b800fcb3d79915"><div class="ttname"><a href="group__exceptions.html#gaf4fe356d3e7254b3d1b800fcb3d79915">STEP::TagOutOfOrder::TagOutOfOrder</a></div><div class="ttdeci">TagOutOfOrder(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00158">Exceptions.h:158</a></div></div>
+<div class="ttc" id="structSTEP_1_1FieldNotFound_html"><div class="ttname"><a href="structSTEP_1_1FieldNotFound.html">STEP::FieldNotFound</a></div><div class="ttdoc">Field not found inside a message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00023">Exceptions.h:23</a></div></div>
+<div class="ttc" id="structSTEP_1_1InvalidMessage_html"><div class="ttname"><a href="structSTEP_1_1InvalidMessage.html">STEP::InvalidMessage</a></div><div class="ttdoc">Not a recognizable message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00046">Exceptions.h:46</a></div></div>
+<div class="ttc" id="structSTEP_1_1TagOutOfOrder_html"><div class="ttname"><a href="structSTEP_1_1TagOutOfOrder.html">STEP::TagOutOfOrder</a></div><div class="ttdoc">Tag is not in the correct order. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00156">Exceptions.h:156</a></div></div>
+<div class="ttc" id="group__exceptions_html_gab31b7f177ba622cb54f7d143307d47a3"><div class="ttname"><a href="group__exceptions.html#gab31b7f177ba622cb54f7d143307d47a3">STEP::SocketException::errorToWhat</a></div><div class="ttdeci">std::string errorToWhat()</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00213">Exceptions.h:213</a></div></div>
+<div class="ttc" id="structSTEP_1_1UnsupportedMessageType_html"><div class="ttname"><a href="structSTEP_1_1UnsupportedMessageType.html">STEP::UnsupportedMessageType</a></div><div class="ttdoc">Message type not supported by application. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00142">Exceptions.h:142</a></div></div>
+<div class="ttc" id="structSTEP_1_1Exception_html"><div class="ttname"><a href="structSTEP_1_1Exception.html">STEP::Exception</a></div><div class="ttdoc">Base QuickFIX exception type. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00015">Exceptions.h:15</a></div></div>
+<div class="ttc" id="group__exceptions_html_gafdfab07adf38bcf32efc597ef4789787"><div class="ttname"><a href="group__exceptions.html#gafdfab07adf38bcf32efc597ef4789787">STEP::IncorrectDataFormat::IncorrectDataFormat</a></div><div class="ttdeci">IncorrectDataFormat(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00114">Exceptions.h:114</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaa07817d125abb0eea891c6176162ff49"><div class="ttname"><a href="group__exceptions.html#gaa07817d125abb0eea891c6176162ff49">STEP::InvalidTagNumber::InvalidTagNumber</a></div><div class="ttdeci">InvalidTagNumber(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00069">Exceptions.h:69</a></div></div>
+<div class="ttc" id="structSTEP_1_1IncorrectDataFormat_html"><div class="ttname"><a href="structSTEP_1_1IncorrectDataFormat.html">STEP::IncorrectDataFormat</a></div><div class="ttdoc">Field has a badly formatted value. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00112">Exceptions.h:112</a></div></div>
+<div class="ttc" id="structSTEP_1_1RejectLogon_html"><div class="ttname"><a href="structSTEP_1_1RejectLogon.html">STEP::RejectLogon</a></div><div class="ttdoc">User wants to reject permission to logon. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00190">Exceptions.h:190</a></div></div>
+<div class="ttc" id="structSTEP_1_1ConfigError_html"><div class="ttname"><a href="structSTEP_1_1ConfigError.html">STEP::ConfigError</a></div><div class="ttdoc">Application is not configured correctly </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00053">Exceptions.h:53</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaa03ae28ea6df2dc868aed799294413a3"><div class="ttname"><a href="group__exceptions.html#gaa03ae28ea6df2dc868aed799294413a3">STEP::SocketException::SocketException</a></div><div class="ttdeci">SocketException()</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00207">Exceptions.h:207</a></div></div>
+<div class="ttc" id="structSTEP_1_1UnsupportedVersion_html"><div class="ttname"><a href="structSTEP_1_1UnsupportedVersion.html">STEP::UnsupportedVersion</a></div><div class="ttdoc">Version of FIX is not supported. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00149">Exceptions.h:149</a></div></div>
+<div class="ttc" id="structSTEP_1_1SocketRecvFailed_html"><div class="ttname"><a href="structSTEP_1_1SocketRecvFailed.html">STEP::SocketRecvFailed</a></div><div class="ttdoc">Socket recv operation failed. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00233">Exceptions.h:233</a></div></div>
+<div class="ttc" id="structSTEP_1_1RequiredTagMissing_html"><div class="ttname"><a href="structSTEP_1_1RequiredTagMissing.html">STEP::RequiredTagMissing</a></div><div class="ttdoc">Required field is not in message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00076">Exceptions.h:76</a></div></div>
+<div class="ttc" id="structSTEP_1_1SocketException_html"><div class="ttname"><a href="structSTEP_1_1SocketException.html">STEP::SocketException</a></div><div class="ttdoc">Socket Error. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00205">Exceptions.h:205</a></div></div>
+<div class="ttc" id="structSTEP_1_1IOException_html"><div class="ttname"><a href="structSTEP_1_1IOException.html">STEP::IOException</a></div><div class="ttdoc">IO Error. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00198">Exceptions.h:198</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga97f84b4041c5c82f91a7379d181f8394"><div class="ttname"><a href="group__exceptions.html#ga97f84b4041c5c82f91a7379d181f8394">STEP::TagNotDefinedForMessage::TagNotDefinedForMessage</a></div><div class="ttdeci">TagNotDefinedForMessage(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00087">Exceptions.h:87</a></div></div>
+<div class="ttc" id="group__exceptions_html_gadb7f62f4a1f18851420f24e95d861323"><div class="ttname"><a href="group__exceptions.html#gadb7f62f4a1f18851420f24e95d861323">STEP::SocketRecvFailed::SocketRecvFailed</a></div><div class="ttdeci">SocketRecvFailed(int size)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00235">Exceptions.h:235</a></div></div>
+<div class="ttc" id="structSTEP_1_1DuplicateFieldNumber_html"><div class="ttname"><a href="structSTEP_1_1DuplicateFieldNumber.html">STEP::DuplicateFieldNumber</a></div><div class="ttdoc">Field shows up twice in the message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00128">Exceptions.h:128</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga467474a291718f4ea1dccddbd86d4d83"><div class="ttname"><a href="group__exceptions.html#ga467474a291718f4ea1dccddbd86d4d83">STEP::ConfigError::ConfigError</a></div><div class="ttdeci">ConfigError(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00055">Exceptions.h:55</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga9e8f681a489e952804ed8010bc98387d"><div class="ttname"><a href="group__exceptions.html#ga9e8f681a489e952804ed8010bc98387d">STEP::RepeatingGroupCountMismatch::RepeatingGroupCountMismatch</a></div><div class="ttdeci">RepeatingGroupCountMismatch(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00176">Exceptions.h:176</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga296534a604051aea0f5abcb3d31e4358"><div class="ttname"><a href="group__exceptions.html#ga296534a604051aea0f5abcb3d31e4358">STEP::SocketRecvFailed::SocketRecvFailed</a></div><div class="ttdeci">SocketRecvFailed(const std::string &amp;what)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00237">Exceptions.h:237</a></div></div>
+<div class="ttc" id="group__exceptions_html_ga8782a298de385b60f4d198ec42c15636"><div class="ttname"><a href="group__exceptions.html#ga8782a298de385b60f4d198ec42c15636">STEP::InvalidMessage::InvalidMessage</a></div><div class="ttdeci">InvalidMessage(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00048">Exceptions.h:48</a></div></div>
+<div class="ttc" id="structSTEP_1_1TagNotDefinedForMessage_html"><div class="ttname"><a href="structSTEP_1_1TagNotDefinedForMessage.html">STEP::TagNotDefinedForMessage</a></div><div class="ttdoc">Field does not belong to message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00085">Exceptions.h:85</a></div></div>
+<div class="ttc" id="structSTEP_1_1IncorrectMessageStructure_html"><div class="ttname"><a href="structSTEP_1_1IncorrectMessageStructure.html">STEP::IncorrectMessageStructure</a></div><div class="ttdoc">Message is not structured correctly. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00121">Exceptions.h:121</a></div></div>
+<div class="ttc" id="structSTEP_1_1IncorrectTagValue_html"><div class="ttname"><a href="structSTEP_1_1IncorrectTagValue.html">STEP::IncorrectTagValue</a></div><div class="ttdoc">Field has a value that is out of range. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00103">Exceptions.h:103</a></div></div>
+<div class="ttc" id="Utility_8h_html"><div class="ttname"><a href="Utility_8h.html">Utility.h</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaf942818dc3833bbe6e5148aa7ff3d03d"><div class="ttname"><a href="group__exceptions.html#gaf942818dc3833bbe6e5148aa7ff3d03d">STEP::UnsupportedVersion::UnsupportedVersion</a></div><div class="ttdeci">UnsupportedVersion(const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00151">Exceptions.h:151</a></div></div>
+<div class="ttc" id="structSTEP_1_1DoNotSend_html"><div class="ttname"><a href="structSTEP_1_1DoNotSend.html">STEP::DoNotSend</a></div><div class="ttdoc">Indicates user does not want to send a message. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00183">Exceptions.h:183</a></div></div>
+<div class="ttc" id="structSTEP_1_1InvalidTagNumber_html"><div class="ttname"><a href="structSTEP_1_1InvalidTagNumber.html">STEP::InvalidTagNumber</a></div><div class="ttdoc">Tag number does not exist in specification. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00067">Exceptions.h:67</a></div></div>
+<div class="ttc" id="group__exceptions_html_gac78f9766a122cef6316946d3983fbcc0"><div class="ttname"><a href="group__exceptions.html#gac78f9766a122cef6316946d3983fbcc0">STEP::FieldNotFound::FieldNotFound</a></div><div class="ttdeci">FieldNotFound(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00025">Exceptions.h:25</a></div></div>
+<div class="ttc" id="structSTEP_1_1RepeatingGroupCountMismatch_html"><div class="ttname"><a href="structSTEP_1_1RepeatingGroupCountMismatch.html">STEP::RepeatingGroupCountMismatch</a></div><div class="ttdoc">Repeated group count not equal to actual count. </div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00174">Exceptions.h:174</a></div></div>
+<div class="ttc" id="group__exceptions_html_gaf96ee3d6c5605fe845e2fe5a6c898d13"><div class="ttname"><a href="group__exceptions.html#gaf96ee3d6c5605fe845e2fe5a6c898d13">STEP::RequiredTagMissing::RequiredTagMissing</a></div><div class="ttdeci">RequiredTagMissing(int f=0, const std::string &amp;what=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Exceptions_8h_source.html#l00078">Exceptions.h:78</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 十一月 29日 星期五 15:39:48 , 为 Giraffe使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>
