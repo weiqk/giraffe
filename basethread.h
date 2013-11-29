@@ -1,3 +1,10 @@
+/**
+* @file basethread.h
+* @brief base thread class
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #ifndef MONITOR_ITHREAD_H_
 #define MONITOR_ITHREAD_H_
 

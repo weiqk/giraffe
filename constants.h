@@ -1,3 +1,10 @@
+/**
+* @file constants.h
+* @brief constant
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #ifndef MONITOR_CONSTANTS_H_
 #define MONITOR_CONSTANTS_H_
 
