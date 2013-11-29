@@ -1,6 +1,6 @@
 #include <assert.h>
 #include <iostream>
-#include "configparser.h"
+#include "config_parser.h"
 #include "flags.h"
 
 using namespace std;
