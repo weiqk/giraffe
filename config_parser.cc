@@ -1,3 +1,10 @@
+/**
+* @file config_parser.cc
+* @brief parse xml config
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #include <assert.h>
 #include <iostream>
 #include "config_parser.h"
@@ -9,6 +16,13 @@ using namespace log4cxx;
 
 LoggerPtr ConfigParser::logger_(Logger::getLogger("config_parser"));
 
+/**
+* @brief split did template id
+*
+* @param did_template_path
+*
+* @return 
+*/
 std::string ConfigParser::SplitDidTemplateId(std::string &did_template_path)
 {
 	int pre_pos;
@@ -25,6 +39,9 @@ std::string ConfigParser::SplitDidTemplateId(std::string &did_template_path)
 	return did_template_id;
 }
 
+/**
+* @brief start parsing
+*/
 void ConfigParser::Parse()
 {
 	xml2cfg config;
