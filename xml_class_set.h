@@ -1,3 +1,10 @@
+/**
+* @file xml_class_set.h
+* @brief xml parser class set
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #ifndef MONITOR_XML_CLASS_SET_H
 #define MONITOR_XML_CLASS_SET_H
 #include <zmq.h>

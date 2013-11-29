@@ -1,3 +1,10 @@
+/**
+* @file xml2cfg.h
+* @brief xml parser api
+* @author ly
+* @version 0.1.0
+* @date 2013-11-29
+*/
 #ifndef __GW_UTILIY_XML_to_CONFIG_HEADER__
 #define __GW_UTILIY_XML_to_CONFIG_HEADER__
 #include <string>
